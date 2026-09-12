@@ -1,0 +1,1392 @@
+php_value display_errors 1
+DirectoryIndex index.html index.htm index.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^.htaccess$ -[F]
+
+RewriteCond %{HTTP_HOST} ^www.teohim.ru$ [NC]
+RewriteRule ^(.*)$ https://teohim.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^2690505.ru$ [NC]
+RewriteRule ^(.*)$ https://teohim.ru/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.2690505.ru$ [NC]
+RewriteRule ^(.*)$ https://teohim.ru/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|htm|html)\ HTTP/ 
+RewriteRule ^index\.(php|htm|html)$ https://teohim.ru/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^(.*)\/index\.(php|htm|html)\ HTTP/ 
+RewriteRule ^(.*)\/index\.(php|htm|html)$ https://teohim.ru/$1/ [R=301,L]
+
+RewriteCond %{HTTP:X-HTTPS} !1
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ********************************* Образец *********************************
+#RewriteCond %{REQUEST_URI} ^\/0000000000000\/1111111111111\/?$
+#RewriteRule ^.*$ https://%{HTTP_HOST}/2222222222222/333333333333333/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/qr\/1\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/qr/1-2/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/mtr\/matiruyuchaya-dobavka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/tiksotrop-dobavka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/antidron-pokryvalo\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/antidron-odejalo/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/photos\/knp-foto\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/kvarc-pokrytie-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/antistat\/cena\/tp-ed-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena-tp-ed-pol/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/antistat\/cena\/er-ed-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena-er-ed-pol/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/antistat\/cena\/tp-pu-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena-tp-pu-pol/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/antistat\/cena\/er-pu-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena-er-pu-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/antistat\/cena\/tp-ed-pokr\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena-tp-ed-pokr/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/antistat\/cena\/tp-pu-pokr\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena-tp-pu-pokr/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/antistat\/cena\/er-ed-pokr\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena-er-ed-pokr/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/antistat\/cena\/er-pu-pokr\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena-er-pu-pokr/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/antistat\/cena\/ast-pol-metal\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena-ast-pol-metal/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/antistat\/cena\/ast-pokr-metal\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena-ast-pokr-metal/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/969\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/el-antistat-naliv-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/info\/antipyl-betonnyj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/antipyl-betonnyj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/vybor\/vyravnivanie-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/vyravnivanie-betonnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-moroz\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-moroz/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/jelakor-farmacevticheskoj-promyshlennosti\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-farmacevt/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-farmacevt\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-farmacevt/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/info\/topping\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/topping/volume/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/topping-poliuretanovaja-propitka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/topping/volume/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/topping-vs-polyurethan\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/topping/volume/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/info\/topping-vs-polyurethan\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/topping/volume/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sert\/stojkost-elakor-elastobeton-k-udarnym-vozdejstvijam\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/elastobeton-udar-vozdejstvija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sert\/opredelenie-prochnosti-na-szhatie-elakor-elastobeton\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/dobavka-beton-prochnost-szhatie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye\/antistat-pokrytie-rasseivajushhee-cena\/$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena/er-ed-pol/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/nalivnye\/ed-ast-rasseiv-pol-cena\/$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena/er-ed-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye\/antistaticheskoe-nalivnoe-pokrytie-cena\/$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/cena/tp-ed-pol/ [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^\/beton\/cena\/elastobeton-b-peskobeton\/$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/b-cena-pesko/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/predstavitelstva\/$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/predstavitel.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_cheboksari.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/cheboksari/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_ioshola.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/ioshola/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_kazan.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/kazan/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_lipetsk.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/lipetsk/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_orenbyrg.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/orenbyrg/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_perm.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/perm/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_samara.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/samara/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_saransk.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/saransk/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_saratov.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/saratov/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_volgograd.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/volgograd/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/pred_ylianovsk.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/ylianovsk/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/predstavitelstva\/pred_krasn\/$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/krasn/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/predstavitelstva\/pred_megdyr\/$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/kemero/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pred\/rezan\/$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/rjazan/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/polimernye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/polimernye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/nalivnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/polymer\/nalivnye\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/betonnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/betonnye-poly\/polimercementnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/polymercement/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/ppokrytija-betona-mineralnyh-poverhnostej\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/other/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/1\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/dlja-betonnyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/pokrytie-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/pokrytie-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/pokrytie-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/decorativnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/decorativnye-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovye-laki\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/poliuretanovye-laki/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/uprochnitel-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/vybor/uprochnenie-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/dezaktiviruemoe-poliuretanovoe-pokrytie-jelakor\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/vybor/pokrytie-radiacija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye-poly\/cena\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovyj-nalivnoj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/poliuretanovyj-nalivnoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovye-lak-gljancevyi\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/lak-kamnja-kirpicha/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/jelakor-pu-kolerovochnaja-pasta\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/kolerovochnaja-pasta/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/mtr\/elakor-pu-kolerovochnaja-pasta\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/kolerovochnaja-pasta/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/elakor-dt-tiksotropnaya-i-matiruyuchaya-dobavka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/matiruyuchaya-dobavka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovye-grunty\/svetostojjkijj_ljuks\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/dvuhkomponentnyj-grunt/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovye-lak-ljuks\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/poliuretanovyj-lak-lux/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/instrukcii-propitka-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/propitka-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/propitka-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/mtr\/akrilovyj-lak\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/akrilovyj-lak/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/mb4-propitka-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/mtr/gidrofobizator/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/mtr\/mb4-propitka-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/mtr/gidrofobizator/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/mtr\/elastobeton-a2-poly-topping\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/a/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/jelastobeton-poly-topping\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/a/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/mtr\/elastobeton-a1-poly-topping\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/a/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/cena\/elastobeton-a1\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/a-cena/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/beton\/dobavki-betona\/a-raschet-beton\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/a-cena/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/jelastobeton-polimercementnye-peskobetonnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/v/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/mtr\/elastobeton-v-polimercementnye-peskobetonnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/v/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton-kontakt-grunt-dlja-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/mtr/betonokontakt/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/beton\/mtr\/beton-kontakt-grunt-dlja-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/mtr/betonokontakt/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/beton\/mtr\/gruntovka-betonokontakt\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/mtr/betonokontakt/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/mtr\/elakor-da-antistaticheskaja-dobavka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/antistaticheskaja-dobavka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/betonnye-poly\/pkr\/fljuat-propitka\/tehnologija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/tech/fljuat-propitka/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/tehnologija-fljuat-propitka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/tech/fljuat-propitka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-akrilovaja-propitka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/akrilovaja-propitka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye-poly\/pkr\/poliuretanovoe-pokrytie\/tehnologija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/poliuretanovoe-pokrytie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye-poly\/pkr\/epoksidnoe-pokrytie\/tehnologija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/epoksidnoe-pokrytie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-polimernoe-pokrytie-peskom\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/pokrytie-peskom/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/kvarcnapolnennoe-epoksidnoe-pokrytie-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/kvarc-pokrytie/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/ustrojjstvo-ehpoksidnogo-pokrytija-kvarcnapolnennogo\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/kvarc-pokrytie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/epoksidnye-nalivnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/epoksidnye-nalivnye-pokrytija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-nalivnyh-polov-epoksidnyh\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/epoksidnyj-nalivnoj-pol-tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/tech\/epoksidnyj-nalivnoj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/epoksidnyj-nalivnoj-pol-tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye-poly\/pkr\/pokrytie-dlja-asfalta\/tehnologija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/pokrytie-dlja-asfalta/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-polimernoe-pokrytie-dekorativnoe\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/pokrytie-floki/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/antistaticheskoe-pokrytie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/antistaticheskoe-pokrytie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/antistaticheskie-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/antistat/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye\/antistaticheskie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/antistaticheskoe-pokrytie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/polimernye-poly\/pkr\/ochistka-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/ochistka-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-shpatlevanie-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/shpatlevanie-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-germetizacija-shvov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/zadelka-shvov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-nanesenie-razmetki-numeracii-logotipov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/razmetka-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-zawitnoe-pokrytie-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/remont-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-zawitnoe-pokrytie-betona-rezervuary\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/zawitnoe-pokrytie-betona-rezervuary/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-zawitnoe-pokrytie-fasadov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/other/zawitnoe-pokrytie-fasadov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-gidrofobizacija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/gidrofobizacija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/other\/gidrofobizacija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/gidrofobizacija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-ximicheskaja-ochistka-metalla\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/metal/himicheskaja-ochistka-metalla/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-antikorrozionnoe-pokrytie-metalla\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/metal/antikorrozionnoe-pokrytie-metalla/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-antikorrozionnoe-pokrytie-pomewenija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/metal/antikorrozionnoe-pokrytie-pomewenija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-antikorrozionnoe-pokrytie-atmosfera\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/metal/antikorrozionnoe-pokrytie-atmosfera/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-antikorrozionnoe-pokrytie-metallicheskih-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/metal/antikorrozionnoe-pokrytie-metallicheskih-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-poly-topping\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/a-tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/tech\/poly-topping\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/a-tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-poly-topping-a2\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-ustrojstvo-polimercementnobetonnyh-pokrytij\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/b-tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/tech\/elastobeton-b-polimercementnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/b-tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/jelastobeton-b-polimercementnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/b/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/mtr\/elastobeton-b-polimercementnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/b/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/mtr\/polimernaja-dobavka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/b/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/cena\/elastobeton-b\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/b-cena/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-ustrojstvo-polimercementnyh-pokrytij\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/v-tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/tech\/ustrojstvo-polimercementnyh-pokrytij\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/v-tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnicheskie-harakteristiki-jelakor-pu\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/tehnicheskie-harakteristiki-elakor-pu/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tablica-himstojkosti\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/tablica-himstojkosti/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/stojkost-uksusnoj-kislote\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/stojkost-uksusnoj-kislote/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/atmosferostojkost\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/atmosferostojkost/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/iznosostojkost-po-gost28011\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/iznosostojkost-po-gost28011/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/iznosostojkost-po-gost28011-b\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/iznosostojkost-po-gost28011-b/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/zakljuchenie-po-ispytaniju-adgezionnoj-prochnosti\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/zakljuchenie-po-ispytaniju-adgezionnoj-prochnosti/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/adgezija-k-magnezialnomu-betonu\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/adgezija-k-magnezialnomu-betonu/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/uroven-naprjazhennosti-jelektrostaticheskogo-polja\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/antistat-dobavka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sert\/uroven-naprjazhennosti-elektrostaticheskogo-polja\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/antistat-dobavka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tverdost-po-buhgolcu\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/tverdost-po-buhgolcu/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/rezervuary-dlja-nefti-vnutrennie-poverhnosti\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/rezervuary-dlja-nefti-vnutrennie-poverhnosti/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/ispytanie-po-opredeleniju-iskrobezopasnosti-jelakor-pu\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/iskrobezopasnost-elakor-pu/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sert\/ispytanie-po-opredeleniju-iskrobezopasnosti-elakor-pu\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/iskrobezopasnost-elakor-pu/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/ustrojstvo-poliuretanovyh-pokrytij-jelakor\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/ustrojstvo-poliuretanovyh-pokrytij/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/ukladka-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/ukladka-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sroki-tverdenija-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/sroki-tverdenija-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sootvetstvie-klassa-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/sootvetstvie-klassa-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/primenenie-poliuretanovyh-pokrytij\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/primenenie-poliuretanovyh-pokrytij/ [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^\/cravnenie-pokrytij-jelakor-pu\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/elakor-pu-vs-ed/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/magnezialnye-betony\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/magnezialnye-betony/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/info\/fljuatirovanie\/polimercementnye-betonnye-poly-stroitelstvo\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/polimercement-poly/ [R=301,L]
+ 
+RewriteCond %{REQUEST_URI} ^\/polimercementnye-betonnye-poly-stroitelstvo\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/polimercement-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/shlifovka-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/shlifovka-polov/ [R=301,L]
+ 
+RewriteCond %{REQUEST_URI} ^\/vlijanie-harakteristik-peska-na-svojstva-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/vlijanie-harakteristik-peska-na-svojstva-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/nalivnoj-pol-chto-jeto-takoe\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/nalivnoj-pol-chto-jeto-takoe/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/vybor-nalivnogo-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/vybor-nalivnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye_poly\/vybor-nalivnogo-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/vybor-nalivnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/oblasty-primenenia-nalivnogo-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/oblasty-primenenia-nalivnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye_poly\/oblasty_primenenia\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/oblasty-primenenia-nalivnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/nalivnoj-pol-stroitelstvo\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/promyshlennyj-nalivnoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye\/info\/promyshlennyj-nalivnoj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/promyshlennyj-nalivnoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye_poly\/nalivnoj-pol-v-stroitelstve\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/promyshlennyj-nalivnoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye\/info\/nalivnoj-pol-stroitelstvo\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/promyshlennyj-nalivnoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poly-dlja-sklada\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/poly-dlja-sklada/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/georadarnoe-zondirovanie-v-stroitelstve\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/zawita-betona-airport/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/info\/zawita-betona-airport\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/zawita-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovye_poly\/ukladka_poliuretanovyh_polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/ukladka-poliuretanovyh-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/obschie_trebovaniya\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/obschie-trebovaniya/ [R=301,L]
+ 
+RewriteCond %{REQUEST_URI} ^\/snip\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/snip-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/snipavto\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/snip-auto-stojanki/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/metody-ispytanija-pokrytij-na-istiranie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/gost-metody-ispytanija-pokrytij-na-istiranie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/metod-opredelenija-prochnosti-pri-udare\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/gost-metod-opredelenija-prochnosti-pri-udare/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/metod-opredelenija-jelastichnosti-plenki-pri-izgibe\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/gost-metod-opredelenija-jelastichnosti-plenki-pri-izgibe/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/metody-opredelenija-adgezii\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/gost-metody-opredelenija-adgezii/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/metody-opredelenija-uslovnoj-vjazkosti\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/gost-metody-opredelenija-uslovnoj-vjazkosti/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/metody-opredelenija-massovoj-doli-letuchih-neletuchih-vewestv\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/gost-metody-opredelenija-massovoj-doli-letuchih-neletuchih-vewestv/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/rekomendacii-po-ustrojstvu-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/snip-rekomendacii-po-ustrojstvu-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/jekspluatacija-na-otkrytom-vozduhe\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/vybor/pokrytija-ulica/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/poly-s-neznachitelnymi-nagruzkami\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-bez-nagruzok/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-bez-nagruzok\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-bez-nagruzok/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/predprijatija-agropromyshlennogo-kompleksa\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/vybor/poly-selskoe-hozjajstvo/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/vybor\/predprijatija-agropromyshlennogo-kompleksa\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/vybor/poly-selskoe-hozjajstvo/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/zawita-pola-cehe-poliuretanovye-pokrytija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/vybor/piwevoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/jelakor-himicheskaja-stojkost\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/himstojkoe-pokrytie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/vybor\/himstoikie-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/himstojkoe-pokrytie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/ustrojstva-pokrytij-polov-v-zhilyh-zdanijah\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/vybor/poly-zhilye-zdanija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poly-garazhah-parkingah-avtostojankah\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-garazh/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-garazh-parking-avtostojanka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-garazh/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-garazh\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-garazh/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/poly-v-medicinskih-uchrezhdenijah\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-medicina/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-medicina\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-medicina/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/poly-holodilnikov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-holodilnikov/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-holodilnikov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-holodilnikov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/ustrojstvo-promyshlennyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/ustrojstvo-promyshlennyh-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/poly-v-sportzalah\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-sportzal/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-sportzal\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-sportzal/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/poly-v-automoykah\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-automoyka/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-automoyka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-automoyka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/poly-v-avtoservise\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-avtoservis/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-avtoservis\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-avtoservis/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/poly-v-cehe\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-ceh/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-ceh\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-ceh/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/betonnye_poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye_poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye_poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/info/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/ustrojstvo-polimernyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/cena/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/np05\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/rashod/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/poly-dlja-sklada\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-sklad/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-sklad\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-sklad/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-magazin\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-magazin/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/vybor\/poly-office\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/poly-office/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-poliuretanovaja-jemal\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/poliuretanovaja-emal/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/opisanija-polimernyj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/promyshlennye-poly\/betonnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p1/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page1\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p26/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page2\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p25/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page3\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p24/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page4\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p23/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page5\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p22/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page6\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p21/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page7\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p20/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page8\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p19/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page9\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p18/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page10\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p17/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page11\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p16/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page12\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p15/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page13\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p14/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page14\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p13/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page15\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p12/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page16\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p11/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page17\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p10/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page18\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p9/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page19\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p8/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page20\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p7/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page21\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p6/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page22\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p5/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page23\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p4/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page24\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p3/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page25\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p2/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/page26\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p1/ [R=301,L]
+
+# Редиректы по внешним ссылкам 404 в Яндекс - Веб-Мастере ================================================================
+RewriteCond %{REQUEST_URI} ^\/demo_str_1.php?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/dobavki-betona-jelastobeton-obzor\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/dvuhkomponentnaja-poliuretanovaja-shpatlevka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/shpaklevka-dlja-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/epoksidnye-grunty-epoksidnye-gruntovki\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/epoksidnyj-grunt/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/epoksidnyj-lak-elakor-ed\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/epoksidnyj-lak/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/epoksidnyj-nalivnoj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/epoksidnyj-nalivnoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/fljuatirovanie-propitka-fljuatami\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/fljuat-propitka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/himicheskaja-ochistka-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/ochistka-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/jeko-piwevye-pokrytija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/jepoksidnye-jemali-jepoksidnye-kraski\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/epoksidnaja-kraska-emal/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/index.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/m121_1.php?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/materialy-ceny\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye\/info\/tehnologija-nanesenija-nalivnogo-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/nanesenije-nalivnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye_poly\/technology_prom\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/nanesenije-nalivnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/966\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p1/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/news\/975\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p1/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/news\/976\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p1/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/764\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/poly-sklad/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/843\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/poly-parking/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/odnokomponentnaja-poliuretanovaja-jemal-jelakor-pu\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/poliuretanovaja-kraska/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/odnokomponentnaja-poliuretanovaja-jemal\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/poliuretanovaja-emal/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/otkaznoe-pismo-rostesta\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/pismo-elakor-pu/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/parketnyj-lak\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/lak-kamnja-kirpicha/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polimercementnye-betonnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polimernye_poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovye-grunty\/grunt-25\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/poliuretanovaja-gruntovka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovye-lak-\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/poliuretanovyi-lak-dlja-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovye-lak-60\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/poliuretanovyi-lak/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovye-lak-yniversalnyi\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/poliuretanovyi-lak-dlja-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/poliuretanovye_poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/poliuretanovye-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/price10.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/price17.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/price2.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/price4.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/price7.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/price9\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pub\/instr\/instr178.doc?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sanitarno-jepidemiologicheskoe-zakljuchenie-jelakor-mb\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/sez-elakor-mb/ [R=301,L]
+
+#RewriteCond %{REQUEST_URI} ^\/sanitarno-jepidemiologicheskoe_zakljuchenie\/?$
+#RewriteRule ^.*$ https://%{HTTP_HOST}/news/984/ [R=301,L]
+
+#RewriteCond %{REQUEST_URI} ^\/sert\/sez-elakor-pu\/?$
+#RewriteRule ^.*$ https://%{HTTP_HOST}/news/984/ [R=301,L]
+
+#RewriteCond %{REQUEST_URI} ^\/sert\/sez-elakor-elastobeton\/?$
+#RewriteRule ^.*$ https://%{HTTP_HOST}/news/985/ [R=301,L]
+
+#RewriteCond %{REQUEST_URI} ^\/sertifikat-gigienicheskij-jelakor-pu-2k\/?$
+#RewriteRule ^.*$ https://%{HTTP_HOST}/sert/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sertifikat-gigienicheskij-jelakor-pu-2k\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sert\/sez-elakor-pu-2k\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sertifikat-gigienicheskij-jelakor-pu\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/sez-elakor-pu-eko/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sertifikat-pozharnoj-bezopasnosti\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/phz-elakor-pu/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sertifikat9.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tabl1.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tabl2.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/technologies.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-nalivnyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/epoksidnyj-nalivnoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-pokrytie-dlja-asfalta\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/pokrytie-dlja-asfalta/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/tehnologija-poliuretanovaja-propitka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/tech/poliuretanovaja-propitka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/uprochnenie-betona-uprochnjauwaja-propitka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/tech/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/vopros14.html?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/fljuatirovanie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/zakljuchenie-nikmit-na-dezaktiviruemost-i-radstojkost\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/sert/radiation-elakor-pu/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/cena\/epoksidnyj-nalivnoj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/epoksidnyj-nalivnoj-pol-cena/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/10\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/propitki-beton-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/11\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-razmetka-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/12\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/pokrytija-metall-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/13\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/zashhita-fasadov-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/14\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/frezer-nasechka-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/15\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-otkrytye-ploshhadki-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/16\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-zhilishhnoe-stroitelstvo-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/17\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/polimercementnye-poly-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/18\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/protivoskolzjashhie-pokrytija-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/19\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-chipsy-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/22\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/pokrytija-asfalt-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/24\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-dekorativnye-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/25\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-bolnicy-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/26\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/nalivnye\/foto\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/26\/1\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/magaziny/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/26\/2\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/ofisy/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/26\/3\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/centry/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/26\/4\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/medicina/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/26\/5\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/garazhi/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/26\/6\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/sklady/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/26\/7\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/ceha/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/26\/8\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/poly-3d/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/27\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/polimernye-poly-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/nalivnye-poly-foto\/prochee\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/nalivnye-poly-foto/poly-3d/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/3\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-sklada-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/4\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-garazh-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/5\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-ceh-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/6\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-piwevye-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/7\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-magaziny-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/8\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-sportzal-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/9\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/selhoz-poly-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/23\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/poly-ofisy-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye\/cena-elakor\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/zavisit-cena/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/zalivnye_poly-foto\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/zalivnye-poly-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/betonnie-styazhki\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/styazhka-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/magnezialnye-betony\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/magnezialnye-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/cena-nalivnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/cena-nalivnye-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pred\/igevsk1\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/igevsk/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pred\/krasnod1\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/krasnod/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pred\/habarovsk_2\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/habarovsk/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/vybor\/prompol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/sovety-po-vyboru-pokrytija-dlja-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/pokrytija-dlja-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/sovety-po-vyboru-pokrytija-dlja-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/pokrytija-dlja-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/prompol\/info\/sovety-po-vyboru-pokrytija-dlja-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/pokrytija-dlja-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/vybor-materiala-promyshlennogo-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/vybor-materiala-promyshlennogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/remont-promywlennyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/remont-promywlennyh-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/poly-dlja-sklada\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/poly-dlja-sklada/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/promyshlennye-poly-dlja-atomnoj-energetiki\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/promyshlennye-poly-dlja-atomnoj-energetiki/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/him-pokrytie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/himstojkij-promyshlennyj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/prompol\/info\/him-pokrytie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/himstojkij-promyshlennyj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/ustrojstvo-promyshlennyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/ustrojstvo-promyshlennyh-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/betonnye\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/betonnye/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/ceha\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/ceha/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/materialy\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/materialy/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/moskva\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/promyshlennyj-pol-moskva/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/prompol\/info\/moskva\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/promyshlennyj-pol-moskva/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/nalivnoe-pokrytie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/nalivnoe-pokrytie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/nalivnye\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/nalivnye/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/okraska\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/okraska/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/pokrytie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/pokrytie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/polimernoe-pokrytie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/polimernoe-pokrytie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/polimernye\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/polimernye/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/polimernye-nalivnye\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/polimernye-nalivnye/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/poliuretanovye\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/poliuretanovye/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/proizvoditeli\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/proizvoditeli/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/promyshlennye-pokrytija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/promyshlennye-pokrytija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/promyshlennye-zdanija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/promyshlennye-zdanija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/propitka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/propitka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/sovremennye\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/sovremennye/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/stroitelstvo\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/stroitelstvo/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/tehnologija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/tehnologija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/prompol\/zawita\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/zawita/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/dostoinstva-nalvnyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/dostoinstva-nalvnyh-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/kak-zalit-nalivnoj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/kak-zalit-nalivnoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/kupit-nalivnoj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/kupit-nalivnoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/luchshie-nalivnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/luchshie-nalivnye-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/materialy-remont\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/materialy-remont/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/nalivnoj-pol-chto-jeto-takoe\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/nalivnoj-pol-chto-jeto-takoe/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/nalivnoj-pol-garazh\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/nalivnoj-pol-garazh/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/oblasty-primenenia-nalivnogo-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/oblasty-primenenia-nalivnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/obschie-trebovaniya\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/obschie-trebovaniya/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/podgotovka-osnovanija-pod-nalivnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/podgotovka-osnovanija-pod-nalivnye-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/preimuschestva-nalivnyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/preimuschestva-nalivnyh-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/primenenie-poliuretanovyh-pokrytij\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/primenenie-poliuretanovyh-pokrytij/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/problemy-pri-ukladke-nalivnyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/problemy-pri-ukladke-nalivnyh-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/sdelat-nalivnoj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/sdelat-nalivnoj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/tehnologija-nanesenija-nalivnogo-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/nanesenije-nalivnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/trebovaniya-k-nalivnym-polam\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/trebovaniya-k-nalivnym-polam/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/ustrojstvo-nalivnogo-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/ustrojstvo-nalivnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/vybor-nalivnogo-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/vybor-nalivnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/nalivnye\/zavisit-cena\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/zavisit-cena/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/ekologicheskij-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/ekologicheskij-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/elakor-pu-vs-ed\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/elakor-pu-vs-ed/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/pokraska-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/pokraska-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/polimernyj-pol-chto-jeto-takoe\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/polimernyj-pol-chto-jeto-takoe/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/poly-sklad\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/poly-sklad/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/tolwina-polimernogo-pokrytija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/tolwina-polimernogo-pokrytija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/ukladka-poliuretanovyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/ukladka-poliuretanovyh-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/uprochnenie-betona-uprochnjauwaja-propitka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/uprochnjauwaja-propitka-betona/ [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^\/polymer\/info\/uprochnenie-betona-uprochnjauwaja-propitka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/uprochnjauwaja-propitka-betona/ [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/ustrojstvo-poliuretanovyh-pokrytij\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/ustrojstvo-poliuretanovyh-pokrytij/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/polymer\/vidy-polimernyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/vidy-polimernyh-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/betonokontakt-cena\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/betonokontakt-cena/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/deformacionnye-wvy-betonnyh-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/deformacionnye-wvy-betonnyh-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/fljuatirovanie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/fljuatirovanie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/gruntovka-betonokontakt\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/gruntovka-betonokontakt/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/magnezialnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/magnezialnye-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/mozaichnyj-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/mozaichnyj-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/ne-pyljawij-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/ne-pyljawij-pol/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/obespylivanie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/obespylivanie-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/info\/obespylivanie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/obespylivanie-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/okraska-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/okraska-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/pokraska-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/pokraska-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/polimercementnye-betonnye-poly-stroitelstvo\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/polimercement-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/info\/polimercementnye-betonnye-poly-stroitelstvo\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/polimercement-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/poliuretanovyi-lak-dlja-betonnogo-pola\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/poliuretanovyi-lak-dlja-betonnogo-pola/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/remont-betonnoy-stjaghki\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/remont-betonnoy-stjaghki/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/shlifovka-polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/shlifovka-polov/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/sootvetstvie-klassa-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/sootvetstvie-klassa-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/sroki-tverdenija-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/sroki-tverdenija-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/info\/toppingovye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/topping/poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/toppingovye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/topping/poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/ukladka-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/ukladka-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/uskorenie-tverdenija\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/uskorenie-tverdenija/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/vlijanie-harakteristik-peska-na-svojstva-betona\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/vlijanie-harakteristik-peska-na-svojstva-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/vodonepronicaemost\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/vodonepronicaemost/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/info\/beton\/zawita-betona-airport\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/info/zawita-betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/retail\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/order/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/wood\/poliuretanovyj-parketnyj-lak\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/wood/parketnyj-lak/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/wood\/lak-parket\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/wood/parketnyj-lak/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/wood\/poliuretanovyj-lak\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/wood/lak-dereva/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/lak-beton/\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/lak-kamnja-kirpicha/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/emal\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/mtr/poliuretanovaja-kraska/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye\/poly-3d\/1\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/poly-3d/svoimi-rukami/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nalivnye\/info\/poly-sklada\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/nalivnoj-pol-sklad/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/970\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/polymer/info/napolnoe-pokrytie/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/prompol\/nalivnye\/info\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/nalivnye/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/cena\/elastobeton-a1-peskobeton\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/a-cena-pesko/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/cena\/elastobeton-v-peskobeton\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/dobavki-betona/v-cena/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/cena\/fljuat-propitka\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/fljuat-propitka-cena/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/beton\/mozaichnyj-pol-terracco\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/beton/mozaichnyj-pol-terrazzo/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news/787\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye/info/nalivnye-poly-parking/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/metal\/metal-emal-uf\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/metal/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/839\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/prompol/info/poly-avtostoyanka/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/otz\/poly-korovniki\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/vybor/poly-korovniki/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/map.php?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/contacts/offices/ [R=301,L]
+RewriteCond %{REQUEST_URI} ^\/contacts\/map\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/contacts/offices/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/instrument\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/instrument/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/oil\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/price/oil/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pred\/ukraina\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pred\/kiev\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pred\/odessa\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pred\/dnepr\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pred/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/521\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p6/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/616\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p10/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/591\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p8/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/708\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p13/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/485\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/431/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/608\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p9/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/517\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p5/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/632\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p10/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/487\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p3/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/491\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p3/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/news\/501\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/news/p4/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/photos\/20\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/photos/polirovannyj-beton-foto/ [R=301,L]
+
+ErrorDocument 404 /404/
+ErrorDocument 403 /404/
+</IfModule>
