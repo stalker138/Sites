@@ -1,0 +1,11 @@
+<stylesheet>
+   <file>/css/global.css</file>
+   <classes>
+      <class title="Не задан" name="" for=""/>
+      <class title="" name="ved-body" for="body"/>
+      <class title="Стиль1" name="style1" for=""/>
+      <class title="Стиль2" name="style2" for=""/>
+      <class title="Стиль3" name="style3" for=""/>
+      <class title="linker" name="linker" for="a"/>
+   </classes>
+</stylesheet>
