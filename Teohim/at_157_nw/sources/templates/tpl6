@@ -1,0 +1,8 @@
+.dlli ul li { background:#c8c8c8; }
+.dlli .dlpopup li { background:#f0f0f0; }
+#dl_menu_second .dlli ul li a { color:#000000; padding-left:10px; }
+#dl_menu_second .dlli ul li a:hover { color:#ffffff; }
+#dl_menu_second .dlli .dlpopup li a { color:#004f92; }
+#dl_menu_third .dlli ul li { background:#004f92; }
+#dl_menu_third .dlli .dlpopup2 li { background:#004f92; }
+</style>

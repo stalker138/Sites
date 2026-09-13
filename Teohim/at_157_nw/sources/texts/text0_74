@@ -1,0 +1,103 @@
+#dh_main, #aobjlist {display:none;}
+#dlogoimg { left:35px; }
+#dh_menu {top:12px; left:260px; width:720px; }
+#dheader, .dsheader {height:81px;}
+#dnav { top:47px; left:260px; right:130px; height:35px; min-width:195px; width:auto; white-space:normal; }
+#mlmenu { z-index:1; }
+.tsstel { position:absolute; display:block; top:45px; right:10px; width:130px; height:20px; text-align:right; font:bold 14px arial; color:#c80000; }
+.tssbasket { position:absolute; display:block; top:65px; right:10px; width:130px; height:20px; text-align:right; font:normal 16px arial; letter-spacing:1px; color:#000000; }
+#dcontent { width:990px; }
+/* #dfooter, #dc_footer { height:24px; } #dfooter { margin:-23px 0 0 0; } #dsfooter { height:35px; } */
+.h2 { margin:0; text-transform:uppercase; letter-spacing:1px; color:#004f92; background:#eeeeee; }
+
+.tssdl, .tssdr { position:relative; display:block; float:left; max-width:480px; } .tssdl { margin:-7px 0 0 0; padding:0; } .tssdr { float:right; min-height:300px; }
+.tssp1, .tssp2 { float:left; margin-left:10px; font-size:14px; text-transform:uppercase; } .tssp2 { float:right; }
+.tssp1 span { display:inline-block; min-width:100px; font-weight:normal; }
+.tssart, .tssst, .tssprice, .tssbord, .tssdownload { display:inline-block; padding:5px 15px; text-align:center; font-weight:normal; font-size:14px; color:#ffffff; border-radius:15px; background:#1491ee; }
+.tssst,.tssprice { text-transform:none; color:#004f92; background:#eeeeee; } .tssprice { padding:0; font-size:25px; line-height:25px; letter-spacing:1px; color:#004f92; background:none; }
+.tssbord, .tssdownload { cursor:pointer; margin:5px 0 0 0; font-size:18px; letter-spacing:1px; color:#ffffff; background:#e87901; } .tssbord:hover { color:#000000; }
+.tssdl .tssbord { font-size:14px; } .tssdl .tssprice { font-size:20px; }
+.tssdwnl { position:absolute; display:block; float:right; bottom:0; right:0; font-size:13px; }
+.tssdownload { margin:5px 0 0 5px; text-decoration:none; background:#1491ee; } .tssdownload:hover { background:#000000; }
+.tsst1 { width:100%; border-collapse:collapse; border-spacing:0; padding:0; }
+.tsst1 td { padding:3px 10px; border:solid 1px #c8c8c8; } .tsst1 tr:nth-child(odd) { background:rgba(240,240,240,0.5); }
+
+.tssadd { position:relative; display:block; margin:10px 0 0 0; padding:0 10px 10px 10px; border:solid 1px #c8c8c8; }
+
+.tsslmenu { position:relative; display:block; float:left; padding:10px; margin:10px 0 0 0; width:225px; min-height:350px; font:normal 13px arial; text-align:left; color:#004f92; border:solid 1px #c8c8c8; }
+.tssli1 { position:relative; display:block; float:left; clear:both; width:17px; height:17px; }
+.tsslmenu a { position:relative; display:block; float:left; width:200px; text-align:left; text-decoration:none; } .tsslmenu a:hover { text-decoration:underline; }
+.tssmitem { position:relative; display:block; margin:0; padding:3px 0; width:225px; height:15px; line-height:15px; } .tssmitem:hover { background:#f0f0f0; }
+.tssulli a, .tssmitem a { width:200px; }
+.tssblock { position:relative; display:block; float:left; margin:10px 0 0 10px; width:235px; height:370px; font:normal 13px arial; text-align:center; border:solid 1px #c8c8c8; }
+.tssblock a { position:relative; display:block; text-decoration:none; } .tssblock a:hover { text-decoration:underline; }
+.tssblock img { position:relative; display:block; margin:0 auto; max-width:230px; height:147px; }
+.tssblock .tssshortmess { position:relative; display:block; margin:10px; font:normal 13px arial; text-align:left; color:#555555; }
+.tssblock .tssbcena { position:absolute; display:block; left:50px; bottom:50px; width:130px; line-height:25px; font:bold 16px arial; text-align:center; color:#004f92; }
+.tssblock .tssborder { cursor:pointer; position:absolute; display:block; padding:5px 15px; left:50px; bottom:10px; width:100px; line-height:25px; font:normal 14px arial; text-align:center; color:#ffffff; border-radius:15px; background:#e87901; }
+.tssblock .tssborder:hover { color:#000000; }
+.tsscatblocks { position:relative; display:block; float:right; max-width:730px; }
+
+.tsscat { position:relative; display:block; float:left; margin:10px 10px 0 0; width:230px; height:200px; font:normal 13px arial; text-align:center; border:solid 1px #c8c8c8; }
+.tsscat:hover { border:solid 1px #004f92; }
+.tsscat a { position:relative; display:block; text-decoration:none; } .tsscat a:hover { text-decoration:underline; }
+.tsscat img { position:relative; display:block; margin:0 auto; max-width:230px; height:147px; }
+
+.tssh1 { float:right; margin:10px 0 0 0; padding:0 10px; width:710px; border-top:none; }
+
+.tsslmenu ul { display:block; margin:0; padding:0; width:230px; list-style:none; }
+.tsslmenu ul li { display:block; margin:0; padding:3px 0; width:230px; height:15px; line-height:15px; } .tssulli { position:relative; overflow:hidden; z-index:1; } .tssulli:hover { overflow:visible; }
+.tssulli ul { position:absolute; display:block; margin:0; padding:5px 5px 7px 5px; top:-6px; left:230px; width:300px; height:auto; list-style:none; border:solid 1px #c8c8c8; background:#ffffff; }
+.tssulli ul li { padding:3px 5px 3px 5px; width:290px; } .tsslmenu ul li:hover, .tssulli ul li:hover { background:#f0f0f0; }
+.tssulli ul li a { width:270px; }
+
+.tssTblOrder, .tssTblOrder th, .tssTblOrder td { margin:0; padding:0; border:solid 1px #c8c8c8; border-collapse:collapse; }
+.tssTblOrder { width:100%; font:normal 12px arial; text-align:center; background:#f8f8f8; } .tssTblOrder th { padding:2px 4px; font-weight:bold; text-align:center; background:#eeeeee; } .tssTblOrder td { padding:2px 4px; }
+.tssTblOrder .tdl { padding:2px 1px 2px 7px; text-align:left; } .tssTblOrder .tdr { padding:2px 7px 2px 1px; text-align:right; }
+.tssTblOrder .tdd { cursor:pointer; font-size:15px; font-weight:bold; color:#c80000; background:rgba(200,0,0,0.1); } .tssTblOrder .tdi { cursor:pointer; }
+.tssTblOrder tr:nth-child(odd) { background:#eeeeee; } .tssTblOrder tr:hover { background:rgba(0,0,0,0.1)}
+.inpart { padding:2px 4px; width:50px; font-weight:bold; text-align:right; border:dotted 1px rgba(0,0,0,0.3); color:#800000; background:#ffffff; } .inpart:focus { border:solid 1px rgba(255,0,0,0.3); }
+
+#tss_page_order { }
+
+.hidden-xs { position:absolute; top:0; left:0; width:0; height:0; visibility:hidden; overflow:hidden; }
+
+/* ********************************************************************************** */
+/* GALLERY Галерея изображений с лупой */
+.pb_gal_preview {
+  position:relative; display:block; float:left; margin:0 20px 0 0; padding:0; width:110px; height:300px; border:solid 1px #c8c8c8; overflow-x:hidden; overflow-y:hidden;
+}
+.pb_gal_vmt, .pb_gal_vmb {
+  cursor:pointer; position:absolute; display:block; margin:0; padding:0; left:0; top:0; width:110px; height:15px; text-align:center; border-bottom:solid 1px #c8c8c8; background:#eeeeee;
+}
+.pb_gal_vmb { top:285px; border-top:solid 1px #c8c8c8; border-bottom:none; }
+
+.pb_gal_item {
+  position:relative; display:block; margin:0 4px; padding:0; width:100px; height:70px; text-align:center; border:solid 1px #c8c8c8; border-radius:4px; /*box-shadow:0 0 5px rgba(0, 0, 0, 0.6);*/
+}.pb_gal_item:hover { box-shadow:#005093 0 0 5px 0; }
+.pb_gal_item img {
+  cursor:pointer; position:relative; display:inline-block; margin:0 auto; padding:0; width:auto; max-width:100px; height:70px; border:none;
+}
+.pb_gal_photo {
+  cursor:pointer; position:relative; display:block; float:left; margin:0; padding:0; width:300px; height:300px; border:solid 1px #c8c8c8;
+}
+.pb_gal_photo img {
+    position:relative; display:block; margin:0; padding:0; border:none; /* box-shadow:0 0 5px rgba(0, 0, 0, 0.6); */
+}
+.pb_gal_mag {
+    position:absolute; display:none; margin:0; padding:0; left:480px; top:40px; width:500px; height:500px; overflow:hidden; border:solid 1px #808080; background:#ffffff; box-shadow:3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+.pb_gal_mag img {
+    position:absolute; display:block; margin:0; padding:0; left:0; top:0; border:none;
+}
+
+@media screen and (max-width:999px) {
+#dnav { display:block; top:3px; left:0; right:5px; left:110px; width:auto; height:63px; white-space:normal; overflow:auto; }
+#dcontent { width:auto; min-width:auto; padding-top:65px; } .tssdr { min-height:0; }
+#mtblock { height:65px; border-bottom:none; } #mtlogo { border-right: solid 1px #c8c8c8; border-bottom: solid 1px #c8c8c8; }
+.tssdl { margin:0; } .tsstel { top:20px; } .tssbasket { top:40px; } .tssh1 { width:auto; float:none; }
+.tssdwnl { position:relative; float:none; display:block; margin:20px 0 0 0; }
+}
+@media screen and (max-width:600px) {
+.tsslmenu { min-height:100px; } .tsstel { display:none; } .tssbasket { }
+}

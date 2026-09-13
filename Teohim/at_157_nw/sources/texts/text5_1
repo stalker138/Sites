@@ -1,0 +1,5 @@
+<div id="banner_video">
+<div>Новый&nbsp;&nbsp;обучающий<br>видеокурс 3D полы</div>
+<l1 id="54"><img style="left:8px;top:10px;width:86px;height:127px;" src="/img/css/v0.png" title="Смотреть СОДЕРЖАНИЕ видеокурса" alt="Видео наливные полы 3D" onmouseover="this.style.zIndex=1;$.animate(this,200,25,[8,10,86,127],[-72,-110,257,380])" onmouseout="this.style.zIndex=0;$.animate(this,200,25,[-72,-110,257,380],[8,10,86,127])" /></l1>
+<div style="top:75px;"><l1 id="351">Посмотреть видеокурс</l1></div>
+</div>

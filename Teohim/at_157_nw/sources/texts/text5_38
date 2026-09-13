@@ -1,0 +1,9 @@
+<?php if (1==2) { ?>
+<div class="smiles"><div class="px5"></div>Понравилась страница?<div class="px5"></div>
+<div id="id_smiles">
+<div class="smile"><img src="/img/was_pleasant.gif" title="ПОНРАВИЛАСЬ! - двойной клик для выбора" alt='Понравилась!' onclick="f_smiles(1)"/></div>
+<div class="smile"><img src="/img/understand.gif" title="СЛОЖНО РАЗОБРАТЬСЯ - двойной клик для выбора" alt='Сложно разобраться' onclick="f_smiles(2)"/></div>
+<div class="smile"><img src="/img/wasnt_pleasant.gif" title="НЕ ПОНРАВИЛАСЬ! - двойной клик для выбора" alt='НЕ понравилась!' onclick="f_smiles(3)"/></div>
+</div>
+<div class="smile" style="float:right;margin-top:-7px"><img src="/img/write.gif" title="Написать предложение" alt='Написать предложение' onclick="f_post(1)"/></div>
+</div><?php } ?>

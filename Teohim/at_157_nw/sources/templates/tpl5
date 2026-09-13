@@ -1,0 +1,13 @@
+<?php
+// $a_pages - массив со списком номеров страниц, для которых применён стиль astyle_NNN.css - без дублирования контента (один контент для десктопа и мобильных).
+$a_pages=array(1014,1014);
+if (in_array($pb_page,$a_pages)) {
+    print '<link rel="stylesheet" href="/cssjs/style_025_00.css" type="text/css">';
+} else {
+  if ($pb_special>192 && $pb_special<197) {
+    print '<link rel="stylesheet" href="/cssjs/aprint_014.css" type="text/css" media="all">';
+  } else {
+    print '<link rel="stylesheet" href="/cssjs/astyle_025_00.css" type="text/css">';
+  }
+}
+?><style>{*text0_100*}

@@ -1,0 +1,20 @@
+<!--noindex--><?php if ($pb_page==1002 || $pb_page==1003 || $pb_page==1005 || $pb_page==1021 || $pb_page==1251 || $pb_page==1254 || $pb_page==1255 || $pb_page==2061 || $pb_page==2063 || $pb_page==5016 || $pb_page==5017) { ?>
+<div class="macb1l mt10 fs13 bg3 br5 fi tac" style="float:right"><span class="fwb c4">Консультация</span> <a class="consult fwb" href="tel:+74997034037">+7-499-703-4037</a>,
+<div class="px3"></div>
+<a class="consult fwb" href="tel:88001005010">8-800-100-50-10</a><span class="fwn fs11"> (бесплатно)</span>
+</div>
+<?php } else { ?>
+<div class="macb2w"><div>
+<?php if ($cookie_utm=='UTM') { ?>
+<div class="fleft fs13 fi tac" style="padding:15px 2px 5px 8px;">
+<span class="fwb c4">Консультация</span> <a class="consult fwb" href="tel:+74952212252  ">+7-495-221-2252  </a>
+<?php } else { ?>
+<div class="fleft fs13 fi tac" style="padding:5px 2px 5px 8px;">
+<span class="fwb c4">Консультация</span> <a class="consult fwb" href="tel:+74997034037">+7-499-703-4037</a>
+<div class="px3"></div>
+<a class="consult fwb" href="tel:88001005010">8-800-100-50-10</a><span class="fwn fs11"> (бесплатно)</span>
+<?php } ?>
+</div>
+<div class="callback macb2r fs13 fi c2 tac">ОБРАТНЫЙ<div class="px3"></div>звонок</div>
+</div></div>
+<?php } ?><!--/noindex-->

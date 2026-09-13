@@ -1,0 +1,1 @@
+<!DOCTYPE html><html lang="ru"<?php if (1==1 && isset($pb_page)) print ' prefix="og: //ogp.me/ns#"';?>><?php if (isset($pb_page)) print '<!--'.$pb_page_index.'_'.$pb_page_number.'-->'; ?><head>

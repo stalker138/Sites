@@ -1,0 +1,58 @@
+<?php
+function f_print_wa($n_tel='', $wa=0, $tg=0) {//вывод значков WhatsApp/Telegram
+  $out='';
+  if ($n_tel == "") return;
+  if ($wa==0 && $tg==0) return;
+  $out='<div style="margin:0; padding:0; position:relative; top:2px;">';
+  if ($wa!=0) {
+  $out.=' &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone='.$n_tel.'"><img src="/img/css/whatsapp.png" alt="Связаться WhatsApp" title="Связаться WhatsApp" style="width:16px;"></a>';
+  }
+  if ($tg!=0) {
+  $out.=' &nbsp;<a class="consult" href="https://t.me/+'.$n_tel.'"><img src="/img/css/telegram.png" alt="Связаться Telegram" title="Связаться Telegram" style="width:16px;"></a>';
+  }
+  $out.='</div>';
+  print $out;
+}
+?>
+<p class="fwb">Официальный представитель ООО «ТэоХим»:  по Дальневосточному Федеральному округу, в т.ч. Хабаровский край, Амурская область, Еврейская АО, Магаданская область, Камчатский край, Сахалинская область.</p>
+<h2 class="h14p">ООО «ТЭОХИМ-ДВ»</h2>
+<?php if($pb_page==3125) { ?><p><em>г. Хабаровск, Пр-кт 60 лет Октября, д. 170 (региональный склад)</em></p>
+<img class="pb_ismall" src="/img/pred/habarovsk_map_s_.jpg" onclick="$.zoomImg(this,'/img/pred/habarovsk_map_.jpg',200,25,760,560,'Схема проезда ООО «ТэоХим-ДВ, Хабаровск»',-25);" title="Схема проезда ООО «ТэоХим-ДВ, Хабаровск»" alt="Схема проезда ООО «ТэоХим-ДВ, Хабаровск»"/><?php } ?>
+
+<table class="tbl2">
+<tbody>
+<tr><td style="width:200px"><span>Руководитель</span>:</td><td colspan="3">Печко Антон Сергеевич</td></tr>
+<tr><td style="padding:3px 0"><span>Телефон</span>:</td><td style="padding:0"><div><a href="tel:+79144076648">+7 914 407-66-48</a><?php f_print_wa('79144076648', 1, 1) ?></div><br><div><a href="tel:+79098506580">+7 909 850 65 80</a></div></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<?php if($pb_page==3125) { ?>
+<tr><td><span>Финансовый отдел</span>:</td><td><div><a href="tel:+79141545484">+7 914 154-54-84</a></div></td><td>&nbsp;<!--+7 914 772 49 51--></td><td>&nbsp;</td></tr>
+<?php }?>
+<tr><td><span>E-mail</span>:</td><td colspan="3"><span id="dpIDmail">&nbsp;</span></td></tr>
+<?php if($pb_page==3029) { ?>
+<tr><td><span>Сайт:</span></td><td colspan="3" id="dpIDsite"><a href="https://teohim-blag.ru" target="_blank">Наливные полимерные полы Благовещенск</a></td></tr>
+<?php } else { if($pb_page==3129) { ?>
+<tr><td><span>Сайт:</span></td><td colspan="3" id="dpIDsite"><a href="https://teohim-sahalin.ru" target="_blank">Полимерные наливные полы Южно-Сахалинск</a></td></tr>
+<?php } else { if($pb_page==3025) { ?>
+<tr><td><span>Сайт:</span></td><td colspan="3" id="dpIDsite"><a href="https://teohim-chukotka.ru" target="_blank">Полимерные наливные полы Анадырь</a></td></tr>
+<?php } else { if($pb_page==3028) { ?>
+<tr><td><span>Сайт:</span></td><td colspan="3" id="dpIDsite"><a href="https://teohim-birobidzhan.ru" target="_blank">Полимерные наливные полы Биробиджан</a></td></tr>
+<?php } else { if($pb_page==3069) { ?>
+<tr><td><span>Сайт:</span></td><td colspan="3" id="dpIDsite"><a href="https://teohim-magadan.ru" target="_blank">Полимерные наливные полы Магадан</a></td></tr>
+<?php } else { if($pb_page==3096) { ?>
+<tr><td><span>Сайт:</span></td><td colspan="3" id="dpIDsite"><a href="https://teohim-kamchatka.ru" target="_blank">Полимерные наливные полы Камчатка</a></td></tr>
+<?php } else { ?>
+<tr><td><span>Сайт:</span></td><td colspan="3" id="dpIDsite"><a href="https://teohimdv.ru" target="_blank">Наливные полимерные полы Хабаровск</a></td></tr>
+<?php } } } } } }?>
+</tbody>
+</table>
+<div class="px0b"></div>
+<div class="px5"></div>
+
+<div class="dtmp"><span>Компания «ТЭОХИМ-ДВ»</span> приглашает к сотрудничеству строительные компании, строительные бригады для производства работ по устройству промышленных полимерных полов «ЭЛАКОР»  в регионах ДФО. (Амурская область, Еврейская АО, Магаданская область, Сахалинская область, Камчатский край)
+<div class="px10"></div>Оказываем техническую поддержку.<br>Обучение, консультации для ваших специалистов.<br>
+Специальные цены на материалы «ЭЛАКОР».</div>
+<div class="px5"></div>
+
+<p>ООО «ТЭОХИМ-ДВ» более 10 лет  является официальным представителем компании «ТэоХим»  г. Москва  и обладает эксклюзивными правами поставку полимерных материалов для устройства промышленных полов,  тм «Элакор» на территории Дальневосточного Федерального Округа.</p>
+<p>ООО «ТЭОХИМ-ДВ»  специализируется не только на поставке материалов «Элакор», но и на устройстве полимерных и наливных полов для помещений промышленных производств, складских комплексов, медицинских и учебных учреждений, учреждений социально–культурного, коммерческого и спортивного назначений, гаражей, паркингов и открытых площадок.</p>
+<p>На счету компании десятки успешно реализованных проектов, среди которых объекты промышленного и общественного назначения. Сделаны десятки тысяч квадратных метров полимерных покрытий (упрочняющие пропитки, окрасочные покрытия, наливные полы, кварцнаполненные полы и т.д.), которые на сегодняшний день являются самыми надежными видами напольных покрытий.</p>
+

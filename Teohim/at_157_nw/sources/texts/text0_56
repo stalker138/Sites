@@ -1,0 +1,360 @@
+<?php $show=($pb_page!=1023 && $pb_page!=5002 && $pb_page!=5010); ?>
+var pivrc = [2.0, 1.5, 1.2, 1.0, 0.9, 3.0], pivrs = JSON.parse(JSON.stringify(pivrc));  /* Работы от площади (*) */
+var mtr=[], pkr=[], v_tmp_interval=null, cvi='';
+
+<?php
+$apkr=array(10,11,13,87,17,23,25,31,33,35,37,39,40,51,53,55,63,65,71,73,81,83,85,89,93,95);
+$amtr=array(11,15,17,19,23,26,27,29,33,40,41,49,53,57,61,65,71,83,121,135,139,143,145,221,227,325,329,339,341,347);
+$cnt=count($apkr);
+for($i=0; $i<$cnt; $i++) {
+    $a = str_replace('%','',$pkr[$apkr[$i]]);
+    print 'pkr['.$apkr[$i]."]=['','','',".$a[3].','.$a[4].','.$a[5];
+    if (count($a)>6) { print ','.$a[6].','.$a[7].','.$a[8].','.$a[9].','.$a[10].','.$a[11]; }
+    print '];'.chr(10);
+}
+$cnt=count($amtr);
+for($i=0; $i<$cnt; $i++) {
+    $a = str_replace('%','',$mtr[$amtr[$i]]);
+    print 'mtr['.$amtr[$i]."]=['','','',".((int)$a[3]).','.((int)$a[4]).','.((int)$a[5]).','.((int)$a[6]).','.((int)$a[7]).','.((int)$a[8]).','.$a[9].','.$a[10].','.$a[11].','.$a[12].','.$a[13].','.$a[14].','.$a[15].'];'.chr(10);
+}
+?>
+
+<?php if($show) { ?>
+function showTable(cvi) {
+cvi = cvi || '';
+console.log('cvi='+cvi);
+$.id('table1'+cvi).style.display='none'; $.id('table2'+cvi).style.display='inline';
+var t2p=$.id('table2p'+cvi); if(t2p) t2p.style.display='inline';
+}
+
+var v_tmp_h=0;
+function f_scroll(m, step, h) {
+    var p=$.id('dscr');
+    if (m==1) { v_tmp_h+=step; if (v_tmp_h>=h) { if (v_tmp_interval) clearInterval(v_tmp_interval); v_tmp_interval=null; v_tmp_h=h; } }
+    if (m==2) { v_tmp_h-=step; if (v_tmp_h<=0) { if (v_tmp_interval) clearInterval(v_tmp_interval); v_tmp_interval=null; v_tmp_h=0; } }
+    p.style.height=v_tmp_h+'px';
+}
+<?php } ?>
+
+function f_r(s,n) { n=n||2; return s.toFixed(n).replace(/\./g,","); }
+function f_r0(s)  { var i, j, p=s.toFixed(0).replace(/\./g,","); for (i=3;i<=15;i+=4) { j=p.length-i; if (j<=0) break; p=p.substr(0,p.length-i)+' '+p.substr(p.length-i); } return p; }
+
+function get_kat(pi_so) {
+    /* Категория работ (индекс в массиве pivrc) */
+    if (pi_so<50) return 5;
+    if (pi_so>=2000) return 4;
+    if (pi_so>=600 && pi_so<2000) return 3;
+    if (pi_so>=400 && pi_so<600)  return 2;
+    if (pi_so>=200 && pi_so<400)  return 1;
+    return 0;
+}
+function get_kvrc(pi_so) {
+    /* Гибкий коэффициент от площади работ */
+    var y = Math.pow(pi_so, -0.357)*11.77606; console.log(y+'  '+pi_so);
+    /* if (pi!=95) return 1; */
+    if (pi_so>=1000) y = 1;
+    if (pi_so>=2000) y = 0.95;
+    if (pi_so>=5000) y = 0.9;
+    if (pi_so>=10000) y = 0.85;
+    if (pi_so>=20000) y = 0.8;
+    return y;
+}
+function get_price(kol) {
+    /* Ценовая категория в зависимости от расхода (индекс столбца в файле materials) */
+    if (kol<40)   return 3;
+    if (kol<200)  return 4; 
+    if (kol<500)  return 5;
+    if (kol<1000) return 6;
+    if (kol<3000) return 7;
+    return 8;
+}
+
+function get_kol(i, kol, kol2) {
+    /* Округление количества материалов до тарных мест */
+    if (kol2) kol += kol2;
+    var pkt_min=mtr[i][11];
+    if (pkt_min>0) {
+        var pkt = (kol>=pkt_min)? mtr[i][12] : mtr[i][13];
+        kol = Math.ceil(kol/pkt)*pkt;
+    }
+    if (kol2) kol -= kol2;
+    return kol;
+}
+
+<?php if($show) { ?>
+function fill_results(rid, vals, pi_so) {
+    /** Заполнение ячеек таблицы расчета
+     *  rid  - строковый параметр id ячеек строки таблицы (sh, gr, ...)
+     *  vals - массив значений ячеек */
+    if ($.id('o_r'+rid+cvi)) {
+      $.id('o_r'+rid+cvi).innerHTML=f_r(pi_so<=0?0:vals[0], pi_so<=0?0:((pi==95 && rid=='nk')||(pi==39 && rid=='gk')?3:0));      /* Расход кг/м2 */
+      $.id('o_c'+rid+cvi).innerHTML=f_r(pi_so<=0?0:vals[1]);                 /* Цена руб/кг */
+      $.id('o_k'+rid+cvi).innerHTML=f_r(pi_so<=0?0:vals[2]);                 /* Кол-во кг (тарированное) */
+      $.id('o_s'+rid+cvi).innerHTML=f_r0(pi_so<=0?0:(vals[1]*vals[2]));        /* Стоимость руб */
+      $.id('o_m'+rid+cvi).innerHTML=f_r(pi_so<=0?0:(vals[1]*vals[2]/pi_so));   /* Цена руб/м.кв */
+    }
+}
+<?php } ?>
+
+function f_i_t() {
+    var pi_so,pi_mb=0,pi_se=0,pi_sh=0,pi_np=0,pi_fl=0,ir;
+    var pi_vmc=parseFloat(pkr[pi][4],10);    /* Прочие материалы, инструмент */
+    var pi_vrc=parseFloat(pkr[pi][3],10);    /* Стоимость Работ за 1кв.м. по категориям */
+    var pi_kvrc=1;   /* Гибкий коэффициент от площади работ */
+    var pi_vrsh=0;                      /* Шпатлевка */
+    var pi_rkat=5;                      /* ценовая категории работ */
+    var pi_cgr=0,pi_csh=0,pi_csk=0,pi_cnp=0,pi_cnk=0,pi_cfs=0,pi_cfl=0,pi_cfl2=0,pi_cml=0,pi_cgk=0;
+    var pi_rgr=0,pi_rsh=0,pi_rsk=0,pi_rnp=0,pi_rnk=0,pi_rfs=0,pi_rfl=0,pi_rfl2=0,pi_rml=0,pi_rgk=0;
+    var pi_kgr=0,pi_ksh=0,pi_ksk=0,pi_knp=0,pi_knk=0,pi_kfs=0,pi_kfl=0,pi_kfl2=0,pi_kml=0,pi_kgk=0;
+    var ki, kn, li, ln;
+
+console.log('cvi:'+cvi);
+    pi_so=parseFloat($.id('i_so').value.replace(/,/g,"."));
+    if (mb) pi_mb=parseFloat($.id('i_mb').value.replace(/,/g,"."))/50 - 2;
+<?php if($show) { ?>
+    if (se || sp) pi_se=parseFloat($.id('i_se').value.replace(/,/g,"."));
+    if (sh) pi_sh=parseFloat($.id('i_sh').value.replace(/,/g,"."));
+    if (ne) pi_np=parseFloat($.id('i_np').value.replace(/,/g,"."));
+    if (fl) pi_fl=(fl==-1 || pi==83)? parseFloat($.id('i_fl').value.replace(/,/g,".")):fl;
+<?php } else { ?>
+    pi_se = se || 0;
+    pi_fl = (fl==-1) ? 0 : fl; if (pi == 83) pi_fl=1;
+<?php } ?>
+    /* ir = get_kat(pi_so); */  /* категория работ */
+    pi_kvrc = get_kvrc(pi_so);  /* категория работ */
+
+    if (pi == 81 && pi_sh) { pi_vrc=360; pi_vmc=88.8; }
+<?php if($show) { ?>
+    if (sh) {
+       if (v_tmp_interval) { v_tmp_interval=null; clearInterval(v_tmp_interval); }
+       if (pi_sh==1 && v_tmp_h<32) v_tmp_interval=setInterval('f_scroll(1,10,46);',20);
+       if (pi_sh==0 && v_tmp_h>0)  v_tmp_interval=setInterval('f_scroll(2,10,46);',20);
+    }
+    if (fl==-1) {
+       if (v_tmp_interval) { v_tmp_interval=null; clearInterval(v_tmp_interval); }
+       if (pi_fl >0 && v_tmp_h<32) v_tmp_interval=setInterval('f_scroll(1,7,23);',23);
+       if (pi_fl==0 && v_tmp_h>0)  v_tmp_interval=setInterval('f_scroll(2,7,23);',23);
+    }
+<?php } ?>
+
+    if (gr) {                            /* Грунтовка (нет для асфальта) */
+        pi_rgr = pirgr[pi_mb];
+        pi_kgr = get_kol(gr, pi_rgr*pi_so);
+    }
+    if (fs) {                            /* Финишный слой */
+        pi_rfs = (typeof(pirfs)=='function')? ((pi==39||pi==37||pi==93) ? pirfs(pi_se, pi_np) : pirfs(pi_se, pi_sh)) : pirfs[pi_mb];
+        if (pi_se) {
+            var vmrc = pivfs(pi_se);     /* Доп. работы и материалы */
+            pi_vrc += vmrc[0];
+            pi_vmc += vmrc[1];
+        }
+    }
+    if (np) {                            /* Наполнитель */
+        pi_rnp = pirnp[pi_np];
+        pi_knp = pi_rnp * pi_so;
+        if (fs == np) { pi_kfs = get_kol(fs, pi_rfs*pi_so, pi_knp); }
+        else { pi_knp = get_kol(np, pi_knp); }
+        if (nk) {
+          nk = nkif(pi_np);
+          if (pi == 83) {
+            pi_knp = get_kol(49, pi_knp);
+            pi_rnk = pirnk[0];
+            pi_knk = pi_rnk*pi_so;
+          } else {
+            if(nk==341 && $.id('o_nnk'+cvi)) $.id('o_nnk'+cvi).innerHTML='Кварц окатанный 0,3-0,6мм';
+            if(nk==339 && $.id('o_nnk'+cvi)) $.id('o_nnk'+cvi).innerHTML='Кварц окатанный 0,1-0,4мм';
+            pi_rnk = pirnk[pi_np];
+            if (nk==339 && pirsk.toFixed(2)=='0.45') {
+                pi_knk = pi_rnk * pi_so;
+            } else {
+                pi_knk = get_kol(nk, pi_rnk*pi_so);
+            }
+          }
+        }
+    }
+    if (gr == np && gr!=0) { /* page 2206 и 2235 Антискользящее покрытие (85) */
+        pi_knp = pi_rnp * pi_so;
+        pi_kgr = get_kol(gr, pi_rgr*pi_so, pi_knp);
+    }
+    if (fs && fs != np)                 /* (fs == np)  обработано ранее */
+        pi_kfs = get_kol(fs, pi_rfs*pi_so);
+    if (pi_fl) {                        /* Финишный лак */
+        if (fl == -1 || pi == 83) {
+            <?php if($show) { ?>ln = nfl[pi_fl];<?php } ?>     /* наименование лака */
+            li = ifl[pi_fl];            /* индекс лака */
+        }
+        else {
+            <?php if($show) { ?>ln = nfl;<?php } ?>
+            li = fl;
+        }
+        pi_rfl = pirfl;
+        pi_kfl = get_kol(li, pi_rfl*pi_so);
+        if (fl2) {
+          pi_rfl2 = pirfl2;
+          pi_kfl2 = get_kol(fl2, pi_rfl2*pi_so);
+        }
+        pi_vrc += pivfl;
+        if (pi==51 || pi==53 || pi==55) pi_vmc += pimfl;
+    }
+
+    if (vrm) pi_vrc += parseInt(pkr[pi][pi_mb+6],10);
+    if (ne) {
+        pi_vrc += pivrn[pi_np];
+        pi_vmc += pivrm[pi_np];
+    }
+    /* if (pi!=95) pi_vrc *= pivrc[ir]; */
+
+    if (pi_sh) {
+        pi_rsh = pirsh;                      /* Расход шпатлевки */
+        pi_rsk = pirsk;                      /* Расход кварца */
+        if (pi!=81) {
+            pi_vrsh = parseFloat(pkr[10][3],10);   /* Работы шпатлевки */
+            pi_vmc += parseFloat(pkr[10][4],10);   /* Доп. материалы */
+            pi_vrc += pi_vrsh;                     /* Доп. работы */
+            /* if (pi!=95) pi_vrc *= pivrs[ir]; */
+        }
+        pi_ksh = get_kol(sh, pi_rsh*pi_so);
+        pi_ksk = get_kol(sk, pi_rsk*pi_so);
+    }
+
+    if (pi_kvrc!=1) pi_vrc*=pi_kvrc;    /* Гибкий коэффициент от площади работ */
+
+    pi_kol=pi_kgr+pi_ksh+pi_knp+pi_kfs+pi_kfl+pi_kfl2;
+    ip = get_price(pi_kol);                  /* ценовая категория */
+
+    if (gr) {                                /* Грунтовка (нет для асфальта) */
+        pi_cgr = parseInt(mtr[gr][ip],10);
+console.log(ip, pi_kol, pi_rgr, pi_cgr, pi_kgr);
+        <?php if($show) { ?>fill_results('gr', [pi_rgr, pi_cgr, pi_kgr], pi_so);<?php } ?>
+    }
+    if (ml) {                                /* Медная лента */
+        pi_rml = 1.2;
+        pi_kml = Math.ceil(pi_rml*pi_so/20)*20;
+        pi_cml = parseInt(mtr[325][ip],10);
+         <?php if($show) { ?>fill_results('ml', [pi_rml, pi_cml, pi_kml], pi_so);<?php } ?>
+    }
+    if (gk) {                                /* Разбавитель К */
+        pi_rgk = pirgk[pi_np];                /* Расход разбавителя */
+        pi_cgk = parseInt(mtr[gk][ip],10);;   /* Цена разбавителя */
+        pi_kgk = get_kol(gk, pi_rgk*pi_so);
+        <?php if($show) { ?>fill_results('gk', [pi_rgk, pi_cgk, pi_kgk], pi_so);<?php } ?>
+    }
+<?php if($show) { ?>
+    if (pi==39 || pi==37) {
+        pi_rsk = pirnk14[pi_np];            /* Расход кварца */
+        pi_csk = parseInt(mtr[339][ip],10); /* Цена кварца */
+        pi_ksk = get_kol(339, pi_rsk*pi_so);
+        fill_results('sk', [pi_rsk, pi_csk, pi_ksk], pi_so);
+        if (pi_np>0) { if ($.id('id_td_gk')) $.id('id_td_gk').setAttribute('rowspan',pi==39?3:3); if ($.id('id_tr_gk1')) $.id('id_tr_gk1').style.display='table-row';  if($.id('id_tr_gk2')) $.id('id_tr_gk2').style.display='table-row'; }
+        else { if ($.id('id_td_gk')) $.id('id_td_gk').setAttribute('rowspan',pi==39?2:2); if ($.id('id_tr_gk1')) $.id('id_tr_gk1').style.display='table-row';  if($.id('id_tr_gk2')) $.id('id_tr_gk2').style.display='none'; }
+    }
+<?php } ?>
+    if (pi_sh) {                            /* Шпатлевка */
+        pi_csh = parseInt(mtr[sh][ip],10);
+        pi_csk = parseInt(mtr[sk][ip],10);
+        <?php if($show) { ?>
+        fill_results('sh', [pi_rsh, pi_csh, pi_ksh], pi_so);
+        fill_results('sk', [pi_rsk, pi_csk, pi_ksk], pi_so);
+        <?php } ?>
+    }
+    if (fs) {                                /* Финишный слой */
+        pi_cfs = parseInt(mtr[fs][ip],10);
+        <?php if($show) { ?>fill_results('fs', [pi_rfs, pi_cfs, pi_kfs], pi_so);<?php } ?>
+        if (pirsk.toFixed(2)=='0.45') {
+            pi_rsk = pirsk; pi_csk = parseInt(mtr[339][ip],10); pi_ksk = get_kol(339, pi_rsk*pi_so, ((nk==339)?pi_knk:0));
+             <?php if($show) { ?>fill_results('sk', [pi_rsk, pi_csk, pi_ksk], pi_so);<?php } ?>
+        }
+    }
+    if (np) {                                /* Наполнитель */
+        pi_cnp = parseInt(mtr[np][ip],10);
+        <?php if($show) { ?>fill_results('np', [pi_rnp, pi_cnp, pi_knp], pi_so);<?php } ?>
+        if (nk) {
+            pi_cnk = (pi == 83) ? pirnk[1] : parseInt(mtr[nk][ip],10);
+            <?php if($show) { ?>fill_results('nk', [pi_rnk, pi_cnk, pi_knk], pi_so);<?php } ?>
+        }
+    }
+    if (pi_fl) {                            /* Финишный лак */
+        pi_cfl = parseInt(mtr[li][ip],10);
+        if (fl2) pi_cfl2 = parseInt(mtr[fl2][ip],10);
+        <?php if($show) { ?>
+        fill_results('fl', [pi_rfl, pi_cfl, pi_kfl], pi_so);
+        $.id('o_nfl'+cvi).innerHTML=ln;
+        if (fl2) {
+          fill_results('fl2', [pi_rfl2, pi_cfl2, pi_kfl2], pi_so);
+          $.id('o_nfl2'+cvi).innerHTML=nfl2;
+        }
+        <?php } ?>
+    }
+
+    var kol = pi_kol + pi_ksk + pi_knk;     /* Кол-во кг */
+    var st  = pi_kgr*pi_cgr+pi_kml*pi_cml+pi_kgk*pi_cgk+pi_ksh*pi_csh+pi_ksk*pi_csk+pi_knp*pi_cnp+pi_knk*pi_cnk+pi_kfs*pi_cfs+pi_kfl*pi_cfl+pi_kfl2*pi_cfl2;
+
+    if (pi_so<=0) st=kol=pi_vrc=pi_vmc=0;
+<?php if($show) { ?>
+    $.id('o_ikol'+cvi).innerHTML=f_r(kol);
+    $.id('o_icena_'+cvi).innerHTML=f_r(pi_so<=0?0:(st/pi_so));    /* Цена руб/м.кв */
+    $.id('o_ist'+cvi).innerHTML=f_r0(st);            /* Стоимость руб */
+    $.id('o_voc'+cvi).innerHTML=f_r(pi_so<=0?0:(st/pi_so));       /* Основные материалы, инструмент */
+    $.id('o_vos'+cvi).innerHTML=f_r0(st);            /* Основные материалы, инструмент - На всю площадь */
+    $.id('o_vmc'+cvi).innerHTML=f_r(pi_vmc);         /* Прочие материалы, инструмент */
+    $.id('o_vms'+cvi).innerHTML=f_r0(pi_vmc*pi_so);  /* Прочие материалы, инструмент - На всю площадь */
+    $.id('o_vrc'+cvi).innerHTML=f_r(pi_vrc);         /* Работы */
+    $.id('o_vrs'+cvi).innerHTML=f_r0(pi_vrc*pi_so);  /* Работы На всю площадь */
+    $.id('o_ic'+cvi).innerHTML=f_r(pi_so<=0?0:(st/pi_so+pi_vmc+pi_vrc));    /* цена работ */
+    $.id('o_is'+cvi).innerHTML=f_r0(st+(pi_vmc+pi_vrc)*pi_so);  /* и стоимость */
+<?php } else { // КАЛКУЛЯТОР ?>
+    $.id('m' + pi).innerHTML = $.id('m_m' + pi).innerHTML = f_r0(pi_so<=0?0:(st/pi_so));
+    $.id('mi' + pi).innerHTML = $.id('m_mi' + pi).innerHTML = f_r0(st);
+    $.id('r' + pi).innerHTML = $.id('m_r' + pi).innerHTML = f_r0(pi_vmc+pi_vrc);
+    $.id('ri' + pi).innerHTML = $.id('m_ri' + pi).innerHTML = f_r0((pi_vmc+pi_vrc)*pi_so);
+    $.id('mr' + pi).innerHTML = $.id('m_mr' + pi).innerHTML = f_r0(pi_so<=0?0:(st/pi_so+pi_vmc+pi_vrc));
+    $.id('mri' + pi).innerHTML = $.id('m_mri' + pi).innerHTML = f_r0(st+(pi_vmc+pi_vrc)*pi_so);
+<?php } ?>
+}
+<?php if($show) { ?>
+var v_tmp_i_pkr=null;
+function f_calc(id) {
+    var w=window.location, p=$.id('i_so'); if (p) $.sLS('i_so',p.value);
+    p=$.id('i_mb'); if (p) $.sLS('i_mb',p.value);
+    if (id=='i_pkr') {
+    p=$.id('i_pkr'); if (p) p=p.value; else return;
+    if (v_tmp_i_pkr==null) v_tmp_i_pkr=p; $.id('i_pkr').value=v_tmp_i_pkr;
+    if (p=='0')  w.href='/polymer/cena/';
+    if (p=='11') w.href='/polymer/cena/poliuretanovaja-propitka/';
+    if (p=='13') w.href='/polymer/cena/glubokaja-propitka/';
+    if (p=='17') w.href='/polymer/cena/epoksidnaya-propitka/';
+    if (p=='87') w.href='/polymer/cena/antiskolz-propitka/';
+    if (p=='23') w.href='/beton/fljuat-propitka-cena/';
+    if (p=='25') w.href='/polymer/cena/akrilovaja-propitka/';
+    if (p=='31') w.href='/polymer/cena/poliuretanovoe-pokrytie/';
+    if (p=='33') w.href='/polymer/cena/epoksidnoe-pokrytie/';
+    if (p=='35') w.href='/polymer/cena/polimernoe-pokrytie/';
+    if (p=='85') w.href='/polymer/cena/antiskolzjawee-pokrytie/';
+    if (p=='83') w.href='/polymer/cena/pokrytie-floki/';
+    if (p=='81') w.href='/polymer/cena/pokrytie-dlja-asfalta/';
+    if (p=='51') w.href='/nalivnye/epoksidnyj-nalivnoj-pol-cena/';
+    if (p=='53') w.href='/nalivnye/poliuretanovyj-nalivnoj-pol-cena/';
+    if (p=='71') w.href='/nalivnye/prom-nalivpol-ed-cena/';
+    if (p=='73') w.href='/nalivnye/prom-nalivpol-pu-cena/';
+    if (p=='55') w.href='/nalivnye/beloe-nalivnoe-pokrytie-cena/';
+    if (p=='39') w.href='/polymer/cena/kvarc-pokrytie/';
+    if (p=='37') w.href='/polymer/cena/pokrytie-peskom/';
+    if (p=='63') w.href='/antistat/cena/tp-ed-pol/';
+    if (p=='65') w.href='/antistat/cena/er-ed-pol//';
+    if (p=='89') w.href='/polymer/cena/himstojkoe-pokrytie/';
+    if (p=='93') w.href='/polymer/cena/bezyskrovoe-pokrytie/';
+    if (p=='95') w.href='/polymer/cena/antistaticheskoe-pokrytie/';
+    } else f_i_t(id);
+}
+<?php } ?>
+
+function f_set() {
+    var p=$.gLS('i_so')||0; if (p) $.id('i_so').value=p;
+    if($.id('i_mb')) { p=$.gLS('i_mb')||0; if (p) $.id('i_mb').value=p; }
+<?php if($show) { ?>
+    if ($.id('i_pkr')) $.id('i_pkr').value=pi;
+    f_i_t();
+<?php } else { // КАЛКУЛЯТОР ?>
+    f_refresh();
+<?php } ?>
+}

@@ -1,0 +1,24 @@
+<!--noindex-->
+<div class="px10b"></div>
+<div class="macb1l mt10 fs13 bg3 br5 fi tac" style="margin-right:10px;padding:5px 3px;width:255px"><span class="c2">Купить МАТЕРИАЛЫ</span><span class="fwb c4"> +Консультация</span>
+<div class="px3"></div>
+<?php if ($cookie_utm=='') { ?>
+<a class="consult fwb" href="tel:+74959568596">+7 (495) 956-85-96</a>, &nbsp;
+<?php } ?>
+<a class="consult fwb" href="tel:+74952212252">+7 (495) 221-22-52</a></div>
+<div class="macb1l mt10 fs13 bg3 br5 fi tac" style="margin-right:10px;padding:5px 0;width:260px"><span class="c2">Заказать РАБОТЫ</span><span class="fwb c4"> + Консультация</span>
+<div class="px3"></div>
+<?php if ($cookie_utm=='') { ?>
+<a class="consult fwb" href="tel:+74955184378">+7 (495) 518-4378</a>
+, &nbsp;<span>WA:</span> <a class="consult fwb" href="https://api.whatsapp.com/send?phone=79262940395">+7-926-294-0395</a>
+<?php } else { ?>
+<a class="consult fwb" href="tel:+74955184378">+7 (495) 518-43-78</a>
+<?php } ?>
+</div>
+<div class="dcalc_cb">
+<l1 id="23" class="mpls01 mt10 tac" style="display:block;float:left;padding:5px 7px;">КАЛЬКУЛЯТОР<div class="px1"></div>полов</l1>
+<div class="callback macb1r mt10 fs13 bg3 br5 fi c2 tac" style="clear:none;float:right;padding:5px 8px;"><span class="c2">ОБРАТНЫЙ<div class="px3"></div>звонок</span></div>
+</div>
+<div class="px10b"></div>
+<div class="px10"></div>
+<!--/noindex-->

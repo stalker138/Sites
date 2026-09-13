@@ -1,0 +1,433 @@
+<?php 
+//расширенная информация о материалах
+$txt=@file_get_contents($pb_root.'sys/materials_dop'); $mtr_dop=false; $mtr_dop[]=false; for ($i=1; $i<351; $i++) {
+    $pos=strpos($txt,chr(10)); if ($pos==false) break; $str=substr($txt,0,$pos); $txt=substr($txt,$pos+1);
+    if ($str!=' ') $mtr_dop[]=explode(chr(9),$str); 
+    else $mtr_dop[]=false;
+}
+
+//массив группировочных ссылок (ссылки в верхней правой части таблицы)
+$a_gr_link = false; for ($i=0; $i<=100; $i++) { $a_gr_link[]=array(); }
+$a_gr_link[1]=array('<l1 id="107">', '%Все полиуретановые грунты%');  // </l1> 
+$a_gr_link[10]=array('<l1 id="104">', '%Все грунтовки по бетону%');  // </l1> 
+// 11-20. Эмали
+
+// 21-30. Лаки
+
+// 31-40. Наливные полы
+$a_gr_link[31]=array('<l2 id="61">', '%все Полиуретановые наливные полы%');  // </l2> 
+$a_gr_link[40]=array('<l1 id="2">', '%Все полимерные наливные полы%');  // </l1> 
+// 41-50. Шпатлевки
+
+
+//массив распределения группировочных ссылок по материалам
+$a_mtr_links = false;
+$a_mtr_links[] = array(array(1, 10), $catmat[11]);// Все полиуретановые грунты, Все грунтовки по бетону
+$a_mtr_links[] = array(array(31, 40), $catmat[14]);// Все полиуретановые наливные полы, Все полимерные наливные полы
+
+//СЕРТИФИКАТЫ
+$a_srt=false;
+//Серия «Элакор-ПУ» 
+$a_srt[11]=array('<l3 id="201" rel="nofollow">','Свидетельство о государственной регистрации, Таможенный союз','(гигиенический сертификат)');//</l3>
+$a_srt[12]=array('<l3 id="202" rel="nofollow">','Сертификат соответствия (пожарной безопасности)');//</l3>
+$a_srt[14]=array('<l3 id="204" rel="nofollow">','Сертификат соответствия');//</l3>
+$a_srt[16]=array('<l3 id="206" rel="nofollow">','Заключение на применение в детских и лечебно-профилактичеких учреждениях');//</l3>
+$a_srt[17]=array('<l3 id="207" rel="nofollow">','Заключение НИКИМТ «Дезактивируемость и радстойкость».','Разрешение на применение на объектах Росатома');//</l3>
+$a_srt[18]=array('<l3 id="208" rel="nofollow">','Свидетельство о государственной регистрации «Элакор-ПУ» Люкс. Таможенный союз','(гигиенический сертификат)');//</l3>
+//Серия «Элакор-ПУ» 2К
+$a_srt[21]=array('<l3 id="211" rel="nofollow">','Свидетельство о государственной регистрации «Элакор-ПУ 2К». Таможенный союз','(гигиенический сертификат)');//</l3>
+$a_srt[22]=array('<l3 id="212" rel="nofollow">','Сертификат соответствия (пожарной безопасности) «Элакор-ПУ 2К» Класс КМ2');//</l3>
+$a_srt[23]=array('<l3 id="272" rel="nofollow">','Испытания антистатических свойств – Антистатический Полиуретановый Наливной пол');//</l3>
+$a_srt[24]=array('<l3 id="273" rel="nofollow">','Испытания антистатических свойств – Антистатический Полиуретановый грунт');//</l3>
+$a_srt[25]=array('<l3 id="215" rel="nofollow">',' Сертификат соответствия «Элакор-ПУ 2К»');//</l3>
+$a_srt[26]=array('<l3 id="214" rel="nofollow">','Письмо МОСГОСЭКСПЕРТИЗА о применении «Элакор-ПУ 2К» на объектах гаражного назначения');//</l3>
+//3. Серия «Элакор-ПУ Эко»
+$a_srt[31]=array('https://elakors.ru/pdf/sert/sez-elakor-pu-eko-emal.pdf','Свидетельство о государственной регистрации «Элакор-ПУ Эко» эмаль пищевая. Таможенный союз (гигиенический сертификат). Контакт с пищевыми продуктами, питьевой водой.');
+$a_srt[32]=array('https://elakors.ru/pdf/sert/sez-elakor-pu-eko-lak.pdf','Свидетельство о государственной регистрации «Элакор-ПУ Эко» лак пищевой. Таможенный союз (гигиенический сертификат). Контакт с пищевыми продуктами, питьевой водой.');
+//4. Серия «Элакор-ПЦ» - 
+$a_srt[41]=array('https://elakors.ru/pdf/sert/elakor-pz.pdf','Свидетельство о государственной регистрации «Элакор-ПЦ». Таможенный союз (гигиенический сертификат)');
+$a_srt[42]=array('https://elakors.ru/pdf/sert/phz-elakor-pz.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-ПЦ», класс КМ2');
+$a_srt[43]=array('https://elakors.ru/pdf/sert/stv-elakor-pz.pdf','Сертификат соответствия «Элакор-ПЦ»');
+//5. Серия «Элакор-ЭД»
+$a_srt[51]=array('https://elakors.ru/pdf/sert/sez-elakor-ed.pdf','Свидетельство о государственной регистрации «Элакор-ЭД». Таможенный союз (гигиенический сертификат)');
+$a_srt[52]=array('https://elakors.ru/pdf/sert/phz-elakor-ed.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-ЭД» Класс КМ2');
+$a_srt[53]=array('https://elakors.ru/pdf/sert/phz-elakor-ed-np-antistat.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-ЭД» Антистатический Наливной пол Класс КМ2');
+$a_srt[54]=array('https://elakors.ru/pdf/sert/sert-antistat-svojstva.pdf','Испытания антистатических свойств – Антистатический Эпоксидный Наливной пол');
+$a_srt[55]=array('https://elakors.ru/pdf/sert/phz-ast-propitka.pdf','Сертификат соответствия (пожарной безопасности) Антистатическая пропитка «Элакор-ЭД» Класс КМ1');
+$a_srt[56]=array('https://elakors.ru/pdf/sert/radiation-elakor-ed.pdf','Заключение НИКИМТ на дезактивируемость и радстойкость «Элакор ЭД»');
+$a_srt[57]=array('https://elakors.ru/pdf/sert/sertifikat-sootvetstviya-elakor-ed.pdf','Сертификат соответствия «Элакор-ЭД»');
+//6. Серия «Элакор-ЭДВ» 
+$a_srt[61]=array('https://elakors.ru/pdf/sert/elakor-edv.pdf','Свидетельство о государственной регистрации «Элакор-ЭДВ». Таможенный союз (гигиенический сертификат)');
+$a_srt[62]=array('https://elakors.ru/pdf/sert/stv-elakor-edv.pdf','Сертификат соответствия «Элакор-ЭДВ»');
+//7. Серия «Элакор-МБ»
+$a_srt[71]=array('https://elakors.ru/pdf/sert/sgr-elakor-mb1.pdf','Свидетельство о государственной регистрации «Элакор-МБ1». Таможенный союз (гигиенический сертификат)');
+$a_srt[72]=array('https://elakors.ru/pdf/sert/sgr-elakor-mb2-mb5.pdf','Свидетельство о государственной регистрации «Элакор-МБ2», «Элакор-МБ5». Таможенный союз (гигиенический сертификат)');
+$a_srt[73]=array('https://elakors.ru/pdf/sert/phz-elakor-mb.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-МБ1» Класс КМ0');
+$a_srt[74]=array('https://elakors.ru/pdf/sert/pozh-sert-elakor-mb2.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-МБ2» Класс КМ1');
+$a_srt[75]=array('https://elakors.ru/pdf/sert/sertifikat_sootvetstvija_jelakor_mb.pdf','Сертификат соответствия «Элакор-МБ»');
+$a_srt[76]=array('https://elakors.ru/pdf/sert/pismo-elakor-mb4.pdf','Информационное письмо «Элакор-МБ4» (отказное).');
+//8. Серия «Элакор-Эластобетон»
+$a_srt[81]=array('https://elakors.ru/pdf/sert/elakor-elastobeton.pdf','Свидетельство о государственной регистрации «Элакор-Эластобетон». Таможенный союз (гигиенический сертификат)');
+$a_srt[82]=array('https://elakors.ru/pdf/sert/phz-elakor-elastobeton.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-Эластобетон А1, А2, Б» Класс КМ0');
+$a_srt[83]=array('https://elakors.ru/pdf/sert/phz-elakor-elastobeton-v.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-Эластобетон В» Класс КМ0');
+$a_srt[84]=array('https://elakors.ru/pdf/sert/elb-a-mosstroy.pdf','Добавки для бетона «Эластобетон-А» - сертификат «НИИМосстрой»');
+$a_srt[85]=array('https://elakors.ru/pdf/sert/sertifikat_sootvetstvija_elakor-elastobeton.pdf','Сертификат соответствия «Элакор-Эластобетон»');
+
+$a_srt_pu=array(11,12,14,16,17);
+$a_srt_pu_2k=array(21,22,25,26);
+$a_srt_pu_lux_lak=array(11,12,14,16);
+$a_srt_pu_eco_emal=array(31,12,14,16,17);
+$a_srt_pu_eco_lak=array(32,12,14,16,17);
+$a_srt_ed=array(51,52,57);
+$a_srt_ed_np=array(51,52,1206,57);
+$a_srt_pz=array(41,42,43);
+$a_srt_mb1=array(71,73);
+$a_srt_mb2=array(72,74,75);
+
+//ОПИСАНИЯ
+$a_descr=false;
+$a_descr[11]="downloads/elakor-pu-grunt.pdf";
+$a_descr[13]="downloads/elakor-pu-grunt-2k100.pdf";
+$a_descr[17]="downloads/elakor-pu-emal-60.pdf";
+$a_descr[18]="downloads/poliuretan-emal-fakturnaja.pdf";
+$a_descr[19]="downloads/kraska-asfalta.pdf";
+$a_descr[20]="downloads/elakor-pu-emal-60-polumat.pdf";
+$a_descr[22]="downloads/elakor-pu-emal-60-gl.pdf";
+$a_descr[23]="downloads/poliuretanovyi-lak.pdf";
+$a_descr[26]="downloads/poliuretan-nalivnoj-pol-napolnennyi.pdf";  //  Полиуретановый наливной пол Наполненный
+$a_descr[27]="downloads/poliuretan-naliv-pol-classic.pdf";
+$a_descr[28]="downloads/elastichnyj-nalivnoj-pol.pdf";
+$a_descr[30]="downloads/rezinovyj-nalivnoj-pol.pdf";
+$a_descr[31]="downloads/poliuretan-naliv-pol-sk-prof.pdf";
+$a_descr[32]="downloads/poliuretan-nalivnoj-pol-br.pdf";  //  Наливной пол БР
+$a_descr[33]="downloads/shpaklevka-dlja-betona.pdf";
+$a_descr[34]="downloads/pu-shpaklevka-bp.pdf";
+$a_descr[35]="downloads/poliuretan-nalivnoj-pol-promyshlennyj.pdf";
+$a_descr[37]="downloads/pu-germetik-pol.pdf";
+$a_descr[40]="downloads/elakor-ed-2k100p.pdf";
+$a_descr[41]="downloads/elakor-ed-2k100.pdf";
+$a_descr[42]="downloads/elakor-ed-grunt-2k-pr.pdf";  // 2.1.1. Грунт-2К/ПР - грунт порозаполняющий (с растворителем)
+$a_descr[43]="downloads/elakor-ed-2k60.pdf";  // 2.1.4. Грунт-2К/60 - эпоксидная грунтовка глубокая
+$a_descr[45]="downloads/elakor-edv-grunt-v.pdf";  // 2.9.1. Грунт-В - водный эпоксидный грунт 
+$a_descr[46]="downloads/elakor-edv-lak-v.pdf";  // 2.9.2. Лак-В-В - матовый эпоксидный лак (водоразбавляемый)
+$a_descr[47]="downloads/elakor-edv-nalivnoy-pol-v.pdf";  // 2.9.4. Наливной пол-В - водный эпоксидный наливной пол
+$a_descr[48]="downloads/elakor-edv-emal-v.pdf";  // 2.9.3. Эмаль-В – водоразбавляемая эпоксидная краска 
+$a_descr[51]="downloads/epoxide-emal2k80.pdf";  // Эмаль 2К-80
+$a_descr[52]="downloads/elakor-pu-ljuks-emal-ast-7.pdf";  // 3.7. Антистатическая краска - Люкс АСТ-7, АСТ-6 (светостойкая)
+$a_descr[53]="downloads/elakor-ed-lak-2k.pdf";  // 2.3.1. Элакор-ЭД Лак-2К
+$a_descr[54]="downloads/elakor-edv-lak-v-gl.pdf";  // Эмаль 2К-80
+$a_descr[57]="downloads/elakor-ed-nalivnoj-pol-classic.pdf";
+$a_descr[58]="downloads/epoksid-nalivnoj-pol-promyshlennyj.pdf";
+$a_descr[60]="downloads/epoksid-nalivnoj-pol-dekor.pdf";  //  2.4.5. Эпоксидный наливной пол ДЕКОР
+$a_descr[62]="downloads/ed-naliv-pol-sk-prof.pdf";  //  2.4.7. Эпоксидный наливной пол СК ПРОФ
+$a_descr[66]="downloads/ast-propitka.pdf";  // АСТ Пропитка
+$a_descr[67]="downloads/ast-sk-prof-pol.pdf";  // 3.8. Антистатический наливной пол СК ПРОФ
+$a_descr[68]="downloads/elakor-ed-in-sostav.pdf";  
+$a_descr[70]="downloads/elakor-ed-nalivnoj-pol-classic.pdf";
+$a_descr[73]="downloads/remontnyi-epoksidnyi-sostav.pdf";  // Ремонтный эпоксидный состав (ровнитель для пола)
+$a_descr[76]="downloads/elakor-ed-ankerovochnyi-sostav.pdf";  // 2.7.2. Анкеровочный состав
+$a_descr[79]="downloads/elakor-pu-grunt-p.pdf";
+$a_descr[81]="downloads/elakor-pu-grunt-25.pdf";
+$a_descr[83]="downloads/elakor-pu-grunt-2k-50.pdf";
+$a_descr[85]="downloads/elakor-pu-grunt-2k-40.pdf";
+$a_descr[93]="downloads/lak-kamnja-kirpicha.pdf";
+$a_descr[95]="downloads/pu-1k-lak-polumatovyj.pdf";
+$a_descr[97]="downloads/pu-2k-lak-matovyj.pdf";
+$a_descr[105]="downloads/sealer.pdf";  // 
+$a_descr[106]="downloads/sealer-b.pdf";  // 
+$a_descr[123]="downloads/elakor-pz-t1-ast7.pdf";  // 1.5.1. Полиуретан-цементный пол Т1
+$a_descr[124]="downloads/elakor-pz-t4.pdf";  // 1.5.1. Полиуретан-цементный пол Т1
+$a_descr[125]="downloads/elakor-pz-t1.pdf";  // 1.5.1. Полиуретан-цементный пол Т1
+$a_descr[126]="downloads/elakor-pz-t2.pdf";  // 1.5.2. Полиуретан-цементный пол Т2
+$a_descr[127]="downloads/elakor-pz-t3.pdf";  // 1.5.3. Полиуретан-цементный пол Т3
+$a_descr[128]="downloads/elakor-pz-kraska.pdf";  // 
+$a_descr[129]="downloads/elakor-pz-grunt.pdf";  // 1.5.8. Полиуретан-цементный грунт
+$a_descr[131]="downloads/elakor-pu-ljuks-grunt.pdf";  // 
+$a_descr[135]="downloads/elakor-pu-ljuks-emal.pdf";  // 
+$a_descr[136]="downloads/elakor-pu-ljuks-emal-polumat.pdf";   // 5.2. Люкс Эмаль - двухкомпонентная краска полуматовая
+$a_descr[137]="downloads/elakor-pu-luks-emal-svetostoikaya-matovaya.pdf";   // 
+$a_descr[139]="downloads/poliuretanovyj-lak-lux.pdf";   // 
+$a_descr[143]="downloads/lyuks_lak-r-polumatovyi.pdf";   // 
+$a_descr[145]="downloads/lyuks_lak-r-matovyi.pdf";   // 
+$a_descr[153]="downloads/elakor-pu-ljuks-lak-v-mat.pdf";   // Люкс Лак-В матовый (водный)
+$a_descr[154]="downloads/elakor-pu-ljuks-lak-v-polumat.pdf";   // 4.6.3. Люкс Лак-В Полуматовый (водный)
+$a_descr[157]="downloads/elakor-pu-ljuks-lak-r-elast-gl.pdf";   // 4.9.1. Люкс Лак-Р Эластичный Глянцевый
+$a_descr[163]="downloads/grunt-zinc.pdf";  // Элакор-ЭД %Грунт-Цинк - цинковый грунт% эпоксидный
+$a_descr[164]="downloads/elakor-ed-grunt-ak3-emal.pdf";  // 5.2. Элакор-ЭД Грунт-АКЗ - Антикоррозионная Грунт-Эмаль
+$a_descr[166]="downloads/elakor-pu-luks-emal-t.pdf";  // Люкс Эмаль-Т - светостойкая краска для металла
+$a_descr[168]="downloads/elakor-pu-grunt-zinc.pdf";  // 
+$a_descr[195]="downloads/lyuks-ema-dlya-dereva.pdf";  //  Люкс Эмаль для дерева (полиуретановая, УФ-стойкая)
+$a_descr[206]="downloads/elakor-pu-eko-emal-metal.pdf";  // 7.3. «Эко» Эмаль для Металла
+$a_descr[257]="downloads/betonokontakt.pdf";  // 
+$a_descr[261]="downloads/elakor-pu-kley-2k.pdf";  // 1.7.5. Клей для резиновых матов
+$a_descr[262]="downloads/kley-gazon.pdf";  // 
+
+
+function fmtr_links($n_mat=0, $a_lnk_nm=false) {
+//вывод группировочных ссылок по индексe материалов 
+ global $a_mtr_links, $a_gr_link;
+ $s_out='';
+ $a_lnk=false;
+ foreach($a_mtr_links as $a_links){
+   if (in_array($n_mat, $a_links[1])) {
+     $a_lnk = $a_links[0];
+     break;
+   }
+ }
+ $s_out = '<div class="dblinkr">';
+ if ($a_lnk==false) return;
+ $j = 0;
+ foreach($a_lnk as $ndx_lnk){ 
+   $a_anc = false;
+   if ($a_lnk_nm==false) {$slnk = $a_gr_link[$ndx_lnk][1];}
+   else {$slnk = $a_lnk_nm[$j];}
+   $a_anc = explode('%',$slnk);
+   $s_out .= '<p class="fwb fs13">';
+   $s_out .= $a_anc[0].$a_gr_link[$ndx_lnk][0].$a_anc[1].'</a>'.$a_anc[2];
+   $s_out .= '</p>';
+   $j+=1;
+ }
+ $s_out .= '</div>'; 
+ print($s_out);
+}
+
+function fmtr_micro($n_mat=0, $name="") {
+//вывод микроразметки страницы по массиву индексов материалов 
+ global $mtr,$mtr_dop,$pb_domain,$pb_full_url;
+ $s_out='';
+   if ($name=='') { $name=$mtr_dop[$n_mat][14];}
+   $price=preg_replace('/[^0-9]+/', '', $mtr[$n_mat][8]);
+   $s_out.='
+   <meta itemprop="name" content="'.$name.'">
+   <link itemprop="image" href="'.$pb_domain.'/img/mtr/p'.$n_mat.'.png" />
+   <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+   <meta itemprop="name" content="Элакор">
+   </div>';
+   $s_out.='
+   <div itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+   <meta itemprop="lowPrice" content="'.$price.'">
+   <meta itemprop="priceCurrency" content="RUB">
+   <link itemprop="url" href="'.$pb_domain.$pb_full_url.'" />
+   </div>';
+ print($s_out);
+}
+
+function fmtr_name($n_mat=0, $name="", $descr = "") {
+//вывод микроразметки страницы по массиву индексов материалов 
+ global $mtr,$mtr_dop;
+   if ($name=='') { $name=$mtr_dop[$n_mat][14];}
+   $s_out='<p class="mt0 fwb"><span class="c2">'.$mtr[$n_mat][0].'</span> '.$name.' - ';
+   if (!empty($descr)) {
+     $s_out.='<strong style="font-size:12px">'.$descr;
+   }
+   $s_out.=' цена';
+   if (!empty($descr)) {
+     $s_out.='</strong>';
+   }
+
+   $s_out.='</p>';
+
+ print($s_out);
+}
+
+function fmtr_guar($n_mat=0) {
+// Вывод гар. срок и темп. хранения
+ global $mtr_dop; 
+ if ($mtr_dop[$n_mat][4]=='C') {$srok=$mtr_dop[$n_mat][15];}
+ else {$srok=$mtr_dop[$n_mat][4].'&nbsp;мес';}
+ $s_out='<p style="margin-top:2px;">Хранить и транспортировать при t-ре от '.$mtr_dop[$n_mat][5].'°С до '.$mtr_dop[$n_mat][6].'°С.<br>Гарантийный срок хранения в таре производителя – '.$srok.'.</p>';
+ print($s_out);
+}
+
+function fmtr_repair($n_mat=0) {
+// Вывод информации о восстановлении
+ global $mtr_dop; 
+ $s_out = '';
+ if ((int)$mtr_dop[$n_mat][13]!=0) {
+   $s_out.='<p class="mt0 fs11">В случае крайней необходимости, можно хранить и транспортировать при отрицательных температурах без ограничений.<br>
+В этом случае перед применением необходимо материал &nbsp; <l4 id="801" rel="nofollow">«ВОССТАНОВИТЬ»</l4>.</p>';
+  }
+ print($s_out);
+}
+
+
+function pack_explode($str_pack) {
+// преобразование строки фасовок в массив
+ $arr_pack=false;
+ $str_pack=trim($str_pack);
+ if ($str_pack=='') {return false;}
+ $arr_rows = explode('/',$str_pack);
+ foreach($arr_rows as $row){
+  if (strpos($row, '=')){ //комплект
+    $acompl=explode('=',$row);
+    $compl = $acompl[1];
+    $arow = explode('+',$acompl[0]);
+    $arow[]=$compl;
+    $arr_pack[]=$arow;
+  }
+  else {$arr_pack[] = $row;}
+ }
+ return $arr_pack;
+}
+
+function pack_compl($kol_comp=0) {
+// строка комплекта
+ $str_pack='';
+ if ($kol_comp<2) {return '';}
+ $str_pack='<tr><td>Комп.«А» &nbsp;</td><td>Комп.«Б» &nbsp;</td>';
+ if ($kol_comp==3) {
+  $str_pack.='<td>+Комп.«В» &nbsp;</td>';
+ }
+ $str_pack.='<td>= <span>Комплект</span></td></tr>';
+ return $str_pack;
+}
+
+function pack_set($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weight='', $o_weight=0) {
+// строка Фасовок
+ $str_pack='';
+ foreach($arr_pack as $arow){
+   if ($kol_comp<2) {
+     $str_pack.='<tr><td style="height:5px"></td></tr>
+                 <tr><td>'.$s_begin.(($s_begin=='') ? '' : ': ').$arow.'&nbsp;'.$s_weight;
+     if ((float)$o_weight !=0) { $str_pack.=' – цена <span class="fwn c27">'.fc50($n_mat,$o_weight,150).'&nbsp;р.</span>';}
+     $str_pack.='</td></tr>';
+   }
+   else {
+    $str_pack.='<tr><td>'.$arow[0].'кг</td><td>+ '.$arow[1].'кг</td>';
+    if ($kol_comp>2) {$str_pack.='<td>+ '.$arow[2].'</td>';}
+    $str_pack.='<td>= <span>'.$arow[$kol_comp].'кг</span></td>';
+   }
+ }
+ return $str_pack;
+}
+
+function pack_set_o($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weight='', $o_weight=0) {
+// строка Фасовок образцы
+ $str_pack='';
+
+ foreach($arr_pack as $arow){
+   if ($kol_comp<2) {
+     $str_pack.='<tr><td>'.$s_begin.(($s_begin=='') ? '' : ': ').$arow.$s_weight;
+   } else {
+     $str_pack.='<tr><td colspan="3">'.$arow[0].' + '.$arow[1];
+     if ($kol_comp>2) {$str_pack.=' + '.$arow[2];}
+
+     $str_pack.=' = '.$arow[$kol_comp].$s_weight;
+   }
+   if ((float)$o_weight !=0) { $str_pack.=' – цена <span class="fwn c27">'.fc50($n_mat,$o_weight,150).'р</span>';}
+   $str_pack.='</td></tr>';
+ }
+ return $str_pack;
+}
+
+function fmtr_packing($n_mat=0) {
+// Вывод фасовки
+ global $mtr_dop; 
+ $type_pack = 0;
+ $kol_comp=(int)$mtr_dop[$n_mat][7];
+ $colspan='';
+ if ($kol_comp>1) {$colspan=(($kol_comp==2) ? 'colspan="3"' : 'colspan="5"');}
+ $s_weight=(($n_mat==105 || $n_mat==227) ? 'л' : 'кг');
+ if ($n_mat==39) {$s_weight='мл';} 
+ $th_f='<tr><th class="fwb" style="padding-top:0;" '.$colspan.'>Фасовка:</th></tr>';
+ $th_z='<tr><th class="fwb" '.$colspan.'>Фасовка под заказ:</th></tr>';
+ $th_o='<tr><td '.$colspan.' style="height:1px"></td></tr>
+        <tr><th class="fwb" '.$colspan.'>Образец-пробник:</th></tr>';
+ $arr_f=pack_explode($mtr_dop[$n_mat][8]);
+ $arr_z=pack_explode($mtr_dop[$n_mat][11]);
+ $arr_o=pack_explode($mtr_dop[$n_mat][9]);
+ if ($kol_comp==1) {$type_pack=1;}//однокомпонентный - таблица в одну строку
+ else
+   if ((count($arr_f)==1) and !($arr_z)) {$type_pack=2;}//2-3 компонента - 1 строка на каждый компонент
+ $s_out='<div style="display:flex; align-items:flex-start;">';
+ if ($type_pack==0){
+ $s_out.='<table class="tfas" style="padding:2px;"><tbody>';
+
+ $s_out.=$th_f;
+ $s_out.=pack_compl($kol_comp);
+ $s_out.=pack_set($n_mat, $arr_f, $kol_comp, trim($mtr_dop[$n_mat][12]), $s_weight);
+ if ($arr_z) {
+  $s_out.=$th_z;
+  $s_out.=pack_set($n_mat, $arr_z, $kol_comp, trim($mtr_dop[$n_mat][12]), $s_weight);
+ }
+ if ($arr_o) {
+  $s_out.=$th_o;
+  $s_out.=pack_set_o($n_mat, $arr_o, $kol_comp, '', $s_weight, $mtr_dop[$n_mat][10]);
+ }
+ }
+ if ($type_pack==1) {
+    $s_out.='<table class="tfas" style="padding:3px 5px; max-width:130px;"><tbody>
+    <tr><td class="fs11 fwb">Фасовка:</td></tr>
+    <tr><td class="fs11"><div class="px5"></div>'.trim($mtr_dop[$n_mat][12]).': <span class="fwn nw">'.$arr_f[0].$s_weight.'</span>';
+    if ($arr_z) {
+    $s_out.='<div class="px5"></div><span class="fs10 fwn c50p">Под заказ (+18р/кг) :<br>'.trim($mtr_dop[$n_mat][12]).': <span class="fwn nw">'.$arr_z[0].$s_weight.'</span></span>';
+    }
+    if ($arr_o) {
+    $s_out.='<div class="px5"></div>
+    <span>Образец-пробник:</span><br>'.$arr_o[0].$s_weight.' – цена '.fc50($n_mat,$mtr_dop[$n_mat][10],150).'р.</td></tr>';
+    }
+ }
+ if ($type_pack==2) {
+    $s_out.='<table class="tfas" style="padding:5px;"><tbody>
+    <tr><td colspan="2" class="fwb">Фасовка:</td></tr>
+    <tr><td>Компонент «А»</td><td class="tar">'.$arr_f[0][0].$s_weight.'</td></tr>
+    <tr><td>Компонент «Б»</td><td class="tar">'.$arr_f[0][1].$s_weight.'</td></tr>';
+    if ($kol_comp > 2) {
+      $s_out.='<tr><td>Компонент «В»</td><td class="tar">'.$arr_f[0][2].$s_weight.'</td></tr>';}
+    $s_out.='<tr><td class="fwb">Итого Комплект</td><td class="tar fwb">'.$arr_f[0][$kol_comp].$s_weight.'</td></tr>';
+    if ($arr_o) {
+     $s_out.=$th_o;
+     $s_out.=pack_set_o($n_mat, $arr_o, $kol_comp, '', $s_weight, $mtr_dop[$n_mat][10]);
+    }
+ }
+ $s_out.='</tbody></table></div>';
+ print($s_out);
+}
+
+function fmtr_img($n_mat=0, $title, $alt, $width=0, $height=0) {
+//Вывод фото
+  //$arr_size=wp_getimagesize('/img/mtr/p'.$n_mat);
+  $s_out='<div class="pb_ismall" style="max-width:145px;min-width:100px;height:100%;width:max-content;position:relative;aspect-ratio:'.$width.'/'.$height.'; background-image:url(\'/img/mtr/p'.$n_mat.'.webp\'); background-repeat:no-repeat;background-size:contain;background-position:center;" onclick="$.zoomImg(this,'.chr(39).'/img/mtr/p'.$n_mat.'.webp'.chr(39).',200,25,'.$width.','.$height.','.chr(39).$title.chr(39).',-25);" title="'.$title.'" alt="'.$alt.'">
+<!--img style="max-width:100%;max-height:100%;object-fit: contain;" src="/img/mtr/p'.$n_mat.'.webp" title="'.$title.'" alt="'.$alt.'" onclick="$.zoomImg(this,'.chr(39).'/img/mtr/p'.$n_mat.'.webp'.chr(39).',200,25,'.$width.','.$height.','.chr(39).$title.chr(39).',-25);"/-->
+  <div class="plus01" style="bottom:0px;"></div>
+</div>';
+  print($s_out);
+
+}
+
+function fmtr_ord($n_mat=0, $title) {
+//Кнопка заказа
+  global $mtr;
+  $nm=str_replace('%','',$mtr[$n_mat][1]);
+  $s_out='<div class="bzakmat" onclick="f_b('.$n_mat.','.chr(39).$nm.chr(39).')" title="'.$title.'">Купить</div>';
+  print($s_out);
+
+}
+
+function fmtr_descr($n_mat=0, $title) {
+//Кнопка описания
+  global $a_descr, $mtr_dop, $pb_root;
+  $s_out='<a class="pdfzp" href="/'.$a_descr[$n_mat].'?'.filemtime($pb_root.$a_descr[$n_mat]).'" title="'.$mtr_dop[$n_mat][14].$title.'. Техническое описание" target="_blank" rel="nofollow">Описание</a>';
+  print($s_out);
+
+}
+
+function fmtr_srt($asrt=false) {
+//вывод списка сертификатов по массиву индексов сертификатов 
+ global $a_srt;
+ $s_out='';
+ $href='href="';
+ if ($a_srt[$asrt[0]]=="") {return;}
+ $s_out="<ul> ";
+
+ foreach($asrt as $n_srt){
+   $s_out.='
+   <li class="mt10">'.$a_srt[$n_srt][0].$a_srt[$n_srt][1].'</a> '.$a_srt[$n_srt][2].'</li>
+  ';
+ }
+ $s_out.="</ul> ";
+
+ print($s_out);
+}
+
+?>

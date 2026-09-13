@@ -1,0 +1,8 @@
+<?php if (1==1 && $pb_page==220) { ?>
+<div class="ya-site-form ya-site-form_inited_no" style="margin-top:-5px !important;" onclick="return {'action':'https://teohim.ru/search/','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск по www.teohim.ru','suggest':true,'target':'_blank','tld':'ru','type':2,'usebigdictionary':true,'searchid':2298720,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':null,'input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}">
+<form action="https://yandex.ru/search/site/" method="get" target="_blank" accept-charset="utf-8">
+  <input type="hidden" name="searchid" value="2298720"><input type="hidden" name="l10n" value="ru"><input type="hidden" name="reqenc" value="">
+  <input type="search" name="text" value=""><input type="submit" value="Найти">
+</form>
+</div>
+<div class="px10b"></div><div class="px10"></div><div id="ya-site-results" onclick="return {'tld': 'ru','language': 'ru','encoding': ''}"></div><?php } ?>

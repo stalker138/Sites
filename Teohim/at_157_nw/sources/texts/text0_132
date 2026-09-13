@@ -1,0 +1,13 @@
+#dcontent { width:770px; min-width:770px; max-width:770px; }
+table, table th, table td { margin:0; padding:0; font-size:13px; font-weight:normal; border-collapse:collapse; border-spacing:0; border:solid 1px #000000; }
+table th, table td { padding:0 2px; height:23px; } table th { padding:2px; font-weight:bold; text-align:center; background:#f0f0f0; }
+
+.thead { font-weight:bold; text-align:left; background:yellow; }
+.dsh1,.dsh4,.dsh5,.dsh6 { position:relative; width:250px; box-shadow:4px 4px 7px 0 #999999; } .dsh4 { width:735px; } .dsh6 { width:615px; }
+.table1 { width:100%; }
+
+.d123 { float:left; width:270px; }
+
+.i_t { padding:0; width:70px; height:22px; font-size:13px; text-align:right; line-height:22px; border:none 0px; font-weight:bold; background:#49ff79; }
+.o_t, .o_ti { width:70px; height:23px; text-align:right; } .o_ti { background:#49ff79; } .o_ti select { width:74px; text-align:left; }
+#dl_menu table, #dl_menu table td { border:none; }

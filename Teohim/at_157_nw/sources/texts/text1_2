@@ -1,0 +1,22 @@
+if (1==1 && isset($pb_page)) {
+
+  $aog = array(
+
+1251 => array(
+"title" => "Пол в гараже. Цена от Производителя. Полы в гараже: покрытие для гаража, пол для гаража. Устройство пола в гараже.",
+"description" => "Пол в гараже, покрытия для гаража – цена, материалы, работы. Устройство пола в гараже.",
+"image" => "https://teohim.ru/img/obj/4/i23_s.jpg"
+),
+9999 => array(
+"title" => "образец",
+"description" => "образец",
+"image" => "образец"
+)
+  );
+  if ($aog[$pb_page]) {
+  print '<meta property="og:type" content="article" /><meta property="og:url" content="'.$pb_short_url.'" /><meta property="og:locale" content="ru_RU">';
+  print '<meta property="og:title" content="'.($aog[$pb_page]["title"]).'" />';
+  print '<meta property="og:description" content="'.($aog[$pb_page]["description"]).'" />';
+  print '<meta property="og:image" content="'.($aog[$pb_page]["image"]).'" />';
+  }
+}

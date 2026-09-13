@@ -1,0 +1,19 @@
+.m_video { cursor:pointer; width:45%; font-weight:inherit; color:#0000ff; border-bottom: 1px dashed #0000ff; } .m_video:hover { color:#f00000; border-bottom: 1px dashed #f00000; }
+.video { line-height:20px; }
+.video_triangle1 {
+     position:absolute; top:10px; right:10px; width:0; height:0;
+     border-right:solid 20px transparent; border-bottom:solid 15px #000080;
+ }
+.video_triangle2 {
+     position:absolute; top:25px; right:10px; width:0; height:0;
+     border-right:solid 20px transparent; border-top:solid 15px #000080;
+ }
+
+.video_triangle3 {
+    position:absolute; top:33px; left:60px;
+    width: 0;
+    height: 0;
+    border-width: 35px 0 35px 60.6px;
+    border-color: transparent transparent transparent #3C00FF;
+    border-style: solid;
+}

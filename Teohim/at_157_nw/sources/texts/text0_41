@@ -1,0 +1,16 @@
+.vpnp { position:relative; display:block; border:solid 1px #c8c8c8; border-radius:5px; background:#ffffff; }
+.vpnp_name { padding:5px 0 5px 20px; font:normal 17px arial; text-align:left; }
+.vpnp_radio { position:relative; display:block; margin:10px 5px; }
+.vpnp_radio_item { cursor:pointer; position:relative; margin:5px; display:block; padding:10px; height:20px; text-align:left; border:solid 1px #c8c8c8; border-radius:5px; background:#f8f8f8; }
+.vri_txt { position:absolute; left:50px; top:10px; font:normal 15px arial; line-height:20px; color:#272727; }
+.vri_outher { position:absolute; left:10px; top:10px; width:18px; height:18px; border:solid 1px #c8c8c8; border-radius:10px; background:#c8c8c8; }
+.vri_inner { position:absolute; left:4px; top:4px; width:8px; height:8px; border-radius:5px; }
+.vpnp_radio_item:hover { background:#eeeeee; }
+.vpnp_radio_item:hover .vri_outher { border:solid 1px #004f92; }
+.vpnp_radio_item:hover .vri_inner { border:solid 1px #004f92; }
+.vri_ocheck, .vri_icheck { border:solid 1px #004f92; }
+.vri_icheck { background:#004f92; }
+.vpnp_button { cursor:pointer; position:relative; display:block; margin:20px auto; padding:10px; max-width:200px; height:20px; font:normal 15px arial; line-height:20px; color:#999999; border:solid 1px #c8c8c8; border-radius:5px; background:linear-gradient(to bottom,#f8f8f8,#d8d8d8); }
+.vpnp_button:hover { background:linear-gradient(to bottom,#eeeeee,#c0c0c0); }
+
+@media screen and (max-width:600px) { .vpnp_name, .vri_txt { font:normal 13px arial; } .vri_txt { left:40px; top:12px; } }

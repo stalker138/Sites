@@ -1,0 +1,18 @@
+<meta name="author" content="ООО ТэоХим"><meta name="copyright" lang="ru" content="ООО ТэоХим"><meta name="owner" content="ООО ТэоХим">
+<?php if (1==2) { ?>
+<meta name="robots" content="<?php print (($pb_page>5000 && $pb_page<5101) || ($pb_page>230 && $pb_page<250) || $pb_special==196 || $pb_page==225 || $pb_page>300) ? 'noindex, nofollow' : 'index, follow'; ?>, noarchive">
+<?php } ?>
+<?php
+if ($pb_page<2200 || $pb_page>2300) print '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+print '<link rel="icon" type="image/ico" href="/favicon.ico">';
+print '<link rel="icon" type="image/png" href="/favicon.png">';
+print '<link rel="icon" type="image/svg+xml" href="/favicon.svg">';
+// print '<link rel="icon" type="image/ico" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEX///8AAP+AgICXWq9HAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+AIGA0GFDsVZTsAAAA9SURBVAjXLcuxDcAwEMNAujAQuFfm8QgqXpnHowcPmMV1hC5WkUqhxMxkMxJY+Q4PXJbfw7BgWhtZvm/T/fyjDDWvXt1uAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA4LTI0VDEzOjA2OjIxKzAyOjAwYqT9NwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wOC0yNFQxMzowNjoyMCswMjowMLWOTj8AAAAASUVORK5CYII=" />';
+if ($pb_page==2221 || $pb_page==2222) print '<link rel="canonical" href="https://teohim.ru/nalivnye/cena-nalivnye-poly/">';
+if ($pb_page==4630) print '<link rel="canonical" href="https://teohim.ru/nalivnye/info/ustrojstvo-nalivnogo-pola/">';
+if ($pb_page==3223) print '<link rel="canonical" href="https://teohim.ru/news/983/">';
+if ($pb_page==209) print '<link rel="canonical" href="https://teohim.ru/price/antidron-odejalo/">';
+if ($pb_page==211) print '<link rel="canonical" href="https://teohim.ru/colors/">';
+/* Вставка микроразметки OG */
+{*text1_2*}
+?>

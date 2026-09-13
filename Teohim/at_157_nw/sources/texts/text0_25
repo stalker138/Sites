@@ -1,0 +1,41 @@
+.matflex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+.matf1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    float: none;
+}
+
+.matf2 {
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    float: none;
+    width: 312px;
+}
+
+.matf1 .tmtr {width:350px;}
+@media screen and (max-width: 799px) {
+    .matflex {justify-content: center;}
+    .matf1 {
+        margin-top:5px;
+        width: auto;
+    }
+
+    .matf2 {
+        margin-top:5px;
+    }
+
+    .mat_repair {
+        width:312px;
+        clear: both;
+        margin: 10px auto 0 auto;
+    }
+}

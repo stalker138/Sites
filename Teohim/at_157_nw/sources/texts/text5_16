@@ -1,0 +1,6 @@
+<script>
+$.ready(function(e){
+  var i,l,a=$.qSA('a'); if (!a) return; l=a.length; if (!$.isTOUCH()) return;
+  for (i=0; i<l; i+=1) { if (a[i].href && (a[i].href.substr(0,4)=='tel:' || a[i].href.substr(0,24)=='https://api.whatsapp.com' || a[i].href.substr(0,12)=='https://t.me' || a[i].href.substr(0,8)=='viber://')) $.EH.add(a[i],'click',function(e){ym(988617,'reachGoal','ClickContact');ym(988617,'reachGoal','Сonsolidate');ym(100515207,'reachGoal','ClickContact');ym(100515207,'reachGoal','Сonsolidate');}); }
+});
+</script>

@@ -1,0 +1,19 @@
+<?php /*
+Перед вставкой text0_20 необходимо инициализировать следующий массив:
+$amap21=array(0, "Координата маркера 1", "Координата маркера 2", "Имя Маркера", zoom);
+*/ ?>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+ymaps.ready(function () {
+  var v_map = new ymaps.Map("div_map_21", { center:[<?php print $amap21[1].','.$amap21[2]; ?>], zoom:<?php print $amap21[4]; ?>});
+  var v_obj = new ymaps.Placemark(v_map.getCenter(),{
+    hintContent: <?php print "'".$amap21[3]."'"; ?>, /* Наименование маркера */
+    balloonContent: <?php print "'".$amap21[3]."'"; ?>, /* Наименование маркера */
+  },{
+    preset: 'islands#blueDotIcon'
+  }
+);
+  v_map.geoObjects.add(v_obj);
+});
+</script>
+<div id="div_map_21" style="width:770px; height:400px;"></div>

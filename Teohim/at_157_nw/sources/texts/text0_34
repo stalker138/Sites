@@ -1,0 +1,16 @@
+<div class="pb_hidden">
+<?php // Цены на все материалы из файла /sys/materials_new (в каждом DIVe для материала по 6 SPANов с ценами, Тара)
+for ($i=1; $i<351; $i++) {
+    if ($mtrt[$i]!=false) {
+        $mtrt[$i][1]=str_replace('%','',$mtrt[$i][1]); $a=$mtrt[$i];
+        print '<div id="idCent'.$i.'"><span id="idNamet'.$i.'">'.trim($a[0].' '.$a[1].' '.$a[2]).'</span>';
+        print '<span id="idSCent'.$i.'_3">'.$a[3].'</span><span id="idSCent'.$i.'_4">'.$a[4].'</span><span id="idSCent'.$i.'_5">'.$a[5].'</span><span id="idSCent'.$i.'_6">'.$a[6].'</span><span id="idSCent'.$i.'_7">'.$a[7].'</span><span id="idSCent'.$i.'_8">'.$a[8].'</span>';
+        print '<span id="idSKMt'.$i.'_0">'.$a[11].'</span><span id="idSKMt'.$i.'_1">'.$a[12].'</span><span id="idSKMt'.$i.'_2">'.$a[13].'</span>';
+        $tara=explode('/',$a[17]);
+        $tara[0]=explode(',',$tara[0]); $tara[1]=explode(',',$tara[1]); $tara[2]=explode(',',$tara[2]); $tara[3]=explode(',',$tara[3]);
+        $tara='['.$tara[0][0].','.$tara[0][1].','.$tara[1][0].','.$tara[1][1].','.$tara[2][0].','.$tara[2][1].','.$tara[3][0].','.$tara[3][1].',0,0,0,0]';
+        if ((array_key_exists(16, $a) && $a[16]=='0') || $tara=='[0 ,,,,,,,,0,0,0,0]' || $tara=='[0,,,,,,,,0,0,0,0]') $tara='none';
+        print '<span id="idTara'.$i.'">'.$tara.'</span></div>';
+    }
+} $tht='<tr id="trt0th" class="trt_none"><th class="fwb" style="width:80px;min-width:80px">Фасовка</th><th style="width:112px;min-width:112px">Кол-во, кг</th><th style="width:65px;min-width:65px">Цена за кг</th><th style="width:85px;min-width:85px">Стоимость</th></tr>'.'<tr id="trt1th" class="trt_none" style="height:10px"><td colspan="4"></td></tr>';
+?></div>

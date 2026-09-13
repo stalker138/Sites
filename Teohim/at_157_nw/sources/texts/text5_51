@@ -1,0 +1,27 @@
+<?php
+function f_print_wa($n_tel='', $wa=0, $tg=0) {//вывод значков WhatsApp/Telegram
+  $out='';
+  if ($n_tel == "") return;
+  if ($wa==0 && $tg==0) return;
+  $out='<div style="margin:0; padding:0; position:relative; top:2px;">';
+  if ($wa!=0) {
+  $out.=' &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone='.$n_tel.'"><img src="/img/css/whatsapp.png" alt="Связаться WhatsApp" title="Связаться WhatsApp" style="width:16px;"></a>';
+  }
+  if ($tg!=0) {
+  $out.=' &nbsp;<a class="consult" href="https://t.me/+'.$n_tel.'"><img src="/img/css/telegram.png" alt="Связаться Telegram" title="Связаться Telegram" style="width:16px;"></a>';
+  }
+  $out.='</div>';
+  print $out;
+}
+?>
+<h2 class="h14p">ООО «Крым Пол»</h2>
+<table class="tbl2">
+<tbody>
+<tr><td class="tdpred"><span>Руководитель:</span></td><td colspan="2"><div>Данилов Андрей Валентинович</div></td></tr>
+<tr><td><span>Сотовый:</span></td><td style="width:150px;"><div><a href="tel:+79786804879">+7 978 680-48-79</a></div></td><td>"Волна"</td></tr>
+<tr><td>&nbsp;</td><td style="padding:0;"><div style="margin-right:0;"><a href="tel:+79788880747">+7 978 888-07-47</a><?php f_print_wa('79788880747', 1, 1) ?></div></td><td>"МТС"</td></tr>
+<tr><td><span>E-mail:</span></td><td><div><span id="dpIDmail">&nbsp;</span></div></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td><span>Сайт:</span></td><td id="dpIDsite" colspan="2"><div><a href="https://krympol.ru" target="_blank"><span>Полимерные наливные полы 
+<?php if($pb_page==3042) { ?>Евпатория<?php } else if($pb_page==3053) { ?>Керчь<?php } else if($pb_page==3060) { ?>Крым<?php } else if($pb_page==3107) { ?>Севастополь<?php } else if($pb_page==3108) { ?>Симферополь<?php } ?></span></a></div></td></tr>
+</tbody>
+</table>

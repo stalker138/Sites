@@ -1,0 +1,17 @@
+<?php
+function fc50($i=0,$m=0,$n=0) { global $mtr; return ceil($mtr[$i][3]*$m/50)*50+$n; }
+function fc50t($i=0,$m=0,$n=0) { global $mtrt; return ceil($mtrt[$i][3]*$m/50)*50+$n; }
+if (1==1) {
+if (1==2 && !file_exists('index.html')) { // Создание index.html (пока отключено)
+  $t=preg_replace('/\n/',' ',ob_get_contents()); $t=preg_replace('/\r/',' ',$t); $t=preg_replace('/\t/',' ',$t); $t=preg_replace('/ +/',' ',$t); $t=preg_replace('/\> +\</','> <',$t);
+  $fh=@fopen('index.html','w'); @rewind($fh); if (-1!=@fwrite($fh,$t)) @ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh); ob_end_flush();
+}
+// Код ниже нужно будет закомментировать, если включить код выше (создание index.html)
+// $t=preg_replace('/\n/',' ',ob_get_contents());
+$t=preg_replace('/\r/',' ',ob_get_contents()); $t=preg_replace('/\t/',' ',$t); $t=preg_replace('/ +/',' ',$t); $t=preg_replace('/\/\*.*?\*\//','',$t); $t=preg_replace('/\> +\</','> <',$t);
+ob_end_clean(); 
+print $t;
+flush();
+}
+include_once $pb_root."inc/log1.php"; // page0_41 - Запись в LOG-файл информации об открытии страниц (в директорию /_open/ )
+?>

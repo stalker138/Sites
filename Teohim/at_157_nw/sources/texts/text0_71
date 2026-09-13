@@ -1,0 +1,97 @@
+<div id="f_dblock"><div style="padding:0 0 0 5px;width:400px;height:650px;background:#f8f8f8;">
+   <div class="px10"></div>
+   <div class="fs16 fwb tal" style="width:205px">Фильтр &nbsp; <button style="font:normal 13px arial">&nbsp;Применить&nbsp;</button></div>
+
+   <label class="flcvr">Внешний вид</label>
+   <ul class="inputs">
+   <li class="input-group"><input type="radio" name="color" id="without" value="without" class="radio"><label class="flabel" for="without">Без цвета</label></li>
+   <li class="input-group"><input type="radio" name="color" id="with" value="with" class="radio" checked><label class="flabel" for="with">Цветное</label></li>
+   <li class="input-group"><input type="checkbox" name="svet" id="idsvet" class="checkbox"><label for="idsvet" class="flabel">Светостойкость</label></li>
+   </ul>
+
+   <label class="flcvr">Интенсивность нагрузок</label>
+   <ul class="inputs">
+   <li class="input-group"><input type="radio" name="intensity" id="small" value="small" class="radio"><label class="flabel" for="small">Малая</label></li>
+   <li class="input-group"><input type="radio" name="intensity" id="middle" value="middle" class="radio" checked><label class="flabel" for="middle">Средняя</label></li>
+   <li class="input-group"><input type="radio" name="intensity" id="high" value="high" class="radio"><label class="flabel" for="high">Высокая</label></li>
+   </ul>
+
+   <label class="flcvr">Тип покрытия</label>
+   <ul class="inputs">
+   <li class="input-group"><input type="checkbox" name="prop" id="prop" class="checkbox" checked><label class="flabel" for="prop">Пропитка</label></li>
+   <li class="input-group"><input type="checkbox" name="pokr" id="pokr" class="checkbox" checked><label class="flabel" for="prop">Покрытие</label></li>
+   <li class="input-group"><input type="checkbox" name="kvarz" id="kvarz" class="checkbox" checked><label class="flabel" for="prop">Покрытие с кварцем</label></li>
+   <li class="input-group"><input type="checkbox" name="pol" id="pol" class="checkbox" checked><label class="flabel" for="prop">Наливной пол</label></li>
+   </ul>
+
+   <label class="flcvr">Тип полимера</label>
+   <ul class="inputs">
+   <li class="input-group"><input type="checkbox" name="epoksid" id="epoksid" class="checkbox" checked><label class="flabel" for="epoksid">Эпоксид</label></li>
+   <li class="input-group"><input type="checkbox" name="poliuretan" id="poliuretan" class="checkbox" checked><label class="flabel" for="poliuretan">Полиуретан</label></li>
+   </ul>
+  <div id="f_dblk_view">+ ЕЩЁ требования ...</div>
+  <div id="f_dblk">
+   <label class="flcvr">Эксплуатация</label>
+   <ul class="inputs">
+    <li class="input-group"><input type="checkbox" name="minus" id="idminus" class="checkbox"><label for="idminus" class="flabel">Отрицательные температуры</label></li>
+    <li class="input-group"><input type="checkbox" name="ice" id="idice" class="checkbox"><label for="idice" class="flabel">Антискользящие свойства</label></li>
+    <li class="input-group"><input type="checkbox" name="static" id="idstatic" class="checkbox"><label for="idstatic" class="flabel">Антистатические свойства</label></li>
+    <!--li class="input-group"><input type="checkbox" name="shock" id="idshock" class="checkbox"><label for="idshock" class="flabel">Ударные нагрузки</label></li-->
+    <li class="input-group"><input type="checkbox" name="uvresist" id="iduvresist" class="checkbox"><label for="iduvresist" class="flabel">Стойкость к ультрафиолету</label></li>
+    <li class="input-group"><input type="checkbox" name="chresist" id="idchresist" class="checkbox"><label for="idchresist" class="flabel">Повышенная химстойкость</label></li>
+   </ul>
+
+   <label class="flcvr">Технология нанесения покрытия</label>
+   <ul class="inputs">
+    <li class="input-group"><input type="checkbox" name="asfalt" id="asfalt" class="checkbox"><label for="asfalt" class="flabel">Нанесение на асфальтобетон (асфальт)</label></li>
+    <li class="input-group"><input type="checkbox" name="smell" id="smell" class="checkbox"><label for="smell" class="flabel">Отсутствие запаха при нанесении покрытия</label></li>
+    <li class="input-group"><input type="checkbox" name="wet" id="wet" class="checkbox"><label for="wet" class="flabel">На влажный или свежеуложенный бетон</label></li>
+    <li class="input-group"><input type="checkbox" name="hydro" id="hydro" class="checkbox"><label for="hydro" class="flabel">Отсутствует гидроизоляция бетона снизу</label></li>
+    <li class="input-group"><input type="checkbox" name="minus2" id="minus2" class="checkbox"><label for="minus2" class="flabel">При отрицательной температуре</label></li>
+   </ul>
+  </div>
+</div></div>
+<!--<div id="f_mbut">Фильтр</div>-->
+<div id="f_bplsmns"><button id="f_bplus">+</button> &nbsp; <button id="f_bminus">-</button></div>
+
+<?php if(1==2) { ?>
+<div class="f_dblk"><div class="fleft">Внешний вид:</div> <div class="f_qdblk" id="f_qdblk1">[?]</div></div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk11">( • )</div>- Без цвета</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk12">( &nbsp; &nbsp;)</div>- Цветное</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk13">[ √ ]</div>- Светостойкость</div>
+<div class="px10"></div>
+<div class="f_dblk"><div class="fleft">Интенсивность нагрузок:</div> <div class="f_qdblk" id="f_qdblk2">[?]</div></div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk21">( • )</div>- Малая</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk22">( &nbsp; &nbsp;)</div>- Средняя</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk23">( &nbsp; &nbsp;)</div>- Высокая</div>
+<div class="px10"></div>
+<div class="f_dblk"><div class="fleft">Тип покрытия:</div> <div class="f_qdblk" id="f_qdblk3">[?]</div></div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk31">[ √ ]</div>- Пропитка</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk32">[  &nbsp; &nbsp;]</div>- Покрытие</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk33">[  &nbsp; &nbsp;]</div>- Покрытие с кварцем</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk34">[  &nbsp; &nbsp;]</div>- Наливной пол</div>
+<div class="px10"></div>
+<div class="f_dblk"><div class="fleft">Тип полимера:</div> <div class="f_qdblk" id="f_qdblk4">[?]</div></div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk41">[ √ ]</div>- Эпоксид</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk42">[ &nbsp; &nbsp;]</div>- Полиуретан</div>
+<div class="px20"></div>
+<div class="f_dblk" id="f_dblk_aclk">ЕЩЁ требования...</div>
+<div class="px20"></div>
+</div>
+<div id="f_dblk_add" style="width:0px; overflow:hidden">
+<div class="f_dblkc">Эксплуатационные:</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk51">[ √ ]</div>- Эксплуатация при отрицательных температурах</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk52">[  &nbsp; &nbsp;]</div>- Антискользящие свойства</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk53">[  &nbsp; &nbsp;]</div>- Антистатические свойства</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk54">[  &nbsp; &nbsp;]</div>- Стойкость к ультрафиолету</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk55">[  &nbsp; &nbsp;]</div>- Повышенная химическая стойкость</div>
+<div class="px10"></div>
+<div class="f_dblkc">Технологические:</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk61">[ √ ]</div>- Нанесение на асфальтобетон (асфальт)</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk62">[  &nbsp; &nbsp;]</div>- Отсутствие запаха при нанесении покрытия</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk63">[  &nbsp; &nbsp;]</div>- Нанесение на свежеуложенный или влажный бетон</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk64">[  &nbsp; &nbsp;]</div>- Отсутствует гидроизоляция бетона снизу</div><div class="px3"></div>
+<div class="f_idblk"><div class="f_idblkr" id="idblk65">[  &nbsp; &nbsp;]</div>- Нанесение покрытия при отрицательной температуре</div>
+</div>
+
+<?php } ?>

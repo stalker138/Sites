@@ -1,0 +1,114 @@
+var v_vppCSS=null, v_vppA=null;
+function f_vpnp() {
+  var l,t,s,w,h; s='';
+s+='.vpp { position:absolute; display:block; border:solid 4px #e6e6e6; border-radius:4px; background:#ffffff; box-shadow:0 7px 15px 0 rgba(0,0,0,.15); }';
+s+='.vpp_name { padding:5px 0 5px 20px; font:normal 17px arial; text-align:left; } .vpp_head { padding:5px 50px 5px 20px; height:30px; font:normal 15px arial; border-bottom:solid 1px #eeeeee; } ';
+s+='.vpp_radio { position:relative; display:none; margin:10px 5px; } #vpp_r1 { display:block; }';
+s+='.vpp_radio_item { cursor:pointer; position:relative; margin:5px; display:block; padding:10px; width:320px; max-width:95%; height:20px; text-align:left; border:solid 1px #c8c8c8; border-radius:10px 10px 10px 0; background:#f8f8f8; }';
+s+='.vpp_ri_txt { position:absolute; left:50px; top:10px; font:normal 15px arial; line-height:20px; color:#272727; }';
+s+='.vpp_ri_outher { position:absolute; left:10px; top:10px; width:18px; height:18px; border:solid 1px #c8c8c8; border-radius:10px; background:#c8c8c8; }';
+s+='.vpp_ri_inner { position:absolute; left:4px; top:4px; width:8px; height:8px; border-radius:5px; }';
+s+='#vpp_ri_dinp { position:absolute; left:10px; top:10px; height:18px; }';
+s+='#vpp_ri_dinp input { height:18px; font:normal 15px arial; border:none 0px; background:#f8f8f8; }';
+s+='.vpp_radio_item:hover { background:#eeeeee; }';
+s+='.vpp_radio_item:hover .vpp_ri_outher { border:solid 1px #004f92; }';
+s+='.vpp_radio_item:hover .vpp_ri_inner { border:solid 1px #004f92; }';
+s+='.vpp_ri_ocheck, .vpp_ri_icheck { border:solid 1px #004f92; }';
+s+='.vpp_ri_icheck { background:#004f92; }';
+s+='.vpp_button { position:absolute; display:none; padding:10px; bottom:60px; width:80px; height:20px; font:normal 15px arial; line-height:20px; text-align:center; color:#272727; border:solid 1px #999999; border-radius:20px; background:linear-gradient(to bottom,#f8f8f8,#d8d8d8); }';
+s+='.vpp_button:hover { background:linear-gradient(to bottom,#eeeeee,#c0c0c0); }';
+s+='#id_Send,#id_Cancel { display:block; } #id_Send { right:360px; font:bold 15px arial; color:#eeeeee; border:solid 1px #ff9950; background:linear-gradient(to bottom,rgba(255,153,80,0.7),rgba(253,82,2,0.7)); }';
+s+='#id_Cancel { cursor:pointer; right:270px; width:60px} #id_Back { cursor:pointer; display:none; width:20px; left:20px; }';
+s+='#id_Close { cursor:pointer; position:absolute; top:5px; right:5px; width:40px; height:40px; } #svg_cbclose { fill:rgba(200,200,200,0.5); } #svg_cbclose:hover { fill:rgba(200,200,200,1); }';
+s+='.vpp_sideb,.vpp_sidebb,.vpp_sider { position:absolute; background:#f7f7f7; } .vpp_sider { top:50px; right:0;bottom:0; width:210px; font:normal 15px arial; } .vpp_sideb,.vpp_sidebb { left:20px; bottom:20px; right:270px; height:3px; background:#c8c8c8; }';
+s+='.vpp_sidet { position:relative; display:none; margin:10px 20px; font:normal 13px arial; background:#eeeeee; border-radius:20px 15px 15px 0; } .vpp_sider,.vpp_sidet { padding:10px 20px; }';
+s+='.vpp_sidebb { background:#fd5202; right:auto; width:0; } .vpp_sidebb_txt { position:absolute; bottom:27px; left:20px; font:normal 11px arial; color:#272727; } #vpp_sidebb_txts { font:bold 13px arial; color:#fd5202; }';
+s+='@media screen and (max-width:600px) { .vpp_head, .vpp_ri_txt { font:normal 13px arial; } .vpp_name { font:bold 13px arial; } .vpp_ri_txt { left:40px; top:12px; } .vpp_radio_item { width:auto; } .vpp_button { bottom:50px; } .vpp_sidet { display:block; } .vpp_sider { display:none; } #id_Send { right:110px; } #id_Cancel,.vpp_sideb,.vpp_sidebb { right:20px; } }';
+s+='@media screen and (max-width:320px) {  }';
+  v_vppCSS=$.addCss(s); s=''; $.uEnv(); w=$.gCW(); h=$.gCH(); if(w<300)w=300; if(h<500)h=500; if(w>620)w=620; if(h>500)h=500; l=parseInt($.gCW()/2-w/2,10); t=parseInt($.gCH()/2-h/2,10)+(window.pageYOffset||document.documentElement.scrollTop); if(l<0)l=0; if(t<0)t=0;
+s+='<div class="vpp" id="vpp_main" style="top:'+t+'px;left:'+l+'px;width:'+w+'px;height:'+h+'px;">';
+s+='<div class="px10"></div><div class="vpp_head">Получите список покрытий под ваши задачи</div><div class="px0"></div>';
+s+='<div class="vpp_sidet" style="padding:5px 15px;">';
+s+='<div class="px5"></div><div class="fwb fi fs13"><span class="c2 fi fs14">Нужна консультация?</span> <span class="nw">Звоните: <a class="consult nw" href="tel:+79067695507">+7-906-769-5507</a></span></div><div class="px5"></div>';
+s+='</div>';
+s+='<div class="vpp_radio" id="vpp_r1">';
+s+='<div class="vpp_name">Интенсивность механических нагрузок</div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,1)"><div class="vpp_ri_outher" id="vpp_N1"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Малая</div></div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,1)"><div class="vpp_ri_outher" id="vpp_N2"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Средняя</div></div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,1)"><div class="vpp_ri_outher" id="vpp_N3"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Высокая</div></div>';
+s+='</div>';
+s+='<div class="vpp_radio" id="vpp_r2">';
+s+='<div class="vpp_name">Внешний вид</div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,2)"><div class="vpp_ri_outher" id="vpp_V1"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Без цвета (функциональная защита)</div></div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,2)"><div class="vpp_ri_outher" id="vpp_V2"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Цветное эконом</div></div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,2)"><div class="vpp_ri_outher" id="vpp_V3"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Цветное премиум</div></div>';
+s+='</div>';
+s+='<div class="vpp_radio" id="vpp_r3">';
+s+='<div class="vpp_name">Специальные свойства</div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,3)"><div class="vpp_ri_outher" id="vpp_E1"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Нет</div></div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,3)"><div class="vpp_ri_outher" id="vpp_E2"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Стойкость к ультрафиолету</div></div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,3)"><div class="vpp_ri_outher" id="vpp_E4"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Антискользящие свойства</div></div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,3)"><div class="vpp_ri_outher" id="vpp_E5"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Антистатические свойства</div></div>';
+s+='<div class="vpp_radio_item" onclick="f_hlink(event,this,3)"><div class="vpp_ri_outher" id="vpp_E6"><div class="vpp_ri_inner"></div></div><div class="vpp_ri_txt">Химстойкость</div></div>';
+s+='</div>';
+s+='<div class="vpp_radio" id="vpp_r4">';
+s+='<div class="vpp_name">Укажите площадь:</div>';
+s+='<div class="vpp_radio_item" onclick="$.id(\'vpp_ri_dinp\').focus()" style="cursor:default"><div id="vpp_ri_dinp">Площадь (м.кв.): &nbsp; <input id="vpp_ri_input" type="text" value="" onchange="f_hlink(event,this,4,0,0,1)" /></div></div>';
+s+='</div>';
+s+='<div class="vpp_sider">';
+s+='<div class="px5"></div><div class="fwb fi fs13 bg3 b2" style="padding:10px;border-radius:15px 5px 15px 0;box-shadow:4px 4px 7px 0 #999999;"><span class="c2 fi fs14">Нужна консультация?</span><div class="px3"></div><span class="nw">Звоните: <a class="consult nw" href="tel:+79067695507">+7-906-769-5507</a></span></div><div class="px5"></div>';
+s+='</div><div class="vpp_sideb"></div><div class="vpp_sidebb"></div><div class="vpp_sidebb_txt">Готово: <span id="vpp_sidebb_txts">0%</span></div>';
+s+='<div class="vpp_button" id="id_Back" onclick="f_hlink(event,this,0,0,1)"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" stroke="#999999" stroke-width="0"></path></svg></div>';
+s+='<div class="vpp_button" id="id_Send" onclick="f_hlink(event,this,0,1)">Далее ≫</div><div class="vpp_button" id="id_Cancel" onclick="f_vpp_cancel(event,this)">Отмена</div>';
+s+='<div id="id_Close" onclick="f_vpp_cancel(event,this)"><svg xmlns="http://www.w3.org/2000/svg" id="svg_cbclose" viewBox="0 0 51 51"><g transform="translate(-49 -32)">  <circle cx="25.5" cy="25.5" r="25.5" transform="translate(49 32)"></circle><g transform="translate(-27 -30)"><rect width="22" height="3" rx="1.5" transform="translate(95.282 78.661) rotate(45)" fill="#272727"></rect><rect width="22" height="3" rx="1.5" transform="translate(110.839 80.782) rotate(135)" fill="#272727"></rect></g></g></svg></div>';
+s+='<div class="px0"></div>';
+s+='</div>';
+  v_layer=$.addLayer(0,'#f8f8f8',260,0,0); v_descSH = $.aOpacity(v_layer,200,20,0,1);
+  v_layer.innerHTML=s; $.EH.add(v_layer,'click',f_vpp_cancel);
+}
+function f_vpp_cancel(e,t) { e=e||window.event; if(e.target!=v_layer && e.target!=$.id('id_Cancel') && !t)return; if(v_descSH>=0)$.aClear(v_descSH); $.removeLayer(v_layer); v_layer=null; $.removeCss(v_vppCSS); }
+function f_hlink(e,t,st,f,b,ip) {
+ var s,v,n,ee,p,a,i,dbs,dbw,dbt, c='vpp_ri_ocheck',s1=$.id('vpp_S1'), s2=$.id('vpp_S2'), v1=$.id('vpp_V1'), v2=$.id('vpp_V2'), v3=$.id('vpp_V3'), n1=$.id('vpp_N1'), n2=$.id('vpp_N2'), n3=$.id('vpp_N3'), e1=$.id('vpp_E1'), e2=$.id('vpp_E2'), e4=$.id('vpp_E4'), e5=$.id('vpp_E5'), e6=$.id('vpp_E6');
+ st=st||1; f=f||0; b=b||0; e=e||window.event;
+ if ((st==1&&f==1) || (st==1&&b==1)) {
+  if ($.id('vpp_r1').style.display=='block') st=1;
+  if ($.id('vpp_r2').style.display=='block') st=2;
+  if ($.id('vpp_r3').style.display=='block') st=3;
+  if ($.id('vpp_r4').style.display=='block') st=4;
+ }
+ if (!f && !b && st<4) {
+   p = t.parentNode;
+   a=$.qSA('.vpp_ri_outher',p); for (i=0; i<a.length; i+=1) { a[i].className='vpp_ri_outher'; }
+   a=$.qSA('.vpp_ri_inner',p); for (i=0; i<a.length; i+=1) { a[i].className='vpp_ri_inner'; }
+   if (st<4) { $.qS('.vpp_ri_outher',t).className='vpp_ri_outher '+c; $.qS('.vpp_ri_inner',t).className='vpp_ri_inner vpp_ri_icheck'; }
+ }
+ s = parseInt($.id('vpp_ri_input').value,10)||0; if(s<1) { s=0; $.id('vpp_ri_input').value=''; } if (ip && st==4)$.id('vpp_ri_input').value=s.toString();
+ n = (n1.className.indexOf(c)>0)?1:((n2.className.indexOf(c)>0)?2:((n3.className.indexOf(c)>0)?3:0));
+ v = (v1.className.indexOf(c)>0)?1:((v2.className.indexOf(c)>0)?2:((v3.className.indexOf(c)>0)?3:0));
+ ee= (e1.className.indexOf(c)>0)?1:((e2.className.indexOf(c)>0)?2:((e4.className.indexOf(c)>0)?4:((e5.className.indexOf(c)>0)?5:((e6.className.indexOf(c)>0)?6:1))));
+ if (!b && ((st==1&&n<1) || (st==2&&v<1) || (st==3&&ee<0) || (st==4&&s<1))) { return; }
+ dbs=$.qS('.vpp_sidebb').style; dbw=parseInt($.gStyle($.qS('.vpp_sideb'),'width'),10); dbt=$.id('vpp_sidebb_txts');
+ if (!b) { $.id('id_Send').style.color='#ffffff'; $.id('id_Send').style.borderColor='#fd5202'; $.id('id_Send').style.cursor='pointer'; $.id('id_Send').style.background='linear-gradient(to bottom,rgba(255,153,80,1),rgba(253,82,2,1))'; if(s>0 && $.id('vpp_r4').style.display=='block') { $.id('id_Send').innerHTML='Выбрать'; dbs.width=dbw+'px'; dbt.innerHTML='100%'; } if(st<4) f=1; }
+ if (f || b) {
+   if (st==4 && !b) { window.location.href = 'https://elakorpol.ru/pokrytija/?s='+s+'&v='+v+'&n='+n+'&e='+ee; }
+   else {
+     if(v_vppA>=0)$.aClear(v_vppA); v_vppA=$.aOpacity('vpp_main',200,20,1,0,function(ss,d){ if(ss!='start') {
+       $.id('vpp_r1').style.display=$.id('vpp_r2').style.display=$.id('vpp_r3').style.display=$.id('vpp_r4').style.display='none';
+       if(st==1 && !b) { $.id('vpp_r2').style.display='block'; $.id('id_Back').style.display='block'; dbs.width=(dbw/4)+'px'; dbt.innerHTML='25%'; }
+       if(st==2 && b) { $.id('vpp_r2').style.display='none'; $.id('vpp_r1').style.display='block'; $.id('id_Back').style.display='none'; dbs.width='0'; dbt.innerHTML='0%'; }
+       if(st==2 && !b) { $.id('vpp_r2').style.display='none'; $.id('vpp_r3').style.display='block'; dbs.width=(dbw/2)+'px'; dbt.innerHTML='50%'; }
+       if(st==3 && b) { $.id('vpp_r3').style.display='none'; $.id('vpp_r2').style.display='block'; dbs.width=(dbw/4)+'px'; dbt.innerHTML='25%'; }
+       if(st==3 && !b) { $.id('vpp_r3').style.display='none'; $.id('vpp_r4').style.display='block'; dbs.width=(dbw-dbw/4)+'px'; dbt.innerHTML='75%'; }
+       if(st==4 && b) { $.id('vpp_r4').style.display='none'; $.id('vpp_r3').style.display='block'; dbs.width=(dbw/2)+'px'; dbt.innerHTML='50%'; }
+       if (b) {
+         $.id('id_Send').style.color='#ffffff'; $.id('id_Send').style.borderColor='#fd5202'; $.id('id_Send').style.cursor='pointer'; $.id('id_Send').style.background='linear-gradient(to bottom,rgba(255,153,80,1),rgba(253,82,2,1))'; $.id('id_Send').innerHTML='Далее ≫';
+       } else {
+         $.id('id_Send').style.color='#eeeeee'; $.id('id_Send').style.borderColor='#ff9950'; $.id('id_Send').style.cursor='default'; $.id('id_Send').style.background='linear-gradient(to bottom,rgba(255,153,80,0.7),rgba(253,82,2,0.7))';
+         if ((st==1 && v>0) || (st==2 && ee>=0) || (st==3 && s>0)) { $.id('id_Send').style.color='#ffffff'; $.id('id_Send').style.borderColor='#fd5202'; $.id('id_Send').style.cursor='pointer'; $.id('id_Send').style.background='linear-gradient(to bottom,rgba(255,153,80,1),rgba(253,82,2,1))'; }
+         if (st==3 && s>0) { $.id('id_Send').innerHTML='Выбрать'; dbs.width=dbw+'px'; dbt.innerHTML='100%'; }
+       }
+       if(v_vppA>=0)$.aClear(v_vppA); v_vppA=$.aOpacity('vpp_main',200,20,0,1, function(s,d){ if(s!='start')$.aClear(v_vppA);});
+     }});
+   }
+ }
+}

@@ -1,0 +1,8 @@
+$out='<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>Представитель ООО «ТэоХим»</title>';
+$out.='<link rel="icon" href="/favicon.ico" type="image/ico"/><meta name="robots" content="noindex, nofollow"/>';
+$out.='<link rel="stylesheet" href="/cssjs/astyle_018.css" type="text/css"/>';
+$out.='<script charset="UTF-8" src="/cssjs/vcorp_js_0002.js"></script>';
+$out.='<script charset="UTF-8" src="/cssjs/js_018.js"></script>';
+$out.='</head><body><div id="main"><div id="id_auth_pred"></div><div id="pb_page">0</div></div></body></html>';
+print $out;
+exit;

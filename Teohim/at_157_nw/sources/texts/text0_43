@@ -1,0 +1,20 @@
+$.ready(function() {
+ var i,p=$.qSA('.vpnp_radio_item')||0; if (p) {
+   for (i=0; i<p.length; i+=1) { $.EH.add(p[i],'click',f_hrefV); }
+ }
+});
+function f_hrefV(e,f) {
+ var s,v,n,p,a,i,c='vri_ocheck',s1=$.id('vpnpVS1'), s2=$.id('vpnpVS2'), v1=$.id('vpnpVV1'), v2=$.id('vpnpVV2'), v3=$.id('vpnpVV3'), n1=$.id('vpnpVN1'), n2=$.id('vpnpVN2'), n3=$.id('vpnpVN3'); f=f||0; e=e||window.event;
+ if (!f) {
+   p=this.parentNode;
+   a=$.qSA('.vri_outher',p); for (i=0; i<a.length; i+=1) { a[i].className='vri_outher'; }
+   a=$.qSA('.vri_inner',p); for (i=0; i<a.length; i+=1) { a[i].className='vri_inner'; }
+   $.qS('.vri_outher',this).className='vri_outher '+c; $.qS('.vri_inner',this).className='vri_inner vri_icheck';
+ }
+ s = (s1.className.indexOf(c)>0)?1:((s2.className.indexOf(c)>0)?0:-1);
+ n = (n1.className.indexOf(c)>0)?1:((n2.className.indexOf(c)>0)?2:((n3.className.indexOf(c)>0)?3:0));
+ v = (v1.className.indexOf(c)>0)?1:((v2.className.indexOf(c)>0)?2:((v3.className.indexOf(c)>0)?3:0));
+ if (s<0 || n<1 || v<1) { return; }
+ $.id('idSendV').style.color='#000000'; $.id('idSendV').style.cursor='pointer';
+ if (f) window.location.href = 'https://elakorpol.ru/pokrytija/?s='+s+'&v='+v+'&n='+n;
+}

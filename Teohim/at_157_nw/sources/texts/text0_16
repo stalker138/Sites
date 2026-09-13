@@ -1,0 +1,24 @@
+<?php if (1==1 && ($pb_page<231 || $pb_page>249)) { ?><script>
+(function(w,d,c){
+  var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;
+  if ((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1) { e.className+=' ya-page_js_yes'; }
+  s.type='text/javascript';
+  s.async=true;s.charset='utf-8';
+  s.src=(d.location.protocol==='https:'?'https:':'https:')+'//site.yandex.net/v2.0/js/all.js';
+  h.parentNode.insertBefore(s,h);
+  (w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})
+})(window,document,'yandex_site_callbacks');
+</script><?php }
+/* Ниже скрипт для результатов поиска (только для страницы page0_220) */
+if (1==1 && ($pb_page==220)) { ?><script>
+(function(w,d,c){
+  var s=d.createElement('script'), h=d.getElementsByTagName('script')[0];
+  s.type='text/javascript';
+  s.async=true;s.charset='utf-8';
+  s.src=(d.location.protocol==='https:'?'https:':'https:')+'//site.yandex.net/v2.0/js/all.js';
+  h.parentNode.insertBefore(s,h);
+  (w[c]||(w[c]=[])).push(function(){Ya.Site.Results.init();})
+})(window,document,'yandex_site_callbacks');
+</script><?php }
+
+if (1==2 && ($pb_page==220)) { ?><script>(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0];s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'https:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Results.init()})})(window,document,'yandex_site_callbacks');</script><?php } ?>

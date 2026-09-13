@@ -1,0 +1,31 @@
+<?php
+function f_print_wa($n_tel='', $wa=0, $tg=0) {//вывод значков WhatsApp/Telegram
+  $out='';
+  if ($n_tel == "") return;
+  if ($wa==0 && $tg==0) return;
+  $out='<div style="margin:0; padding:0; position:relative; top:2px;">';
+  if ($wa!=0) {
+  $out.=' &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone='.$n_tel.'"><img src="/img/css/whatsapp.png" alt="Связаться WhatsApp" title="Связаться WhatsApp" style="width:16px;"></a>';
+  }
+  if ($tg!=0) {
+  $out.=' &nbsp;<a class="consult" href="https://t.me/+'.$n_tel.'"><img src="/img/css/telegram.png" alt="Связаться Telegram" title="Связаться Telegram" style="width:16px;"></a>';
+  }
+  $out.='</div>';
+  print $out;
+}
+?>
+<h2 class="h14p">ООО «ТэоХим Яр»</h2>
+<table class="tbl2">
+<tbody>
+<tr><td class="tdpred"><span>Руководитель</span>:</td><td>Волков Илья Валерьевич</td></tr>
+<tr><td style="padding:3px 0"><span>Телефоны:</span>:</td><td style="padding:0"><div><a href="tel:+74852924040">+7 4852 92-40-40</a></div><div><a href="tel:+79109731244">+7 910 973-12-44</a><?php f_print_wa('79109731244', 1, 1) ?></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail"></span></div></td></tr>
+<tr><td><span>Сайт:</span></td><td id="dpIDsite">
+<?php if($pb_page==3056) { ?>
+<a href="https://teohim-kostroma.ru/" target="_blank">Наливные полимерные полы Кострома</a>
+<?php } else { ?>
+<a href="https://teohim-yr.ru/" target="_blank">Полимерные наливные полы Ярославль</a>
+<?php } ?>
+</td></tr>
+</tbody>
+</table>

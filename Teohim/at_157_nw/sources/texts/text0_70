@@ -1,0 +1,39 @@
+<script>
+var vf_width=205;
+$.ready(ff_strct);
+function ff_strct(e) {
+  var /*p=$.id('f_mbut'),*/ pp=('f_dblk_view'); /* if(!p||!pp)return false;
+  $.aWidth('f_dblock',300,25,0,vf_width); p.innerHTML='√ Фильтр';
+  $.EH.add('f_mbut','click', ff_mbut);  */
+  $.EH.add('f_dblk_view','click', ff_mbut);
+}
+function ff_mbut(e) {
+  var p=$.id('f_mbut'),pp=('f_dblk_view'),n=null; if(!pp)return false;
+  if (!e.target) e.target = e.srcElement; /* IE old */
+  if (e.target.id=='f_dblk_view') {
+    vf_width = 305; /* Текущая ширина фильтра */
+    $.id('f_dblk_view').style.display='none';
+    $.id('f_dblk').style.width=vf_width+'px';
+    $.id('f_dblock').style.borderWidth='1px';
+     $.EH.add('f_bplus','click', ff_plsmns);
+     $.EH.add('f_bminus','click', ff_plsmns);
+    $.animate('f_dblock',200,25,[n,n,205,447],[n,n,vf_width,650]); /* p.innerHTML='√ Фильтр'; */
+     $.id('dcontent').style.width = $.id('dcontent').style.minWidth = $.id('dcontent').style.maxWidth = (975-vf_width)+'px';
+     $.id('dcontent').style.paddingLeft = (vf_width-205)+'px';
+  } else {
+    if (p.innerHTML=='Фильтр') { $.id('f_dblock').style.borderWidth='1px'; $.animate('f_dblock',200,25,[n,n,0,n],[n,n,vf_width,n]); /* p.innerHTML='√ Фильтр'; */ }
+    else { $.animate('f_dblock',200,25,[n,n,vf_width,n],[n,n,0,n],n,n,n,n,n,n,n,n,n,n,ff_bw); /* p.innerHTML='Фильтр'; */ }
+  }
+}
+function ff_bw(s,d) {
+  if (s=='end'||s=='error') { $.id('f_dblock').style.borderWidth = 0; }
+}
+function ff_plsmns(e) {
+  if (!e.target) e.target = e.srcElement; /* IE old */
+  vf_width += (e.target.id=='f_bplus') ? 20 : -20;
+  if (vf_width<280) vf_width=280; if (vf_width>400) vf_width=400;
+  $.id('f_dblock').style.width = vf_width+'px';
+  $.id('dcontent').style.width = $.id('dcontent').style.minWidth = $.id('dcontent').style.maxWidth = (975-vf_width)+'px';
+  $.id('dcontent').style.paddingLeft = (vf_width-205)+'px';
+}
+</script>

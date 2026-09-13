@@ -1,0 +1,21 @@
+<div class="vpnp">
+<div class="vpnp_radio">
+<div class="vpnp_name">1. Площадь объекта более 100 м.кв. ?</div>
+<div class="vpnp_radio_item"><div class="vri_outher" id="vpnpVS1"><div class="vri_inner"></div></div><div class="vri_txt">Да</div></div>
+<div class="vpnp_radio_item"><div class="vri_outher" id="vpnpVS2"><div class="vri_inner"></div></div><div class="vri_txt">Нет</div></div>
+</div>
+<div class="vpnp_radio">
+<div class="vpnp_name">2. Интенсивность механических нагрузок</div>
+<div class="vpnp_radio_item"><div class="vri_outher" id="vpnpVN1"><div class="vri_inner"></div></div><div class="vri_txt">Малая</div></div>
+<div class="vpnp_radio_item"><div class="vri_outher" id="vpnpVN2"><div class="vri_inner"></div></div><div class="vri_txt">Средняя</div></div>
+<div class="vpnp_radio_item"><div class="vri_outher" id="vpnpVN3"><div class="vri_inner"></div></div><div class="vri_txt">Высокая</div></div>
+</div>
+<div class="vpnp_radio">
+<div class="vpnp_name">3. Внешний вид</div>
+<div class="vpnp_radio_item"><div class="vri_outher" id="vpnpVV1"><div class="vri_inner"></div></div><div class="vri_txt">Без цвета (функциональная защита)</div></div>
+<div class="vpnp_radio_item"><div class="vri_outher" id="vpnpVV2"><div class="vri_inner"></div></div><div class="vri_txt">Цветное эконом</div></div>
+<div class="vpnp_radio_item"><div class="vri_outher" id="vpnpVV3"><div class="vri_inner"></div></div><div class="vri_txt">Цветное премиум</div></div>
+</div>
+<div class="vpnp_button" id="idSendV" onclick="f_hrefV(event,1)">Выбрать</div>
+<div class="px0"></div>
+</div>

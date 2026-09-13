@@ -1,0 +1,21 @@
+<?php
+$st_current = ' class="current"'; // Для блочных ссылок открытых страниц (например, меню сверху)
+if (isset($pb_page) && $pb_page!=220 && strpos($_SERVER['REQUEST_URI'],'?',0)>0 && !strpos($_SERVER['REQUEST_URI'],'?gclid=',0) && !strpos($_SERVER['REQUEST_URI'],'?utm=',0) && !strpos($_SERVER['REQUEST_URI'],'utm_medium=cpc',0) && !strpos($_SERVER['REQUEST_URI'],'yclid=',0)) { header('HTTP/1.1 301 Moved Permanently'); header('Location: '.$pb_short_url); exit; }
+
+/*
+if ($pb_page!=220 && !empty($_SERVER['QUERY_STRING']) && (substr($_SERVER['QUERY_STRING'],0,6)!=='gclid=') && !strpos($_SERVER['REQUEST_URI'],'utm=',0)) { header('HTTP/1.1 301 Moved Permanently'); header ('Location: /404/'); exit; }
+*/
+
+$t=$_SERVER['REMOTE_ADDR']; $r=$_SERVER['HTTP_REFERER'];
+/*
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache"); // HTTP/1.0
+*/
+if (1==1) {
+// if (file_exists('index.html')) { header('HTTP/1.1 301 Moved Permanently'); header ('Location: '.$pb_full_url); exit; } else ob_start();
+ob_start(); // Закомментировать эту строку, если будет раскомментирована предыдущая
+}
+?>

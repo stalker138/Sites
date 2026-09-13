@@ -1,0 +1,23 @@
+<?php 
+  $uri = $_SERVER['QUERY_STRING'];
+  $utm = strpos($uri, 'yclid');
+  $cookie_utm='';
+  if (!isset($_COOKIE['utm'])) {
+     if ($utm !== false) {
+         setcookie('utm', 'UTM', time()+3600, '/', 'teohim.ru');
+         $cookie_utm='UTM';
+     }
+  }
+  else {$cookie_utm=$_COOKIE['utm'];}
+
+/*
+  $s_start = session_start();
+     $uri = $_SERVER['QUERY_STRING'];
+     $utm = strpos($uri, 'utm=');
+  if (!isset($_SESSION['utm'])) {
+     if ($utm !== false) {
+        $_SESSION['utm'] = true;
+     }
+  }
+*/
+?>

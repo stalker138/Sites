@@ -1,0 +1,15 @@
+<script>
+$.ready(function() {
+ var t='',d,s,r,ls=$.gLS('fcoockie')||'';
+ if (ls!='y') {
+  d=$.D.createElement('div'); s=d.style; d.id='id_fcoockie'; r=parseInt($.gStyle($.B,'width'),10)||0; r-=1000; if(r<=0)r=0; else r=parseInt(r/2,10)+12;
+  s.position='fixed'; s.bottom='40px';s.right=r+'px';s.maxWidth='755px';s.zIndex=300;s.background='#eeeeee';s.border='solid 1px #808080';s.borderRadius='4px';s.padding='5px';
+  t+='<div style="cursor:pointer;float:right;margin-left:10px;padding:5px;width:60px;font-weight:bold 13px arial;text-align:center;color:#ffffff;background:#004f92;border-radius:4px;" onclick="f_pconf()">Принять</div>';
+  t+='<p class="mt0 fs13">Сайт собирает файлы Cookie для корректной работы и аналитики. Используя его, вы соглашаетесь с <a href="javascript:void(0)" onclick="f_pprivacy()">Политикой обработки персональных данных</a>. Если вам это не подходит — отключите Cookies в настройках браузера. </p>';
+  d.innerHTML=t; $.B.appendChild(d);
+ }
+});
+function f_pconf() {
+  var d=$.id('id_fcoockie')||0; if(d){ $.sLS('fcoockie','y'); $.B.removeChild(d);}
+}
+</script>

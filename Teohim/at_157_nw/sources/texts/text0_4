@@ -1,0 +1,10 @@
+<?php // pred_pass.php | 2017 | forum.teohim.ru
+$f=0; $id_pred=0; $o_hash = isset($_COOKIE['predcookie']) ? $_COOKIE['predcookie'] : '';    // Хеш авторизации
+if (strlen($o_hash)!=32) { $o_hash = isset($_REQUEST['session']) ? $_REQUEST['session'] : ''; } // Для админки выполненных объектов
+if (strlen($o_hash)==32) {
+    $o_inc='adm'; include_once $pb_root.'setpred01/cnfg.php'; // 'setpred03/cnfg.php' - так тоже можно, разницы нет, конф.файлы одинаковы.
+    $cnt=count($a_pass1);
+    for ($i=1; $i<$cnt; $i++) {
+        if ($o_hash===md5($o_IP.$o_UA.$a_pass1[$i].$o_salt)) { $f=$i; $id_pred=$i; $i=$cnt; }
+    }
+} ?>

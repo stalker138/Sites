@@ -1,0 +1,208 @@
+<?php if ($pb_page>5099 && $pb_page<7000) { ?>
+var tssCss=0, tssPhW=0, tssPhH=0, tssOLeft=0, tssOTop=0, tssScrTop=0, tssScrNew=0, tssInterval=null, v_tsslist=[[0]];
+$.ready(function(e){
+var i,p; f_storageTSS(); if (v_page>=5100 && v_storage) { $.EH.add(window,'storage',f_storageTSS); }
+if (v_page==5100) { f_init_tssOrder(); }
+p=$.qSA('.pb_gal_item')||0; if (p && p.length>0) {
+  for (i=p.length-1; i>=0; i-=1) { $.EH.add(p[i],'click',fTssImgFull); }
+  p=$.qS('.pb_gal_photo'); $.EH.add(p,'mousemove',fTssMove); $.EH.add(p,'mouseout',fTssOut);
+  tssPhW=parseInt($.gStyle(p,'width'),10); tssPhH=parseInt($.gStyle(p,'height'),10);
+  while (p!=$.B) { tssOTop+=(p.offsetTop||0)-p.scrollTop; tssOLeft+=(p.offsetLeft||0)-p.scrollLeft; p=p.offsetParent; }
+  $.EH.add($.qS('.pb_gal_vmt'),'click',fTssClk); $.EH.add($.qS('.pb_gal_vmb'),'click',fTssClk);
+  $.qS('.pb_gal_preview').scrollTop=0;
+} if ($.qS('.pb_gal_item img')) fTssImgFull({target:{src:($.qS('.pb_gal_item img').src)}});
+});
+function fTssImgFull(e) {
+var tr,t='.pb_gal_photo img ',p=$.qS('.pb_gal_photo img'),ph=$.qS('.pb_gal_photo'),pm=$.qS('.pb_gal_mag img');
+tr=(e.target).className=='pb_gal_item' ? $.qS('img',e.target).src : e.target.src; p.src=tr; pm.src=tr; $.uEnv();
+if (pm.width < pm.height) { t+='{ height:100%; } .pb_gal_photo { height:300px; }' } else { t+='{ width:100%; } .pb_gal_photo { width:300px; }' };
+$.removeCss(tssCss); tssCss = $.addCss(t); tssPhW=parseInt($.gStyle(p,'width'),10); tssPhH=parseInt($.gStyle(p,'height'),10);
+tssOLeft=tssOTop=0; while (ph!=$.B) { tssOTop+=(ph.offsetTop||0)-ph.scrollTop; tssOLeft+=(ph.offsetLeft||0)-ph.scrollLeft; ph=ph.offsetParent; }
+if (tssPhW > tssPhH) { t=parseInt((tssPhW-tssPhH)/2,10); tssOTop+=t; p.style.margin=t+'px 0 0 0'; } else { t=parseInt((tssPhH-tssPhW)/2,10); tssOLeft+=t; p.style.margin='0 0 0 '+t+'px'; }
+}
+function fTssMove(e) {
+  var x,y,kx,ky,w,h,p=$.qS('.pb_gal_mag'),ph=$.qS('.pb_gal_mag img'); if($.gCW()<1000)return;
+  p.style.display='block'; w=parseInt($.gStyle(p,'width'),10); h=parseInt($.gStyle(p,'height'),10);
+  x = (e.clientX-tssOLeft) / tssPhW; y = (e.clientY-tssOTop) / tssPhH;
+  x=0-(x*ph.width-w/2); if(x>0)x=0; if(x<(0-ph.width+w))x=0-ph.width+w; ph.style.left=x+'px';
+  y=0-(y*ph.height-h/2); if(y>0)y=0; if(y<(0-ph.height+h))y=0-ph.height+h; ph.style.top=y+'px';
+}
+function fTssOut(e) {
+  var p=$.qS('.pb_gal_mag'); p.style.display='none';
+}
+function fTssClk(e) {
+    var p=e.target.className, sh=parseInt($.qS('.pb_gal_preview').scrollHeight,10), s=tssScrTop; if (tssInterval!=null) return;
+    if (p.toLowerCase()=='pb_gal_vmt') {
+        s-=87; if(s<0) s=0;
+    } else {
+        s+=87; if(s>(sh-270)) s-=87;
+    }
+    if (s==tssScrTop) return;
+    tssScrNew = s; tssInterval = setInterval(fTssInt,30);
+}
+function fTssInt(e) {
+    if (tssScrNew>tssScrTop) { tssScrTop+=20; if (tssScrNew<=tssScrTop) tssScrTop=tssScrNew; }
+    if (tssScrNew<tssScrTop) { tssScrTop-=20; if (tssScrNew>=tssScrTop) tssScrTop=tssScrNew; }
+    if (tssScrNew==tssScrTop) { clearInterval(tssInterval); tssInterval=null; }
+    $.qS('.pb_gal_preview').scrollTop=tssScrTop;
+    $.qS('.pb_gal_vmt').style.top=tssScrTop+'px';
+    $.qS('.pb_gal_vmb').style.top=285+tssScrTop+'px';
+}
+/* Инициаллизация массива заказанных материалов */
+function f_init_tsslist() { v_tsslist=[[0]]; $.sLS('tsslist',JSON.stringify(v_tsslist)); /* v_tsslist[index] = ['',0,0]; [артикул, кол-во, цена] */ }
+function f_storageTSS(e,f) {
+  var p,b=$.id('abasket'); f=f||0;
+  if(v_storage && !f) { p=$.gLS('tsslist') || JSON.stringify(v_tsslist); v_tsslist = JSON.parse(p); if(v_page==5100) f_init_tssOrder(); }
+  if (b) {
+    b.style.color = (v_tsslist.length>1) ? '#c80000' : '#000000';
+    b.innerHTML = (v_tsslist.length>1) ? ('Заказ ('+(v_tsslist.length-1)+')') : 'Заказ (от 5т.р.)';
+  }
+}
+function f_init_tssOrder() {
+    var h,p,i,s,sum=0,l=v_tsslist.length;
+    h='<table class="tssTblOrder"><tbody><tr><th style="width:20px">№</th><th style="width:20px">Ф</th><th>Наименование</th><th style="width:50px">Артикул</th><th style="width:30px">Кол-во</th><th style="width:80px">Цена <span class="fwn">(руб)</span></th><th style="width:100px">Сумма <span class="fwn">(руб)</span></th><th style="width:20px"></th></tr>';
+    for(i=1;i<l;i+=1) {
+        h+='<tr><td>'+i+'</td><td class="tdi" title="ФОТО" onclick="">&#128247;</td><td class="tdl">'+$.id('tss'+v_tsslist[i][0]+'_n').innerHTML+'</td><td>'+v_tsslist[i][0]+'</td><td style="padding:0">';
+        h+='<input class="inpart" id="iart'+v_tsslist[i][0]+'" value="'+v_tsslist[i][1]+'" onchange="f_tss_iadd('+i+',parseInt(this.value,10)||0);this.value=parseInt(this.value,10)||0;"/>'; s=parseInt(v_tsslist[i][1]*v_tsslist[i][2],10); sum+=s;
+        h+='</td><td>'+v_tsslist[i][2]+'</td><td id="tdorder'+i+'">'+s+'</td><td class="tdd" title="Удалить" onclick="f_tss_idel('+i+')">&#10006</td></tr>';
+    } h+='<tr><td colspan="5" style="font-weight:bold; letter-spacing:1px;">ИТОГО на сумму :</td><td colspan="3" id="tdorderTotal" style="letter-spacing:1px;"><span>'+sum+'</span>&nbsp;руб.</td></tr>';
+    h+='</tbody></table>'; $.id('tss_page_order').innerHTML=h;
+}
+/* Проверка на страницу ЗАКАЗ и заполнение полей с текущим количеством заказанных материалов. */
+function f_set_tsslist() { var p=$.qSA('.inpart')||0; if (p && v_page==5100) { for (i = 0; i < v_tsslist.length; i+=1) { p[i].id='idInpArt'+v_tsslist[i][0]; p[i].value = v_tsslist[i][1]; } } }
+function fTssOrder(art,cena,name) {
+    var i, t, f=0, s='', h = 200, l=v_tsslist.length, art=art||0; name=name||0; cena=cena||0;
+    if(typeof art!='string' || typeof name!='string' || cena<1 || !v_storage) return;
+    for(i=1;i<l;i+=1) { if(v_tsslist[i][0]===art) {f=i;break;} }
+    if(f>0) { h = 220; } else { f=l; }
+    t = '<div class="tac"><span>'+name+'</span>' + s + v_px10 + 'Количество, шт:&nbsp;<input class="inpbox" id="IDiadd" type="text" style="width:100px;text-align:right;" value="' + (f==l?1:v_tsslist[f][1]) + '"/>' + (f==l?'':'&nbsp; <span class="c2">- уже в заказе!</span>') + v_px10;
+    t+= '<input type="button" class="pb_buttons" style="width:70px;height:30px;" value="Ok" onclick="if((parseInt($.id(\'IDiadd\').value,10)||0)>0){v_tsslist['+f+']=[\''+art+'\',(parseInt($.id(\'IDiadd\').value,10)),'+cena+'];f_tss_iadd('+f+',parseInt($.id(\'IDiadd\').value,10))};"/>' + v_px10b+v_px10;
+    t+='<span class="c9">Чтобы посмотреть весь Ваш заказ оборудования, откройте «<a style="text-decoration:underline;font:inherit;color:#c80000" href="/oborudovanie/order/">ВАШ ЗАКАЗ</a>»</span></div>';
+    $.createDialog('<div class="pb_ah0">Оборудование: '+(h==200?'Добавить в заказ':'Изменить количество в заказе')+'</div>', t, 550, h); v_esc=v_dialogEsc=1; $.id('IDiadd').focus();
+}
+function f_tss_iadd(i,k) { /* Добавление и изменение количества в localStorage */
+    var j,s,sum=0,l=v_tsslist.length; k=k||0; if (k<1) return; v_tsslist[i][1] = k; $.sLS('tsslist',JSON.stringify(v_tsslist)); $.removeDialog(); v_esc = v_dialogEsc = 0; f_storageTSS(0,1);
+    if(v_page==5100) {
+        $.id('tdorder'+i).innerHTML=parseInt(v_tsslist[i][2]*k,10); for(j=1; j<l; j+=1) { sum+=parseInt($.id('tdorder'+j).innerHTML,10); } $.id('tdorderTotal').innerHTML='<span>'+sum+'</span>&nbsp;руб.';
+    } else { /* if(k>0) window.location.href='/oborudovanie/order/'; */ }
+}
+function f_tss_idel(i) { /* Изменение заказанного материала в localStorage */
+    var j,l=v_tsslist.length-1; for(j=i;j<l;j+=1) { v_tsslist[j]=v_tsslist[j+1]; } v_tsslist.pop(); $.sLS('tsslist',JSON.stringify(v_tsslist)); f_init_tssOrder(); f_storageTSS(0,1);
+}
+function f_tssclz() {
+    var sum=parseInt($.qS('#tdorderTotal span').innerHTML,10);
+    if (sum<5000) { f_message('Оформление заказа на оборудование','<span class="fwn fs15">Заказ оборудования от 5 тыс.руб.</span>',330,100); return; }
+    if (v_tsslist.length>1) fTssOrderAll(); else f_message('Оформление заказа на оборудование','<span class="fwn fs15">Заказ оборудования пустой</span>',330,100);
+}
+function f_tssclc() {
+    var f = v_tsslist.length>1 ? 1 : 0, t='ВНИМАНИЕ!'+v_px10+'Очистка списка заказанного оборудования!'+v_px10+'После очистки восстановить информацию невозможно'+v_px20;
+    t+='<input type="button" class="pb_buttons fleft ml20 fwb c8" style="width:100px;" value="Очистить" onclick="f_init_tsslist();f_init_tssOrder();$.wDelete(1,1);f_storageTSS(0,1);"/>';
+    t+='<input type="button" class="pb_buttons fright mr20" style="width:100px;" value="Отменить" onclick="$.wDelete(1,1);"/>';
+    if (!f) t='<span class="fwn fs15">Заказ оборудования пустой</span>';
+    f_message('<div class="pb_ahr">Полная очистка заказа оборудования</div>',t,f?450:330,f?200:100);
+}
+
+function fTssOrderAll() {
+var i, t='', w=500, h=150, s, a, dr,
+on=' onkeypress="f_changePost(this)" onchange="f_changePost(this)"',
+dl='<div class="fleft mt3 fwb" style="width:190px', dr=' :</div><div class="fleft"><input type="text" class="inpbox" maxlength="70" style="width:';
+$.uEnv(); s=$.gCH(); if(s<540)h=s-340; if(h<20)h=20; s=$.gCW(); w=s-210; if(w>500)w=500; if(w<270)w=270; s=h-(s<640?65:45);
+a=$.gLS('fields') || {source:'', sity:'', person:'', tel:'', email:'', reqs:'', other:'', pl:'', amount:''};
+if(typeof a=='string') a=JSON.parse(a); if(!a.pl)a.pl=''; if(!a.amount)a.amount='1'; v_fields=a;
+
+t+='<div class="fleft fwb">На основании этого заказа Вам будет выставлен счет на оплату. <span class="c1">Сумма&nbsp;заказа:&nbsp;'+($.id('tdorderTotal').innerHTML)+'</span></div>'+(w>400?v_px5:v_px0);
+t+=v_px5+dl+'">1. Город'+dr+(w+30)+'px;" id="idText0" value=\''+a.sity+'\''+on+'/></div>';
+t+=v_px5+'<div class="fs11">Поля <span class="c1">2, 3, 4, 5</span> - обязательны для заполнения.</div>';
+t+=v_px5+dl+'"><span class="c1">2.</span> Заказчик, конт. лицо'+dr+(w+30)+'px;" id="idText1" value=\''+(a.person||a.source)+'\''+on+'/></div>';
+t+=v_px5+dl+'"><span class="c1">3.</span> Телефон'+dr+(w+30)+'px;" id="idText2" value=\''+a.tel+'\''+on+'/></div>';
+t+=v_px5+dl+'"><span class="c1">4.</span> Почта (e-mail)'+dr+(w+30)+'px;" id="idText3" value=\''+a.email+'\''+on+'/></div>';
+t+=v_px10+'<div class="fs11 ml15">Мы ГАРАНТИРУЕМ, что никогда НЕ будем присылать на Ваш телефон и почту рекламу или другой СПАМ.</div>';
+t+=v_px3+dl+'" style="margin-top:0"><span class="c1">5.</span>. Реквизиты, примечания.'+v_px5+'<div class="fs11">- Если Вы частное лицо:<br>напишите фамилию и инициалы.'+v_px5+'- Если Вы юридическое лицо:<br>скопируйте сюда Ваши реквизиты.'+v_px5+'- Если требуется ДОСТАВКА:<br>напишите адрес доставки</div></div>';
+t+='<textarea id="idArea1" class="inparea" style="float:left;margin-top:5px;width:'+(w+30)+'px;max-width:'+(w+30)+'px;min-width:'+(w+30)+'px;height:'+(h-40)+'px;min-height:'+(h-40)+'px;max-height:'+(h-40)+'px;"'+on+'>'+a.reqs+'</textarea>';
+t+=v_px10b; h=160;
+t+=v_px10+'<div id="idcapImg"></div><div id="idRefresh" title="обновить рисунок" onclick="f_postCap()"></div>';
+t+='<input id="idInpC" class="inpbox" type="text" value="" maxlength="3" placeholder="код"/><span class="fwn c8">введите 3 цифры с картинки</span>';
+t+='<input type="button" class="pb_buttons" value="Отправить" id="idSend" onclick="fTssPostGo()" />';
+t+=v_px0+'<div id="idText"></div><div class="pb_hidden" id="idCop">3</div>'+v_px3+'<div class="pb_checked_false" id="idpc" style="padding:2px 5px 0 20px;width:auto;height:20px;font:inherit;"><div class="pb_ch1"></div><span class="pb_chs1">Я согласен (согласна)</span></div><div class="fleft" style="margin:3px 0 0 5px;"><a href="javascript:void(0)" onclick="f_pprivacy()">с политикой конфиденциальности</a></div>';
+$.createDialog('<div class="pb_ah0">Оформление заказа на оборудование</div>',t,w+270,h+360); v_esc=v_dialogEsc=1; $.id('idText1').focus(); f_postCap(); $.uCheckeds();
+}
+function fTssPostGo() {
+var i,m, mlist='000000'+$.gCC(9)+'0'+$.gCC(9)+'0'+$.gCC(10), l=v_tsslist.length, pst='/auto/cbtss.php', cc=$.id('idInpC'), a=[$.id('idText0'),$.id('idText1'),$.id('idText2'),$.id('idText3'),$.id('idArea1')],
+al=['Не все обязательные поля заполнены','Введён неверный E-mail','Необходимо ввести 3 цифры с рисунка'];
+$.id('idText').innerHTML='&nbsp;';
+for (i=0;i<=4;i+=1) { if (a[i]) a[i] = f_replace(a[i].value,(i==4?0:1)); else a[i]=''; }
+if (!a[1] || !a[2] || !a[3] || !a[4]) { $.id('idText').innerHTML = al[0]; return; } /* Обязательные для заполнения поля */
+if (a[3] && !f_checkEmail(a[3])) { $.id('idText').innerHTML = al[1]; return; } /* Если введён E-mail и он некорректен */
+for (i=0;i<=4;i+=1) { if (!a[i]) a[i] = 'empty'; }
+cc=cc.value=f_replace(cc.value,1); if (cc.length!=3) { $.id('idText').innerHTML = al[2]; return; }
+if($.id('idpc').className=='pb_checked_false') { $.id('idText').innerHTML = 'Вы должны согласиться с политикой конфиденциальности'; return; }
+for (i=1; i<l; i+=1) { /* v_tsslist[index] = ['',0,0]; [артикул, кол-во, цена] */
+    mlist+=v_tsslist[i][0]+$.gCC(9)+v_tsslist[i][1]+$.gCC(9)+v_tsslist[i][2]+$.gCC(10);
+}
+v_mode = 7; m = ['mode',7, 'idText0',a[0], 'idText1',a[1], 'idText2',a[2], 'idText3',a[3], 'idArea1',a[4], 'mlist',(mlist+'000000'+$.gCC(9)+'0'+$.gCC(9)+'0'), 'url',v_wlh, 'cap',cc, 'hcap',v_cap, 'ncap',v_capID];
+/* f_message('Сообщение','В разработке...',150,100); return; */
+ym(988617,'reachGoal','OrderGoods'); ym(988617,'reachGoal','Сonsolidate'); ym(100515207,'reachGoal','OrderGoods'); ym(100515207,'reachGoal','Сonsolidate');
+f_show_query(); $.httpPost(pst,'mfd',m,v_XHR);v_interval=setInterval(function(){f_hTssRSCR()},100);
+}
+/* Получение ответа сервера */
+function f_hTssRSCR(){
+var ret,st,p=$.id('idText'),
+al=['Ошибка','Введён неверный код с картинки.'+v_px5+'Проверьте правильность кода.','Неверно указан почтовый ящик.'+v_px5+'Проверьте правильность E-mail','Ваш заказ пустой!'];
+try { if(v_XHR.readyState==4) {
+    st=v_XHR.status; f_hide_query();
+    if(st==200){
+        ret=v_XHR.responseText;
+        if (ret=='ok') {
+            al[0] = v_mode<3 ? al[v_mode] : 'Ваш заказ принят';
+            $.removeDialog(); v_esc=v_dialogEsc=0; f_message('<div class="pb_ahb">Ваш заказ принят</div>','Ваш <span>заказ на оборудование</span> принят'+v_px10+'Спасибо.'+v_px5,300,130);
+        } else {
+          if(ret=='1'||ret=='2'||ret=='3') {
+            if (ret=='1') f_mesErr(al[0],al[1],350,120);
+            if (ret=='2') { f_mesErr(al[0],al[2],350,120); $.id('idText3').style.background='#fff0f0'; if(p)p.innerHTML='Введён неверный E-mail'; }
+            if (ret=='3') f_mesErr(al[0],al[3],350,120);
+          } else {
+            f_mesErr(al[0],'Произошла ошибка.'+v_px5+ret+v_px5+'Приносим извинения.'+v_px5,350,130);
+          }
+        }
+    } else { f_mesXRST(st); } v_mode=0;
+}} catch(e) { v_mode=0; f_hide_query(); }
+}
+
+function fTssOrderAll_() {
+var i, t='', w=500, h=150, s, a, dr,
+on=' onkeypress="f_changePost(this);$.id(\'id_tssSum\').innerHTML=parseInt((parseInt($.id(\'id_tssCena\').innerHTML,10)*parseInt($.id(\'idText5\').value,10)||$.id(\'id_tssCena\').innerHTML),10);" onchange="f_changePost(this);$.id(\'id_tssSum\').innerHTML=parseInt((parseInt($.id(\'id_tssCena\').innerHTML,10)*parseInt($.id(\'idText5\').value,10)||$.id(\'id_tssCena\').innerHTML),10)"',
+dl='<div class="fleft mt3 fwb" style="width:190px';  f_message('Оформление заказа на оборудование','<span class="fwn fs15">В разработке до 31.03.21г</span>',330,100); return;
+art=art||0; name=name||0; if(typeof art!='string' || typeof name!='string' || cena<1) return;
+$.uEnv(); s=$.gCH(); if(s<540)h=s-340; if(h<20)h=20; s=$.gCW(); w=s-210; if(w>500)w=500; if(w<270)w=270; s=h-(s<640?65:45);
+a=$.gLS('fields') || {source:'', sity:'', person:'', tel:'', email:'', reqs:'', other:'', pl:'', amount:''};
+if(typeof a=='string') a=JSON.parse(a); if(!a.pl)a.pl=''; if(!a.amount)a.amount='1'; v_fields=a;
+dr=' :</div><div class="fleft"><input type="text" class="inpbox" maxlength="70" style="width:';
+
+t+='<div class="fleft fwb" style="width:'+(w>270?w:'350')+'px">На основании этого заказа Вам будет выставлен счет на оплату.'+(w>400?v_px5:v_px0);
+t+='<div class="fleft mt3 fwb" style="width:120px">1. Город :</div><div class="fleft"><input type="text" class="inpbox" maxlength="70" style="width:200px;" id="idText0" value=\''+a.sity+'\''+on+'/></div>';
+t+=v_px3+'<div class="fs11">Поля <span class="c1">2, 3, 4, 5</span> - обязательны для заполнения.</div>';
+t+='</div><div class="fright mt5 mr10 tar b1">'+v_px5+'Цена: <span class="c2" id="id_tssCena">'+cena+'</span> руб. &nbsp;'+v_px5+'&nbsp; Сумма: <span class="c2" id="id_tssSum">'+cena+'</span> руб. &nbsp;'+v_px5+'</div>'+v_px0;
+t+=v_px3+'<div class="fleft mt3 c2"><span class="c2">Артикул</span> : <span class="c2">'+art+'</span> &nbsp; &nbsp; <span>Наименование :</span> '+name+'</div>';
+t+=v_px5+dl+'"><span class="c1">2.</span> Количество'+dr+'70px;" id="idText5" value=\''+a.amount+'\''+on+'/></div>';
+t+=v_px5+dl+'"><span class="c1">3.</span> Заказчик, конт. лицо'+dr+(w+30)+'px;" id="idText1" value=\''+(a.person||a.source)+'\''+on+'/></div>';
+t+=v_px5+dl+'"><span class="c1">4.</span> Телефон'+dr+(w+30)+'px;" id="idText2" value=\''+a.tel+'\''+on+'/></div>';
+t+=v_px5+dl+'"><span class="c1">5.</span> Почта (e-mail)'+dr+(w+30)+'px;" id="idText3" value=\''+a.email+'\''+on+'/></div>';
+t+=v_px3+'<div class="fs11 ml15">Мы ГАРАНТИРУЕМ, что никогда НЕ будем присылать на Ваш телефон и почту рекламу или другой СПАМ.</div>';
+t+=v_px5+dl+'" style="margin-top:0">5. Реквизиты, примечания.'+v_px5+'<div class="fs11">- Если Вы частное лицо:<br>напишите фамилию и инициалы.'+v_px5+'- Если Вы юридическое лицо:<br>скопируйте сюда Ваши реквизиты.'+v_px5+'- Если требуется ДОСТАВКА:<br>напишите адрес доставки</div></div>';
+t+='<textarea id="idArea1" class="inparea" style="float:left;width:'+(w+30)+'px;max-width:'+(w+30)+'px;min-width:'+(w+30)+'px;height:'+(h-40)+'px;min-height:'+(h-40)+'px;max-height:'+(h-40)+'px;"'+on+'>'+a.reqs+'</textarea>';
+t+=v_px5b; h=160;
+t+=v_px5+'<div id="idcapImg"></div><div id="idRefresh" title="обновить рисунок" onclick="f_postCap()"></div>';
+t+='<input id="idInpC" class="inpbox" type="text" value="" maxlength="3" placeholder="код"/><span class="fwn c8">введите 3 цифры с картинки</span>';
+t+='<input type="button" class="pb_buttons" value="Отправить" id="idSend" onclick="" />';
+t+=v_px0+'<div id="idText"></div><div class="pb_hidden" id="idCop">3</div>'+v_px3+'<div class="pb_checked_false" id="idpc" style="padding:2px 5px 0 20px;width:auto;height:20px;font:inherit;"><div class="pb_ch1"></div><span class="pb_chs1">Я согласен (согласна)</span></div><div class="fleft" style="margin:3px 0 0 5px;"><a href="javascript:void(0)" onclick="f_pprivacy()">с политикой конфиденциальности</a></div>';
+$.createDialog('<div class="pb_ah0">Оформление заказа на оборудование</div>',t,w+270,h+360); v_esc=v_dialogEsc=1; $.id('idText1').focus(); f_postCap(); $.uCheckeds();
+}
+<?php } ?>
+</script>{*text0_13*}{*text0_16*}
+{*text5_16*}
+<script>{*text0_61*}</script>
+<!-- calltouch -->
+<script>
+(function(w,d,n,c){w.CalltouchDataObject=n;w[n]=function(){w[n]["callbacks"].push(arguments)};if(!w[n]["callbacks"]){w[n]["callbacks"]=[]}w[n]["loaded"]=false;if(typeof c!=="object"){c=[c]}w[n]["counters"]=c;for(var i=0;i<c.length;i+=1){p(c[i])}function p(cId){var a=d.getElementsByTagName("script")[0],s=d.createElement("script"),i=function(){a.parentNode.insertBefore(s,a)},m=typeof Array.prototype.find === 'function',n=m?"init-min.js":"init.js";s.async=true;s.src="https://mod.calltouch.ru/"+n+"?id="+cId;if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",i,false)}else{i()}}})(window,document,"ct","dccvdxdf");
+</script>
+<!-- calltouch -->

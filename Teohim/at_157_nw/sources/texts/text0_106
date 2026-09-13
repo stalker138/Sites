@@ -1,0 +1,5 @@
+.dtmp0 { float:right; width:400px; text-align:right; } .dtmp1 { float:left; width:560px; } .dtmp1 ul { width:540px; } .dtmp1 p { text-align:justify; }
+.dtmp2 { float:right; width:188px; text-align:center; } .dtmp2i { width:188px; text-align:center; line-height:12px; } .dtmp3 { clear:both; height:10px; }
+.dtmpi { float:left; margin:7px 4px 0 0; width:188px; text-align:center; line-height:12px; }
+.pb_ismall { float:none; margin:5px 0 0 0; width:182px; height:136px; }
+@media screen and (max-width:799px) { .dtmp0, .dtmp1, .dtmp2 { float:none; width:auto; text-align:center; } .dtmp1 ul { float:none; width:auto } .dtmp3 { clear:none; display:none; } .dtmp2i { float:left; margin:7px 4px 0 0; } }

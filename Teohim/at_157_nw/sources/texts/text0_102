@@ -1,0 +1,5 @@
+.fltr { font-size:13px; color:#f5530e; }
+.tbl1 { width:100%; } .tbl1 td { width:33%; text-align:left; line-height:16px; }
+.tbl1 td a { font-weight:bold; text-decoration:none; }
+.tbl1 td a:hover { text-decoration:underline; }
+.tbl1 td a:hover span .fltr { color:#004f92; }
