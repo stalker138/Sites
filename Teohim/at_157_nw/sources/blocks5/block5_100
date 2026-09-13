@@ -1,0 +1,9 @@
+<h1>Ваш заказ оборудования (от 5 тыс.руб.)</h1>
+<div class="px10"></div>
+<div id="clc" onclick="f_tssclc()">Очистить заказ</div>
+<div id="clz" onclick="f_tssclz();">Оформить заказ</div>
+<div class="px10b"></div>
+<div class="px10"></div>
+<div id="tss_page_order">
+</div>
+<div class="px15"></div>

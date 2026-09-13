@@ -1,0 +1,36 @@
+<h1>Производители промышленного пола</h1>
+<div class="px5"></div>
+<p>Запрос производители промышленного пола включает в себя два аспекта:</p>
+<ul>
+<li>производители материалов для промышленного пола;</li>
+<li>производители работ по устройству промышленного пола.</li>
+</ul>
+<p class="fwb">Наша компания – разработчик и производитель полиуретановых, эпоксидных и полимерцементных материалов «Элакор».<br><br>
+Вы можете приобрести материалы или заказать работы «под ключ».<br>
+Выезд специалиста по Москве и Московской области – бесплатный.</p>
+
+<p class="fwb">Элакор – <l1 id="1">промышленные полы</l1> – от производителя.</p>
+<div class="px5"></div>
+
+{*text5_3*}
+
+<div class="px10b"></div>
+
+<div class="dph1">Промышленные полы<br>
+<img class="pb_ismall" src="/img/promyshlennye_poly_433_s.jpg" onclick="$.zoomImg(this,'/img/promyshlennye_poly_433.jpg',200,25,800,600,'Промышленные полы',-25,1,0,1);" title="Промышленные полы" alt="Промышленные полы"/>
+</div>
+<div class="dph1">Промышленные полы ТэоХим<br>
+<img class="pb_ismall" src="/img/promyshlennye_poly_teohim_433_s.jpg" onclick="$.zoomImg(this,'/img/promyshlennye_poly_teohim_433.jpg',200,25,800,600,'Промышленные полы ТэоХим',-25,1,0,1);" title="Промышленные полы ТэоХим" alt="Промышленные полы ТэоХим"/>
+</div>
+<div class="dph1r0">Промышленные полы Элакор<br>
+<img class="pb_ismall" src="/img/promyshlennye_poly_elakor_433_s.jpg" onclick="$.zoomImg(this,'/img/promyshlennye_poly_elakor_433.jpg',200,25,800,600,'Промышленные полы Элакор',-25,1,0,1);" title="Промышленные полы Элакор" alt="Промышленные полы Элакор"/>
+</div>
+
+<div class="px10"></div>
+<div id="dateDoc">29авг14</div>
+
+<div class="pb_hidden">
+  <img src="/img/promyshlennye_poly_433.jpg" title="" alt=""/>
+  <img src="/img/promyshlennye_poly_teohim_433.jpg" title="" alt=""/>
+  <img src="/img/promyshlennye_poly_elakor_433.jpg" title="" alt=""/>
+</div>

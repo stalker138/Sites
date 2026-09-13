@@ -1,0 +1,40 @@
+<h1>Нормативные документы</h1>
+<div class="px5"></div>
+<?php
+print '<p class="fwb c2">1. <a href="https://teohim.ru/downloads/ndocs/snip-2-03-13-88.pdf?'.filemtime($pb_root.'downloads/ndocs/snip-2-03-13-88.pdf').'" title="СП 29.13330.11 Полы  – Актуализированная редакция СНиП 2.03.13-88 Полы" target="_blank" rel="nofollow">СП 29.13330.11 Полы  – Актуализированная редакция СНиП 2.03.13-88 Полы.</a></p>';
+print '<p class="fwb c2">2. <a href="https://teohim.ru/downloads/ndocs/snip-3-04-01-87.pdf?'.filemtime($pb_root.'downloads/ndocs/snip-3-04-01-87.pdf').'" title="СП 71.13330.2017 Изоляционные и отделочные покрытия - Актуализированная редакция СНиП 3.04.01-87" target="_blank" rel="nofollow">СП 71.13330.2017 Изоляционные и отделочные покрытия - Актуализированная редакция СНиП 3.04.01-87.</a></p>';
+print '<p class="fwb c2">3. <a href="https://teohim.ru/downloads/ndocs/snip-21-02-99.pdf?'.filemtime($pb_root.'downloads/ndocs/snip-21-02-99.pdf').'" title="СП 113.13330.2016 Стоянки автомобилей - Актуализированная редакция СНиП 21-02-99" target="_blank" rel="nofollow">СП 113.13330.2016 Стоянки автомобилей - Актуализированная редакция СНиП 21-02-99.</a></p>';
+print '<p class="fwb c2">4. <a href="https://teohim.ru/downloads/ndocs/gost-20811-75.pdf?'.filemtime($pb_root.'downloads/ndocs/gost-20811-75.pdf').'" title="ГОСТ 20811-75. Методы испытания покрытий на истирание" target="_blank" rel="nofollow">ГОСТ 20811-75. Методы испытания покрытий на истирание.</a></p>';
+print '<p class="fwb c2">5. <a href="https://teohim.ru/downloads/ndocs/gost-4765-73.pdf?'.filemtime($pb_root.'downloads/ndocs/gost-4765-73.pdf').'" title="ГОСТ 4765-73. Метод определения прочности при ударе" target="_blank" rel="nofollow">ГОСТ 4765-73. Метод определения прочности при ударе.</a></p>';
+print '<p class="fwb c2">6. <a href="https://teohim.ru/downloads/ndocs/gost-6806-73.pdf?'.filemtime($pb_root.'downloads/ndocs/gost-6806-73.pdf').'" title="ГОСТ 6806-73. Метод определения эластичности пленки при изгибе" target="_blank" rel="nofollow">ГОСТ 6806-73. Метод определения эластичности пленки при изгибе.</a></p>';
+print '<p class="fwb c2">7. <a href="https://teohim.ru/downloads/ndocs/gost-15140-78.pdf?'.filemtime($pb_root.'downloads/ndocs/gost-15140-78.pdf').'" title="ГОСТ 15140-78. Методы определения адгезии" target="_blank" rel="nofollow">ГОСТ 15140-78. Методы определения адгезии.</a></p>';
+print '<p class="fwb c2">8. <a href="https://teohim.ru/downloads/ndocs/gost-8420-74.pdf?'.filemtime($pb_root.'downloads/ndocs/gost-8420-74.pdf').'" title="ГОСТ 8420-74. Методы определения условной вязкости" target="_blank" rel="nofollow">ГОСТ 8420-74. Методы определения условной вязкости.</a></p>';
+print '<p class="fwb c2">9. <a href="https://teohim.ru/downloads/ndocs/gost-17537-72.pdf?'.filemtime($pb_root.'downloads/ndocs/gost-17537-72.pdf').'" title="ГОСТ 17537-72. Методы определения массовой доли летучих и нелетучих, твердых и пленкообразующих веществ" target="_blank" rel="nofollow">ГОСТ 17537-72. Методы определения массовой доли летучих и нелетучих, твердых и пленкообразующих веществ.</a></p>';
+print '<p class="fwb c2">10. <a href="https://teohim.ru/downloads/ndocs/gost-55908-2013.pdf?'.filemtime($pb_root.'downloads/ndocs/gost-55908-2013.pdf').'" title="ГОСТ Р 55908-2013 «Полы. Метод оценки скользкости покрытия»." target="_blank" rel="nofollow">ГОСТ Р 55908-2013 «Полы. Метод оценки скользкости покрытия».</a></p>';
+?>
+<p class="fwb c2">11. <l4 id="539">Рекомендации по устройству полов (в развитие СНиП 3.04.01-87 "Изоляционные и отделочные покрытия").</l4></p>
+<?php if (1==2) { ?>
+<p class="fwb c2">1. <a target="_blank" href="https://docs.cntd.ru/document/1200084091">СП 29.13330.11 Полы  – Актуализированная редакция СНиП 2.03.13-88 Полы.</a></p>
+<p class="fwb c2">2. <a target="_blank" href="https://docs.cntd.ru/document/456082588">СП 71.13330.2017 Изоляционные и отделочные покрытия - Актуализированная редакция СНиП 3.04.01-87.</a></p>
+<p class="fwb c2">3. <a target="_blank" href="https://docs.cntd.ru/document/456044290">СП 113.13330.2016 Стоянки автомобилей - Актуализированная редакция СНиП 21-02-99.</a></p>
+<p class="fwb c2">4. <a target="_blank" href="https://docs.cntd.ru/document/1200019443">ГОСТ 20811-75. Методы испытания покрытий на истирание.</a></p>
+<p class="fwb c2">5. <a target="_blank" href="https://docs.cntd.ru/document/1200019398">ГОСТ 4765-73. Метод определения прочности при ударе.</a></p>
+<p class="fwb c2">6. <a target="_blank" href="https://docs.cntd.ru/document/1200019411">ГОСТ 6806-73. Метод определения эластичности пленки при изгибе.</a></p>
+<p class="fwb c2">7. <a target="_blank" href="https://docs.cntd.ru/document/1200004028">ГОСТ 15140-78. Методы определения адгезии.</a></p>
+<p class="fwb c2">8. <a target="_blank" href="https://docs.cntd.ru/document/1200019414">ГОСТ 8420-74. Методы определения условной вязкости.</a></p>
+<p class="fwb c2">9. <a target="_blank" href="https://docs.cntd.ru/document/1200019430">ГОСТ 17537-72. Методы определения массовой доли летучих и нелетучих, твердых и пленкообразующих веществ.</a></p>
+
+<p class="fwb c2">1. <l4 id="531">СП 29.13330.11 – актуализированная редакция СНиП 2.03.13-88 Строительные нормы и правила. Полы.</l4></p>
+<p class="fwb c2">2. <l4 id="532">СНиП 21-02-99. Стоянки автомобилей.</l4></p>
+<p class="fwb c2">3. <l4 id="533">ГОСТ 20811-75. Методы испытания покрытий на истирание.</l4></p>
+<p class="fwb c2">4. <l4 id="534">ГОСТ 4765-73. Метод определения прочности при ударе.</l4></p>
+<p class="fwb c2">5. <l4 id="535">ГОСТ 6806-73. Метод определения эластичности пленки при изгибе.</l4></p>
+<p class="fwb c2">6. <l4 id="536">ГОСТ 15140-78. Методы определения адгезии.</l4></p>
+<p class="fwb c2">7. <l4 id="537">ГОСТ 8420-74. Методы определения условной вязкости.</l4></p>
+<p class="fwb c2">8. <l4 id="538">ГОСТ 17537-72. Методы определения массовой доли летучих и нелетучих, твердых и пленкообразующих веществ.</l4></p>
+<p class="fwb c2">9. <l4 id="539">Рекомендации по устройству полов (в развитие СНиП 3.04.01-87 "Изоляционные и отделочные покрытия").</l4></p>
+<?php } ?>
+<div class="px5"></div>
+{*text5_3*}
+<div class="px10"></div>
+<div id="dateDoc">7дкб23</div>

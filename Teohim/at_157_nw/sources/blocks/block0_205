@@ -1,0 +1,23 @@
+<h1>Склад №1 ООО «ТэоХим»</h1>
+
+<p class="fright tar"><a class="aprint" href="javascript:void(f_print())" style="margin:0;padding:0 0 0 20px;width:auto;background-position:0 0">Версия для печати</a></p>
+<p class="fleft"><span>Адрес: </span>142470, Московская область, гор. округ Электросталь, пос. Новые дома, строение 10.</p>
+<div class="px0"></div>
+
+<div class="fleft">
+<p><span>Телефон 1:</span> <a class="consult" href="tel:+79162250224">8-916-225-02-24</a> - <span>Контактное лицо:</span> Кондратьев Олег</p>
+<p><span>Телефон 2:</span> <a class="consult" href="tel:+79167784933">8-916-778-49-33</a> - <span>Контактное лицо:</span> Юрий Пинясов</p>
+</div>
+<p class="fright">&nbsp;<br><span>Время работы:</span> будни с 9<sup>00</sup> до 17<sup>00</sup></p>
+
+<div class="px0"></div>
+
+<p class="fleft p1 mt5 fwb fs13 bg3 b1 br5" style="padding:5px 10px;box-shadow:4px 4px 7px 0 #999999;"><a href="https://yandex.ru/maps/-/CGwEIA06" target="_blank" class="a1 fwb fs14 ti">Как добраться</a></p>
+<div class="px10"></div>
+
+<?php $amap21=array(0, "55.713132", "38.464934", "Склад №1 ООО «ТэоХим»<br>Московская область, гор. округ Электросталь, пос. Новые дома (территория «Спецстроя России»)", 15); ?>
+{*text0_20*}
+<div class="px10"></div>
+<img src="/pub/images/04-700.png" alt=""/>
+<div class="px0"></div>
+<p>Беспыльный прочный <l1 id="255" class="fwb fs13">пол для склада</l1> – устройство, работы, материалы.</p>

@@ -1,0 +1,26 @@
+<h1>Полы в жилищном строительстве фото</h1>
+<div class="px5"></div>
+
+<div class="dflc">
+<img class="pb_ismall" src="/img/obj/16/i1_s.jpg" onclick="$.zoomImg(this,'/img/obj/16/i1.jpg',200,25,530,400,'Пол лифтовой холл',-25,1,0,1);" title="пол лифтовой холл" alt="пол лифтовой холл"/>
+<img class="pb_ismall" src="/img/obj/16/i2_s.jpg" onclick="$.zoomImg(this,'/img/obj/16/i2.jpg',200,25,530,400,'Полы наливные в жилом доме',-25,1,0,1);" title="полы наливные в жилом доме" alt="полы наливные в жилом доме"/>
+<img class="pb_ismall" src="/img/obj/16/i3_s.jpg" onclick="$.zoomImg(this,'/img/obj/16/i3.jpg',200,25,530,400,'Полимерные полы для дома',-25,1,0,1);" title="полимерные полы для дома" alt="полимерные полы для дома"/>
+<img class="pb_ismall" src="/img/obj/16/i4_s.jpg" onclick="$.zoomImg(this,'/img/obj/16/i4.jpg',200,25,530,400,'Пол лестничная площадка',-25,1,0,1);" title="пол лестничная площадка" alt="пол лестничная площадка"/>
+<img class="pb_ismall" src="/img/obj/16/i5_s.jpg" onclick="$.zoomImg(this,'/img/obj/16/i5.jpg',200,25,260,399,'Покрытие пол коридор',-25,1,0,1);" title="покрытие пол коридор" alt="покрытие пол коридор"/>
+<img class="pb_ismall" src="/img/obj/16/i6_s.jpg" onclick="$.zoomImg(this,'/img/obj/16/i6.jpg',200,25,260,400,'Наливной пол офис',-25,1,0,1);" title="наливной пол офис" alt="наливной пол офис"/>
+<img class="pb_ismall" src="/img/obj/16/i7_s.jpg" onclick="$.zoomImg(this,'/img/obj/16/i7.jpg',200,25,600,400,'Полы офис',-25,1,0,1);" title="полы офис" alt="полы офис"/>
+</div>
+<div class="px10"></div>
+{*text5_3*}
+<div class="px10"></div>
+<div id="dateDoc">18июл13</div>
+
+<div class="pb_hidden">
+<img src="/img/obj/16/i1.jpg" alt=""/>
+<img src="/img/obj/16/i2.jpg" alt=""/>
+<img src="/img/obj/16/i3.jpg" alt=""/>
+<img src="/img/obj/16/i4.jpg" alt=""/>
+<img src="/img/obj/16/i5.jpg" alt=""/>
+<img src="/img/obj/16/i6.jpg" alt=""/>
+<img src="/img/obj/16/i7.jpg" alt=""/>
+</div>

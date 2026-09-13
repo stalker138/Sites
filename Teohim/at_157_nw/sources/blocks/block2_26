@@ -1,0 +1,170 @@
+<h1>Полиуретановый однокомпонентный Полуматовый лак</h1>
+<div class="px5"></div>
+<p class="fwb fs13">Элакор-ПУ Лак Полуматовый – полиуретановый однокомпонентный лак, влагоотверждаемый.</p>
+<div class="px10b"></div>
+<div class="px10"></div>
+
+<div class="dmtrl">
+<p class="mt0 fwb"><span class="fwn"><?php print $mtr[95][0] ?></span> <strong>Однокомпонентный Полуматовый лак ЦЕНА</strong></p>
+<?php print fmtr2(95); ?>
+<div class="px5"></div>
+<div id="idsal" style="float:left" onclick="f_b(95,'<?php print 'Лак Полуматовый (однокомпонентный)'; ?>')">Купить Полуматовый лак однокомпонентный</div>
+<div class="px5"></div>
+{*text4_2*}
+{*text4_15*}
+</div>
+<div class="px0n"></div>
+<div class="dmtrr">
+<div class="dfas">
+<table class="tfas" style="padding:3px 5px"><tbody>
+<tr><td class="fwb">Фасовка:</td></tr>
+<tr><td><div class="px5"></div>Металлическая тара:<br>9, 18, 45 кг
+<div class="px5"></div>
+<span>Образец-пробник:</span><br>0,9кг – цена <?php print fc50(95,0.9,150); ?>р.</td></tr>
+</tbody></table>
+</div>
+<div style="position:relative;float:right">
+<img class="pb_ismall" src="/img/bottles/pu-1k-lak-polumatovyj_s.jpg" style="width:82px;height:82px;" onclick="$.zoomImg(this,'/img/bottles/pu-1k-lak-polumatovyj.jpg',200,25,800,1000,'ПУ однокомпонентный Полуматовый лак',-25);" title="ПУ однокомпонентный Полуматовый лак" alt="ПУ однокомпонентный Полуматовый лак"/>
+<div class="plus01"></div>
+</div>
+<div class="px5"></div>
+{*text5_4*}
+<div class="px5"></div>
+<p class="fwb fs13 tar">Все <l1 id="109">полиуретановые лаки</l1> Элакор</p>
+</div>
+<div class="px12"></div>
+
+{*text4_12*}
+<div class="px7"></div>
+
+<div id="mtr_body">
+
+<div id="mtr_body_1" class="active">
+<?php print '<a class="pdf1" href="https://teohim.ru/downloads/pu-1k-lak-polumatovyj.pdf?'.filemtime($pb_root.'downloads/pu-1k-lak-polumatovyj.pdf').'" title="Элакор-ПУ Лак Полуматовый – полиуретановый однокомпонентный лак, влагоотверждаемый. Техническое описание" target="_blank" rel="nofollow">Описание</a>'; ?>
+<p class="fwb">Назначение.</p>
+<p>Однокомпонентный Полуматовый лак служит для изменения блеска готовых полиуретановых и эпоксидных окрасочных покрытий,  защитных пропиток, полимерных наливных полов.</p>
+
+<p class="fwb">Преимущества.</p>
+<p class="mt5">Для получения полуматового блеска достаточно нанести один слой лака с расходом 80-100г/м<sup>2</sup>.<br>
+Допускается нанесение дополнительного слоя лака.</p>
+</div>
+
+<div id="mtr_body_2">
+
+</div>
+
+<div id="mtr_body_3">
+ <p class="fwb fs13 c2">Технические характеристики Полуматового лака полиуретанового однокомпонентного. </p>
+ <p class="fwb">Свойства до отверждения.</p>
+ <table class="tsrt">
+ <tr>
+ <th style="width:333px;">Показатель</th><th>Значение</th><th style="width:205px;">Метод испытаний</th></tr>
+ <tr>
+ <td class="tdl">Внешний вид</td>
+ <td>Прозрачная жидкость янтарного цвета</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Вязкость по ВЗ-4 при +20°С, не более</td>
+ <td>25сек</td>
+ <td>ГОСТ 8420</td>
+ </tr>
+ <tr>
+ <td class="tdl">Массовая доля нелетучих (сухой остаток), не менее</td>
+ <td>45</td>
+ <td>ГОСТ 17537</td>
+ </tr>
+ <tr>
+ <td class="tdl">Плотность при +20°С, г/см&sup3;</td>
+ <td>около 1,00</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Время высыхания до степени 3 при +20°С</td>
+ <td>не более 6 час</td>
+ <td>ГОСТ 19007</td>
+ </tr>
+ </table>
+
+ <p class="fwb">Свойства после отверждения.</p>
+ <table class="tsrt">
+ <tr>
+ <th style="width:333px;">Показатель</th>
+ <th>Значение</th>
+ <th style="width:205px;">Метод испытаний</th>
+ </tr>
+ <tr>
+ <td class="tdl">Внешний вид</td>
+ <td>Прозрачная пленка янтарного цвета</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Интервал рабочих температур в воздушной среде, °С</td>
+ <td>от -60°С до +120°С
+<br>(до 30мин – до +150°С)</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Водопоглощение пленки лака, %</td>
+ <td>не более 0,1</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Предел прочности пленки при разрыве при +20°С</td>
+ <td>не менее 40МПа</td>
+ <td>ГОСТ 21751</td>
+ </tr>
+ <tr>
+ <td class="tdl">Относительное удлинение пленки при +20°С</td>
+ <td>не менее 12%</td>
+ <td>ГОСТ 21751</td>
+ </tr>
+ <tr>
+ <td class="tdl">Прочность пленки при ударе (У-2М), см</td>
+ <td>не менее 100</td>
+ <td>ГОСТ 4765</td>
+ </tr>
+ <tr>
+ <td class="tdl">Эластичность пленки лака</td>
+ <td>не более 1мм</td>
+ <td>ГОСТ 6806</td>
+ </tr>
+ <tr class="fwb">
+ <td class="tdl">Удельная истираемость по Таберу, CS-10, грузы 1кг</td>
+ <td>7 мг</td>
+ <td>ISO 3537(DIN 52347, ASTM D1044)</td>
+ </tr>
+ </table>
+
+ <p class="fwb">Химическая стойкость.</p>
+ <p>Отвержденный полиуретановый полуматовый лак  Элакор-ПУ стоек к постоянному и переменному контакту с веществами:</p>
+ <ul>
+ <li>вода; водные растворы  солей и щелочей любой концентрации;</li>
+ <li>растворы кислот концентрации до 10-20%;</li>
+ <li>масла и жиры всех видов - минеральные, синтетические, органические;</li>
+ <li>органические растворители, бензин, дизтопливо, ГСМ и т.п.</li>
+ </ul>
+</div>
+
+<div id="mtr_body_4">
+<!--noindex-->
+<ul>
+ <li><l3 id="201" class="fwb" rel="nofollow">Свидетельство о государственной регистрации, Таможенный союз</l3> (гигиенический сертификат)</li>
+ <li class="mt10"><l3 id="202" class="fwb" rel="nofollow">Сертификат соответствия (пожарной безопасности)</l3></li>
+ <li class="mt10"><l3 id="204" class="fwb" rel="nofollow">Сертификат соответствия</l3></li>
+ <li class="mt10"><l3 id="206" class="fwb" rel="nofollow">Заключение на применение в детских и лечебно-профилактических учреждениях</l3></li>
+</ul>
+<div class="px5"></div>
+<!--/noindex-->
+</div>
+
+</div>
+
+<div class="px10b"></div>
+<div class="px10"></div>
+
+<div id="dateDoc">08сен23</div>
+
+<div class="pb_hidden">
+ <img src="/img/bottles/pu-1k-lak-polumatovyj.jpg" alt="">
+</div>

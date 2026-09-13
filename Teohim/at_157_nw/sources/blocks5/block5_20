@@ -1,0 +1,105 @@
+<h1>Контакты</h1>
+<div class="px5"></div>
+
+<div class="dflex_main">
+
+<div class="dflex_left">
+<div style="padding:5px 0 5px 5px; border-bottom: solid 1px #c8c8c8;">
+<div class="fleft">Прямые телефоны:</div><div id="id_zvonok" onclick="f_post(2);">Трудно дозвониться? - <span class="tdu">Обратный звонок</span>!</div>
+<div class="px0"></div>
+</div>
+
+<div class="dflex_contain">
+<div class="fwb dflex_item_left">Купить МАТЕРИАЛЫ:</div>
+<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74959568596">+7 (495) 956-8596</a>, <a class="consult" href="tel:+74952212252">+7 (495) 221-2252</a><!-- span class="fwn fs11">(многоканальный)</span-->; <a class="consult" href="tel:+79851442162">+7-985-144-2162</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone=79851442162"><img src="/img/css/whatsapp.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/teohim_msk"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
+</div>
+
+<div class="dflex_contain">
+<div class="fwb dflex_item_left">Заказать РАБОТЫ:</div>
+<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74955184378">+7 (495) 518-4378</a>, <a class="consult" href="tel:+79262940395">+7-926-294-0395</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone=79262940395"><img src="/img/css/whatsapp.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/+79262940395"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
+</div>
+
+<div class="dflex_contain" style="border:none;">
+<div class="fwb dflex_item_left">КОНСУЛЬТАЦИИ:</div>
+<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74997034037">+7 (499) 703-4037</a>, <a class="consult" href="tel:+79035640656">+7-903-564-0656</a>; <a class="consult" href="tel:+79066576350">+7-906-657-6350</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone=79066576350"><img src="/img/css/whatsapp.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/ossir68"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
+</div>
+
+</div>
+<div class="dflex_right">
+<div style="padding:5px 0 5px 5px; border-bottom: solid 1px #c8c8c8;">Многоканальные телефоны:</div>
+
+<div class="dflex_contain" style="padding:0; border:none;">
+<div class="dflex_item_contain item_mktel"><div class="fwb" style="width:75px;">Из Москвы:</div><div><a class="consult" href="tel:+74952212252">+7 (495) 221-22-52</a></div></div>
+<div class="dflex_item_contain item_mktel"><div class="fwb" style="width:75px;">Из России:</div><div><a class="consult" href="tel:88001005010">8-800-100-50-10</a> <span class="fwn fs11">(бесплатно)</span></div></div>
+<div class="dflex_item_contain item_mktel" style="border:none"><div class="fwb" style="width:75px;">E-mail:</div><div><span id="dpIDmail">&nbsp;</span></div></div>
+</div>
+
+</div>
+</div>
+
+<div class="px15"></div>
+
+<div class="dflex_main">
+
+<l0 id="205" class="dbox2" rel="nofollow">
+<div style="width:365px;">
+<div class="fleft fwb fs14 c2">Склад №1</div><div class="fright fwb fs12">+7-916-225-0224</div>
+<div class="px0"></div>
+<p class="fleft fwn tal">Мос.обл., гор. округ Электросталь, п. Новые дома</p>
+<div class="px7"></div>
+<div class="fleft"><span class="fwn fs12">пн-пт 9<sup>00</sup>-17<sup>00</sup></span></div><div class="fright ptmp1">Схема проезда</div>
+<div class="px1"></div></div></l0>
+
+<l0 id="206" class="dbox2" rel="nofollow">
+<div style="width:365px;">
+<div class="fleft fwb fs14 c2">Склад №2</div><div class="fright fwb fs12">+7-916-716-3578</div>
+<div class="px0"></div>
+<p class="fleft fwn tal">Москва, Черницынский пр., д.3 (м. Щёлковская)</p>
+<div class="px7"></div>
+<div class="fleft"><span class="fwn fs12">пн-пт 9<sup>00</sup>-17<sup>00</sup></span></div><div class="fright ptmp1">Схема проезда</div>
+<div class="px1"></div></div></l0>
+
+</div>
+
+<div class="px15"></div>
+
+<div class="dflex_main">
+
+<div class="dbox2" rel="nofollow">
+<div style="width:365px;">
+<div class="fleft fwb fs14 c2">Розничный Магазин</div><div class="fright fwb fs13"></div>
+<div class="px0"></div>
+<p class="fleft fwn tal">Москва, Алтуфьевское ш., д.102-Б.<br><span>Продажи: +7-917-544-2517. &nbsp; Консультации: +7-916-811-3248</span>.</p>
+<div class="px7"></div>
+<div class="fleft"><span class="fwn fs12">пн-пт 9<sup>00</sup>-20<sup>00</sup>, сб 10<sup>00</sup>-16<sup>00</sup></span></div><div class="fright ptmp1">Схема проезда</div>
+<div class="px1"></div></div></div>
+
+<l0 id="203" class="dbox2" rel="nofollow">
+<div style="width:365px;">
+<div class="fleft fwb fs14 c2">ОФИС</div>
+<div class="px5"></div>
+<p class="fleft fwn tal">Москва, ул. Суворовская д.10<br>&nbsp;
+<!--span>ООО «ТэоХим - ПРОМ» - офис 15.<br>ООО «ТэоХим - СТРОЙ» - офис 4.</span-->
+</p>
+<div class="px2"></div>
+<div class="fleft"><span class="fwn fs13 c0">пн-пт 9<sup>00</sup>-18<sup>00</sup></span></div><div class="fright ptmp1" title="распечатать карту проезда">Схема проезда</div>
+<div class="px1"></div></div></l0>
+
+</div>
+
+<div class="px5"></div>
+<p class="fleft fwb"><span class="cf00">Внимание!</span> Перед выездом на склад уточните у Вашего менеджера, на каком складе находится Ваш заказ!</p>
+<div class="px10"></div>
+<div class="fwb c3 bg3 tac fs14" style="padding:5px;border-top:solid 1px #c8c8c8">Для качественного выполнения работ обращайтесь к нашим представителям в Вашем регионе!</div>
+<div class="px0"></div>
+<!--noindex-->
+<div class="noprint">
+{*text0_3*}
+</div>
+<div class="px10b"></div>
+<!--/noindex-->
+<p>Промышленные полимерные и бетонные <l1 id="255" class="fwb fs13">полы для склада</l1> – ЦЕНЫ, варианты покрытий, технология.</p>
+<div id="dateDoc">12мар24</div>
+<div class="pb_hidden">
+<span id="spIDmail">im.ruteohim@teoh</span>
+</div>

@@ -1,0 +1,27 @@
+<h1>Розничный Магазин ООО «ТэоХим»</h1>
+
+<!--<p class="fright tar"><a class="aprint" href="javascript:void(f_print())" style="margin:0;padding:0 0 0 20px;width:auto;background-position:0 0;">Версия для печати</a></p>-->
+<p class="fleft"><span>Адрес:</span> Москва, Алтуфьевское шоссе, д.102-Б.</p>
+<div class="px0"></div>
+<p class="fleft"><span>Продажи:</span> <a class="consult" href="tel:+79175442517">+7-917-544-2517</a>, &nbsp; &nbsp; <span>Консультации:</span> <a class="consult" href="tel:+79168113248">+7-916-811-3248</a></p>
+<p class="fright"><span>Время работы:</span> пн-пт с 9<sup>00</sup> до 20<sup>00</sup>, сб с 10<sup>00</sup> до 16<sup>00</sup></p>
+<div class="px5"></div>
+<p class="fleft p1 mt5 fwb fs13 bg3 b1 br5" style="padding:5px 10px;box-shadow:4px 4px 7px 0 #999999;"><a href="https://yandex.ru/maps/-/CHRlf2p0" target="_blank" class="a1 fwb fs14 ti">Как добраться</a></p>
+<div class="px10"></div>
+<?php $amap22=array(0, "55.902902", "37.591322", "Розничный Магазин «ТэоХим»", 15); ?>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+ymaps.ready(function () {
+  var v_map = new ymaps.Map("div_map_22", { center:[<?php print $amap22[1].','.$amap22[2]; ?>], zoom:<?php print $amap22[4]; ?>});
+  var v_obj = new ymaps.Placemark(v_map.getCenter(),{
+    hintContent: <?php print "'".$amap22[3]."'"; ?>, /* Наименование маркера */
+    balloonContent: <?php print "'".$amap22[3]."'"; ?>, /* Наименование маркера */
+  },{
+    preset: 'islands#blueDotIcon'
+  }
+);
+  v_map.geoObjects.add(v_obj);
+});
+</script>
+<div id="div_map_22" style="width:770px; height:400px;"></div>
+<div class="px0"></div>

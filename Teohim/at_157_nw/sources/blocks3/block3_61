@@ -1,0 +1,46 @@
+<h1>Наливные полимерные полы Курган</h1>
+{*text0_62*}
+<p class="fwb">Официальный представитель ООО «ТэоХим»: Курган, Курганская область.</p>
+
+<h2 class="h14p">ООО «ТэоХим Урал»</h2>
+<table class="tbl2">
+<tbody>
+<?php if(1==1) { ?>
+<!--tr><td class="tdpred"><span>Руководитель</span>:</td><td>&nbsp;</td></tr-->
+<tr><td class="tdpred"><span>Телефоны:</span></td><td><div><a href="tel:88003008765" style="font-weight:bold;">8 800 300-87-65</a></div>
+<div><a href="tel:+73432134872">343 213-48-72</a> / <a href="tel:+73432131094">213-10-94</a></div><br>
+<div><a href="tel:+79501940328">+7 950 194-03-28</a><?php f_print_wa('79501940328', 1) ?></div></div><br>
+<div><a href="tel:+79028701094">+7 902 870-10-94</a><?php f_print_wa('79028701094', 1) ?></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><span id="dpIDmail">&nbsp;</span></td><td></td><td></td></tr>
+<?php } else { ?>
+<tr><td class="tdpred"><span>Руководитель</span>:</td><td>Лаврова Наталья Николаевна</td></tr>
+<tr><td><span>Телефоны:</span></td><td><div><a href="tel:+73522651751">+7 (3522) 651-751</a></div><div><a href="tel:+79128342713">+7 (912) 834-27-13</a></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><span id="dpIDmail">&nbsp;</span></td></tr>
+<?php } ?>
+<tr><td><span>Сайт:</span></td><td id="dpIDsite"><a href="https://teohim-kurgan.ru/" target="_blank">Полимерные наливные полы Курган</a></td></tr>
+</tbody>
+</table>
+
+<h2>Промышленные полы в Кургане</h2>
+<p class="fwb">Реализация материалов «Элакор»:</p>
+<ul>
+<li>грунт полиуретановый</li>
+<li>лак полиуретановый</li>
+<li>эмаль полиуретановая</li>
+<li>краска для бетона</li>
+<li><l1 id="2" class="fwb">полимерный наливной пол</l1></li>
+</ul>
+
+<p class="fwb">Выполнение работ по устройству промышленных полов:</p>
+<ul>
+<li>защита бетона, упрочнение и обеспыливание бетона, флюатирование бетона</li>
+<li>устройство пола, бетонный пол ремонт, выравнивание</li>
+<li>наливной пол, полимерный пол, полиуретановый пол</li>
+<li>полимерное покрытие, полиуретановое покрытие</li>
+<li>полы для гаража, полы для склада, пол для промышленных помещений</li>
+</ul>
+<div class="px10b"></div>
+
+<p class="fleft">Ближайшее представительство: <l3 id="121" class="fwb">наливные полимерные полы Тюмень</l3></p>
+<p class="fright">ТэоХим Курган Элакор.</p>
+<div class="pb_hidden"><span id="spIDmail">im.rukurgan@teoh</span></div>

@@ -1,0 +1,132 @@
+<h1>Полы для склада</h1>
+<div class="px5"></div>
+
+<p>Компания ТэоХим - российский разработчик и производитель полимерных полов торговой марки «Элакор». Опыт производства материалов и выполнения работ более 24 лет. Референс-лист ТэоХим Склады.</p>
+<p class="fwb">При выборе покрытия необходимо понимать вид и интенсивность нагрузок.  Используя фильтры подберите покрытие со всеми необходимыми свойствами.</p>
+<div class="px10b"></div>
+
+<script>
+var cvrs = [11, 13];
+function showCover(ind) {
+  var id = $.id('cv'+ind), cb = $.id('cb'+ind);
+  if (id.style.display == "none") {
+     id.style.display = "block";
+     cb.innerHTML = "Свернуть ...";
+  } else {
+     id.style.display = "none";
+     cb.innerHTML = "Подробнее ...";
+  }
+}
+function calcCovers() {
+  for (var c=0; c<cvrs.length; c++) {
+     pi = cvrs[c]; cvi = String(pi);
+     f_cover(); f_i_t();
+  }
+}
+</script>
+
+<div class="px10"></div>
+<div id="id_calcHead" class="fleft">
+<table class="table1"><tbody>
+<tr><td class="thead" colspan="2" style="text-align: center; padding-bottom: 5px;">Для перерасчета цен Заполните зеленые ячейки, нажмите <button onclick="calcCovers()">Пересчитать</button></td></tr>
+<tr>
+  <td class="tdleft">Площадь, м.кв.</td>
+  <td id="i_so_td" class="pad0"><input class="i_t" style="width:118px;text-align:right;padding-right:2px;" type="text" id="i_so" value="1000" maxlength="5" onchange="calcCovers()"></td>
+</tr>
+<tr><td class="tdleft">Марка бетона / пескобетона</td>
+<td class="pad0">
+<select id="i_mb" class="i_t" onchange="calcCovers()">
+<option value="200">&nbsp;&nbsp;М200 (B15)</option><option value="250">&nbsp;&nbsp;М250 (B20)</option><option value="300" selected>&nbsp;&nbsp;М300 (B22.5)</option><option value="350">&nbsp;&nbsp;М350 (B25)</option></select>
+</td></tr></tbody></table>
+</div>
+<div class="fright" style="margin: 0px 0px;">
+<button style="padding: 3px; background: #f5530e; color: white; border: #f5530e; border-radius: 5px; font-size: 18px; cursor: pointer">Помощь в подборе</button>
+</div>
+
+<div class="px5"></div>
+
+<div class="fcover">
+<div class="fcmain">
+<?php
+$pi=11;     // Индекс покрытия
+$cvi='11';
+f_coverP();
+?>
+  <div class="fcimg">
+    <img style="" src="/img/obj/3/i1_s.jpg" onclick="$.zoomImg(this,'/img/obj/3/i1.jpg',200,25,800,600,'Полиуретановая пропитка на складе',-25,1,0,1);" title="Полиуретановая пропитка на складе" alt="Полиуретановая пропитка на складе"/>
+  </div>
+  <div class="fcinfo">
+    <div class="fcdescr">
+      <div class="fcdescr-name">
+      <p class="fs14 fwb mt0" style="color: red;">Полиуретановая пропитка</p>
+      <p class="mt0">Прозрачное (с янтарным оттенком) покрытие</p>
+      </div>
+      <div class="fcdescr-prop">
+      <p class="fs14 fwb mt0" style="color: red;">Свойства</p>
+      <p class="mt0">Глубина пропитки 2-3мм.<br>
+Обеспыливает и упрочняет поверхность пола.<br>
+Обеспечивает все эксплуатационные характеристики кроме цвета и антистатичности.
+      </p>
+      </div>
+    </div>
+    <div class="fcprice">
+      <div class="fcprice-info">
+      От 120р/м<sup>2</sup>
+      </div>
+      <button class="fcdescr-prop" id="cb11" onclick="showCover(11)">
+      Подробнее ...
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="cv11" style="display:none;">
+<div class="px3"></div>
+{*text0_28*}
+</div>
+</div>
+
+<div class="px10"></div>
+
+<div class="fcover">
+<div class="fcmain">
+<?php
+$pi=13;     // Индекс покрытия
+$cvi='13';
+f_coverP();
+?>
+  <div class="fcimg">
+    <img style="" src="/img/obj/3/i1_s.jpg" onclick="$.zoomImg(this,'/img/obj/3/i1.jpg',200,25,800,600,'Полиуретановая пропитка на складе',-25,1,0,1);" title="Полиуретановая пропитка на складе" alt="Полиуретановая пропитка на складе"/>
+  </div>
+  <div class="fcinfo">
+    <div class="fcdescr">
+      <div class="fcdescr-name">
+      <p class="fs14 fwb mt0" style="color: red;">Пропитка глубокого проникновения</p>
+      <p class="mt0">Прозрачное (с янтарным оттенком) покрытие</p>
+      </div>
+      <div class="fcdescr-prop">
+      <p class="fs14 fwb mt0" style="color: red;">Свойства</p>
+      <p class="mt0">Глубина пропитки 2-3мм.<br>
+Обеспыливает и упрочняет поверхность пола.<br>
+Обеспечивает все эксплуатационные характеристики кроме цвета и антистатичности.
+      </p>
+      </div>
+    </div>
+    <div class="fcprice">
+      <div class="fcprice-info">
+      От 120р/м<sup>2</sup>
+      </div>
+      <button class="fcdescr-prop" id="cb13" onclick="showCover(13)">
+      Подробнее ...
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="cv13" style="display:none;">
+<div class="px3"></div>
+{*text0_28*}
+</div>
+</div>
+
+<script>calcCovers();</script>

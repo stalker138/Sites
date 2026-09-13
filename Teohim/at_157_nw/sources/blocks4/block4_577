@@ -1,0 +1,44 @@
+<h1>Защита промышленного пола</h1>
+<div class="px5"></div>
+<p>ООО «ТэоХим» - разработчик и производитель материалов для защиты промышленных полов.</p>
+<p class="fwb">Устройство и защита промышленного пола – это основное направление деятельности нашей компании.</p>
+<p class="fwb">Для защиты промышленного пола мы предлагаем большой выбор технологий и целый ряд материалов торговой марки «Элакор», которые полностью удовлетворяют требованиям современного производства.</p>
+
+<div class="fleft mt10">
+  <p class="fwb">Чтобы оптимально решить Вашу задачу:</p>
+  <p class="fwb mt5"><l1 id="25">Помощник выбора</l1></p>
+</div>
+{*text5_4*}
+<div class="px10"></div>
+
+<p class="fi tac">Компания «ТэоХим» имеет более 100 представительств в России, СНГ и странах Балтии.<br>
+Основной деятельностью наших представительств является не продажа, а именно применение материалов «Элакор».<br>
+<span>Такой коллективный опыт позволяет находить новые технические и технологические решения,<br>
+и делает «Элакор» материалы максимально эффективными и экономически выгодными.</span></p>
+
+<p class="fwb">Современные <l1 id="1">промышленные полы</l1> Элакор.</p>
+
+<div class="px10b"></div>
+
+<div class="dph1">Защита промышленного пола<br>
+<img class="pb_ismall" src="/img/zashita_promyshlennogo_pola_440_s.jpg" onclick="$.zoomImg(this,'/img/zashita_promyshlennogo_pola_440.jpg',200,25,800,600,'Защита промышленного пола',-25,1,0,1);" title="Защита промышленного пола" alt="Защита промышленного пола"/>
+</div>
+<div class="dph1">Промышленные полы<br>
+<img class="pb_ismall" src="/img/promyshlennye_poly_440_s.jpg" onclick="$.zoomImg(this,'/img/promyshlennye_poly_440.jpg',200,25,800,600,'Промышленные полы',-25,1,0,1);" title="Промышленные полы" alt="Промышленные полы"/>
+</div>
+<div class="dph1r0">Промышленные полы Элакор<br>
+<img class="pb_ismall" src="/img/promyshlennye_poly_elakor_440_s.jpg" onclick="$.zoomImg(this,'/img/promyshlennye_poly_elakor_440.jpg',200,25,800,600,'Промышленные полы Элакор',-25,1,0,1);" title="Промышленные полы Элакор" alt="Промышленные полы Элакор"/>
+</div>
+
+<div class="px5"></div>
+
+{*text5_3*}
+
+<div class="px10"></div>
+<div id="dateDoc">25снт14</div>
+
+<div class="pb_hidden">
+  <img src="/img/zashita_promyshlennogo_pola_440.jpg" alt="">
+  <img src="/img/promyshlennye_poly_440.jpg" alt="">
+  <img src="/img/promyshlennye_poly_elakor_440.jpg" alt="">
+</div>

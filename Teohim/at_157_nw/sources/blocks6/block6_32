@@ -1,0 +1,4 @@
+<?php
+$id_tss=156251;
+f_cat_load($id_tss);
+?>

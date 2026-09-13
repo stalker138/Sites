@@ -1,0 +1,4 @@
+<?php
+$id_tss=101226;
+f_tss_load($id_tss);
+?>

@@ -1,0 +1,120 @@
+<h1>Технология. КНП на цветном песке, толщина 5мм.</h1>
+<div class="px0"></div>
+
+<h2>Технология</h2>
+<ol>
+<li><span>Грунтование.</span> Обычное.</li>
+<li><span>Протекторный слой.</span> Накидывается песок 1-2мм без избытка, расход около 0,4кг/м2.<br>Задача – удержать КНП от перемещения при работе вертолета</li>
+<li><span>Устройство КНП.</span> Тщательно смешать компоненты ЭД связующее-2К, сразу добавить цветной кварц (10 вес. частей кварца на 1 вес. часть связующего). Замешивается в пластиковой таре (30л) миксером. Мы брали 15кг песка и 1,5кг ЭД. Распределяется раклей с зазором около 7мм. 10-15мин пауза. Далее вертолет, лопасти подняты в среднее положение (около 30 градусов). Лопасти новые без дефектов. Смазываются 646 растворителем.</li>
+<li><span>Запаковка.</span> ЭД НП Прозрачный 15кг + Аэросил 110г. Металлический шпатель – гладкая поверхность, резиновый шпатель небольшая фактурность.</li>
+<li><span>Финишный слой.</span> ЭД НП Прозрачный.<br>Валиком.</li>
+</ol>
+<p>Выдержка между операциями – сутки.</p>
+<div class="px10"></div>
+
+<h2>Смета предварительная</h2>
+<div class="px10"></div>
+
+<table class="tmtr"><tbody>
+<tr>
+ <th class="fwb">Операция</th>
+ <th class="fwb" style="width:150px;">Материал ТэоХим</th>
+ <th class="fwb">Расход кг/м²</th>
+ <th class="fwb">Цена, руб/кг</th>
+ <th class="fwb">Кол-во, кг</th>
+ <th class="fwb">Стоимость</th>
+ <th class="fwb">За 1м²</th>
+</tr>
+<tr>
+ <td class="tdl">Грунтование</td>
+ <td class="tdl">Элакор-ПУ Грунт</td>
+ <td class="tdr">0,25</td>
+ <td class="tdr">210</td>
+ <td class="tdr">250</td>
+ <td class="tdr">52500.00р.</td>
+ <td class="tdr">52.50р.</td>
+</tr>
+<tr>
+ <td class="tdl" rowspan="2">Протекторный слой</td>
+ <td class="tdl">Элакор-ПУ Грунт</td>
+ <td class="tdr">0,1</td>
+ <td class="tdr">210</td>
+ <td class="tdr">100</td>
+ <td class="tdr">21000.00р.</td>
+ <td class="tdr">21.00р.</td>
+</tr>
+<tr>
+ <td class="tdl">Кварц 1-2мм</td>
+ <td class="tdr">0,4</td>
+ <td class="tdr">12</td>
+ <td class="tdr">400</td>
+ <td class="tdr">4800.00р.</td>
+ <td class="tdr">4.80р.</td>
+</tr>
+<tr>
+ <td class="tdl" rowspan="2">Устройство КНП</td>
+ <td class="tdl">Элакор-ЭД Связующее-2К/П</td>
+ <td class="tdr">0,75</td>
+ <td class="tdr">470</td>
+ <td class="tdr">750</td>
+ <td class="tdr">352500.00р.</td>
+ <td class="tdr">352.50р.</td>
+</tr>
+<tr>
+ <td class="tdl">Кварц цветной 0,8-1,2мм</td>
+ <td class="tdr">7,5</td>
+ <td class="tdr">25</td>
+ <td class="tdr">7500</td>
+ <td class="tdr">187500.00р.</td>
+ <td class="tdr">187.50р.</td>
+</tr>
+<tr>
+ <td class="tdl" rowspan="2">Запаковка</td>
+ <td class="tdl">Элакор-ЭД НП Прозрачный</td>
+ <td class="tdr">0,8</td>
+ <td class="tdr">470</td>
+ <td class="tdr">800</td>
+ <td class="tdr">376000.00р.</td>
+ <td class="tdr">376.00р.</td>
+</tr>
+<tr>
+ <td class="tdl">Аэросил</td>
+ <td class="tdr">0,006</td>
+ <td class="tdr">830</td>
+ <td class="tdr">6</td>
+ <td class="tdr">4980.00р.</td>
+ <td class="tdr">4.98р.</td>
+</tr>
+<tr>
+ <td class="tdl">Финишный слой</td>
+ <td class="tdl">Элакор-ЭД НП Прозрачный</td>
+ <td class="tdr">0,24</td>
+ <td class="tdr">470</td>
+ <td class="tdr">240</td>
+ <td class="tdr">112800.00р.</td>
+ <td class="tdr">112.80р.</td>
+</tr>
+<tr>
+ <td class="tdr fwb" colspan="4">Итого</td>
+ <td class="tdr fwb">10046</td>
+ <td class="tdr fwb">1112080.00р.</td>
+ <td class="tdr fwb">1112.08р.</td>
+</tr>
+</tbody></table>
+
+<p class="fwb tar">Цены по прайсу ТэоХим, от 3000кг.</p>
+<div class="px10"></div>
+
+<h2>Фото</h2>
+
+<div class="dph1">
+ <img class="pb_ismall" src="/img/knp-1_s.jpg" onclick="$.zoomImg(this,'/img/knp-1.jpg',200,25,800,599,'Кварцнаполненный пол',-25,1,0,1);" title="Кварцнаполненный пол" alt="Кварцнаполненный пол">
+</div>
+<div class="dph1r0">
+ <img class="pb_ismall" src="/img/knp-2_s.jpg" onclick="$.zoomImg(this,'/img/knp-2.jpg',200,25,800,599,'Кварцнаполненные полы',-25,1,0,1);" title="Кварцнаполненные полы" alt="Кварцнаполненные полы">
+</div>
+
+<div class="pb_hidden">
+<img src="/img/knp-1.jpg" alt=""/>
+<img src="/img/knp-2.jpg" alt=""/>
+</div>

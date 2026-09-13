@@ -1,0 +1,93 @@
+<h1>Цвета Элакор</h1>
+<div class="px5"></div>
+
+<p>Приведенные ниже цвета относятся ко всем цветным материалам «Элакор»:<br>
+полиуретановые и эпоксидные краски, эмали, шпатлевки, наливные полы, <l2 id="31">колеровочные пасты</l2> и т.д.</p>
+
+<p class="center fwb">Кроме указанных цветов возможны любые промежуточные и смесевые цвета,<br>а также подбор цвета по таблицам «RAL» и другим таблицам цветов.</p>
+<div class="px10"></div>
+
+<table><tbody>
+<tr><th colspan="2">Удорожание эмали за 1 кг<br>в зависимости от цвета<br>&nbsp;</th><th>Внимание! Представленные цвета могут отличаться от действительных.<br>Это связано с индивидуальными настройками Вашего монитора.<br>&nbsp;</th></tr>
+
+<tr>
+    <td style="width:50px">+0 р.</td>
+    <td style="width:120px">сурик 100% <sup>*</sup></td>
+    <td style="background:#862306">&nbsp;</td>
+</tr>
+<tr>
+    <td>+0 р.</td>
+    <td>сурик 75% <sup style="font-weight:bold; font-size:14px">*</sup></td>
+    <td style="background:#a4412e">&nbsp;</td>
+</tr>
+<tr>
+    <td>+0 р.</td>
+    <td>сурик 50%</td>
+    <td style="background:#b45c48">&nbsp;</td>
+</tr>
+<tr><td>+0 р.</td><td>сурик 25%</td><td style="background:#d88776">&nbsp;</td></tr>
+<tr>
+    <td>+25 р.</td>
+    <td>оранжевый</td>
+    <td style="background: #FF6E10;">&nbsp;</td>
+</tr>
+<?php if (1==2) { ?>
+<tr>
+    <td>+25 р.</td>
+    <td>красный 100%<sup>*</sup></td>
+    <td style="background:#da0e17;">&nbsp;</td>
+</tr>
+<?php } ?>
+<tr>
+    <td>+20 р.</td>
+    <td>красный 75%<sup>*</sup></td>
+    <td style="background:#e10e17;">&nbsp;</td>
+</tr>
+<tr>
+    <td>+15 р.</td>
+    <td>красный 50%</td>
+    <td style="background:#ff1a30;">&nbsp;</td>
+</tr>
+<tr>
+    <td>+10 р.</td>
+    <td>красный 25%</td>
+    <td style="background:#ff5551;">&nbsp;</td>
+</tr>
+
+<tr><td>+20 р.</td><td>желтый 75%<sup>*</sup></td><td style="background:#fcc739">&nbsp;</td></tr>
+<tr><td>+15 р.</td><td>желтый 50%</td><td style="background:#ffce19">&nbsp;</td></tr>
+<tr><td>+10 р.</td><td>желтый 25%</td><td style="background:#fee117">&nbsp;</td></tr>
+<tr><td>+20 р</td><td>лимон 75%<sup>*</sup></td><td style="background:#ffff00">&nbsp;</td></tr>
+<tr><td>+15 р</td><td>лимон 50%</td><td style="background:#f9ff6b">&nbsp;</td></tr>
+<tr><td>+10 р</td><td>лимон 25%</td><td style="background:#f9fd84">&nbsp;</td></tr>
+<tr><td>+160 р.</td><td>фиолетовый 50%</td><td style="background:#65156b">&nbsp;</td></tr>
+<tr><td>+35 р.</td><td>фиолетовый 6%</td><td style="background:#b79bb9">&nbsp;</td></tr>
+<tr><td>+20 р.</td><td>фиолетовый 1,5%</td><td style="background:#dbcddc">&nbsp;</td></tr>
+<tr><td>+23 р.</td><td>ФЦ синий 75%</td><td style="background:#1d1f50">&nbsp;</td></tr>
+<tr><td>+20 р.</td><td>ФЦ синий 50%</td><td style="background:#005d89">&nbsp;</td></tr>
+<tr><td>+15 р.</td><td>ФЦ синий 25%</td><td style="background:#2288b0">&nbsp;</td></tr>
+<tr><td>+10 р.</td><td>ФЦ синий 12,5%</td><td style="background:#2a8db6">&nbsp;</td></tr>
+<tr><td>+5 р.</td><td>ФЦ синий 6%</td><td style="background:#57a6c7">&nbsp;</td></tr>
+<tr><td>+3 р.</td><td>ФЦ синий 3%</td><td style="background:#91cde5">&nbsp;</td></tr>
+<tr><td>+0 р.</td><td>ФЦ синий 1,5%</td><td style="background:#c1e6f6">&nbsp;</td></tr>
+<tr><td>+23 р.</td><td>ФЦ зеленый 75%</td><td style="background:#006a3f">&nbsp;</td></tr>
+<tr><td>+20 р.</td><td>ФЦ зеленый 50%</td><td style="background:#009f62">&nbsp;</td></tr>
+<tr><td>+15 р.</td><td>ФЦ зеленый 25%</td><td style="background:#1ebe80">&nbsp;</td></tr>
+<tr><td>+10 р.</td><td>ФЦ зеленый 12,5%</td><td style="background:#3cdc9e">&nbsp;</td></tr>
+<tr><td>+5 р.</td><td>ФЦ зеленый 6%</td><td style="background:#5de7b3">&nbsp;</td></tr>
+<tr><td>+3 р.</td><td>ФЦ зеленый 3%</td><td style="background:#86efd0">&nbsp;</td></tr>
+<tr><td>+0 р.</td><td>ФЦ зеленый 1,5%</td><td style="background:#b9f8e5">&nbsp;</td></tr>
+<tr><td>+15 р.</td><td>ОХП 100%</td><td style="background:#304d01">&nbsp;</td></tr>
+<tr><td>+10 р.</td><td>ОХП 75%</td><td style="background:#587529">&nbsp;</td></tr>
+<tr><td>+7 р.</td><td>ОХП 50%</td><td style="background:#8caa5b">&nbsp;</td></tr>
+<tr><td>+5 р.</td><td>ОХП 25%</td><td style="background:#c0d78d">&nbsp;</td></tr>
+<tr><td>+5 р.</td><td>ПС 100%</td><td style="background:#004100">&nbsp;</td></tr>
+<tr><td>+2 р.</td><td>ПС 75%</td><td style="background:#597c44">&nbsp;</td></tr>
+<tr><td>+0 р.</td><td>ПС 50%</td><td style="background:#94b780">&nbsp;</td></tr>
+<tr><td>+0 р.</td><td>ПС 25%</td><td style="background:#a2c090">&nbsp;</td></tr>
+<tr><td>+0 р.</td><td>черный 100%</td><td style="background:#000000">&nbsp;</td></tr>
+<tr><td>+0 р.</td><td>черный 50%</td><td style="background:#474747">&nbsp;</td></tr>
+<tr><td>+0 р.</td><td>серый</td><td style="background:#858574">&nbsp;</td></tr>
+<tr><td>+0 р.</td><td>белый</td><td style="background:#f8ffef">&nbsp;</td></tr>
+</tbody></table>
+<p class="tal">*- Эмаль этого цвета можно наносить только на поверхность, предварительно окрашенную белой эмалью (это повышает укрывистость).</p>

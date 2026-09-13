@@ -1,0 +1,228 @@
+<?php $strl='<tr style="background:#f0f0f0"><td colspan="4" class="tdl fwb fi c6" style="padding-left:5px; font-size:14px;">'; ?>
+
+<h1>Декоративные полы</h1>
+<div class="px5"></div>
+<div style="box-shadow:4px 4px 7px 1px #999999;">
+<table class="tmtr"><tbody>
+<tr><th>Образец пола</th><th>В цену* входит</th><th>Толщина</th><th>Сроки</th></tr>
+<tr><td style="width:110px;">&nbsp;</td><td>&nbsp;</td><td style="width:50px;">&nbsp;</td><td style="width:50px;">&nbsp;</td></tr>
+<?php print $strl.'Декоративные полы. Одноцветный наливной пол</td></tr>'; ?>
+<tr><td><img class="pb_ismall" src="/img/decpoly/price1-s.jpg" onclick="$.zoomImg(this,'/img/decpoly/price1.jpg',300,30,533,778,'',0,1,0,1);" title="Декоративные полы. Одноцветный наливной пол" alt="Декоративные полы. Одноцветный наливной пол"/></td>
+<td class="tdl">грунтовка, шпатлёвка, эпоксидный наливной пол,<br>лак (матовый-глянцевый),<br>работа по монтажу наливного пола.</td><td>3мм.</td><td>3-5<br>дней</td></tr>
+<?php print $strl.'Декоративные полы. Наливной пол с художественным рисунком под прозрачным слоем</td></tr>'; ?>
+<tr><td><img class="pb_ismall" src="/img/decpoly/price2-s.jpg" onclick="$.zoomImg(this,'/img/decpoly/price2.jpg',300,30,800,533,'',0,1,0,1);" title="Декоративные полы. Наливной пол с художественным рисунком под прозрачным слоем" alt="Декоративные полы. Наливной пол с художественным рисунком под прозрачным слоем"/></td>
+<td class="tdl pl">грунтовка, шпатлёвка, наливные эпоксидные полы,<br>нанесение рисунка,<br>прозрачный наливной пол,<br>лак (матовый-глянцевый),<br>работа по монтажу наливного пола.</td><td>3мм.</td><td>10-15<br>дней</td></tr>
+<?php print $strl.'Декоративные полы. Наливной пол с фотоплёнкой под прозрачным слоем</td></tr>'; ?>
+<tr><td><img class="pb_ismall" src="/img/decpoly/price3-s.jpg" onclick="$.zoomImg(this,'/img/decpoly/price3.jpg',300,30,667,500,'',0,1,0,1);" title="Декоративные полы. Наливной пол с фотоплёнкой под прозрачным слоем" alt="Декоративные полы. Наливной пол с фотоплёнкой под прозрачным слоем"/></td>
+<td class="tdl">грунтовка, шпатлёвка, эпоксидный наливной пол,<br>нанесение пленки с изображением,<br>прозрачный наливной пол,<br>лак (матовый-глянцевый),<br>работа по монтажу наливного пола.</td><td>3мм.</td><td>10-15<br>дней</td></tr>
+<?php print $strl.'Декоративные полы. Наливной пол с рисунком под прозрачным слоем</td></tr>'; ?>
+<tr><td><img class="pb_ismall" src="/img/decpoly/price4-s.jpg" onclick="$.zoomImg(this,'/img/decpoly/price4.jpg',300,30,800,533,'',0,1,0,1);" title="Декоративные полы. Наливной пол с рисунком под прозрачным слоем'" alt="Декоративные полы. Наливной пол с рисунком под прозрачным слоем'"/></td>
+<td class="tdl">грунтовка, шпатлёвка, наливные эпоксидные полы,<br>нанесение рисунка,<br>прозрачный наливной пол,<br>лак (матовый-глянцевый),<br>работа по монтажу наливного пола.</td><td>3мм.</td><td>5-10<br>дней</td></tr>
+<?php print $strl.'Декоративные полы. Полы с разводами, прожилками, блёстками, чипсами перламутром и т.д.</td></tr>'; ?>
+<tr><td><img class="pb_ismall" src="/img/decpoly/price5-s.jpg" onclick="$.zoomImg(this,'/img/decpoly/price5.jpg',300,30,800,533,'',0,1,0,1);" title="Декоративные полы. Полы с разводами, прожилками, блёстками, чипсами перламутром и т.д." alt="Декоративные полы. Полы с разводами, прожилками, блёстками, чипсами перламутром и т.д."/></td>
+<td class="tdl">грунтовка, шпатлёвка, эпоксидный наливной пол,<br>нанесение рисунка,<br>прозрачный наливной пол,<br>лак (матовый-глянцевый),<br>работа по монтажу наливного пола.</td><td>3-4мм.</td><td>7-10<br>дней</td></tr>
+</tbody></table>
+</div>
+<div class="px0"></div>
+
+<p class="fs11 ml20">* Для получения информации по вопросам наливные полы цена материалов, наливные полы цена устройства - Элакор <l1 id="67">наливные полы цена</l1>. Здесь вы можете также узнать о возможностях значительно сократить цену наливного пола (покрытия).</p>
+<div class="px20"></div>
+
+<div class="bs">
+<div class="h14b"><div class="px10"></div>клуб<br>secret service<div class="px10"></div></div>
+<div class="px5"></div>
+<img class="pb_ismall" src="/img/decpoly/ss5_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ss5.jpg',300,30,533,800,'',0,1,0,1);" title="клуб" alt="клуб"/>
+<img class="pb_ismall" src="/img/decpoly/ss6_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ss6.jpg',300,30,533,800,'',0,1,0,1);" title="клуб" alt="клуб"/>
+<div class="px5"></div>
+<img class="pb_ismall" src="/img/decpoly/ss1_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ss1.jpg',300,30,800,533,'',0,1,0,1);" title="клуб" alt="клуб"/>
+<img class="pb_ismall" src="/img/decpoly/ss2_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ss2.jpg',300,30,800,533,'',0,1,0,1);" title="клуб" alt="клуб"/>
+<div class="px5"></div>
+<img class="pb_ismall" src="/img/decpoly/ss7_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ss7.jpg',300,30,800,533,'',0,1,0,1);" title="клуб" alt="клуб"/>
+<img class="pb_ismall" src="/img/decpoly/ss8_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ss8.jpg',300,30,800,533,'',0,1,0,1);" title="клуб" alt="клуб"/>
+<div class="px5"></div>
+<img class="pb_ismall" src="/img/decpoly/ss3_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ss3.jpg',300,30,800,533,'',0,1,0,1);" title="клуб" alt="клуб"/>
+<img class="pb_ismall" src="/img/decpoly/ss4_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ss4.jpg',300,30,800,533,'',0,1,0,1);" title="клуб" alt="клуб"/>
+<div class="px0"></div>
+</div>
+
+<p>Еще восемь-десять лет года назад про <l1 id="2">наливной полимерный пол</l1> было известно лишь узкому кругу специалистов и небольшому числу строителей. И относились к наливным и полимерным полам, мягко говоря, с опаской. Это объясняется тем, что знаний и опыта в данной области российские строители, в отличие от зарубежных, не имели. Причем многие дизайнеры и архитекторы в процессе изучения не доступных для массового пользователя глянцевых журналов, зачастую не переведенных на русский язык, не понимали сущность цветного, идеально ровного, бесшовного материала, ни на что другое не похожего, и в то же время очень стильного. Если брать в расчет универсальность применения наливных полимерных полов, область его использования может ограничиваться только фантазией, над воплощением которой мы и работаем. А если говорить о цене наливных полов при воплощении высокохудожественных дизайнерских решений – она вне конкуренции.</p>
+<p>При выборе покрытия многие отдают предпочтение классическим вариантам покрытия, плитка, паркет или линолеум, при этом не осознавая, какую нагрузку как информационную так и психологическую несет в себе покрытие. Если у Вас яркое, искристое покрытие, которое к тому же отлично выдерживает механические нагрузки (эпоксидные полы), посетители будут более охотно проводить время в Вашем заведении, и незабываемый дизайн будет привлекать к Вам новых посетителей.</p>
+<p>Российский современный интерьерный дизайн зародился еще в начале прошлого десятилетия. По мнению профессионалов этого бизнеса, его формирование продолжается до сих пор, а окончательно завершиться оно должно лет через десять. Но уже сейчас трудно представить себе хороший бутик или фирменный магазин без авторского дизайн-проекта, дорогой мебели и текстурных полимерных наливных полов. В настоящее время все это главные атрибуты успешного имиджа любой уважающего себя бренда . Рассмотрим поподробнее уникальные свойства полимерных наливных полов: эпоксидные полы и полиуретановые полы.</p>
+<p>Благодаря неповторимому сочетанию свойств, <strong>декоративные полимерные полы</strong> могут удовлетворять как самым жестким эксплуатационным требованиям, так и самым сложным дизайнерским пожеланиям, а благодаря цене наливные полы декоративные могут конкурировать с большинством других декоративных покрытий.</p>
+<p>Так как наливные полы и <l1 id="3">полимерные полы</l1> имеют широкий спектр воплощений, Вам остается только выбрать нужные параметры:</p>
+<ul>
+<li>толщина</li>
+<li>цветовая гамма (на ваш вкус)</li>
+</ul>
+<p>Так в чем же основные особенности готового покрытия<br>и что представляет собой <l2 id="182">технология наливных полов</l2>?</p>
+<p>Любая жидкость, вылитая на плоскость, распределяется по поверхности, формируя строго горизонтальную плоскость. Этот принцип и лежит в основе изготовления наливных полов. После высыхания жидкость превращается в твердое, ровное и гладкое покрытие без швов, пор и трещин. Главными преимуществами такого покрытия специалисты называют следующие:</p>
+<ul>
+<li>надежная защита бетонного основания от воздействия больших истирающих нагрузок, а также агрессивных веществ (соли, щелочи, кислоты, ядохимикаты и др.);</li>
+<li>абсолютная беспыльность;</li>
+<li>легкость уборки, минимальная загрязняемость;</li>
+<li>электрическая изоляция и антистатичность;</li>
+<li>высокая долговечность.</li>
+<li>привлекательная цена наливных полов.</li>
+</ul>
+<div class="px10"></div>
+
+<div class="bs">
+<div class="h14b"><div class="px10"></div>бизнес-центр<br>на Верейской<div class="px10"></div></div>
+<div class="px5"></div>
+<img class="pb_ismall" src="/img/decpoly/ver6_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ver6.jpg',300,30,533,800,'',0,1,0,1);" title="бизнес-центр" alt="бизнес-центр"/>
+<img class="pb_ismall" src="/img/decpoly/ver7_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ver7.jpg',300,30,533,800,'',0,1,0,1);" title="бизнес-центр" alt="бизнес-центр"/>
+<div class="px5"></div>
+<img class="pb_ismall" src="/img/decpoly/ver1_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ver1.jpg',300,30,800,533,'',0,1,0,1);" title="бизнес-центр" alt="бизнес-центр"/>
+<img class="pb_ismall" src="/img/decpoly/ver3_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ver3.jpg',300,30,800,533,'',0,1,0,1);" title="бизнес-центр" alt="бизнес-центр"/>
+<div class="px5"></div>
+<img class="pb_ismall" src="/img/decpoly/ver4_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ver4.jpg',300,30,800,533,'',0,1,0,1);" title="бизнес-центр" alt="бизнес-центр"/>
+<img class="pb_ismall" src="/img/decpoly/ver5_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/ver5.jpg',300,30,800,533,'',0,1,0,1);" title="бизнес-центр" alt="бизнес-центр"/>
+<div class="px0"></div>
+</div>
+
+<p>Наиболее подходящие связующие для таких полимерных наливных полов - эпоксидные смолы и полиуретаны, не содержащие растворителей:</p>
+<ul>
+<li><l1 id="102">эпоксидные полы</l1> отличаются высокой твердостью, жесткостью,<br>водо- и химической стойкостью;</li>
+<li><l1 id="101">полиуретановые полы</l1> хорошо воспринимают ударные нагрузки, обладают высокой<br>эластичностью, отлично противостоят кислым средам и перепадам температуры.</li>
+</ul>
+<p>Технология наливных полов позволяет выполнять декоративные полы в негорючем, токопроводящем (установка электропроводки под покрытие) и противоскользящем вариантах. Последний вариант достигается введением в состав кварцевого песка или с помощью рассеивания песка на еще не отвердевшее покрытие с последующей его покраской. Возможно использование песка различных цветов, что в комплексе с прозрачной полимерной композицией придает наливному полу оригинальный и эстетичный вид.</p>
+<p>Таким же способом можно выполнять различные имитации, наносить хлопья (чешуйки краски различных цветов), выполнять логотипы фирм или даже создавать под ногами цветную рекламу. Полиуретановые и эпоксидные полимерные полы можно наносить как на новые, так и на старые бетонные основания внутри здания, а также на керамическую плитку, фанеру, ДСП.</p>
+<p>Объективно говоря, заказывая у нас декоративный наливной пол, вы получаете безграничные перспективы для воплощения творческих идей, прочное и долговечное покрытие, а также эксклюзивный дизайн помещения вашей компании!</p>
+<p>Наши специалисты и технологи помогут Вам подобрать оптимальное по всем необходимым параметрам и требованиям покрытие, воплотить проект в жизнь и обеспечить в дальнейшем должный уход за декоративным наливным полом.</p>
+<p>При составлении Технического Задания и Сметы нашими специалистами всегда учитываются все условия и требования предъявляемые к наливным полам:</p>
+<ul>
+<li>учитываются все особенности эксплуатационных нагрузок (воздействие химических веществ, перепад температур, предполагаемые нагрузки, возможность механических воздействий и т.п.);</li>
+<li>правильно подготовленное основание (физическое состояние основы, контроль влажности, обезжиривание и др.);</li>
+<li>правильно подобран вид пола в зависимости от химического состава и свойств самого материала (полимерцементные, полиуретановые или эпоксидные полы);</li>
+<li>выбрана оптимальная толщина покрытия (возможна начиная от 1,5 мм);</li>
+<li>определены наиболее подходящие материалы по физико-химическим свойствам;</li>
+<li>строго выдержана технология выполнения работ по наливным полам.</li>
+</ul>
+<div class="px10"></div>
+
+<div class="bs">
+<div class="h14b"><div class="px10"></div>клуб «Вираж»<br>МО, Щелковский р-н,<br>Осеево<div class="px5"></div></div>
+<div class="px5"></div>
+<img class="pb_ismall" src="/img/decpoly/viragh1_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/viragh1.jpg',300,30,800,533,'',0,1,0,1);" title="клуб «Вираж»" alt="клуб «Вираж»"/>
+<img class="pb_ismall" src="/img/decpoly/viragh2_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/viragh2.jpg',300,30,800,533,'',0,1,0,1);" title="клуб «Вираж»" alt="клуб «Вираж»"/>
+<div class="px5"></div>
+<img class="pb_ismall" src="/img/decpoly/viragh3_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/viragh3.jpg',300,30,800,533,'',0,1,0,1);" title="клуб «Вираж»" alt="клуб «Вираж»"/>
+<img class="pb_ismall" src="/img/decpoly/viragh4_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/viragh4.jpg',300,30,800,533,'',0,1,0,1);" title="клуб «Вираж»" alt="клуб «Вираж»"/>
+<div class="px0"></div>
+</div>
+
+<p>Если не учитывать все вышеизложенные пункты, пострадает качество, а многие преимущества будут просто утеряны. Все эти и многие другие вопросы уже не один год успешно решаются нашим коллективом.</p>
+<p>Наливные полимерные полы набирают популярность в России благодаря своим уникальным качествам, которые не могут обеспечить другие материалы: выполняются абсолютно ровно, без зазоров и швов для любого размера поверхности; абсолютно непылящие, гигиеничные, эластичные, износоустойчивые, стойкие к химическим и физическим воздействиям. К тому же полимерным полам можно придать и ряд специальных специфических свойств, сделав их, например, токопроводящими, антистатическими, противоскользящими и т.д. Так же, такие полы являются экологически чистыми и совершенно безопасными для здоровья. Добавим еще простоту в эксплуатации и возможность использовать в широком температурном диапазоне. Убедимся, что сразу всеми перечисленными качествами не обладает ни один из других возможных полов. Современные помещения требуют использования современных технологий и материалов, а мы поможем следовать тенденциям моды.</p>
+<p>К тому же богатая цветовая гамма и современные технологии наливных полов позволяют создавать уникальные наливные полы с узорами и рисунками, разработанными совместно с дизайнерами и соответствующими Вашим желаниям и интерьеру любого помещения. К примеру, Вы сможете разместить логотип Вашей компании в фойе главного офиса, и в течение многих лет посетители будут восхищаться им. Вы можете создать эксклюзивные наливные полы в квартире, или прозрачные эпоксидные полы в студии, или пол с забавными рисунками в детской, или цветной наливной пол на Вашем предприятии, и при этом быть уверенными в правильности своего выбора. Выберете Вы один из предложенных вариантов, или наши дизайнеры сделают уникальный дизайн согласно Вашего видения интерьера; будете использовать глянцевую или матовую поверхность – результат порадует Вас и будет восхищать окружающих.</p>
+
+<div class="px10"></div>
+<div class="h14b">Клуб burlesque</div>
+<div class="px10"></div>
+<img class="pb_ismall" src="/img/decpoly/burlesque1_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque1.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque2_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque2.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque3_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque3.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque4_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque4.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque5_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque5.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque6_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque6.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque7_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque7.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque8_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque8.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque9_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque9.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque10_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque10.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque11_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque11.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+<img class="pb_ismall" src="/img/decpoly/burlesque12_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/burlesque12.jpg',300,30,800,533);" title="клуб burlesque" alt="клуб burlesque"/>
+
+<div class="px10"></div>
+<div class="h14b">Клуб «Распутин»</div>
+<div class="px10"></div>
+<img class="pb_ismall" src="/img/decpoly/rasputin2_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/rasputin2.jpg',300,30,800,533);" title="клуб rasputin" alt="клуб rasputin"/>
+<img class="pb_ismall" src="/img/decpoly/rasputin3_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/rasputin3.jpg',300,30,800,533);" title="клуб rasputin" alt="клуб rasputin"/>
+<img class="pb_ismall" src="/img/decpoly/rasputin4_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/rasputin4.jpg',300,30,800,533);" title="клуб rasputin" alt="клуб rasputin"/>
+<img class="pb_ismall" src="/img/decpoly/rasputin1_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/rasputin1.jpg',300,30,800,533);" title="клуб rasputin" alt="клуб rasputin"/>
+
+<div class="px10"></div>
+<div class="h14b">Кварира на пр. Вернадского</div>
+<div class="px10"></div>
+<img class="pb_ismall" src="/img/decpoly/pv1_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/pv1.jpg',300,30,800,533);" title="кварира" alt="кварира"/>
+<img class="pb_ismall" src="/img/decpoly/pv2_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/pv2.jpg',300,30,800,533);" title="кварира" alt="кварира"/>
+<img class="pb_ismall" src="/img/decpoly/pv3_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/pv3.jpg',300,30,800,533);" title="кварира" alt="кварира"/>
+<img class="pb_ismall" src="/img/decpoly/pv4_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/pv4.jpg',300,30,800,533);" title="кварира" alt="кварира"/>
+
+<div class="px10"></div>
+<div class="h14b">Клуб «Рио-Гранд» г. Подольск</div>
+<div class="px10"></div>
+<img class="pb_ismall" src="/img/decpoly/podolsk1_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/podolsk1.jpg',300,30,800,533);" title="клуб «Рио-Гранд»" alt="клуб «Рио-Гранд»"/>
+<img class="pb_ismall" src="/img/decpoly/podolsk2_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/podolsk2.jpg',300,30,800,533);" title="клуб «Рио-Гранд»" alt="клуб «Рио-Гранд»"/>
+
+<div class="px10"></div>
+<div class="h14b">Рресторан в г.Нижневартовск</div>
+<div class="px10"></div>
+<img class="pb_ismall" src="/img/decpoly/nv1_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/nv1.jpg',300,30,800,533);" title="ресторан" alt="ресторан"/>
+<img class="pb_ismall" src="/img/decpoly/nv2_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/nv2.jpg',300,30,800,533);" title="ресторан" alt="ресторан"/>
+<img class="pb_ismall" src="/img/decpoly/nv3_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/nv3.jpg',300,30,800,533);" title="ресторан" alt="ресторан"/>
+
+<div class="px10"></div>
+<div class="h14b">Развлекательный комплекс «Парадиз», г. Вологда</div>
+<div class="px10"></div>
+<img class="pb_ismall" src="/img/decpoly/vologda1_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/vologda1.jpg',300,30,800,533);" title="комплекс «Парадиз»" alt="комплекс «Парадиз»"/>
+<img class="pb_ismall" src="/img/decpoly/vologda2_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/vologda2.jpg',300,30,800,533);" title="комплекс «Парадиз»" alt="комплекс «Парадиз»"/>
+<img class="pb_ismall" src="/img/decpoly/vologda4_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/vologda4.jpg',300,30,800,533);" title="комплекс «Парадиз»" alt="комплекс «Парадиз»"/>
+<img class="pb_ismall" src="/img/decpoly/vologda5_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/vologda5.jpg',300,30,800,533);" title="комплекс «Парадиз»" alt="комплекс «Парадиз»"/>
+<img class="pb_ismall" src="/img/decpoly/vologda3_s.jpg" onclick="$.zoomImg(this,'/img/decpoly/vologda3.jpg',300,30,533,800);" title="комплекс «Парадиз»" alt="комплекс «Парадиз»"/>
+
+<div class="px10"></div>
+<div id="dateDoc">11сен23</div>
+
+<div class="pb_hidden">
+<img src="/img/decpoly/price1.jpg" alt=""/>
+<img src="/img/decpoly/price2.jpg" alt=""/>
+<img src="/img/decpoly/price3.jpg" alt=""/>
+<img src="/img/decpoly/price4.jpg" alt=""/>
+<img src="/img/decpoly/price5.jpg" alt=""/>
+<img src="/img/decpoly/ss5.jpg" alt=""/>
+<img src="/img/decpoly/ss6.jpg" alt=""/>
+<img src="/img/decpoly/ss1.jpg" alt=""/>
+<img src="/img/decpoly/ss2.jpg" alt=""/>
+<img src="/img/decpoly/ss7.jpg" alt=""/>
+<img src="/img/decpoly/ss8.jpg" alt=""/>
+<img src="/img/decpoly/ss3.jpg" alt=""/>
+<img src="/img/decpoly/ss4.jpg" alt=""/>
+<img src="/img/decpoly/ver1.jpg" alt=""/>
+<img src="/img/decpoly/ver3.jpg" alt=""/>
+<img src="/img/decpoly/ver4.jpg" alt=""/>
+<img src="/img/decpoly/ver5.jpg" alt=""/>
+<img src="/img/decpoly/ver6.jpg" alt=""/>
+<img src="/img/decpoly/ver7.jpg" alt=""/>
+<img src="/img/decpoly/viragh1.jpg" alt=""/>
+<img src="/img/decpoly/viragh2.jpg" alt=""/>
+<img src="/img/decpoly/viragh3.jpg" alt=""/>
+<img src="/img/decpoly/viragh4.jpg" alt=""/>
+<img src="/img/decpoly/burlesque1.jpg" alt=""/>
+<img src="/img/decpoly/burlesque2.jpg" alt=""/>
+<img src="/img/decpoly/burlesque3.jpg" alt=""/>
+<img src="/img/decpoly/burlesque4.jpg" alt=""/>
+<img src="/img/decpoly/burlesque5.jpg" alt=""/>
+<img src="/img/decpoly/burlesque6.jpg" alt=""/>
+<img src="/img/decpoly/burlesque7.jpg" alt=""/>
+<img src="/img/decpoly/burlesque8.jpg" alt=""/>
+<img src="/img/decpoly/burlesque9.jpg" alt=""/>
+<img src="/img/decpoly/burlesque10.jpg" alt=""/>
+<img src="/img/decpoly/burlesque11.jpg" alt=""/>
+<img src="/img/decpoly/burlesque12.jpg" alt=""/>
+<img src="/img/decpoly/rasputin1.jpg" alt=""/>
+<img src="/img/decpoly/rasputin2.jpg" alt=""/>
+<img src="/img/decpoly/rasputin4.jpg" alt=""/>
+<img src="/img/decpoly/podolsk1.jpg" alt=""/>
+<img src="/img/decpoly/podolsk2.jpg" alt=""/>
+<img src="/img/decpoly/nv1.jpg" alt=""/>
+<img src="/img/decpoly/nv2.jpg" alt=""/>
+<img src="/img/decpoly/nv3.jpg" alt=""/>
+<img src="/img/decpoly/pv1.jpg" alt=""/>
+<img src="/img/decpoly/pv2.jpg" alt=""/>
+<img src="/img/decpoly/pv3.jpg" alt=""/>
+<img src="/img/decpoly/pv4.jpg" alt=""/>
+<img src="/img/decpoly/vologda1.jpg" alt=""/>
+<img src="/img/decpoly/vologda2.jpg" alt=""/>
+<img src="/img/decpoly/vologda3.jpg" alt=""/>
+<img src="/img/decpoly/vologda4.jpg" alt=""/>
+<img src="/img/decpoly/vologda5.jpg" alt=""/>
+</div>

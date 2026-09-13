@@ -1,0 +1,61 @@
+<h1>Цвета – таблица «Элакор»</h1>
+<div class="px10"></div>
+<table class="tsrt" style="width:100%"><tbody>
+<tr><th style="width:130px">Наименование</th><th style="width:80px">Удорожание</th><th style="width:80px">Цвет</th><th>Ближайшие цвета по таблице RAL</th></tr>
+<tr><td class="td1 tdl">Сурик 100% <sup>*</sup></td><td>5р.</td><td class="td22" style="background-color:#862306"></td><td class="td4">3009, 8012</td></tr>
+<tr><td class="td1 tdl">Сурик 75% <sup>*</sup></td><td>5р.</td><td class="td22" style="background-color:#a4412e"></td><td class="td4">3009</td></tr>
+<tr><td class="td1 tdl">Сурик 50%</td><td>5р.</td><td class="td22" style="background-color:#b45c48"></td><td class="td4">8004</td></tr>
+<tr><td class="td1 tdl">Сурик 25%</td><td>5р.</td><td class="td22" style="background-color:#d88776"></td><td class="td4">3012</td></tr>
+<?php if (1==2) { ?>
+<tr><td class="td1 tdl">Охра 100%</td><td>5р.</td><td class="td22" style="background-color:#ffffff"></td><td class="td4">8001</td></tr>
+<tr><td class="td1 tdl">Охра 75%</td><td>5р.</td><td class="td22" style="background-color:#ffffff"></td><td class="td4">-</td></tr>
+<tr><td class="td1 tdl">Охра 50%</td><td>5р.</td><td class="td22" style="background-color:#ffffff"></td><td class="td4">1006</td></tr>
+<tr><td class="td1 tdl">Охра 25%</td><td>5р.</td><td class="td22" style="background-color:#ffffff"></td><td class="td4">1002</td></tr>
+<?php } ?>
+<tr><td class="td1 tdl">Желтый 75% <sup>*</sup></td><td>50р.</td><td class="td22" style="background-color:#fcc739"></td><td class="td4">1003, 1004</td></tr>
+<tr><td class="td1 tdl">Желтый 50%</td><td>35р.</td><td class="td22" style="background-color:#ffce19"></td><td class="td4">1021</td></tr>
+<tr><td class="td1 tdl">Желтый 25%</td><td>25р.</td><td class="td22" style="background-color:#fee117"></td><td class="td4">1018</td></tr>
+<tr><td class="td1 tdl">Лимон 75% <sup>*</sup></td><td>5р.</td><td class="td22" style="background-color:#ffff00"></td><td class="td4">1018</td></tr>
+<tr><td class="td1 tdl">Лимон 50%</td><td>5р.</td><td class="td22" style="background-color:#f9ff6b"></td><td class="td4">1016</td></tr>
+<tr><td class="td1 tdl">Лимон 25%</td><td>5р.</td><td class="td22" style="background-color:#f9fd84"></td><td class="td4">1016</td></tr>
+<?php if (1==2) { ?>
+<tr><td class="td1 tdl">Алый 75%</td><td>5р.</td><td class="td22" style="background-color:#ffffff"></td><td class="td4">3020</td></tr>
+<tr><td class="td1 tdl">Алый 50%</td><td>5р.</td><td class="td22" style="background-color:#ffffff"></td><td class="td4">3018</td></tr>
+<tr><td class="td1 tdl">Алый 25%</td><td>5р.</td><td class="td22" style="background-color:#ffffff"></td><td class="td4">3017</td></tr>
+<?php } ?>
+<tr><td class="td1 tdl">Зеленый ОХП 100%</td><td>25р.</td><td class="td22" style="background-color:#304d01"></td><td class="td4">6002</td></tr>
+<tr><td class="td1 tdl">Зеленый ОХП 75%</td><td>25р.</td><td class="td22" style="background-color:#587529"></td><td class="td4">6010</td></tr>
+<tr><td class="td1 tdl">Зеленый ОХП 50%</td><td>20р.</td><td class="td22" style="background-color:#8caa5b"></td><td class="td4">6011</td></tr>
+<tr><td class="td1 tdl">Зеленый ОХП 25%</td><td>15р.</td><td class="td22" style="background-color:#c0d78d"></td><td class="td4">6021</td></tr>
+<tr><td class="td1 tdl">Зеленый ПС 100%</td><td>5р.</td><td class="td22" style="background-color:#004100"></td><td class="td4">6028</td></tr>
+<tr><td class="td1 tdl">Зеленый ПС 75%</td><td>5р.</td><td class="td22" style="background-color:#597c44"></td><td class="td4">6002</td></tr>
+<tr><td class="td1 tdl">Зеленый ПС 50%</td><td>5р.</td><td class="td22" style="background-color:#94b780"></td><td class="td4">6000</td></tr>
+<tr><td class="td1 tdl">Зеленый ПС 25%</td><td>5р.</td><td class="td22" style="background-color:#a2c090"></td><td class="td4">-</td></tr>
+<tr><td class="td1 tdl">Зеленый ФЦ 75%</td><td>50р.</td><td class="td22" style="background-color:#006a3f"></td><td class="td4">6026</td></tr>
+<tr><td class="td1 tdl">Зеленый ФЦ 50%</td><td>35р.</td><td class="td22" style="background-color:#009f62"></td><td class="td4">6016</td></tr>
+<tr><td class="td1 tdl">Зеленый ФЦ 25%</td><td>25р.</td><td class="td22" style="background-color:#1ebe80"></td><td class="td4">-</td></tr>
+<tr><td class="td1 tdl">Зеленый ФЦ 12%</td><td>15р.</td><td class="td22" style="background-color:#3cdc9e"></td><td class="td4">-</td></tr>
+<tr><td class="td1 tdl">Зеленый ФЦ 6%</td><td>15р.</td><td class="td22" style="background-color:#5de7b3"></td><td class="td4">6027</td></tr>
+<tr><td class="td1 tdl">Зеленый ФЦ 3%</td><td>15р.</td><td class="td22" style="background-color:#86efd0"></td><td class="td4">-</td></tr>
+<tr><td class="td1 tdl">Зеленый ФЦ 1,5%</td><td>15р.</td><td class="td22" style="background-color:#b9f8e5"></td><td class="td4">6019</td></tr>
+<tr><td class="td1 tdl">Синий ФЦ 75%</td><td>45р.</td><td class="td22" style="background-color:#1d1f50"></td><td class="td4">5002</td></tr>
+<tr><td class="td1 tdl">Синий ФЦ 50%</td><td>30р.</td><td class="td22" style="background-color:#005d89"></td><td class="td4">5010, 5017</td></tr>
+<tr><td class="td1 tdl">Синий ФЦ 25%</td><td>20р.</td><td class="td22" style="background-color:#2288b0"></td><td class="td4">5019</td></tr>
+<!--<tr><td class="td1 tdl">Синий ФЦ 12%</td><td>15р.</td><td class="td22" style="background-color:#2a8db6"></td><td class="td4">5015</td></tr>-->
+<tr><td class="td1 tdl">Синий ФЦ 6%</td><td>10р.</td><td class="td22" style="background-color:#57a6c7"></td><td class="td4">5012</td></tr>
+<tr><td class="td1 tdl">Синий ФЦ 3%</td><td>10р.</td><td class="td22" style="background-color:#91cde5"></td><td class="td4">-</td></tr>
+<tr><td class="td1 tdl">Синий ФЦ 1,5%</td><td>10р.</td><td class="td22" style="background-color:#c1e6f6"></td><td class="td4">5027</td></tr>
+<tr><td class="td1 tdl">Фиолетовый 50%</td><td>195р.</td><td class="td22" style="background-color:#65156b"></td><td class="td4">5022</td></tr>
+<tr><td class="td1 tdl">Фиолетовый 25%</td><td>105р.</td><td class="td22" style="background-color:#b79bb9"></td><td class="td4">-</td></tr>
+<tr><td class="td1 tdl">Фиолетовый 12%</td><td>55р.</td><td class="td22" style="background-color:#dbcddc"></td><td class="td4">-</td></tr>
+<?php if (1==2) { ?>
+<tr><td class="td1 tdl">Фиолетовый ФЦ 6%</td><td>30р.</td><td class="td22" style="background-color:#ffffff"></td><td class="td4">4005</td></tr>
+<tr><td class="td1 tdl">Фиолетовый ФЦ 3%</td><td>20р.</td><td class="td22" style="background-color:#ffffff"></td><td class="td4">-</td></tr>
+<tr><td class="td1 tdl">Фиолетовый ФЦ 1,5%</td><td>15р.</td><td class="td22" style="background-color:#ffffff"></td><td class="td4">-</td></tr>
+<?php } ?>
+<tr><td class="td1 tdl">Белый</td><td>5р.</td><td class="td22" style="background-color:#f8ffef"></td><td class="td4">9010</td></tr>
+<tr><td class="td1 tdl">Черный 100%</td><td>5р.</td><td class="td22" style="background-color:#000000"></td><td class="td4">9017</td></tr>
+<tr><td class="td1 tdl">Черный 50%</td><td>5р.</td><td class="td22" style="background-color:#474747"></td><td class="td4">-</td></tr>
+</tbody></table>
+<p class="tal">*- Эмаль этого цвета можно наносить только на поверхность, предварительно окрашенную белой эмалью (это повышает укрывистость).</p>
+<div class="px0"></div>

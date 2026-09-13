@@ -1,0 +1,46 @@
+<h1>Дефекты топпинга на складе овощной продукции</h1>
+<div class="px5"></div>
+
+<p><span>Склад хранения овощной продукции Логистический центр «Юг». Площадь 3 000 м<sup>2</sup>. 
+г. Тюмень, Тюменская кольцевая автомобильная дорога, развязка у. Федюнинского-Мельникайте.
+</span></p>
+<p>Год укладки: лето 2018. Год разрушения: зима 2018.</p>
+<p>Разрушение топпинга произошло на этапе отделочных работ при строительстве логистического центра, т.е. до начала эксплуатации. Владелец склада обратился к представителям ООО «ТэоХим» в Тюмени компании ООО «ПОЛИМЕРНЫЕ ТЕХНОЛОГИИ» с просьбой о ремонте топпинга. Был предложен следующий вариант ремонта – демонтаж топпинга и окрасочное полимерное покрытие со шпатлеванием.</p>
+
+<p><span>Дефекты Топпинга:</span> отслоение, трещинообразование, сколы, выбоины, пыление.</p>
+
+<div class="px0"></div>
+<div class="dflc">
+<img class="pb_ismall" style="height:133px;" src="/img/obj/topping/16/001.jpg" onclick="$.zoomImg(this,'/img/obj/topping/16/1.jpg',200,25,565,320,'',-25,1,0,1);" title="" alt=""/>
+<img class="pb_ismall" style="height:133px;" src="/img/obj/topping/16/002.jpg" onclick="$.zoomImg(this,'/img/obj/topping/16/2.jpg',200,25,565,320,'',-25,1,0,1);" title="" alt=""/>
+<img class="pb_ismall" style="height:133px;" src="/img/obj/topping/16/003.jpg" onclick="$.zoomImg(this,'/img/obj/topping/16/3.jpg',200,25,565,320,'',-25,1,0,1);" title="" alt=""/>
+<img class="pb_ismall" style="height:133px;" src="/img/obj/topping/16/004.jpg" onclick="$.zoomImg(this,'/img/obj/topping/16/4.jpg',200,25,565,320,'',-25,1,0,1);" title="" alt=""/>
+<img class="pb_ismall" style="height:133px;" src="/img/obj/topping/16/005.jpg" onclick="$.zoomImg(this,'/img/obj/topping/16/5.jpg',200,25,565,320,'',-25,1,0,1);" title="" alt=""/>
+<img class="pb_ismall" style="height:133px;" src="/img/obj/topping/16/006.jpg" onclick="$.zoomImg(this,'/img/obj/topping/16/6.jpg',200,25,565,320,'',-25,1,0,1);" title="" alt=""/>
+<img class="pb_ismall" style="height:133px;" src="/img/obj/topping/16/007.jpg" onclick="$.zoomImg(this,'/img/obj/topping/16/7.jpg',200,25,565,320,'',-25,1,0,1);" title="" alt=""/>
+<img class="pb_ismall" style="height:133px;" src="/img/obj/topping/16/008.jpg" onclick="$.zoomImg(this,'/img/obj/topping/16/8.jpg',200,25,565,320,'',-25,1,0,1);" title="" alt=""/>
+</div>
+<?php if (1==2) { ?>
+<div class="pb_ismall" style="width:164px;height:119px; padding:7px; font-size:24px; text-align:center; text-shadow:2px 2px 6px #ffffff; color:#000080; background:url(/img/obj/topping/16/001.jpg)" onclick="m_alert(1);" title="">
+<div><img style="position:absolute; height:40px; top:47px; left:59px;" src="/img/yt_icon_rgb.png"></div>
+</div>
+<div class="pb_ismall" style="width:164px;height:119px; padding:7px; font-size:24px; text-align:center; text-shadow:2px 2px 6px #ffffff; color:#000080; background:url(/img/obj/topping/16/008.jpg)" onclick="m_alert(2);" title="">
+<div><img style="position:absolute; height:40px; top:47px; left:59px;" src="/img/yt_icon_rgb.png"></div>
+</div>
+<?php } ?>
+
+<div class="px10"></div>
+{*text5_3*}
+<div class="px10"></div>
+<div id="dateDoc">06март19</div>
+
+<div class="pb_hidden">
+<img src="/img/obj/topping/16/1.jpg" alt=""/>
+<img src="/img/obj/topping/16/2.jpg" alt=""/>
+<img src="/img/obj/topping/16/3.jpg" alt=""/>
+<img src="/img/obj/topping/16/4.jpg" alt=""/>
+<img src="/img/obj/topping/16/5.jpg" alt=""/>
+<img src="/img/obj/topping/16/6.jpg" alt=""/>
+<img src="/img/obj/topping/16/7.jpg" alt=""/>
+<img src="/img/obj/topping/16/8.jpg" alt=""/>
+</div>

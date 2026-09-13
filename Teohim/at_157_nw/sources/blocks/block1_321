@@ -1,0 +1,25 @@
+<h1>Покрытия для металла фото</h1>
+<div class="px5"></div>
+<div class="dflc">
+<img class="pb_ismall" src="/img/obj/12/i1_s.jpg" onclick="$.zoomImg(this,'/img/obj/12/i1.jpg',200,25,800,600,'Защита металла лестницы',-25,1,0,1);" title="Защита металла лестницы" alt="защита металла лестницы"/>
+<img class="pb_ismall" src="/img/obj/12/i2_s.jpg" onclick="$.zoomImg(this,'/img/obj/12/i2.jpg',200,25,800,600,'Защитное покрытие металла',-25,1,0,1);" title="Защитное покрытие металла" alt="защитное покрытие металла"/>
+<img class="pb_ismall" src="/img/obj/12/i3_s.jpg" onclick="$.zoomImg(this,'/img/obj/12/i3.jpg',200,25,800,600,'Краска по металлу',-25,1,0,1);" title="Краска по металлу" alt="краска по металлу"/>
+<img class="pb_ismall" src="/img/obj/12/i4_s.jpg" onclick="$.zoomImg(this,'/img/obj/12/i4.jpg',200,25,800,600,'Краска для металла',-25,1,0,1);" title="Краска для металла" alt="краска для металла"/>
+<img class="pb_ismall" src="/img/obj/12/i5_s.jpg" onclick="$.zoomImg(this,'/img/obj/12/i5.jpg',200,25,800,600,'Внутреннее покрытие вагонов минераловозов',-25,1,0,1);" title="Внутреннее покрытие вагонов минераловозов" alt="внутреннее покрытие вагонов минераловозов"/>
+<img class="pb_ismall" src="/img/obj/12/i6_s.jpg" onclick="$.zoomImg(this,'/img/obj/12/i6.jpg',200,25,800,600,'Защита металла',-25,1,0,1);" title="Защита металла" alt="защита металла"/>
+<img class="pb_ismall" src="/img/obj/12/i7_s.jpg" onclick="$.zoomImg(this,'/img/obj/12/i7.jpg',200,25,800,600,'Антикоррозионная защита вагоны хопры',-25,1,0,1);" title="Антикоррозионная защита вагоны хопры" alt="антикоррозионная защита вагоны хопры"/>
+</div>
+<div class="px5"></div>
+{*text5_3*}
+<div class="px10"></div>
+<div id="dateDoc">18июл13</div>
+
+<div class="pb_hidden">
+<img src="/img/obj/12/i1.jpg" alt=""/>
+<img src="/img/obj/12/i2.jpg" alt=""/>
+<img src="/img/obj/12/i3.jpg" alt=""/>
+<img src="/img/obj/12/i4.jpg" alt=""/>
+<img src="/img/obj/12/i5.jpg" alt=""/>
+<img src="/img/obj/12/i6.jpg" alt=""/>
+<img src="/img/obj/12/i7.jpg" alt=""/>
+</div>

@@ -1,0 +1,29 @@
+<h1>Страница псевдовызова псевдорекламы</h1>
+<?php
+/*
+  print('start'.$s_start);
+  print('<br>');
+print(session_id());
+  print('<br>');
+  echo "UtmCall!\n";
+  echo $uri."<br>";
+  echo 'utm=';
+  echo isset($_SESSION['utm']);
+  print('<br>');
+  var_dump($_SESSION);
+  print('<br>');
+  if (isset($_SESSION['utm'])) {
+        echo 'Значение'.$_SESSION['utm'];
+  }
+  print('<br>');
+print_r(error_get_last());
+*/
+print('cookie_utm '.$cookie_utm);
+print('<br>');
+?>
+<a href="https://teohim.ru/test/utm?yclid=cpc&utmid=123">https://teohim.ru/test/utm</a>
+<br>
+<?php
+//  print(phpinfo());
+?>
+

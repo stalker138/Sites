@@ -1,0 +1,67 @@
+<h1>Полы для чистых помещений</h1>
+<div class="px5"></div>
+
+<p>Основные области применения покрытий для чистых помещений: медицинские учреждения, фармацевтические производства, электронная промышленность, космическая промышленность, лаборатории для научных исследований.<br>
+Полимерные полы в чистых помещениях Элакор применяются для окраски поверхностей также в Лечебно-профилактических учреждениях, в помещениях с влажным режимом работы, в стерильных помещениях, в чистых помещениях, на предприятиях пищевой промышленности, общественного питания, продовольственной торговли.<br>
+<l2 id="46">Люкс Эмаль Светостойкая</l2> специально сертифицирована для устройства полов в чистых помещениях.</p>
+
+<h2 class="h2_orange">Варианты полов для чистых помещений</h2>
+
+<div class="px10"></div>
+<div class="dfbc">
+<?php
+print $tblt1;
+print ftech18(35, '<div class="px3"></div>2.3.', '', '', 'Светостойкий УФ-стойкий полимерный пол. Толщина цветного слоя 0,2-0,25мм.', null); 
+print ftech18(68, '<div class="px3"></div>5.12.', '', '', '<div class="px3"></div>', null); 
+print ftech18(70, '<div class="px3"></div>5.14. ', '', '', '<div class="px3"></div>', null); 
+print $tblt2;
+?>
+</div>
+<div class="px10"></div>
+
+<p class="fwb"><strong>Покрытия полов в чистых помещениях</strong> должны соответствовать следующим основным требованиям:</p>
+<ul>
+<li>гладкость и ровность поверхности;</li>
+<li>низкое выделение частиц с поверхности;</li>
+<li>износостойкость;</li>
+<li>стойкость к химическим воздействиям;</li>
+<li>противоскользящие свойства;</li>
+<li>приспособленность к уборке и дизенфекции;</li>
+<li>ремонтнопригодность;</li>
+<li>стойкость к механическим нагрузкам;</li>
+<li>антистатические свойства (при необходимости).</li>
+</ul>
+<div class="px10"></div>
+
+<h2 class="h2_orange">Фото полимерных покрытий «Элакор» в чистых помещениях</h2>
+<div class="px10"></div>
+<div class="dflc">
+
+<div class="dsmall">
+<img class="pb_ismall pb_gal_itm" src="/img/1-poly-chistye-pomeshcheniya_s.jpg" onclick="$.zoomImg(this,'/img/1-poly-chistye-pomeshcheniya.jpg',200,25,800,600,'',-25,1,0,1);" title="" alt=""/>
+</div>
+<div class="dsmall">
+<img class="pb_ismall pb_gal_itm" src="/img/2-poly-chistye-pomeshcheniya_s.jpg" onclick="$.zoomImg(this,'/img/2-poly-chistye-pomeshcheniya.jpg',200,25,800,600,'',-25,1,0,1);" title="" alt=""/>
+</div>
+<div class="dsmall">
+<img class="pb_ismall pb_gal_itm" src="/img/3-poly-chistye-pomeshcheniya_s.jpg" onclick="$.zoomImg(this,'/img/3-poly-chistye-pomeshcheniya.jpg',200,25,800,600,'',-25,1,0,1);" title="" alt=""/>
+</div>
+<div class="dsmall">
+<img class="pb_ismall pb_gal_itm" src="/img/4-poly-chistye-pomeshcheniya_s.jpg" onclick="$.zoomImg(this,'/img/4-poly-chistye-pomeshcheniya.jpg',200,25,800,600,'',-25,1,0,1);" title="" alt=""/>
+</div>
+<div class="dsmall">
+<img class="pb_ismall pb_gal_itm" src="/img/5-poly-chistye-pomeshcheniya_s.jpg" onclick="$.zoomImg(this,'/img/5-poly-chistye-pomeshcheniya.jpg',200,25,800,600,'',-25,1,0,1);" title="" alt=""/>
+</div>
+<div class="dsmall">
+<img class="pb_ismall pb_gal_itm" src="/img/6-poly-chistye-pomeshcheniya_s.jpg" onclick="$.zoomImg(this,'/img/6-poly-chistye-pomeshcheniya.jpg',200,25,800,600,'',-25,1,0,1);" title="" alt=""/>
+</div>
+<div class="dsmall">
+<img class="pb_ismall pb_gal_itm" src="/img/7-poly-chistye-pomeshcheniya_s.jpg" onclick="$.zoomImg(this,'/img/7-poly-chistye-pomeshcheniya.jpg',200,25,800,600,'',-25,1,0,1);" title="" alt=""/>
+</div>
+<div class="dsmall">
+<img class="pb_ismall pb_gal_itm" src="/img/8-poly-chistye-pomeshcheniya_s.jpg" onclick="$.zoomImg(this,'/img/8-poly-chistye-pomeshcheniya.jpg',200,25,800,600,'',-25,1,0,1);" title="" alt=""/>
+</div>
+
+</div>
+<div class="px10"></div>
+<div id="dateDoc">04сен24</div>

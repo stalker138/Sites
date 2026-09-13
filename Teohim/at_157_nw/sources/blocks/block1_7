@@ -1,0 +1,43 @@
+<h1>Полы и покрытия «Элакор»</h1>
+
+<p class="fs14 fwb fi">Мы предлагаем как продажу материалов, так и выполнение работ.</p>
+<p class="fs11">Предоставляется выезд специалиста для осмотра Вашего объекта.</p>
+<p class="fs11">В разделе <span>«цена»</span> Вы сможете рассчитать стоимость материалов<br>и стоимость устройства конкретного покрытия «под ключ».</p>
+<p class="tar" style="margin-top:-7px; text-align:right;"><l1 id="10" class="fwb">Прайс-лист материалов Элакор</l1></p>
+
+<?php
+print'<div class="px10b"></div><div class="px5"></div><div class="h14cvr">1. Полимерные пропитки для бетонных полов.</div>';
+for ($i=11; $i<=30; $i++) print fcvr4($i);
+
+print '<div class="px10b"></div><div class="px5"></div><div class="h14cvr">2. Полимерные покрытия для бетонных полов.</div>';
+for ($i=31; $i<=50; $i++) print fcvr4($i,'');
+
+if (1==2) {
+print '<div class="px10b"></div><div class="px5"></div><div class="h14cvr">3. <l1 id="2">Полимерные наливные полы</l1> - покрытия.</div>';
+print fcvr4(51,'').fcvr4(53,'').fcvr4(71,'').fcvr4(73,'').fcvr4(63,'').fcvr4(65,'').fcvr4(55,'').fcvr4(57,'').fcvr4(59,'').fcvr4(61,'');
+// for ($i=51; $i<=80; $i++) print fcvr4($i,'');
+
+print '<div class="px10b"></div><div class="px5"></div><div class="h14cvr">4. Специальные полимерные покрытия для полов.</div>';
+for ($i=81; $i<=100; $i++) print fcvr4($i,'');
+
+print '<div class="px10b"></div><div class="px5"></div><div class="h14cvr">5. Дополнительные операции для бетона, бетонных полов.</div>';
+for ($i=101; $i<=120; $i++) print fcvr4($i,'');
+
+print '<div class="px10b"></div><div class="px5"></div><div class="h14cvr">6. Прочие покрытия для бетона и других минеральных поверхностей.</div>';
+for ($i=121; $i<=140; $i++) print fcvr4($i,'');
+
+print '<div class="px10b"></div><div class="px5"></div><div class="h14cvr">7. <l1 id="4">Бетонные полы</l1>.</div>';
+for ($i=141; $i<=160; $i++) print fcvr4($i,'');
+
+print '<div class="px10b"></div><div class="px5"></div><div class="h14cvr">8. Полимерцементные бетонные полы.</div>';
+for ($i=161; $i<=180; $i++) print fcvr4($i,'');
+?>
+
+<div class="px10b"></div><div class="h14cvr fleft">9. Антикоррозионные покрытия, полы по Металлу –&nbsp;</div><div class="fleft mt10 fwb fs14">см. <l1 id="8">покрытия для металла</l1>.</div>
+<div class="px10b"></div><div class="h14cvr fleft">10. Полы и покрытия для Дерева –&nbsp;</div><div class="fleft mt10 fwb fs14">см. <l1 id="9">покрытия для дерева</l1>.</div>
+<?php } ?>
+
+<div class="px5"></div>
+<p><l1 id="67">Цена наливных полов</l1>.</p>
+<div class="px10"></div>
+<div id="dateDoc">27авг23</div>

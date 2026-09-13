@@ -1,0 +1,17 @@
+<h1>Шероховатые покрытия - ФОТО</h1>
+
+<div class="px5"></div>
+
+<div class="dflc">
+<img class="pb_ismall" src="/img/obj/31/1_s.jpg" onclick="$.zoomImg(this,'/img/obj/31/1.jpg',200,25,800,600,'',-25,1,0,1);" title="" alt=""/>
+<img class="pb_ismall" src="/img/obj/31/2_s.jpg" onclick="$.zoomImg(this,'/img/obj/31/2.jpg',200,25,839,551,'',-25,1,0,1);" title="" alt=""/>
+</div>
+<div class="px10"></div>
+{*text5_3*}
+<div class="px10"></div>
+<div id="dateDoc">30сен20</div>
+
+<div class="pb_hidden">
+<img src="/img/obj/31/1.jpg" alt=""/>
+<img src="/img/obj/31/2.jpg" alt=""/>
+</div>

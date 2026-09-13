@@ -1,0 +1,40 @@
+<h1>Онлайн - заказ на покупку материалов или выполнение работ</h1>
+<div class="px5"></div>
+<h2 class="h2_orange">1. Купить Материалы</h2>
+<div class="px5"></div>
+<p><span class="fs13">Вариант 1</span><br>
+В разделе <l1 id="10" class="fs13">«Материалы - ЦЕНЫ»</l1> (прайс-лист) наберите требуемые материалы в «Корзину».</p>
+<div class="px5"></div>
+<p><span class="fs13">Вариант 2</span><br>
+В разделе <!--noindex--><l1 id="10" class="fs13" rel="nofollow">«Материалы - ЦЕНЫ»</l1><!--/noindex--> перейдите на страницу конкретного материала, далее ссылка <span class="cf00">«Купить…»</span>.</p>
+<div class="px5"></div>
+<p><span class="fs13">Вариант 3</span><br>
+В разделе <l1 id="23" class="fs13">«КАЛЬКУЛЯТОР полов»</l1> перейдите на страницу требуемого покрытия.<br>
+После ввода характеристик Вашего пола, все материалы будут рассчитаны.<br>
+Под <span>таблицей 2</span> кликните: <span class="cf00">КУПИТЬ рассчитанные Материалы</span>.</p>
+<div class="px5"></div>
+<p><span class="fs13">Вариант 4</span></p>
+<l0 id="207" class="dbox2" rel="nofollow" style="background:#e0e0e0">
+<div style="width:365px;background:#e0e0e0"">
+<div class="fleft fwb fs14 c2">Розничный Магазин</div><div class="fright fwb fs13"></div>
+<div class="px0"></div>
+<p class="fleft fwn tal">Москва, Алтуфьевское ш., д.102-Б.<br><span>Продажи: +7-917-544-2517. &nbsp; Консультации: +7-916-811-3248</span>.</p>
+<div class="px7"></div>
+<div class="fleft"><span class="fwn fs12">пн-пт 9<sup>00</sup>-20<sup>00</sup>, сб 10<sup>00</sup>-16<sup>00</sup></span></div><div class="fright ptmp1">Схема проезда</div>
+<div class="px1"></div></div></l0>
+<div class="px10"></div>
+
+<h2 class="h2_orange">2. Заказать Работы</h2>
+<div class="px5"></div>
+<div>
+<p class="fleft fs13 mt10"><span>Вариант 1</span><br>
+Заполните форму:</p>
+<input id="inpWork" onclick="f_clz(4);" type="button" value="Заказ на выполнение работ"/>
+</div>
+<div class="px5"></div>
+<p><span class="fs13">Вариант 2</span><br>
+В разделе <!--noindex--><l1 id="23" class="fs13" rel="nofollow">«КАЛЬКУЛЯТОР полов»</l1><!--/noindex--> перейдите на страницу требуемого покрытия.<br>
+После ввода характеристик Вашего пола, все материалы и работы будут рассчитаны.<br>
+Под <span>таблицей 3</span> кликните: <span class="cf00">ЗАКАЗАТЬ Работы + Материалы</span>.</p>
+<div class="px10"></div>
+<div id="dateDoc">23окт24</div><div class="px0"></div>

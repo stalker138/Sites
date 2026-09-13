@@ -1,0 +1,192 @@
+<h1>Промышленные полы ТЕХНОЛОГИЯ</h1>
+<div class="px5"></div>
+<p class="pleft1 fwb"><strong>Технологии промышленных полов</strong> Элакор - инструкции нанесения.</p>
+{*text5_9*}
+
+<div class="px10b"></div>
+<div class="div_mc">
+<h3 class="divh3">1. ПРОПИТКИ для бетонных полов</h3><div class="px0"></div>
+<?php print $tblt1; 
+for ($i=11; $i<=17; $i++) { print ftech18($i,''); }
+print ftech18(87,'1.5.','','','');
+for ($i=23; $i<=30; $i++) { print ftech18($i,''); }
+print $tblt2; ?><div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">2. ОКРАСОЧНЫЕ полимерные покрытия</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tblt1;
+print ftech18(31,'');
+print ftech18(33,'');
+print ftech18(35,'');
+print ftech18(41,'');
+print ftech18(85,'');
+print ftech18(45,'');
+print ftech18(83,'');
+print ftech18(81,'');
+print $tblt2; ?><div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">3. НАЛИВНЫЕ полимерные покрытия <span class="c0">(наливные полы)</span></h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<p class="fwb fs13 c3 fi ti10">Полиуретановые</p>
+<div class="px5"></div>
+<?php print $tblt1;
+print ftech18(53).ftech18(54).ftech18(73).ftech18(48).ftech18(49); // .ftech18(40)
+print $tblt2; ?>
+<div class="px5"></div>
+<p class="fwb fs13 c3 fi ti10">Эпоксидные</p>
+<div class="px5"></div>
+<?php print $tblt1;
+print ftech18(51).ftech18(52).ftech18(55); // .ftech18(71)
+print ftech18(57).ftech18(59).ftech18(61);
+print $tblt2; ?>
+<div class="px12"></div>
+<?php print $tblt1;
+print ftech18(219).ftech18(220);
+print $tblt2; ?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">4. Полиуретан - Цементные полы</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tblt1;
+print ftech18(171,'4.1.');
+print ftech18(172,'4.2.');
+print ftech18(173,'4.3.');
+print ftech18(174,'4.5.');
+print $tblt2; ?><div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">5. НАПОЛНЕННЫЕ полимерные покрытия</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tblt1;
+print ftech18(39,'5.1.');
+print ftech18(37,'5.2.');
+print ftech18(43,'5.3.');
+print ftech18(47,'5.9.');
+print $tblt2; ?><div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">6. АНТИСТАТИЧЕСКИЕ полы</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<p class="fwb fs13 c3 fi ti10">НАЛИВНЫЕ полы Антистатические</p>
+<div class="px5"></div>
+<?php print $tblt1;
+print ftech18(63,'6.1.');
+print ftech18(64,'6.2.');
+print ftech18(65,'6.3.');
+print ftech18(66,'6.4.');
+print ftech18(77,'6.7.');
+print $tblt2; ?>
+<div class="px15"></div>
+<p class="mt0 fwb fs13 c3 fi ti10">ОКРАСОЧНЫЕ покрытия Антистатические</p>
+<div class="px5"></div>
+<?php print $tblt1;
+print ftech18(67,'6.11.');
+print ftech18(68,'6.12.');
+print ftech18(69,'6.13.');
+print ftech18(70,'6.14.');
+print ftech18(76,'6.17.');
+print ftech18(79,'6.18.');
+print $tblt2; ?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">7. ДОПОЛНИТЕЛЬНЫЕ операции для бетона</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tblt1;
+print ftech18(101,'7.1.');
+print ftech18(103,'7.2.');
+print ftech18(105,'7.3.');
+print ftech18(107,'7.4.');
+print ftech18(109,'7.5.');
+print ftech18(113,'7.7.');
+print ftech18(115,'7.8.');
+print ftech18(117,'7.9.');
+print $tblt2; ?><div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">8. ПРОЧИЕ покрытия, пропитки</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tblt1;
+print ftech18(121,'8.1.');
+print ftech18(125,'8.3.');
+print ftech18(131,'8.6.');
+print ftech18(135,'8.8.');
+print ftech18(137,'8.9.');
+print $tblt2; ?><div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">9. Промышленные БЕТОННЫЕ полы</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tblt1;
+print ftech18(142,'9.1.');
+print ftech18(143,'9.2.');
+print ftech18(147,'9.3.');
+print ftech18(150,'9.5.');
+print $tblt2; ?><div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">10. Покрытия для МЕТАЛЛА</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tblt1;
+print ftech18(181,'10.1.');
+print ftech18(183,'10.2.');
+print ftech18(191,'10.3.');
+print ftech18(193,'10.4.');
+print ftech18(195,'10.8.');
+print ftech18(197,'10.9.');
+print $tblt2; ?><div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">11. Покрытия для ДЕРЕВА</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tblt1.ftech18(201,'11.1.').ftech18(213,'11.2.').$tblt2; ?><div class="px10"></div>
+</div>
+<div class="px0b"></div>
+<div class="px10"></div>
+<p class="fwb fleft">ООО «ТэоХим» - <l1 id="1">Промышленные полы</l1> – материалы, работы.</p>
+{*text5_4*}
+<div class="px10b"></div>
+<div class="px5"></div>
+<p><l1 id="2" class="fwb fs13 c2">Все наливные полимерные полы</l1> на сайте teohim.ru</p>
+<div class="px5"></div>
+
+<p class="tal">Инструкции по применению Элакор (технология промышленных полов) включают: устройство бетонных полов; устройство полимерных наливных полов; защитных и декоративных покрытий для бетона, металла, дерева; технологии подготовки поверхностей.</p>
+
+<p class="tal">Инструкции Элакор составлены очень подробно и учитывают многолетний опыт применения материалов Элакор не только в Москве и Московской области, то также с учетом опыта более 100 представительств ООО «ТэоХим» в России и ближнем зарубежье. Отметим, что основной деятельностью наших представителей является не продажа, а именно применение материалов Элакор – производство работ! Инструкции по применению материалов Элакор – технология промышленных полов и промышленных покрытий - постоянно дополняются, чтобы обеспечить максимально эффективную и экономичную технологию.</p>
+<p>Точное выполнение инструкций по применению материалов Элакор обеспечит качество выполненных работ и минимизирует Ваши затраты.</p>
+<p>Если Вам что-то непонятно в конкретной инструкции по применению Элакор (технология промышленного пола) – позвоните нам и мы, с удовольствием дадим дополнительные консультации.</p>
+<div class="px10"></div>
+<div id="dateDoc">05мар25</div>

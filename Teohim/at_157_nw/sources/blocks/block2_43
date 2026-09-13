@@ -1,0 +1,182 @@
+<h1>Глубоко Матовый лак</h1>
+<div class="px10"></div>
+
+<div class="dmtrl">
+<p class="mt0 fwb"><span class="fwn"><?php print $mtr[147][0] ?></span> «Люкс» Лак-Р <strong>Глубоко матовый лак цена</strong></p>
+<?php print fmtr2(147); ?>
+{*text4_2*}
+<p>Хранить и транспортировать<br>при температуре от 0°С до +25°С.</p>
+<p><span>Элакор-ПУ Люкс Лак-Р Глубоко Матовый</span> – полиуретановый двухкомпонентный лак, светостойкий, УФ-стойкий.<br>Степень блеска: 2-4%.</p> 
+</div>
+<div class="px10n"></div>
+<div class="dmtrr">
+<div style="position:relative;float:left;width:230px">
+<table style="padding:2px 0 0 1px;font:normal 11px arial;border:solid 1px #555555;color:#555555"><tbody>
+<tr><td colspan="3" class=" fwb">Фасовка:</td></tr>
+<tr><td>Комп. «А» &nbsp; &nbsp;</td><td>Комп. «Б» &nbsp; &nbsp;</td><td>= <span>Комплект</span></td></tr>
+<tr><td class="">7кг</td><td class="">+ 1кг</td><td class="">= <span>8кг</span></td></tr>
+<tr><td class="">14кг</td><td class="">+ 2кг</td><td class="">= <span>16кг</span></td></tr>
+<tr><td colspan="3" class="" style="height:5px"></td></tr>
+<tr><td colspan="3" class=""><span>Образец-пробник:</span><br>0,7 + 0,1 = 0,8кг - цена <?php print fc50(147,0.8,150); ?>р</td></tr>
+</tbody></table>
+</div>
+<div style="position:relative;float:right">
+<img class="pb_ismall" style="width:140px;height:120px" src="/img/bottles/r-lak-gluboko-matovyj_s.jpg" onclick="$.zoomImg(this,'/img/bottles/r-lak-gluboko-matovyj.jpg',200,25,800,800,'Глубоко Матовый лак',-25);" title="Глубоко Матовый лак" alt="Глубоко Матовый лак"/>
+<div class="plus01"></div>
+</div>
+<div class="px20"></div>
+<div id="idsal" onclick="f_b(147,'<?php print str_replace('%','',$mtr[147][1]); ?>')">Купить Глубоко Матовый лак</div>
+<div class="px10"></div>
+</div>
+<div class="px10b"></div><div class="px5"></div>
+<p class="fleft mt10 mr10 fwb">Инструкция нанесения Глубоко матового лака –</p>
+<a class="pdf2" href="/instructions/lyuks_laki-r.pdf?<?php print filemtime($pb_root.'instructions/lyuks_laki-r.pdf'); ?>" title="Глубоко матовый лак инструкция" target="_blank" rel="nofollow">Инструкция</a>
+<div class="px10"></div>
+
+{*text4_12*}
+<div class="px7"></div>
+
+<div id="mtr_body">
+
+<div id="mtr_body_1">
+</div>
+
+<div id="mtr_body_2" class="active">
+</div>
+
+<div id="mtr_body_3">
+
+<p class="fwb fs13 c2">Технические характеристики – Полиуретановый Глубоко матовый лак Элакор-ПУ Люкс Лак-Р.</p>
+<p>До отверждения.</p>
+<table class="tsrt">
+<tbody>
+ <tr>
+ <th style="width:357px;">Показатель</th><th>Значение</th><th style="width:205px;">Метод испытаний</th></tr>
+ <tr>
+ <td class="tdl">Внешний вид компонентов А и Б</td>
+ <td>Прозрачные бесцветные жидкости</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Соотношение компонентов  А : Б</td>
+ <td>7 : 1</td>
+ <td>ГОСТ 8420</td>
+ </tr>
+ <tr>
+ <td class="tdl">Вязкость смеси А+Б, ВЗ-4 при +20°С</td>
+ <td>10-12сек</td>
+ <td>ГОСТ 8420</td>
+ </tr>
+ <tr>
+ <td class="tdl">Массовая доля нелетучих (сухой остаток), не менее</td>
+ <td>32</td>
+ <td>ГОСТ 17537</td>
+ </tr>
+ <tr>
+ <td class="tdl">Плотность смеси А+Б при +20°С, кг/л</td>
+ <td>0,92</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Время высыхания до степени 3 при +20°С</td>
+ <td>не более 10 час</td>
+ <td>ГОСТ 19007</td>
+ </tr>
+</tbody>
+</table>
+
+<p>После отверждения.</p>
+<table class="tsrt">
+<tbody>
+ <tr>
+ <th style="width:357px;">Показатель</th>
+ <th>Значение</th>
+ <th style="width:205px;">Метод испытаний</th>
+ </tr>
+ <tr>
+ <td class="tdl">Внешний вид</td>
+ <td>Прозрачная бесцветная пленка</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Интервал рабочих температур в воздушной среде, °С</td>
+ <td>от -60°С до +100°С
+<br>(до 30мин – до +150°С)</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Водопоглощение пленки лака, %</td>
+ <td>не более 0,1</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Предел прочности пленки при разрыве при +20°С</td>
+ <td>не менее 40МПа</td>
+ <td>ГОСТ 21751</td>
+ </tr>
+ <tr>
+ <td class="tdl">Относительное удлинение пленки лака при +20°С</td>
+ <td>не менее 8%</td>
+ <td>ГОСТ 21751</td>
+ </tr>
+ <tr>
+ <td class="tdl">Прочность пленки лака при ударе, см</td>
+ <td>не менее 100</td>
+ <td>ГОСТ 4765</td>
+ </tr>
+ <tr>
+ <td class="tdl">Твердость пленки по Шору, тип D, на 28 сутки </td>
+ <td>70-74</td>
+ <td>ГОСТ 24621 (ISO 868)</td>
+ </tr>
+ <tr>
+ <td class="tdl">Эластичность пленки</td>
+ <td>не более 1мм</td>
+ <td>ГОСТ 6806</td>
+ </tr>
+ <tr>
+ <td class="tdl">Блеск покрытия под углом 60°</td>
+ <td>2-4%</td>
+ <td>ГОСТ 31975 (ISO 2813)</td>
+ </tr>
+ <tr class="fwb">
+ <td class="tdl">Истираемость пленки лака, Табер, CS-10, масса грузов 1кг</td>
+ <td>5мг</td>
+ <td>ISO 3537(DIN 52347, ASTM D1044)</td>
+ </tr>
+</tbody>
+</table>
+
+<p class="fwb fs13 c2">Химическая стойкость.</p>
+<p>Отвержденный двухкомпонентный полиуретановый лак Элакор-ПУ Люкс Лак-Р Глянцевый стоек к постоянному и переменному контакту к следующим химическим средам:</p>
+<ul>
+ <li>вода; водные растворы солей и щелочей вплоть до концентрированных;</li>
+ <li>водные растворы кислот с концентрацией до 10-20%;</li>
+ <li>масла и жиры всех видов - минеральные, синтетические, органические;</li>
+ <li>органические растворители, бензин, дизтопливо и т.п.</li>
+</ul>
+
+</div>
+
+<div id="mtr_body_4">
+<!--noindex-->
+<ul>
+ <li><l3 id="201" class="fwb" rel="nofollow">Свидетельство о государственной регистрации, Таможенный союз</l3> (гигиенический сертификат)</li>
+ <li class="mt10"><l3 id="202" class="fwb" rel="nofollow">Сертификат соответствия (пожарной безопасности)</l3></li>
+ <li class="mt10"><l3 id="204" class="fwb" rel="nofollow">Сертификат соответствия</l3></li>
+ <li class="mt10"><l3 id="206" class="fwb" rel="nofollow">Заключение на применение в детских и лечебно-профилактических учреждениях</l3></li>
+</ul>
+<div class="px5"></div>
+<!--/noindex-->
+</div>
+
+</div>
+
+<div class="px10b"></div>
+<div class="px10"></div>
+
+<div id="dateDoc">12окт20</div>
+
+<div class="pb_hidden">
+ <img src="/img/bottles/r-lak-gluboko-matovyj.jpg" alt="">
+</div>

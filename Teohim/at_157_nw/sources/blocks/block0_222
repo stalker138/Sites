@@ -1,0 +1,50 @@
+<h1>Ваша Корзина</h1>
+<div class="px10"></div>
+<p>Уважаемый Заказчик.<BR>
+После оформления Заказа, Корзина не будет очищена автоматически.<br>
+Вы можете скорректировать и повторно отправить уже сформированный заказ.</p>
+<p>Сформированный Заказ будет отправлен в работу после согласования с менеджером.</p>
+<div class="px10b"></div>
+<div class="px15"></div>
+<div style="margin:0 auto;width:400px">
+<div id="dordEdit" onclick="f_ordEdit()">Редактировать</div>
+<div class="px0"></div>
+<div class="px10n"></div>
+<?php function ford222($i) {
+global $mtrt;
+$a=$mtrt[$i]; $cnt=0; $t='';
+if ($a!=false) {
+    $tara=explode('/',$a[17]); $cnt=count($tara); if($cnt>0) {
+    $tara[0]=explode(',',$tara[0]); $tara[1]=explode(',',$tara[1]); $tara[2]=explode(',',$tara[2]); $tara[3]=explode(',',$tara[3]);
+    $tar='['.$tara[0][0].','.$tara[0][1].','.$tara[1][0].','.$tara[1][1].','.$tara[2][0].','.$tara[2][1].','.$tara[3][0].','.$tara[3][1].',0,0,0,0]';
+    if ($tar=='[,,,,,,,,0,0,0,0]' || $tar=='[0,,,,,,,,0,0,0,0]') $tar='none';
+    $t.='<tr id="trt'.$i.'" class="trt_none" style="color:#808080"><td colspan="4" class="tmdl" style="font-weight:bold;color:#004f92;">'.$a[0].' '.$a[1].(($a[2]==' ')?'':(' <span>'.$a[2].'</span>')).' <div id="ordD'.$i.'" style="float:right;" onclick="f_ordDel('.$i.')"></td></tr>';
+     for($ii=0; $ii<$cnt; $ii++) {
+      $t.='<tr id="trt'.$i.'_'.$ii.'" class="trt_none" style="color:#808080">';
+      $t.='<td id="ordF'.$i.'_'.$ii.'" class="tac"><span style="font:bold 13px arial">0</span> по '.$tara[$ii][0].(($i==105||$i==227)?'л':'кг').'</td>';
+      $t.='<td id="ordK'.$i.'_'.$ii.'" class="tar" style="white-space:nowrap"><div class="f_l">-</div><input type="text" style="width:55px; height:15px; text-align:right;" maxlength="5" value="нет"/><div class="f_r">+</div></td>';
+      $t.='<td id="ordC'.$i.'_'.$ii.'" class="tar"></td><td id="ordS'.$i.'_'.$ii.'" class="tar"></td></tr>';
+     }if ($cnt>1) { $t.='<tr id="trt'.$i.'_I" class="trt_none"><td style="padding-left:3px;font:bold 11px arial">Итого</td><td id="ordKI'.$i.'" class="tar" style="font:bold 11px arial">0</td><td colspan="2" id="ordCS'.$i.'" class="tar" style="font:bold 11px arial">0</td></tr>'; }
+     if ($tar=='none') { } else print $t.'<tr id="trt'.$i.'_ld" class="trt_none" style="height:10px"><td colspan="6" class="sepl"></td></tr>';
+    }
+ }
+}?>
+<div class="px0"></div>
+<div id="id_div_clear"><p class="fs15 tac">Перейдите в <l1 id="10">ПРАЙС-ЛИСТ материалов «Элакор»</l1> и выберите необходимый материал.</p></div>
+<div class="px10"></div>
+<div id="idOrdert" style="width:400px">
+<p class="nds mt0 fright" style="font-size:13px">Цены с НДС, руб</p><div class="px0"></div>
+<table class="tmtr"><tbody><?php print $tht; for ($j=11; $j<=351; $j++) { ford222($j); } ?>
+<tr style="background:#ffff00;"><td style="padding-left:3px;font-weight:bold;">ИТОГО:</td><td id="idSumKgTara" style="padding-right:3px;font-weight:bold;text-align:right">0</td><td colspan="2" id="idSumMatTara" style="padding-right:3px;font-weight:bold;text-align:right;">0</td></tr>
+<tr style="background:#ffff00;"><td colspan="4" style="padding-left:3px;font-weight:bold;">Наименований: <span id="idSumNmTara" style="padding-right:3px;font-weight:bold;font-size:13px">0</span></td></tr>
+</tbody></table>
+<div class="px0b"></div>
+<div class="px15"></div>
+<div class="px20"></div>
+</div>
+</div>
+<div id="clc" onclick="f_ordClc()">Очистить Корзину</div>
+<l1 id="10" id="dlnkPR">Продолжить покупку</l1>
+<div class="px15"></div>
+<div id="clz" onclick="f_ordClz()">Оформить Заказ</div>
+<div class="px15"></div>

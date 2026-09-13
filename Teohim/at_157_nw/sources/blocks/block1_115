@@ -1,0 +1,29 @@
+<h1>Эпоксидные краски эмали</h1>
+<div class="px5"></div>
+
+{*text5_12*}
+<h2 class="h2_orange">Эпоксидные краски и эмали Элакор-ЭД - обзор</h2>
+<div class="px10"></div>
+
+<!-- ДЕСКТОП 800 и более -->
+<div class="divPriceD">
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $th7;
+print fmtr7(49,'','%Эмаль 2К/100 – Фактурная эпоксидная краска%',' ',' ');
+print fmtr7(51,'','%Антистатическая эпоксидная эмаль%',' ','Эмаль 2К/80 - ');
+?></tbody></table>
+<div class="px0"></div>
+</div>
+<!--mobilePrice--><!-- Мобильные (менее 800) -->
+<div class="divPriceM">
+<div class="px0"></div>
+<table class="tmtr"><tbody><?php print $thp8;
+print fmtr8(49,'','%Эмаль 2К/100 – Фактурная эпоксидная краска%',' ',' ');
+print fmtr8(51,'','%Антистатическая эпоксидная эмаль%',' ','Эмаль 2К/80 - ');
+?></tbody></table>
+<div class="px0"></div>
+</div>
+<div class="px5"></div>
+
+<div class="px5"></div>
+<div id="dateDoc">27авг24</div>

@@ -1,0 +1,71 @@
+<h1>Полимерные полы ТЕХНОЛОГИЯ</h1>
+<div class="px5"></div>
+
+<p><span><strong>Технология полимерных полов</strong> – инструкции нанесения полимерных покрытий Элакор.</span></p>
+
+<div class="h14lt">1. Технология - <l1 id="167">пропитки для бетона</l1></div><div class="px5"></div>
+<?php print $tblt1; 
+for ($i=11; $i<=30; $i++) { print ftech1($i,''); }
+print $tblt2; ?><div class="px5"></div>
+
+<div class="h14lt">2. Технология полимерных полов окрасочного типа</div><div class="px5"></div>
+<?php print $tblt1;
+print ftech1(31,'');
+print ftech1(33,'');
+print ftech1(35,'');
+print ftech1(41,'2.4.');
+print ftech1(83,'2.9.');
+print $tblt2; ?><div class="px5"></div>
+
+<div class="h14lt">3. Технология устройства наливных полимерных полов</div><div class="px5"></div>
+<?php
+ print $tblt1;
+ print ftech1(51,'3.1.');
+ print ftech1(53,'3.2.');
+ print ftech1(71,'3.3.');
+ print ftech1(73,'3.4.');
+ print ftech1(55);
+ print ftech1(57);
+ print ftech1(59);
+ print ftech1(61);
+ print $tblt2; ?><div class="px5"></div>
+ 
+<div class="px5"></div><div class="h14lt">4. Технология устройства полимерных полов с песком</div><div class="px5"></div>
+<?php print $tblt1;
+print ftech1(37,'4.1.');
+print ftech1(39,'4.2.');
+print ftech1(47,'4.3.');
+print $tblt2; ?><div class="px5"></div>
+
+<div class="px5"></div><div class="h14lt">5. Технология полимерных антистатических полов</div><div class="px5"></div>
+<?php print $tblt1;
+print ftech1(63,'5.1.','Токопроводящий Эпоксидный Антистатический наливной пол');
+print ftech1(64,'5.2.','Токопроводящий Наливной Полиуретановый пол');
+print ftech1(65,'5.3.','Электрорассеивающий Эпоксидный Антистатический наливной пол');
+print ftech1(66,'5.4.','Электрорассеивающий Наливной Полиуретановый пол');
+print ftech1(67,'5.5.','Токопроводящее Окрасочное Эпоксидное покрытие');
+print ftech1(68,'5.6.','Токопроводящее Окрасочное Полиуретановое покрытие');
+print ftech1(69,'5.7.','Электрорассеивающее Окрасочное Эпоксидное покрытие');
+print ftech1(70,'5.8.','Электрорассеивающее Окрасочное Полиуретановое покрытие');
+print $tblt2; ?><div class="px5"></div>
+
+<div class="h14lt">6. Специальные полимерные полы технология</div><div class="px5"></div>
+<?php
+ print $tblt1;
+ print ftech1(81,'6.1.');
+ print ftech1(85,'6.2.');
+ print ftech1(87,'6.3.');
+ print ftech1(89,'6.4.');
+ print ftech1(93,'6.5.');
+ print ftech1(95,'6.6.');
+ print $tblt2;
+?>
+<div class="px5"></div>
+<div class="px10b"></div>
+
+<p>Элакор – <l1 id="3" class="fwb">полимерные полы</l1>, производства ООО «ТэоХим» - цены и описания</p>
+<p>Подробные описания, цены технологии – <l1 id="2" class="fwb">наливные полимерные полы</l1> от производителя. </p>
+
+{*text5_3*}
+<div class="px10"></div>
+<div id="dateDoc">28сен19</div>

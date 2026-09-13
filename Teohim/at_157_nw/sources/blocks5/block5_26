@@ -1,0 +1,10 @@
+<h1>Псевдорекламируемая страница</h1>
+<?php
+/*  echo "Hello!<br>";
+  echo $uri."<br>";
+  echo isset($_SESSION['utm']).'<br>'.$_SESSION['utm'].'<br>';
+*/
+print('cookie_utm '.$cookie_utm);
+print('<br>');
+?>
+<l5 id="25">back to UtmCall</l5>

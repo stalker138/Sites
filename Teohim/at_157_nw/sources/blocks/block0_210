@@ -1,0 +1,14 @@
+<h1>Представительства ТэоХим в России и за рубежом</h1>
+<div class="px5"></div>
+<div class="fwb c3 bg3 tac fs14" style="padding:5px;border-top:solid 1px #c8c8c8">Для качественного выполнения работ обращайтесь к нашим представителям в Вашем регионе!</div>
+<div class="px5b"></div>
+<p class="center">Внимание! Если Вы не дозвонились до Представительства, пожалуйста, позвоните в центральный офис<br><span>ООО "ТэоХим" <a class="consult" href="tel:88001005010">8-800-100-50-10</a> - звонок из любой точки России БЕСПЛАТНЫЙ!</span></p>
+{*text0_3*}
+<div class="px10b"></div><div class="px10"></div>
+{*text0_4*}
+<?php if ($f==0) { ?>
+<div><a href="javascript:void(f_predAuth(1))" class="fwb fs13">Вход для представителей</a></div>
+<?php } else { ?>
+<p><l0 id="231" class="fwb fs13">Информация для представителей</l0></p>
+<?php } ?>
+<div class="px5"></div>
