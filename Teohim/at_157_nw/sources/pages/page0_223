@@ -1,0 +1,91 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#dcontent { padding:20px; width:958px; min-height:100px; text-align:center; border:solid 1px #004f92; border-radius:5px; }
+#dheader { position:relative; top:0; min-height:90px; height:90px;}
+#dh_main { left:200px; width:580px; height:85px; background:inherit; }
+#dh_main_border { position:absolute; left:16px; top:47px; right:12px; height:0; border-bottom:solid 1px #c8c8c8; }
+#dlogoimg { background-color:#ffffff; }
+/*#dlogoimg { top:15px; left:10px; width:180px; height:58px; text-indent:0; background:url(/img/main/elakor_new.svg) center no-repeat; background-size:80%; } #dlogod { color:#f59e0f; }*/
+#dh_teohim { top:15px; right:10px; height:58px; background:url(/img/main/svg_teohim.svg) center no-repeat; border:none; }
+#dh_slogan { top:15px; text-align:center; font-size:17px; letter-spacing:1px; color:#004f92; }
+#dpIDmail { position:absolute;right:15px;top:52px; line-height:25px; } #dpIDmail a { font:normal 15px arial; text-decoration: underline; } #dpIDmail a:hover { text-decoration: none; }
+#dh_tel { display:none; left:190px; top:52px; line-height:25px; color:#004f92; }
+.callback { position:absolute; left:20px; top:52px; font:normal 15px arial; line-height:25px; color:#004f92; }
+.consult { padding:0 5px; white-space:nowrap; }
+
+h1 { background:inherit; text-align:center; font-size:20px; border-top:none 0px; }
+.divPriceM2 { display:none; }
+.mbutl,.mbutr,.mbutc,.mbutcl,.mbutcr { cursor:pointer; position:relative; display:block; margin:20px 0 0 0; padding:10px 15px 0 15px; width:250px; height:50px; font:bold 20px arial; line-height:20px; text-align:center; border:solid 1px #004f92; border-radius:4px; text-decoration:none; }
+.mbutl,.mbutr { box-shadow:0 0 15px 0 #272727; }
+.mbutl span { font-size:15px; font-weight:normal; } .mbutr { line-height:35px; }
+.mbutl { float:left; border-color:#ff7c3e; } .mbutl:hover { border-color:#ff7c3e; color:#ffffff; background:#ff7c3e; }
+.mbutr,.mbutcl,.mbutcr { float:right; border-color:#ff7c3e; } .mbutr:hover { border-color:#ff7c3e; color:#ffffff; background:#ff7c3e; }
+.mbutc,.mbutcl,.mbutcr { float:none; margin:20px auto 0 auto; width:200px; font:bold 14px arial; line-height:20px; text-decoration:none; }
+.mbutcl,.mbutcr { margin:10px; padding:0; width:260px; height:auto; border:none 0px; } .mbutcl { float:left; } .mbutcr { float:right; }
+.mbutr:hover, .mbutc:hover, .mbutcl:hover, .mbutcr:hover { text-decoration:none; }
+.mbutc:hover span,.mbutcl:hover span,.mbutcr:hover span { text-decoration:underline; }
+.divPriceM2 .callback,.divPriceM2 .consult { position: relative; display:inline-block; margin:5px 10px; left:auto; right:auto; top:auto; text-align:center; color:#004f92; font-size:15px; line-height:25px; }
+.temp1 { display:inline-block; width:45px; }
+{*text0_120*} .pb_ismall { height:133px; }
+
+@media screen and (max-width:1000px) {
+#dheader { min-height:70px; height:70px; border:none 0px; }
+#dlogoimg { left:0; top:10px; } #dh_teohim { right:0; top:10px; }
+#dcontent { width:auto; border:none 0px; }
+#dheader { display:block; width:100%; height:auto; }
+#dlogoimg { left:5px; } #dh_teohim { right:5px; }
+#dh_main { top:0; left:190px; right:210px; width:auto; height:auto; text-align:center; } #dh_main_border { display:none; }
+#dh_slogan { display:none; } #dh_tel { position:relative; display:block; margin:40px 0 0 0; left:auto; right:auto; top:auto; text-align:center; }
+#dpIDmail,.callback { top:0; }
+#dh_main { margin-top:5px; }
+.mbutl,.mbutr { width:200px; } .mbutcl,.mbutcr { margin:10px 0 0 0; width:230px; }
+}
+@media screen and (max-width:820px) { .temp1 { display:none; } }
+@media screen and (max-width:770px) {
+.mbutl,.mbutr,.mbutc,.mbutcl,.mbutcr { float:none; width:auto; }
+.fleft, .fright { float:none; }
+}
+@media screen and (max-width:680px) {
+#dh_main { left:0; right:0; width:auto;} .bdst { display:none; } .divPriceM2 { display:block; }
+#dh_tel,#dpIDmail,.callback { position:relative; margin:10px auto 0 auto; left:auto; right:auto; top:auto; text-align:center; } #dpIDmail { margin-top:0; }
+#dh_tel { margin:10px 185px 0 185px; }
+}
+@media screen and (max-width:560px) {
+#dheader { min-height:40px; height:40px; }
+#dh_teohim { top:5px; width:100px; height:40px; } #dlogoimg { top:5px; width:108px; height:35px; } /*#dlogod { top:7px; font-size:8px; }*/
+#dh_main { width:auto; } #dh_main { margin-top:0; } #dpIDmail { margin-top:5px; } #dh_tel { margin:0 105px; }
+}
+@media screen and (max-width:530px) { #dh_tel { margin:0 auto; width:130px; } }
+
+@media screen and (max-width:380px) {
+#dheader { min-height:75px; height:75px; } #dh_tel { width:auto; }
+#dh_main { position:relative; padding-top:50px; top:auto; left:auto; right:auto; width:auto;}
+#dcontent { padding:0 20px; }
+}
+
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+<div id="desktop">
+  <div id="dheader"><header>
+    <div id="dh_main">
+      <div id="dh_slogan">Российский производитель <span class="upper">промышленных полов</span> с 1996г</div>
+      <div id="dpIDmail" class="bdst"><a href="mailto:Z@teohim.ru">Z@teohim.ru</a></div>
+      <div class="callback bdst">обратный звонок</div>
+      <div id="dh_tel"> <a class="consult" href="tel:+79067695507">+7-906-769-5507</a> <a class="consult" href="tel:+79629125077">+7-962-912-5077</a></div>
+      <div id="dh_main_border"></div>
+    </div>
+    <div id="dh_teohim"></div>
+    <l0 id="223" id="dlogoimg" title="промышленные полы ЭЛАКОР"><div id="dlogod">промышленные &nbsp;полы</div></l0>
+  </header><div class="px0"></div></div><div class="px10"></div>
+  <div id="dcontent"><section>
+{*block0_223*}
+  <div class="px10 noprint"></div></section>
+</div>
+</div>
+{*tpl18*}{*tpl19*}{*tpl20*}
+<script>
+$.ready(f_vpnp);
+{*text0_44*}
+</script></body></html>{*tpl21*}

@@ -1,0 +1,14 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.tmtr th { padding:0 5px; width:auto; font-weight:bold; font-size:12px; } .tmtr .tdl { padding:0 3px 0 15px; }
+.pb_ismall { float:left; margin:5px; width:120px; height:auto; } .tmtr td .pb_ismall { margin:10px 0; }
+.bs { float:right; margin:10px 0 10px 10px; box-shadow:4px 4px 7px 2px #999999; background:#f0f0f0; }
+.bs .pb_ismall { margin:5px; width:90px; height:auto; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*block1_103*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

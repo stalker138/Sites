@@ -1,0 +1,4 @@
+<div id="mobile">
+  <div id="mcontent">
+    <section>
+<?php if (1==2) { ?>{*text5_15*}<?php } ?>

@@ -1,0 +1,19 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.dph1 { margin:10px 15px 0 15px; } .dph1 img { margin:5px 0 0 0; width:350px; height:auto; }
+.dtmpl,.dtmpr { float:left; clear:none; margin:10px 0 0 0; text-align:center; width:49%; } .dtmpr { float:right; } .dtmpl img,.dtmpr img { margin:5px 0 0 0; width:auto; height:auto; }
+.blk_cover_name2 { font-weight:bold; color:#000000; } .blk_cover_text { font-size:12px; } .dtmp1 { text-align:right; margin:-14px 0 0 0; padding:0 10px 0 0; }
+@media screen and (max-width:999px) {
+ .dph1 { margin:10px 10px 0 0; } .dph1 img { width:100%; max-width:350px; }
+ .dtmpl img,.dtmpr img { width:100%; max-width:300px; }
+ .blk_cover_item_b { min-height:450px; } .blk_cover_link { padding:0 0 10px 0; } .blk_cover_name2 { padding:10px 0 0 0; } .dtmp1 { margin:5px 0 0 0; }
+}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*text0_1*}
+{*tpl16*}
+{*block1_152*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

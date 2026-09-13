@@ -1,0 +1,42 @@
+<?php
+/* page0_89 /setpred01/map_set_coords.php */
+// header("HTTP/1.1 204 No Content"); exit;
+$o_inc='adm'; include "cnfg.php";
+if ($f==0) { /* Не авторизован */ header("HTTP/1.1 204 No Content"); }
+
+// Лог операций админки объектов и фото
+$t=$_SERVER['REMOTE_ADDR'];
+if ($t!='{*text5_29*}'/* && $t!='178.45.223.89' && $t!='77.37.249.45' && $t!='83.167.104.89' && $t!='176.192.27.82' && $t!='95.165.154.69'*/) {
+$h=@fopen($_SERVER["DOCUMENT_ROOT"].'/setpred01/log_of_open_coords','a+'); if ($h) {
+    $t=''.date("d-m-Y - H:i:s").chr(9).$t.chr(9).chr(9).'ID представителя: '.$f.chr(9).chr(9).$_SERVER['REQUEST_URI'].chr(9).chr(9).$_SERVER['HTTP_USER_AGENT'].chr(9).$_SERVER['HTTP_REFERER'];
+    $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
+    @fwrite($h,$t); @fclose($h);
+}
+}
+?>
+<!DOCTYPE html>
+<html>
+<head><!--0089-->
+<meta name="robots" content="noindex, nofollow, noarchive"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Выбор объекта и возврат координат</title>
+<meta name="description" content="Карта выполненных объектов ТэоХим"/> <meta name="keywords" content="Карта выполненных объектов ТэоХим"/>
+<link rel="icon" href="/favicon.ico" type="image/ico"/>
+<meta name='author' content='ООО ТэоХим' /><meta name='copyright' lang='ru' content='ООО ТэоХим' /><meta name='owner' content='ООО ТэоХим' />
+<link rel="stylesheet" href="/setpred01/map_set_coords_0003.css" type="text/css"/>
+<script type="text/javascript" charset="UTF-8" src="/cssjs/vcorp_js_0003.js"></script>
+<script type="text/javascript" charset="UTF-8" src="https://api-maps.yandex.ru/2.1/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&amp;lang=ru_RU"></script>
+<script type="text/javascript" charset="UTF-8" src="/setpred01/map_set_coords_0003.js"></script>
+</head>
+<body>
+<div id="div_main">
+<div id="div_map"></div>
+<div id="win_coords">
+<div class="win_coords_left">Широта:</div><div class="win_coords_val" id="win_coords_sh">-не выбрано-</div>
+<div class="win_coords_left" style="margin-left:50px;">Долгота:</div><div class="win_coords_val" id="win_coords_dg">-не выбрано-</div>
+<div class="win_coords_button" onclick="f_setCoords()" id="win_coords_but" style="right:130px;color:#c8c8c8">Установить</div>
+<div class="win_coords_button" onclick="f_setCoords('cancel')" style="cursor:pointer;font-weight:normal;color:#000000">Отмена</div>
+</div>
+</div>
+</body>
+</html>
+

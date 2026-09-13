@@ -1,0 +1,44 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.dtmp1 { clear:both; display:none; }
+.photoblock { float:right; margin-left:20px; padding:0; width:300px; }
+.photoblock img { margin:0; width:300px; height:200px; }
+.dsmall { float:left; width:365px; height:auto; } .pb_ismall { width:100%; height:auto; }
+
+.tmtr .fs12 { font-size:12px; font-weight:bold; }
+.tmtr { border:solid 1px #000000; } .tmtr td { text-align:center; border:none; }
+.tmtr .tmtl1 a { font-size:13px; text-decoration:underline; }
+.tmtr td a { font-size:12px; } .tmtr td a:hover { text-decoration:underline; } .tmtr .tmtl a:hover, .tmtr .tmdl a:hover { text-decoration:underline; }
+.tmtr td .blk_cover_calc, .tmtr td .blk_cover_calc_empty { position:relative; top:0; left:0; right:0; width:100px; height:16px; padding:3px 3px; font-weight:bold; font-size:12px; text-decoration:none; line-height:16px; }
+.tmtr .tmtl .blk_cover_calc { color:#ffffff; }
+
+.tmtr td .tpdf { background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAaCAIAAADT1lApAAAAB3RJTUUH4goFEg0MSYy9wgAAA9xJREFUeJyVVW9olVUY/z3POe977+6d987NzXL554MYOtbG8oMJ+SWIQIokSLBkJkwMFVLSHDVnmE5IkfRDGuQC/dAKKVqzFiEKFq0crTK0CKsvEYqZu3d7733fc87Th/fdanK36sfL++HwnN/zO7/zPM8hF4bFXdvCsx9QJgMRQFAZBIC0pnyNv2Zt1ZbtEAFAzACofO6TwrPt6XUbUo89IdaQ0hPbBKA4dBJje3ebK5dl9Ha6vaP64GsyQaRdsUBEurVNt94vccYZoJRuadPLV4z3dEN71fsPi7XinCZWACQIxFoxBlon8gXEDCKJIvI8MQZEMAbM2Rf2oBQERw6CqXrfIXEu0U/MpBRESCkAEBGClIJi53YpjFYfOEINc4kIzDAGQLa7B84Fxw4Tq0x3j64oXESI2fxyzV793l/9ePT1V6lHHgWAWJ0xcDaz54BEUXD8qGpqrsySwPfJ8/mueVSVSVasMd+O3H5ohThDxFCKstny26cqs8Qe85wGKQXh++9W7eyKBXoPPMj1DWANCJwDMeXy7vffptFCJM5xLs/1DebyN2rhovicmd177wgMBweKz2+ZlgXWQGnVdJ+7cZ1n10KEiMQ5iMRSk+IyEZh5elcIRADZH6/aX3+GiDgXXyXx318cWplFnCOl3K2b0WfnufGe8UP7wQznxLn4n4iKVU/HAudAVDrdS7Pyub6BcHAg6D1BngdmMBMzMUMpOBf7VcEXcQ7MMj5ePn0ys+9VNX9B/sxHhU3rwZxe+7QrFtyN67COFyykXF6cA1ElFmvY84NTb6rF96YeXm1Ghs13I9wwd6zzudKJoyiX1eIlVFsno6NVW3dQJgvnpp5IRKKIPd8Vi8Ebx6QUFDqeGnu50/xwJd3ekT97Ib1pG82ulSDguxuhVHTxAqXSkLiPku4XQMjz7bWfxl55ievmpNdvVMua9ZKlk1m81uXpdRvMpS+i4S/V0qb0xs1meAisJjtYICDPD3qPh/3vmUtDuf5zXkubTJwxuXuAfN9bucpbuSohjqIJX0REAKJi104pFqQUpDu2ei1tEoakNYj+MboQFw5ExBr2UyCCCAOAtVRTE376cTT4ofxxk/xUZleXWAut4yae4h0RKUVaxwniFU4qJwx5XiPPX8S1dbPeegepFIhopsqeAg0ASslYQS9rzvX1k9YAxBgiEmtn2CnWAiTOAdBxKGWrASTjEoi5Zp7B8VSkTBaA5lwOgmjoc66rF2OSifkfEPdadPE8RMhF0diLO8pn+ijl3/Fu/DuIpVxKrXmSRESMKZ18Xf68BaX/BxERrKF8TfqZzX8B3pDMwxwy6KgAAAAASUVORK5CYII=') no-repeat 5px 2px rgba(0, 230, 0, 1); }
+
+.tmtr td .tpdf { padding:3px 0px 3px 20px; width:90px; font-size:14px; text-decoration:none; background-size:16px; }
+.tmtr td .tdoc { display:block; padding:3px 0px 8px 31px; height:16px; font-size:13px; background:url("https://teohim.ru/img/css/doc.gif") no-repeat 2px 1px; }
+
+.tmtl { padding:2px 2px 2px 10px; font-weight:bold; }
+.tmtl1 { padding:2px 2px 2px 5px; width:120px; }
+.ti10 { text-indent:10px; }
+
+.d18text { float:left; padding:0; text-align:left; } .d18dtext { clear:both; font-size:11px; font-weight:normal; line-height:16px; text-align:left; }
+.d18ic { float:right; padding:3px 0 0 0; width:234px; } .d18i { float:left; width:118px; } .d18c { float:right; width:112px; }
+
+.dsmall { float:left; width:365px; height:auto; } .pb_ismall { width:100%; height:auto; }
+
+@media screen and (max-width:999px) { .ctmp1 { min-height:240px; } .ctmp2 { min-height:170px; } }
+@media screen and (max-width:799px) {
+  #dcontent { min-width:320px; } .divPriceD { display:none; } .divPriceM { display:block; }
+  .d18text { float:none; } .d18ic { float:left; clear:both; margin:0 auto; padding:2px 0 5px 0; } .tmtr td a { text-decoration:underline; }
+  .dtmp1 { display:block; }
+  .photoblock { float:none; margin-left:0; }
+  .photoblock img { margin-right:20px; width:300px; height:200px; }
+}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*text0_1*}
+{*tpl16*}
+{*block5_3*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

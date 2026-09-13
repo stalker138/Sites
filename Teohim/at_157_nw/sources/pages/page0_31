@@ -1,0 +1,9 @@
+<?php
+$tmp=$pb_page-4000;
+print '<div class="px5"></div><div class="newsnav">';
+for ($i=28; $i>0; $i--) {
+  if ($i==$tmp) print '<div>'.$i.'</div>';
+  else print '<'.'a href="/news/p'.$i.'/">'.$i.'</'.'a>';
+}
+print '</div>';
+?>

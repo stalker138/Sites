@@ -1,0 +1,128 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_130*}
+
+#dh_main, #aobjlist {display: none;}
+#dh_menu {top: 12px;}
+#dheader, .dsheader {height: 81px;}
+#dnav {top: 50px;}
+
+.flcvr {
+  display: block;
+  margin-top: 7px;
+}
+.inputs {
+  padding: 5px 5px;
+  margin: 0px 0px 5px 0px;
+  max-width: 192px;
+  width: 192px;
+  /*border: 3px solid cornflowerblue;
+  border-radius: 5px;*/
+}
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.input-group:not(:first-of-type) {
+  margin-top: 5px;
+}
+.checkbox, .radio {
+  cursor: pointer;
+  margin: 0 3px 0 0;
+}
+.flabel {
+  cursor: pointer;
+}
+
+.fcmain {
+  display: flex;
+  border: solid 1px #c4c4c4;
+  border-radius: 5px;
+}
+.fcimg img {
+  width: 215px;
+}
+.fcinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-grow: 1;
+  padding: 5px 10px;
+  width: calc(100% - 200px);
+}
+.fcdescr, .fcprice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fcdescr {
+  max-width: 70%;
+}
+.fcdescr-name {
+}
+.fcdescr-prop {
+}
+.fcprice {
+  align-items: flex-end;
+  text-align: right;
+  font-size: 20px;
+}
+.fcprice-info {
+}
+.fcprice-btn {
+  max-width: 180px;
+}
+@media screen and (max-width:999px) {
+#dcontent {
+  width: auto;
+  min-width: auto;
+}
+}
+@media screen and (max-width:768px) {
+.fcmain {
+}
+.fcinfo {
+  flex-direction: column;
+}
+.fcdescr {
+  max-width: 100%;
+  max-height: 150px;
+}
+.fcprice {
+  flex-direction: row;
+  justify-content: space-between;
+}
+}
+@media screen and (max-width:600px) {
+.fcmain {
+  display: block;
+}
+.fcinfo {
+  width: 100%;
+  padding: 5px 0px;
+}
+.fcimg img {
+  width: 100%;
+}
+.fcdescr {
+}
+.fcprice {
+}
+}
+
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*text0_1*}
+{*text0_57*}
+{*text0_58*}
+{*tpl19*}
+{*text0_56*}
+{*tpl20*}
+{*tpl16*}
+{*block1_292*}
+{*tpl17*}
+{*tpl18*}
+</body></html>{*tpl21*}

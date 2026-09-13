@@ -1,0 +1,21 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_115*}
+.dmtrl { margin:0; width:340px; } .dmtrr { margin:0; max-width:330px; } .tsrt { margin-top:3px; } .dmtrr, .pb_ismall { margin:0; width:330px; border-radius:0; }
+@media screen and (max-width:999px) { .dmtrl { width:350px; } .dmtrr { float:none; margin:7px 0 0 0; width:330px; max-width:330px; } }
+/*
+.dmtrl { width:395px; } .dmtrr { width:350px; } .dmtrr .pb_ismall { float:right; margin:10px 2px 0 10px; width:auto; height:170px; }
+.bottle { width:205px; } .bottle img { width:215px; }
+.bottle:hover { height:112px; overflow:visible; border:none; box-shadow:none; } .bottle:hover img { margin:0 0 0 -2px; border:solid 1px #c8c8c8; box-shadow:4px 4px 7px 0 #999999; } .bottle:hover .bottle_span { left:4px; top:4px; }
+#mtr_tabs { max-width: 770px; }
+@media screen and (max-width:999px) {.label { float:left; } .bottle { float:left; margin:10px 0 0 0; width:290px; } .bottle img { margin:0; } .bottle:hover .bottle_span { left:6px; } }
+*/
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*text0_1*}
+{*tpl16*}
+{*block2_8*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

@@ -1,0 +1,137 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}<link rel="canonical" href="https://teohim.ru/price/"/>{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#dcontent { padding:20px; width:958px; min-height:100px; border:solid 1px #004f92; border-radius:5px; }
+#dcontent2 { position:relative; padding:0 5px; width:990px; }
+#dheader { position:relative; top:0; min-height:75px; height:75px;}
+#dh_main { left:200px; width:580px; height:85px; background:inherit; }
+#dh_main_border { position:absolute; left:16px; top:47px; right:12px; height:0; border-bottom:solid 1px #c8c8c8; }
+#dlogoimg { background-color:#ffffff; }
+/*#dlogoimg { top:15px; left:10px; width:180px; height:58px; text-indent:0; background:url(/img/main/elakor_new.svg) center no-repeat; background-size:80%; } #dlogod { color:#f59e0f; }*/
+#dh_teohim { top:15px; right:10px; height:58px; background:url(/img/main/svg_teohim.svg) center no-repeat; border:none;}
+#dh_slogan { top:15px; text-align:center; font-size:17px; letter-spacing:1px; color:#004f92; }
+#dpIDmail { position:absolute;right:15px;top:52px; line-height:25px; } #dpIDmail a { font:normal 15px arial; text-decoration: underline; } #dpIDmail a:hover { text-decoration: none; }
+#dh_tel { left:190px; top:52px; line-height:25px; color:#004f92; }
+.callback { position:absolute; left:20px; top:52px; font:normal 15px arial; line-height:25px; color:#004f92; }
+.consult { padding:0 5px; white-space:nowrap; }
+
+#hhome, #hhome2, #hhome3 { position:relative; display:block; float:left; margin:10px 10px 0 0; background-color:#eeeeee; border:solid 1px #c8c8c8; border-radius:10px; }
+#hhome2,#hhome3 { padding:5px 10px; height:30px; font:normal 15px arial; line-height:30px; text-decoration:none; color:#004f92; }
+#hhome2 { border:solid 1px #f00000; }
+#hhome { width:40px; height:40px; background:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 486.196 486.196' style='enable-background:new 0 0 486.196 486.196;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M481.708,220.456l-228.8-204.6c-0.4-0.4-0.8-0.7-1.3-1c-5-4.8-13-5-18.3-0.3l-228.8,204.6c-5.6,5-6,13.5-1.1,19.1 c2.7,3,6.4,4.5,10.1,4.5c3.2,0,6.4-1.1,9-3.4l41.2-36.9v7.2v106.8v124.6c0,18.7,15.2,34,34,34c0.3,0,0.5,0,0.8,0s0.5,0,0.8,0h70.6 c17.6,0,31.9-14.3,31.9-31.9v-121.3c0-2.7,2.2-4.9,4.9-4.9h72.9c2.7,0,4.9,2.2,4.9,4.9v121.3c0,17.6,14.3,31.9,31.9,31.9h72.2 c19,0,34-18.7,34-42.6v-111.2v-34v-83.5l41.2,36.9c2.6,2.3,5.8,3.4,9,3.4c3.7,0,7.4-1.5,10.1-4.5 C487.708,233.956,487.208,225.456,481.708,220.456z M395.508,287.156v34v111.1c0,9.7-4.8,15.6-7,15.6h-72.2c-2.7,0-4.9-2.2-4.9-4.9 v-121.1c0-17.6-14.3-31.9-31.9-31.9h-72.9c-17.6,0-31.9,14.3-31.9,31.9v121.3c0,2.7-2.2,4.9-4.9,4.9h-70.6c-0.3,0-0.5,0-0.8,0 s-0.5,0-0.8,0c-3.8,0-7-3.1-7-7v-124.7v-106.8v-31.3l151.8-135.6l153.1,136.9L395.508,287.156L395.508,287.156z'/%3E%3C/g%3E%3C/svg%3E%0A") center no-repeat #eeeeee; background-size:60%; }
+#hhome:hover,#hhome2:hover,#hhome3:hover { background-color:rgba(200,200,200,0.7); }
+#hhome2:hover { border:solid 1px #004f92; }
+#hhome3:hover span { text-decoration:underline; } #hhome3 span { font-weight:normal; }
+
+h1 { font-size:20px; border-top:none 0px; } .divh4span { float:right; }
+.divPriceD { display:block; } .divPriceM,.divPriceM2 { display:none; }
+.h14l { float:left; margin:7px 0 0 0; padding:0; font-size:16px; }
+.tmtr td:hover { color:#f00000; background:#eeeeee; font-weight:bold; } .tmtr td:hover a { font-weight:normal; }
+.tmtr .tmdl { padding:1px 0 1px 5px; } .tmtr .tmdl:hover { font-weight:normal; }
+.tmtr, .tmtr tr, .tmtr th, .tmtr td { box-shadow:none; }
+
+.divh3 { color:#ff7c3e; } .divh3 .divh3span, .divh3span, .divh4 .divh4span, .divh4span { margin:-27px 10px 0 0; font-size:11px; font-weight:normal; color:#000000; }
+.divh3 .dh3span,.divh4 .dh3span { display:inline-block; font-size:12px; font-weight:normal; color:#000000; white-space:pre-wrap; }
+.divh4 .divh4span, .divh4span { margin:-18px 10px 0 0; }
+.divh4 { padding:3px 0 9px 40px; font-size:14px; font-weight:normal; } .div_mc .divh4:before, .div_mo .divh4:before { left:20px; }
+.divh3,.divh4,.div_mc .divh4 { background:#f8f8f8; } .div_mo .divh3,.div_mo .div_mo .divh4 { background:#eeeeee; } .div_mo .divh4:hover, .div_mc .divh4:hover { background:#e0e0e0; }
+.div_mo .divh4:before, .div_mc .divh4:before { content: '+'; line-height:5px; } .div_mo .div_mo .divh4:before { content: '–'; left:25px; line-height:2px; }
+.temp1 { float:right; width:160px; } .temp2 { float:right; }
+#id_oc_all { float:right;margin:-15px 0 0 0;width:160px; }
+#id_open_all,#id_close_all { cursor:pointer; float:right; margin:0 0 0 10px; font-size:11px; text-decoration:underline; color:#004f92; } #id_open_all:hover,#id_close_all:hover { color:#f00000; }
+#dcontent { min-width:440px; }
+.p1 { border:solid 1px #f00000; }
+.a1 { text-decoration:none; }
+.p1:hover { border:solid 1px #004F92; background:#e0e0e0; }
+.tmtr .fbuy, .tmtr .fbuy:hover { background:url('data:image/gif;base64,R0lGODlhFAAQAIAAAP///6WlpSH5BAEAAAAALAAAAAAUABAAAAIshI+pyxgf2oJPMoqzqiB2E3FJpk3eCXomqZpg2m5sbNWd6OBHOH0yfQPaDAUAOw==') center no-repeat #ffff40; }
+.tmtr .fbuy:hover { background-color:#f5530e; }
+.divPriceM2 .callback,.divPriceM2 .consult { position: relative; display:inline-block; margin:5px 10px; left:auto; right:auto; top:auto; text-align:center; color:#004f92; font-size:15px; line-height:25px; }
+.tmtr th, .tmtr td, .tsrt th, .tsrt td { border:solid 1px #c8c8c8; } .tmtr .fbuy { background-color:#f0f0f0; }
+#txt1price { position:relative; float:right; margin:-20px 5px 0 0; font-size:14px; font-weight:bold; color:#004f92; }
+
+@media screen and (max-width:1000px) {
+#dheader { display:block; width:100%; border:none 0px; }
+#dlogoimg { left:0; top:10px; } #dh_teohim { right:0; top:10px; }
+#dcontent { padding:10px 20px 20px 20px; width:auto; border:none 0px; } #dcontent2 { width:auto; }
+#dlogoimg { left:5px; } #dh_teohim { right:5px; }
+#dh_main { top:0; left:190px; right:210px; width:auto; height:auto; text-align:center; } #dh_main_border { display:none; }
+#dh_slogan { display:none; } #dh_tel { position:relative; margin:40px 0 0 0; left:auto; right:auto; top:auto; text-align:center; }
+#dpIDmail,.callback { top:0; }
+#dh_main { margin-top:5px; }
+}
+
+@media screen and (max-width:999px) { .px10n { display:none; } }
+@media screen and (max-width:799px) { #dcontent { min-width:320px; } .divPriceD { display:none; } .divPriceM { display:block; } .divh3,.divh4,.h14l { font-size:13px; } .divh3 .divh3span, .divh3span, .divh4 .divh4span, .divh4span { margin:-18px 10px 0 0; } }
+
+@media screen and (max-width:680px) {
+#dh_main { left:0; right:0; width:auto;} .bdst { display:none; } .divPriceM2 { display:block; }
+#dh_tel,#dpIDmail,.callback { position:relative; margin:10px auto 0 auto; left:auto; right:auto; top:auto; text-align:center; } #dpIDmail { margin-top:0; }
+#dcontent2 { margin:0 0 0 0; } #dh_tel { margin:10px 185px 0 185px; }
+}
+@media screen and (max-width:630px) {
+  .temp1, .temp2 { float:left; } #id_oc_all { clear:both; } .px10n { display:block; }
+  .divh3_78 { padding:5px 100px 15px 25px; line-height:15px; }
+}
+
+@media screen and (max-width:560px) {
+#dheader { min-height:40px; height:40px; } #hhome3 { display:none; }
+#dh_teohim { top:5px; width:100px; height:40px; } #dlogoimg { top:5px; width:108px; height:35px; } /*#dlogod { top:7px; font-size:8px; }*/
+#dh_main { width:auto; } #dh_main { margin-top:0; } #dpIDmail { margin-top:5px; } #dh_tel { margin:0 105px; }
+.tmtr .tmdl { height:40px; }
+}
+
+@media screen and (max-width:530px) { .divh3_9 { padding:5px 100px 15px 25px; line-height:15px; } #dh_tel { margin:0 auto; width:130px; } #txt1price { margin:0 5px 0 0;} }
+/* @media screen and (max-width:450px) { .divh3_26 { padding:5px 100px 15px 25px; line-height:15px; } } */
+
+@media screen and (max-width:380px) {
+#dheader { min-height:75px; height:75px; } #dh_tel { width:auto; }
+#dh_main { position:relative; padding-top:50px; top:auto; left:auto; right:auto; width:auto;}
+#dcontent2 { margin:0 0 0 0; }
+#hhome3 { width:auto; height:auto; }
+}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*text0_1*}
+<?php /* Большие экраны (от 1000px) */ ?>
+<div id="desktop">
+  <div id="dheader"><header>
+    <div id="dh_main">
+      <div id="dh_slogan">Российский производитель <span class="upper">промышленных полов</span> с 1996г</div>
+      <div id="dpIDmail" class="bdst"><a href="mailto:Z@teohim.ru">Z@teohim.ru</a></div>
+      <div class="callback bdst">обратный звонок</div>
+      <div id="dh_tel"> <a class="consult" href="tel:+79067695507">+7-906-769-5507</a> <a class="consult" href="tel:+79629125077">+7-962-912-5077</a></div>
+      <div id="dh_main_border"></div>
+    </div><div class="px0"></div>
+    <div id="dh_teohim"></div>
+    <l0 id="223" id="dlogoimg" title="промышленные полы ЭЛАКОР"><div id="dlogod">промышленные &nbsp;полы</div></l0>
+  </header><div class="px0"></div></div><div class="px0"></div>
+  <div id="dcontent2">
+<l0 id="223" id="hhome"></l0><a id="hhome2" href="javascript:void(f_vpnp(event))">Выбор и расчёт покрытий</a><a id="hhome3" href="tel:+79166574429" title="Быстрая консультация"><span>Быстрая консультация +7-916-657-4429</span></a>
+<div class="px10"></div>
+  </div>
+  <div id="dcontent"><section>
+{*block0_224*}
+  <div class="px10"></div></section>
+</div>
+</div>
+{*tpl18*}{*tpl19*}{*tpl20*}
+<script>
+function f_pageNNNN(o,f) {
+  var a,p,i,h,n=null;
+  a=$.qSA('.divh4'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt($.gStyle(p,'height'),10); p.className=f?'div_mo':'div_mc';
+        if (f&&h==25) $.animate(p,200,25,[n,n,n,25],[n,n,n,p.scrollHeight],n,n,n,n,n,n,n,n,n,n,function(s,d){if(s!='starp'){p.style.height='auto';$.aClear(v_amm);v_amm=0;}});
+        if (!f&&h!=25) $.animate(p,200,25,[n,n,n,p.scrollHeight],[n,n,n,25],n,n,n,n,n,n,n,n,n,n,function(s,d){if(s!='starp'){p.style.height='auto';$.aClear(v_amm);v_amm=0;}});
+    }
+  }
+  a=$.qSA('.divh3'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt($.gStyle(p,'height'),10); p.className=f?'div_mo':'div_mc';
+        if (f&&h==40) $.animate(p,200,25,[n,n,n,40],[n,n,n,p.scrollHeight],n,n,n,n,n,n,n,n,n,n,function(s,d){if(s!='starp'){p.style.height='auto';$.aClear(v_amm);v_amm=0;}});
+        if (!f&&h!=40) $.animate(p,200,25,[n,n,n,p.scrollHeight],[n,n,n,40],n,n,n,n,n,n,n,n,n,n,function(s,d){if(s!='starp'){p.style.height='auto';$.aClear(v_amm);v_amm=0;}});
+    }
+  }
+}
+{*text0_44*}
+</script></body></html>{*tpl21*}

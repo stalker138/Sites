@@ -1,0 +1,14 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#datePrice { float:none; margin:0; font-size:12px; color:#000000; }
+.tmtr { width:auto; font-size:13px; } .tmtr th,.tmtr td { padding:2px 0; } .tmtr td span { font-size:13px; font-weight:bold; }
+.tsrt { text-align:left; } .tsrt td { padding:0 3px 0 5px; text-align:left; }
+.photoblock {display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-evenly; }
+.photoblock .pb_ismall { margin:10px 5px; width:175px; height:233px; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*tpl16*}
+{*block0_213*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

@@ -1,0 +1,48 @@
+<?php
+$sep = '<div class="navs"></div>'; // Стрелочка - разделитель (сепаратор).
+$snav = $pb_page==1001 ? 'Главная' : ('<l1 id="1">Главная</l1>'.$sep);
+if ($pb_page==5012) $snav.='Тестовая страница товара';
+if ($pb_page==5100) $snav.='<l6 id="1">ОБОРУДОВАНИЕ</l6>'.$sep.'Заказ';
+
+if ($pb_page>6000 && $pb_page<6151) {
+  $a=array('','','','','');
+  $id_par=$eq_cats[$id_tss][2];
+  $href='href="';
+  $a_tss_nav=false;
+  while ($id_par){
+    $a_tss_nav[]='<a '.$href.$eq_cats[$id_par][0].'">'.$eq_cats[$id_par][11].'</a>';
+    $id_par=$eq_cats[$id_par][2];
+  }
+  if ($a_tss_nav){
+    $a_tss_nav=array_reverse($a_tss_nav);
+    foreach($a_tss_nav as $tss_nav){
+      $snav.=$tss_nav.$sep;
+    }
+  }
+  if ($pb_page==6001){
+    $snav.='Оборудование для бетонных и полимерных полов';
+  }else{
+    $snav.=$eq_cats[$id_tss][11];
+  }
+}
+if (($pb_page>5100 && $pb_page<6000)||($pb_page>6150 && $pb_page<7000)) {
+  $a=array('','','','','');
+  $id_par=$equips[$id_tss][2];
+  $href='href="';
+  $a_tss_nav=false;
+  while ($id_par){
+    $a_tss_nav[]='<a '.$href.$eq_cats[$id_par][0].'">'.$eq_cats[$id_par][11].'</a>';
+    $id_par=$eq_cats[$id_par][2];
+  }
+  if ($a_tss_nav){
+    $a_tss_nav=array_reverse($a_tss_nav);
+    foreach($a_tss_nav as $tss_nav){
+      $snav.=$tss_nav.$sep;
+    }
+  }
+  $snav.='<br>'.$equips[$id_tss][4];
+}
+
+/* ************************************************************************************* */
+$a=array();
+?>

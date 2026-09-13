@@ -1,0 +1,17 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.tpdf { padding:3px 0px 3px 20px; width:90px; font-size:14px; text-decoration:none; background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAaCAIAAADT1lApAAAAB3RJTUUH4goFEg0MSYy9wgAAA9xJREFUeJyVVW9olVUY/z3POe977+6d987NzXL554MYOtbG8oMJ+SWIQIokSLBkJkwMFVLSHDVnmE5IkfRDGuQC/dAKKVqzFiEKFq0crTK0CKsvEYqZu3d7733fc87Th/fdanK36sfL++HwnN/zO7/zPM8hF4bFXdvCsx9QJgMRQFAZBIC0pnyNv2Zt1ZbtEAFAzACofO6TwrPt6XUbUo89IdaQ0hPbBKA4dBJje3ebK5dl9Ha6vaP64GsyQaRdsUBEurVNt94vccYZoJRuadPLV4z3dEN71fsPi7XinCZWACQIxFoxBlon8gXEDCKJIvI8MQZEMAbM2Rf2oBQERw6CqXrfIXEu0U/MpBRESCkAEBGClIJi53YpjFYfOEINc4kIzDAGQLa7B84Fxw4Tq0x3j64oXESI2fxyzV793l/9ePT1V6lHHgWAWJ0xcDaz54BEUXD8qGpqrsySwPfJ8/mueVSVSVasMd+O3H5ohThDxFCKstny26cqs8Qe85wGKQXh++9W7eyKBXoPPMj1DWANCJwDMeXy7vffptFCJM5xLs/1DebyN2rhovicmd177wgMBweKz2+ZlgXWQGnVdJ+7cZ1n10KEiMQ5iMRSk+IyEZh5elcIRADZH6/aX3+GiDgXXyXx318cWplFnCOl3K2b0WfnufGe8UP7wQznxLn4n4iKVU/HAudAVDrdS7Pyub6BcHAg6D1BngdmMBMzMUMpOBf7VcEXcQ7MMj5ePn0ys+9VNX9B/sxHhU3rwZxe+7QrFtyN67COFyykXF6cA1ElFmvY84NTb6rF96YeXm1Ghs13I9wwd6zzudKJoyiX1eIlVFsno6NVW3dQJgvnpp5IRKKIPd8Vi8Ebx6QUFDqeGnu50/xwJd3ekT97Ib1pG82ulSDguxuhVHTxAqXSkLiPku4XQMjz7bWfxl55ievmpNdvVMua9ZKlk1m81uXpdRvMpS+i4S/V0qb0xs1meAisJjtYICDPD3qPh/3vmUtDuf5zXkubTJwxuXuAfN9bucpbuSohjqIJX0REAKJi104pFqQUpDu2ei1tEoakNYj+MboQFw5ExBr2UyCCCAOAtVRTE376cTT4ofxxk/xUZleXWAut4yae4h0RKUVaxwniFU4qJwx5XiPPX8S1dbPeegepFIhopsqeAg0ASslYQS9rzvX1k9YAxBgiEmtn2CnWAiTOAdBxKGWrASTjEoi5Zp7B8VSkTBaA5lwOgmjoc66rF2OSifkfEPdadPE8RMhF0diLO8pn+ijl3/Fu/DuIpVxKrXmSRESMKZ18Xf68BaX/BxERrKF8TfqZzX8B3pDMwxwy6KgAAAAASUVORK5CYII=') no-repeat 5px 2px rgba(0, 230, 0, 1); }
+.tpdf { background-size:16px; }
+{*text0_115*}
+.dmtrl { margin:0; width:350px; } .dmtrr { max-width:315px; } .tsrt { margin-top:3px; } .dmtrr, .pb_ismall { margin:0; width:315px; border-radius:0; }
+@media screen and (max-width:999px) { .dmtrl { width:350px; } .dmtrr { float:none; margin:10px 0 0 0; width:315px; max-width:315px; } }
+@media screen and (max-width:630px) { .dtmp1 { display:block; } }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*text0_1*}
+{*tpl16*}
+{*block2_81*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

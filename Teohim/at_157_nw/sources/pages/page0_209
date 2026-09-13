@@ -1,0 +1,19 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.dfbcl1_209, .dfbcl2_209 { float:left; width:280px; }
+.tmtr { width:auto; font-size:12px; } .tmtr th,.tmtr td { padding:2px 0; text-align:center; } .tmtr td { font-size:12px; } .pb_ismall { float:left; margin:10px 0 0 20px; width:100px; height:140px; }
+@media screen and (max-width:999px) {
+  .dfbcl1_209, .dfbcl2_209 { float:none; text-align:center; } .tmtr { margin:0 auto; }
+}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*tpl16*}
+{*block0_209*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}
+function m_alert(i) {
+return;
+<?php if (1==2) { ?>if (i == 1) $.createDialog('Устройство полимерного покрытия "Элакор"','<iframe width="853" height="480" src="//www.youtube.com/embed/keK0EWiEPKI?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>',873,530);<?php } ?>
+v_esc = v_dialogEsc = 1;}
+{*tpl20*}</body></html>{*tpl21*}

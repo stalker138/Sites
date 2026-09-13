@@ -1,0 +1,89 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_123*}
+#dcontent li a, .m_video { font-weight:normal; text-decoration:none; } .h2_orange { display:none; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*tpl16*}
+{*block1_351*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}
+function m_alert(i) {
+var p=$.id('dVideo'), t1='<iframe width="100%" height="auto" style="min-height:320px" src="', t2='" frameborder="0" allowfullscreen></iframe>', t;
+var a=['',
+'Виды полов. От простого к сложному: Фото пол. С узорами. 3D. С наполнителем.',
+'Как и чем различаются наливные полы. Толстый и тонкий.',
+'Носители изображения. На чем печатать картинку. Где печатать.',
+'Инструменты и материалы для создания 3D изображения.',
+'Фотопол. Быстро и просто создаем изображение для фото пола.',
+'Полы с узорами. Создаем абстрактное изображение для пола.',
+'Стерео и 3D. Отличия.',
+'Создаем 3D изображение «выход за границы снимка».',
+'Создаем 3D изображение «выход за границы снимка с перспективой».',
+'Создаем 3D изображение - «Провал».',
+'Наливной пол. Требование к основанию.',
+'3D полы: инструменты, народные способы и борьба за заказчика.',
+'Инструменты для нанесения 3D полов.',
+'Экономим. Инструмент для 3D пола своими руками.',
+'3D пол. Нанесение. Первый день. Подготовка рабочего места.',
+'3D пол. Нанесение. Первый и второй день. Грунтуем основание.',
+'3D пол. Нанесение. День третий. Подстилающий слой.',
+'3D пол. Нанесение. День четвертый. Изображение и лицевой слой.',
+'3D пол.Бонус. Идея для бизнеса.',
+'3D пол.Бонус. Подгонка носителя.',
+'3D пол. Обслуживание и ремонт.'];
+i=parseInt(i,10); if (i<1 || i>21) return;
+if (i == 0) t='/downloads/video/3d/0.mp4';
+if (i == 1) t='/downloads/video/3d/1.mp4';
+if (i == 2) t='/downloads/video/3d/2.mp4';
+if (i == 3) t='/downloads/video/3d/3.mp4';
+if (i == 4) t='/downloads/video/3d/4.mp4';
+if (i == 5) t='/downloads/video/3d/5.mp4';
+if (i == 6) t='/downloads/video/3d/6.mp4';
+if (i == 7) t='/downloads/video/3d/7.mp4';
+if (i == 8) t='/downloads/video/3d/8.mp4';
+if (i == 9) t='/downloads/video/3d/9.mp4';
+if (i == 10) t='/downloads/video/3d/10.mp4';
+if (i == 11) t='/downloads/video/3d/11.mp4';
+if (i == 12) t='/downloads/video/3d/12.mp4';
+if (i == 13) t='/downloads/video/3d/13.mp4';
+if (i == 14) t='/downloads/video/3d/14.mp4';
+if (i == 15) t='/downloads/video/3d/15.mp4';
+if (i == 16) t='/downloads/video/3d/16.mp4';
+if (i == 17) t='/downloads/video/3d/17.mp4';
+if (i == 18) t='/downloads/video/3d/18.mp4';
+if (i == 19) t='/downloads/video/3d/19.mp4';
+if (i == 20) t='/downloads/video/3d/20.mp4';
+if (i == 21) t='/downloads/video/3d/21.mp4';
+$.id('dH2Video').innerHTML = a[i];
+p.innerHTML=t1+t+t2;
+$.qS('.h2_orange').style.display='block';
+
+<?php if (1==2) { ?>
+function m_alert(i) {
+if (i == 1) $.createDialog('Виды полов. От простого к сложному: Фото пол. С узорами. 3D. С наполнителем.','<iframe width="853" height="480" src="//www.youtube.com/embed/LbEA0NEtNMQ?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 2) $.createDialog('Как и чем различаются наливные полы. Толстый и тонкий.','<iframe width="853" height="480" src="//www.youtube.com/embed/h6bFmVeCgLo?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 3) $.createDialog('Носители изображения. На чем печатать картинку. Где печатать.','<iframe width="853" height="480" src="//www.youtube.com/embed/jHSslVfxLYI?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 4) $.createDialog('Инструменты и материалы для создания 3D изображения.','<iframe width="853" height="480" src="//www.youtube.com/embed/aoyuGADG4TI?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 5) $.createDialog('Фотопол','<iframe width="853" height="480" src="//www.youtube.com/embed/3UJI0lfU9SU?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 6) $.createDialog('Полы с узорами','<iframe width="853" height="480" src="//www.youtube.com/embed/vGyzC0HEg28?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 7) $.createDialog('Стерео и 3D. Отличия.','<iframe width="853" height="480" src="//www.youtube.com/embed/1LufU4SsUys?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 8) $.createDialog('Создаем 3D изображение «выход за границы снимка».','<iframe width="853" height="480" src="//www.youtube.com/embed/fbAipRDrF_w?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 9) $.createDialog('Создаем 3D изображение «выход за границы снимка с перспективой».','<iframe width="853" height="480" src="//www.youtube.com/embed/Ug4_lHmnj-s?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 10) $.createDialog('Создаем 3D изображение - «Провал».','<iframe width="853" height="480" src="//www.youtube.com/embed/2xG8l1rjrkY?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 11) $.createDialog('Наливной пол. Требование к основанию.','<iframe width="853" height="480" src="//www.youtube.com/embed/qWk9axajWaM?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 12) $.createDialog('3D полы: инструменты, народные способы и борьба за заказчика.','<iframe width="853" height="480" src="//www.youtube.com/embed/5Wlumdbw_sI?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 13) $.createDialog('Инструменты для нанесения 3D полов.','<iframe width="853" height="480" src="//www.youtube.com/embed/gIzcQnd022I?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 14) $.createDialog('Экономим. Инструмент для 3D пола своими руками.','<iframe width="853" height="480" src="//www.youtube.com/embed/2f_7qqvjpMY?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 15) $.createDialog('3D пол. Нанесение. Первый день. Подготовка рабочего места.','<iframe width="853" height="480" src="//www.youtube.com/embed/Blx2wQ1KbnI?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 16) $.createDialog('3D пол. Нанесение. Первый и второй день. Грунтуем основание.','<iframe width="853" height="480" src="//www.youtube.com/embed/9eB0k2MgqSY?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 17) $.createDialog('3D пол. Нанесение. День третий. Подстилающий слой.','<iframe width="853" height="480" src="//www.youtube.com/embed/gbr_nXYvhiM?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 18) $.createDialog('3D пол. Нанесение. День четвертый. Изображение и лицевой слой.','<iframe width="853" height="480" src="//www.youtube.com/embed/DLrVXGb2LnM?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 19) $.createDialog('3D пол.Бонус. Идея для бизнеса.','<iframe width="853" height="480" src="//www.youtube.com/embed/lE6u2Rwdgcs?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 20) $.createDialog('3D пол.Бонус. Подгонка носителя.','<iframe width="853" height="480" src="//www.youtube.com/embed/V-dDoZJn9YA?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+if (i == 21) $.createDialog('3D пол.Обслуживание и ремонт.','<iframe width="853" height="480" src="//www.youtube.com/embed/z7YPtcDNj7I?autoplay=1" frameborder="0" allowfullscreen></iframe>',873,530);
+v_esc = v_dialogEsc = 1;
+}
+<?php } ?>}
+{*tpl20*}</body></html>{*tpl21*}

@@ -1,0 +1,42 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.m_video { cursor:pointer; width:45%; font-weight:inherit; color:#0000ff; border-bottom: 1px dashed #0000ff; } .m_video:hover { color:#f00000; border-bottom: 1px dashed #f00000; }
+.video { margin:0; line-height:23px; } .v2video { float:right; } .h2_orange { display:none; }
+@media screen and (max-width:799px) { .v2video { clear:both; float:left; } }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*tpl16*}
+{*block1_20*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}
+function m_alert(i) {
+var p=$.id('dVideo'), t1='<iframe width="100%" height="auto" style="min-height:320px" src="', t2='" frameborder="0" allowfullscreen></iframe>', t;
+var a=['Устройство полимерного покрытия Элакор ПОЛНОЕ ВИДЕО',
+'Подготовка оборудования для шлифования',
+'Шлифование - подготовка бетонной поверхности',
+' Уборка поверхности и обеспыливание (пылесос)',
+'Грунтование бетонного основания',
+'Приготовление двухкомпонентной шпатлевки',
+'Шпатлевание бетонного основания',
+'Подготовка оборудования для чистового шлифования',
+'Чистовое шлифование бетона',
+'Чистовая уборка и обеспыливание поверхности',
+'Нанесение финишного слоя эмали'];
+i=parseInt(i,10); if (i<0 || i>10) return;
+if (i == 0) t='/downloads/video/0.mp4';
+if (i == 1) t='/downloads/video/1.mp4';
+if (i == 2) t='/downloads/video/2.mp4';
+if (i == 3) t='/downloads/video/3.mp4';
+if (i == 4) t='/downloads/video/4.mp4';
+if (i == 5) t='/downloads/video/5.mp4';
+if (i == 6) t='/downloads/video/6.mp4';
+if (i == 7) t='/downloads/video/7.mp4';
+if (i == 8) t='/downloads/video/8.mp4';
+if (i == 9) t='/downloads/video/9.mp4';
+if (i == 10) t='/downloads/video/10.mp4';
+$.id('dH2Video').innerHTML = a[i];
+p.innerHTML=t1+t+t2;
+$.qS('.h2_orange').style.display='block';
+}
+{*tpl20*}</body></html>{*tpl21*}

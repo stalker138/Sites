@@ -1,0 +1,54 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.cl_oc_all { float:right;margin:-19px 0 0 0; }
+.cl_open_all,.cl_close_all { cursor:pointer; float:right; margin:0 0 0 10px; font-size:11px; text-decoration:underline; color:#004f92; } .cl_open_all:hover,.cl_close_all:hover { color:#f00000; }
+.dral { cursor:pointer; position:relative; display:inline-block; margin:5px 1px 0 0; width:90px; height:53px; text-align:center; border:solid 1px transparent; }
+.dral span { font:bold 12px arial; line-height:20px; }
+.dral div { position:relative; width:100%; height:33px; }
+.dral:hover { border:solid 1px #004f92; transition:border 0.3s ease-out 0s; }
+.div_mo,.div_mc { height:25px; } .divh4 { padding:4px 0 6px 25px; } .div_mc .divh4:before, .div_mo .divh4:before { left:5px; }
+.tsrt { margin:0; width:auto; border:solid 1px #808080; } .tsrt th { padding:3px 5px; height:20px; border:solid 1px #808080; background:#eeeeee; } .tsrt td { height:30px; border:solid 1px #c8c8c8; border-collapse:separate; }
+.tsrt .tal { padding:0 0 0 5px; text-align:left; }
+.tsrt .td1 { font-weight:bold; } .tsrt .td4 { padding-left:20px; text-align:left; }
+.tsrt .td2, .tsrt .td22, .td7035, .td7040 { cursor:pointer; background:url(/img/css/lupa.svg) no-repeat right bottom; background-size:15px; }
+.td7035,.td7040 { display:block; float:left; margin:5px 0 0 10px; width:90px; height:30px; background-color:#CBD0CC; border:solid 1px #CBD0CC; }
+.td7040 { background-color:#9DA3A6; border:solid 1px #9DA3A6; }
+.divt1,.divt2,.divt3 { float:left; margin:0 30px 0 0;} .divt3 { margin:0; }
+@media screen and (max-width:999px) { .divt2 {  } .cl_oc_all { margin:0; } }
+
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*block0_250*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}
+<script>$.ready(function(e){
+  var i, a=$.qSA('.dral'); if(a) {
+  for (i=0; i<a.length; i+=1) $.EH.add(a[i],'click',function(e){
+    f_message('<span>'+$.qS('span',this).innerHTML+'</span> &nbsp; &nbsp; (&lt;Esc&gt; - закрыть окно)','<div style="position:absolute; top:0; right:0; bottom:0; left:0; background:'+$.qS('div',this).style.background+'"></div>',700,500);
+  }); }
+  a=$.qSA('.td2,.td22,.td7035,.td7040'); if(!a)return;
+  for (i=0; i<a.length; i+=1) $.EH.add(a[i],'click',function(e){
+    if (this.className.indexOf('td7035')!=-1) {
+      f_message('<span>RAL 7035 Базовый цвет</span> &nbsp; &nbsp; (&lt;Esc&gt; - закрыть окно)','<div style="position:absolute; top:0; right:0; bottom:0; left:0; background:#CBD0CC"></div>',700,500);
+    } else {
+     if (this.className.indexOf('td7040')!=-1) {
+      f_message('<span>RAL td7040 Базовый цвет</span> &nbsp; &nbsp; (&lt;Esc&gt; - закрыть окно)','<div style="position:absolute; top:0; right:0; bottom:0; left:0; background:#9DA3A6"></div>',700,500);
+     } else {
+      f_message('<span>'+(this.className=='td22'?'':'RAL ')+$.qS('.td1',this.parentNode).innerHTML+'</span> &nbsp; &nbsp; (&lt;Esc&gt; - закрыть окно)','<div style="position:absolute; top:0; right:0; bottom:0; left:0; background:'+this.style.backgroundColor+'"></div>',700,500);
+     }
+    }
+  });
+});
+function f_page0250(o,f) {
+  var a,p,i,h;
+  a=$.qSA('.divh4'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt($.gStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==25) || (!f&&h!=25)) $.aHeight(p,200,25,p.scrollHeight,25);
+    }
+  }
+}
+</script>
+</body></html>{*tpl21*}

@@ -1,0 +1,15 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_103*}{*text0_106*}
+.dtmpi { width:252px; }
+.pb_ismall  { width:240px; height: 180px;}
+.pb_ismall2 { width:320px; height: 240px;}
+.vnfloors { display: inline-block; width: 250px; vertical-align: top;}  /* Колонки */
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*block3_83*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

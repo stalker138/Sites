@@ -1,0 +1,14 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.dtmp1 { clear:both; display:none; }
+.blk_cover_calc { position:relative; display:inline-block; top:0; right:auto; margin:0 0 0 10px; }
+@media screen and (max-width:999px) { .blk_cover_calc { left:auto; bottom:auto; } .dtmp1 { display:block; } }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*text0_1*}
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*block2_175*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

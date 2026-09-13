@@ -1,0 +1,22 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text5_32*}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*text5_31*}
+<img class="pb_ismall" src="/img/qr/qr4-2.png" style="width:250px;height:auto" onclick="$.zoomImg(this,'/img/qr/qr4-2.png',200,25,1030,736,'Элакор-ЭД Грунт-2К',-25,1,0,1);" title="Элакор-ЭД Грунт-2К" alt="Элакор-ЭД Грунт-2К"/>
+{*text5_33*}
+<div class="fleft mr20">
+<?php
+print '<p>- Элакор-ЭД <a href="https://teohim.ru/instructions/elakor-ed-grunt-2k-pr.pdf?'.filemtime($pb_root.'instructions/elakor-ed-grunt-2k-pr.pdf').'" target="_blank"><span class="fs16">Грунт-2К/ПР</span></a></p>';
+print '<p>- Элакор-ЭД <a href="https://teohim.ru/instructions/elakor-ed-grunt-2k-100.pdf?'.filemtime($pb_root.'instructions/elakor-ed-grunt-2k-100.pdf').'" target="_blank"><span class="fs16">Грунт-2К/100</span></a></p>';
+print '<p>- Элакор-ЭД <a href="https://teohim.ru/instructions/elakor-ed-grunt-2k-100p.pdf?'.filemtime($pb_root.'instructions/elakor-ed-grunt-2k-100p.pdf').'" target="_blank"><span class="fs16">Грунт-2К/100П</span></a></p>';
+print '<p>- Элакор-ЭД <a href="https://teohim.ru/instructions/elakor-ed-grunt-2k-60.pdf?'.filemtime($pb_root.'instructions/elakor-ed-grunt-2k-60.pdf').'" target="_blank"><span class="fs16">Грунт-2К/60</span></a></p>';
+?>
+</div>
+<div class="px10"></div>
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

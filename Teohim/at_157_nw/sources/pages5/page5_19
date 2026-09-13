@@ -1,0 +1,25 @@
+<?php
+$txt=@file_get_contents($pb_root.'test/5/202501_s.txt');
+$nc=explode(chr(10),$txt); $l=count($nc); // $str=explode(chr(9),$nc[0]); print $str[0].' '.$str[20]; exit;
+$txt=@file_get_contents($pb_root.'test/5/202501_c.txt');
+
+for ($i=0; $i<$l; $i++) {
+  $str=explode(chr(9),$nc[$i]); $num=$str[0]; $sum=$str[20].',00'; if($sum=='-1,00') $sum='0,00';
+  $pos1=strpos($txt,$num); if ($pos1==false) break;
+  $pos2=strpos($txt,chr(10),$pos1); if ($pos2==false) break;
+  $pos1=$pos1+273; if($pos1>=$pos2) break;
+  $ln=strlen($sum); $t=''; for ($j=$ln; $j<8; $j++) { $t.=' '; }
+  $txt=substr($txt,0,$pos1).$sum.$t.$sum.substr($txt,$pos2);
+}
+$out='error';
+$pb_handler=@fopen('202501','w');
+if ($pb_handler) {
+    @rewind($pb_handler);
+    if (-1!=@fwrite($pb_handler,$txt)) {
+        @ftruncate($pb_handler,ftell($pb_handler));
+        $out='ok';
+    } @fflush($pb_handler); @fclose($pb_handler);
+}
+print $out;
+
+?>

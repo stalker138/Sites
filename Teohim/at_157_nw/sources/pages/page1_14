@@ -1,0 +1,16 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.h2_orange { font-size:15px; color:#004f92; } .divh3 { padding:11px 0 10px 25px; height:19px; font-size:15px; }
+ul li .p11 { display:block; margin:2px 0 0 35px; text-align:left; font-size:11px; line-height:12px; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl14*}
+{*block1_14*}
+{*tpl15*}
+<?php /* Мобильные устройства (экран менее 1000px) */ ?>
+{*tpl11*}
+{*text1_14*}
+{*tpl12*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

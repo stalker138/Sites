@@ -1,0 +1,79 @@
+<?php
+$o_inc='adm'; include "cnfg.php"; // НОВАЯ АДМИНКА - /setpred01/price_01.php - Представители - Редактирование прайс-листов Октябрь 2018г
+$a = $a_pred[$f]; $id=$f; if ($id!=1) exit;
+// $a_noCalcPred = array(1,3,13,18,23,27,28,31,49,60,63,64,72,73,74,75,76,77,78,79,80,81,82,83,85,87); // Не нужно пересчитывать
+// $list_pred = array(2);
+// $list_tara = array(2);
+$list_pred = array(4,5,6,7,8,9,10,11,12,14,15,16,17,19,20,21,22,24,25,26,28,29,30,32,33,34,36,37,38,39,40,41,42,43,44,45,46,47,49,50,51,52,53,54,55,56,57,58,59,61,62,65,66,67,68,69,70,71,84,92); // Пересчитывать 43,66
+$list_tara = array(3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,32,33,34,36,37,38,39,40,41,42,43,44,45,46,47,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,75,76,77,78,79,80,81,82,83,84,85,86,92);
+$list_vk = array(5,7,10,19,30,36,39,41,43,45,47,50,54,66,70);
+
+if (empty($_POST['data'])) {
+$out='<!DOCTYPE html><html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>Представитель ООО «ТэоХим» - '.$a[4].'</title>';
+$out.='<link rel="icon" href="/favicon.ico" type="image/ico"/><meta name="robots" content="noindex, nofollow"/>';
+$out.='<link rel="stylesheet" href="/cssjs/pred_price_001.css" type="text/css"/>';
+$out.='<script type="text/javascript" charset="UTF-8" src="/cssjs/vcorp_js_0000.js"></script>';
+if (substr($a[9],0,4)=='http') $out.='<script type="text/javascript" charset="UTF-8" src="'.$a[9].'/cssjs/price_js_01.php"></script>'; else $out.='<script type="text/javascript">var o_PP="";</script>';
+$out.='<script type="text/javascript" charset="UTF-8" src="/cssjs/pred_price_007_group_.js"></script>';
+$out.='</head><body><div id="main">';
+$out.='<div id="header">';
+$out.='<div id="logo"><div id="elakor">Элакор<div>™</div></div>промышленные полы<div id="logo1">максимальная защита</div><div id="logo2">минимальные затраты</div></div>';
+$out.='<div id="teohim"><div id="teohim1">Москва: <span>(495) 221-22-52</span><br>Россия: <span>8-800-100-50-10</span></div></div>';
+$out.='<div id="info"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Для старта пересчёта нажмите кнопку "Пересчёт цен от teohim.ru".</p></div>';
+$out.='</div>';
+
+if ($id==1) {
+    $out.='<div class="px20"></div><div class="content" style="min-height:70px;"><h2 style="float:left;">Пересчёт прайс-листов представителей</h2>';
+    $out.='<div class="px10"></div>';
+    $out.='<div id="priceCalc">';
+    $out.='<div>Пересчёт прайс-листов :</div><div class="px10"></div>';
+    $out.='</div><div style="float:right;width:200px;"><input type="button" class="pb_buttons" id="iPriceDefault" value="Только обновление Тары ..." style="width:200px;height:30px;" onclick="v_tara=1;f_priceCalc1()" /></div>';
+    $out.='<div style="float:right;margin-right:30px;width:200px;"><input type="button" class="pb_buttons" id="iPriceDefault" value="Пересчёт цен от teohim.ru ..." style="width:200px;height:30px;" onclick="v_tara=0;f_priceCalc1()" /></div>';
+    $out.='<div style="float:right;margin-right:30px;">Валютный к-т: <input type="text" class="inp" id="iPriceVK" value="1.0" style="width:30px;height:20px;" maxlength="5" /></div>';
+}
+if (substr($a[9],0,4)=='http' || substr($a[9],0,5)=='https') {
+    $out.='<div class="px20"></div><div class="content" style="min-height:70px;"><h2 style="float:left;">Прайс-лист</h2>';
+    $out.='<div style="float:right;"><input type="button" class="pb_buttons" id="iPrice" value="Сохранить цены" style="width:150px;height:30px;" onclick="f_postPred()" /></div>';
+    $out.='<p style="width:550px;font:bold 13px arial;margin:3px auto 0 auto;text-align:center;">Вы можете поменять цены и сохранить изменения.<br>Перед сохранением сравните новые цены с текущими на <a target="_blank" href="'.$a[10].'">вашем сайте</a>.</p><div class="px3"></div>';
+    if ($id==2 || ($id>3 && $id<23) || ($id>23 && $id<31) || ($id>31 && $id<35) || ($id>36 && $id<48) || $id>48) {
+        $out.='<div class="px10"></div>';
+        $out.='<div id="priceCalc">';
+        $out.='<div>Коэффициент пересчёта для своих цен :</div><div><input type="text" class="inp" id="iPriceK" value="'.$a[7].'" style="width:30px;height:20px;" maxlength="5" /></div>';
+        $out.='<div style="margin-left:20px;">Добавочная цена :</div><div><input type="text" class="inp" id="iPriceA" value="'.$a[8].'" style="width:40px;height:20px;"/></div>';
+        $out.='<input type="button" class="pb_buttons" id="iPriceCalc" value="Пересчитать" style="float:left;margin:0 0 0 20px;width:120px;height:30px;" onclick="f_priceCalc()" />';
+        $out.='</div><div style="float:right;width:200px;"><input type="button" class="pb_buttons" id="iPriceDefault" value="Перечсёт цен от teohim.ru ..." style="width:200px;height:30px;" onclick="f_priceDefault()" /></div>';
+    }
+    $out.='</div><div class="px10"></div><div id="idPrice"></div><div class="px10"></div>';
+    $out.='<div class="pb_hidden" id="iddomain">'.$a[9].'</div><div class="px0" style="height:120px"></div>';
+}
+$out.='</div><div id="oPrice"></div><div class="px10"></div><div id="footer">';
+$out.='<div class="pb_hidden"><div id="idhash">'.$o_hash.'</div><div id="idID">'.$id.'</div></div>';
+
+// МАТЕРИАЛЫ
+$txt=@file_get_contents($pb_root.'sys/materials'); $mtr=false; $mtr[]=false; for ($i=1; $i<351; $i++) {
+    $pos=strpos($txt,chr(10)); if ($pos==false) break; $str=substr($txt,0,$pos); $txt=substr($txt,$pos+1);
+    if ($str!=' ') $mtr[]=explode(chr(9),$str); // $mtr[$i][1]=preg_replace('/\%/','',$mtr[$i][1]);
+    else $mtr[]=false;
+} $h=''; $p='';
+for ($i=1; $i<351; $i++) {
+    $j=$mtr[$i][0];
+    if ($mtr[$i]) { $h.='<div id="src'.$i.'"><span id="src'.$i.'_3">'.$mtr[$i][3].'</span><span id="src'.$i.'_4">'.$mtr[$i][4].'</span><span id="src'.$i.'_5">'.$mtr[$i][5].'</span><span id="src'.$i.'_6">'.$mtr[$i][6].'</span><span id="src'.$i.'_7">'.$mtr[$i][7].'</span><span id="src'.$i.'_8">'.$mtr[$i][8].'</span><span id="src'.$i.'_9">'.$mtr[$i][9].'</span><span id="src'.$i.'_10">'.$mtr[$i][10].'</span><span id="src'.$i.'_11">'.$mtr[$i][11].'</span><span id="src'.$i.'_12">'.$mtr[$i][12].'</span><span id="src'.$i.'_13">'.$mtr[$i][13].'</span><span id="src'.$i.'_14">'.$mtr[$i][14].'</span><span id="src'.$i.'_15">'.$mtr[$i][15].'</span></div>'; }
+}
+if ($id==1) {
+    $cnt=count($a_pred);
+    for ($i=1; $i<$cnt; $i++) {
+        if ($a_pred[$i][10]!='none' && in_array($i, $list_pred, true)) { $p.='<div id="pred'.$i.'_0">'.$a_pred[$i][9].'</div><div id="pred'.$i.'_1">'.$a_pred[$i][7].'</div><div id="pred'.$i.'_2">'.$a_pred[$i][8].'</div><div id="pred'.$i.'_h">'.md5($o_IP.$o_UA.$a_pass1[$i].$o_salt).'</div>'; }
+    }
+    for ($i=1; $i<$cnt; $i++) {
+        if ($a_pred[$i][10]!='none' && in_array($i, $list_tara, true)) { $p.='<div id="tara'.$i.'_0">'.$a_pred[$i][9].'</div><div id="tara'.$i.'_1">'.$a_pred[$i][7].'</div><div id="tara'.$i.'_2">'.$a_pred[$i][8].'</div><div id="tara'.$i.'_h">'.md5($o_IP.$o_UA.$a_pass1[$i].$o_salt).'</div>'; }
+    }
+    $p.='<div id="list_vk">'.implode(',',$list_vk).'</div>';
+}
+$out.='<div class="pb_hidden">'.$h.$p.'</div>';
+$out.='</div></body></html>';
+print $out; exit;
+}
+
+$data=(int)$_POST['data'];
+
+?>

@@ -1,0 +1,14 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.dph1 { display:block; margin:10px 6px 0 0; padding:3px 0 0 0; text-decoration:none; font-weight:bold; border:solid 1px transparent; background:#f0f0f0; transition:border 0.3s ease-out 0s; }
+.dph1:hover { border:solid 1px #004f92; }
+.dph1 img { margin:3px 0 0 0; width:182px; }
+@media screen and (max-width:999px) { .blk_cover_item_b { min-height:200px; } }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*text0_1*}
+{*tpl16*}
+{*block1_21*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

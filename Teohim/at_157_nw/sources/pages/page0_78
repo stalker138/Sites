@@ -1,0 +1,41 @@
+<?php
+/* page0_78 /setpred01/mailing_list_load_zip.php */
+// header("HTTP/1.1 204 No Content"); exit;
+$o_inc='adm'; include 'cnfg.php';
+if ($f==0) { f_ban('BLOCKED Не авторизован'); header("HTTP/1.1 204 No Content"); exit; }
+$name = (int)$_GET['id']; if($name<1) { f_ban('BLOCKED '.$name); header("HTTP/1.1 204 No Content"); exit; }
+if (empty($name)) { f_ban('BLOCKED '.$name); header('HTTP/1.0 204 No Content'); exit; }
+$ua=$_SERVER['HTTP_USER_AGENT'];
+$ip=$_SERVER['REMOTE_ADDR'];
+$r=$_SERVER['REQUEST_URI'];
+$name=''.$name.'.zip'; $v=$pb_root.'sys/mailing_list/'.$name;
+if (file_exists($v)) {
+    if ($ip!='{*text5_29*}' && $ip!='95.165.154.69') {
+        $h=@fopen($pb_root.'sys/mailing_list/log_download','a+'); if ($h) {
+            $t=''.date("d-m-Y - H:i:s").chr(9).$ip.chr(9).$name.chr(9).'ID представителя: '.$f.chr(9).chr(9).$r.chr(9).chr(9).$ua.chr(9).chr(9).$_SERVER['HTTP_REFERER'];
+            $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
+            @fwrite($h,$t); @fclose($h);
+        }
+    }
+    header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+    header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+    header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache"); // HTTP/1.0
+    header('Accept-Ranges: bytes');
+    header('Content-Disposition: attachment; filename='.$name);
+    header('Content-Type: application/zip; name="'.$name.'"');
+    readfile($v);
+} else {
+    f_ban(); header('HTTP/1.0 204 No Content');
+}
+function f_ban($name='not found') {
+    global $pb_root,$f;
+    $h=@fopen($pb_root.'sys/mailing_list/log_download','a+'); if ($h) {
+        $t=''.date("d-m-Y - H:i:s").chr(9).$_SERVER['REMOTE_ADDR'].chr(9).$name.chr(9).'ID представителя: '.$f.chr(9).chr(9).$_SERVER['REQUEST_URI'].chr(9).chr(9).$_SERVER['HTTP_USER_AGENT'].chr(9).chr(9).$_SERVER['HTTP_REFERER'];
+        $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
+        @fwrite($h,$t); @fclose($h);
+    }
+}
+
+?>

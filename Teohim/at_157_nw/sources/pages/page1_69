@@ -1,0 +1,31 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_104*}
+{*text0_111*}
+.divPriceD { display:block; } .divPriceM { display:none; }
+.temp1,.temp2 { float:left; padding:0 7px; width:260px; } .temp2 { float:right; } .a1 { text-decoration:none; } .p1 { border:solid 1px #f00000; } .p1:hover { border:solid 1px #004F92; background:#e0e0e0; }
+
+.tmtr td:hover { color:#f00000; background:#eeeeee; font-weight:bold; } .tmtr td:hover a { font-weight:normal; }
+.tmtr .tmdl { padding:1px 0 1px 5px; } .tmtr .tmdl:hover { font-weight:normal; }
+
+.divPriceD .tmtr td { text-align:center; border:solid 1px #000000; } .divPriceM .tmtr td { text-align:center; border:solid 1px #000000; }
+.divPriceD .tmtr .tmdl { text-align:left; } .divPriceM .tmtr .tmdl { text-align:left; }
+.divPriceD .tmtr .fs12, .divPriceM .tmtr .fs12 { font-size:12px; font-weight:bold; }
+
+#banner_video_text { margin:10px 0 0 0; } #banner_video { margin:10px 0 0 10px; }
+
+@media screen and (max-width:630px) { .temp1,.temp2 { clear:both; float:left; } }
+@media screen and (max-width:799px) {
+ #dcontent { min-width:320px; } .divPriceD { display:none; } .divPriceM { display:block; } .tmtr td a { text-decoration:underline; }
+}
+@media screen and (max-width:999px) { #banner_video_text { margin:10px 10px 0 0; } #banner_video { float:left; margin:10px 0 0 0; } }
+
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}{*text0_1*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*block1_69*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}
+</body></html>{*tpl21*}

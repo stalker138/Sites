@@ -1,0 +1,27 @@
+<?php
+header("Access-Control-Allow-Origin: http://forum.teohim.ru");
+if (empty($_POST['pass']) || empty($_POST['mode'])/* || empty($_POST['cap']) || empty($_POST['vcap']) */) { header("HTTP/1.1 204 No Content"); exit; }
+$mode=(int)$_POST['mode']; $pass=trim(F_post('pass')); // $cap=strtolower(trim(F_post('cap'))); $vcap=trim(F_post('vcap'));
+$o_inc='adm'; $o_ghash='gethash'; include "cnfg.php";
+$cnt=count($a_pass1); $f=false; $hash=md5($o_IP.$o_UA.$pass.$o_salt);
+if ($mode==1) {
+    for ($i=0; $i<$cnt; $i++) {
+        if ($pass===$a_pass1[$i]) { $i=$cnt; $f=true; }
+    }
+    if ($pass=='tmp_292512') { $i=$cnt; $f=true; } /* Для дизайнеров временный пароль (удалить строку так-же из cnfg.php page0_60) */
+} else {
+    for ($i=0; $i<$cnt; $i++) {
+        if ($pass===$a_pass2[$i]) { $i=$cnt; $f=true; }
+    }
+}
+if ($f==false) { print 'error'; exit; }
+setcookie('predcookie', $hash, time()+90000, '/', $o_domain);
+setcookie('predcookie', $hash, time()+90000, '/', $o_domain2);
+//setcookie('predcookie', $hash, time()+90000, '/', $o_domain3);
+print $hash.'https://teohim.ru/setpred01/adm_'.(($mode==2) ? 'price' : 'obj').'.php';
+
+function F_post($name) {
+    $ret=$_POST[$name]; if ($ret==false) return false;
+    return (get_magic_quotes_gpc() ? stripslashes($ret) : $ret);
+}
+?>

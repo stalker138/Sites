@@ -1,0 +1,86 @@
+<?php
+$o_inc='adm'; include "cnfg.php";
+$a = $a_pred[$f]; $id=$f;
+
+$file_pred=$_SERVER["DOCUMENT_ROOT"].'/asw_pb_includes/mapspred';
+$txt_pred=@file_get_contents($file_pred);
+
+if (empty($_POST['data'])) {
+$out='<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>Представитель ООО «ТэоХим» - '.$a[4].'</title>';
+$out.='<link rel="icon" href="/favicon.ico" type="image/ico"/><meta name="robots" content="noindex, nofollow"/>';
+$out.='<link rel="stylesheet" href="/cssjs/admpred_17.css" type="text/css"/>';
+$out.='<script type="text/javascript" charset="UTF-8" src="/cssjs/apb_0077_.js"></script>';
+if (substr($a[9],0,4)=='http') $out.='<script type="text/javascript" charset="UTF-8" src="'.$a[9].'/cssjs/price.js.php"></script>';
+$out.='<script type="text/javascript" charset="UTF-8" src="/cssjs/admpred_17.js"></script>';
+$out.='</head><body><div id="main">';
+$out.='<div id="header">';
+$out.='<div id="logo"><div id="elakor">Элакор<div>™</div></div>промышленные полы<div id="logo1">максимальная защита</div><div id="logo2">минимальные затраты</div></div>';
+$out.='<div id="teohim"><div id="teohim1">Москва: <span>(495) 221-22-52</span><br>Россия: <span>8-800-100-50-10</span></div></div>';
+$out.='<div id="info"><p>Вы можете указать наименование организации и адрес.</p><p>Так же координаты местонахождения организации на карте.<br>Для получения координат нужно воспользоваться <a href="https://maps.yandex.ru/" target="_blank">сервисом Яндекс-карт</a>.</p><p>Скопируйте оттуда Широту и Долготу (числа в скобках)<br>и вставьте их в поле "Координаты на карте" через запятую.</p><p>После изменения информации, её нужно записать кнопкой "Сохранить".</p></div>';
+$out.='</div><div class="content">';
+$out.='<div class="dleft" style="width:300px;">Наименование организации</div><div class="dleft"><input type="text" class="inp" id="iName" value="'.$a[4].'" placeholder="Наименование организации" onchange="f_post()" onblur="f_post()"/></div><div class="px10"></div>';
+$out.='<div class="dleft" style="width:300px;">Адрес организации</div><div class="dleft"><input type="text" class="inp" id="iAdr" value="'.$a[5].'" placeholder="Адрес организации" onchange="f_post()" onblur="f_post()"/></div><div class="px10"></div>';
+$out.='<div class="dleft" style="width:300px;">Координаты на карте (через запятую)</div>';
+$out.='<div class="dleft" style="width:300px;"><input type="text" class="inp" id="iCoord" value="'.$a[2].', '.$a[3].'" placeholder="Координаты на карте" style="width:250px;" onchange="f_post()" onblur="f_post()"/></div>';
+$out.='<div class="dleft" style="width:350px;"><a class="pb_buttons" href="https://maps.yandex.ru/" target="_blank" style="display:block; width:350px; text-align:center; font:normal 13px arial; line-height:22px; text-decoration:none;">Открыть Яндекс-карты для получения координат</a></div>';
+$out.='<div class="px20"></div>';
+$out.='<div style="text-align:center;"><input type="button" class="pb_buttons" id="iSave" value="Сохранить" style="width:100px;height:30px;" onclick="f_post(1)" /></div>';
+$out.='</div>';
+
+if (substr($a[9],0,4)=='http') {
+    $out.='<div class="px20"></div><div class="content" style="min-height:70px;"><h2 style="float:left;">Прайс-лист</h2>';
+    $out.='<div style="float:right;"><input type="button" class="pb_buttons" id="iPrice" value="Сохранить цены" style="width:150px;height:30px;" onclick="f_postPred()" /></div>';
+    $out.='<p style="width:550px;font:bold 13px arial;margin:3px auto 0 auto;text-align:center;">Вы можете поменять цены и сохранить изменения.<br>Перед сохранением сравните новые цены с текущими на <a target="_blank" href="'.$a[10].'">вашем сайте</a>.</p><div class="px3"></div>';
+    if ($id==2 || ($id>3 && $id!=19)) {
+        $out.='<div class="px10"></div>';
+        $out.='<div id="priceCalc">';
+        $out.='<div>Коэффициент пересчёта для своих цен :</div><div><input type="text" class="inp" id="iPriceK" value="'.$a[7].'" style="width:30px;height:20px;" maxlength="5" /></div>';
+        $out.='<div style="margin-left:20px;">Добавочная цена :</div><div><input type="text" class="inp" id="iPriceA" value="'.$a[8].'" style="width:40px;height:20px;" onfocus="fpb_input(this,\'n\',0,999)" /></div>';
+        $out.='<input type="button" class="pb_buttons" id="iPriceCalc" value="Пересчитать" style="float:left;margin:0 0 0 20px;width:120px;height:30px;" onclick="f_priceCalc()" />';
+        $out.='</div><div style="float:right;width:200px;"><input type="button" class="pb_buttons" id="iPriceDefault" value="Перечсёт цен от teohim.ru ..." style="width:200px;height:30px;" onclick="f_priceDefault()" /></div>';
+    }
+    $out.='</div><div class="px10"></div><div id="idPrice"></div>';
+    $out.='<div class="pb_hidden" id="iddomain">'.$a[9].'</div><div class="px0" style="height:120px"></div>';
+}
+$out.='</div><div id="footer">';
+$out.='<div class="pb_hidden"><div id="idhash">'.$o_hash.'</div><div id="idID">'.$id.'</div></div>';
+// МАТЕРИАЛЫ
+$txt=@file_get_contents($_SERVER["DOCUMENT_ROOT"].'/asw_pb_includes/materials'); $m=false; $m[]=false; for ($i=1; $i<=110; $i++) {
+    $pos=strpos($txt,chr(10)); if ($pos==false) break; $str=substr($txt,0,$pos); $txt=substr($txt,$pos+1);
+    if ($str!=' ') {
+        $m[]=explode(chr(9),$str); // $m[$i][1]=preg_replace('/\%/','',$m[$i][1]);
+    } else $m[]=false;
+} $h=''; $j='';
+for ($i=1; $i<=110; $i++) {
+    $j=$m[$i][0];
+    if ($id==2||$id==9||$id==27) {
+        if($i==20) $j='2.1.1.';
+        if($i==21) $j='2.1.2.';
+        if($i==36) $j='2.1.3.';
+        if($i==53) $j='5.5.1.';
+        if($i==58) $j='5.5.2.';
+        if($i==56) $j='5.5.3.';
+        if($i==57) $j='5.5.4.';
+        if($i==59) $j='5.5.5.';
+    }
+    if ($m[$i]) { $h.='<div id="src'.$j.'"><span id="src'.$j.'3">'.$m[$i][3].'</span><span id="src'.$j.'4">'.$m[$i][4].'</span><span id="src'.$j.'5">'.$m[$i][5].'</span><span id="src'.$j.'6">'.$m[$i][6].'</span><span id="src'.$j.'7">'.$m[$i][7].'</span><span id="src'.$j.'8">'.$m[$i][8].'</span></div>'; }
+}
+$out.='<div class="pb_hidden">'.$h.'</div>';
+$out.='</div></body></html>';
+print $out; exit;
+}
+
+$data=(int)$_POST['data'];
+if ($data==3) {
+   header("HTTP/1.1 204 No Content"); exit;
+} else {
+    if (empty($_POST['c1']) || empty($_POST['c2']) || empty($_POST['name']) || empty($_POST['adr'])) { header("HTTP/1.1 204 No Content"); exit; }
+    $a[2]=Fo_post('c1'); $a[3]=Fo_post('c2'); $a[4]=Fo_post('name'); $a[5]=Fo_post('adr');
+    $pos=strpos($txt_pred,chr(10).$id.chr(9)); $pos2=strpos($txt_pred,chr(10),$pos+1);
+    $txt_pred=substr($txt_pred,0,$pos).chr(10).$id.chr(9).$a[1].chr(9).$a[2].chr(9).$a[3].chr(9).$a[4].chr(9).$a[5].chr(9).$a[6].chr(9).$a[7].chr(9).$a[8].chr(9).$a[9].chr(9).$a[10].chr(9).$a[11].substr($txt_pred,$pos2);
+    $fh=@fopen($file_pred,'w'); if ($fh==false) { header("HTTP/1.1 204 No Content"); exit; } else {
+        @rewind($fh); if (-1==@fwrite($fh,$txt_pred)) { @fflush($fh); @fclose($fh); } else { @ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh); }
+    }
+    print 'ok';
+}
+?>

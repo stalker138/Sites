@@ -1,0 +1,31 @@
+<?php
+/* page0_88 /setpred01/html-report/download.php */
+$o_inc='adm'; include $_SERVER["DOCUMENT_ROOT"].'/setpred01/cnfg.php';
+if ($f!=1 || empty($_GET['rep'])) { header("HTTP/1.1 204 No Content"); exit; }
+// Лог операций админки объектов и фото
+$t=$_SERVER['REMOTE_ADDR'];
+if ($t!='{*text5_29*}') {
+$h=@fopen($_SERVER["DOCUMENT_ROOT"].'/setpred01/html-report/log_of_report_download','a+'); if ($h) {
+    $t=''.date("d-m-Y - H:i:s").chr(9).$t.chr(9).chr(9).'ID представителя: '.$f.chr(9).chr(9).$_SERVER['REQUEST_URI'].chr(9).chr(9).$_SERVER['HTTP_USER_AGENT'].chr(9).$_SERVER['HTTP_REFERER'];
+    $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
+    @fwrite($h,$t); @fclose($h);
+}
+}
+$rep=$_GET['rep']; $dwn = $_GET['dwn'] ? ((int)$_GET['dwn']) : 0;
+$file_objList=$_SERVER["DOCUMENT_ROOT"].'/setpred01/html-report/'.$rep;
+$txt=@file_get_contents($file_objList);
+if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+if ($dwn==0) {
+  print $txt;
+} else {
+  header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+  header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+  header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
+  header("Cache-Control: post-check=0, pre-check=0", false);
+  header("Pragma: no-cache"); // HTTP/1.0
+  header('Content-Disposition: attachment; filename='.$rep.'.html');
+  header('Content-Length: '+strlen($txt));
+  header('Content-Type: text/html; name="'.$rep.'.html"; charset="UTF-8"');
+  print $txt;
+}
+?>

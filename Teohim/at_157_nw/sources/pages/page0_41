@@ -1,0 +1,11 @@
+<?php
+// Запись в файл информации об открытии страниц
+$t=$_SERVER['REMOTE_ADDR']; $r=$_SERVER['HTTP_REFERER'];
+if ($t!='{*text5_29*}' && $t!='178.45.223.89' && $t!='77.37.249.45' && $t!='83.167.104.89' && $t!='176.192.27.82' && $t!='95.165.154.69') {
+$h=@fopen($_SERVER["DOCUMENT_ROOT"].'/_open/open','a+'); if ($h) {
+  $t=''.date("d-m-Y - H:i:s").chr(9).$t.chr(9).chr(9).$_SERVER['REQUEST_URI'].chr(9).chr(9).$_SERVER['HTTP_USER_AGENT'].chr(9).$_SERVER['HTTP_REFERER'];
+    $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
+    @fwrite($h,$t); @fclose($h);
+  }
+}
+?>

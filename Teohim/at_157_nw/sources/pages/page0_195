@@ -1,0 +1,34 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}<link rel="canonical" href="https://teohim.ru/contacts/sklad1/"/>{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<div id="main_p"><div class="px10"></div><div id="teohim_pl"></div><div id="teohim_pr"><p class="tac fwb fs14">ООО «ТэоХим»</p><p>Москва: <span>(495) 221-22-52</span><br>Россия: <span>8-800-100-50-10</span></p></div>
+<div id="link_p"><a href="javascript:void(window.print())">Печать</a></div><div class="px10b"></div><div class="px10"></div>
+<div id="dcontent" style="float:none; margin:0 auto; min-height:auto;">
+
+<h1>Склад №1 ООО «ТэоХим»</h1>
+
+<p class="fright tar"><a class="aprint" href="javascript:void(f_print())" style="margin:0;padding:0 0 0 20px;width:auto;background-position:0 0">Версия для печати</a></p>
+<p class="fleft"><span>Адрес:</span> Московская область, гор. округ Электросталь, пос. Новые дома (территория "Спецстроя России").</p>
+<div class="px0"></div>
+
+<div class="fleft">
+<p><span>Телефон 1:</span> 8-916-225-02-24 - <span>Контактное лицо:</span> Кондратьев Олег</p>
+<p><span>Телефон 2:</span> 8-916-778-49-33 - <span>Контактное лицо:</span> Юрий Пинясов</p>
+</div>
+<p class="fright">&nbsp;<br><span>Время работы:</span> будни с 9.00 до 17.00</p>
+
+<div class="px10"></div>
+
+<?php $amap21=array(0, "55.715249", "38.466431", "Склад №1 ООО «ТэоХим»", 15); ?>
+<div class="px10"></div>
+<img src="/pub/images/04-700.png" alt=""/>
+<div class="px0"></div>
+<p>Беспыльный прочный <l1 id="255" class="fwb fs13">пол для склада</l1> – устройство, работы, материалы.</p>
+
+</div><div id="pb_page">195</div></div>
+{*tpl18*}
+<script type="text/javascript" charset="UTF-8" src="/cssjs/vcorp_js_0002.js"></script>
+<script type="text/javascript" charset="UTF-8" src="/cssjs/js_010.js"></script>
+</body></html>{*tpl21*}

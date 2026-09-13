@@ -1,0 +1,47 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#spsh1 { cursor:pointer; text-decoration:underline; color:#005093; } #spsh1:hover { color:#f5530e; }
+.tmtr { margin-top:2px; } #id_oc_all { margin-top:-10px; }
+#id_open_all,#id_close_all { cursor:pointer; float:right; margin:5px 0 0 10px; font-size:11px; text-decoration:underline; color:#004f92; } #id_open_all:hover,#id_close_all:hover { color:#f00000; }
+@media screen and (max-width:630px) { .divh3 { font-size:13px; } }
+@media screen and (max-width:499px) { .divh3_5 { padding:5px 0 15px 25px; width:93%; line-height:15px; } }
+@media screen and (max-width:799px) { #dcontent { width:auto; min-width:320px; max-width:799px; } }
+
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+
+{*text0_4*}
+<?php if ($f==0) { ?>
+<h1>Необходимо авторизоваться</h1>
+<?php } else { ?>
+
+{*tpl16*}
+{*block0_236*}
+{*tpl17*}
+{*tpl18*}
+
+<?php } ?>
+
+{*tpl19*}
+$.ready(function() {
+  var i,a,p,h,oh,sh,t=f_gdhm(),ls=$.gLS('page0236items')||[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,f_gdhm()];
+  if(typeof ls=='string') ls=JSON.parse(ls); if ((t-ls[21])>60) ls=[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,t];
+  a=$.qSA('.divh3');
+  if (a) { for (i=0; i<a.length; i+=1) {
+     p=a[i].parentNode; p.style.height='40px'; /*p.style.height = (ls[i] ? p.scrollHeight : 40) + 'px'; p.className = ls[i] ? 'div_mo' : 'div_mc';*/
+     $.EH.add(a[i],'click',new Function('e','var ls=$.gLS("page0236items")||[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],p=e.target.parentNode; if(typeof ls=="string") ls=JSON.parse(ls); ls[21]=f_gdhm(); ls['+i+']=ls['+i+']==1?0:1; $.sLS("page0236items",JSON.stringify(ls));'));
+  }}
+/*  oh=e.offsetHeight; sh=e.scrollHeight; h=((oh>sh)?oh:sh)+'px'; */
+f_set();});
+function f_pageNNNN(o,f) {
+  var a,p,i,h,ls=f?[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,f_gdhm()]:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,f_gdhm()];
+  a=$.qSA('.divh3'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt($.gStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==40) || (!f&&h!=40)) $.aHeight(p,200,25,p.scrollHeight,40);
+    }
+  }
+  $.sLS("page0236items",JSON.stringify(ls));
+}
+function f_gdhm() { var d=new Date(), y='000'+d.getFullYear(),l=y.length,m=(d.getMonth()+1),h=d.getHours(),dt=d.getDate(),t=d.getMinutes(); if(l>4)y=y.substr(l-4,4); if(m<10)m='0'+m; if(h<10)h='0'+h; if(dt<10)dt='0'+dt; if(t<10)t='0'+t; return parseInt(y.substr(2,2)+m+dt+h+t); } /* Возврат строки yymmddhhtt из объекта даты */
+{*tpl20*}</body></html>{*tpl21*}

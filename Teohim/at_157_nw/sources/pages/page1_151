@@ -1,0 +1,35 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_111*}
+.tmtr .fs12 { font-size:12px; font-weight:bold; }
+.tmtr { border:solid 1px #000000; } .tmtr td { text-align:center; border:none; }
+.tmtr .tmtl1 a { font-size:13px; text-decoration:underline; }
+.tmtr td a { font-size:12px; } .tmtr td a:hover { text-decoration:underline; } .tmtr .tmtl a:hover, .tmtr .tmdl a:hover { text-decoration:underline; }
+.tmtr td .blk_cover_calc, .tmtr td .blk_cover_calc_empty { position:relative; top:0; left:0; right:0; width:100px; height:16px; padding:3px 3px; font-weight:bold; font-size:12px; text-decoration:none; line-height:16px; }
+.tmtr .tmtl .blk_cover_calc { color:#ffffff; }
+
+.tmtr td .tpdf { padding:3px 0px 3px 20px; width:90px; font-size:14px; text-decoration:none; background-size:16px; }
+.tmtr td .tdoc { display:block; padding:3px 0px 8px 31px; height:16px; font-size:13px; background:url("https://teohim.ru/img/css/doc.gif") no-repeat 2px 1px; }
+
+.tmtl { padding:2px 2px 2px 10px; font-weight:bold; }
+.tmtl1 { padding:2px 2px 2px 5px; width:120px; }
+.ti10 { text-indent:10px; }
+
+.d18text { float:left; padding:0; text-align:left; } .d18dtext { clear:both; font-size:11px; font-weight:normal; line-height:16px; text-align:left; }
+.d18ic { float:right; padding:3px 0 0 0; width:234px; } .d18i { float:left; width:118px; } .d18c { float:right; width:112px; }
+
+@media screen and (max-width:999px) { .ctmp1 { min-height:240px; } .ctmp2 { min-height:170px; } }
+@media screen and (max-width:799px) {
+  #dcontent { min-width:320px; } .divPriceD { display:none; } .divPriceM { display:block; }
+  .d18text { float:none; } .d18ic { float:left; clear:both; margin:0 auto; padding:2px 0 5px 0; } .tmtr td a { text-decoration:underline; }
+}
+@media screen and (max-width:999px) { .blk_cover_item_b { min-height:190px; } }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*text0_1*}
+{*tpl16*}
+{*block1_151*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

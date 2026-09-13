@@ -1,0 +1,10 @@
+<?php
+include_once $pb_root."inc/fmtr.php"; // page0_25
+include_once $pb_root."inc/fmtr_dop.php"; // page0_24
+?>
+<div id="desktop">
+  <div class="dsheader"></div>
+  <div class="dsleft"></div>
+  <div id="dcontent"><section>
+<?php if (1==2) { ?>{*text5_15*}<?php } ?>
+{*text0_34*}

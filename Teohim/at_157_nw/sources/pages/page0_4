@@ -1,0 +1,27 @@
+<?php
+$t_mode=(int)$_POST['mode']; $t_number=(int)$_POST['number']; $t_page=$_POST['page'];
+if ($t_mode<0 ||$t_mode>3 || $t_number<0 || $t_number>3 && empty($t_page)) { print 'error'; exit; }
+if (get_magic_quotes_gpc()) $t_page=stripslashes($t_page);
+$t1=($t_number==1)?1:0; $t2=($t_number==2)?1:0; $t3=($t_number==3)?1:0;
+$file=$pb_root.'sys/smiles';
+$txt=@file_get_contents($file); if($txt==false) $txt=''; $pos1=strpos($txt,$t_page.chr(9));
+if ($pos1===false) {
+    $txt.=$t_page.chr(9).$t1.chr(9).$t2.chr(9).$t3.chr(10);
+} else {
+    $pos2=strpos($txt,chr(9),$pos1)+1; $pos3=strpos($txt,chr(9),$pos2)+1; $pos4=strpos($txt,chr(9),$pos3)+1; $pos5=strpos($txt,chr(10),$pos4)+1;
+    $t1+=((int)substr($txt,$pos2,$pos3-$pos2)); $t2+=((int)substr($txt,$pos3,$pos4-$pos3)); $t3+=((int)substr($txt,$pos4,$pos5-$pos4));
+    $txt=substr($txt,0,$pos2).$t1.chr(9).$t2.chr(9).$t3.chr(10).substr($txt,$pos5);
+}
+$max=$t1+$t2+$t3;
+$out='<div class="fwb fs13 tac c7">Всего отзывов: '.$max.'</div><div class="px10"></div><table style="width:100%;text-align:center;border:none 0px;color:#000000"><tbody>';
+$out.='<tr><td style="width:170px;text-align:left;padding-left:10px;">Понравилась</td><td><div style="background-color:#8080ff;height:20px;width:'.(($t1==0)?'0':round(200*$t1/$max)).'px"></div></td><td style="width:50px;">'.$t1.'</td><td style="width:70px;">('.(($t1==0)?'0':round(100*$t1/$max)).' %)</td><tr>';
+$out.='<tr><td style="text-align:left;padding-left:10px;">Сложно разобраться</td><td><div style="background-color:#00ff00;height:20px;width:'.(($t1==0)?'0':round(200*$t2/$max)).'px"></div></td><td>'.$t2.'</td><td>('.(($t1==0)?'0':round(100*$t2/$max)).' %)</td><tr>';
+$out.='<tr><td style="text-align:left;padding-left:10px;">НЕ понравилась</td><td><div style="background-color:#ff0000;height:20px;width:'.(($t1==0)?'0':round(200*$t3/$max)).'px"></div></td><td>'.$t3.'</td><td>('.(($t1==0)?'0':round(100*$t3/$max)).' %)</td><tr>';
+$out.='<tr><td colspan="4" class="fwb tac c7">'.(($t_number==0)?'':('<div class="px10"></div>Спасибо, что сделали выбор!<br>Нам очень важно знать Ваше мнение.')).'<div class="px10b"></div><div class="px15"></div><input class="pb_buttons" type="button" style="width:70px" value="Ok" onclick="$.wDelete(1)"/></td></tr>';
+$out.='</tbody></table>';
+if ($t_number==0) print $out; else {
+    $handler=@fopen($file,'w'); if ($handler==false) { print 'error'; exit; }
+    @rewind($handler); if (-1==@fwrite($handler,$txt)) print 'error'; else { @ftruncate($handler,ftell($handler)); print $out; }
+    @fflush($handler); @fclose($handler);
+}
+?>

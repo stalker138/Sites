@@ -1,0 +1,33 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#dl_menu_first, #dl_menu_second, #dl_menu_third, #dl_menu_forth, .color_table_link_img, .dsleft, .search_text, #ya-site-form0 {visibility: hidden;}
+.dsleft {min-height:0}
+#dcontent, #dnav {width:1000px;}
+#dnav {left:0}
+@media screen and (max-width: 999px) {#dcontent, #dnav {width:auto;} }
+.d14_22 * { font-size:14px; line-height:22px; }
+.pkr_block { position:relative; display:block; min-height:120px; text-decoration:none; color:#272727; background:#ffffff; border:solid 1px #e8e8e8; }
+.pkr_block_img { position:absolute; display:block; top:0; left:0; bottom:0; width:170px; background-repeat:no-repeat; background-position:top left; background-size:cover; }
+.pkr_block_price { position:absolute; display:block; top:2px; right:5px; min-width:100px; font-size:15px; font-weight:bold; text-align:center; }
+.pkr_block_but { position:absolute; display:block; padding:7px 10px; bottom:5px; right:5px; min-width:80px; font-size:14px; font-weight:bold; text-align:center; color:#ffffff; background:#284080; border-radius:15px; }
+.pkr_block_content { position:relative; display:block; margin:0 0 0 170px; padding:0 120px 3px 10px; min-height:117px; font-size:14px; line-height:20px; background:#e8e8e8; }
+.pkr_block_content p { margin:0; padding:5px 1px 1px 1px; }
+.pkr_block:hover { border:solid 1px #284080; transition:border 0.3s ease-out 0s; }
+.pkr_block:hover .pkr_block_content { background:#284080; color:#ffffff; transition:background-color 0.3s ease-out 0s; }
+.pkr_block:hover .pkr_block_but { background:#ffffff; color:#284080; transition:background-color 0.3s ease-out 0s; }
+.ib_fd5202 { cursor:pointer; display:inline-block; margin:2px 0 5px 10px; padding:8px 10px; min-width:120px; font-size:14px; font-weight:bold; text-align:center; color:#ffffff; background:#fd5202; border-radius:15px; letter-spacing:0; text-decoration:none; }
+.ib_fd5202:hover { box-shadow:0 0 15px 0 #272727; background:#ff7c3e; transition:background-color 0.3s ease-out 0s; }
+@media screen and (max-width:600px) {
+.pkr_block_img { display:none; } .pkr_block_content { margin:0; font-size:13px; line-height:17px; }
+.pkr_block_but { padding:5px 7px; font-size:13px; border-radius:12px; }
+.d14_22 * { font-size:12px; line-height:17px; }
+
+}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*tpl16*}
+{*block5_10*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}
+{*tpl20*}</body></html>{*tpl21*}

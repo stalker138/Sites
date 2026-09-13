@@ -1,0 +1,214 @@
+<?php
+/* page0_83 /setpred01/adm_img.php */
+// header("HTTP/1.1 204 No Content"); exit;
+$o_inc='adm'; include "cnfg.php";
+
+// Лог записи ФОТО для объектов.
+$t=$_SERVER['REMOTE_ADDR'];
+if ($t!='{*text5_29*}'/* && $t!='178.45.223.89' && $t!='77.37.249.45' && $t!='83.167.104.89' && $t!='176.192.27.82' && $t!='95.165.154.69'*/) {
+$h=@fopen($_SERVER["DOCUMENT_ROOT"].'/setpred01/log_of_save_photo','a+'); if ($h) {
+    $t=''.date("d-m-Y - H:i:s").chr(9).$t.chr(9).chr(9).'ID представителя: '.$f.chr(9).chr(9).$_SERVER['REQUEST_URI'].chr(9).chr(9).$_SERVER['HTTP_USER_AGENT'].chr(9).$_SERVER['HTTP_REFERER'];
+    $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
+    @fwrite($h,$t); @fclose($h);
+}
+}
+{*text0_7*}
+{*text1_9*}
+{*text1_10*}
+{*text1_11*}
+
+// Определение главного ID для файла данных objlist2 (объединение для разных паролей представителей при авторизации)
+$calstID = count($alstID); $id=0;
+for ($i=0; $i<$calstID; $i++) {
+    $a = $alstID[$i]; $c=count($a); // количество объединённых сайтов (-1)
+    for ($j=1; $j<$c; $j++) {
+        if ($f==$a[$j]) $id = $a[1];
+    }
+}
+if ($id==0 || (empty($_POST['data']) && empty($_POST['lastobj']))) { header("HTTP/1.1 204 No Content"); exit; }
+
+$a = $a_pred[$id];
+
+if (!empty($_POST['lastobj'])) {
+    $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objphotolist2';
+    $txt=@file_get_contents($file_objList); $o=false; $o[]=false;
+    if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+    $dt='2019-03-24'; $arr=false; $txt=explode(chr(10),$txt); $cnt=count($txt);
+    for ($i=1; $i<$cnt; $i++) {
+        $s=explode(chr(9),$txt[$i]);
+        if ($s[6]>=$dt) $arr[]=$s;
+    }
+    usort($arr,"cmp");
+    $out='<div style="position:absolute; padding:0 10px 0 0; top:10px; left:10px; right:10px; bottom:10px; overflow-y:scroll;"><table><tbody><tr><th style="width:40px;height:0"></th><th style="width:80px;height:0"></th><th style="width:500px;height:0"></th><th style="height:0"></th></tr><tr><td colspan="4">&nbsp;</td></tr>';
+    $cnt=count($arr);
+    for ($i=0; $i<$cnt; $i++) {
+        $out.='<tr><td>'.($i+1).'</td><td>'.($arr[$i][6]).'</td><td>'.$tPreds[(int)($arr[$i][0])][1].'</td><td>'.($arr[$i][3]).'</td></tr>';
+    }
+    $out.='</tbody></table></div><div style="position:absolute; padding:0 10px 0 0; top:10px; left:10px; right:10px;"><table><tbody><tr><th style="width:40px">№</th><th style="width:80px">Дата</th><th style="width:500px">Наименование представителя</th><th>Наименование объекта</th></tr></tbody></table></div>';
+    print $out; exit;
+}
+
+$cr_foto=false;
+$data=(int)$_POST['data']; $pid=(int)$_POST['pid']; $idObj=(int)$_POST['idObj']; $idPh=(int)$_POST['idPh']; $total=(int)$_POST['total']; $name=Fo_post('name');
+$to=Fo_post('to'); $tp=(int)$_POST['tp']; $phW=(int)$_POST['width']; $phH=(int)$_POST['height']; $dt=Fo_post('date'); $city=Fo_post('city');
+if ((($data==3 && $to!='0,0,0' && $tp>0 && strlen($name)>0 && strlen($dt)>0 && strlen($city)>0) || $data==4) && ($pid==$id || $id==1) && $idObj>0 && $idPh>0 && $pid>0) {
+  if ($data==3) {
+    /* Запись файла изображения */
+    if ($phW==0 && $phH==0) {
+        if (count($_FILES)!=1) { print 'errОшибка отправляемого файла'; exit; }
+        $cr_ft=$_FILES['img']['type'];
+        if ($cr_ft=="image/gif" || $cr_ft=='image/png' || $cr_ft=='image/jpeg' || $cr_ft=='image/bmp' || $cr_ft=='image/ico') {
+            $cr_foto = array('.jpg','.jpe','.jpeg','.gif','.png','.bmp','.ico');
+            foreach ($cr_foto as $item) { if (preg_match("/$item\$/i", $_FILES['img']['name'])) { $cr_f='1'; break; } }
+            if ($cr_f=='1') {
+                $cr_ft = @getimagesize($_FILES['img']['tmp_name']);
+                if (!empty($cr_ft) && ($cr_ft['mime']=='image/gif' || $cr_ft['mime']=='image/png' || $cr_ft['mime']=='image/jpeg')) {
+                    if ($_FILES['img']['size']<5242880) $cr_f='1'; else $cr_f='Файл не загружен! Слишком большой размер!';
+                } else $cr_f='Файл не содержит изображение';
+            } else $cr_f='Неизвестный формат изображения';
+        } else $cr_f='Неизвестный формат изображения';
+        if ($cr_f=='1') { $cr_foto=@img_resize($_FILES['img']['tmp_name'], ($pb_root.'img/mobj/'.$pid.'-'.$idPh.'.jpg')); if ($cr_foto==false) $err+=1; $cr_f=''; }
+        else { $cr_foto=false; $err+=1; }
+        if ($cr_foto==false) {
+            print 'err'.$cr_f; exit;
+        } $total=$total+1;
+    }
+    /* Запись и чтение данных. ФОТО объектов. */
+    $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objphotolist2';
+    $txt=@file_get_contents($file_objList);
+    if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+    $a=explode(chr(10),$txt); $cnt=count($a)-1; $f=0;
+    for ($i=1; $i<$cnt; $i++) {
+        $s=explode(chr(9),$a[$i]); $s[0]=(int)$s[0]; $s[1]=(int)$s[1]; $s[2]=(int)$s[2];
+        if($s[0]===$pid && $s[1]===$idObj && $s[2]===$idPh) {
+            $s = array($pid,$idObj,$idPh,$name,$to,$tp,$dt,$phW,$phH,$city);
+            $a[$i]=implode(chr(9),$s); $i=$cnt; $f=1; break;
+        }
+    }
+    if ($f==0) { /* Новое ФОТО */
+        $s = array($pid,$idObj,$idPh,$name,$to,$tp,$dt,$phW,$phH,$city);
+        $a[$cnt++]=implode(chr(9),$s); $a[$cnt]='';
+    }
+    $txt=implode(chr(10),$a);
+  }
+  if ($data==4) {
+    /* Удаление строки и файла ФОТО объектов */
+    $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objphotolist2';
+    $txt=@file_get_contents($file_objList);
+    if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+    $pos=strpos($txt,chr(10).$pid.chr(9).$idObj.chr(9).$idPh);
+    if ($pos!=false) {
+        $pos1=strpos($txt,chr(10),$pos+1);
+        if ($pos1!=false) { $txt=substr($txt,0,$pos).substr($txt,$pos1); }
+        else { print 'errОшибка поиска в /sys/objphotolist2'; exit; }
+    } $total=$total-1; if ($total<0) $total=0;
+    /* Удаление файла изображения */
+    // if (!unlink($pb_root.'img/mobj/'.$pid.'-'.$idPh.'.jpg')) { print 'errОшибка удаления файла изображения'; exit; }
+  }
+    $fh=@fopen($file_objList,'w'); if ($fh==false) {  print 'errОшибка записи /sys/objphotolist2'; exit; } else {
+        @rewind($fh); if (@fwrite($fh,$txt)===false) { @fflush($fh); @fclose($fh); print 'errОшибка записи /sys/objphotolist2'; exit; } else { @ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh); }
+    }
+
+    $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objlist2';
+    $txt=@file_get_contents($file_objList);
+    if (!$txt) { print 'errОшибка чтения /sys/objlist2'; exit; }
+    if ($data==4 || ($cr_foto && $data==3)) {
+        /* Запись и чтение данных. Объекты. */
+        $a=explode(chr(10),$txt); $cnt=count($a);
+        for ($i=1; $i<$cnt; $i++) {
+            $s=explode(chr(9),$a[$i]);
+            if(((int)$s[0])===$pid && ((int)$s[12])===$idObj) {
+                if ($data==3) $s[10] = ((int)$s[10])+1;
+                if ($data==4) { $s[10] = (int)$s[10]; if ($s[10]>0) $s[10]=$s[10]-1; }
+                $a[$i]=implode(chr(9),$s);
+                $i=$cnt; break;
+            }
+        }
+        $txt=implode(chr(10),$a);
+        $fh=@fopen($file_objList,'w'); if ($fh==false) {  print 'errОшибка записи /sys/objlist2'; exit; } else {
+            @rewind($fh); if (@fwrite($fh,$txt)===false) { @fflush($fh); @fclose($fh); print 'errОшибка записи /sys/objlist2'; exit; } else { @ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh); }
+        }
+    }
+
+    /* Отправка обновлённых данных */
+    $out=fAllData($pid);
+    print $out; exit;
+} else {
+    header("HTTP/1.1 204 No Content"); exit;
+}
+
+/* Сравнение usort($arr,"cmp"); */
+function cmp($a,$b) {
+  if($a[6]==$b[6]) return 0;
+  return ($a[6]>$b[6]) ? -1 : 1;
+}
+
+function img_resize($src, $dest, $quality=70, $rgb=0xFFFFFF) {
+    global $phW,$phH;
+    if (!file_exists($src)) return false;
+    $size = getimagesize($src);
+    if ($size === false) return false;
+    $format = strtolower(substr($size['mime'], strpos($size['mime'], '/')+1));
+    $icfunc = "imagecreatefrom" . $format; $format='jpg';
+    if (!function_exists($icfunc)) return false;
+    $w=$size[0]; $h=$size[1]; $r = $w / $h;
+    if ($r>=1) {
+        $w = ($w>2136) ? 2136 : (($w<534) ? 534 : $w);
+        $h = floor($w/$r);
+    } else {
+        $h = ($h>2136) ? 2136 : (($h<534) ? 534 : $h);
+        $w = floor($h*$r);
+    }
+    $phW=$w; $phH=$h;
+    $isrc = $icfunc($src);
+    $idest = imagecreatetruecolor($w, $h);
+    imagefill($idest, 0, 0, $rgb);
+    imagecopyresampled($idest, $isrc, 0, 0, 0, 0, $w, $h, $size[0], $size[1]);
+    imagejpeg($idest, $dest, $quality);
+    imagedestroy($isrc);
+    imagedestroy($idest);
+    return $format;  
+}
+
+/* Заполнение блока данных hAllData */
+function fAllData($id) {
+    global $a_pass2;
+    $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objlist2';
+    $txt=@file_get_contents($file_objList); $o=false;
+    if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+
+    /* Список регионов для представителя */
+    $t = (empty($a_pass2[$id])) ? '' : ',';
+    $out='<div id="idregs">0'.$t.$a_pass2[$id].'</div>';
+    /* Список объектов */
+    $a_pass0 = explode(',',$a_pass2[$id]);
+    $pos=strpos($txt,chr(10)); $o[]='';
+    while ($pos!=false) {
+        $s=explode(chr(9),substr($txt,0,$pos)); $txt=substr($txt,$pos+1); $s[0] = (int)$s[0];
+        if ($s[0]===$id) $o[]=$s;
+        $pos=strpos($txt,chr(10));
+    } $cnt=count($o);
+    $out.='<div id="hObjList">';
+    for ($i=1; $i<$cnt; $i++) {
+        $out.='<div id="ol'.$i.'">'.$o[$i][0].'¡'.$o[$i][1].'¡'.$o[$i][2].'¡'.$o[$i][3].'¡'.$o[$i][4].'¡'.$o[$i][5].'¡'.$o[$i][6].'¡'.$o[$i][7].'¡'.$o[$i][8].'¡'.$o[$i][9].'¡'.$o[$i][10].'¡'.$o[$i][11].'¡'.$o[$i][12].'¡'.($o[$i][13] ? $o[$i][13] : '2017-08-25').'¡'.$o[$i][14].'¡'.$o[$i][15].'</div>';
+    }
+    $out.='</div>'; /* hObjList */
+
+    /* Список фотографий для представителей и объектов */
+    $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objphotolist2';
+    $txt=@file_get_contents($file_objList); $o=false;
+    if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+    $pos=strpos($txt,chr(10)); $o[]='';
+    while ($pos!=false) {
+        $s=explode(chr(9),substr($txt,0,$pos)); $txt=substr($txt,$pos+1); $s[0] = (int)$s[0];
+        if ($s[0]===$id) $o[]=$s;
+        $pos=strpos($txt,chr(10));
+    } $cnt=count($o);
+    $out.='<div id="hPhotoList">';
+    for ($i=1; $i<$cnt; $i++) {
+        $out.='<div id="opl'.$i.'">'.$o[$i][0].'¡'.$o[$i][1].'¡'.$o[$i][2].'¡'.$o[$i][3].'¡'.$o[$i][4].'¡'.$o[$i][5].'¡'.$o[$i][6].'¡'.$o[$i][7].'¡'.$o[$i][8].'¡'.($o[$i][9] ? $o[$i][9] : '').'</div>';
+    }
+    $out.='</div>'; /* hPhotoList */
+    return $out;
+}
+?>

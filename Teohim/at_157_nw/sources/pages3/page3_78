@@ -1,0 +1,21 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_103*}{*text0_106*}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*block3_78*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}
+function m_alert(i) {
+if (i<1 || i>4) return;
+<?php if (1==2) { ?>
+if (i == 1) $.createDialog('Столешница 2019г','<iframe  width="300" height="530" src="//www.youtube.com/embed/9pUdrlWPT30?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>',320,580);
+if (i == 2) $.createDialog('Black Star Burger','<iframe  width="300" height="530" src="//www.youtube.com/embed/MUCOzPZx0j0?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>',320,580);
+if (i == 3) $.createDialog('Black Star Burger','<iframe  width="300" height="530" src="//www.youtube.com/embed/o1D4l8DUcr4?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>',320,580);
+if (i == 4) $.createDialog('Автомойка','<iframe  width="530" height="300" src="//www.youtube.com/embed/v98DATbNZjM?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>',550,350);
+v_esc = v_dialogEsc = 1;
+<?php } ?>}
+{*tpl20*}</body></html>{*tpl21*}

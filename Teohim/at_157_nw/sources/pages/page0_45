@@ -1,0 +1,34 @@
+<?php
+/* page0_88 /downloads/tss/download.php */
+// Лог операций админки объектов и фото
+$t=$_SERVER['REMOTE_ADDR'];
+if ($t!='{*text5_29*}') {
+$h=@fopen($_SERVER["DOCUMENT_ROOT"].'/downloads/tss/log_of_tss_download','a+'); if ($h) {
+    $t=''.date("d-m-Y - H:i:s").chr(9).$t.chr(9).chr(9).$_SERVER['REQUEST_URI'].chr(9).chr(9).$_SERVER['HTTP_USER_AGENT'].chr(9).$_SERVER['HTTP_REFERER'];
+    $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
+    @fwrite($h,$t); @fclose($h);
+}
+}
+$tss = Fo_get('tss'); if (!$tss)  { header("HTTP/1.1 204 No Content"); exit; }
+$file_objList=$_SERVER["DOCUMENT_ROOT"].'/downloads/tss/'.$tss.'.pdf';
+$txt=@file_get_contents($file_objList);
+if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+  header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+  header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+  header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
+  header("Cache-Control: post-check=0, pre-check=0", false);
+  header("Pragma: no-cache"); // HTTP/1.0
+  header('Content-Disposition: attachment; filename='.$tss.'.pdf');
+  header('Content-Length: '+strlen($txt));
+  header('Content-Type: application/pdf; name="'.$tss.'.pdf"; charset="UTF-8"');
+  print $txt;
+/*
+    Функция для удаления экранирующих символов "\" из содержимого POST-параметра
+    Параметры: $name - имя принимаемого POST-параметра
+    Возвращает содержимое без экранирующих слешей или false, если такого POST-параметра нет
+*/
+function Fo_get($name) {
+    $ret=$_GET[$name]; if ($ret==false) return false;
+    return (get_magic_quotes_gpc() ? stripslashes($ret) : $ret);
+}
+?>

@@ -1,0 +1,45 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_104*}
+{*text0_111*}
+{*text0_115*}
+.divPriceD { display:block; } .divPriceM { display:none; }
+.tmtr .fs12 { font-size:12px; font-weight:bold; }
+.pb_ismall { float:left; margin:10px 10px 0 0; width:246px; height:184px; }
+#banner_video_text { margin:10px 0 0 0; } #banner_video { margin:10px 0 0 10px; }
+.tmtr .fbuy, .tmtr .fbuy:hover { background:url('data:image/gif;base64,R0lGODlhFAAQAIAAAP///6WlpSH5BAEAAAAALAAAAAAUABAAAAIshI+pyxgf2oJPMoqzqiB2E3FJpk3eCXomqZpg2m5sbNWd6OBHOH0yfQPaDAUAOw==') center no-repeat #ffff40; }
+.tmtr .fbuy:hover { background-color:#f5530e; }
+.temp1,.temp2 { float:left; padding:0 7px; width:260px; } .temp2 { float:right; } .a1 { text-decoration:none; } .p1 { border:solid 1px #f00000; } .p1:hover { border:solid 1px #004F92; background:#e0e0e0; }
+
+.h14lt span { font-size:13px; color:#000000; }
+.tmtr { border:solid 1px #000000; } .tmtr td { text-align:center; }
+.tmtr td:hover { color:#f00000; background:#eeeeee; font-weight:bold; } .tmtr td:hover a { font-weight:normal; }
+.tmtr .tmdl { padding:1px 0 1px 5px; } .tmtr .tmdl:hover { font-weight:normal; }
+.tmtr .tmtl1 a { font-size:13px; text-decoration:underline; } .tmtr td a:hover { text-decoration:none; } .tmtr .tmtl a:hover { text-decoration:underline; }
+.tmtr td .tpdf { font-size:14px; text-decoration:none; }
+.blk_cover_calc,.blk_cover_calc_empty { position:relative; top:0; left:0; right:0; width:100px; height:22px; padding:0 3px; font-weight:normal; font-size:13px; line-height:22px; }
+
+.tmtr td .tpdf { padding:3px 0px 3px 20px; width:100px; background-size:16px; }
+.tmtr td .tdoc { display:block; padding:3px 0px 8px 31px; height:16px; font-size:13px; background:url("https://teohim.ru/img/css/doc.gif") no-repeat 2px 1px; }
+.tmtl { padding:2px 2px 2px 10px; font-weight:bold; }
+.tmtl1 { padding:2px 2px 2px 5px; width:130px; }
+
+.tmtr2 { width:100%; border:solid 1px #000000; } .tmtr2 td { text-align:center; border:none; border-bottom:solid 1px #c8c8c8; }
+.tmtr2 td:hover { color:#f00000; background:#eeeeee; font-weight:bold; } .tmtr2 td:hover a { font-weight:normal; }
+.tmtr2 .tmdl { padding:1px 0 1px 5px; } .tmtr2 .tmdl:hover { font-weight:normal; }
+.tmtr2 .tmtl1 a { font-size:13px; text-decoration:underline; } .tmtr2 td a:hover { text-decoration:none; } .tmtr2 .tmtl a:hover { text-decoration:underline; }
+.tmtr2 td .tpdf { font-size:14px; text-decoration:none; }
+
+@media screen and (max-width:799px) { #dcontent { min-width:320px; } .divPriceD { display:none; } .divPriceM { display:block; } }
+@media screen and (max-width:999px) { #banner_video_text { margin:10px 10px 0 0; } #banner_video { float:left; margin:10px 0 0 0; } }
+@media screen and (max-width:630px) { .temp1,.temp2 { clear:both; float:left; } }
+.dmtrl { width:350px; } .dmtrr { max-width:330px; } .tsrt { margin-top:3px; } .dmtrr, .pb_ismall { margin:0; width:123px; height:103px; border-radius:0; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*text0_1*}
+{*tpl16*}
+{*block5_17*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

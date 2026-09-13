@@ -1,0 +1,22 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text5_32*}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*text5_31*}
+<img class="pb_ismall" src="/img/qr/qr1-3.png" style="width:250px;height:auto" onclick="$.zoomImg(this,'/img/qr/qr1-3.png',200,25,994,725,'Элакор-ПУ Эмаль-60',-25,1,0,1);" title="Элакор-ПУ Эмаль-60" alt="Элакор-ПУ Эмаль-60"/>
+{*text5_33*}
+<div class="fleft mr20">
+<?php
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-emal60-poluglyanc.pdf?'.filemtime($pb_root.'instructions/elakor-pu-emal60-poluglyanc.pdf').'" target="_blank"><span class="fs16">Эмаль-60 Полуглянцевая</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-emal60-polumat.pdf?'.filemtime($pb_root.'instructions/elakor-pu-emal60-polumat.pdf').'" target="_blank"><span class="fs16">Эмаль-60 Полуматовая</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-emal60-glyanc.pdf?'.filemtime($pb_root.'instructions/elakor-pu-emal60-glyanc.pdf').'" target="_blank"><span class="fs16">Эмаль-60 Глянцевая</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-emal60-kraska-dlya-dereva.pdf?'.filemtime($pb_root.'instructions/elakor-pu-emal60-kraska-dlya-dereva.pdf').'" target="_blank"><span class="fs16">Краска для дерева</span></a></p>';
+?>
+</div>
+<div class="px10"></div>
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

@@ -1,0 +1,14 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#inpWork { cursor:pointer; float:left; margin:10px 0 0 20px; width:220px; height:30px; text-align:center; font-weight:bold; font-size:13px; color:#f00000; }
+.dbox2 { float:left; margin:5px 15px 0 0; padding:5px; width:365px; text-align:left; text-decoration:none; color:#000000; border:solid 1px #c8c8c8; background:#f0f0f0; }
+.ptmp1 { color:#004f92; text-decoration:underline; } .ptmp1:hover { text-decoration:none; } sup { font-weight:normal; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*text0_1*}
+{*tpl16*}
+{*block0_221*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}
+</body></html>{*tpl21*}

@@ -1,0 +1,112 @@
+<?php if ($pb_page==226 || $pb_page==5001) { ?>{*text0_36*}<?php } else { ?>{*text0_36*}<?php } ?>
+  <div class="px10b noprint"></div></section></div>
+  <div class="dsfooter"><?php if ($pb_page_index>2 || ($pb_page>200 && $pb_page<220 && $pb_page!=202) || ($pb_page_index==1 && $pb_page!=1023) || ($pb_page_index==2 && ($pb_page<2201 || $pb_page>2300))) {
+if (1==2 && $pb_page!=1001 && $pb_page!=1002 && $pb_page!=1003 && $pb_page!=1004 && $pb_page!=1014 && $pb_page!=1015 && $pb_page!=1021 && ($pb_page<2001 || $pb_page>2100) && ($pb_page<3151 || $pb_page>3350)) { ?><a class="aprint" href="javascript:void(f_print())"><?php print ($pb_page==1010 || $pb_page==1011) ? 'Распечатать прайс-лист' : 'Версия для печати'; ?></a><?php } } ?></div>
+  <div id="dheader"><header>
+    <l1 id="1" id="dlogoimg" title="промышленные полы ЭЛАКОР"><div id="dlogod">промышленные полы</div></l1>
+    <div id="dh_main">
+      <div id="dh_teohim"></div>
+      <div id="dh_slogan">Российский производитель <span class="upper fwn">промышленных полов</span><div id="dh_year"><div class="px3"></div>с 1996г</div></div>
+      <div id="dh_tel" style="letter-spacing:1px;"><div class="callback mr5" style="float:right;margin-top:-1px; font-family:tahoma;font-weight:normal;font-size:15px;">обратный звонок</div>
+<?php if ($cookie_utm=='UTM') { ?>
+Материалы: <a class="consult" href="tel:+74952212252" style="font-family:arial;font-size:14px;color:#ffffff;letter-spacing:0;">+7 495 221 2252</a> &nbsp;Работы: <a class="consult" href="tel:+74955184378" style="font-family:arial;font-size:14px;color:#ffffff;letter-spacing:0;">+7 495 518 4378</a> 
+<?php } else { ?>
+Москва: <a class="consult" href="tel:+74952212252" style="font-family:arial;font-size:14px;color:#ffffff;letter-spacing:0;">+7 495 221 22 52</a> &nbsp; &nbsp; Россия: <a class="consult" href="tel:88001005010" style="font-family:arial;font-size:14px;color:#ffffff;letter-spacing:0;">8 800 100 50 10</a> 
+<?php } ?>
+</div>
+      <l0 id="210" id="dh_pred" style="width:360px;top:37px;letter-spacing:1px;font-size:14px;"><span style="letter-spacing:1px;">Представительства</span> в России, за рубежом</l0>
+    </div>
+    <div id="dh_menu">
+      <l0 id="201"<?php if ($pb_page==201) print $st_current; ?>>о компании</l0><l1 id="16"<?php if ($pb_page==1016 || ($pb_page>1300 && $pb_page<1351)) print $st_current; ?>>ФОТО</l1><l1 id="20"<?php if ($pb_page==1020 || ($pb_page>1350 && $pb_page<1401)) print $st_current; ?>>видео</l1><l1 id="15"<?php if ($pb_page==1015 || ($pb_page>3350 && $pb_page<3501)) print $st_current; ?>>ОТЗЫВЫ</l1><l1 id="14"<?php if ($pb_page==1014 || ($pb_page>3150 && $pb_page<3351)) print $st_current; ?>>сертификаты</l1><l1 id="18"<?php if ($pb_page==1018 || ($pb_page>2500 && $pb_page<2700)) print $st_current; ?>>ИНСТРУКЦИИ</l1><l1 id="19"<?php if ($pb_page==1019 || ($pb_page>4500 && $pb_page<5000)) print $st_current; ?>>статьи</l1><l0 id="217"<?php if ($pb_page==217) print $st_current; ?>>проектировщикам</l0><l0 id="202" id="dh_menu_last"<?php if ($pb_page>201 && $pb_page<207) print $st_current; ?>>КОНТАКТЫ</l0>
+    </div>
+  </header></div>
+  <div id="dnav"><nav><?php include_once $pb_root."inc/dnavigator.php"; ?></nav></div>
+  <div id="dl_menu"><aside>
+    <div class="px5"></div>
+    <?php if($pb_page<231 || $pb_page>249) { ?><l0 id="85" id="aobjlist" <?php print 'onclick="this.innerHTML='."'<span style=\'font-size:14px;line-height:35px\'>Карта открывается...</span>'".'"'; ?> title="Объекты на карте с возможностью выбора региона, типа объекта и типа покрытия">Выполненные объекты<br>на карте</l0><?php } ?>
+    <div class="px5"></div>
+    <?php include_once $pb_root.'inc/'.(($pb_page==1291 || $pb_page==1292)?'filters':'dlmenu'.(($pb_page>230 && $pb_page<250) ? '_p' : '')).'.php'; ?>
+    <div class="px0"></div>
+    <?php if ($pb_page!=250) { ?>
+      <div class="px5"></div>
+      <l0 id="250" class="color_table_link_img" title="Таблица цветов"><div class="color_table_link_text">Таблица цветов</div></l0>
+      <!--<l0 id="250" class="color_table_link_text">Таблица цветов</l0>-->
+    <?php } ?>
+    <div class="px5"></div>
+    <?php if($pb_page<231 || $pb_page>249) { ?>
+    <div class="search_text">Поиск по сайту</div>{*text0_15*}
+    <div class="px0"></div>
+    <?php } include_once $pb_root.'inc/themes_block.php'; ?>
+  </aside></div>
+  {*text0_71*}
+  <div id="mtblock">
+    <l1 id="1" id="mtlogo"></l1>
+    <div id="mtpanel"><table class="mtlink"><tbody><tr>
+      <th onclick="location.href='/price/'" style="border-right:solid 1px #000000;">ЦЕНЫ<br>материалы</th><th onclick="location.href='/polymer/cena/'" style="border-right:solid 1px #000000;">КАЛЬКУЛЯТОР<br>полов</th>
+    </tr></tbody></table></div>
+  </div>
+  <div id="mlblock">
+    <div id="mlmenu">
+      <?php include_once $pb_root.'inc/mmenu'.(($pb_page>230 && $pb_page<250) ? '_p' : '').'.php'; // page0_22 / page0_18 - MOBILE Multi Level Menu ?>
+      <?php if ($pb_page!=211) { ?>
+        <div class="px5"></div>
+        <l0 id="250" class="color_table_link_img" title="Таблица цветов"><div class="color_table_link_text">Таблица<br>цветов</div></l0>
+      <?php } ?>
+      <div class="px5"></div>
+      <div class="search_text">Поиск по сайту</div>{*text0_15*}
+    </div>
+    <div id="ltblock"><div id="melakor"><div id="mlogod">промышленные &nbsp;полы</div></div></div>
+  </div>
+</div>
+<div id="dfooter"><footer>
+  <div id="dc_footer">
+    <l1 id="1" id="df_teohim"></l1>
+    <div id="df_tels">
+<?php if ($cookie_utm=='UTM') { ?>
+Купить материалы:<div class="px0"></div><span><a class="consult" href="tel:+74952212252" style="color:#ffffff">+7 495 221 2252</a></span>
+      <div id="pxf1"></div>Заказать выполнение работ:<div class="px0"></div><span><a class="consult" href="tel:+74955184378" style="color:#ffffff">+7 495 518 4378</a></span>
+<?php } else { ?>
+Многоканальный тел. в Москве:<div class="px0"></div><span><a class="consult" href="tel:+74952212252" style="color:#ffffff">+7 495 221 2252</a></span>
+      <div id="pxf1"></div>Звонок по России бесплатный:<div class="px0"></div><span style="font-size:24px"><a class="consult" href="tel:88001005010" style="color:#ffffff">8 800 100 50 10</a></span>
+<?php } ?>
+      <div class="px0"></div>пн-пт<div class="fright" style="margin:0 8px 0 0">9:00-18:00</div>
+    </div>
+    <div id="df_address">ООО «ТэоХим», 107023, г. Москва, ул. Суворовская д.10, оф.15.</div>
+    <ul id="df_menu_first">
+      <li><l1 id="10">ПРАЙС-лист</l1></li>
+      <li><l1 id="23">Калькулятор</l1></li>
+      <li><l1 id="25">Помощник выбора</l1></li>
+      <li><l0 id="221">Заказ</l0></li>
+    </ul>
+    <ul id="df_menu_second">
+      <li><l1 id="21">Промышленные полы</l1></li>
+      <li><l1 id="2">Наливные полы</l1></li>
+      <li><l1 id="3">Полимерные полы</l1></li>
+      <li><l1 id="5">Антистатические полы</l1></li>
+      <li><l1 id="4">Бетонные полы</l1></li>
+      <li><l1 id="153">Полимерцементные полы</l1></li>
+      <li><l1 id="152">Добавки для бетона</l1></li>
+    </ul>
+    <!--noindex-->
+    <!--div id="df_pred"><span>Ищем представителей в городах:</span><br>Астрахань, Курган, Пермь.<br>Звоните <a class="consult" href="tel:88001005010" style="color:#ffffff">8-800-100-50-10</a>, Дмитрий.</div-->
+    <l1 id="31" id="df_copyright">© ООО «ТэоХим» 2003-2025<br>ВСЕ ПРАВА ЗАЩИЩЕНЫ</l1>
+    <!--/noindex-->
+    <div id="df_menu">
+      <l0 id="201"<?php if ($pb_page==201) print $st_current; ?>>О компании</l0>
+      <l4 id="28"<?php if ($pb_page>4000 && $pb_page<4500) print $st_current; ?>>Новости</l4>
+      <l1 id="16"<?php if ($pb_page==1016 || ($pb_page>3500 && $pb_page<4000)) print $st_current; ?>>Фото</l1>
+      <l1 id="20"<?php if ($pb_page==1020) print $st_current; ?>>Видео</l1>
+      <l1 id="15"<?php if ($pb_page==1015 || ($pb_page>3350 && $pb_page<3501)) print $st_current; ?>>Отзывы</l1>
+      <l1 id="18"<?php if ($pb_page==1018 || ($pb_page>2500 && $pb_page<2700)) print $st_current; ?>>Инструкции</l1>
+      <l1 id="14"<?php if ($pb_page==1014 || ($pb_page>3150 && $pb_page<3351)) print $st_current; ?>>Сертификаты</l1>
+      <l1 id="19"<?php if ($pb_page==1019 || ($pb_page>4500 && $pb_page<5000)) print $st_current; ?>>Статьи</l1>
+      <l0 id="210">Представительства</l0>
+      <l0 id="202"<?php if ($pb_page>201 && $pb_page<207) print $st_current; ?>>Контакты</l0>
+    </div>
+    <l0 id="230" id="df_privpol">Политика конфиденциальности</l0>
+    <?php if($pb_page==1001) { ?><a id="df_designed" href="https://www.glazov.me/" style="top:125px;right:20px" target="_blank">Дизайн сайта: www.glazov.me</a><?php } ?>
+  </div>
+</footer></div>
+<div id="mfooter">
+  <div id="m_teohim"></div>
+</div>

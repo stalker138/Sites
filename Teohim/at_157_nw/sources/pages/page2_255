@@ -1,0 +1,143 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_132*}
+.dtmp1 { clear:both; display:none; } @media screen and (max-width:550px) { .dtmp1 { display:block; } }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*text0_1*}
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*block2_255*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}
+
+function f_r(s) { return s.toFixed(2).replace(/\./g,","); }
+function f_i_t(id) {
+var pi_pp,pi_ps,pi_so,pi_st,pi_cz,pi_cc,pi_cp,pi_cs,pi_ceb,pi_cv,pi_cebk,pi_rebk,pi_cepu,pi_plot;
+var po_ob,po_vb,po_vz,po_ozl,po_ozm,po_kz;
+var po_cc100,po_cc1,po_cok,po_csum,po_pc100,po_pc1,po_pok,po_psum,po_sc100,po_sc1,po_sok,po_ssum,po_ceb,po_cebk,po_cepu,po_ec100,po_ec1,po_eok,po_esum,po_vc100,po_vc1,po_vok,po_vsum;
+var po_ic,po_ic100,po_ic1,po_iok,po_isum;
+var po_sb2,po_sb3,po_kebk,po_sebk,po_repu,po_kepu,po_sepu,po_iepu;
+var po_cc13,po_pc13,po_sc13,po_ec13,po_vc13,po_ic13; /* Кг на м3 */
+var n,n1,n2,n3,n4,n5,n6,n7,n11,n12,n13,n14,n15,n16,n17;
+
+pi_pp=parseFloat($.id('i_pp').value.replace(/,/g,"."));
+pi_so=parseFloat($.id('i_so').value.replace(/,/g,"."));
+pi_st=parseFloat($.id('i_st').value.replace(/,/g,"."));
+pi_cz=parseFloat($.id('i_cz').value.replace(/,/g,"."));
+
+pi_cc=parseFloat($.id('i_cc').value.replace(/,/g,"."));
+pi_cp=parseFloat($.id('i_cp').value.replace(/,/g,"."));
+pi_cv=parseFloat($.id('i_cv').value.replace(/,/g,"."));
+
+pi_rebk=parseFloat($.id('i_rebk').value.replace(/,/g,"."));
+
+po_ceb=$.id('o_ceb'); po_cebk=$.id('o_cebk'); po_cepu=$.id('o_cepu');
+
+pi_plot=2;
+
+po_ob=$.id('o_ob'); po_vb=$.id('o_vb'); po_vz=$.id('o_vz'); po_ozl=$.id('o_ozl'); po_ozm=$.id('o_ozm'); po_kz=$.id('o_kz');
+
+po_cc100=$.id('o_cc100'); po_cc1=$.id('o_cc1'); po_cc13=$.id('o_cc13'); po_cok=$.id('o_cok'); po_csum=$.id('o_csum');
+po_pc100=$.id('o_pc100'); po_pc1=$.id('o_pc1'); po_pc13=$.id('o_pc13'); po_pok=$.id('o_pok'); po_psum=$.id('o_psum');
+po_ec100=$.id('o_ec100'); po_ec1=$.id('o_ec1'); po_ec13=$.id('o_ec13'); po_eok=$.id('o_eok'); po_esum=$.id('o_esum');
+po_vc100=$.id('o_vc100'); po_vc1=$.id('o_vc1'); po_vc13=$.id('o_vc13'); po_vok=$.id('o_vok'); po_vsum=$.id('o_vsum');
+po_ic=$.id('o_ic'); po_ic100=$.id('o_ic100'); po_ic1=$.id('o_ic1'); po_ic13=$.id('o_ic13'); po_iok=$.id('o_iok'); po_isum=$.id('o_isum');
+
+po_sb2=$.id('o_sb2');
+po_sb3=$.id('o_sb3');
+po_kebk=$.id('o_kebk');
+po_sebk=$.id('o_sebk');
+po_repu=$.id('o_repu');
+po_kepu=$.id('o_kepu');
+po_sepu=$.id('o_sepu');
+po_iepu=$.id('o_iepu');
+
+switch (pi_pp) {
+    case    1.35: n1=150;
+        break;
+    case    1.40: n1=160;
+        break;
+    case    1.45: n1=170;
+        break;
+    case    1.50: n1=185;
+        break;
+    case    1.55: n1=200;
+        break;
+    case    1.60: n1=215;
+        break;
+    case    1.65: n1=230;
+        break;
+    case    1.70: n1=240;
+}
+
+n=pi_so*pi_st/1000; po_ob.innerHTML=f_r(n);
+n=pi_plot*n*1000; po_vb.innerHTML=parseInt(n); po_iok.innerHTML=f_r(n); /* n - вес бетона в кг. */
+
+po_pc100.innerHTML=f_r(n1);
+n3=(n1/100)*pi_cz; po_pc1.innerHTML=f_r(n3);
+n5=(25/100)*pi_cz; po_ec1.innerHTML=f_r(n5);
+po_vc1.innerHTML=f_r((25/100)*pi_cz);
+po_ic100.innerHTML=f_r(155+n1);
+po_ic1.innerHTML=f_r(pi_cz+n3+n5+(25/100)*pi_cz);
+po_vz.innerHTML=f_r(pi_cz+n3+n5+(25/100)*pi_cz);
+n15=((pi_cz+n3+n5+(25/100)*pi_cz)/pi_plot)/1000;
+po_ozm.innerHTML=n15.toFixed(3).replace(/\./g,",");
+po_kz.innerHTML=f_r(n/(pi_cz+n3+n5+(25/100)*pi_cz));
+
+n11=100/(155+n1)*n; n12=n1/(155+n1)*n;
+n14=25/(155+n1)*n; n16=25/(155+n1)*n;
+
+n6=pi_rebk*pi_so; po_kebk.innerHTML=f_r(n6);
+n7=0.15*pi_so; po_kepu.innerHTML=f_r(n7);
+n14=n14+n6+n7;
+
+pi_ceb=<?php print (int)$mtr[251][8]; ?>; pi_cebk=<?php print (int)$mtr[257][8]; ?>; pi_cepu=<?php print (int)$mtr[85][8]; ?>;
+if (n14<10000) { pi_ceb=<?php print (int)$mtr[251][7]; ?>; pi_cebk=<?php print (int)$mtr[257][7]; ?>; pi_cepu=<?php print (int)$mtr[85][7]; ?>; }
+if (n14<3000) { pi_ceb=<?php print (int)$mtr[251][6]; ?>; pi_cebk=<?php print (int)$mtr[257][6]; ?>; pi_cepu=<?php print (int)$mtr[85][6]; ?>; }
+if (n14<1000) { pi_ceb=<?php print (int)$mtr[251][5]; ?>; pi_cebk=<?php print (int)$mtr[257][5]; ?>; pi_cepu=<?php print (int)$mtr[85][5]; ?>; }
+if (n14<500) { pi_ceb=<?php print (int)$mtr[251][4]; ?>; pi_cebk=<?php print (int)$mtr[257][4]; ?>; pi_cepu=<?php print (int)$mtr[85][4]; ?>; }
+if (n14<200) { pi_ceb=<?php print (int)$mtr[251][3]; ?>; pi_cebk=<?php print (int)$mtr[257][3]; ?>; pi_cepu=<?php print (int)$mtr[85][3]; ?>; }
+po_ceb.innerHTML=f_r(pi_ceb); po_cebk.innerHTML=f_r(pi_cebk); po_cepu.innerHTML=f_r(pi_cepu);
+
+n17=n6*pi_cebk; po_sebk.innerHTML=f_r(n17);
+po_sepu.innerHTML=f_r(n7*pi_cepu); po_iepu.innerHTML=f_r(n7*pi_cepu+n17);
+po_cc1.innerHTML=f_r(pi_cz);
+
+po_cok.innerHTML=f_r(n11); po_csum.innerHTML=f_r(n11*pi_cc);
+po_pok.innerHTML=f_r(n12); po_psum.innerHTML=f_r(n12*pi_cp);
+po_eok.innerHTML=f_r((n14-n6-n7)); po_esum.innerHTML=f_r((n14-n6-n7)*pi_ceb);
+po_vok.innerHTML=f_r(n16); po_vsum.innerHTML=f_r(n16*pi_cv);
+po_isum.innerHTML=f_r(n11*pi_cc+n12*pi_cp+(n14-n6-n7)*pi_ceb+n14*pi_cv);
+n15=(pi_cc*100+pi_cp*n1+pi_ceb*25+pi_cv*25)/(155+n1);
+po_ic.innerHTML=f_r(n15);
+po_sb2.innerHTML=f_r(n15*pi_plot*pi_st);
+po_sb3.innerHTML=f_r(n15*pi_plot*1000);
+
+n11=parseInt(po_cc100.innerHTML,10)*pi_plot/(155+n1)*1000;
+n12=n1*pi_plot/(155+n1)*1000;
+n13=25*pi_plot/(155+n1)*1000;
+n14=25*pi_plot/(155+n1)*1000;
+
+po_cc13.innerHTML=f_r(n11);
+po_pc13.innerHTML=f_r(n12);
+po_ec13.innerHTML=f_r(n13);
+po_vc13.innerHTML=f_r(n14);
+
+po_ic13.innerHTML=f_r(n11+n12+n13+n14);
+
+}
+
+function f_set() {
+  $.id('i_so').value='750';
+  $.id('i_st').value='10';
+  $.id('o_ec100').innerHTML=f_r(25);
+  $.id('o_vc100').innerHTML=f_r(25);
+  $.id('o_repu').innerHTML=f_r(0.25);
+  $.id('i_rebk').value='0.35';
+  f_i_t();
+}
+
+{*text0_55*}
+{*tpl20*}</body></html>{*tpl21*}

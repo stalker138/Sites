@@ -1,0 +1,12 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#banner_video { height:60px; border:none; background:none; box-shadow:none; } #banner_video img { top:15px; }
+.poly3dpage img { float:left; width:300px; } .poly3dpage p { float: left; margin:17px 0 0 0; max-width:460px; font-size:16px; text-align:left; } .poly3dpage p span { font-size: 17px; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*block1_54*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

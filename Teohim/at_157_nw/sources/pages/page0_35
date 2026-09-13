@@ -1,0 +1,35 @@
+<?php
+/* page0_35 /inc/dwnl.php - Загрузка любых файлов с сервера (после авторизации как представителя) */
+$o_inc='adm'; include $_SERVER["DOCUMENT_ROOT"].'/setpred01/cnfg.php';
+$nfile=(int)$_GET['nfile']; $file=false;
+if (!$nfile) { header("HTTP/1.1 204 No Content"); exit; }
+if ($nfile>1000 && $nfile<2000 && $f==0) { header("HTTP/1.1 204 No Content"); exit; }
+// Лог загрузок
+$t=$_SERVER['REMOTE_ADDR'];
+if ($t!='{*text5_29*}') {
+$h=@fopen($_SERVER["DOCUMENT_ROOT"].'/downloads/log_of_download_files','a+'); if ($h) {
+    $t=''.date("d-m-Y - H:i:s").chr(9).$t.chr(9).chr(9).'ID представителя: '.$f.chr(9).chr(9).$_SERVER['REQUEST_URI'].chr(9).chr(9).$_SERVER['HTTP_USER_AGENT'].chr(9).$_SERVER['HTTP_REFERER'];
+    $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
+    @fwrite($h,$t); @fclose($h);
+}
+}
+$list=@file_get_contents($_SERVER["DOCUMENT_ROOT"].'/downloads/list.php');
+if (!$list) { header("HTTP/1.1 204 No Content"); exit; }
+if ($nfile>1000 && $nfile<2000) $file=$_SERVER["DOCUMENT_ROOT"].'/downloads/kp/'.$nfile;
+$pos1=strpos($list, chr(10).$nfile.chr(9));
+if (!$pos1) { header("HTTP/1.1 204 No Content"); exit; }
+$pos2=strpos($list, chr(10), $pos1+1);
+if (!$pos2) { header("HTTP/1.1 204 No Content"); exit; }
+$arr=explode(chr(9),substr($list, $pos1+1, $pos2-$pos1-1));
+if ($file && file_exists($file)) {
+    header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+    header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+    header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache"); // HTTP/1.0
+    header('Accept-Ranges: bytes');
+    header('Content-Disposition: attachment; filename="'.$arr[2].'"');
+    header('Content-Type: '.$arr[1].'; name="'.$arr[2].'"');
+    readfile($file); exit;
+} else { header("HTTP/1.1 204 No Content"); exit; }
+?>

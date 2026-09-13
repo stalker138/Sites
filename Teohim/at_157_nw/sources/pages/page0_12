@@ -1,0 +1,25 @@
+    <div class="px10b"></div></section>
+  </div>
+  <div id="mtblock">
+    <l1 id="1" id="mtlogo"></l1>
+    <div id="mtpanel"><table class="mtlink"><tbody><tr>
+      <th onclick="location.href='/price/'" style="border-right:solid 1px #000000;">ЦЕНЫ<br>материалы</th><th onclick="location.href='/polymer/cena/'" style="border-right:solid 1px #000000;">КАЛЬКУЛЯТОР<br>полов</th>
+    </tr></tbody></table></div>
+  </div>
+  <div id="mlblock">
+    <div id="mlmenu">
+      <?php include_once $pb_root.'inc/mmenu'.(($pb_page>230 && $pb_page<250) ? '_p' : '').'.php'; // page0_22 / page0_18 - MOBILE Multi Level Menu ?>
+      <?php if ($pb_page!=250) { ?>
+        <div class="px5"></div>
+        <l0 id="250" class="color_table_link_img" title="Таблица цветов"><div class="color_table_link_text">Таблица<br>цветов</div></l0>
+<!--        <l0 id="250" class="color_table_link_text" style="float:left;">Таблица цветов</l0>-->
+      <?php } ?>
+      <div class="px5"></div>
+      <div class="search_text">Поиск по сайту</div>{*text0_15*}
+    </div>
+    <div id="ltblock"><div id="melakor"><div id="mlogod">промышленные полы</div></div></div>
+  </div>
+</div>
+<div id="mfooter">
+  <div id="m_teohim"></div>
+</div>

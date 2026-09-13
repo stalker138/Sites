@@ -1,0 +1,11 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_74*}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body onload="fTssImgFull({target:{src:($.qS('.pb_gal_item img').src)}})">
+{*tpl39*}
+{*tpl44*}
+{*block5_425*}
+{*tpl40*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

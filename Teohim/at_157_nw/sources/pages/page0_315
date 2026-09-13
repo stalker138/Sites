@@ -1,0 +1,20 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text5_32*}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*text5_31*}
+<img class="pb_ismall" src="/img/qr/qr4-3.png" style="width:250px;height:auto" onclick="$.zoomImg(this,'/img/qr/qr4-3.png',200,25,821,589,'Элакор-ЭД Эмаль-2К',-25,1,0,1);" title="Элакор-ЭД Эмаль-2К" alt="Элакор-ЭД Эмаль-2К"/>
+{*text5_33*}
+<div class="fleft mr20">
+<?php
+print '<p>- Элакор-ЭД <a href="https://teohim.ru/instructions/elakor-ed-emal-2k-100.pdf?'.filemtime($pb_root.'instructions/elakor-ed-emal-2k-100.pdf').'" target="_blank"><span class="fs16">Эмаль 2К/100</span></a></p>';
+print '<p>- Элакор-ЭД <a href="https://teohim.ru/instructions/elakor-ed-emal-2k-80-ast.pdf?'.filemtime($pb_root.'instructions/elakor-ed-emal-2k-80-ast.pdf').'" target="_blank"><span class="fs16">Эмаль-2К/80 АСТ</span></a></p>';
+?>
+</div>
+<div class="px10"></div>
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

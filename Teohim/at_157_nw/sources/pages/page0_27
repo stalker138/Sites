@@ -1,0 +1,346 @@
+<div id="id_calcBody">
+<table class="table2"><tbody>
+<tr><td class="thead" colspan="7" style="font-size:13px">2. Стоимость Материалов <span style="font-weight:normal">(с НДС)</span><div class="fright mr5 fwn fs11 lh15">Количество материалов округлено до тарного места</div></td></tr>
+<tr style="height:35px;">
+<th<?php if($pb_page==2214) print ' style="width:155px"'; ?>><span>Операция</span></th>
+<th><span>Материал</span></th>
+<th<?php if($pb_page==2214) print ''/*' style="width:50px"'*/; ?>><span>Расход</span><br>кг/м2</th>
+<th<?php if($pb_page==2214) print ''/*' ' style="width:56px"'*/; ?>><span>Цена</span>,<br>руб/кг</th>
+<th style="width:68px"><span>Кол-во</span><br>кг</th>
+<th style="width:<?php print ($pb_page==2214) ? '55px' : '55px';?>;padding:0 1px;"><span>Цена за м2</span>, руб</th>
+<th style="width:<?php print ($pb_page==2214) ? '100px' : '100px';?>;padding:0 1px;"><span>На всю площадь</span><br>стоимость, руб</th>
+</tr>
+<?php if ($gr) { ?>
+<tr>
+<td class="tdleft" style="max-width:155px;"><div><?php print $sgr[0] ?></div></td>
+<td class="tdmat"><?php print $sgr[1] ?></td>
+<td class="o_tr50" id="o_rgr">0,80</td>
+<td class="o_tr" id="o_cgr">100,00</td>
+<td class="o_t" id="o_kgr" style="width:70px;">800,00</td>
+<td class="o_t" id="o_mgr" style="width:55px;">144,00</td>
+<td style="width:100px" class="o_t100" id="o_sgr">144000,00</td>
+</tr>
+<?php } if (!$fs and !$sh and !$np and !$fl) { ?>
+<tr>
+<th colspan="2" class="o_tb13" style="width:420px">Итого:</th>
+<th colspan="2" id="o_icena">&nbsp;</th>
+<th class="o_tb13" id="o_ikol" style="width:70px;font-size:12px">800,00</th>
+<th class="o_tb13" id="o_icena_" style="width:55px;font-size:12px">144,00</th>
+<th class="o_tb13" style="width:100px;" id="o_ist">144000,00</th>
+</tr>
+</tbody></table>
+<?php } else { // БЛОК РАСЧЁТОВ БОЛЕЕ 1 СТРОКИ ?>
+<?php if ($sh || (!$np && $fl==-1)) { ?>
+</tbody></table>
+<?php } ?>
+
+<?php if ($sh) { ?>
+<div id="dscr">
+<table class="table2"><tbody>
+<tr>
+<td class="tdleft" style="max-width:155px;" rowspan="2"><div><?php print $ssh[0] ?></div></td>
+<td class="tdmat"><?php print $ssh[1] ?></td>
+<td class="o_tr50" id="o_rsh">0,00</td>
+<td class="o_tr" id="o_csh">182,00</td>
+<td class="o_t" id="o_ksh" style="width:70px;">0,00</td>
+<td class="o_t" id="o_msh" style="width:55px;">0,00</td>
+<td class="o_t100" id="o_ssh" style="width:100px">0,00</td>
+</tr>
+<tr>
+<td class="tdmat">Кварц окатанный 0,1-0,4мм</td>
+<td class="o_tr50" id="o_rsk">0,00</td>
+<td class="o_tr" id="o_csk">8,00</td>
+<td class="o_t" id="o_ksk" style="width:70px;">0,00</td>
+<td class="o_t" id="o_msk" style="width:55px;">0,00</td>
+<td class="o_t100" id="o_ssk" style="width:100px;">0,00</td>
+</tr>
+</tbody></table>
+</div><div class="pb_hidden"></div>
+<?php } ?>
+
+<?php if ($np) { ?>
+
+<?php if ($pb_page==2221 || $pb_page==2229 || $pb_page==5004) { ?>
+</tbody></table>
+<div id="dscr2">
+<table class="table2"><tbody>
+<tr id="id_tr_51_kp1">
+<td class="tdleft" style="max-width:155px" rowspan="3"><div><?php print $snp[0]; ?></div></td>
+<td class="tdmat"><?php print 'Кварц окатанный 0,1-0,4мм'; ?></td>
+<td class="o_tr50" id="o_rnk"></td>
+<td class="o_tr" id="o_cnk"></td>
+<td class="o_t" id="o_knk" style="width:70px;"></td>
+<td class="o_t" id="o_mnk" style="width:55px;"></td>
+<td class="o_t100" id="o_snk" style="width:100px"></td>
+</tr>
+<?php if (1==2) { ?>
+<tr id="id_tr_51_kp2">
+<td class="tdmat"><?php print 'Элакор-ЭД Налив.пол Промышленный'; ?></td>
+<td class="o_tr50" id="o_rnp"></td>
+<td class="o_tr" id="o_cnp"></td>
+<td class="o_t" id="o_knp" style="width:70px;"></td>
+<td class="o_t" id="o_mnp" style="width:55px;"></td>
+<td class="o_t100" id="o_snp" style="width:100px"></td>
+</tr>
+<tr id="id_tr_51_kp3">
+<td class="tdmat"><?php print 'Кварц окатанный 0,3-0,6мм'; ?></td>
+<td class="o_tr50" id="o_rnk2"></td>
+<td class="o_tr" id="o_cnk2"></td>
+<td class="o_t" id="o_knk2" style="width:70px;"></td>
+<td class="o_t" id="o_mnk2" style="width:55px;"></td>
+<td class="o_t100" id="o_snk2" style="width:100px"></td>
+</tr>
+<tr>
+<td class="tdleft" style="max-width:155px"><div>Запаковка</div></td>
+<td class="tdmat"><?php print 'Элакор-ЭД Налив.пол Промышленный'; ?></td>
+<td class="o_tr50" id="o_rnpz"></td>
+<td class="o_tr" id="o_cnpz"></td>
+<td class="o_t" id="o_knpz" style="width:70px;"></td>
+<td class="o_t" id="o_mnpz" style="width:55px;"></td>
+<td class="o_t100" id="o_snpz" style="width:100px"></td>
+</tr>
+<?php } ?>
+</tbody></table>
+</div>
+<table class="table2" style="margin-top:-1px"><tbody>
+<?php } else { ?>
+
+<?php if ($sh) { ?><table class="table2"><tbody><?php } ?>
+<?php if ($pb_page==2222 || $pb_page==2228) { ?>
+<tr>
+<td class="tdleft" id="id_td_gk" style="max-width:155px;" rowspan="3"><div><?php print $snp[0]; ?></div></td>
+<td class="tdmat"><?php print $snp[1] ?></td>
+<td class="o_tr50" id="o_rnp">0,00</td>
+<td class="o_tr" id="o_cnp">0,00</td>
+<td class="o_t" id="o_knp" style="width:70px;">0,00</td>
+<td class="o_t" id="o_mnp" style="width:55px;">0,00</td>
+<td style="width:100px" class="o_t100" id="o_snp">0,00</td>
+</tr>
+<tr id="id_tr_2222k">
+<td class="tdmat" id="o_nnk"><?php print 'Кварц окатанный 0,1-0,4мм'; ?></td>
+<td class="o_tr50" id="o_rnk">0,00</td>
+<td class="o_tr" id="o_cnk">0,00</td>
+<td class="o_t" id="o_knk" style="width:70px;">0,00</td>
+<td class="o_t" id="o_mnk" style="width:55px;">0,00</td>
+<td class="o_t100" id="o_snk" style="width:100px">0,00</td>
+</tr>
+<tr id="id_tr_2222k2">
+<td class="tdmat" id="o_nnk2"><?php print 'Кварц окатанный 0,3-0,6мм'; ?></td>
+<td class="o_tr50" id="o_rnk2">0,00</td>
+<td class="o_tr" id="o_cnk2">0,00</td>
+<td class="o_t" id="o_knk2" style="width:70px;">0,00</td>
+<td class="o_t" id="o_mnk2" style="width:55px;">0,00</td>
+<td class="o_t100" id="o_snk2" style="width:100px">0,00</td>
+</tr>
+<tr id="id_tr_2222z">
+<td class="tdleft" style="max-width:155px"><div>Запаковка</div></td>
+<td class="tdmat"><?php print 'Элакор-ПУ Налив.пол Промышленный'; ?></td>
+<td class="o_tr50" id="o_rnpz"></td>
+<td class="o_tr" id="o_cnpz"></td>
+<td class="o_t" id="o_knpz" style="width:70px;"></td>
+<td class="o_t" id="o_mnpz" style="width:55px;"></td>
+<td class="o_t100" id="o_snpz" style="width:100px"></td>
+</tr>
+<?php } else { ?>
+<tr>
+<td class="tdleft" id="id_td_gk" style="max-width:155px;" <?php if (count($snp)==3) { if($pb_page==2223 || $pb_page==2230 || $pb_page==2231 || $pb_page==2232) print 'rowspan="'.(($pb_page==2231)?'4':'3').'"'; else print 'rowspan="'.(($pb_page==2231)?'3':'2').'"'; } ?>><div><?php print $snp[0]; ?></div></td>
+<td class="tdmat"><?php print $snp[1] ?></td>
+<td class="o_tr50" id="o_rnp">0,40</td>
+<td class="o_tr" id="o_cnp">196,00</td>
+<td class="o_t" id="o_knp" style="width:70px;">400,00</td>
+<td class="o_t" id="o_mnp" style="width:55px;">78,40</td>
+<td style="width:100px" class="o_t100" id="o_snp">78400,00</td>
+</tr>
+<?php if ($pb_page==2223) { ?><tr>
+<td class="tdmat">Разбавитель К</td>
+<td class="o_tr50" id="o_rgk">0,04</td>
+<td class="o_tr" id="o_cgk">100,00</td>
+<td class="o_t" id="o_kgk" style="width:70px;">800,00</td>
+<td class="o_t" id="o_mgk" style="width:55px;">144,00</td>
+<td style="width:100px" class="o_t100" id="o_sgk">144000,00</td>
+</tr>
+<?php } if (count($snp)==3 && ($pb_page==2230 || $pb_page==2231 || $pb_page==2232)) {
+if ($pb_page==2231) { ?><tr id="id_tr_2231">
+<td class="tdmat">Разбавитель К</td>
+<td class="o_tr50" id="o_rgk">0,04</td>
+<td class="o_tr" id="o_cgk">100,00</td>
+<td class="o_t" id="o_kgk" style="width:70px;">800,00</td>
+<td class="o_t" id="o_mgk" style="width:55px;">144,00</td>
+<td style="width:100px" class="o_t100" id="o_sgk">144000,00</td>
+</tr>
+<?php } ?>
+<tr id="id_tr_gk2" class="bg3">
+<td class="tdmat"><?php print 'Кварц окатанный 0,1-0,4мм'; ?></td>
+<td class="o_tr50" id="o_rsk">0,6</td>
+<td class="o_tr" id="o_csk">8,00</td>
+<td class="o_t" id="o_ksk" style="width:70px;">0,00</td>
+<td class="o_t" id="o_msk" style="width:55px;">0,00</td>
+<td class="o_t100" id="o_ssk" style="width:100px;">0,00</td>
+</tr>
+<?php } if (count($snp)==3) { ?>
+<tr>
+<td class="tdmat" id="o_nnk"><?php print $snp[2]; ?></td>
+<td class="o_tr50" id="o_rnk">1,50</td>
+<td class="o_tr" id="o_cnk">10,00</td>
+<td class="o_t" id="o_knk" style="width:70px;">1500,00</td>
+<td class="o_t" id="o_mnk" style="width:55px;">15,00</td>
+<td class="o_t100" id="o_snk" style="width:100px">15000,00</td>
+</tr>
+<?php } ?>
+<?php } ?>
+<?php if ($sh /* && $pb_page!=2234 */ && $pb_page!=2206 && $pb_page!=2235 && $pb_page!=2238) { ?></tbody></table><?php } ?>
+
+<?php } /* if ($pb_page==2221 || $pb_page==2229 || $pb_page==5004) */ ?>
+
+<?php }
+if ($ml) { ?>
+<tr>
+<td class="tdleft" style="max-width:155px;"><div>Наклейка ленты</div></td>
+<td class="tdmat">Медная лента ( м.пог / м² )</td>
+<td class="o_tr50" id="o_rml">0,80</td>
+<td class="o_tr" id="o_cml">100,00</td>
+<td class="o_t" id="o_kml" style="width:70px;">800,00</td>
+<td class="o_t" id="o_mml" style="width:55px;">144,00</td>
+<td style="width:100px" class="o_t100" id="o_sml">144000,00</td>
+</tr>
+<?php } $tmpS = true; ?>
+
+<?php if ($ne || $fs || $fl>0 || $pb_page==2238) { ?>
+<?php if ($sh /* && $pb_page!=2234 */ && $pb_page!=2206 && $pb_page!=2235 && $pb_page!=2238) { ?><table class="table2"><tbody><?php } ?>
+<?php if ($fs) { ?>
+<tr>
+<td class="tdleft" style="max-width:155px;"<?php if (count($sfs)==3 && ($pb_page==2221 || $pb_page==2222 || $pb_page==2227 || $pb_page==2228 || $pb_page==2229 || $pb_page==2242 || $pb_page==5004 || $pb_page==5005)) print ' rowspan="2"'; ?>><div><?php print $sfs[0] ?></div></td>
+<td class="tdmat" id="o_pfs"><?php print $sfs[1] ?></td>
+<td class="o_tr50" id="o_rfs">0,35</td>
+<td class="o_tr" id="o_cfs">202,00</td>
+<td class="o_t" id="o_kfs" style="width:70px;">350,00</td>
+<td  class="o_t" id="o_mfs" style="width:55px;">70,70</td>
+<td class="o_t100" id="o_sfs" style="width:100px;">70700,00</td>
+</tr>
+<?php if (count($sfs)==3 && ($pb_page==2221 || $pb_page==2222 || $pb_page==2227 || $pb_page==2228 || $pb_page==2229 || $pb_page==2242 || $pb_page==5004 || $pb_page==5005)) { ?>
+<tr>
+<td class="tdmat"><?php print $sfs[2] ?></td>
+<td class="o_tr50" id="o_rsk">0,00</td>
+<td class="o_tr" id="o_csk">0,00</td>
+<td class="o_t" id="o_ksk" style="width:70px;">0,00</td>
+<td class="o_t" id="o_msk" style="width:55px;">0,00</td>
+<td class="o_t100" id="o_ssk" style="width:100px;">0,00</td>
+</tr>
+<?php }} if ($fl>0) { ?>
+<tr>
+<td class="tdleft" style="max-width:155px;"<?php print !empty($sfl2) ? ' rowspan="2"':''; ?>><div><?php print $sfl ?></div></td>
+<td id="o_nfl" class="tdmat"></td>
+<td class="o_tr50" id="o_rfl">0,35</td>
+<td class="o_tr" id="o_cfl">202,00</td>
+<td class="o_t" id="o_kfl" style="width:70px;">350,00</td>
+<td  class="o_t" id="o_mfl" style="width:55px;">70,70</td>
+<td class="o_t100" id="o_sfl" style="width:100px;">70700,00</td>
+</tr>
+<?php } if (!empty($sfl2)) { ?>
+<tr>
+<td class="tdmat" id="o_nfl2"><?php print $sfl2 ?></td>
+<td class="o_tr50" id="o_rfl2">0,45</td>
+<td class="o_tr" id="o_cfl2">0,00</td>
+<td class="o_t" id="o_kfl2" style="width:70px;">0,00</td>
+<td  class="o_t" id="o_mfl2" style="width:55px;">0,70</td>
+<td class="o_t100" id="o_sfl2" style="width:100px;">0,00</td>
+</tr>
+<?php } if (!$fl || $fl>0 || $pb_page==2238) { ?>
+<tr>
+<th colspan="2" class="o_tb13" style="width:420px">Итого:</th>
+<th colspan="2" id="o_icena">&nbsp;</th>
+<th class="o_tb13" id="o_ikol" style="width:70px;font-size:12px">&nbsp;</th>
+<th class="o_tb13" id="o_icena_" style="width:55px;font-size:12px">&nbsp;</th>
+<th class="o_tb13" style="width:100px;" id="o_ist">&nbsp;</th>
+</tr>
+<?php $tmpS = false; } ?>
+</tbody></table>
+<?php } ?>
+
+<?php if ($tmpS) { // КОНЕЧНЫЙ БЛОК ?>
+
+<?php if ($fl==-1) { ?>
+<div id="dscr">
+<table class="table2"><tbody>
+<tr>
+<td class="tdleft" style="max-width:155px;"><div>Финишный лак</div></td>
+<td id="o_nfl" class="tdmat"></td>
+<td class="o_tr50" id="o_rfl">0,00</td>
+<td class="o_tr" id="o_cfl">182,00</td>
+<td class="o_t" id="o_kfl" style="width:70px;">0,00</td>
+<td class="o_t" id="o_mfl" style="width:55px;">0,00</td>
+<td class="o_t100" id="o_sfl" style="width:100px">0,00</td>
+</tr>
+</tbody></table>
+</div><div class="pb_hidden"></div>
+<?php } ?>
+
+<?php if (($sh && $fl==-1) || ($fs && $fl==-1) || (!$fs && (!$fl || $fl>0))) { ?>
+<table class="table2"><tbody>
+<tr>
+<th class="o_tb13" style="width:420px">Итого:</th>
+<th id="o_icena">&nbsp;</th>
+<th class="o_tb13" id="o_ikol" style="width:70px;font-size:12px">&nbsp;</th>
+<th class="o_tb13" id="o_icena_" style="width:55px;font-size:12px">&nbsp;</th>
+<th class="o_tb13" style="width:100px;" id="o_ist">&nbsp;</th>
+</tr>
+</tbody></table>
+<?php } ?>
+
+<?php } // КОНЕЧНЫЙ БЛОК ?>
+
+<?php } // БЛОК РАСЧЁТОВ БОЛЕЕ 1 СТРОКИ ?>
+</div>
+<div class="px5"></div>
+<!--<p class="fleft fs11">Количество материалов округлено до тарного места.</p>-->
+<div class="fright mt7"><input type="button" value="&nbsp;&nbsp;КУПИТЬ рассчитанные Материалы&nbsp;&nbsp;" onclick="f_post(5);" style="cursor:pointer; height:25px; font-weight:bold; font-size:13px; letter-spacing:1px; color:#ff0000; text-shadow:2px 2px 2px #ffffff; box-shadow:3px 3px 7px 0 #999999;"/></div>
+<div class="px15"></div>
+
+<div id="table1" style="display:none;box-shadow:4px 4px 7px 0 #999999;">
+<table class="table3"><tbody>
+<tr><td class="thead thead3" style="cursor:pointer" onclick="showTable()">3. <span style="font-weight:bold;font-size:13px;text-decoration:underline;">ПОКАЗАТЬ стоимость Работы + Материалы</span></td></tr>
+</tbody></table>
+</div>
+
+<div id="table2">
+<div style="box-shadow:4px 4px 7px 0 #999999;"><table class="table3">
+<tbody>
+<tr><td class="thead" colspan="4">3. Стоимость Работы + Материалы <span style="font-weight:normal">(с НДС).</span> <span class="cf00">Расчёт только для Москвы и МО</span></td></tr>
+<tr style="height:35px;">
+<th style="width:224px;font-size:11px;"><span>Материалы, работы</span></th>
+<th style="font-size:11px;"><span>Цена за<br>м2</span>, руб</th>
+<th style="width:118px;"><span style="font-size:11px;">На всю площадь</span><br>стоимость, руб</th>
+<th style="font-size:11px;"><span>Примечания</span></th>
+</tr>
+<tr>
+<td style="padding-left:5px">Материалы (основные)</td>
+<td class="o_t" id="o_voc">144,00</td>
+<td class="o_t" id="o_vos">144000,00</td>
+<td style="padding-left:5px">То, что раcсчитано в таблице 2.</td>
+</tr>
+<tr>
+<td style="padding-left:5px">Прочие материалы, инструмент</td>
+<td class="o_t" id="o_vmc">38,00</td>
+<td class="o_t" id="o_vms">38000,00</td>
+<td style="padding-left:5px">Расходные: шлиф.сегменты, валики и т.д.</td>
+</tr>
+<tr>
+<td style="padding-left:5px">Работы</td>
+<td class="o_t" id="o_vrc">105,00</td>
+<td class="o_t" id="o_vrs">105000,00</td>
+<td style="padding-left:5px">С учетом шлифования-зачистки поверхности</td>
+</tr>
+<tr>
+<th class="o_tb13">Итого работы + материалы:</th>
+<th class="o_tb13" id="o_ic">287,00</th>
+<th class="o_tb13" id="o_is">287000,00</th>
+<th>&nbsp;</th>
+</tr>
+</tbody>
+</table></div>
+<div class="px5"></div>
+<div id="table2p" style="float:right;margin-top:10px;"><input type="button" value="&nbsp;&nbsp;ЗАКАЗАТЬ Работы + Материалы&nbsp;&nbsp;" onclick="f_post(6);" style="cursor:pointer; height:25px; font-weight:bold; font-size:13px; letter-spacing:1px; color:#ff0000; text-shadow:2px 2px 2px #ffffff; box-shadow:3px 3px 7px 0 #999999;"/></div>
+<!--noindex--><div class="fleft"><p><span>Более точный расчёт стоимости работ предоставляется после осмотра объекта</span>.</p>
+<p style="margin-top:3px">Транспортные и командировочные расходы НЕ включены.</p></div><!--/noindex-->
+</div>
+<div class="px5"></div>

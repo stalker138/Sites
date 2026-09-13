@@ -1,0 +1,14 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}<link rel="canonical" href="https://teohim.ru/contacts/offices/"/>{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<div id="main_p"><div class="px10"></div><div id="teohim_pl"></div><div id="teohim_pr"><p class="tac fwb fs14">ООО «ТэоХим»</p><p>Москва: <span>(495) 221-22-52</span><br>Россия: <span>8-800-100-50-10</span></p></div>
+<div id="link_p"><a href="javascript:void(window.print())">Печать</a></div><div class="px10b"></div><div class="px10"></div>
+<div id="dcontent" style="float:none; margin:0 auto; min-height:auto;">
+{*block0_203*}
+</div><div id="pb_page">195</div></div>
+{*tpl18*}
+<script type="text/javascript" charset="UTF-8" src="/cssjs/vcorp_js_0002.js"></script>
+<script type="text/javascript" charset="UTF-8" src="/cssjs/js_005.js"></script>
+</body></html>{*tpl21*}

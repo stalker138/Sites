@@ -1,0 +1,114 @@
+<?php
+/* page0_87 /setpred01/adm_obj_report.php */
+// header("HTTP/1.1 204 No Content"); exit;
+$o_inc='adm'; include "cnfg.php";
+if ($f!=1 || empty($_POST['filter'])) { header("HTTP/1.1 204 No Content"); exit; }
+
+// Лог операций админки объектов и фото
+$t=$_SERVER['REMOTE_ADDR'];
+if ($t!='{*text5_29*}') {
+$h=@fopen($_SERVER["DOCUMENT_ROOT"].'/setpred01/log_of_adm','a+'); if ($h) {
+    $t=''.date("d-m-Y - H:i:s").chr(9).$t.chr(9).chr(9).'ID представителя: '.$f.chr(9).chr(9).$_SERVER['REQUEST_URI'].chr(9).chr(9).$_SERVER['HTTP_USER_AGENT'].chr(9).$_SERVER['HTTP_REFERER'];
+    $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
+    @fwrite($h,$t); @fclose($h);
+}
+}
+$flt=explode(chr(9),$_POST['filter']);
+$s1=(int)$flt[1]; $s2=(int)$flt[2]; $y1=(int)$flt[3]; $y2=(int)$flt[4]; $ph=(int)$flt[7]; $t1=trim($flt[8]); $t2=trim($flt[9]); $t0=(int)$flt[10]; $t3=trim($flt[11]); $freg=(int)$flt[12]; $fpred=(int)$flt[13];
+$to=($flt[5]==='0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0')?0:1; $tp=($flt[6]==='0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0')?0:1;
+{*text1_9*}
+{*text1_10*}
+
+$file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objlist1';
+$txt=@file_get_contents($file_objList); $o=false;
+if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+$aObj=array(' ','Цех пром.','Цех пищ.','Тех.пом.','Склад','Хлд/Мрз','Гараж','А/сервис','А/мойка','Т/Р/В зал','Офис','Мед.','Жив-во','С/Х','Эл.ст,ТЭК','РосАтом','Жил.стр-во','Прочее','Спорт','Оборона','Обр.учр.','Кафе','Рез.','Трансп.','Откр.возд.');
+$aPkr=array(' ','Проп.ПУ','Проп.ЭД','Проп.Фл','Покр.ПУ','Покр.ЭД','Покр.Св','Покр.Асф','КНП ЭД','КНП ПУ','НП ЭД','НП ПУ','НП Пром ЭД','НП Аст ЭД','А/скольз.','Фрезер','Безыскр.','Стяжка-А','Стяжка-Б','Стяжка-В','Прочее','Покр.мет','Покр.ЭКО','Разметка','Комп.швы','3D','НП Пром ПУ','НП Аст ПУ','Бет.полы','ПЦ-покр','Покр.ЭДВ','НП ЭДВ');
+$aaObj=array(' ','Цех промышленный','Цех пищевой','Технические помещения','Склад','Холодильник / Морозильник','Гараж (паркинг)','Автосервис','Автомойка','Торг./Развлек./Выстав.зал','Офис','Медицинские Учреждения','Животноводство','Сельхоз. объекты','Электростанции, ТЭК','Объекты РосАтом','Жилищное строительство','ПРОЧЕЕ','Спортивные объекты','Объекты Минобороны','Образовательные учреждения','Кафе, рестораны, столовые','Резервуары','Транспортная инфраструктура','На открытом воздухе');
+$aaPkr=array(' ','Пропитка Полиуретановая','Пропитка Эпоксидная','Пропитка Флюат','Покрытие Полиуретановое','Покрытие Эпоксидное','Покрытие Светостойкое','Покрытие для Асфальта','С кварцем Эпоксидное','С кварцем Полиуретановое','Наливной пол Эпоксидный','Наливной пол Полиуретановый','Наливной пол Промышленный Эпоксидный','Наливной пол Антистатический Эпоксидный','Антискользящее покрытие','Фрезер-насечка','Безыскровое покрытие','Стяжка Эластобетон-А','Стяжка Эластобетон-Б','Стяжка Эластобетон-В','ПРОЧЕЕ','Покрытие по металлу','Покрытие Полиуретановое ЭКО','Разметка','Компенсационные швы','3D-полы','Наливной пол Промышленный Полиуретановый','Наливной пол Антистатический Полиуретановый','Бетонные полы','Полиуретан-цементное покрытие','Покрытие Эпоксидное Водное','Наливной пол Эпоксидный Водный');
+$avalObj=array(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,20,21,22,23,24,17);
+$avalPkr=array(0,1,2,3,4,5,30,6,7,9,8,11,10,31,26,12,27,13,29,14,15,16,28,17,18,19,21,22,23,24,25,20);
+$px10='<div class="px10"></div>'; $px10b='<div class="px10b"></div>';
+$out='<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>Представитель ООО «ТэоХим» - ООО «ТэоХим»</title><meta name="robots" content="noindex, nofollow"/><style>'.chr(10);
+$out.='* { margin:0; padding:0; font:inherit; font-family:inherit; color:inherit; outline:none 0px; } * sup, * sub { font-size:10px; }'.chr(10);
+$out.='span, strong, em { font-weight:bold; } strong { font-size:13px; } em { font-style:italic; }'.chr(10);
+$out.='html,body { width:100%; height:100%; background:#ffffff; } body { font:normal 12px arial; font-family:arial,helvetica,sans-serif; color:#000000; }'.chr(10);
+$out.='#main { position:relative; margin:0 auto; min-height:100%; }'.chr(10);
+$out.='.tbl1, .tbl1 th, .tbl1 td { margin:0; padding:0; border:1px solid #000000; border-collapse:collapse; } .tbl1 th, .tbl1 td { padding:2px 5px; }'.chr(10);
+$out.='.tdl { text-align:left; } .tdr { text-align:right; } .tdc { text-align:center; }'.chr(10);
+$out.='.px0,.px10,.px10b { position:relative; clear:both; width:100%; } .px0 { height:0px; } .px10,.px10b { height:10px; } .px10b { border-bottom:solid 1px #000000; }'.chr(10);
+$out.=''.chr(10);
+$out.='</style></head><body><div id="main">'.$px10.chr(10);
+$out.='<div>Дата и время отчёта: <span>'.date("d-m-Y H:i:s").'</span></div>'.$px10.chr(10);
+$out.='<div style="font-weight:bold">Параметры фильтрации:</div>'.$px10;
+$out.='<table class="tbl1"><tbody>';
+if ($ph>0) $out.='<tr><td colspan="3">Только объекты с ФОТО</td></tr>';
+$out.='<tr><td>Представитель</td><td colspan="2">'.($fpred==0?'все представители':($tPreds[$fpred][0].' '.$tPreds[$fpred][1])).'</td></tr>';
+$out.='<tr><td>Регион</td><td colspan="2">'.($freg==0?'все регионы':($aRegs[$freg][0].' '.$aRegs[$freg][1])).'</td></tr>';
+$out.='<tr><td>Площадь</td><td>с '.$s1.'</td><td>по '.$s2.'</td></tr>';
+$out.='<tr><td>Год</td><td>с '.$y1.'</td><td>по '.$y2.'</td></tr>';
+$out.='</tbody></table>'.$px10;
+if ($t1>'' || $t2>'') {
+  if (!$t1 || !$t2) $out.='<div>Текст для поиска: <span style="color:#005093">'.(!$t1?$t2:$t1).'</span></div>';
+  else $out.='<div>Текст для поиска 1: <span style="color:#005093">'.$t1.'</span><br>Текст для поиска 2: <span style="color:#005093">'.$t2.'</span><br>Искать как <span>'.($t0==1?'1 и 2':'1 или 2').'</span></div>';
+}
+if ($t3>'') $out.=$px10.'<div>Текст для исключения из поиска: <span style="color:red">'.$t3.'</span></div>';
+$out.=$px10;
+if ($to==1 || $tp==1) {
+  $out.='<table class="tbl1"><tbody>';
+  $out.='<tr><th>Типы Объектов</th><th>Типы Покрытий</th></tr>';
+  $f5=explode(',',$flt[5]); $f6=explode(',',$flt[6]); $af5=false; $af5[]=''; $af6=false; $af6[]='';
+  for ($i=1; $i<25; $i++) { if($f5[$avalObj[$i]]=='1') $af5[]=$aaObj[$avalObj[$i]]; }
+  for ($i=1; $i<32; $i++) { if($f6[$avalPkr[$i]]=='1') $af6[]=$aaPkr[$avalPkr[$i]]; }
+  $cnt1 = count($af5); $cnt2=count($af6);
+  $cnt = $cnt1>$cnt2 ? $cnt1 : $cnt2;
+  for ($i=1; $i<$cnt; $i++) {
+    $out.='<tr><td>'.($i<$cnt1?$af5[$i]:'&nbsp;').'</td><td>'.($i<$cnt2?$af6[$i]:'&nbsp;').'</td></tr>';
+  }
+$out.='</tbody></table>';
+}
+$out.=$px10b.$px10;
+$out.='<div style="font-weight:bold">Список отфильтрованных объектов:</div>'.$px10;
+$out.='<table class="tbl1"><tbody><tr><th>№</th><th>Наименование объекта</th><th>Город</th><th>Типы Объектов</th><th>Типы Покрытий</th><th>S м<sup>2</sup></th><th>Год</th><th>Код О</th><th>КодР</th><th>Регион</th><th>Представитеь (Код)</th><th>Адрес объекта</th><th>Описание объекта</th></tr>'.chr(10);
+$txt=explode(chr(10),$txt); $cnt=count($txt)-1; $nn=1;
+for ($i=1; $i<$cnt; $i++) {
+  $s=explode(chr(9),$txt[$i]); $fto=0; $ftp=0;
+  $ss=(int)$s[4]; $yy=(int)$s[5]; $pp=((int)$s[10]==0)?0:1; $sn=(int)$s[0];
+  if ($ss>=$s1 && $ss<=$s2 && $yy>=$y1 && $yy<=$y2 && ($ph==0 || $pp==$ph) && ($freg==0 || $freg==$s[14]) && ($fpred==0 || $fpred==$s[0])) {
+    if ($to==1) {
+        $f5=explode(',',$flt[5]); $s5=','.$s[2].',';
+        for ($j=1; $j<25; $j++) {
+            if ($f5[$j]=='1' && strpos($s5,(','.$j.','))!==false) { $fto=1; $j=25; }
+        }
+    }
+    if ($tp==1) {
+        $f6=explode(',',$flt[6]); $s6=','.$s[3].',';
+        for ($j=1; $j<32; $j++) {
+            if ($f6[$j]=='1' && strpos($s6,(','.$j.','))!==false) { $ftp=1; $j=32; }
+        }
+    }
+    if (($to==0 || $fto==1) && ($tp==0 || $ftp==1)) {
+      $sea1 = ($t1 && mb_stripos($txt[$i],$t1,0,'UTF-8')!==false) ? 1 : 0;
+      $sea2 = ($t2 && mb_stripos($txt[$i],$t2,0,'UTF-8')!==false) ? 1 : 0;
+      $sea3 = ($t3 && mb_stripos($txt[$i],$t3,0,'UTF-8')!==false) ? 1 : 0;
+      if (($sea3==0 && $t0==1 && (!$t1 || $sea1==1) && (!$t2 || $sea2==1)) || ($sea3==0 && $t0==2 && ((!$t1 && !$t2) || (strlen($t1)>0 && $sea1==1) || (strlen($t2)>0 && $sea2==1)))) {
+        $obj=''; $pkr=''; $fto=explode(',',$s[2]); $ftp=explode(',',$s[3]);
+        for ($j=0; $j<5; $j++) {
+            if($ftp[$j]!='0') $pkr.='; '.$aPkr[(int)$ftp[$j]];
+            if($j<3 && $fto[$j]!='0') $obj.='; '.$aObj[(int)$fto[$j]];
+        }
+        if($pkr<' ') $pkr='&nbsp;'; else $pkr=substr($pkr,2);
+        if($obj<' ') $obj='&nbsp;'; else $obj=substr($obj,2);
+        $out.='<tr><td>'.($nn++).'</td><td class="tdl">'.$s[1].'</td><td class="tdl">'.$s[15].'</td><td class="tdl">'.$obj.'</td><td class="tdl">'.$pkr.'</td><td class="tdr">'.$ss.'</td><td class="tdc">'.$yy.'</td><td class="tdl">'.($sn.'-'.$s[12]).'</td><td class="tdc">'.($aRegs[(int)$s[14]][0]).'</td><td>'.($aRegs[(int)$s[14]][1]).'</td><td>'.($tPreds[$sn][1].' ('.$sn.')').'</td><td>'.str_replace('☆',chr(13),$s[8]).'</td><td>'.str_replace('☆',chr(13),$s[9]).'</td></tr>'.chr(10);
+      }
+    }
+  }
+}
+$out.='</tbody></table>'.chr(10);
+$out.='</div></body></html>'.chr(10);
+$inf='rep'.mt_rand();
+$h=@fopen($_SERVER["DOCUMENT_ROOT"].'/setpred01/html-report/'.$inf.'','w'); if ($h) {
+    @fwrite($h,$out); @fclose($h);
+}
+print $inf;
+?>

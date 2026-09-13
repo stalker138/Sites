@@ -1,0 +1,17 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_111*}
+.h13 { clear:none; text-align:left; min-width:420px; } .dmtrl { float:right; width:340px; }
+.ptmp2 { margin:5px 0 0 15px; font-size:11px; line-height:12px; } .dfl { float:left; margin:0 10px 0 0; max-width:410px; }
+.tmtr td:hover { color:#f00000; background:#eeeeee; font-weight:bold; } .tmtr td:hover a { font-weight:normal; }
+@media screen and (max-width:999px) { .h13 { min-width:100px; } .dmtrl { float:left; clear:both; } .ptmp2 { margin:5px 0 0 0; } .dfl { float:none; margin:0; } }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*text0_1*}
+{*tpl16*}
+{*block1_109*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}
+</body></html>{*tpl21*}

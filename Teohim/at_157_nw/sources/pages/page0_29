@@ -1,0 +1,167 @@
+<div class="px10"></div>
+<div class="d123">
+<div class="dsh1"><table class="table1"><tbody>
+<tr><td class="thead" colspan="2">1. Характеристика Сырья.</td></tr>
+<tr><td>Плотность песка</td><td class="o_ti" style="padding:0;width:74px;"><select id="i_pp" class="i_t" onchange="f_i_t('i_pp'); $.id('id_recalc').focus();">
+<option value="1,35">&nbsp;&nbsp;&nbsp;&nbsp;1,35</option>
+<option value="1,40">&nbsp;&nbsp;&nbsp;&nbsp;1,40</option>
+<option value="1,45">&nbsp;&nbsp;&nbsp;&nbsp;1,45</option>
+<option value="1,50"<?php if($pb_page==2252 || $pb_page==2255) print ' selected'; ?>>&nbsp;&nbsp;&nbsp;&nbsp;1,50</option>
+<option value="1,55">&nbsp;&nbsp;&nbsp;&nbsp;1,55</option>
+<option value="1,60"<?php if($pb_page==2251 || $pb_page==2253 || $pb_page==2254) print ' selected'; ?>>&nbsp;&nbsp;&nbsp;&nbsp;1,60</option>
+<option value="1,65">&nbsp;&nbsp;&nbsp;&nbsp;1,65</option>
+<option value="1,70">&nbsp;&nbsp;&nbsp;&nbsp;1,70</option>
+</select></td></tr><?php if($pb_page==2251 || $pb_page==2253) { ?>
+<tr><td>Плотность щебня</td><td class="o_ti" style="padding:0;width:74px;"><select id="i_ps" class="i_t" onchange="f_i_t('i_ps'); $.id('id_recalc').focus();">
+<option value="1,35">&nbsp;&nbsp;&nbsp;&nbsp;1,35</option>
+<option value="1,40"<?php if($pb_page==2253) print ' selected'; ?>>&nbsp;&nbsp;&nbsp;&nbsp;1,40</option>
+<option value="1,45">&nbsp;&nbsp;&nbsp;&nbsp;1,45</option>
+<option value="1,50"<?php if($pb_page==2251) print ' selected'; ?>>&nbsp;&nbsp;&nbsp;&nbsp;1,50</option>
+<option value="1,55">&nbsp;&nbsp;&nbsp;&nbsp;1,55</option>
+<option value="1,60">&nbsp;&nbsp;&nbsp;&nbsp;1,60</option>
+</select></td></tr><?php } ?>
+</tbody></table></div>
+<div class="px15"></div>
+
+<div class="dsh1"><table class="table1"><tbody>
+<tr><td class="thead" colspan="2">2. Характеристика объекта</td></tr>
+<tr><td>Площадь объекта, м<sup>2</sup></td><td class="o_ti"><input class="i_t" type="text" id="i_so" value="1000" maxlength="6" onchange="f_i_t('i_so')"></td></tr>
+<tr><td>Средняя толщина, мм</td><td class="o_ti"><input class="i_t" type="text" id="i_st" value="20" maxlength="3" onchange="f_i_t('i_st')"></td></tr>
+<tr><td>Объем пескобетона, м<sup>3</sup></td><td class="o_t" id="o_ob">&nbsp;</td></tr>
+<tr><td>Вес пескобетона, кг</td><td class="o_t" id="o_vb">&nbsp;</td></tr>
+</tbody></table></div>
+<div class="px15"></div>
+
+<div class="dsh1"><table class="table1"><tbody>
+<tr><td class="thead" colspan="2">3. Расчет одного замеса</td></tr>
+<tr><td>Цемент на Замес, кг</td><td class="o_ti"><input class="i_t" type="text" id="i_cz" value="50,00" maxlength="5" onchange="f_i_t('i_cz')"></td></tr>
+<tr><td>Вес Замеса, кг</td><td class="o_t" id="o_vz">&nbsp;</td></tr>
+<tr><td>Объём замеса, м<sup>3</sup></td><td class="o_t" id="o_ozm">&nbsp;</td></tr>
+<tr><td>Количество замесов</td><td class="o_t" id="o_kz">&nbsp;</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="fleft fs11">
+Внесите свои данные в <span style="background-color:#49ff79;">зелёные ячейки</span>, нажмите:
+<div class="px5"></div>
+<input type="button" value="Пересчитать" id="id_recalc" onclick="f_i_t('refresh')" style="width:250px; height:30px; font-weight:bold; font-size:12px; letter-spacing:1px;">
+<div class="px5"></div>
+<p class="fwb fs13">1. Характеристика Сырья.</p>
+<p class="ml10 mt5 fs11">От плотности песка и щебня зависит соотношение цемент / песок / щебень.<br>Чем выше плотность, тем меньше цемента и Добавки по отношению к песку и щебню.<br>Соответственно, тем дешевле Бетон.</p>
+<p class="fwb fs13">2. Характеристика объекта.</p>
+<p class="ml10 mt5 fs11">Укажите площадь и среднюю толщину ПЦ-Бетона.</p>
+<p class="fwb fs13">3. Расчет одного замеса.</p>
+<p class="ml10 mt5 fs11">Объем замеса зависит от объема бетономешалки, которую Вы используете.<br>Удобней, если замес будет расчитан так, чтобы использовать цемент целыми мешками.<br>Изменяя количество цемента подберите удобный для Вас объем одного замеса.</p>
+<p class="fwb fs13">4. Количество и Стоимость Компонентов.</p>
+<p class="ml10 mt5 fs11">Укажите, по каким ценам Вы покупаете Компоненты<br>и получите стоимость каждого Компонента и общую стоимость бетона.</p>
+</div>
+<div class="px15"></div>
+
+<div class="dsh4">
+<table class="table1"><tbody>
+<tr><td class="thead" colspan="7">4. Количество и Стоимость Компонентов <span class="fwn">(с учетом НДС)</span></td></tr>
+<tr>
+<th>Компонент</th>
+<th>Цена,<br>руб/кг</th>
+<th>На 100 кг<br>цемента</th>
+<th>На один<br>замес, кг</th>
+<th>Кг на<br>1 м<sup>3</sup></th>
+<th style="width:100px;">Общее<br>кол-во, кг</th>
+<th style="width:150px;">Стоимость<br>компонентов, руб</th>
+</tr>
+<tr>
+<td>Цемент</td>
+<td class="o_ti"><input class="i_t" type="text" id="i_cc" value="4,00" maxlength="5" onchange="f_i_t('i_cc')"></td>
+<td class="o_t" id="o_cc100">100,00</td>
+<td class="o_t" id="o_cc1">&nbsp;</td>
+<td class="o_t" id="o_cc13">&nbsp;</td>
+<td class="o_t" id="o_cok">&nbsp;</td>
+<td class="o_t" id="o_csum">&nbsp;</td>
+</tr>
+<tr>
+<td>Песок</td>
+<td class="o_ti"><input class="i_t" type="text" id="i_cp" value="1,00" maxlength="5" onchange="f_i_t('i_cp')"></td>
+<td class="o_t" id="o_pc100">&nbsp;</td>
+<td class="o_t" id="o_pc1">&nbsp;</td>
+<td class="o_t" id="o_pc13">&nbsp;</td>
+<td class="o_t" id="o_pok">&nbsp;</td>
+<td class="o_t" id="o_psum">&nbsp;</td>
+</tr>
+<?php if($pb_page==2251 || $pb_page==2253) { ?><tr>
+<td>Щебень</td>
+<td class="o_ti"><input class="i_t" type="text" id="i_cs" value="1,00" maxlength="5" onchange="f_i_t('i_cs')"></td>
+<td class="o_t" id="o_sc100">&nbsp;</td>
+<td class="o_t" id="o_sc1">&nbsp;</td>
+<td class="o_t" id="o_sc13">&nbsp;</td>
+<td class="o_t" id="o_sok">&nbsp;</td>
+<td class="o_t" id="o_ssum">&nbsp;</td>
+</tr><?php } ?>
+<tr>
+<td>«Эластобетон-<?php print ($pb_page<2253)?'А':(($pb_page>2254)?'В':'Б'); ?>»</td>
+<td class="o_t" id="o_ceb">&nbsp;</td>
+<td class="o_t" id="o_ec100">&nbsp;</td>
+<td class="o_t" id="o_ec1">&nbsp;</td>
+<td class="o_t" id="o_ec13">&nbsp;</td>
+<td class="o_t" id="o_eok">&nbsp;</td>
+<td class="o_t" id="o_esum">&nbsp;</td>
+</tr>
+<tr>
+<td>Вода (примерно) *</td>
+<td class="o_ti"><input class="i_t" type="text" id="i_cv" value="0,00" maxlength="5" onchange="f_i_t('i_cv')"></td>
+<td class="o_t" id="o_vc100">&nbsp;</td>
+<td class="o_t" id="o_vc1">&nbsp;</td>
+<td class="o_t" id="o_vc13">&nbsp;</td>
+<td class="o_t" id="o_vok">&nbsp;</td>
+<td class="o_t" id="o_vsum">&nbsp;</td>
+</tr>
+<tr>
+<td class="fwb tar">Итого пескобетон:</td>
+<td class="o_t" id="o_ic">&nbsp;</td>
+<td class="o_t" id="o_ic100">&nbsp;0</td>
+<td class="o_t" id="o_ic1">&nbsp;</td>
+<td class="o_t" id="o_ic13">&nbsp;</td>
+<td class="o_t" id="o_iok" style="background-color:#ffcc99;font-weight:bold;">&nbsp;</td>
+<td class="o_t" id="o_isum" style="background-color:#ffcc99;font-weight:bold;">&nbsp;</td>
+</tr>
+<tr><td colspan="7">* Внимание! Точное количество воды подбирается по инструкции.</td></tr>
+</tbody></table>
+</div>
+<div class="px15"></div>
+
+<div class="dsh5"><table class="table1"><tbody>
+<tr><td class="thead" colspan="2">5. Стоимость ПЦ-бетона <span class="fwn">(с НДС)</span> руб.</td></tr>
+<tr><td>Руб за 1 м<sup>2</sup></td><td class="o_t" id="o_sb2">116,50</td></tr>
+<tr><td>Руб за 1 м<sup>3</sup></td><td class="o_t" id="o_sb3">5825,12</td></tr>
+</tbody></table></div>
+<div class="px15"></div>
+
+<div class="dsh6"><table class="table1"><tbody>
+<tr><td class="thead" colspan="5">6. ЕСЛИ требуются. Дополнительные материалы для грунтования основания и пропитки</td></tr>
+<tr>
+<th>Материал</th>
+<th>Цена,<br>руб/кг</th>
+<th>Расход,<br>кг/м<sup>2</sup></th>
+<th style="width:110px">Кол-во, кг</th>
+<th style="width:170px">Стоимость<br>(с учетом НДС)</th>
+</tr>
+<tr>
+<td>Элакор Бетоноконтакт *</td>
+<td class="o_t" id="o_cebk">&nbsp;</td>
+<td class="o_ti"><input class="i_t" type="text" id="i_rebk" value="<?php ?><?php print ($pb_page<2253)?'0.30':'0.35'; ?>" maxlength="5" onchange="f_i_t('i_rebk')"></td>
+<td class="o_t" id="o_kebk">300,00</td>
+<td class="o_t" id="o_sebk">15600,00</td>
+</tr>
+<tr>
+<td>Элакор-ПУ Грунт-2К/50</td>
+<td class="o_t" id="o_cepu">180,00</td>
+<td class="o_t" id="o_repu">0,4</td>
+<td class="o_t" id="o_kepu">400,00</td>
+<td class="o_t" id="o_sepu">72000,00</td>
+</tr>
+<tr>
+<td colspan="4" class="fwb tar">Итого стоимость дополнительных материалов:</td>
+<td class="o_t" id="o_iepu" style="background-color:#FFCC99; font-weight:bold;">87600,00</td>
+</tr>
+<tr><td colspan="5">* Норма расхода - 0,3. На шероховатом или пористом основании расход может увеличиться.</td></tr>
+</tbody></table></div>
+<div class="px10"></div>

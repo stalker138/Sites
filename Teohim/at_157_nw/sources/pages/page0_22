@@ -1,0 +1,15 @@
+<?php
+$st=' class="pb_ms" style="background:#d0d0d0;"';
+?>
+<menu id="mmenu" style="margin:0">
+<li><div></div><?php print in_array($id_pred, $list_pred, true) ? ($id_pred==3 ? '<l0 id="64"><span class="fs14">Работа с Прайс-листом</span></l0>' : '<l0 id="65"><span class="fs14">Работа с Прайс-листом</span></l0>') : '<l0 id="55"><span class="fs14">Работа с Прайс-листом</span></l0>'; ?></li>
+<li<?php print ($pb_page==233)?$st:''; ?>><div></div><?php if ($pb_page!=233) print '<l0 id="233">'; ?><span class="fs14">Цены – Инструмент</span><?php if ($pb_page!=233) print '</l0>'; ?></li>
+<li><div></div><l0 id="81"><span class="fs14">Объекты на карте</span></l0></li>
+<li><div></div><l0 id="84"><span class="fs14">ФОТО - хранилище</span></l0></li>
+<li><div></div><l0 id="7"><span class="fs14">Рассылки</span></l0></li>
+<li<?php print ($pb_page==234)?$st:''; ?>><div></div><?php if ($pb_page!=234) print '<l0 id="234">'; ?><span class="fs14">Материалы</span><?php if ($pb_page!=234) print '</l0>'; ?></li>
+<li<?php print ($pb_page==235)?$st:''; ?>><div></div><?php if ($pb_page!=235) print '<l0 id="235">'; ?><span class="fs14">Технологии</span><?php if ($pb_page!=235) print '</l0>'; ?></li>
+<li<?php print ($pb_page==237)?$st:''; ?>><div></div><?php if ($pb_page!=237) print '<l0 id="237">'; ?><span class="fs14">Работа с Проектировщиками</span><?php if ($pb_page!=237) print '</l0>'; ?></li>
+<li<?php print ($pb_page==238)?$st:''; ?>><div></div><?php if ($pb_page!=238) print '<l0 id="238">'; ?><span class="fs14">Конкуренты</span><?php if ($pb_page!=238) print '</l0>'; ?></li>
+<li><div></div><l0 id="68"><span class="fs14">Заказчики - «кидальщики»</span></l0></li>
+</menu>

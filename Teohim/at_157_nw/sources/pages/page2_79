@@ -1,0 +1,20 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_115*}
+.photoblock { float:right; margin-left:20px; padding:0; width:190px; }
+.photoblock .pb_ismall { margin-top:10px; width:190px; height:160px; }
+.dmtrl { margin:0; width:350px; } .dmtrr { max-width:315px; } .tsrt { margin-top:3px; } .dmtrr, .pb_ismall { margin:0; width:315px; border-radius:0; }
+@media screen and (max-width:999px) {
+.photoblock { float:none; margin-left:0; width:100%; }
+.photoblock .pb_ismall { float:left; margin-top:0; margin-right:20px; width:123px; height:103px; }
+.dmtrr { float:none; margin:10px 0 0 0; width:315px; max-width:315px; }
+}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*text0_1*}
+{*tpl16*}
+{*block2_79*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

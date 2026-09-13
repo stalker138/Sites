@@ -1,0 +1,101 @@
+  <div class="px10b noprint"></div></section></div>
+  <div class="dsfooter"><?php if ($pb_page_index>2 || ($pb_page>200 && $pb_page<220 && $pb_page!=202) || ($pb_page_index==1 && $pb_page!=1023) || ($pb_page_index==2 && ($pb_page<2201 || $pb_page>2300))) {
+if (1==2 && $pb_page!=1001 && $pb_page!=1002 && $pb_page!=1003 && $pb_page!=1004 && $pb_page!=1014 && $pb_page!=1015 && $pb_page!=1021 && ($pb_page<3151 || $pb_page>3350)) { ?><a class="aprint" href="javascript:void(f_print())">Версия для печати</a><?php } } ?></div>
+  <div id="dheader"><header>
+    <l1 id="1" id="dlogoimg" title="промышленные полы ЭЛАКОР"><div id="dlogod">промышленные &nbsp;полы</div></l1>
+    <div id="dh_main">
+      <div id="dh_teohim"></div>
+      <div id="dh_slogan">Российский производитель <span class="upper">промышленных полов</span><div id="dh_year">с 1996г</div></div>
+      <div id="dh_tel">Москва: <a class="consult" href="tel:+74952212252" style="color:#ffffff">+7 495 221 22 52</a><br>Россия: &nbsp; <a class="consult" href="tel:88001005010" style="color:#ffffff">8 800 100 50 10</a><div class="px7"></div><div class="callback">обратный звонок</div></div>
+      <l0 id="210" id="dh_pred"><span>Представительства</span> в России, за рубежом</l0>
+    </div>
+    <div id="dh_menu">
+      <l1 id="3"<?php if ($pb_page==1003) print $st_current; ?>>Полимерные полы</l1><l1 id="4"<?php if ($pb_page==1004) print $st_current; ?>>Бетонные полы</l1><l1 id="16"<?php if ($pb_page==1016 || ($pb_page>1300 && $pb_page<1351)) print $st_current; ?>>ФОТО</l1><l1 id="10"<?php if ($pb_page==1010) print $st_current; ?>>ЦЕНЫ материалов</l1><l1 id="23"<?php if ($pb_page==1023) print $st_current; ?>>КАЛЬКУЛЯТОР покрытий</l1><!--<l5 id="100"<?php if ($pb_page==5100) print $st_current; ?> style="margin-left:20px">ЗАКАЗ</l5>--><l0 id="202" id="dh_menu_last"<?php if ($pb_page>201 && $pb_page<207) print $st_current; ?>>КОНТАКТЫ</l0>
+    </div>
+  </header></div>
+<?php if (1==2) { ?>
+  <div id="dl_menu"><aside>
+    <div class="px5"></div>
+    <?php if($pb_page<231 || $pb_page>249) { ?><l0 id="85" id="aobjlist" title="Объекты на карте с возможностью выбора региона, типа объекта и типа покрытия">Выполненные объекты<br>на карте</l0><?php } ?>
+    <div class="px5"></div>
+    <?php include_once $pb_root.'inc/'.(($pb_page==1291 || $pb_page==1292)?'filters':'dlmenu'.(($pb_page>230 && $pb_page<250) ? '_p' : '')).'.php'; ?>
+    <div class="px0"></div>
+    <?php if ($pb_page!=250) { ?>
+      <div class="px5"></div>
+      <l0 id="250" class="color_table_link_img" title="Таблица цветов"></l0>
+      <l0 id="250" class="color_table_link_text">Таблица цветов</l0>
+    <?php } ?>
+    <div class="px5"></div>
+    <?php if($pb_page<231 || $pb_page>249) { ?>
+    <div class="search_text">Поиск по сайту</div>{*text0_15*}
+    <div class="px0"></div>
+    <?php } include_once $pb_root.'inc/themes_block.php'; ?>
+  </aside></div>
+  {*text0_71*}
+<?php } ?>
+  <div id="mtblock">
+    <l1 id="1" id="mtlogo"></l1>
+  </div>
+<?php include_once $pb_root."inc/tssnavigator.php"; ?>
+  <div id="dnav"><nav><?php print $snav; ?></nav></div>
+  <div class="tsstel"><a class="consult" href="tel:+79263094348">+7-926-309-4348</a></div>
+<?php if ($pb_page!=5100) { ?><div class="tssbasket"><l5 id="100" id="abasket" class="consult">Заказ (от 5т.р.)</l5></div><?php } ?>
+  <div id="mlblock">
+    <div id="mlmenu">
+      <?php include_once $pb_root.'inc/tssmmenu.php'; // page0_42 - MOBILE Multi Level Menu ?>
+<?php if (1==2) { ?>
+        <div class="px5"></div>
+        <l0 id="250" class="color_table_link_img" title="Таблица цветов"></l0>
+        <l0 id="250" class="color_table_link_text" style="float:left;">Таблица цветов</l0>
+      <div class="px5"></div>
+      <div class="search_text">Поиск по сайту</div>{*text0_15*}
+<?php } ?>
+    </div>
+    <div id="ltblock"><div id="melakor"><div id="mlogod">промышленные &nbsp;полы</div></div></div>
+  </div>
+</div>
+<div id="dfooter"><footer>
+  <div id="dc_footer">
+    <l1 id="1" id="df_teohim"></l1>
+    <div id="df_tels">Многоканальный тел. в Москве:<div class="px0"></div><span><a class="consult" href="tel:+74952212252" style="color:#ffffff">+7 495 221 2252</a></span>
+      <div id="pxf1"></div>Звонок по России бесплатный:<div class="px0"></div><span style="font-size:24px"><a class="consult" href="tel:88001005010" style="color:#ffffff">8 800 100 50 10</a></span>
+      <div class="px0"></div>пн-пт<div class="fright" style="margin:0 8px 0 0">9:00-18:00</div>
+    </div>
+    <div id="df_address">ООО «Тэохим», 107023, г. Москва, ул. Суворовская д.10, оф.15.</div>
+    <ul id="df_menu_first">
+      <li><l1 id="10">ПРАЙС-лист</l1></li>
+      <li><l1 id="23">Калькулятор</l1></li>
+      <li><l1 id="25">Помощник выбора</l1></li>
+      <li><l0 id="221">Заказ</l0></li>
+    </ul>
+    <ul id="df_menu_second">
+      <li><l1 id="21">Промышленные полы</l1></li>
+      <li><l1 id="2">Наливные полы</l1></li>
+      <li><l1 id="3">Полимерные полы</l1></li>
+      <li><l1 id="5">Антистатические полы</l1></li>
+      <li><l1 id="4">Бетонные полы</l1></li>
+      <li><l1 id="153">Полимерцементные полы</l1></li>
+      <li><l1 id="152">Добавки для бетона</l1></li>
+    </ul>
+    <!--noindex-->
+    <!--div id="df_pred"><span>Ищем представителей в городах:</span><br>Астрахань, Курган, Пермь.<br>Звоните <a class="consult" href="tel:88001005010" style="color:#ffffff">8-800-100-50-10</a>, Дмитрий.</div->
+    <l1 id="31" id="df_copyright">© ООО «ТэоХим» 2003-2021<br>ВСЕ ПРАВА ЗАЩИЩЕНЫ</l1>
+    <!--/noindex-->
+    <div id="df_menu">
+      <l0 id="201"<?php if ($pb_page==201) print $st_current; ?>>О компании</l0>
+      <l4 id="28"<?php if ($pb_page>4000 && $pb_page<4500) print $st_current; ?>>Новости</l4>
+      <l1 id="16"<?php if ($pb_page==1016 || ($pb_page>3500 && $pb_page<4000)) print $st_current; ?>>Фото</l1>
+      <l1 id="20"<?php if ($pb_page==1020) print $st_current; ?>>Видео</l1>
+      <l1 id="15"<?php if ($pb_page==1015 || ($pb_page>3350 && $pb_page<3501)) print $st_current; ?>>Отзывы</l1>
+      <l1 id="18"<?php if ($pb_page==1018 || ($pb_page>2500 && $pb_page<2700)) print $st_current; ?>>Инструкции</l1>
+      <l1 id="14"<?php if ($pb_page==1014 || ($pb_page>3150 && $pb_page<3351)) print $st_current; ?>>Сертификаты</l1>
+      <l1 id="19"<?php if ($pb_page==1019 || ($pb_page>4500 && $pb_page<5000)) print $st_current; ?>>Статьи</l1>
+      <l0 id="210">Представительства</l0>
+      <l0 id="202"<?php if ($pb_page>201 && $pb_page<207) print $st_current; ?>>Контакты</l0>
+    </div>
+    <?php if($pb_page==1001) { ?><a id="df_designed" href="https://www.glazov.me/" target="_blank">Дизайн сайта: www.glazov.me</a><?php } ?>
+  </div>
+</footer></div>
+<div id="mfooter">
+  <div id="m_teohim"></div>
+</div>

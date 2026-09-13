@@ -1,0 +1,143 @@
+<?php
+// header("HTTP/1.1 204 No Content"); exit;
+$o_inc='adm'; include "cnfg.php";
+$a = $a_pred[$f]; $id=$f;
+
+$file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objlist';
+$txt=@file_get_contents($file_objList); $o=false; $o[]=false;
+
+$tObj=array(' ','Цех пром.','Цех пищ.','Тех.пом.','Склад','Хлд/Мрз','Гараж','А/сервис','А/мойка','Т/Р/В зал','Офис','Мед.','Жив-во','С/Х','Эл.ст,ТЭК','РосАтом','Жил.стр-во','Прочее');
+$tPkr=array(' ','Проп.ПУ','Проп.ЭД','Проп.Фл','Покр.ПУ','Покр.ЭД','Покр.Св','Покр.Асф','КНП ЭД','КНП ПУ','НП ЭД','НП ПУ','НП Пром','НП Аст','А/скольз.','Фрезер','Безыскр.','Стяжка-А','Стяжка-Б','Стяжка-В','Прочее');
+
+{*text0_8*}
+
+if (empty($_POST['data'])) {
+
+if (empty($_POST['lastobj'])) {
+
+$out='<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>Представитель ООО «ТэоХим» - '.$a[4].'</title>';
+$out.='<link rel="icon" href="/favicon.ico" type="image/ico"/><meta name="robots" content="noindex, nofollow"/>';
+$out.='<link rel="stylesheet" href="/cssjs/admpred_001_.css" type="text/css"/>';
+$out.='<script type="text/javascript" charset="UTF-8" src="/cssjs/vcorp_js_0002.js"></script>';
+// if (substr($a[9],0,4)=='http') $out.='<script type="text/javascript" charset="UTF-8" src="'.$a[9].'/cssjs/price.js.php"></script>';
+$out.='<script type="text/javascript" charset="UTF-8" src="/cssjs/admpred_001_.js"></script>';
+$out.='</head><body><div id="main">';
+$out.='<div id="header">';
+$out.='<div id="logo"><div id="elakor">Элакор<div>™</div></div>промышленные полы<div id="logo1">максимальная защита</div><div id="logo2">минимальные затраты</div></div>';
+$out.='<div id="teohim"><div id="teohim1">Москва: <span>(495) 221-22-52</span><br>Россия: <span>8-800-100-50-10</span></div></div>';
+$out.='<div id="info"><p>Вы можете добавлять объекты для <a target="_blank" href="https://teohim.ru/objlist.php?id='.$f.'">карты объектов</a>.<br>Для получения координат нужно воспользоваться <a href="https://maps.yandex.ru/" target="_blank">сервисом Яндекс-карт</a>.<br>Скопируйте оттуда Широту и Долготу (числа в скобках)<br>и вставьте их в соответствующие поля.</p>';
+$out.='<p><span>'.$a[4].'</span><br>'.$a[5].'</p></div>';
+$out.='</div><div class="content">';
+
+if ($id===1) {
+$out.='<div style="float:left;width:160px;">Выбор представителя:</div><div style="float:left;"><select id="idSelPred" style="width:600px;" onchange="f_changePred(this.value)">';
+for ($i=1; $i<53; $i++) { if($tPreds[$i]) { $out.='<option value="'.$i.($i==1 ? '" selected>' : '">').$tPreds[$i].'</option>'; } }
+$out.='</select></div><div style="float:right"><input type="button" class="pb_buttons" value="Показать новые объекты" style="width:180px;height:25px;" onclick="f_viewNewObj()"/></div>';
+$out.='<div class="px20"></div>';
+}
+
+$out.='<h1 style="float:left;">Список объектов</h1>';
+if ($id==1) $out.='<div style="float:right;"><input type="button" class="pb_buttons" id="ihDel" value="Удалить объект" style="width:130px;height:30px;color:#808080;margin-left:20px;" onclick="if(v_num==0) f_message(\'Не выбран объект\',\'Выделите щелчком строку с объектом\', 350, 100); else f_del(event,v_num);" /></div>';
+$out.='<div style="float:right;"><input type="button" class="pb_buttons" id="ihNew" value="Добавить новый объект" style="width:180px;height:30px;margin-left:20px;" onclick="f_edit(0,0)" /></div>';
+$out.='<div style="float:right;"><input type="button" class="pb_buttons" id="ihEdit" value="Редактировать объект" style="width:170px;height:30px;color:#808080;margin-left:20px;" onclick="if(v_num==0) f_message(\'Не выбран объект\',\'Выделите щелчком строку с объектом\', 350, 100); else f_edit(v_num,0);" /></div>';
+$out.='<a class="pb_buttons" href="https://teohim.ru/objlist.php?id='.$f.'" target="_blank" style="display:block;float:right;width:150px;height:25px;text-align:center; line-height:25px; text-decoration:none;">Посмотреть карту</a>';
+$out.='<div class="px10"></div><div style="position:relative;"><div id="objList">';
+$out.='<table><tbody><tr><th style="width:40px">№</th><th style="width:40px">ID</th><th style="width:360px;">Наименование объекта</th><th style="width:170px;">Типы объекта</th><th style="width:200px;">Типы покрытий</th><th>S м<sup>2</sup></th><th style="width:50px;">Год</th></tr>';
+
+$pos=strpos($txt,chr(10));
+while ($pos!=false) {
+    $s=explode(chr(9),substr($txt,0,$pos)); $txt=substr($txt,$pos+1); $s[0] = (int)$s[0];
+    if ($s[0]===$id) {
+        $to=explode(',',$s[2]); $tp=explode(',',$s[3]); $tos=$tps='';
+        for ($i=0;$i<5;$i++) {
+            $tps.='; '.$tPkr[(int)$tp[$i]]; if($i<3) $tos.='; '.$tObj[(int)$to[$i]];
+        } $tos=str_replace(';  ','',$tos); $tps=str_replace(';  ','',$tps);
+        if($tos<' ') $tos='&nbsp;'; else $tos=substr($tos,1);
+        if($tps<' ') $tps='&nbsp;'; else $tps=substr($tps,1);
+        $o[]=$s; $out.='<tr onclick="f_trs(this,'.$s[10].','.$s[12].')" ondblclick="v_num='.$s[10].';f_edit('.$s[10].','.$s[12].')"><td>'.$s[10].'</td><td>'.$s[12].'</td><td>'.$s[1].'</td><td>'.$tos.'</td><td>'.$tps.'</td><td style="text-align:right">'.$s[4].'</td><td style="text-align:center">'.$s[5].'</td></tr>';
+    } $pos=strpos($txt,chr(10));
+} $cnt=count($o);
+$out.='</tbody></table><div class="px10"></div></div>';
+$out.='<div id="objListH"><table><tbody><tr><th style="width:40px">№</th><th style="width:40px">ID</th><th style="width:360px;">Наименование объекта</th><th style="width:170px;">Типы объекта</th><th style="width:200px;">Типы покрытий</th><th>S м<sup>2</sup></th><th style="width:50px;">Год</th></tr></tbody></table></div></div>';
+$out.='<div class="pb_hidden" id="hPredList">';
+for ($i=1; $i<53; $i++) { if($tPreds[$i]) { $out.='<div id="idPreds'.$i.'">'.$tPreds[$i].'</div>'; } }
+$out.='';
+$out.='</div><div class="pb_hidden" id="hObjList">';
+for ($i=1; $i<$cnt; $i++) {
+    $out.='<div id="ol'.$i.'">'.$o[$i][0].'¡'.$o[$i][1].'¡'.$o[$i][2].'¡'.$o[$i][3].'¡'.$o[$i][4].'¡'.$o[$i][5].'¡'.$o[$i][6].'¡'.$o[$i][7].'¡'.$o[$i][8].'¡'.$o[$i][9].'¡'.$o[$i][10].'¡'.$o[$i][11].'¡'.$o[$i][12].'¡'.($o[$i][13] ? $o[$i][13] : '2017-08-25').'</div>';
+}
+$out.='</div></div><div class="pb_hidden"><div id="idhash">'.$o_hash.'</div><div id="idID">'.$id.'</div></div></div></body></html>';
+
+} else { // if (empty($_POST['lastobj']))
+    $dt = date("Y-m-d"); $tmpY=(int)substr($dt,0,4); $tmpM=(int)substr($dt,5,2); $tmpM-=5;
+    if ($tmpM<1) { $tmpY-=1; $tmpM=12; }
+    $tmpM = ($tmpM<10) ? ('0'.$tmpM) : (''.$tmpM);
+    $dt = ''.$tmpY.'-'.$tmpM.'-01'; if ($dt<'2017-09-01') $dt='2017-08-26';
+    $dt='2017-08-26';
+    $arr=false; $txt=explode(chr(10),$txt); $cnt=count($txt);
+    for ($i=1; $i<$cnt; $i++) {
+        $s=explode(chr(9),$txt[$i]);
+        if ($s[13]>=$dt) $arr[]=$s;
+    }
+    usort($arr,"cmp");
+    $out='<div style="position:absolute; padding:0 10px 0 0; top:10px; left:10px; right:10px; bottom:10px; overflow-y:scroll;"><table><tbody><tr><th style="width:40px;height:0"></th><th style="width:80px;height:0"></th><th style="width:370px;height:0"></th><th style="height:0"></th></tr>';
+    $cnt=count($arr);
+    for ($i=0; $i<$cnt; $i++) {
+        $out.='<tr><td>'.($i+1).'</td><td>'.($arr[$i][13]).'</td><td>'.$tPreds[(int)($arr[$i][0])].'</td><td>'.($arr[$i][1]).'</td></tr>';
+    }
+    $out.='</tbody></table></div><div style="position:absolute; padding:0 10px 0 0; top:10px; left:10px; right:10px;"><table><tbody><tr><th style="width:40px">№</th><th style="width:80px">Дата</th><th style="width:370px">Наименование представителя</th><th>Наименование объекта</th></tr></tbody></table></div>';
+}
+
+print $out; exit;
+
+}
+
+$data=(int)$_POST['data']; $pid=(int)$_POST['pid'];
+if ($data==3) {
+    if (!empty($_POST['objlist'])) {
+        $data=Fo_post('objlist'); $s=chr(10).$pid.chr(9); $pos=strpos($txt,$s); $pos1=$pos2=$pos;
+        if($pos!=false) {
+            while ($pos2!=false) {
+                $pos2=strpos($txt,$s,$pos1+1); $pos3=strpos($txt,chr(10),$pos1+1); if ($pos3!=false) $pos1=$pos3; if ($pos2==false || $pos2!=$pos3) $pos2=false;
+            }
+        }
+        $txt=substr($txt,0,$pos).substr($txt,$pos1).($data=='none'?'':$data);
+        $fh=@fopen($file_objList,'w'); if ($fh==false) { header("HTTP/1.1 204 No Content"); exit; } else {
+            @rewind($fh); if (-1==@fwrite($fh,$txt)) { @fflush($fh); @fclose($fh); } else { @ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh); }
+        }
+    }
+    $pos=strpos($txt,chr(10));
+    $out='<table><tbody><tr><th style="width:40px">№</th><th style="width:40px">ID</th><th>Наименование объекта</th><th>Типы объекта</th><th>Типы покрытий</th><th style="width:50px;">Пл. м<sup>2</sup></th><th style="width:50px;">Год</th></tr>';
+    if ($data!='none') {
+        while ($pos!=false) {
+            $s=explode(chr(9),substr($txt,0,$pos)); $txt=substr($txt,$pos+1); $s[0] = (int)$s[0];
+            if ($s[0]===$pid) {
+                $to=explode(',',$s[2]); $tp=explode(',',$s[3]); $tos=$tps='';
+                for ($i=0;$i<5;$i++) {
+                    $tps.='; '.$tPkr[(int)$tp[$i]]; if($i<3) $tos.='; '.$tObj[(int)$to[$i]];
+                } $tos=str_replace(';  ','',$tos); $tps=str_replace(';  ','',$tps);
+                if($tos<' ') $tos='&nbsp;'; else $tos=substr($tos,1);
+                if($tps<' ') $tps='&nbsp;'; else $tps=substr($tps,1);
+                $o[]=$s; $out.='<tr onclick="f_trs(this,'.$s[10].','.$s[12].')" ondblclick="v_num='.$s[10].';f_edit('.$s[10].','.$s[12].')"><td>'.$s[10].'</td><td>'.$s[12].'</td><td>'.$s[1].'</td><td>'.$tos.'</td><td>'.$tps.'</td><td style="text-align:right">'.$s[4].'</td><td style="text-align:center">'.$s[5].'</td></tr>';
+            } $pos=strpos($txt,chr(10));
+        }
+    } $out.='</tbody></table><div class="px10"></div></div><div class="pb_hidden" id="hPredList">';
+    for ($i=1; $i<53; $i++) { if($tPreds[$i]) { $out.='<div id="idPreds'.$i.'">'.$tPreds[$i].'</div>'; } }
+    $out.='</div><div class="pb_hidden" id="hObjList">';
+    $cnt=count($o);
+    for ($i=1; $i<$cnt; $i++) {
+        $out.='<div id="ol'.$i.'">'.$o[$i][0].'¡'.$o[$i][1].'¡'.$o[$i][2].'¡'.$o[$i][3].'¡'.$o[$i][4].'¡'.$o[$i][5].'¡'.$o[$i][6].'¡'.$o[$i][7].'¡'.$o[$i][8].'¡'.$o[$i][9].'¡'.$o[$i][10].'¡'.$o[$i][11].'¡'.$o[$i][12].'¡'.($o[$i][13] ? $o[$i][13] : '2017-08-25').'</div>';
+    }
+    $out.='</div>';
+    print $out; exit;
+} else {
+   header("HTTP/1.1 204 No Content"); exit;
+}
+
+/* Сравнение usort($arr,"cmp"); */
+function cmp($a,$b) {
+  if($a[13]==$b[13]) return 0;
+  return ($a[13]>$b[13]) ? -1 : 1;
+}
+
+?>

@@ -1,0 +1,54 @@
+    <div style="background: #f8f8f8;">
+        <p class="fs16 fwb" style="text-align: center; margin-top: 0px";>Фильтр</p>
+
+        <label class="flcvr">Внешний вид</label>
+        <ul class="inputs">
+        <li class="input-group"><input type="radio" name="color" id="without" value="without" class="radio"><label class="flabel" for="without">Без цвета</label></li>
+        <li class="input-group"><input type="radio" name="color" id="with" value="with" class="radio" checked><label class="flabel" for="with">Цветное</label></li>
+        <li class="input-group"><input type="checkbox" name="svet" id="idsvet" class="checkbox"><label for="idsvet" class="flabel">Светостойкость</label></li>
+        </ul>
+
+        <label class="flcvr">Интенсивность нагрузок</label>
+        <ul class="inputs">
+        <li class="input-group"><input type="radio" name="intensity" id="small" value="small" class="radio"><label class="flabel" for="small">Малая</label></li>
+        <li class="input-group"><input type="radio" name="intensity" id="middle" value="middle" class="radio" checked><label class="flabel" for="middle">Средняя</label></li>
+        <li class="input-group"><input type="radio" name="intensity" id="high" value="high" class="radio"><label class="flabel" for="high">Высокая</label></li>
+        </ul>
+
+        <label class="flcvr">Тип покрытия</label>
+        <ul class="inputs">
+        <li class="input-group"><input type="checkbox" name="prop" id="prop" class="checkbox" checked><label class="flabel" for="prop">Пропитка</label></li>
+        <li class="input-group"><input type="checkbox" name="pokr" id="pokr" class="checkbox" checked><label class="flabel" for="prop">Покрытие</label></li>
+        <li class="input-group"><input type="checkbox" name="kvarz" id="kvarz" class="checkbox" checked><label class="flabel" for="prop">Покрытие с кварцем</label></li>
+        <li class="input-group"><input type="checkbox" name="pol" id="pol" class="checkbox" checked><label class="flabel" for="prop">Наливной пол</label></li>
+        </ul>
+
+        <label class="flcvr">Тип полимера</label>
+        <ul class="inputs">
+        <li class="input-group"><input type="checkbox" name="epoksid" id="epoksid" class="checkbox" checked><label class="flabel" for="epoksid">Эпоксид</label></li>
+        <li class="input-group"><input type="checkbox" name="poliuretan" id="poliuretan" class="checkbox" checked><label class="flabel" for="poliuretan">Полиуретан</label></li>
+        </ul>
+
+        <label class="flcvr">Эксплуатация</label>
+        <ul class="inputs">
+          <li class="input-group"><input type="checkbox" name="minus" id="idminus" class="checkbox"><label for="idminus" class="flabel">Отрицательные температуры</label></li>
+          <li class="input-group"><input type="checkbox" name="ice" id="idice" class="checkbox"><label for="idice" class="flabel">Антискользящие свойства</label></li>
+          <li class="input-group"><input type="checkbox" name="static" id="idstatic" class="checkbox"><label for="idstatic" class="flabel">Антистатические свойства</label></li>
+          <!--li class="input-group"><input type="checkbox" name="shock" id="idshock" class="checkbox"><label for="idshock" class="flabel">Ударные нагрузки</label></li-->
+          <li class="input-group"><input type="checkbox" name="uvresist" id="iduvresist" class="checkbox"><label for="iduvresist" class="flabel">Стойкость к ультрафиолету</label>          
+          <li class="input-group"><input type="checkbox" name="chresist" id="idchresist" class="checkbox"><label for="idchresist" class="flabel">Повышенная химстойкость</label></li>
+</li>
+        </ul>
+
+        <label class="flcvr">Технология</label>
+        <ul class="inputs">
+          <li class="input-group"><input type="checkbox" name="asfalt" id="asfalt" class="checkbox"><label for="asfalt" class="flabel">Нанесение на асфальтобетон (асфальт)</label></li>
+          <li class="input-group"><input type="checkbox" name="smell" id="smell" class="checkbox"><label for="smell" class="flabel">Отсутствие запаха при нанесении покрытия</label></li>
+          <li class="input-group"><input type="checkbox" name="wet" id="wet" class="checkbox"><label for="wet" class="flabel">Нанесение на влажный или свежеуложенный бетон</label></li>
+          <li class="input-group"><input type="checkbox" name="hydro" id="hydro" class="checkbox"><label for="hydro" class="flabel">Отсутствует гидроизоляция бетона снизу</label>          
+          <li class="input-group"><input type="checkbox" name="minus2" id="minus2" class="checkbox"><label for="minus2" class="flabel">Нанесение покрытия при отрицательной температуре</label></li>
+</li>
+        </ul>
+
+        <button style="text-align: center;">Применить</button>
+    </div>

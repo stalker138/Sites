@@ -1,0 +1,30 @@
+<?php $pb_page=199; ?>
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_103*}{*text0_106*}
+.pxmb { position:relative; clear:both; height:10px; border-bottom:solid 1px #f00000; }
+.dtmp { position:relative; float:right; width:548px; margin:8px 0 0 0; padding:5px 10px; font-style:italic; border:solid 1px #c8c8c8; border-radius:5px; background:#f0f0f0; box-shadow:4px 4px 7px 0 #999999; }
+@media screen and (max-width:650px) { .dtmp { width:auto; } }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*tpl16*}
+{*block0_199*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}
+<?php
+function f_print_wa($n_tel='', $wa=0, $tg=0) {//вывод значков WhatsApp/Telegram
+  $out='';
+  if ($n_tel == "") return;
+  if ($wa==0 && $tg==0) return;
+  $out='<div style="margin:0; padding:0; position:relative; top:2px;">';
+  if ($wa!=0) {
+  $out.=' &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone='.$n_tel.'"><img src="/img/css/whatsapp.png" alt="Связаться WhatsApp" title="Связаться WhatsApp" style="width:16px;"></a>';
+  }
+  if ($tg!=0) {
+  $out.=' &nbsp;<a class="consult" href="https://t.me/+'.$n_tel.'"><img src="/img/css/telegram.png" alt="Связаться Telegram" title="Связаться Telegram" style="width:16px;"></a>';
+  }
+  $out.='</div>';
+  print $out;
+}
+?>

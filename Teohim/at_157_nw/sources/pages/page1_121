@@ -1,0 +1,21 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.h14lt span { font-size:13px; color:#000000; }
+.tmtr { border:solid 1px #000000; } .tmtr td { text-align:left; border:none; }
+.tmtr .tmtl1 a { font-size:13px; text-decoration:underline; } .tmtr td a:hover { text-decoration:none; } .tmtr .tmtl a:hover { text-decoration:underline; }
+.tmtr td .tpdf { font-size:14px; text-decoration:none; }
+.blk_cover_calc,.blk_cover_calc_empty { position:relative; top:0; right:0; width:100px; height:22px; font-size:12px; line-height:22px; }
+
+.tmtr td .tpdf { padding:3px 0px 3px 20px; width:90px; background-size:16px; }
+
+.tmtr td .tdoc { display:block; padding:3px 0px 8px 31px; height:16px; font-size:13px; background:url("https://teohim.ru/img/css/doc.gif") no-repeat 2px 1px; }
+.tmtl { padding:2px 0 2px 10px; font-weight:bold; }
+.tmtl1 { padding:2px 0 2px 5px; width:120px; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*text0_1*}
+{*tpl16*}
+{*block1_121*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

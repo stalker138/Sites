@@ -1,0 +1,14 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#sel1, #sel2 { float:right; width:230px; font-size:12px; }
+#divotz { position:absolute; left:0; top:35px; right:0; bottom:0; background:#ffffff; visibility:hidden; }
+.dotz { position:relative; float:left; margin:5px 0 0 7px; padding:5px 10px 3px 10px; width:355px; min-height:125px; font-size:12px; font-weight:normal; text-decoration:none; color:#000000; border:solid 1px #c8c8c8; transition:border 0.2s ease-out 0s; }
+.dotz img { position:relative; display:block; float:left; } .dotz:hover { border:solid 1px #004f92; }
+.dotz p { position:relative; float:right; margin:0; width:245px; text-align:left; line-height:14px; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*tpl16*}
+{*block1_15*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

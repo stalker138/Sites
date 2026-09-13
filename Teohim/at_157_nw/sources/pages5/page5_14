@@ -1,0 +1,37 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+h2 { margin-top:5px; }
+.dflc { justify-content:space-between; }
+.main_dbox, .main_dboxb {
+    margin:0 0 10px 0; width:182px; height:137px; border:solid 1px #f5530e;
+}
+.main_dbox:hover { box-shadow:0px 0px 10px 0 #999999; transition:box-shadow 0.3s ease-out 0s; }
+.main_dboxb { border:solid 1px #004f92; }
+
+
+
+/* .main_dbox_mobile, .main_dbox_mobileb { margin:0 11px 11px 0; } */
+.h14m { margin:0; padding:1px 0; font-size:13px; text-align:center; }
+.h14b { margin:0; } .dbox { float:left; width:367px; background:#fafafa; } .dbox { line-height:16px; }
+h3 { text-align:left; background:none; }
+.link_other { display:block; height:98px; padding:9px 5px; text-decoration:none; text-align:center; line-height:16px; color:#000000; background:#eeeeee; } .link_other span { color: #004f92; }
+.pb_ismall, .pb_ismall:hover { margin:5px 0; width:180px; height:126px; }
+.pls01 { padding:5px 10px; font-weight:bold; font-size:14px; text-decoration:none; border:solid 1px #f00000; border-radius:5px; background:#f0f0f0; box-shadow:4px 4px 7px 0 #999999;} 
+.pls01:hover { border:solid 1px #004F92; background:#e0e0e0; }
+@media screen and (max-width:999px) {
+  .dflc { justify-content:space-evenly;}
+  .h14b { text-align:left; text-indent:10px; }
+  .dbox { width:100%; background-color:#ffffff; margin-top:0;margin-bottom:0; padding-top:0; padding-bottom:0; }
+  .border { border:none; }
+  .mt10mob { margin-top:10px; }
+  .visdsk { display: none;  }
+  .tacmob { text-align:center; }
+}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*block5_14*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

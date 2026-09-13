@@ -1,0 +1,26 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text5_32*}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*text5_31*}
+<img class="pb_ismall" src="/img/qr/qr2-4.png" style="width:250px;height:auto" onclick="$.zoomImg(this,'/img/qr/qr2-4.png',200,25,1053,772,'Элакор-ПУ Наливной пол',-25,1,0,1);" title="Элакор-ПУ Наливной пол" alt="Элакор-ПУ Наливной пол"/>
+{*text5_33*}
+<div class="fleft mr20">
+<?php
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-naliv-pol-napolnennyi.pdf?'.filemtime($pb_root.'instructions/elakor-pu-naliv-pol-napolnennyi.pdf').'" target="_blank"><span class="fs16">Наливной пол Наполненный</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-naliv-pol-promyshlennyi.pdf?'.filemtime($pb_root.'instructions/elakor-pu-naliv-pol-promyshlennyi.pdf').'" target="_blank"><span class="fs16">Наливной пол Промышленный</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-naliv-pol-classic.pdf?'.filemtime($pb_root.'instructions/elakor-pu-naliv-pol-classic.pdf').'" target="_blank"><span class="fs16">Наливной пол Классик</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-naliv-pol-bezrastvornyi.pdf?'.filemtime($pb_root.'instructions/elakor-pu-naliv-pol-bezrastvornyi.pdf').'" target="_blank"><span class="fs16">Наливной пол Безрастворный</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-naliv-pol-elastichnyi.pdf?'.filemtime($pb_root.'instructions/elakor-pu-naliv-pol-elastichnyi.pdf').'" target="_blank"><span class="fs16">Наливной пол Эластичный</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-naliv-pol-rezinovyi.pdf?'.filemtime($pb_root.'instructions/elakor-pu-naliv-pol-rezinovyi.pdf').'" target="_blank"><span class="fs16">Наливной пол Резиновый</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-naliv-pol-sk-prof.pdf?'.filemtime($pb_root.'instructions/elakor-pu-naliv-pol-sk-prof.pdf').'" target="_blank"><span class="fs16">Наливной пол СК ПРОФ</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-naliv-pol-ast.pdf?'.filemtime($pb_root.'instructions/elakor-pu-naliv-pol-ast.pdf').'" target="_blank"><span class="fs16">Наливной пол АСТ</span></a></p>';
+?>
+</div>
+<div class="px10"></div>
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

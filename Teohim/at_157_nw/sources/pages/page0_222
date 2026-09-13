@@ -1,0 +1,28 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#clc,#clc2,#clz,#clz2,#dordEdit,#dlnkPR { cursor:pointer; position:relative; display:block; padding:5px; width:208px; height:20px; font-size:15px; font-weight:bold; letter-spacing:1px; text-align:center; box-shadow:4px 4px 7px 0 #999999; border-radius:5px; /*transition:background .5s ease;*/ }
+#dordEdit { margin:0 auto; color:#ffffff; width:250px; border:solid 1px #808080; background:#f5530e; } #dordEdit:hover { color:#800000; background:#ffcc6c; text-shadow:2px 2px 2px #ffffff; }
+#clc,#clc2,#dlnkPR { float:left; color:#000000; border:solid 1px #808080; background:#eeeeee; text-shadow:2px 2px 2px #ffffff; }
+#dlnkPR { float:right; margin:0 auto; width:190px; text-decoration:none; }
+#clc:hover,#clc2:hover,#dlnkPR:hover { background:#c8c8c8; } #clc { width:190px; }
+#clz,#clz2 { margin:0 auto; color:#ffffff; border:solid 1px #2878bb; background:#2878bb; } #clz:hover,#clz2:hover {color:#800000; background:#ffcc6c; text-shadow:2px 2px 2px #ffffff; }
+#idSumMatUp,#idSumMatDown { width:170px; } .tmtr { margin:5px 0 0 0; } .tmtr tr { height:22px; } .tmtr td { height:auto; line-height:17px; border:solid 1px #c8c8c8; } .tmtr .tar { padding-right:3px; }
+.tbl1 td { padding:1px 5px 2px 0; text-align:right; font-weight:bold; font-size:13px; border-collapse:collapse; border:solid 1px #000000; background:#ffff00; box-shadow:#999999 4px 4px 7px 0px; }
+.trt_none { display:none; } .trt_tr { display:table-row; } #clz,#clc,#dlnkPR,#idOrdert,#dordEdit { display:none; }
+.f_r { margin:3px 0 2px 2px; } 
+/*
+.f_l,.f_r { cursor:pointer; float:left; margin:1px 0 0 0; width:15px; height:15px; font:bold 16px arial; line-height:16px; text-align:center; border:solid 1px #c8c8c8; }
+.f_l { margin-left:1px; } .f_r { float:right; margin-right:-2px; }  .tmtr td input { margin-right:1px; }
+.f_l:hover,.f_r:hover { border:solid 1px #f00000; }
+*/
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*text0_1*}
+{*tpl16*}
+{*block0_222*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}
+<script>
+</script>
+</body></html>{*tpl21*}

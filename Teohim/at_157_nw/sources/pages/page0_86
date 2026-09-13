@@ -1,0 +1,220 @@
+<?php
+/* page0_81 /setpred01/adm_obj.php */
+// header("HTTP/1.1 204 No Content"); exit;
+$o_inc='adm'; include "cnfg.php";
+
+// Лог операций админки объектов и фото
+$t=$_SERVER['REMOTE_ADDR'];
+if ($t!='{*text5_29*}'/* && $t!='178.45.223.89' && $t!='77.37.249.45' && $t!='83.167.104.89' && $t!='176.192.27.82' && $t!='95.165.154.69'*/) {
+$h=@fopen($_SERVER["DOCUMENT_ROOT"].'/setpred01/log_of_adm','a+'); if ($h) {
+    $t=''.date("d-m-Y - H:i:s").chr(9).$t.chr(9).chr(9).'ID представителя: '.$f.chr(9).chr(9).$_SERVER['REQUEST_URI'].chr(9).chr(9).$_SERVER['HTTP_USER_AGENT'].chr(9).$_SERVER['HTTP_REFERER'];
+    $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
+    @fwrite($h,$t); @fclose($h);
+}
+}
+{*text0_7*}
+{*text1_9*}
+{*text1_10*}
+{*text1_11*}
+
+// Определение главного ID для файла данных objlist1 (объединение для разных паролей представителей при авторизации)
+$calstID = count($alstID); $id=0;
+for ($i=0; $i<$calstID; $i++) {
+    $a = $alstID[$i]; $c=count($a); // количество объединённых сайтов (-1)
+    for ($j=1; $j<$c; $j++) {
+        if ($f==$a[$j]) $id = $a[1];
+    }
+}
+if ($id==0) { header("HTTP/1.1 204 No Content"); exit; }
+
+$a = $a_pred[$id];
+
+if (empty($_POST['data'])) {
+
+if (empty($_POST['lastobj'])) {
+
+$out='<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>Представитель ООО «ТэоХим» - '.$a[4].'</title>';
+$out.='<link rel="icon" href="/favicon.ico" type="image/ico"/><meta name="robots" content="noindex, nofollow"/>';
+$out.='<link rel="stylesheet" href="/setpred01/adm_obj_003.css" type="text/css"/>';
+$out.='<script type="text/javascript" charset="UTF-8" src="/setpred01/_vcorp_js_0002.js"></script>';
+$out.='<script type="text/javascript" charset="UTF-8" src="/setpred01/adm_obj_003_.js"></script>';
+$out.='</head><body><div id="main">';
+$out.='<div id="phprevs"><div id="phprevs7"></div><div id="phprevs6"></div><div id="phprevs5"></div><div id="phprevs4"></div><div id="phprevs3"></div><div id="phprevs2"></div><div id="phprevs1"></div></div>';
+$out.='<div id="phprv"><div id="phprv7"></div><div id="phprv6"></div><div id="phprv5"></div><div id="phprv4"></div><div id="phprv3"></div><div id="phprv2"></div><div id="phprv1"></div></div>';
+$out.='<div id="dcontent">';
+
+$out.='<div style="position:relative; float:right; margin-left:10px; padding:0 0 5px 0; width:300px; height:130px;">'; // <div id="id_head_spisok_reg">Ваши регионы:</div>
+$out.='<div id="spisok_reg"></div>';
+$out.='</div>';
+
+if ($id===1) {
+$out.='<div style="float:right;padding:0 0 5px 10px;"><input type="button" class="pb_buttons" value="Новые Объекты" style="width:110px;height:28px;" onclick="f_viewNewObj()" tabIndex="-1"/><input type="button" class="pb_buttons" value="Новые Фото" style="margin-left:10px;width:90px;height:28px;" onclick="f_viewNewPh()" tabIndex="-1"/><div class="px5"></div>';
+$out.='<input type="button" class="pb_buttons" id="ihDel" value="Удалить объект" style="width:170px;height:28px;color:#808080;" onclick="f_delObj(event);" tabIndex="-1"/>';
+$out.='</div>';
+}
+
+$out.='<div style="float:right; padding-bottom:5px;"><input type="button" class="pb_buttons" id="ihNew" value="Добавить объект" style="width:1'.($id==1?'6':'8').'0px;height:28px;" onclick="f_editObj(0)" tabIndex="-1"/>'.($id==1?'<div class="px5"></div>':'');
+$out.='<input type="button" class="pb_buttons" id="ihNewC" value="Копировать объект" style="width:1'.($id==1?'6':'80px; margin-left:1').'0px;height:28px;color:#808080;" onclick="f_editObj(1,1);" tabIndex="-1"/><div class="px5"></div>';
+$out.='<input type="button" class="pb_buttons" id="ihEdit" value="Редактировать объект" style="width:1'.($id==1?'6':'8').'0px;height:28px;color:#808080;" onclick="f_editObj(1);" tabIndex="-1"/>';
+$out.='</div>';
+
+$out.='<div style="float:left;width:600px">';
+$out.='<div style="float:left;width:150px;text-align:left;"><a style="font:bold 13px arial; color:#ed4543; text-decoration:underline; line-height:20px;" href="javascript:void(history.length>1?history.back():false)">Вернуться на сайт</a></div>';
+$out.='<h1>Ввод и редактирование ОБЪЕКТОВ и ФОТО</h1><div class="px20"></div><h2>'.$tPreds[$id][2].'</h2>';
+$out.='<div class="px20"></div>';
+
+if ($id===1) {
+$out.='<div id="id_head_combo">Выбор представителя:</div><div id="id_combo"><div class="pb_combobox"><input type="text" value="Москва (1)" maxlength="99" placeholder="Выбор региона" />
+<div class="pb_cb_image">▼</div>
+<div class="pb_cb_select">';
+//$cnt=count($alstID);
+//for ($i=0; $i<$cnt; $i++) { if($tPreds[$alstID[$i][1]]) { $out.='<div class="pb_cb_option">'.$alstID[$i][1].' — '.$tPreds[$alstID[$i][1]][1].'</div>'; } }
+$cnt=count($tPsrt);
+for ($i=0; $i<$cnt; $i++) { $out.='<div class="pb_cb_option" onmousedown="v_selPred='.$tPsrt[$i].';">'.$tPreds[$tPsrt[$i]][1].'</div>'; }
+$out.='</div></div></div>';
+}
+
+$out.='</div><div class="px10"></div><div id="full_bottom" onclick="f_fullBottom()" title="Развернуть/Свернуть Таблицу"></div><div id="buthlp" onclick="f_hlp()" title="Справка"'.($id==1?' style="top:34px;left:958px;"':'').'></div>';
+$out.='<div id="ch_sum">Выбрано:</div><div id="ch_sum_n">0</div><div id="id_mov_obj"><input type="button" class="pb_buttons" id="idVovObj" value="Перенести ..." style="width:140px;height:28px;color:#808080;" onclick="f_moveObj()" tabIndex="-1"/></div>';
+$out.='<div id="id_grid"></div>';
+$out.='</div>'; /* content */
+
+$out.='<div class="pb_hidden"><div id="idhash">'.$o_hash.'</div><div id="idID">'.$id.'</div>';
+/* Список регионов */
+$out.='<div id="hRegsList">'; $cnt=count($aRegs);
+for ($i=0; $i<$cnt; $i++) {
+    $out.='<div id="idrg'.$aRegs[$i][0].'">'.$aRegs[$i][1].'</div>';
+}
+$out.='</div>'; /* hRegsList */
+$out.='</div>'; /* pb_hidden */
+
+/* Список представителей для $id==1
+if ($id===1) {
+$out.='<div class="pb_hidden" id="hPredList">';
+$cnt=count($tPreds);
+for ($i=1; $i<$cnt; $i++) { if($tPreds[$i]) { $out.='<div class="idPreds">'.$tPreds[$i][1].'</div>'; } }
+$out.='</div>';
+}*/
+
+$out.='<div class="pb_hidden" id="hAllData">';
+$out.=fAllData($id);
+$out.='</div>'; /* pb_hidden hAllData */
+
+$out.='</div></body></html>'; /* main */
+
+} else { /* not empty lastobj */
+    $dt = date("Y-m-d"); $tmpY=(int)substr($dt,0,4); $tmpM=(int)substr($dt,5,2); $tmpM-=5;
+    if ($tmpM<1) { $tmpY-=1; $tmpM=12; }
+    $tmpM = ($tmpM<10) ? ('0'.$tmpM) : (''.$tmpM);
+    $dt = ''.$tmpY.'-'.$tmpM.'-01'; if ($dt<'2017-09-01') $dt='2017-08-26';
+    $dt='2017-08-26';
+    $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objlist1';
+    $txt=@file_get_contents($file_objList);
+    if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+    $arr=false; $txt=explode(chr(10),$txt); $cnt=count($txt);
+    for ($i=1; $i<$cnt; $i++) {
+        $s=explode(chr(9),$txt[$i]);
+        if ($s[13]>=$dt) $arr[]=$s;
+    }
+    usort($arr,"cmp");
+    $out='<div style="position:absolute; padding:0 10px 0 0; top:10px; left:10px; right:10px; bottom:10px; overflow-y:scroll;"><table><tbody><tr><th style="width:40px;height:0"></th><th style="width:80px;height:0"></th><th style="width:500px;height:0"></th><th style="height:0"></th></tr>';
+    $cnt=count($arr);
+    $out.='<tr><td colspan="4">&nbsp;</td></tr>';
+    for ($i=0; $i<$cnt; $i++) {
+        $out.='<tr><td>'.($i+1).'</td><td>'.($arr[$i][13]).'</td><td>'.$tPreds[(int)($arr[$i][0])][1].'</td><td>'.($arr[$i][1]).'</td></tr>';
+    }
+    $out.='</tbody></table></div><div style="position:absolute; padding:0 10px 0 0; top:10px; left:10px; right:10px;"><table><tbody><tr><th style="width:40px">№</th><th style="width:80px">Дата</th><th style="width:500px">Наименование представителя</th><th>Наименование объекта</th></tr></tbody></table></div>';
+}
+print $out; exit;
+
+} /* empty data */
+
+/* ********************** Запись и чтение данных. Объекты. ********************** */
+
+$data=(int)$_POST['data']; $pid=(int)$_POST['pid']; $delobj=(int)$_POST['delobj'];
+if ($data==3) {
+    if (!empty($_POST['objlist'])) {
+        $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objlist1';
+        $txt=@file_get_contents($file_objList);
+        if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+        $data=Fo_post('objlist'); $s=chr(10).$pid.chr(9); $pos=strpos($txt,$s); $pos1=$pos2=$pos;
+        if($pos!=false) {
+            while ($pos2!=false) {
+                $pos2=strpos($txt,$s,$pos1+1); $pos3=strpos($txt,chr(10),$pos1+1); if ($pos3!=false) $pos1=$pos3; if ($pos2==false || $pos2!=$pos3) $pos2=false;
+            }
+        }
+        $txt=substr($txt,0,$pos).substr($txt,$pos1).($data=='none'?'':$data);
+        $fh=@fopen($file_objList,'w'); if ($fh==false) { header("HTTP/1.1 204 No Content"); exit; } else {
+            @rewind($fh); if (-1==@fwrite($fh,$txt)) { @fflush($fh); @fclose($fh); } else { @ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh); }
+        }
+        if ($delobj>0) {
+            $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objphotolist1';
+            $txt=@file_get_contents($file_objList); $o=false;
+            if ($txt) {
+                $s=chr(10).$pid.chr(9).$delobj.chr(9); $pos=strpos($txt,$s);
+                while ($pos!=false) {
+                    $pos1=strpos($txt,chr(10),$pos+1);
+                    if($pos1==false) break; /* Эта ошибка невозможна без ручной порчи файла */
+                    $txt=substr($txt,0,$pos).substr($txt,$pos1);
+                    $pos=strpos($txt,$s);
+                }
+                $fh=@fopen($file_objList,'w'); if ($fh==false) { header("HTTP/1.1 204 No Content"); exit; } else {
+                    @rewind($fh); if (-1==@fwrite($fh,$txt)) { @fflush($fh); @fclose($fh); } else { @ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh); }
+                }
+            }
+        }
+    }
+    $out=fAllData($pid);
+    print $out; exit;
+} else {
+    header("HTTP/1.1 204 No Content"); exit;
+}
+
+/* Сравнение usort($arr,"cmp"); */
+function cmp($a,$b) {
+  if($a[13]==$b[13]) return 0;
+  return ($a[13]>$b[13]) ? -1 : 1;
+}
+
+/* Заполнение блока данных hAllData */
+function fAllData($id) {
+    global $a_pass2;
+    $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objlist1';
+    $txt=@file_get_contents($file_objList); $o=false;
+    if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+
+    /* Список регионов для представителя */
+    $t = (empty($a_pass2[$id])) ? '' : ',';
+    $out='<div id="idregs">0'.$t.$a_pass2[$id].'</div>';
+    /* Список объектов */
+    $a_pass0 = explode(',',('0'.$t.$a_pass2[$id]));
+    $pos=strpos($txt,chr(10)); $o[]='';
+    while ($pos!=false) {
+        $s=explode(chr(9),substr($txt,0,$pos)); $txt=substr($txt,$pos+1); $s[0] = (int)$s[0];
+        if ($s[0]===$id) $o[]=$s;
+        $pos=strpos($txt,chr(10));
+    } $cnt=count($o);
+    $out.='<div id="hObjList">';
+    for ($i=1; $i<$cnt; $i++) {
+        $out.='<div id="ol'.$i.'">'.$o[$i][0].'¡'.$o[$i][1].'¡'.$o[$i][2].'¡'.$o[$i][3].'¡'.str_replace('.',',',$o[$i][4]).'¡'.$o[$i][5].'¡'.str_replace(',','.',$o[$i][6]).'¡'.str_replace(',','.',$o[$i][7]).'¡'.$o[$i][8].'¡'.$o[$i][9].'¡'.$o[$i][10].'¡'.$o[$i][11].'¡'.$o[$i][12].'¡'.($o[$i][13] ? $o[$i][13] : '2017-08-25').'¡'.$o[$i][14].'¡'.$o[$i][15].'</div>';
+    }
+    $out.='</div>'; /* hObjList */
+
+    /* Список фотографий для представителей и объектов */
+    $file_objList=$_SERVER["DOCUMENT_ROOT"].'/sys/objphotolist1';
+    $txt=@file_get_contents($file_objList); $o=false;
+    if (!$txt) { header("HTTP/1.1 204 No Content"); exit; }
+    $pos=strpos($txt,chr(10)); $o[]='';
+    while ($pos!=false) {
+        $s=explode(chr(9),substr($txt,0,$pos)); $txt=substr($txt,$pos+1); $s[0] = (int)$s[0];
+        if ($s[0]===$id) $o[]=$s;
+        $pos=strpos($txt,chr(10));
+    } $cnt=count($o);
+    $out.='<div id="hPhotoList">';
+    for ($i=1; $i<$cnt; $i++) {
+        $out.='<div id="opl'.$i.'">'.$o[$i][0].'¡'.$o[$i][1].'¡'.$o[$i][2].'¡'.$o[$i][3].'¡'.$o[$i][4].'¡'.$o[$i][5].'¡'.$o[$i][6].'¡'.$o[$i][7].'¡'.$o[$i][8].'¡'.($o[$i][9] ? $o[$i][9] : '').'</div>';
+    }
+    $out.='</div>'; /* hPhotoList */
+    return $out;
+}
+?>

@@ -1,0 +1,95 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text0_104*}
+{*text0_111*}
+.divPriceD { display:block; } .divPriceM { display:none; }
+.h14l { clear:none; float:left; margin:7px 0 0 0; padding:0; font-size:15px; }
+.tmtr td:hover { color:#f00000; background:#eeeeee; font-weight:bold; } .tmtr td:hover a { font-weight:normal; }
+.tmtr .tmdl { padding:1px 0 1px 5px; } .tmtr .tmdl:hover { font-weight:normal; }
+.tmtr th { border:solid 1px #808080; } .tmtr td { border:solid 1px #c8c8c8; }
+.divh3 .divh3span, .divh3span, .divh4 .divh4span, .divh4span { float:right; margin:-27px 10px 0 0; font-size:10px; font-weight:normal; color:#000000; }
+.tmtr .fs12 { font-size:12px; font-weight:bold; }
+.temp1,.temp2 { float:left; padding:0 7px; width:260px; } .temp2 { float:right; } .a1 { text-decoration:none; } .p1 { border:solid 1px #f00000; } .p1:hover { border:solid 1px #004F92; background:#e0e0e0; }
+
+.divh3 .dh3span { display:inline-block; font-size:11px; font-weight:normal; color:#000000; white-space:pre-wrap; }
+.divh4 .divh4span, .divh4span { margin:-18px 10px 0 0; }
+.divh4 { padding:3px 0 9px 40px; font-size:14px; font-weight:normal; } .div_mc .divh4:before, .div_mo .divh4:before { left:20px; }
+
+.tmtr { border:solid 1px #000000; } .div_itstr_tmp .tmtr td { text-align:left; border:none; }
+.div_itstr_tmp .tmtr .tmtl1 a { font-size:13px; text-decoration:underline; }
+.div_itstr_tmp .tmtr td a { font-size:12px; } .div_itstr_tmp .tmtr td a:hover { text-decoration:none; } .div_itstr_tmp .tmtr .tmtl a:hover { text-decoration:underline; }
+.div_itstr_tmp .tmtr td .tpdf { font-size:14px; text-decoration:none; color:#000000; }
+.div_itstr_tmp .tmtr td .blk_cover_calc, .div_itstr_tmp .tmtr td .blk_cover_calc_empty { position:relative; top:0; left:0; right:0; width:100px; height:22px; padding:0 3px; font-weight:bold; font-size:12px; text-decoration:none; line-height:22px; color:#ffffff; }
+
+.div_itstr_tmp .tmtr td .tpdf { padding:3px 0px 3px 20px; width:90px; background-size:16px; }
+.div_itstr_tmp .tmtr td .tdoc { display:block; padding:3px 0px 8px 31px; height:16px; font-size:13px; background:url("https://teohim.ru/img/css/doc.gif") no-repeat 2px 1px; }
+.div_itstr_tmp .tmtl { padding:2px 2px 2px 10px; font-weight:bold; }
+.div_itstr_tmp .tmtl1 { padding:2px 2px 2px 5px; width:120px; }
+
+.ti10 { text-indent:10px; }
+.divPriceD, .divPriceM { border:none; }
+.divPriceD .tmtr td, .divPriceM .tmtr td { border:solid 1px #c8c8c8; }
+
+.d18text { float:left; padding:3px 0 0 0; text-align:left; } .d18dtext { clear:both; font-size:11px; font-weight:normal; }
+.d18ic { float:right; padding:1px 0 0 0; width:234px; } .d18i { float:left; width:118px; } .d18c { float:right; width:112px; }
+
+@media screen and (max-width:999px) { .px10n { display:none; } }
+@media screen and (max-width:799px) {
+#dcontent { min-width:320px; } .divPriceD { display:none; } .divPriceM { display:block; }
+.divh3,.divh4,.h14l { font-size:13px; } .divh3 .divh3span, .divh3span { margin:-18px 10px 0 0; }
+.d18text { float:none; } .d18ic { float:left; clear:both; margin:0 auto; padding:3px 0 5px 0; } .tmtr td a { text-decoration:underline; }
+}
+@media screen and (max-width:630px) { .temp1,.temp2 { clear:both; float:left; } .px10n { display:block; } .divh3_78 { padding:5px 100px 15px 25px; line-height:15px; } }
+@media screen and (max-width:530px) { .divh4_257 { padding:3px 0 25px 40px; line-height:15px; } .divh3_9 { padding:5px 100px 15px 25px; line-height:15px; } }
+@media screen and (max-width:450px) { #datePrice { margin:0 5px 0 0; } .divh3_26 { padding:5px 100px 15px 25px; line-height:15px; } }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}<script>
+function f2_120() {
+var x,y,p='<div style="position:absolute;left:0;top:0;bottom:0;right:0;padding:0 10px;overflow-y:scroll"><div class="px5"></div><p class="fwb">Выписка из СП 29.13330.2011 Полы. Актуализированная редакция СНиП 2.03.13-88.</p>';
+p+='<p>5.11 Для обеспечения комфортных условий для человека с точки зрения антистатики и защиты электронного оборудования от электрических разрядов с напряжением более 5 кВ полы в помещениях жилых и общественных зданий должны выполняться с покрытием из полимерных антистатических материалов с удельным поверхностным электрическим сопротивлением в пределах 1•10<sup>6</sup> - 1•10<sup>9</sup> Ом.</p>';
+p+='<p>5.12 В помещениях промышленных зданий с требованием "электронной гигиены", в которых необходимо обеспечение комфортных условий для человека с точки зрения антистатики, а также для защиты электронного оборудования от электрических разрядов с напряжением более 2 кВ полы должны выполняться с электрорассеивающим покрытием, характеризующимся величиной электросопротивления между поверхностью покрытия пола и системой заземления здания в пределах от 5•10<sup>4</sup> до 10<sup>7</sup> Ом.</p>';
+p+='<p>5.13 Полы в помещениях, где возможно образование взрывоопасных смесей газов, пыли, жидкостей и других веществ в концентрациях, при которых искры, образующиеся при ударе предметов о пол или разрядах статического электричества, могут вызвать взрыв или возгорание, должны выполняться с электрорассеивающим покрытием из материалов, не образующих искр при ударных воздействиях, характеризующимся величиной электросопротивления между поверхностью покрытия пола и системой заземления здания в пределах от 5•10<sup>4</sup> до 10<sup>6</sup> Ом.</p>';
+p+='<p>5.14 В "чистых" и "особо чистых" помещениях, классифицируемых по классам чистоты, полы должны выполняться с электрорассеивающим полимерным покрытием, характеризующимся величиной электросопротивления между поверхностью покрытия пола и системой заземления здания в пределах от 5•10<sup>4</sup> до 10<sup>7</sup> Ом.</p><div class="px10"></div></div>';
+$.uEnv(); x=$.gCW()-50; y=$.gCH()-50; if(y>500)y=500; if(x>880){x=880;if(y>370)y=370;}
+$.createDialog('Выписка из СП 29.13330.2011 Полы. Актуализированная редакция СНиП 2.03.13-88.',p,x,y); v_esc=v_dialogEsc=1;
+}
+</script>
+</head><body>
+{*text0_1*}
+{*tpl16*}
+{*block1_5*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}
+<script>
+$.ready(function() {
+  var i,a,p,t=f_gdhm(),ls=$.gLS('page1005price')||[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,t];
+  if(typeof ls=='string') ls=JSON.parse(ls); if ((t-ls[51])>60) ls=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,t]; $.sLS("page1005price",JSON.stringify(ls));
+  a=$.qSA('.divh3');
+  if (a) { for (i=0; i<a.length; i+=1) {
+     p=a[i].parentNode; p.style.height = (ls[i] ? p.scrollHeight : 40) + 'px'; p.className = ls[i] ? 'div_mo' : 'div_mc';
+     $.EH.add(a[i],'click',new Function('e','var ls=$.gLS("page1005price")||[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'+t+'],p=e.target.parentNode; if(typeof ls=="string") ls=JSON.parse(ls); ls[51]=f_gdhm(); ls['+i+']=ls['+i+']==1?0:1; $.sLS("page1005price",JSON.stringify(ls));'));
+  }}
+  a=$.qSA('.divh4');
+  if (a) { for (i=0; i<a.length; i+=1) {
+     p=a[i].parentNode; p.style.height = (ls[i+20] ? p.scrollHeight : 25) + 'px'; p.className = ls[i+20] ? 'div_mo' : 'div_mc';
+     $.EH.add(a[i],'click',new Function('e','var ls=$.gLS("page1005price")||[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'+t+'],p=e.target.parentNode; if(typeof ls=="string") ls=JSON.parse(ls); ls[51]=f_gdhm(); ls['+(i+20)+']=ls['+(i+20)+']==1?0:1; $.sLS("page1005price",JSON.stringify(ls));'));
+  }}
+});
+function f_pageNNNN(o,f) {
+  var a,p,i,h,ls=f?[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,f_gdhm()]:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,f_gdhm()]; o=o?1:0;
+  a=$.qSA('.divh3'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt($.gStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==40) || (!f&&h!=40)) $.aHeight(p,o?200:25,25,p.scrollHeight,40);
+    }
+  }
+  a=$.qSA('.divh4'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt($.gStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==25) || (!f&&h!=25)) $.aHeight(p,o?200:25,25,p.scrollHeight,25);
+    }
+  }
+  $.sLS("page1005price",JSON.stringify(ls));
+}
+function f_gdhm() { var d=new Date(), y='000'+d.getFullYear(),l=y.length,m=(d.getMonth()+1),h=d.getHours(),dt=d.getDate(),t=d.getMinutes(); if(l>4)y=y.substr(l-4,4); if(m<10)m='0'+m; if(h<10)h='0'+h; if(dt<10)dt='0'+dt; if(t<10)t='0'+t; return parseInt(y.substr(2,2)+m+dt+h+t); } /* Возврат строки yymmddhhtt из объекта даты */
+</script>
+</body></html>{*tpl21*}

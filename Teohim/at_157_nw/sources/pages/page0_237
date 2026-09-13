@@ -1,0 +1,20 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.div_mo span,.div_mc span { font-weight:bold; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+
+{*text0_4*}
+<?php if ($f==0) { ?>
+<h1>Необходимо авторизоваться</h1>
+<?php } else { ?>
+
+{*tpl16*}
+{*block0_237*}
+{*tpl17*}
+{*tpl18*}
+
+<?php } ?>
+
+{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

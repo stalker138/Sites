@@ -1,0 +1,65 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+.divPriceD { display:block; } .divPriceM { display:none; }
+.h14l { clear:none; float:left; margin:7px 0 0 0; padding:0; font-size:15px; }
+.tmtr td:hover { color:#f00000; background:#eeeeee; font-weight:bold; } .tmtr td:hover a { font-weight:normal; }
+.tmtr .tmdl { padding:1px 0 1px 5px; } .tmtr .tmdl:hover { font-weight:normal; }
+.tmtr th { border:solid 1px #808080; } .tmtr td { border:solid 1px #c8c8c8; }
+.divh3 .divh3span, .divh3span, .divh4 .divh4span, .divh4span { float:right; margin:-27px 10px 0 0; font-size:10px; font-weight:normal; color:#000000; }
+
+.divh3 .dh3span { display:inline-block; font-size:11px; font-weight:normal; color:#000000; white-space:pre-wrap; }
+.divh4 .divh4span, .divh4span { margin:-18px 10px 0 0; }
+.divh4 { padding:3px 0 9px 40px; font-size:14px; font-weight:normal; } .div_mc .divh4:before, .div_mo .divh4:before { left:20px; }
+.temp1{ float:right; width:250px; } .temp2 { float:right; }
+#dcontent { min-width:440px; }
+.p1 { border:solid 1px #f00000; }
+.a1 { text-decoration:none; }
+.p1:hover { border:solid 1px #004F92; background:#e0e0e0; }
+.divcidm { cursor:pointer; display:block; padding:6px 7px 7px 25px; min-height:15px; font-size:12px; line-height:20px; text-decoration:none; color:#000000; background:#eeeeee; border:solid 1px #c8c8c8; } .divcidm:hover { background:#e0e0e0; }
+.divcidm span { font-weight:bold; font-size:14px; text-decoration:underline; color:#f5530e; }
+
+@media screen and (max-width:999px) { .px10n { display:none; } }
+@media screen and (max-width:799px) { #dcontent { min-width:320px; } .divPriceD { display:none; } .divPriceM { display:block; } .divh3,.divh4,.h14l { font-size:13px; } .divh3 .divh3span, .divh3span { margin:-18px 10px 0 0; } }
+@media screen and (max-width:630px) { .temp1, .temp2 { float:left; } .px10n { display:block; } }
+@media screen and (max-width:630px) { .divh3_78 { padding:5px 100px 15px 25px; line-height:15px; } }
+@media screen and (max-width:530px) { .divh4_257 { padding:3px 0 25px 40px; line-height:15px; } .divh3_9 { padding:5px 100px 15px 25px; line-height:15px; } }
+@media screen and (max-width:450px) { #datePrice { margin:0 5px 0 0; } .divh3_26 { padding:5px 100px 15px 25px; line-height:15px; } }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*text0_1*}
+{*tpl16*}
+{*block1_10*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}
+<script>
+$.ready(function() {
+  var i,a,p,t=f_gdhm(),ls=$.gLS('page1010price')||[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,t];
+  if(typeof ls=='string') ls=JSON.parse(ls); if ((t-ls[51])>60) ls=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,t]; $.sLS("page1010price",JSON.stringify(ls));
+  a=$.qSA('.divh3');
+  if (a) { for (i=0; i<a.length; i+=1) {
+     p=a[i].parentNode; p.style.height = (ls[i] ? p.scrollHeight : 40) + 'px'; p.className = ls[i] ? 'div_mo' : 'div_mc';
+     $.EH.add(a[i],'click',new Function('e','var ls=$.gLS("page1010price")||[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'+t+'],p=e.target.parentNode; if(typeof ls=="string") ls=JSON.parse(ls); ls[51]=f_gdhm(); ls['+i+']=ls['+i+']==1?0:1; $.sLS("page1010price",JSON.stringify(ls));'));
+  }}
+  a=$.qSA('.divh4');
+  if (a) { for (i=0; i<a.length; i+=1) {
+     p=a[i].parentNode; p.style.height = (ls[i+20] ? p.scrollHeight : 25) + 'px'; p.className = ls[i+20] ? 'div_mo' : 'div_mc';
+     $.EH.add(a[i],'click',new Function('e','var ls=$.gLS("page1010price")||[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'+t+'],p=e.target.parentNode; if(typeof ls=="string") ls=JSON.parse(ls); ls[51]=f_gdhm(); ls['+(i+20)+']=ls['+(i+20)+']==1?0:1; $.sLS("page1010price",JSON.stringify(ls));'));
+  }}
+});
+function f_pageNNNN(o,f) {
+  var a,p,i,h,ls=f?[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,f_gdhm()]:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,f_gdhm()]; o=o?1:0;
+  a=$.qSA('.divh3'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt($.gStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==40) || (!f&&h!=40)) $.aHeight(p,o?200:25,25,p.scrollHeight,40);
+    }
+  }
+  a=$.qSA('.divh4'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt($.gStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==25) || (!f&&h!=25)) $.aHeight(p,o?200:25,25,p.scrollHeight,25);
+    }
+  }
+  $.sLS("page1010price",JSON.stringify(ls));
+}
+function f_gdhm() { var d=new Date(), y='000'+d.getFullYear(),l=y.length,m=(d.getMonth()+1),h=d.getHours(),dt=d.getDate(),t=d.getMinutes(); if(l>4)y=y.substr(l-4,4); if(m<10)m='0'+m; if(h<10)h='0'+h; if(dt<10)dt='0'+dt; if(t<10)t='0'+t; return parseInt(y.substr(2,2)+m+dt+h+t); } /* Возврат строки yymmddhhtt из объекта даты */
+</script></body></html>{*tpl21*}

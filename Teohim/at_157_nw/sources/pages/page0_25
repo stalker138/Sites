@@ -1,0 +1,1170 @@
+<?php
+// Набор функций форматированного вывода строк для материалов.
+// Каждая функция имеет входной параметр - индекс (номер строки) материала или покрытия, второй параметр - произвольное имя (анкор ссылки выделяется %...%)
+// Каждая функция возвращает согласно индексу строку таблицы с описанием материала или покрытия, анкорами, ссылками и т.д.
+$gtagmtr='';
+
+$pl=false; for ($i=0; $i<=350; $i++) { $pl[]=''; }
+$pl[11]='<l2 id="1">';  // </l2> 1.1.2. Элакор-ПУ Грунт - грунт для бетона
+$pl[13]='<l2 id="2">';  // </l2> 1.1.7. ПУ Грунт-2К/100 - полиуретановый грунт без растворителя
+$pl[15]='<l2 id="14">';  // </l2> Антистатический грунт
+$pl[17]='<l2 id="3">';  // </l2> Эмаль-60 - полиуретановая краска для бетона
+$pl[18]='<l2 id="7">';  // </l2> 1.2.6. Эмаль-2К/100 - фактурная, без растворителей
+$pl[19]='<l2 id="4">';  // </l2> Эмаль-2К - краска для асфальта
+$pl[20]='<l2 id="6">';  // </l2> Эмаль-60 - Полуматовая
+$pl[21]='<a href="https://teohim.ru/downloads/poliuretan-emal-gladkaya.pdf?'.filemtime($pb_root.'downloads/poliuretan-emal-gladkaya.pdf').'" target="_blank">';  // </a> 1.2.7. Эмаль-2К/100 - гладкая, без растворителей
+$pl[22]='<l2 id="24">';  // </l2> Эмаль-60 Глянцевая полиуретановая
+$pl[23]='<l2 id="5">';  // </l2> Лак-60 - полиуретановый лак
+$pl[26]='<l2 id="71">';  // </l2> 1.4.3. Полиуретановый наливной пол Наполненный
+//$pl[26]='<a href="https://teohim.ru/downloads/poliuretan-nalivnoj-pol-napolnennyi.pdf?'.filemtime($pb_root.'downloads/poliuretan-nalivnoj-pol-napolnennyi.pdf').'" target="_blank">';  // </a> 1.4.3. Полиуретановый наливной пол Наполненный
+$pl[27]='<l2 id="60">'; // </l2> 1.4.1. Полиуретановый наливной пол Классик
+$pl[28]='<l2 id="68">'; // </l2> Наливной пол Эластичный-1
+$pl[29]='<l2 id="62">'; // </l2> Антистатический полиуретановый наливной пол АСТ-7
+$pl[30]='<l2 id="69">'; // </l2> Наливной пол Эластичный-2 (Наливной Резиновый пол)
+$pl[31]='<l2 id="64">'; // </l2> 1.4.9. Полиуретановый наливной пол СК ПРОФ
+$pl[32]='<l2 id="72">'; // </l2> 1.4.4. Наливной пол БР (без растворителя)
+//$pl[32]='<a href="https://teohim.ru/downloads/poliuretan-nalivnoj-pol-br.pdf?'.filemtime($pb_root.'downloads/poliuretan-nalivnoj-pol-br.pdf').'" target="_blank">';  // </a> 1.4.4. Наливной пол БР (без растворителя)
+$pl[33]='<l2 id="8">';  // </l2> Шпатлёвка-2К - полиуретановая шпатлевка для бетона
+$pl[34]='<l2 id="10">';  // </l2> Шпатлёвка-2К БП - полиуретановая шпатлевка для бетона некрашенная
+$pl[35]='<l2 id="70">';  // </l2> 1.4.2. Полиуретановый наливной пол Промышленный
+//$pl[35]='<a href="https://teohim.ru/downloads/poliuretan-nalivnoj-pol-promyshlennyj.pdf?'.filemtime($pb_root.'downloads/poliuretan-nalivnoj-pol-promyshlennyj.pdf').'" target="_blank">';  // </a> 1.4.2. Полиуретановый наливной пол Промышленный  
+$pl[37]='<l2 id="9">';  // </l2> Герметик-2К – герметик для швов бетонных полов
+$pl[39]='<l2 id="29">';  // </l2> Герметик PU-40 – однокомпонентный, 600мл, цена за шт.
+$pl[40]='<l2 id="13">';  // </l2> 2.1.2. Грунт-2К/100П - эпоксидный грунт порозаполняющий
+
+//$pl[40]='<a href="https://teohim.ru/downloads/elakor-ed-2k100p.pdf?'.filemtime($pb_root.'downloads/elakor-ed-2k100p.pdf').'" target="_blank">';  // </a> Грунт-2К/100П - эпоксидный грунт порозаполняющий
+$pl[41]='<l2 id="12">';  // </l2> Грунт-2К/100 - эпоксидный грунт (без растворителей)
+$pl[42]='<l2 id="73">';  // </l2> 2.1.1. Грунт-2К/ПР - грунт порозаполняющий (с растворителем)
+$pl[43]='<l2 id="11">';  // </l2> Грунт-2К/60 - эпоксидная грунтовка (с растворителем)
+//$pl[45]='<l2 id="14">';  // </l2> Антистатический грунт
+$pl[45]='<a href="https://teohim.ru/downloads/elakor-edv-grunt-v.pdf?'.filemtime($pb_root.'downloads/elakor-edv-grunt-v.pdf').'" target="_blank">';  // </a> 2.9.1. Грунт-В - водный эпоксидный грунт 
+$pl[46]='<a href="https://teohim.ru/downloads/elakor-edv-lak-v.pdf?'.filemtime($pb_root.'downloads/elakor-edv-lak-v.pdf').'" target="_blank">';  // </a> 2.9.3. Лак-В-В - матовый эпоксидный лак (водоразбавляемый)
+// $pl[47]='<a href="https://teohim.ru/downloads/elakor-edv-nalivnoy-pol-v-120422.pdf" target="_blank">';  // </a> 2.9.5. Наливной пол-В - водный эпоксидный наливной пол
+$pl[48]='<a href="https://teohim.ru/downloads/elakor-edv-emal-v.pdf?'.filemtime($pb_root.'downloads/elakor-edv-emal-v.pdf').'" target="_blank">';  // </a> 2.9.4. Эмаль-В – водоразбавляемая эпоксидная краска 
+$pl[49]='<l2 id="15">';  // </l2> Эмаль-2К/100 - эпоксидная краска
+$pl[51]='<l2 id="110">';  // </l2> 3.7. Эмаль 2К-80 АСТ-7
+$pl[52]='<l2 id="55">';  // </l2> // 3.8. %Антистатическая краска% - Люкс АСТ-7 (светостойкая)
+$pl[53]='<l2 id="16">';  // </l2> 2.3.1. Лак-2К - эпоксидный лак (прозрачный светостойкий)
+$pl[54]='<a href="https://teohim.ru/downloads/elakor-edv-lak-v-gl.pdf?'.filemtime($pb_root.'downloads/elakor-edv-lak-v-gl.pdf').'" target="_blank">';  // </a> 2.9.2. Лак-В - Глянцевый эпоксидный лак (водоразбавляемый)
+$pl[56]='<l2 id="62" rel="nofollow">'; // </l2> Антистатический полиуретановый наливной пол АСТ-6
+$pl[57]='<l2 id="59">';  // </l2> 2.4.2. Эпоксидный наливной пол Классик
+$pl[58]='<l2 id="58">';  // </l2> 2.4.1. Эпоксидный наливной пол Промышленный
+//$pl[58]='<a href="https://teohim.ru/downloads/epoksid-nalivnoj-pol-promyshlennyj.pdf?'.filemtime($pb_root.'downloads/epoksid-nalivnoj-pol-promyshlennyj.pdf').'" target="_blank">';  // </a> 2.4.1. Эпоксидный наливной пол Промышленный
+// $pl[59]='<l2 id="64">';  // </l2> Эпоксидный наливной пол Г1 (группа горючести Г1)
+
+$pl[60]='<l2 id="74">';  // </l2> 2.4.5. Эпоксидный наливной пол ДЕКОР
+$pl[61]='<l2 id="65">';  // </l2> Наливной пол Белый (чистый белый цвет)
+$pl[62]='<l2 id="100">';  // </l2> 2.4.7. Эпоксидный наливной пол СК ПРОФ
+$pl[63]='<l2 id="66">';  // </l2> Прозрачный наливной пол (для 3D полов)
+$pl[64]='<l2 id="53">';  // </l2> Смола АРТ – прозрачная смола для заливки
+$pl[65]='<l2 id="67">';  // </l2> Антистатический наливной пол (токопроводящий) АСТ-7
+$pl[66]='<l2 id="36">';  // </l2> 3.2. АСТ Пропитка
+$pl[67]='<l2 id="57">';  // </l2> 3.6. Элакор-ЭД АСТ Наливной пол СК ПРОФ АСТ-7
+$pl[68]='<a href="https://teohim.ru/downloads/elakor-ed-in-sostav.pdf?'.filemtime($pb_root.'downloads/elakor-ed-in-sostav.pdf').'" target="_blank">';  // </a> 2.7.5. Элакор-ЭД Инъекционный состав
+$pl[69]='<l2 id="67" rel="nofollow">';  // </l2> Антистатический наливной пол (токопроводящий) АСТ-6
+//$pl[70]='<l2 id="59">';  // </l2> 2.4.3. Эпоксидный наливной пол Классик АСТ-7
+$pl[71]='<l2 id="18">';  // </l2> Шпатлёвка-2К - эпоксидная шпатлевка
+$pl[72]='<l2 id="17">';  // </l2> Шпатлёвка-2К БП - эпоксидная шпатлевка
+$pl[73]='<l2 id="30">';  // </l2> 2.5.3. Ремонтный эпоксидный состав (ровнитель для пола)
+//$pl[73]='<a href="https://teohim.ru/downloads/remontnyi-epoksidnyi-sostav.pdf?'.filemtime($pb_root.'downloads/remontnyi-epoksidnyi-sostav.pdf').'" target="_blank">';  // </a> 2.5.3. Ремонтный эпоксидный состав (ровнитель для пола)
+$pl[75]='<l2 id="19">';  // </l2> Эпоксидный компаунд тиксотропный
+$pl[76]='<l2 id="33">';  // </l2> 2.7.2. Анкеровочный состав
+//$pl[76]='<a href="https://teohim.ru/downloads/elakor-ed-ankerovochnyi-sostav.pdf?'.filemtime($pb_root.'downloads/elakor-ed-ankerovochnyi-sostav.pdf').'" target="_blank">';  // </a> 2.7.2. Анкеровочный состав
+$pl[79]='<l2 id="20">';  // </l2> 1.1.1. Грунт-П - порозаполняющий грунт полиуретановый
+
+//$pl[79]='<a href="https://teohim.ru/downloads/elakor-pu-grunt-p.pdf?'.filemtime($pb_root.'downloads/elakor-pu-grunt-p.pdf').'" target="_blank">';  // </a> 1.1.1. Грунт-П - порозаполняющий грунт полиуретановый
+
+$pl[81]='<l2 id="21">';  // </l2> Грунт-25 - полиуретановая грунтовка
+$pl[83]='<l2 id="22">';  // </l2> Грунт-2К/50 - грунтовка глубокого проникновения
+$pl[85]='<l2 id="23">';  // </l2> Грунт-2К/40 - максимально глубокая грунтовка
+$pl[90]='<l2 id="110">';  // </l2> 3.7.1.Эмаль 2К-80 АСТ-6
+$pl[91]='<l2 id="55" rel="nofollow">';  // </l2> // 3.8.1. %Антистатическая краска% - Люкс АСТ-6 (светостойкая)
+$pl[92]='<l2 id="57">';  // </l2> 3.6.1. Элакор-ЭД АСТ Наливной пол СК ПРОФ АСТ-6
+$pl[93]='<l2 id="25">';  // </l2> Лак для камня, кирпича
+// $pl[95]='<l2 id="26">';  // </l2> 1.3.2. Лак Полуматовый , блеск 25-30% (однокомпонентный)
+// $pl[97]='<l2 id="27">';  // </l2> 1.3.3. Лак Матовый , блеск 9-11% (однокомпонентный)
+$pl[97]='<l2 id="51">';  // </l2> 1.3.3. Лак 2К Матовый двухкомпонентный
+$pl[101]='<l2 id="28">';  // </l2> Лак Универсальный – однокомпонентный
+$pl[105]='<l2 id="76">';  // </l2> 1.1.8. Силер - влагоудерживающая пропитка для бетона, топпинга
+$pl[106]='<l2 id="75">';  // </l2> 1.1.9. Силер-Б - силер без запаха
+
+$pl[111]='<l2 id="31">';  // </l2> Колор-Паста для полиуретанов
+$pl[115]='<l2 id="32">';  // </l2> Тонер для цветных лаков
+$pl[119]='<l2 id="34">';  // </l2> Элакор-ДТ - тиксотропная и матирующая добавка
+// $pl[121]='<l2 id="35">';  // </l2> Элакор-ДА (антистатическая добавка)
+
+$pl[122]='<l2 id="121">';  // </l2> 1.5.4. Безыскровый Полиуретан-цементный пол Т1/Б, 3-7мм
+$pl[123]='<l2 id="80">';  // </l2> 1.5.5. Антистатический Полиуретан-цементный пол Т1 АСТ-7, 3-7мм
+$pl[124]='<a href="https://teohim.ru/downloads/elakor-pz-t4.pdf?'.filemtime($pb_root.'downloads/elakor-pz-t4.pdf').'" target="_blank">';  // </a> 1.5.4. Полиуретан-цементный пол Т4
+$pl[125]='<l2 id="86">';  // </l2> 1.5.1. Полиуретан-цементный пол Т1
+$pl[126]='<l2 id="87">';  // </l2> 1.5.2. Полиуретан-цементный пол Т2
+$pl[127]='<l2 id="88">';  // </l2> 1.5.3. Полиуретан-цементный пол Т3
+$pl[128]='<l2 id="90">';  // </l2> 1.5.8. Полиуретан-цементная краска
+$pl[129]='<l2 id="89">';  // </l2> 1.5.7. Полиуретан-цементный грунт
+//$pl[125]='<a href="https://teohim.ru/downloads/elakor-pz-t1.pdf?'.filemtime($pb_root.'downloads/elakor-pz-t1.pdf').'" target="_blank">';  // </a> 1.5.1. Полиуретан-цементный пол Т1
+//$pl[126]='<a href="https://teohim.ru/downloads/elakor-pz-t2.pdf?'.filemtime($pb_root.'downloads/elakor-pz-t2.pdf').'" target="_blank">';  // </a> 1.5.2. Полиуретан-цементный пол Т2
+//$pl[127]='<a href="https://teohim.ru/downloads/elakor-pz-t3.pdf?'.filemtime($pb_root.'downloads/elakor-pz-t3.pdf').'" target="_blank">';  // </a> 1.5.3. Полиуретан-цементный пол Т3
+//$pl[128]='<a href="https://teohim.ru/downloads/elakor-pz-kraska.pdf?'.filemtime($pb_root.'downloads/elakor-pz-kraska.pdf').'" target="_blank">';  // </a> 1.5.8. Полиуретан-цементная краска
+//$pl[129]='<a href="https://teohim.ru/downloads/elakor-pz-grunt.pdf?'.filemtime($pb_root.'downloads/elakor-pz-grunt.pdf').'" target="_blank">';  // </a> 1.5.7. Полиуретан-цементный грунт
+
+$pl[130]='<a href="https://teohim.ru/downloads/antistaticheskij-grunt_pp.pdf?'.filemtime($pb_root.'downloads/antistaticheskij-grunt_pp.pdf').'" target="_blank">';  // </a> 
+$pl[131]='<l2 id="37">';  // </l2> Люкс Грунт - двухкомпонентный грунт
+$pl[133]='<a href="https://teohim.ru/downloads/elakor-pz-t1b-ast6.pdf?'.filemtime($pb_root.'downloads/elakor-pz-t1b-ast6.pdf').'" target="_blank">';  // </a> 
+$pl[134]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-emal-elast.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-emal-elast.pdf').'" target="_blank">';  // </a> 4.3.1. Люкс Эмаль Эластичная (светостойкая)
+$pl[135]='<l2 id="38">';  // </l2> Люкс Эмаль - двухкомпонентная краска
+$pl[136]='<l2 id="45">';  // </l2> 4.2.2. Люкс Эмаль - двухкомпонентная краска полуматовая
+//$pl[136]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-emal-polumat.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-emal-polumat.pdf').'" target="_blank">';  // </a> 4.2.2. Люкс Эмаль Полуматовая светостойкая 
+$pl[137]='<l2 id="46">';  // </l2> 4.2.3. Люкс Эмаль - двухкомпонентная краска Матовая
+//$pl[137]='<a href="https://teohim.ru/downloads/elakor-pu-luks-emal-svetostoikaya-matovaya.pdf?'.filemtime($pb_root.'downloads/elakor-pu-luks-emal-svetostoikaya-matovaya.pdf').'" target="_blank">';  // </a> 4.2.3. Люкс Эмаль Светостойкая Матовая
+
+$pl[139]='<l2 id="39">';  // </l2> Люкс Лак-Р Глянцевый , блеск 93-98% (с растворителем)
+// $pl[141]='<l2 id="40">';  // </l2> Люкс Лак-Р ПолуГлянцевый , блеск 35-40% (с растворителем)
+$pl[143]='<l2 id="41">';  // </l2> Люкс Лак-Р ПолуМатовый , блеск 20-25% (с растворителем)
+$pl[145]='<l2 id="42">';  // </l2> Люкс Лак-Р Матовый , блеск 7-9% (с растворителем)
+$pl[147]='<l2 id="43">';  // </l2> Люкс Лак-Р Глубоко Матовый , блеск 2-4% (с растворителем)
+$pl[153]='<l2 id="44">';  // </l2> Люкс Лак-В Матовый , блеск 7-10% (водный)
+// $pl[155]='<l1 id="1" style="color:#f00000">'; // </l1>
+$pl[154]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-lak-v-polumat.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-lak-v-polumat.pdf').'" target="_blank">';  // </a> 4.6.3. Люкс Лак-В Полуматовый (водный)
+$pl[157]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-lak-r-elast-gl.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-lak-r-elast-gl.pdf').'" target="_blank">';  // </a> 4.9.1. Люкс Лак-Р Эластичный Глянцевый
+$pl[158]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-lak-r-elast-mat.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-lak-r-elast-mat.pdf').'" target="_blank">';  // </a> 4.9.4. Люкс Лак-Р Эластичный Матовый
+
+$pl[161]='<l2 id="91">';  // </l2> Грунт для Металла - грунтовка по металлу
+$pl[163]='<l2 id="94">';  // </l2> 5.4. ЭД Грунт-Цинк - цинковый грунт эпоксидный
+//$pl[163]='<a href="https://teohim.ru/downloads/grunt-zinc.pdf?'.filemtime($pb_root.'downloads/grunt-zinc.pdf').'" target="_blank">';  // </a> 5.4.Элакор-ЭД Грунт-Цинк – цинковый грунт
+
+$pl[164]='<l2 id="99">';  // </l2> 5.2. Элакор-ЭД Грунт-АКЗ - Антикоррозионная Грунт-Эмаль
+//$pl[164]='<a href="https://teohim.ru/downloads/elakor-ed-grunt-ak3-emal.pdf?'.filemtime($pb_root.'downloads/elakor-ed-grunt-ak3-emal.pdf').'" target="_blank">';  // </a> 5.2. Элакор-ЭД Грунт-АКЗ - Антикоррозионная Грунт-Эмаль
+$pl[165]='<l2 id="92">';  // </l2> Эмаль для Металла - краска для металла
+
+$pl[166]='<l2 id="95">';  // </l2> 5.7. Люкс Эмаль-Т - светостойкая краска для металла
+//$pl[166]='<a href="https://teohim.ru/downloads/elakor-pu-luks-emal-t.pdf?'.filemtime($pb_root.'downloads/elakor-pu-luks-emal-t.pdf').'" target="_blank">';  // </a> 5.7. Люкс Эмаль-Т - светостойкая краска для металла
+$pl[168]='<a href="https://teohim.ru/downloads/elakor-pu-grunt-zinc.pdf?'.filemtime($pb_root.'downloads/elakor-pu-grunt-zinc.pdf').'" target="_blank">';  // </a> 5.5. Элакор-ПУ %Цинковый грунт
+$pl[169]='<l2 id="93">';  // </l2> Лак для Металла - антикоррозионный лак
+
+$pl[181]='<l2 id="96">';  // </l2> Паркетный лак (полиуретановый, особо износостойкий)
+$pl[185]='<l2 id="97">';  // </l2> «Люкс» лак для дерева (глянцевый, светостойкий)
+$pl[189]='<l2 id="47">';  // </l2> Лак Акриловый для дерева
+$pl[193]='<l2 id="98">';  // </l2> Краска для дерева (полиуретановая эмаль для дерева)
+$pl[195]='<a href="https://teohim.ru/downloads/lyuks-ema-dlya-dereva.pdf?'.filemtime($pb_root.'downloads/lyuks-ema-dlya-dereva.pdf').'" target="_blank">';  // </a>6.5. Люкс Эмаль для дерева (полиуретановая, УФ-стойкая)
+
+$pl[201]='<l2 id="48">';  // </l2> «Эко» Грунт
+$pl[205]='<l2 id="49">';  // </l2> «Эко» Эмаль-60
+$pl[206]='<a href="https://teohim.ru/downloads/elakor-pu-eko-emal-metal.pdf?'.filemtime($pb_root.'downloads/elakor-pu-eko-emal-metal.pdf').'" target="_blank">';  // </a> 7.3. «Эко» Эмаль для Металла
+$pl[209]='<l2 id="50">';  // </l2> «Эко» Лак-60
+
+$pl[221]='<l2 id="47">';  // </l2> 7.3. Лак Акриловый для дерева; 9.1. Элакор-МБ2 Акриловый лак  (концентрат)
+$pl[223]='<l2 id="52">';  // </l2> Элакор-МБ2 Акриловая краска (концентрат)
+$pl[227]='<l2 id="77">';  // </l2> Элакор-МБ1 Флюат – флюатирующий состав (концентрат)
+$pl[231]='<l2 id="78">';  // </l2> Элакор-МБ3 - очистка бетона и металла (концентрат)
+$pl[235]='<l2 id="79">';  // </l2> Элакор-МБ4 Гидрофобизатор для бетона
+
+$pl[241]='<l2 id="81">';  // </l2> Добавка для бетона Эластобетон-А2 (коцентрат, 1,5%/цемент)
+$pl[243]='<l2 id="82">';  // </l2> Добавка для бетона Эластобетон-А1 (3% на цемент)
+$pl[247]='<l2 id="83">';  // </l2> Добавка для бетона Эластобетон-Б (20кг на 100кг цемента)
+$pl[251]='<l2 id="84">';  // </l2> Добавка для бетона Эластобетон-В (25кг на 100кг цемента)
+$pl[257]='<l2 id="85">';  // </l2> Бетоноконтакт
+
+$pl[261]='<l2 id="54">';  // </l2> 1.7.5. Клей для резиновых матов
+$pl[262]='<l2 id="56">';  // </l2> 1.7.6. Клей для искусственной травы, газона
+//$pl[261]='<a href="https://teohim.ru/downloads/elakor-pu-kley-2k.pdf?'.filemtime($pb_root.'downloads/elakor-pu-kley-2k.pdf').'" target="_blank">';  // </a> 1.7.5. Клей для резиновых матов
+//$pl[262]='<a href="https://teohim.ru/downloads/kley-gazon.pdf?'.filemtime($pb_root.'downloads/kley-gazon.pdf').'" target="_blank">';  // </a> 1.7.6. Клей для искусственной травы, газона
+
+$pl2=false; for ($i=0; $i<=350; $i++) { $pl2[]=''; }
+$pl2[79]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-grunt-p.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-grunt-p.pdf').'" target="_blank">';  // </a> 1.1.1. Грунт-П - порозаполняющий грунт полиуретановый 
+$pl2[11]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-grunt.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-grunt.pdf').'" target="_blank">';  // </a> 1.1.2. ПУ-Грунт
+$pl2[17]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-emal-60.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-emal-60.pdf').'" target="_blank">';  // </a> 1.2.1. Эмаль-60 - полиуретановая краска для бетона
+$pl2[20]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-emal-60-polumat.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-emal-60-polumat.pdf').'" target="_blank">';  // </a> 1.2.2. Эмаль-60 Полуматовая
+$pl2[22]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-emal-60-gl.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-emal-60-gl.pdf').'" target="_blank">';  // </a> 1.2.3. Эмаль-60 Глянцевая
+$pl2[136]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-ljuks-emal-polumat.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-ljuks-emal-polumat.pdf').'" target="_blank">';  // </a> 4.2.2. Люкс Эмаль Полуматовая светостойкая 
+$pl2[143]='<a href="https://teohim.ru/instructions/lyuks_laki-r.pdf?'.filemtime($pb_root.'instructions/lyuks_laki-r.pdf').'" target="_blank">';  // </a> 4.5.3. Люкс Лак-Р ПолуМатовый ИНСТРУКЦИЯ
+$pl2[145]='<a href="https://teohim.ru/instructions/lyuks_laki-r.pdf?'.filemtime($pb_root.'instructions/lyuks_laki-r.pdf').'" target="_blank">';  // </a> 4.5.4. Люкс Лак-Р Матовый ИНСТРУКЦИЯ
+
+$pl2[26]='<a href="https://teohim.ru/downloads/elakorpol/poliuretan-nalivnoj-pol-napolnennyi.pdf?'.filemtime($pb_root.'downloads/elakorpol/poliuretan-nalivnoj-pol-napolnennyi.pdf').'" target="_blank">';  // </a> 1.4.3. Полиуретановый наливной пол Наполненный
+$pl2[35]='<a href="https://teohim.ru/downloads/elakorpol/poliuretan-nalivnoj-pol-promyshlennyj.pdf?'.filemtime($pb_root.'downloads/elakorpol/poliuretan-nalivnoj-pol-promyshlennyj.pdf').'" target="_blank">';  // </a> 1.4.2. Полиуретановый наливной пол Промышленный  
+$pl2[32]='<a href="https://teohim.ru/downloads/elakorpol/poliuretan-nalivnoj-pol-br.pdf?'.filemtime($pb_root.'downloads/elakorpol/poliuretan-nalivnoj-pol-br.pdf').'" target="_blank">';  // </a> 1.4.4. Наливной пол БР (без растворителя)
+
+$pl2[42]='<a href="https://teohim.ru/downloads/elakorpol/elakor-ed-grunt-2k-pr.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-ed-grunt-2k-pr.pdf').'" target="_blank">';  // </a> 2.1.1. Грунт-2К/ПР - грунт порозаполняющий (с растворителем)
+$pl2[40]='<a href="https://teohim.ru/downloads/elakorpol/elakor-ed-2k100p.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-ed-2k100p.pdf').'" target="_blank">';  // </a> 2.1.2. Грунт-2К/100П - эпоксидный грунт порозаполняющий
+$pl2[58]='<a href="https://teohim.ru/downloads/elakorpol/epoksid-nalivnoj-pol-promyshlennyj.pdf?'.filemtime($pb_root.'downloads/elakorpol/epoksid-nalivnoj-pol-promyshlennyj.pdf').'" target="_blank">';  // </a> 2.4.1. Эпоксидный наливной пол Промышленный
+$pl2[60]='<a href="https://teohim.ru/downloads/elakorpol/epoksid-nalivnoj-pol-dekor.pdf?'.filemtime($pb_root.'downloads/elakorpol/epoksid-nalivnoj-pol-dekor.pdf').'" target="_blank">';  // </a> 2.4.5. Эпоксидный наливной пол ДЕКОР
+
+$pl2[45]='<a href="https://teohim.ru/downloads/elakorpol/elakor-edv-grunt-v.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-edv-grunt-v.pdf').'" target="_blank">';  // </a> 2.9.1. Грунт-В - водный эпоксидный грунт 
+$pl2[46]='<a href="https://teohim.ru/downloads/elakorpol/elakor-edv-lak-v.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-edv-lak-v.pdf').'" target="_blank">';  // </a> 2.9.3. Лак-В-В - матовый эпоксидный лак (водоразбавляемый)
+// $pl2[47]='<a href="https://teohim.ru/downloads/elakorpol/elakor-edv-nalivnoy-pol-v.pdf" target="_blank">';  // </a> 2.9.5. Наливной пол-В - водный эпоксидный наливной пол
+$pl2[48]='<a href="https://teohim.ru/downloads/elakorpol/elakor-edv-emal-v.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-edv-emal-v.pdf').'" target="_blank">';  // </a> 2.9.4. Эмаль-В – водоразбавляемая эпоксидная краска 
+$pl2[51]='<a href="https://teohim.ru/downloads/elakorpol/epoxide-emal2k80.pdf'.filemtime($pb_root.'downloads/elakorpol/epoxide-emal2k80.pdf').'" target="_blank">';  // </a> Эмаль 2К-80
+$pl2[54]='<a href="https://teohim.ru/downloads/elakorpol/elakor-edv-lak-v-gl.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-edv-lak-v-gl.pdf').'" target="_blank">';  // </a> 2.9.2. Лак-В - Глянцевый эпоксидный лак (водоразбавляемый)
+$pl2[62]='<a href="https://teohim.ru/downloads/elakorpol/ed-naliv-pol-sk-prof.pdf?'.filemtime($pb_root.'downloads/elakorpol/ed-naliv-pol-sk-prof.pdf').'" target="_blank">';  // </a> 2.4.7. Эпоксидный наливной пол СК ПРОФ
+$pl2[66]='<a href="https://teohim.ru/downloads/elakorpol/ast-propitka.pdf?'.filemtime($pb_root.'downloads/elakorpol/ast-propitka.pdf').'" target="_blank">';  // </a> АСТ Пропитка
+$pl2[67]='<a href="https://teohim.ru/downloads/elakorpol/ast-sk-prof-pol.pdf?'.filemtime($pb_root.'downloads/elakorpol/ast-sk-prof-pol.pdf').'" target="_blank">';  // </a> 3.8. Элакор-ЭД АСТ Наливной пол СК ПРОФ
+$pl2[73]='<a href="https://teohim.ru/downloads/elakorpol/remontnyi-epoksidnyi-sostav.pdf" target="_blank">';  // </a> Ремонтный эпоксидный состав (ровнитель для пола)
+$pl2[125]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pz-t1.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pz-t1.pdf').'" target="_blank">';  // </a> 1.5.1. Полиуретан-цементный пол Т1
+$pl2[126]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pz-t2.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pz-t2.pdf').'" target="_blank">';  // </a> 1.5.2. Полиуретан-цементный пол Т2
+$pl2[127]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pz-t3.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pz-t3.pdf').'" target="_blank">';  // </a> 1.5.3. Полиуретан-цементный пол Т3
+$pl2[129]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pz-grunt.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pz-grunt.pdf').'" target="_blank">';  // </a> 1.5.7. Полиуретан-цементный грунт
+$pl2[128]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pz-kraska.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pz-kraska.pdf').'" target="_blank">';  // </a> 1.5.8. Полиуретан-цементная краска
+$pl2[261]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-kley-2k.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-kley-2k.pdf').'" target="_blank">';  // </a> 1.7.5. Клей для резиновых матов
+$pl2[76]='<a href="https://teohim.ru/downloads/elakorpol/elakor-ed-ankerovochnyi-sostav.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-ed-ankerovochnyi-sostav.pdf').'" target="_blank">';  // </a> 2.7.2. Анкеровочный состав
+$pl2[163]='<a href="https://teohim.ru/downloads/elakorpol/grunt-zinc.pdf?'.filemtime($pb_root.'downloads/elakorpol/grunt-zinc.pdf').'" target="_blank">';  // </a> 5.3.Элакор-ЭД Грунт-Цинк – цинковый грунт
+$pl2[168]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-grunt-zinc.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-grunt-zinc.pdf').'" target="_blank">';  // </a> 5.5.Элакор-ПУ Цинковый грунт
+$pl2[131]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-ljuks-grunt.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-ljuks-grunt.pdf').'" target="_blank">';  // </a> 4.1. Люкс Грунт - двухкомпонентный грунт
+$pl2[135]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-ljuks-emal.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-ljuks-emal.pdf').'" target="_blank">';  // </a> 4.2.1. юкс Эмаль - двухкомпонентная краска
+$pl2[164]='<a href="https://teohim.ru/downloads/elakorpol/elakor-ed-grunt-ak3-emal.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-ed-grunt-ak3-emal.pdf').'" target="_blank">';  // </a> 5.2. Элакор-ЭД Грунт-АКЗ - Антикоррозионная Грунт-Эмаль
+$pl2[166]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-luks-emal-t.pdf?'.filemtime($pb_root.'downloads/elakor-pu-luks-emal-t.pdf').'" target="_blank">';  // </a> 5.5. Люкс Эмаль-Т - светостойкая краска для металла
+$pl2[206]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-eko-emal-metal.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-eko-emal-metal.pdf').'" target="_blank">';  // </a> 7.3. «Эко» Эмаль для Металла
+$pl2[257]='<a href="https://teohim.ru/downloads/elakorpol/betonokontakt.pdf?'.filemtime($pb_root.'downloads/elakorpol/betonokontakt.pdf').'" target="_blank">'; // </a> 9.7. Бетоноконтакт
+
+$pl2[13]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-grunt-2k100.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-grunt-2k100.pdf').'" target="_blank">';  // </a> 1.1.7. ПУ Грунт-2К/100 - полиуретановый грунт без растворителя
+$pl2[81]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-grunt-25.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-grunt-25.pdf').'" target="_blank">';  // </a> 1.1.5. Грунт-25 - полиуретановая грунтовка (ремонтная)
+$pl2[83]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-grunt-2k-50.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-grunt-2k-50.pdf').'" target="_blank">';  // </a> 1.1.3. Грунт-2К/50 - грунтовка глубокого проникновения
+$pl2[85]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-grunt-2k-40.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-grunt-2k-40.pdf').'" target="_blank">';  // </a> 1.1.4. Грунт-2К/40 - максимально глубокая грунтовка 
+$pl2[105]='<a href="https://teohim.ru/downloads/elakorpol/sealer.pdf?'.filemtime($pb_root.'downloads/elakorpol/sealer.pdf').'" target="_blank">';  // </a> 1.1.8. Силер - влагоудерживающая пропитка бетона, топпинга.
+$pl2[137]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-ljuks-emal.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-ljuks-emal.pdf').'" target="_blank">';  // </a> 4.2.3. Люкс Эмаль Матовая 
+$pl2[154]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-ljuks-lak-v-polumat.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-ljuks-lak-v-polumat.pdf').'" target="_blank">';  // </a> 4.6.3. Люкс Лак-В Полуматовый (водный)
+$pl2[157]='<a href="https://teohim.ru/downloads/elakorpol/elakor-pu-ljuks-lak-r-elast-gl.pdf?'.filemtime($pb_root.'downloads/elakorpol/elakor-pu-ljuks-lak-r-elast-gl.pdf').'" target="_blank">';  // </a> 4.9.1. Люкс Лак-Р Эластичный Глянцевый
+
+// МАТЕРИАЛЫ
+//if ($pb_page==5001) $txt=@file_get_contents($pb_root.'sys/materials_');
+//else
+$txt=@file_get_contents($pb_root.'sys/materials');
+$mtr=false; $mtr[]=false; for ($i=1; $i<351; $i++) {
+    $pos=strpos($txt,chr(10)); if ($pos==false) break; $str=substr($txt,0,$pos); $txt=substr($txt,$pos+1);
+    if ($str!=' ') $mtr[]=explode(chr(9),$str); // $mtr[$i][1]=preg_replace('/\%/','',$mtr[$i][1]);
+    else $mtr[]=false;
+}
+$txt=@file_get_contents($pb_root.'sys/materials_new');
+$mtrt=false; $mtrt[]=false; for ($i=1; $i<351; $i++) {
+    $pos=strpos($txt,chr(10)); if ($pos==false) break; $str=substr($txt,0,$pos); $txt=substr($txt,$pos+1);
+    if ($str!=' ') $mtrt[]=explode(chr(9),$str); // $mtrt[$i][1]=preg_replace('/\%/','',$mtrt[$i][1]);
+    else $mtrt[]=false;
+}
+// ПОКРЫТИЯ
+$txt=@file_get_contents($pb_root.'sys/covers'); $pkr=false; $pkr[]=false; for ($i=1; $i<221; $i++) {
+    $pos=strpos($txt,chr(10)); if ($pos==false) break; $str=substr($txt,0,$pos); $txt=substr($txt,$pos+1);
+    // $str=str_replace('%','',substr($txt,0,$pos)); $txt=substr($txt,$pos+1);
+    if ($str!=' ') $pkr[]=explode(chr(9),$str); else $pkr[]=false;
+}
+
+$plf=false; $plc=false; $plt=false; $pdwnl=false;
+for ($i=0; $i<11; $i++) { $plc[]=''; $plt[]=''; }    // Cтроки 1-10 пустые (файла covers), кроме шпатлёвки (10 строка);
+for ($i=0; $i<=220; $i++) { $plf[]=''; $pdwnl[]=''; }
+
+/* ***************************************************************************************************  */
+/* Ссылки на описание покрыттй $plf, РАСЧЁТЫ $plc, ТЕХНОЛОЛГИИ $plt, ссылки на скачку $pdwnl */
+
+$plf[11]='<l2 id="101">';  // </l2> 11 Полиуретановая пропитка для бетона
+$plf[13]='<l2 id="102">';  // </l2> 13 Пропитка глубокого проникновения
+$plf[17]='<l2 id="103">';  // </l2> 17 Эпоксидная пропитка для бетона
+$plf[23]='<l1 id="177">'; // </l1> 23 Флюат пропитка для бетона
+$plf[25]='<l2 id="104">';  // </l2> 25 Акриловая пропитка для бетона
+$plf[27]='<l2 id="32">';  // </l2> 27 Цветная пропитка бетона
+$plf[29]='<l1 id="1" class="atemp">';  // </l1> 29 ССЫЛКА НА ГЛАВНУЮ
+$plf[31]='<l2 id="106">';  // </l2> 31 Полиуретановое покрытие (окрасочное, Элакор-ПУ)
+$plf[33]='<l2 id="107">';  // </l2> 33 Эпоксидное покрытие (окрасочное, Элакор-ЭД)
+//$plf[35]='<l2 id="213">';  // </l2> Светостойкое покрытие (35)
+$plf[37]='<l2 id="108">'; // </l2> 37 Покрытие с песком полиуретановое
+$plf[39]='<l2 id="109">'; // </l2> 39 Кварцевые полы (эпоксидные)
+$plf[40]=''; // 40 Полиуретановое наливное покрытие Высоконаполненное
+$plf[41]=''; // 41 Акриловое покрытие
+$plf[43]=''; // 43 Светостойкое покрытие с кварцем
+$plf[45]=''; // 45 Фактурное покрытие полиуретановое
+$plf[47]='<l2 id="173">';    // </l2> 47 Каркасное полимербетонное покрытие
+$plf[48]=''; // 48 Полиуретановое наливное покрытие Эластичное
+$plf[49]=''; // 49 Полиуретановое наливное покрытие Резиновое
+$plf[51]='<l2 id="141">'; // </l2> 51 Эпоксидное наливное покрытие (наливной пол)
+$plf[52]=''; // 52 Эпоксидное наливное покрытие Промышленное
+$plf[53]='<l2 id="142">'; // </l2> 53 Полиуретановое наливное покрытие (наливной пол)
+$plf[54]=''; // 54 Полиуретановое наливное покрытие Промышленное
+$plf[55]='<l2 id="143">'; // </l2> 55 Белое наливное покрытие (белый наливной пол)
+$plf[57]='<l2 id="144">'; // </l2> 57 Наливной пол с флоками, чипсами, блестками
+$plf[59]='<l1 id="53">'; // </l1> 59 Наливные полы 3d (полы с фотографиями, рисунками)
+$plf[61]='<l2 id="145">'; // </l2> 61 Прозрачное наливное покрытие (с декоративными элементами)
+//$plf[63]='<l2 id="226">'; // </l2> 63 5.1. Токопроводящий Наливной пол Эпоксидный (с лентами)
+//$plf[64]='<l2 id="241">'; // </l2> 64 5.2. Токопроводящий Наливной Полиуретановый пол (с лентами)
+//$plf[65]='<l2 id="227">'; // </l2> 65 5.3. Электрорассеивающий Наливной пол Эпоксидный (без лент)
+//$plf[66]='<l2 id="242">'; // </l2> 66  5.4. Электрорассеивающий Наливной Полиуретановый пол (без лент)
+//$plf[67]='<l2 id="243">'; // </l2> 67  5.11. Токопроводящее Окрасочное покрытие Эпоксидное (с лентами)
+//$plf[68]='<l2 id="244">'; // </l2> 68  5.12. Токопроводящее Окрасочное покрытие Полиуретановое (с лентами)
+//$plf[69]='<l2 id="245">'; // </l2> 69 5.13. Электрорассеивающее Окрасочное покрытие Эпоксидное (без лент) | Антистатическое покрытие для пола
+//$plf[70]='<l2 id="246">'; // </l2> 70 5.14. Электрорассеивающее Окрасочное покрытие Полиуретановое (без лент) Антистатическое покрытие
+$plf[71]='';  // 71 - ССЫЛКА СТОИТ НА ОБЩУЮ СТРАНИЦУ! "Промышленные наливные полы"
+$plf[73]=''; // 73 3.3. Полиуретановое наливное покрытие Наполненное
+$plf[76]=''; // 76 5.17. Антистатическое Окрасочное покрытие по рифленому металлу
+$plf[77]=''; // 77 5.7. Антистатический наливной пол по металлу
+$plf[78]=''; // 78 5.11. Антистатическое покрытие по металлу
+$plf[79]=''; // 76 5.18. Антистатическое Окрасочное Светостойкое покрытие по рифленому металлу
+$plf[81]='<l2 id="114">';  // </l2> 81 2.9. Покрытие для асфальта
+$plf[83]='<l2 id="115">';  // </l2> 83 2.8. Декоративное покрытие с чипсами
+$plf[85]='<l2 id="116">';  // </l2> 85 2.5. Антискользящее покрытие
+$plf[87]='<l2 id="117">';  // </l2> 87 1.5. Антискользящая пропитка для бетона
+$plf[89]='<l2 id="118">';  // </l2> 89 6.5. Химстойкое покрытие
+$plf[93]='<l2 id="119">';  // </l2> 93 6.0. ССЫЛКА СТОИТ НА СТРАНИЦУ! "Безыскровое покрытие"
+$plf[95]='<l1 id="5">';  // </l1> 95 6.0. ССЫЛКА СТОИТ НА ОБЩУЮ СТРАНИЦУ! "АНТИСТАТИЧЕСКИЕ ПОЛЫ"
+$plf[101]='<l1 id="174">';  // </l1> 101 6.1. Химическая очистка бетона (Элакор-МБ3)
+$plf[103]='<l1 id="172">';  // </l1> 103 6.2. Шпатлевание бетона
+$plf[105]='<l1 id="171">';  // </l1> 105 6.3. Фрезерование бетона
+$plf[107]='<l1 id="173">';  // </l1> 107 6.4. Шлифование бетона
+$plf[109]='<l1 id="175">';  // </l1> 109 6.5. Заделка швов бетонных полов, герметизация (Герметик-2К)
+$plf[113]='<l2 id="179">';  // </l2> 113 6.7. Приготовление цветной эмали из пасты и лака
+$plf[115]='<l1 id="111">';  // </l1> 115 6.8. Разметка полов, нанесение нумерации, логотипов
+$plf[117]='<l1 id="112">';  // </l1> 117 6.9. Ремонт полимерных и наливных полов
+$plf[121]='<l2 id="180">';  // </l2> 121 7.1. Защита бетонных резервуаров (внутренние поверхности)
+$plf[125]='';  // 121 7.3. Пищевое» покрытие (контакт с продуктами и питьевой водой)
+$plf[131]='<l1 id="232">';  // </l1> 131 7.6. Защита фасадов (Элакор-МБ4 + МБ2)
+//$plf[135]='<l1 id="233">';  // </l1> 135 7.8. Флюатирование (Элакор-МБ1)
+$plf[137]='<l1 id="176">';  // </l1> 137 7.9. Гидрофобизация (Элакор-МБ4)
+$plf[141]='<l1 id="161">';  // </l1> 141 8.0. ССЫЛКА НА "Заливка пола". Бетонная стяжка пола, стяжка с армированием (М200-М350, от 60мм)
+$plf[142]='<l2 id="82">';  // </l2> 142 8.1. Добавка для бетона «Эластобетон-А1»
+$plf[143]='<l1 id="169">';  // </l1> 143 8.2. Добавка для бетона «Эластобетон-А2»
+$plf[147]='<l2 id="83">';  // </l2> 147 8.3. Добавка для бетона «Эластобетон-Б»
+$plf[150]='';  // 150 8.5. Гелькоут – заделка пор и раковин при полировке бетона
+$plf[155]='<l1 id="168">';  // </l1> 155 8.0. Бетонные полы с фиброй, фибробетонные полы
+$plf[157]='<l1 id="162">';  // </l1> 157 8.0. Бетонные мозаичные полы
+$plf[161]='<l1 id="153">';  // </l1> 161 11.1. Полимерцементный бетонный пол (М700-М800, от 15мм)
+$plf[163]='';  // 163 11.2. Полимерцементный пескобетонный пол (М700-М800, от 15мм)
+$plf[165]='';  // 165 11.3. Герметизация швов бетонных полов (Герметик-2К)
+$plf[169]='';  // 169 11.5. Ремонт покрытий бетона
+$plf[177]='<l1 id="162">';  // </l1> 177 11.9. Полимерцементный мозаичный пол (М700-М800, от 15мм)
+//$plf[181]='<l1 id="201">';  // </l1> 181 9.1. Химическая очистка металла (Элакор-МБ3)
+//$plf[183]='<l1 id="202">';  // </l1> 183 9.2. Антикоррозионная защита (общая инструкция)
+$plf[185]='<l1 id="203">';  // </l1> 185 9.0. Антикоррозионное покрытие вагонов-хоппров (внутрен. пов-ти)
+$plf[191]='<l1 id="204">';  // </l1> 191 9.3. Антикоррозионное покрытие конструкций внутри помещений
+$plf[193]='<l1 id="205">';  // </l1> 193 9.4. Антикоррозийные покрытия конструкций на открытом воздухе
+$plf[195]='<l1 id="206">';  // </l1> 195 9.8. Окрасочное покрытие для металлических полов
+$plf[197]='<l1 id="207">';  // </l1> 197 9.9. Наливной пол по металлу
+$plf[201]='<l2 id="199">';  // </l2> 201 10.1. Покрытие лаком паркета, дерева (полиуретановое, особо износостойкое)
+$plf[203]='<l1 id="1" class="atemp">';  // </l1>   203 10.0. ССЫЛКА НА ГЛАВНУЮ   Светостойкое покрытие лаком для дерева (полиуретановое, износостойкое, полностью прозрачное)
+$plf[205]='<l1 id="1" class="atemp">';  // </l1>    205 10.0. ССЫЛКА НА ГЛАВНУЮ   Покрытие акриловым лаком для дерева (паропроницаемое, полностью прозрачное)
+$plf[209]='<l1 id="1" class="atemp">';  // </l1>    209 10.0. ССЫЛКА НА ГЛАВНУЮ   Покрытие цветным лаком для дерева (тонирующая пропитка - «лазурь»)
+//$plf[213]='<l2 id="198">';   // </l2> 213 10.2. Цветное покрытие для дерева (полиуретановое, износостойкое)
+$plf[219]=''; // 219 Правила ЭКСПЛУАТАЦИИ - Полиуретановые наливные полы 
+$plf[220]=''; // 220 Правила ЭКСПЛУАТАЦИИ - Эпоксидные наливные полы
+
+
+/* ***************************************************************************************************  */
+/* Ссылки - ПЛАШКИ на Расчёты (калькуляторы покрытий */
+
+$gtagcvr='';
+
+$plc[]='<l2 id="201" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    11 12
+$plc[]='<l2 id="202" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    13 14
+$plc[]=''; $plc[]=''; $plc[]='<l2 id="203" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    15 16 17
+$plc[]=''; $plc[]=''; $plc[]='';    //     18 19 20
+
+$plc[]=''; $plc[]=''; $plc[]='<l2 id="204" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    21 22 23
+$plc[]=''; $plc[]='<l2 id="205" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    24 25
+$plc[]=''; $plc[]='<l2 id="32" class="blk_cover_calc" title="Цветной лак для дерева и бетона">';    // </l2>    26 27
+$plc[]=''; $plc[]='<l1 id="1" class="atemp blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l1>    28 29
+$plc[]='';    //    30
+
+$plc[]='<l2 id="211" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    31 32
+$plc[]='<l2 id="212" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    33 34
+$plc[]='<l2 id="213" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    35 36
+$plc[]='<l2 id="232" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    37 38
+$plc[]='<l2 id="231" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    39
+$plc[]='<l2 id="233" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    40
+$plc[]=''; $plc[]='';
+$plc[]='<l2 id="230" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    43
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';    //    41 42 43 44 45 46 47 48 49 50
+
+$plc[]='<l2 id="221" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    51
+$plc[]='<l2 id="229" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    52
+$plc[]='<l2 id="222" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    53
+$plc[]='<l2 id="228" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    54
+$plc[]='<l2 id="225" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    55 56
+$plc[]='<l2 id="144" class="blk_cover_calc" title="Наливные полы с чипсами, блестками, флоками">'; $plc[]='';    // </l2>    57 58
+$plc[]='<l1 id="53" class="blk_cover_calc" title="Полы 3d">'; $plc[]='';    // </l1>    59 60
+$plc[]='<l2 id="145" class="blk_cover_calc" title="Прозрачное наливное покрытие (с декоративными элементами)">'; $plc[]='';    // </l2>    61 62
+$plc[]='<l2 id="226" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    63
+$plc[]='<l2 id="241" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    64
+$plc[]='<l2 id="227" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    65
+$plc[]='<l2 id="242" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    66
+$plc[]='<l2 id="243" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    67
+$plc[]='<l2 id="244" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    68
+$plc[]='<l2 id="245" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    69
+$plc[]='<l2 id="246" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    70
+
+$plc[]='<l2 id="223" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    71 72
+$plc[]='<l2 id="224" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    73
+$plc[]='<l2 id="240" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    74
+$plc[]=''; $plc[]='';    //    75 76
+$plc[]=''; //'<l2 id="247" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    77
+$plc[]='<l2 id="248" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    78
+$plc[]=''; $plc[]='';    //    79 80
+
+$plc[]='<l2 id="214" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    81 82
+$plc[]='<l2 id="234" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    83 84
+$plc[]='<l2 id="235" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    85 86
+$plc[]='<l2 id="206" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    87 88
+$plc[]='<l2 id="236" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    89
+$plc[]=''; $plc[]=''; $plc[]='';    //    90 91 92
+$plc[]='<l2 id="237" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">'; $plc[]='';    // </l2>    93 94
+$plc[]='<l2 id="238" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    95
+$plc[]='';   //    96
+$plc[]='<l2 id="239" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    //  </l2>  97
+$plc[]=''; $plc[]=''; $plc[]='';    //    98 99 100
+
+$plc[]='<l1 id="174" class="blk_cover_calc" title="Химическая очистка бетона, бетонного пола">'; $plc[]='';    // </l1>    101 102
+$plc[]=''; $plc[]='';    // </l1>    103 104
+$plc[]='<l1 id="171" class="blk_cover_calc" title="Фрезерование бетона">'; $plc[]='';    // </l1>    105 106
+$plc[]='<l1 id="173" class="blk_cover_calc" title="Шлифование бетона">'; $plc[]='';    // </l1>    107 108
+$plc[]='<l1 id="175" class="blk_cover_calc" title="Заделка швов, герметизация швов полов">';    // </l1>    109
+$plc[]=''; $plc[]=''; $plc[]='';    //    110 111 112
+
+$plc[]='<l2 id="179" class="blk_cover_calc" title="Инструкция колеровки полиуретановой эмали">'; $plc[]='';    // </l2>    113 114
+$plc[]='<l1 id="111" class="blk_cover_calc" title="Нанесение разметки пола">';    // </l1>    115
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';    //    116 117 118 119 120 121 122
+$plc[]='<l2 id="255" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    123
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';    //    124 125 126 127 128 129 130
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';     //    131 132 133 134 135 136 137 138 139 140 141 142
+$plc[]='<l2 id="251" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>  143
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';     //    144 145 146 147 148 149 150 151 152 153 154
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';     //    155 156 157 158 159 160 161 162 163 164 165 166
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';    //    167 168 169 170
+$plc[]='<l2 id="239" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';   // </l2>    171
+$plc[]='<l2 id="239" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';   // </l2>    172
+$plc[]='<l2 id="239" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';   // </l2>    173
+$plc[]='<l2 id="240" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';   // </l2>    174
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';    //    175 176 177 178 179 180
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';     //    181 182 183 184 185 186 187 188 189 190
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';  //    191 - 200
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';  //    201 - 210
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';  //    211 - 220
+
+/* ***************************************************************************************************  */
+/* Ссылки - ПЛАШКИ на Технологии */
+
+$plt[]=''; $plt[]='';    // 11 12
+$plt[]=''; $plt[]='';    // 13 14
+$plt[]=''; $plt[]=''; $plt[]='';    //    15 16 17
+$plt[]=''; $plt[]=''; $plt[]='';    //    18 19 20
+
+$plt[]=''; $plt[]=''; $plt[]='';    //    21 22 23
+$plt[]=''; $plt[]='';               //    24 25
+$plt[]=''; $plt[]='<l2 id="32" class="blk_cover_tech" title="Цветной лак для дерева и бетона">';    // </l2>    26 27
+$plt[]=''; $plt[]=''; $plt[]='';    //    28 29 30
+
+$plt[]=''; $plt[]='';    //    31 32
+$plt[]=''; $plt[]='';    //    33 34
+$plt[]='';  $plt[]='';   //    35 36
+$plt[]=''; $plt[]='';    //    37 38
+$plt[]=''; $plt[]='';    //    39 40
+$plt[]=''; $plt[]='';    //    41 42
+// $plt[]='<'.'a class="blk_cover_tech" href="/instructions/svetoskoikoe-kvartz-pokrytie.pdf?'.filemtime($pb_root.'instructions/svetoskoikoe-kvartz-pokrytie.pdf').'" target="_blank">';    //    43
+$plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]='<l2 id="173" class="blk_cover_tech" title="Полимербетонное покрытие ТЕХНОЛОГИЯ">';    // </l2>    43 44 45 46 47
+$plt[]=''; $plt[]=''; $plt[]='';    //    48 49 50
+
+$plt[]=''; $plt[]='';    //    51 52
+$plt[]=''; $plt[]='';    //    53 54
+$plt[]=''; $plt[]='';    //    55 56
+$plt[]='<l2 id="144" class="blk_cover_tech" title="Наливные полы с чипсами, блестками, флоками">'; $plt[]='';    // </l2>    57 58
+$plt[]='<l1 id="53" class="blk_cover_tech" title="Наливные полы 3D">'; $plt[]='';    // </l1>    59 60
+$plt[]='<l2 id="145" class="blk_cover_tech" title="Прозрачное наливное покрытие (с декоративными элементами)">'; $plt[]='';    // </l2>    61 62
+$plt[]='<l2 id="226" class="blk_cover_tech" title="Антистатический проводящий пол">';    // </l2>    63
+$plt[]='<l2 id="241" class="blk_cover_tech" title="Антистатический Токопроводящий наливной пол (полиуретановый)">'; // </l2>    64
+$plt[]='<l2 id="227" class="blk_cover_tech" title="Антистатическое наливное покрытие">'; // </l2>    65
+$plt[]='<l2 id="242" class="blk_cover_tech" title="Антистатическое покрытие наливной пол Полиуретановый">'; // </l2>    66
+$plt[]='<l2 id="243" class="blk_cover_tech" title="Проводящее покрытие Антистатическое Эпоксидное">'; // </l2>    67
+$plt[]='<l2 id="244" class="blk_cover_tech" title="Антистатическое токопроводящее покрытие Полиуретановое">'; // </l2>    68
+$plt[]='<l2 id="245" class="blk_cover_tech" title="Антистатическое покрытие для пола">'; // </l2> 69
+$plt[]='<l2 id="246" class="blk_cover_tech" title="Антистатическое покрытие">'; // </l2> 70
+
+// $plt[]='<'.'a href="/instructions/promyshlennyj-nalivnoj-pol-jepoksidnyj.pdf?'.filemtime($pb_root.'instructions/promyshlennyj-nalivnoj-pol-jepoksidnyj.pdf').'" class="blk_cover_tech" target="_blank">';  $plt[]='';    //    71 72
+// $plt[]='<'.'a href="/instructions/promyshlennyj-nalivnoj-pol-poliuretanovyj.pdf?'.filemtime($pb_root.'instructions/promyshlennyj-nalivnoj-pol-poliuretanovyj.pdf').'" class="blk_cover_tech" target="_blank">';    //    73
+$plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]='';    //    71 72 73 74 75 76 77 78 79 80
+
+$plt[]=''; $plt[]='';    //    81 82
+$plt[]=''; $plt[]='';    //    83 84
+$plt[]=''; $plt[]='';    //    85 86
+
+$plt[]=''; $plt[]='';  // 87 88
+//$plt[]='<'.'a href="/instructions/antiskolz-propitka.pdf?'.filemtime($pb_root.'instructions/antiskolz-propitka.pdf').'" class="blk_cover_tech" target="_blank" title="Противоскользящая пропитка ТЕХНОЛОГИЯ">'; $plt[]='';    // 87 88
+$plt[]='<l2 id="118" class="blk_cover_tech" title="Химстойкие полы и покрытия">';    // </l2>    89
+$plt[]=''; $plt[]=''; $plt[]='';    //    90 91 92
+$plt[]='<l2 id="119" class="blk_cover_tech" title="Безыскровое покрытие, искробезопасное покрытие для полов">'; $plt[]='';    // </l2>    93 94
+$plt[]='<l1 id="5" class="blk_cover_tech" title="Антистатические полы">';    // </l1>    95
+$plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]='';    //    96 97 98 99 100
+
+$plt[]=''; $plt[]='';    //    101 102
+$plt[]=''; $plt[]='';    //    103 104
+$plt[]='<l1 id="171" class="blk_cover_tech" title="Фрезерование бетона">'; $plt[]='';    // </l1>    105 106
+$plt[]='<l1 id="173" class="blk_cover_tech" title="Шлифование бетона">'; $plt[]='';    // </l1>    107 108
+$plt[]='<l1 id="175" class="blk_cover_tech" title="Заделка швов, герметизация швов полов">';    // </l1>    109
+$plt[]=''; $plt[]=''; $plt[]='';    //    110 111 112
+
+$plt[]=''; $plt[]='';    //    113 114
+$plt[]='<l1 id="111" class="blk_cover_tech" title="Нанесение разметки пола">'; $plt[]='';    // </l1>    115 116
+$plt[]='';    //    117
+$plt[]=''; $plt[]=''; $plt[]='';    //    118 119 120
+
+$plt[]='<l2 id="180" class="blk_cover_tech" title="Защитное покрытие резервуаров ТЕХНОЛОГИЯ">'; $plt[]='';    // </l2>    121 122
+$plt[]='<l2 id="195" class="blk_cover_tech" title="Технология устройства полимерцементных покрытий «Эластобетон-В»">';    // </l2>    123
+$plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]='';    //    124 125 126 127 128 129 130
+$plt[]='';    //     131
+$plt[]=''; $plt[]=''; $plt[]='';    //    132 133 134
+$plt[]=''; $plt[]='';    //    135 136
+$plt[]='';    //     137
+$plt[]=''; $plt[]=''; $plt[]='';    //    138 139 140
+$plt[]='<l2 id="192" class="blk_cover_tech" title="Бетонная стяжка пола ТЕХНОЛОГИЯ">'; $plt[]='';    // </l2>    141 142
+$plt[]='';    //     143
+$plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]='';    //    144 145 146 147 148 149 150 151 152 153 154
+$plt[]='<l1 id="168" class="blk_cover_tech" title="Фибробетонные полы, фибробетон">'; $plt[]='';    // </l1>    155 156
+$plt[]='<l1 id="162" class="blk_cover_tech" title="Мозаичные полы Терраццо">';    // </l1>    157
+$plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]='';    //    158 159 160 161 162 163 164 165 166 167 1687 169 170
+$plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]='';    //    171 172 173 174 175 176
+$plt[]='<l1 id="162" class="blk_cover_tech" title="Мозаичные полы Терраццо">';    // </l1>    177
+$plt[]=''; $plt[]=''; $plt[]='';    //    178 179 180
+$plt[]=''; $plt[]='';    //    181 182
+$plt[]=''; $plt[]='';    //    183 184
+$plt[]='<l1 id="203" class="blk_cover_tech" title="Технология устройства антикоррозийных покрытий внутренних поверхностей вагонов-зерновозов и вагонов-минераловозов">';    // </l1>    185
+$plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]='';    //    186 187 189 190
+$plt[]='<l1 id="204" class="blk_cover_tech" title="Антикоррозийная защита металлических конструкций в помещениях">'; $plt[]='';    // </l1>    191 192
+$plt[]='<l1 id="205" class="blk_cover_tech" title="Противокоррозионная защита металла на открытом воздухе">'; $plt[]='';    // </l1>    193 194
+$plt[]='<l1 id="206" class="blk_cover_tech" title="Покрытия для металлических полов">'; $plt[]='';    // </l1>    195 196
+$plt[]='';    //     197
+$plt[]=''; $plt[]=''; $plt[]='';  //    198 199 200
+$plt[]='<l2 id="199" class="blk_cover_tech" title="Паркетный лак ТЕХНОЛОГИЯ">';    // </l2>    201
+$plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]='';  //    202 - 210
+$plt[]=''; $plt[]='';
+$plt[]=''; //$plt[]='<l2 id="198" class="blk_cover_tech" title="Покрытие для дерева ТЕХНОЛОГИЯ">';    // </l2>    213
+$plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]=''; $plt[]='';  //    214 - 220
+
+/* **************************************************  */
+//Ссылки на скачку PDF-файлов $pdwnl ИНСТРУКЦИИ
+
+$pdwnl[11]='<'.'a href="/instructions/poliuretanovaja-propitka.pdf?'.filemtime($pb_root.'instructions/poliuretanovaja-propitka.pdf').'" class="tpdf" target="_blank" title="Полиуретановая пропитка ТЕХНОЛОГИЯ'; 
+$pdwnl[13]='<'.'a href="/instructions/propitka-glubokaja.pdf?'.filemtime($pb_root.'instructions/propitka-glubokaja.pdf').'" class="tpdf" target="_blank" title="Пропитка глубокого проникновения ТЕХНОЛОГИЯ';
+$pdwnl[17]='<'.'a href="/instructions/epoksidnaya-propitka-technology.pdf?'.filemtime($pb_root.'instructions/epoksidnaya-propitka-technology.pdf').'" class="tpdf" target="_blank" title="Эпоксидная пропитка ТЕХНОЛОГИЯ';
+$pdwnl[23]='<'.'a href="/instructions/fljuat-propitka.pdf?'.filemtime($pb_root.'instructions/fljuat-propitka.pdf').'" class="tpdf"  target="_blank" title="Флюат пропитка ТЕХНОЛОГИЯ';
+$pdwnl[25]='<'.'a href="/instructions/akrilovaja-propitka.pdf?'.filemtime($pb_root.'instructions/akrilovaja-propitka.pdf').'" class="tpdf"  target="_blank" title="Акриловая пропитка ТЕХНОЛОГИЯ';
+
+$pdwnl[31]='<'.'a href="/instructions/poliuretanovoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/poliuretanovoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Полиуретановое покрытие ТЕХНОЛОГИЯ';
+$pdwnl[33]='<'.'a href="/instructions/epoksidnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/epoksidnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Эпоксидное покрытие окрасочное ТЕХНОЛОГИЯ';
+$pdwnl[35]='<'.'a href="/instructions/svetostojkoe_pokrytie_ljuks.pdf?'.filemtime($pb_root.'instructions/svetostojkoe_pokrytie_ljuks.pdf').'" class="tpdf" target="_blank" title="Полиуретановое Покрытие Светостойкое инструкция';
+$pdwnl[37]='<'.'a href="/instructions/poliuretanovoe-pokrytie-peskom.pdf?'.filemtime($pb_root.'instructions/poliuretanovoe-pokrytie-peskom.pdf').'" class="tpdf" target="_blank" title="Полиуретановое покрытие с песком ТЕХНОЛОГИЯ';
+$pdwnl[39]='<'.'a href="/instructions/kvarc-pokrytie.pdf?'.filemtime($pb_root.'instructions/kvarc-pokrytie.pdf').'" class="tpdf" target="_blank" title="Эпоксидное Кварцнаполненное покрытие ТЕХНОЛОГИЯ';
+$pdwnl[40]='<'.'a href="/instructions/pu-pokrytie-peskom-gladkoe.pdf?'.filemtime($pb_root.'instructions/pu-pokrytie-peskom-gladkoe.pdf').'" class="tpdf" target="_blank" title="Полиуретановое покрытие с песком гладкое ТЕХНОЛОГИЯ';
+$pdwnl[41]='<'.'a href="/instructions/akrilovje-pokrytie.pdf?'.filemtime($pb_root.'instructions/akrilovje-pokrytie.pdf').'" class="tpdf" target="_blank" title="Акриловое покрытие (МБ2) инструкция';
+$pdwnl[43]='<'.'a href="/instructions/svetoskoikoe-kvartz-pokrytie.pdf?'.filemtime($pb_root.'instructions/svetoskoikoe-kvartz-pokrytie.pdf').'" class="tpdf" target="_blank" title="Светостойкое покрытие с кварцем (для трибун стадионов)';
+$pdwnl[45]='<'.'a href="/instructions/fakturnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/fakturnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Фактурное покрытие инструкция';
+
+$pdwnl[51]='<'.'a href="/instructions/epoksidnyj-nalivnoj-pol-tech.pdf?'.filemtime($pb_root.'instructions/epoksidnyj-nalivnoj-pol-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Эпоксидный Классик технология';
+$pdwnl[52]='<'.'a href="/instructions/epoksidnyj-nalivnoj-pol-promyshlennyj-tech.pdf?'.filemtime($pb_root.'instructions/epoksidnyj-nalivnoj-pol-promyshlennyj-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Эпоксидный Промышленный технология';
+$pdwnl[53]='<'.'a href="/instructions/poliuretanovyj-nalivnoj-pol-classic-tech.pdf?'.filemtime($pb_root.'instructions/poliuretanovyj-nalivnoj-pol-classic-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Полиуретановый технология';
+$pdwnl[54]='<'.'a href="/instructions/poliuretan-nalivnoj-pol-promyshlennyj-tech.pdf?'.filemtime($pb_root.'instructions/poliuretan-nalivnoj-pol-promyshlennyj-tech.pdf').'" class="tpdf" target="_blank" title="Промышленный Наливной пол Полиуретановый технология';
+$pdwnl[55]='<'.'a href="/instructions/beloe-pokrytie.pdf?'.filemtime($pb_root.'instructions/beloe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Белое наливное покрытие ТЕХНОЛОГИЯ';
+$pdwnl[63]='<'.'a href="/instructions/antistat-tp-ed-pol.pdf?'.filemtime($pb_root.'instructions/antistat-tp-ed-pol.pdf').'" class="tpdf" target="_blank" title="Антистатический наливной пол Эпоксидный ТЕХНОЛОГИЯ';
+$pdwnl[64]='<'.'a href="/instructions/antistat-tp-pu-pol.pdf?'.filemtime($pb_root.'instructions/antistat-tp-pu-pol.pdf').'" class="tpdf" target="_blank" title="Антистатический наливной пол Полиуретановый ТЕХНОЛОГИЯ';
+$pdwnl[65]='<'.'a href="/instructions/antistat-er-ed-pol.pdf?'.filemtime($pb_root.'instructions/antistat-er-ed-pol.pdf').'" class="tpdf" target="_blank" title="Электрорассеивающий наливной пол Эпоксидный ТЕХНОЛОГИЯ';
+$pdwnl[66]='<'.'a href="/instructions/antistat-er-pu-pol.pdf?'.filemtime($pb_root.'instructions/antistat-er-pu-pol.pdf').'" class="tpdf" target="_blank" title="Электрорассеивающий наливной пол Полиуретановый ТЕХНОЛОГИЯ';
+$pdwnl[67]='<'.'a href="/instructions/antistat-tp-ed-pokr.pdf?'.filemtime($pb_root.'instructions/antistat-tp-ed-pokr.pdf').'" class="tpdf" target="_blank" title="Токопроводящее Окрасочное Эпоксидное покрытие ТЕХНОЛОГИЯ';
+$pdwnl[68]='<'.'a href="/instructions/antistat-tp-pu-pokr.pdf?'.filemtime($pb_root.'instructions/antistat-tp-pu-pokr.pdf').'" class="tpdf" target="_blank" title="Токопроводящее Окрасочное Полиуретановое покрытие ТЕХНОЛОГИЯ';
+$pdwnl[69]='<'.'a href="/instructions/antistat-er-ed-pokr.pdf?'.filemtime($pb_root.'instructions/antistat-er-ed-pokr.pdf').'" class="tpdf" target="_blank" title="Электрорассеивающее Эпоксидное покрытие ТЕХНОЛОГИЯ';
+$pdwnl[70]='<'.'a href="/instructions/antistat-er-pu-pokr.pdf?'.filemtime($pb_root.'instructions/antistat-er-pu-pokr.pdf').'" class="tpdf" target="_blank" title="Электрорассеивающее Полиуретановое покрытие ТЕХНОЛОГИЯ';
+$pdwnl[71]='<'.'a href="/instructions/promyshlennyj-nalivnoj-pol-jepoksidnyj.pdf?'.filemtime($pb_root.'instructions/promyshlennyj-nalivnoj-pol-jepoksidnyj.pdf').'" class="tpdf" target="_blank" title="Промышленный наливной пол Эпоксидный ТЕХНОЛОГИЯ';
+$pdwnl[73]='<'.'a href="/instructions/promyshlennyj-nalivnoj-pol-poliuretanovyj.pdf?'.filemtime($pb_root.'instructions/promyshlennyj-nalivnoj-pol-poliuretanovyj.pdf').'" class="tpdf" target="_blank" title="Наполненный наливной пол Полиуретановый ТЕХНОЛОГИЯ';
+$pdwnl[76]='<'.'a href="/instructions/antistat-pu-r-metal.pdf?'.filemtime($pb_root.'instructions/antistat-pu-r-metal.pdf').'" class="tpdf" target="_blank" title="Антистатическое Окрасочное покрытие по рифленому металлу ТЕХНОЛОГИЯ';
+$pdwnl[77]='<'.'a href="/instructions/antistat-pu-pol-metal.pdf?'.filemtime($pb_root.'instructions/antistat-pu-pol-metal.pdf').'" class="tpdf" target="_blank" title="Антистатический наливной пол по металлу ТЕХНОЛОГИЯ';
+$pdwnl[79]='<'.'a href="/instructions/antistat-pu-luks-r-metal.pdf?'.filemtime($pb_root.'instructions/antistat-pu-luks-r-metal.pdf').'" class="tpdf" target="_blank" title="Антистатическое Окрасочное Светостойкое покрытие по рифленому металлу ТЕХНОЛОГИЯ';
+
+$pdwnl[81]='<'.'a href="/instructions/pokrytie-dlja-asfalta.pdf?'.filemtime($pb_root.'instructions/pokrytie-dlja-asfalta.pdf').'" class="tpdf" target="_blank" title="Покрытие для асфальта ТЕХНОЛОГИЯ';
+$pdwnl[83]='<'.'a href="/instructions/dekorativnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/dekorativnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Декоративное покрытие ТЕХНОЛОГИЯ';
+$pdwnl[85]='<'.'a href="/instructions/antiskolzjawee-pokrytie.pdf?'.filemtime($pb_root.'instructions/antiskolzjawee-pokrytie.pdf').'" class="tpdf" target="_blank" title="Антискользящее покрытие ТЕХНОЛОГИЯ';
+$pdwnl[87]='<'.'a href="/instructions/antiskolz-propitka.pdf?'.filemtime($pb_root.'instructions/antiskolz-propitka.pdf').'" class="tpdf" target="_blank" title="Антискользящая пропитка ТЕХНОЛОГИЯ';
+
+$pdwnl[101]='<'.'a href="/instructions/ochistka-betona.pdf?'.filemtime($pb_root.'instructions/ochistka-betona.pdf').'" class="tpdf" target="_blank" title="Химическая очистка бетона ТЕХНОЛОГИЯ'; 
+$pdwnl[103]='<'.'a href="/instructions/shpatlevanie-betona.pdf?'.filemtime($pb_root.'instructions/shpatlevanie-betona.pdf').'" class="tpdf" target="_blank" title="Шпатлевание бетона полиуретановыми материалами ТЕХНОЛОГИЯ'; 
+// $pdwnl[109]='<'.'a href="/pub/instr/instr13.doc" class="tdoc" title="';
+$pdwnl[113]='<'.'a href="/instructions/kolerovka-cvetnoy-poliuretanovoy-emali.pdf?'.filemtime($pb_root.'instructions/kolerovka-cvetnoy-poliuretanovoy-emali.pdf').'" class="tpdf" target="_blank" title="Колеровка полиуретановой эмали-краски ТЕХНОЛОГИЯ'; 
+// $pdwnl[115]='<'.'a href="/pub/instr/instr34.doc" class="tdoc" title="';
+$pdwnl[117]='<'.'a href="/instructions/remont-polov.pdf?'.filemtime($pb_root.'instructions/remont-polov.pdf').'" class="tpdf" target="_blank" title="Ремонт полимерных и наливных полов ТЕХНОЛОГИЯ'; 
+
+// $pdwnl[121]='<'.'a href="/pub/instr/instr23.doc" class="tdoc" title="';
+$pdwnl[131]='<'.'a href="/instructions/zawita-fasadov.pdf?'.filemtime($pb_root.'instructions/zawita-fasadov.pdf').'" class="tpdf" target="_blank" title="Защита фасадов ТЕХНОЛОГИЯ'; 
+$pdwnl[135]='<'.'a href="/instructions/fljuat-propitka.pdf?'.filemtime($pb_root.'instructions/fljuat-propitka.pdf').'" class="tpdf" target="_blank" title="Флюатирование (Элакор-МБ1) ТЕХНОЛОГИЯ'; 
+$pdwnl[137]='<'.'a href="/instructions/gidrofobizacija-mb4.pdf?'.filemtime($pb_root.'instructions/gidrofobizacija-mb4.pdf').'" class="tpdf" target="_blank" title="Гидрофобизация (Элакор-МБ4) ТЕХНОЛОГИЯ'; 
+
+$pdwnl[142]='<'.'a href="/instructions/elastobeton-a1.pdf?'.filemtime($pb_root.'instructions/elastobeton-a1.pdf').'" class="tpdf" target="_blank" title="Добавка для бетона «Эластобетон-А1» ТЕХНОЛОГИЯ';
+$pdwnl[143]='<'.'a href="/instructions/elastobeton-a2.pdf?'.filemtime($pb_root.'instructions/elastobeton-a2.pdf').'" class="tpdf" target="_blank" title="Добавка для бетона «Эластобетон-А2» ТЕХНОЛОГИЯ';
+$pdwnl[147]='<'.'a href="/instructions/elastobeton-b.pdf?'.filemtime($pb_root.'instructions/elastobeton-b.pdf').'" class="tpdf" target="_blank" title="Добавка для бетона «Эластобетон-Б» ТЕХНОЛОГИЯ';
+$pdwnl[150]='<'.'a href="/instructions/gelkout.pdf?'.filemtime($pb_root.'instructions/gelkout.pdf').'" class="tpdf" target="_blank" title="Заделка пор и раковин ТЕХНОЛОГИЯ';
+
+$pdwnl[171]='<'.'a href="/instructions/pz-pt1-nalivnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/pz-pt1-nalivnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Полиуретан цементное покрытие наливное Элакор-ПЦ Т1 - ТЕХНОЛОГИЯ';
+$pdwnl[172]='<'.'a href="/instructions/pz-pt2-nalivnoj-pol.pdf?'.filemtime($pb_root.'instructions/pz-pt2-nalivnoj-pol.pdf').'" class="tpdf" target="_blank" title="Полиуретан цементный пол наливной Элакор-ПЦ Т2 - ТЕХНОЛОГИЯ';
+$pdwnl[173]='<'.'a href="/instructions/pz-pt3-nalivnoj-sostav.pdf?'.filemtime($pb_root.'instructions/pz-pt3-nalivnoj-sostav.pdf').'" class="tpdf" target="_blank" title="Полиуретан цементный наливной состав Элакор-ПЦ Т3 - ТЕХНОЛОГИЯ';
+$pdwnl[174]='<'.'a href="/instructions/pz-pt1-ast-nalivnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/pz-pt1-ast-nalivnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Антистатическое Полиуретан цементное покрытие наливное Элакор-ПЦ Т1 - ТЕХНОЛОГИЯ';
+
+$pdwnl[181]='<'.'a href="/instructions/himicheskaja-ochistka-metalla.pdf?'.filemtime($pb_root.'instructions/himicheskaja-ochistka-metalla.pdf').'" class="tpdf" target="_blank" title="Химическая очистка металла (Элакор-МБ3) ТЕХНОЛОГИЯ';
+$pdwnl[183]='<'.'a href="/instructions/antikorrozionnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/antikorrozionnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Антикоррозионное покрытие ТЕХНОЛОГИЯ';
+
+$pdwnl[197]='<'.'a href="/instructions/antikorrozionnoe-pokrytie-metallicheskih-polov.pdf?'.filemtime($pb_root.'instructions/antikorrozionnoe-pokrytie-metallicheskih-polov.pdf').'" class="tpdf" target="_blank" title="Наливной пол по металлу инструкция';
+
+$pdwnl[213]='<'.'a href="/pub/instr/instr22.doc?'.filemtime($pb_root.'pub/instr/instr22.doc').'" class="tpdf" target="_blank" title="Скачать инструкцию';
+
+$pdwnl[219]='<'.'a href="/instructions/ekcpluataciya-poiliuretanovye-nalivnye-poly.pdf?'.filemtime($pb_root.'instructions/ekcpluataciya-poiliuretanovye-nalivnye-poly.pdf').'" class="tpdf" target="_blank" title="ЭКСПЛУАТАЦИЯ Полиуретановые наливные полы - инструкция';
+$pdwnl[220]='<'.'a href="/instructions/ekcpluataciya-epoksidnye-nalivnye-poly.pdf?'.filemtime($pb_root.'instructions/ekcpluataciya-epoksidnye-nalivnye-poly.pdf').'" class="tpdf" target="_blank" title="ЭКСПЛУАТАЦИЯ Эпоксидные наливные полы - инструкция';
+
+// $pdwnl[201]='<'.'a href="/pub/instr/instr21.doc" class="tdoc" title="';
+// $pdwnl[213]='<'.'a href="/pub/instr/instr22.doc" class="tdoc" title="';
+
+
+/* =============================================================== ФУНКЦИИ ДЛЯ МАТЕРИАЛОВ =============================================================== */
+
+// Для Материалов - шапка таблицы (десктоп)
+$th='<tr><th class="thml" style="padding-left:7px;width:370px"><div style="float:left;width:33px;text-align:left">Код</div>Описание материала<</th><th style="width:42px">10-39кг</th><th style="width:45px">40-199кг</th><th style="width:45px">200-499кг</th><th style="width:45px">500-1тн</th><th style="width:42px">1-3тн</th><th style="width:42px">от 3тн</th><th style="width:25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>';
+$th5='<tr><th class="thml" style="padding-left:7px;width:365px"><div style="float:left;width:33px;text-align:left">Код</div>Описание материала</th><th>10-39кг</th><th>40-199кг</th><th>200-499кг</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th><th style="width:25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>';
+$thp='<tr><th>10-39кг</th><th>40-199кг</th><th style="white-space:nowrap">200-499кг</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th><th style="width:30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>';
+//$dthm='<tr><th class="thml fs11" style="width:360px">Описание материала</th><th>10-39кг</th><th>40-199кг</th><th>200-499кг</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th><th style="width:40px">&nbsp;</th></tr>';
+$th7='<tr><th class="thml" style="padding-left:7px;min-width:430px;"><div style="float:left;width:33px;text-align:left">Код</div>Описание материала</th><th style="width:15px"></th><th>10-39кг</th><th>40-199кг</th><th>200-499</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th><th style="width:25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>';
+$thp8='<tr><th>10-39кг</th><th>40-199кг</th><th style="white-space:nowrap">200-499кг</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th><th style="width:30px;"></th><th style="width:30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>';
+
+// Для покрытий fcvr3()
+$tbl1='<div><table class="tmtr" style="box-shadow:none;background:#eeeeee;"><tbody><tr><th rowspan="2" style="width:340px">Перейти в подробный расчет:</th><th colspan="3"><span class="fs12" style="font-weight:bold">Цена за 1 м2, руб.</span></th><th colspan="3"><span class="fs12" style="font-weight:bold">Стоимость за всю площадь, руб.</span></th></tr><tr><th style="width:40px;">Мат-лы</th><th style="width:40px;">Работы</th><th class="fwb" style="width:45px;">Мат+Раб</th><th style="width:70px;">Материалы</th><th style="width:65px;">Работы</th><th class="fwb" style="width:70px;">Мат + Раб</th></tr>';
+$tbl1p='<div><table class="tmtr" style="box-shadow:none;background:#eeeeee;"><tbody><tr><th colspan="3"><span class="fs12" style="font-weight:bold">Цена за 1 м2, руб.</span></th><th colspan="3"><span class="fs12" style="font-weight:bold">Стоимость за всю площадь, руб.</span></th></tr><tr><th style="width:45px;">Мат-лы</th><th style="width:45px;">Работы</th><th class="fwb" style="width:50px;">Мат+Раб</th><th style="width:70px;">Материалы</th><th style="width:70px;">Работы</th><th class="fwb" style="width:70px;">Мат + Раб</th></tr>';
+$tbl2='</tbody></table><div class="px0"></div></div><div class="px10"></div>';
+
+// Для Технологий
+$tblt1='<div class="px0"></div><table class="tmtr" style="background:#f0f0f0;"><tbody>'; //'<tr style="height:4px"><td colspan="3" style="border:none;height:3px;"></td></tr>';
+$tblt2='</tbody></table>';
+//$tblt2='<tr style="height:4px"><td colspan="3" style="border:none; height: 4px;"></td></tr></tbody></table>';
+
+// Для Калькулятора (заглавная - мобильная версия)
+$tblt23='<div class="px0"></div><table class="tmtr23" style="background:#f0f0f0;"><tbody>'; //'<tr style="height:4px"><td colspan="3" style="border:none;height:3px;"></td></tr>';
+$tblt23end='</tbody></table>';
+
+function fmtr1_html($n=0, $f='',$nm='',$nm2='', $id=0) {
+global $mtr, $pl; if($id<11) $id=$n;
+$out=''; $m=$mtr; $fs9='';
+if ($n!=59 && $n!=121 && $m[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+    if (!$f) $f=$m[$n][0]; // Номер пункта
+    $name = $nm;
+    if ($n==52){$fs9=' style="font-size:11px;"'; $nm2='- Люкс АСТ-7, АСТ-6</span> <span style="font-size:11px;">(светостойкая)';}
+    if ($n==105||$n==106){$fs9=' style="font-size:9px;"';}
+    if ($n==163){$fs9=' style="font-size:11px;"';}
+    if ($m[$n]!=false){
+        $out='<tr><td class="tmdl"><span style="font-weight:normal;font-size:12px">'.$f.'</span> '.(($pl[$n]) ? ($pl[$n].$name.'</'.'a>') : $name).' <span'.$fs9.'>'.($nm2 ? $nm2 : $m[$n][2]).'</span></td>';
+        $out.='<td>'.$m[$n][3].'</td><td>'.$m[$n][4].'</td><td>'.$m[$n][5].'</td><td>'.$m[$n][6].'</td><td>'.$m[$n][7].'</td><td>'.$m[$n][8].'</td>';
+//        if ($n==52){ $nm2='- Люкс АСТ-7, АСТ-6 (светостойкая)'; }
+        $name=str_replace('%','',$name); $name=str_replace('"',('\\'.'"'),$name);
+        $out.='<td></td></tr>'; //$out.='<td class="fbuy" style="font:bold 14px arial; color:#008000" onclick="f_b('.$n.',\''.$name."</span><br><span class=\'fwn fs12\'>".($nm2 ? $nm2 : $m[$n][2]).'\')" title="Купить '.$name.'"></td></tr>';
+    }
+}
+return $out;
+}
+
+// МАТЕРИАЛЫ. Вариант 1. Возвращает отформатированную строку с наименованием материала (основная часть + дополнение). Цены. &#128722 &#128465
+function fmtr1($n=0, $f='',$nm='',$nm2='', $id=0) {
+global $mtr, $pl; if($id<11) $id=$n;
+$out=''; $m=$mtr; $new=''; $fs9='';
+/* if($n==21 || $n==30 || $n==31 || $n==38 || $n==40 || $n==45 || $n==46 || $n==47 || $n==48 || $n==50 || $n==52 || $n==60 || $n==64 || $n==73 || $n==128 || $n==129 || $n==164) $new='<div style="float:right;padding:2px;font:bold 12px arial;color:#f00000">new!</div>'; */
+if ($n!=59 && $n!=121 && $m[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+    if (!$f) $f=$m[$n][0]; // Номер пункта
+    $name = $nm ? $nm : $m[$n][1];
+    if ($n==52){$fs9=' style="font-size:11px;"'; $nm2='- Люкс АСТ-7, АСТ-6</span> <span style="font-size:11px;">(светостойкая)';}
+    if ($n==105||$n==106){$fs9=' style="font-size:9px;"';}
+    if ($n==163){$fs9=' style="font-size:11px;"';}
+    if ($m[$n]!=false){
+        $out='<tr><td class="tmdl">'.$new.'<div style="float:left;padding-right:5px;min-width:30px;font-weight:normal;font-size:12px">'.$f.'</div> '.(($pl[$n]) ? ($pl[$n].$name.'</'.'a>') : $name).' <span'.$fs9.'>'.($nm2 ? $nm2 : $m[$n][2]).'</span></td>';
+        $out.='<td>'.$m[$n][3].'</td><td>'.$m[$n][4].'</td><td>'.$m[$n][5].'</td><td>'.$m[$n][6].'</td><td>'.$m[$n][7].'</td><td>'.$m[$n][8].'</td>';
+//        if ($n==52){ $nm2='- Люкс АСТ-7, АСТ-6 (светостойкая)'; }
+        $name=str_replace('%','',$name); $out.='<td></td></tr>'; // $out.='<td class="fbuy" style="font:bold 14px arial; color:#008000" onclick="f_b('.$n.',\''.$name."</span><br><span class=\'fwn fs12\'>".($nm2 ? $nm2 : $m[$n][2]).'\')" title="Купить '.$name.'"></td></tr>';
+    }
+    if ($pl[$n]) {
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'<span>'.substr($out,$nm+1);
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'</span>'.substr($out,$nm+1);
+    } else {
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'<span style="font-size:12px; font-weight:bold">'.substr($out,$nm+1);
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'</span>'.substr($out,$nm+1);
+    }
+    $m = strpos($out,'<span> </span>'); if ($m>0) $out=substr($out,0,$m).substr($out,$m+14);
+}
+return $out;
+}
+
+// МАТЕРИАЛЫ. Вариант 2. Возвращает отформатированную строку с наименованием материала (основная часть + дополнение). Цены.
+function fmtr2($n=0, $f=false) {
+global $pb_page,$mtr;
+$out='';
+if ($n!=59 && $n!=121 && $mtr[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+ if ($n==39) {
+    $out='<div class="px5"></div><table class="tmtr"><tbody><tr><th>10-39кг</th><th>40-199кг</th><th>200-499кг</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th></tr>';
+    // $out='<div class="px5"></div><table class="tmtr"><tbody><tr><th>13-50шт</th><th>51-256шт/th><th>257-640шт</th><th>641-1281шт</th><th>1282-3845кг</th><th>от 3000л</th></tr>';
+ } else {
+  if ($n==227||$n==105||$n==106) {
+    $out='<div class="px5"></div><table class="tmtr"><tbody><tr><th>10-39л</th><th>40-199л</th><th>200-499л</th><th>500-1000л</th><th>1000-3000л</th><th>от 3000л</th></tr>';
+  } else {
+    $out='<div class="px5"></div><table class="tmtr"><tbody><tr><th>10-39кг</th><th>40-199кг</th><th>200-499кг</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th></tr>';
+  }
+ }
+  $out.='<tr'.((($pb_page>2000 && $pb_page<3000) || ($pb_page>5005 && $pb_page<5009) || ($pb_page>5021 && $pb_page<5025))?' style="height:28px;font-weight:bold"':'').'><td>'.$mtr[$n][3].'</td><td>'.$mtr[$n][4].'</td><td>'.$mtr[$n][5].'</td><td>'.$mtr[$n][6].'</td><td>'.$mtr[$n][7].'</td><td>'.$mtr[$n][8].'</td></tr></tbody></table>';
+  if ($f==false) $out.='<p class="fs11 mt5">Цена с НДС, руб/'.($n==39?'шт':(($n==227||$n==105||$n==106)?'литр':'кг')).', в зависимости от количества.</p>';
+  else { $f=''.$f; if (strlen($f)>10) $out.='<p class="fs11 mt0">'.$f.'</p>'; }
+  $out.='<div class="px5"></div>';
+}
+return $out;
+}
+
+// МАТЕРИАЛЫ. Вариант 3. Возвращает отформатированную строку с наименованием материала (основная часть + дополнение). Цены.
+function fmtr3($n=0, $nm='',$nm2='', $id=0) {
+global $mtr, $pl; if($id<11) $id=$n;
+$out=''; $m=$mtr;
+if ($n!=59 && $n!=121 && $m[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+    $name = $nm ? $nm : $m[$n][1];
+    if ($m[$n]!=false){
+        $out='<tr><td class="tmdl">'.(($pl[$n]) ? ($pl[$n].$name.'</'.'a>') : $name).' <span>'.($nm2 ? $nm2 : $m[$n][2]).'</span></td>';
+        $out.='<td>'.$m[$n][3].'</td><td>'.$m[$n][4].'</td><td>'.$m[$n][5].'</td><td>'.$m[$n][6].'</td><td>'.$m[$n][7].'</td><td>'.$m[$n][8].'</td>';
+        $name=str_replace('%','',$name); $out.='<td></td></tr>'; // $out.='<td class="fbuy" onclick="f_b('.$n.',\''.$name.' '.($nm2 ? $nm2 : $m[$n][2]).'\')" title="Купить '.$name.'"></td></tr>';
+    }
+    if (!$pl[$n]) {
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'<span class="fs12">'.substr($out,$nm+1);
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'</span>'.substr($out,$nm+1);
+    } else {
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).substr($out,$nm+1);
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).substr($out,$nm+1);
+    }
+}
+return $out;
+}
+
+// МАТЕРИАЛЫ. Вариант 4. Возвращает отформатированную строку с наименованием материала (основная часть + дополнение). Цены. &#128722
+function fmtr4($n=0, $f='',$nm='',$nm2='', $id=0) {
+global $mtr, $pl; if($id<11) $id=$n;
+$m=$mtr; $new=''; $fs9='';
+/* if($n==21 || $n==30 || $n==31 || $n==38 || $n==40 || $n==45 || $n==46 || $n==47 || $n==48 || $n==50 || $n==52 || $n==60 || $n==64 || $n==73 || $n==128 || $n==129 || $n==164) $new='<div style="float:right;padding:2px;font:bold 12px arial;color:#f00000">new!</div>'; */
+if ($n!=59 && $n!=121 && $m[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+    if (!$f) $f=$m[$n][0]; // Номер пункта
+    $name = $nm ? $nm : $m[$n][1];
+    if ($n==163){$fs9=' style="font-size:11px;"';}
+    if ($m[$n]!=false){
+        $out1='<tr><td colspan="7" style="height:7px;border:none;background:linear-gradient(to bottom,#a8a8a8 20%,#c8c8c8 40%,#eeeeee 70%,#ffffff 90%);"></td></tr>';
+        $out2='<tr><td class="tmdl" id="idtmdl_'.$n.'" colspan="6" style="cursor:pointer;padding-top:2px;line-height:15px">'.$new.'<span style="font-weight:normal;font-size:12px">'.$f.'</span> '.(($pl[$n]) ? ($pl[$n].$name.'</'.'a>') : $name).' <span'.$fs9.'>'.($nm2 ? $nm2 : $m[$n][2]).'</span></td>';
+        $name=str_replace('%','',$name); $out2.='<td rowspan="2"></td></tr>'; // $out2.='<td class="fbuy" rowspan="2" style="font:bold 14px arial" onclick="f_b('.$n.',\''.$name."</span><br><span class=\'fwb fs12\'>".($nm2 ? $nm2 : $m[$n][2]).'\')" title="Купить '.$name.'"></td></tr>';
+        $lnk=' onclick="if($.qS('."'#idtmdl_".$n." a'".'))window.location.href=$.qS('."'#idtmdl_".$n." a'".').href"';
+        $out2.='<tr><td'.$lnk.'>'.$m[$n][3].'</td><td'.$lnk.'>'.$m[$n][4].'</td><td'.$lnk.'>'.$m[$n][5].'</td><td'.$lnk.'>'.$m[$n][6].'</td><td'.$lnk.'>'.$m[$n][7].'</td><td'.$lnk.'>'.$m[$n][8].'</td>';
+    }
+    if ($pl[$n]) {
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'<span>'.substr($out2,$nm+1);
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'</span>'.substr($out2,$nm+1);
+    } else {
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'<span style="font-size:12px; font-weight:bold">'.substr($out2,$nm+1);
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'</span>'.substr($out2,$nm+1);
+    }
+    $m = strpos($out2,'<span> </span>'); if ($m>0) $out2=substr($out2,0,$m).substr($out2,$m+14);
+    $out=$out1.$out2;
+}
+return $out;
+}
+
+// МАТЕРИАЛЫ. Вариант 5. Возвращает отформатированную строку с наименованием материала (основная часть + дополнение). Цены. &#128722 &#128465
+function fmtr5($n=0, $f='',$nm='',$nm2='',$nm1='') {
+global $mtr, $pl;
+$out=''; $m=$mtr; $new='';
+if ($n!=59 && $n!=121 && $m[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+    if (!$f) $f=$m[$n][0]; // Номер пункта
+    $name = $nm ? $nm : $m[$n][1];
+    if ($m[$n]!=false){
+        $out='<tr><td class="tmdl">'.$new.'<div style="float:left;min-width:35px;font-weight:normal;font-size:12px">'.$f.'</div> '.(($pl[$n]) ? ('<span class="c2" style="font-size:12px;font-weight:bold">'.$nm1.'</span> '.$pl[$n].$name.'</'.'a>') : $name).($n==52?' <span class="c50p">(АСТ-7, АСТ-6)</span>':'').' <div class="mt-5 lh18"><span class="c50p">'.($nm2 ? $nm2 : $m[$n][2]).'</span></div></td>';
+        $out.='<td>'.$m[$n][3].'</td><td>'.$m[$n][4].'</td><td>'.$m[$n][5].'</td><td>'.$m[$n][6].'</td><td>'.$m[$n][7].'</td><td>'.$m[$n][8].'</td>';
+//        if ($n==52){ $nm2='- Люкс АСТ-7, АСТ-6 (светостойкая)'; }
+        $name=str_replace('%','',$name); $out.='<td></td></tr>'; // $out.='<td class="fbuy" style="font:bold 14px arial; color:#008000" onclick="f_b('.$n.',\''.$nm1.$name."</span><br><span class=\'fwn fs12\'>".($nm2 ? $nm2 : $m[$n][2]).'\')" title="Купить '.$nm1.$name.'"></td></tr>';
+    }
+    if ($pl[$n]) {
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'<span>'.substr($out,$nm+1);
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'</span>'.substr($out,$nm+1);
+    } else {
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'<span style="font-size:12px; font-weight:bold">'.substr($out,$nm+1);
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'</span>'.substr($out,$nm+1);
+    }
+    $m = strpos($out,'<span> </span>'); if ($m>0) $out=substr($out,0,$m).substr($out,$m+14);
+}
+return $out;
+}
+
+// МАТЕРИАЛЫ. Вариант 6. Возвращает отформатированную строку с наименованием материала (основная часть + дополнение). Цены. &#128722
+function fmtr6($n=0, $f='',$nm='',$nm2='',$nm1='') {
+global $mtr, $pl;
+$m=$mtr; $new='';
+if ($n!=59 && $n!=121 && $m[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+    if (!$f) $f=$m[$n][0]; // Номер пункта
+    $name = $nm ? $nm : $m[$n][1];
+    if ($m[$n]!=false){
+        $out1='<tr><td colspan="7" style="height:7px;border:none;background:linear-gradient(to bottom,#a8a8a8 20%,#c8c8c8 40%,#eeeeee 70%,#ffffff 90%);"></td></tr>';
+        $out2='<tr><td class="tmdl" id="idtmdl_'.$n.'" colspan="6" style="cursor:pointer;padding-top:2px;line-height:15px">'.$new.'<div style="float:left;min-width:35px;font-weight:normal;font-size:12px">'.$f.'</div> '.(($pl[$n]) ? ('<span class="c2" style="font-size:12px;font-weight:bold">'.$nm1.'</span> '.$pl[$n].$name.'</'.'a>') : $name).($n==52?' <span class="c50p">(АСТ-7, АСТ-6)</span>':'').' <div style="margin:-1px 0 2px 0"><span class="c50p">'.($nm2 ? $nm2 : $m[$n][2]).'</span></div></td>';
+        $name=str_replace('%','',$name); $out2.='<td rowspan="2"></td></tr>'; // $out2.='<td class="fbuy" rowspan="2" style="font:bold 14px arial" onclick="f_b('.$n.',\''.$nm1.$name."</span><br><span class=\'fwb fs12\'>".($nm2 ? $nm2 : $m[$n][2]).'\')" title="Купить '.$nm1.$name.'"></td></tr>';
+        $lnk=' onclick="if($.qS('."'#idtmdl_".$n." a'".'))window.location.href=$.qS('."'#idtmdl_".$n." a'".').href"';
+        $out2.='<tr><td'.$lnk.'>'.$m[$n][3].'</td><td'.$lnk.'>'.$m[$n][4].'</td><td'.$lnk.'>'.$m[$n][5].'</td><td'.$lnk.'>'.$m[$n][6].'</td><td'.$lnk.'>'.$m[$n][7].'</td><td'.$lnk.'>'.$m[$n][8].'</td></tr>';
+    }
+    if ($pl[$n]) {
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'<span>'.substr($out2,$nm+1);
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'</span>'.substr($out2,$nm+1);
+    } else {
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'<span style="font-size:12px; font-weight:bold">'.substr($out2,$nm+1);
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'</span>'.substr($out2,$nm+1);
+    }
+    $m = strpos($out2,'<span> </span>'); if ($m>0) $out2=substr($out2,0,$m).substr($out2,$m+14);
+    $out=$out1.$out2;
+}
+return $out;
+}
+
+// ПОКРЫТИЯ. Вариант 6. Возвращает отформатированную строку с наименованием покрытия (ТОЛЬКО ОСНОВНАЯ ЧАСТЬ, БЕЗ МЕЛКОГО ДОПОЛНЕНИЯ). page1_23/block1_23 /polymer/cena/
+function fcvr6($n, $p='', $nm='',$nm2='', $m_mob='') {
+global $pkr,$plc;
+if ($n>9 && $pkr[$n]) {
+    if ($p==false) $p='<span class="fwn" style="font-size:12px">'.$pkr[$n][0].'</span>';
+    if ($nm==false) $nm=$pkr[$n][1]; $nm=str_replace('%','',$nm); $link = $nm;
+    if ($plc[$n]) {
+        $out1='<tr><td colspan="6" style="height:7px;border:none;background:linear-gradient(to bottom,#a8a8a8 20%,#c8c8c8 40%,#eeeeee 70%,#ffffff 90%);"></td></tr>';
+        $link = str_replace(' class="blk_cover_calc"',($n==73 ? ''/*' style="font-size:12px"'*/ : ''),$plc[$n]);
+        $link = str_replace(' class="atemp blk_cover_calc"',' class="atemp"',$link);
+        $link .= $nm.'</'.'a>'; if ($nm2) $link.=' <span class="fwn" style="font-size:11px">'.$nm2.'</span>';
+    } $out2='<tr><td class="tmdl fwb" colspan="6">'.$p.' '.$link.'</td></tr>';
+    $out2.='<tr><td id="'.$m_mob.'m'.$n.'">&nbsp;</td><td id="'.$m_mob.'r'.$n.'">&nbsp;</td><td id="'.$m_mob.'mr'.$n.'" class="fwb">&nbsp;</td><td id="'.$m_mob.'mi'.$n.'">&nbsp;</td><td id="'.$m_mob.'ri'.$n.'">&nbsp;</td><td id="'.$m_mob.'mri'.$n.'" class="fwb">&nbsp;</td></tr>';
+    $out=$out1.$out2;
+}
+return $out;
+}
+
+// МАТЕРИАЛЫ. Вариант 7. Возвращает отформатированную строку с наименованием материала (основная часть + дополнение). Цены. &#128722 &#128465
+function fmtr7($n=0, $f='',$nm='',$nm2='',$nm1='') {
+global $mtrt, $pl, $pb_page;
+$out=''; $m=$mtrt; $new=''; $fs9='';
+if ($n!=59 && $n!=121 && $m[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+    if (!$f) $f=$m[$n][0]; // Номер пункта
+    $name = $nm ? $nm : $m[$n][1];
+    $nm2 = $nm2 ? $nm2 : $m[$n][2]; if ($nm2==' ') $nm2='';
+    $ndx = strpos($nm2,'^');
+    if ($ndx > 0) {
+      $arr_nm = explode('^', $nm2);
+      $nm_dop = $arr_nm[0];
+      $nm2 = $arr_nm[1];
+      $nm0 = ' <span style="color:#004f92; font-size:12px; font-weight:bold;">'.$nm_dop.'</span>';
+    }
+    if ($n==52){$fs9=' style="font-size:11px;"'; }
+    if ($n==105||$n==106){$fs9=' style="font-size:9px;"';}
+    if ($n==163){$fs9=' style="font-size:11px;"';}
+    if ($m[$n]!=false){
+        $out='<tr><td class="tmdl">'.$new.'<div style="float:left;padding-right:5px;min-width:30px;font-weight:normal;font-size:12px">'.$f.'</div> '.(($pl[$n]) ? ('<span class="c2" style="font-size:12px;font-weight:bold">'.$nm1.'</span> '.$pl[$n].$name.'</'.'a>') : $name).$nm0.' <span'.$fs9.'>'.$nm2.'</span></td>';
+        $out.='<td class="dballprice" id="idbld_'.$n.'" title="">?</td>';
+        $out.='<td>'.$m[$n][3].'</td><td>'.$m[$n][4].'</td><td>'.$m[$n][5].'</td><td>'.$m[$n][6].'</td><td>'.$m[$n][7].'</td><td>'.$m[$n][8].'</td>';
+//        if ($n==52) { $nm2='- Люкс АСТ-7, АСТ-6 (светостойкая)'; }
+        $tara=explode('/',$m[$n][17]);
+        $tara[0]=explode(',',$tara[0]); $tara[1]=explode(',',$tara[1]); $tara[2]=explode(',',$tara[2]); $tara[3]=explode(',',$tara[3]);
+        $tara='['.$tara[0][0].','.$tara[0][1].','.$tara[1][0].','.$tara[1][1].','.$tara[2][0].','.$tara[2][1].','.$tara[3][0].','.$tara[3][1].',0,0,0,0]';
+        if ($tara=='[0 ,,,,,,,,0,0,0,0]' || $tara=='[0,,,,,,,,0,0,0,0]') $tara='none';
+        $name=str_replace('%','',$name); 
+        if ($nm_dop !='') $name.= ' '.$nm_dop;
+        if ($nm2==' ') $nm2=''; $nm2 = $nm2 ? $nm2 : $m[$n][2]; if ($nm2==' ') $nm2='';
+        if ($tara=='none' || $m[$n][16]=='0') { $out.='<td></td></tr>'; }
+        else {
+          if (1==1 || $pb_page==226 || $pb_page==5001) {
+            $out.='<td class="fbuy" style="font:bold 14px arial; color:#008000" onclick="f_newRal('.$n.',\''.$nm1.$name.'\',\''.$nm2.'\')" title="Купить '.$nm1.$name.'"><div>'.$n.'</div></td></tr>';
+          } else {
+            $out.='<td class="fbuy" style="font:bold 14px arial; color:#008000" onclick="ym(988617,\'reachGoal\',\'ClickOrd\');f_b_tara('.$n.',-1,\''.$nm1.$name.'\',\''.($nm2?$nm2:'').'\','.$tara.')" title="Купить '.$nm1.$name.'"><div>'.$n.'</div></td></tr>';
+          }
+        }
+    }
+    if ($pl[$n]) {
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'<span>'.substr($out,$nm+1);
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'</span>'.substr($out,$nm+1);
+    } else {
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'<span style="font-size:12px; font-weight:bold">'.substr($out,$nm+1);
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'</span>'.substr($out,$nm+1);
+    }
+    $m = strpos($out,'<span> </span>'); if ($m>0) $out=substr($out,0,$m).substr($out,$m+14);
+}
+return $out;
+}
+// МАТЕРИАЛЫ. Вариант 8. Возвращает отформатированную строку с наименованием материала (основная часть + дополнение). Цены. &#128722
+function fmtr8($n=0, $f='',$nm='',$nm2='',$nm1='') {
+global $mtrt, $pl, $pb_page;
+$out=''; $out1=''; $out2=''; $m=$mtrt; $new=''; $fs9='';
+/* if($n==21 || $n==30 || $n==31 || $n==38 || $n==40 || $n==45 || $n==46 || $n==47 || $n==48 || $n==50 || $n==52 || $n==60 || $n==64 || $n==73 || $n==128 || $n==129 || $n==164) $new='<div style="float:right;padding:2px;font:bold 12px arial;color:#f00000">new!</div>'; */
+if ($n!=59 && $n!=121 && $m[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+    if (!$f) $f=$m[$n][0]; // Номер пункта
+    $name = $nm ? $nm : $m[$n][1];
+    $nm2 = $nm2 ? $nm2 : $m[$n][2]; if ($nm2==' ') $nm2='';
+    $ndx = strpos($nm2,'^');
+    if ($ndx > 0) {
+      $arr_nm = explode('^', $nm2);
+      $nm_dop = $arr_nm[0];
+      $nm2 = $arr_nm[1];
+      $nm0 = ' <span style="color:#004f92; font-size:12px; font-weight:bold;">'.$nm_dop.'</span>';
+    }
+    if ($n==52){$fs9=' style="font-size:11px;"'; }
+    if ($n==105||$n==106){$fs9=' style="font-size:9px;"';}
+    if ($n==163){$fs9=' style="font-size:11px;"';}
+    if ($m[$n]!=false){
+        $out1='<tr><td colspan="8" style="height:7px;border:none;background:linear-gradient(to bottom,#a8a8a8 20%,#c8c8c8 40%,#eeeeee 70%,#ffffff 90%);"></td></tr>';
+        $out2='<tr><td class="tmdl" id="idtmdl_'.$n.'" colspan="6" style="cursor:pointer;padding-top:2px;line-height:15px">'.$new.'<span style="font-weight:normal;font-size:12px">'.$f.'</span> '.(($pl[$n]) ? ($pl[$n].$name.'</'.'a>') : $name).$nm0.' <span'.$fs9.'>'.$nm2.'</span></td>';
+        $out2.='<td rowspan="2" class="dballprice" id="idblm_'.$n.'" title="">?</td>';
+//        if ($n==52){ $nm2='- Люкс АСТ-7, АСТ-6 (светостойкая)'; }
+        $tara=explode('/',$m[$n][17]);
+        $tara[0]=explode(',',$tara[0]); $tara[1]=explode(',',$tara[1]); $tara[2]=explode(',',$tara[2]); $tara[3]=explode(',',$tara[3]);
+        $tara='['.$tara[0][0].','.$tara[0][1].','.$tara[1][0].','.$tara[1][1].','.$tara[2][0].','.$tara[2][1].','.$tara[3][0].','.$tara[3][1].',0,0,0,0]';
+        if ($tara=='[0 ,,,,,,,,0,0,0,0]' || $tara=='[0,,,,,,,,0,0,0,0]') $tara='none';
+        $name=str_replace('%','',$name); 
+        if ($nm_dop !='') $name.= ' '.$nm_dop;
+        if ($nm2==' ') $nm2=''; $nm2 = $nm2 ? $nm2 : $m[$n][2]; if ($nm2==' ') $nm2='';
+        if ($tara=='none' || $m[$n][16]=='0') { $out2.='<td rowspan="2"></td></tr>'; }
+        else {
+          if (1==1 || $pb_page==226 || $pb_page==5001) {
+            $out2.='<td class="fbuy" rowspan="2" style="font:bold 14px arial; color:#008000" onclick="f_newRal('.$n.',\''.$nm1.$name.'\',\''.($nm2?$nm2:$m[$n][2]).'\')" title="Купить '.$nm1.$name.'"><div>'.$n.'</div></td></tr>';
+          } else {
+            $out2.='<td class="fbuy" rowspan="2" style="font:bold 14px arial; color:#008000" onclick="ym(988617,\'reachGoal\',\'ClickOrd\');f_b_tara('.$n.',-1,\''.$nm1.$name.'\',\''.($nm2?$nm2:'').'\','.$tara.')" title="Купить '.$nm1.$name.'"><div>'.$n.'</div></td></tr>';
+          }
+        }
+        $lnk=' onclick="if($.qS('."'#idtmdl_".$n." a'".'))window.location.href=$.qS('."'#idtmdl_".$n." a'".').href"';
+        $out2.='<tr><td'.$lnk.'>'.$m[$n][3].'</td><td'.$lnk.'>'.$m[$n][4].'</td><td'.$lnk.'>'.$m[$n][5].'</td><td'.$lnk.'>'.$m[$n][6].'</td><td'.$lnk.'>'.$m[$n][7].'</td><td'.$lnk.'>'.$m[$n][8].'</td></tr>';
+    }
+    if ($pl[$n]) {
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'<span>'.substr($out2,$nm+1);
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'</span>'.substr($out2,$nm+1);
+    } else {
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'<span style="font-size:12px; font-weight:bold">'.substr($out2,$nm+1);
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'</span>'.substr($out2,$nm+1);
+    }
+    $m = strpos($out2,'<span> </span>'); if ($m>0) $out2=substr($out2,0,$m).substr($out2,$m+14);
+    $out=$out1.$out2;
+}
+return $out;
+}
+
+/* =============================================================== ФУНКЦИИ ДЛЯ ПОКРЫТИТЙ =============================================================== */
+
+// ПОКРЫТИЯ. Вариант 3. Возвращает отформатированную строку с наименованием покрытия (ТОЛЬКО ОСНОВНАЯ ЧАСТЬ, БЕЗ МЕЛКОГО ДОПОЛНЕНИЯ). page1_23/block1_23 /polymer/cena/
+function fcvr3($n, $p='', $nm='',$nm2='', $m_mob='') {
+global $pkr,$plc;
+$out='';
+if ($n>9 && $pkr[$n]) {
+    if ($p==false) $p='<span class="fwn" style="font-size:12px">'.$pkr[$n][0].'</span>';
+    if ($nm==false) $nm=$pkr[$n][1]; $nm=str_replace('%','',$nm); $link = $nm;
+    if ($plc[$n]) {
+        $link = str_replace(' class="blk_cover_calc"',($n==73 ? ''/*' style="font-size:12px"'*/ : ''),$plc[$n]);
+        $link = str_replace(' class="atemp blk_cover_calc"',' class="atemp"',$link);
+        $link .= $nm.'</'.'a>'; if ($nm2) $link.=' <span class="fwn" style="font-size:11px">'.$nm2.'</span>';
+    } $out='<tr><td class="tmdl fwb">'.$p.' '.$link.'</td>';
+    $out.='<td id="'.$m_mob.'m'.$n.'">&nbsp;</td><td id="'.$m_mob.'r'.$n.'">&nbsp;</td><td id="'.$m_mob.'mr'.$n.'" class="fwb">&nbsp;</td><td id="'.$m_mob.'mi'.$n.'">&nbsp;</td><td id="'.$m_mob.'ri'.$n.'">&nbsp;</td><td id="'.$m_mob.'mri'.$n.'" class="fwb">&nbsp;</td></tr>';
+}
+return $out;
+}
+
+// ПОКРЫТИЯ. Вариант 4. Возвращает отформатированную строку с наименованием покрытия (основная часть). Описание и плашки - Цена + Технология
+function fcvr4($n, $nm='',$nm2='',$tmp1='',$appClass='',$appStyles='') {
+  global $pb_page, $pkr, $plf, $plc, $plt; $out='';
+  if ($n>9 && $pkr[$n]) {
+      $name1 = $nm ? $nm : $pkr[$n][1]; $name2 = $nm2 ? $nm2 : $pkr[$n][2];
+      $out.='<div class="blk_cover_item'.$appClass.'"'.$appStyles.'><div class="blk_cover_str"></div>';
+      $out.='<div class="blk_cover_link">'.$name1.'</div>';
+      if ($name2) $out.=' <div class="blk_cover_name2"'.($plf[$n]?'':' style="color:#000000"').'>'.$name2.'</div>';
+      $out.= ($plc[$n]) ? ('<!--noindex-->'.$plc[$n].'ЦЕНА - расчет</'.'a><!--/noindex-->') : '<div class="blk_cover_calc_empty">ЦЕНА - расчет</div>';
+      $out.= ($plt[$n]) ? ('<!--noindex-->'.$plt[$n].'Технология</'.'a><!--/noindex-->') : '<div class="blk_cover_tech_empty">Технология</div>';
+      $out.='</div><div class="dpx0"></div>';
+      $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).(($plf[$n]) ? ($plf[$n]) : '').substr($out,$f+1);
+      $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).(($plf[$n]) ? ('</'.'a>') : '').substr($out,$f+1);
+    }
+  return $out;
+}
+
+// ПОКРЫТИЯ. Вариант 5. Возвращает отформатированную строку с наименованием покрытия (основная часть + текст-дополнение). Описание и плашки - Цена + Технология
+function fcvr5($n, $text='', $price='', $nm='',$nm2='',$tmp1='',$appClass='',$appStyles='') {
+  global $pb_page, $pkr, $plf, $plc, $plt; $out='';
+  if ($n>9 && $pkr[$n]) {
+      $name1 = $nm ? $nm : $pkr[$n][1]; $name2 = $nm2 ? $nm2 : $pkr[$n][2];
+      $out.='<div class="blk_cover_item_b'.$appClass.'"'.$appStyles.'><div class="blk_cover_str"></div>';
+      $out.='<div class="blk_cover_link">'.$name1.'</div>';
+      if ($name2) $out.=' <div class="blk_cover_name2"'.($plf[$n]?'':' style="color:#000000"').'>'.$name2.'</div>';
+      if ($text || $price) {
+        $out.='<div class="px1"></div>';
+        if ($price) $out.='<div class="blk_cover_price"><div>от <span>'.$price.'</span> руб/кв.м</div><p>цена материалов</p></div>';
+        $out.='<div class="blk_cover_text">'.$text.'</div>';
+        if ($price) $out.='<div class="px3"></div>';
+      }
+      $out.= ($plc[$n]) ? ('<!--noindex-->'.$plc[$n].'ЦЕНА - расчет</'.'a><!--/noindex-->') : '<div class="blk_cover_calc_empty">ЦЕНА - расчет</div>';
+      $out.= ($plt[$n]) ? ('<!--noindex-->'.$plt[$n].'Технология</'.'a><!--/noindex-->') : '<div class="blk_cover_tech_empty">Технология</div>';
+      $out.='</div><div class="dpx0"></div>';
+      $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).($plf[$n] ? $plf[$n] : '').substr($out,$f+1);
+      $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).($plf[$n] ? ('</'.'a>') : '').substr($out,$f+1);
+    }
+  return $out;
+}
+
+// КАЛЬКУЛЯТОР - мобильный вариант главной
+function ftbl23($n=0, $f=0, $np1='', $np2='', $dtext='') {
+global $pb_page, $pkr, $plc, $plt, $pdwnl; $out='';
+$tdt1='<tr style="border-bottom:solid 1px #c8c8c8;"><td class="tmtl23"><div class="d23text">'; $tdt4='</div><div class="px0"></div>'.($dtext ? ('<div class="d23dtext">'.$dtext.'</div>') : '').'</td></tr>';
+if ($n>9 && $pkr[$n]) {
+    if (!$f) $f='<span class="fwn" style="font-size:12px">'.$pkr[$n][0].'</span>';
+    if(!$np1) $np1=$pkr[$n][1];
+    if(!$np2) $np2=$pkr[$n][2];
+    $out=$tdt1.$f.' '.$np1.((!$np2 && $pkr[$n][2]==' ')?'':(' <span style="font-weight:normal; font-size:11px;">'.$np2.'</span>')).$tdt4;
+    if ($plc[$n]/* && $n!=43 && $n!=71 && $n!=73 && $n!=87 && !$pdwnl[$n]*/) {
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).str_replace(' class="blk_cover_calc"','',$plc[$n]).substr($out,$f+1);
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).'</'.'a>'.substr($out,$f+1);
+    } else $out=str_replace('%','',$out);
+}
+return $out;
+}
+
+// ТЕХНОЛОГИИ ПОКРЫТИЙ. Вариант 0. Возвращает отформатированную таблицу с наименованием покрытия (основная часть + дополнение) + Скачать
+// $tblt1='<div class="px0"></div><table class="tmtr" style="background:#f0f0f0;"><tbody>';
+// $tblt2='</tbody></table>';
+
+function ftech18($n=0, $f=0, $np1='', $np2='', $dtext='') {
+global $pb_page, $pkr, $plf, $plc, $plt, $pdwnl; $out='';
+$tdt1='<tr style="border-bottom:solid 1px #c8c8c8;"><td class="tmtl"><div class="d18text">'; $tdt2='</div><div class="d18ic"><div class="d18i">'; $tdt3='</div><div class="d18c">'; $tdt4='</div><div class="px0"></div></div><div class="px0"></div>'.($dtext ? ('<div class="d18dtext">'.$dtext.'</div>') : '').'</td></tr>';
+if ($n>9 && $pkr[$n]) {
+    if (!$f) $f=$pkr[$n][0];
+    /*$f='<span class="fwb" style="font-size:12px">'.$pkr[$n][0].'</span>';*/
+    if(!$np1) $np1=$pkr[$n][1];
+    if(!$np2) $np2=$pkr[$n][2];
+    $out=$tdt1.$f.' '.$np1.((!$np2 && $pkr[$n][2]==' ')?'':(' <span style="font-weight:normal; font-size:11px;">'.$np2.'</span>')).$tdt2;
+    if ($pdwnl[$n]) {
+      if (strpos($pdwnl[$n],'class="tpdf"')>0) $out.=$pdwnl[$n].'" style="font-family:arial;font-weight:bold;font-size:12px;letter-spacing:0.5px;">Инструкция</'.'a>';
+      else $out.=$pdwnl[$n].'Скачать инструкцию - '.str_replace('%','',$pkr[$n][1]).'">Инструкция</'.'a>';
+    } //else $out.='<div style="height:22px;"></div>';
+    $out.=$tdt3;
+    $out.= ($plc[$n] && $n!=27 && $n!=57 && $n!=59 && $n!=61 && ($n<100 || $n==171 || $n==172 || $n==173 || $n==174 || $n==251 || $n==255)) ? ('<!--noindex-->'.$plc[$n].'ЦЕНА - расчет</'.'a><!--/noindex-->') : '';
+    $out.=$tdt4;
+  if ($pb_page==1018) {
+    if ($plt[$n]/* && $n!=43 && $n!=71 && $n!=73 && $n!=87 && !$pdwnl[$n]*/) {
+      if ($pdwnl[$n]) {
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).substr($out,$f+1);
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).substr($out,$f+1);
+      } else {
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).str_replace(' class="blk_cover_tech"','',$plt[$n]).substr($out,$f+1);
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).'</'.'a>'.substr($out,$f+1);
+      }
+    } else $out=str_replace('%','',$out);
+  } else {
+    if ($pb_page==1051) {
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).substr($out,$f+1);
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).substr($out,$f+1);
+    } else {
+      $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).($plf[$n] ? $plf[$n] : '').substr($out,$f+1);
+      $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).($plf[$n] ? ('</'.'a>') : '').substr($out,$f+1);
+    }
+  }
+}
+return $out;
+}
+
+function ftech1($n=0, $f=0, $np1='', $np2='') {
+global $pb_page, $pkr, $plc, $plt, $pdwnl; $out='';
+$tdt1='<tr style="border-bottom:solid 1px #c8c8c8;"><td class="tmtl" style="text-align:left;">'; $tdt2='</td><td class="tmtl1">'; $tdt3='</td><td style="width:115px;font-family:arial;font-weight:bold;font-size:12px;letter-spacing:0.5px;">'; $tdt4='</td></tr>';
+if ($n>9 && $pkr[$n]) {
+    if (!$f) $f='<span class="fwn" style="font-size:12px">'.$pkr[$n][0].'</span>';
+    if(!$np1) $np1=$pkr[$n][1];
+    if(!$np2) $np2=$pkr[$n][2];
+    $out=$tdt1.$f.' '.$np1.((!$np2 && $pkr[$n][2]==' ')?'':(' <span style="font-weight:normal; font-size:11px;">'.$np2.'</span>')).$tdt2;
+    if ($pdwnl[$n]) {
+      if (strpos($pdwnl[$n],'class="tpdf"')>0) $out.=$pdwnl[$n].'" style="font-family:arial;font-weight:bold;font-size:12px;letter-spacing:0.5px;">Инструкция</'.'a>';
+      else $out.=$pdwnl[$n].'Скачать инструкцию - '.str_replace('%','',$pkr[$n][1]).'">Инструкция</'.'a>';
+    } else $out.='<div style="height:22px;"></div>';
+    $out.=$tdt3;
+    $out.= ($plc[$n] && $n!=27 && $n!=57 && $n!=59 && $n!=61 && ($n<100 || $n==251 || $n==255)) ? ('<!--noindex-->'.$plc[$n].'ЦЕНА - расчет</'.'a><!--/noindex-->') : '';
+    $out.=$tdt4;
+    if ($plt[$n]/* && $n!=43 && $n!=71 && $n!=73 && $n!=87 && !$pdwnl[$n]*/) {
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).str_replace(' class="blk_cover_tech"','',$plt[$n]).substr($out,$f+1);
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).'</'.'a>'.substr($out,$f+1);
+    } else $out=str_replace('%','',$out);
+}
+return $out;
+}
+
+// ТЕХНОЛОГИИ ПОКРЫТИЙ. Вариант 2. Возвращает отформатированную таблицу с наименованием покрытия (основная часть + дополнение) + Скачать
+function ftech2($n=0, $f=0, $np1='', $np2='') {
+global $pb_page, $pkr, $plc, $plt, $pdwnl; $out='';
+$tdt1='<tr><td class="tmtl" colspan="3">';
+$tdt2='</td></tr><tr><td class="tmtl1">'; $tdt3='</td><td style="width:110px">'; $tdt4='</td></tr>';
+if ($n>9 && $pkr[$n]) {
+    if (!$f) $f='<span class="fwn" style="font-size:12px">'.$pkr[$n][0].'</span>';
+    if(!$np1) $np1=$pkr[$n][1];
+    if(!$np2) $np2=$pkr[$n][2];
+    $out=$tdt1.$f.' '.$np1.((!$np2 && $pkr[$n][2]==' ')?'':(' <span style="font-weight:normal; font-size:11px;">'.$np2.'</span>')).$tdt2;
+    if ($pdwnl[$n]) {
+      if (strpos($pdwnl[$n],'class="tpdf"')>0) $out.=$pdwnl[$n].'">Инструкция</'.'a>';
+      else $out.=$pdwnl[$n].'Скачать инструкцию - '.str_replace('%','',$pkr[$n][1]).'">Инструкция</'.'a>';
+    } else $out.='<div style="height:22px;"></div>';
+    $out.=$tdt3;
+    $out.= ($plc[$n] && $n!=27 && $n!=57 && $n!=59 && $n!=61 && ($n<100 || $n==251 || $n==255)) ? ('<!--noindex-->'.$plc[$n].'ЦЕНА - расчет</'.'a><!--/noindex-->') : '';
+    $out.=$tdt4;
+    if ($plt[$n] && $n!=71 && $n!=73) {
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).str_replace(' class="blk_cover_tech"','',$plt[$n]).substr($out,$f+1);
+        $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).'</'.'a>'.substr($out,$f+1);
+    } else $out=str_replace('%','',$out);
+}
+return $out;
+}
+
+// ТЕХНОЛОГИИ ПОКРЫТИЙ. Вариант 3. Для страниц калькуляторов и технологий. Возвращает кнопку Инструкция
+function ftech3($n=0, $f=0, $np1='', $np2='') {
+global $pb_page, $pkr, $plc, $plt, $pdwnl; $out='';
+$tdt1='<tr><td class="tmtl" colspan="3">';
+$tdt2='</td></tr><tr><td class="tmtl1">'; $tdt3='</td><td style="width:110px">'; $tdt4='</td></tr>';
+if ($n>9 && $pkr[$n]) {
+    if ($pdwnl[$n]) {
+      if (strpos($pdwnl[$n],'class="tpdf"')>0) $out.=str_replace('class="tpdf"','class="pdf1"',$pdwnl[$n]).'">Инструкция</'.'a>';
+    }
+}
+return $out;
+}
+
+/* ********************** Копии функция для elakorpol (price-list) **************** */
+// МАТЕРИАЛЫ. Вариант 1. Возвращает отформатированную строку с наименованием материала (основная часть + дополнение). Цены. &#128722 &#128465
+function fmtr1e($n=0, $f='',$nm='',$nm2='', $id=0) {
+global $mtr, $pl2; if($id<11) $id=$n;
+$out=''; $m=$mtr; $new=''; $fs9='';
+/* if($n==21 || $n==30 || $n==31 || $n==38 || $n==40 || $n==45 || $n==46 || $n==47 || $n==48 || $n==50 || $n==52 || $n==60 || $n==64 || $n==73 || $n==128 || $n==129 || $n==164) $new='<div style="float:right;padding:2px;font:bold 12px arial;color:#f00000">new!</div>'; */
+if ($n!=59 && $n!=121 && $m[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+    if (!$f) $f=$m[$n][0]; // Номер пункта
+    $name = $nm ? $nm : $m[$n][1];
+    if ($n==105||$n==106){$fs9=' style="font-size:9px;"';}
+    if ($n==163){$fs9=' style="font-size:11px;"';}
+    if ($m[$n]!=false){
+        $out='<tr><td class="tmdl">'.$new.'<span style="font-weight:normal;font-size:12px">'.$f.'</span> '.(($pl2[$n]) ? ($pl2[$n].$name.'</'.'a>') : $name).' <span'.$fs9.'>'.($nm2 ? $nm2 : $m[$n][2]).'</span></td>';
+        $out.='<td>'.$m[$n][3].'</td><td>'.$m[$n][4].'</td><td>'.$m[$n][5].'</td><td>'.$m[$n][6].'</td><td>'.$m[$n][7].'</td><td>'.$m[$n][8].'</td>';
+        $name=str_replace('%','',$name); $out.='<td></td></tr>'; // $out.='<td class="fbuy" style="font:bold 14px arial; color:#008000" onclick="f_b('.$n.',\''.$name."</span><br><span class=\'fwn fs12\'>".($nm2 ? $nm2 : $m[$n][2]).'\')" title="Купить '.$name.'"></td></tr>';
+    }
+    if ($pl2[$n]) {
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'<span>'.substr($out,$nm+1);
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'</span>'.substr($out,$nm+1);
+    } else {
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'<span style="font-size:12px; font-weight:bold">'.substr($out,$nm+1);
+        $nm=strpos($out,'%'); if ($nm>0) $out=substr($out,0,$nm).'</span>'.substr($out,$nm+1);
+    }
+    $m = strpos($out,'<span> </span>'); if ($m>0) $out=substr($out,0,$m).substr($out,$m+14);
+}
+return $out;
+}
+
+// МАТЕРИАЛЫ. Вариант 4. Возвращает отформатированную строку с наименованием материала (основная часть + дополнение). Цены. &#128722
+function fmtr4e($n=0, $f='',$nm='',$nm2='', $id=0) {
+global $mtr, $pl2; if($id<11) $id=$n;
+$m=$mtr; $new=''; $fs9='';
+/* if($n==21 || $n==30 || $n==31 || $n==38 || $n==40 || $n==45 || $n==46 || $n==47 || $n==48 || $n==50 || $n==52 || $n==60 || $n==64 || $n==73 || $n==128 || $n==129 || $n==164) $new='<div style="float:right;padding:2px;font:bold 12px arial;color:#f00000">new!</div>'; */
+if ($n!=59 && $n!=121 && $m[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
+    if (!$f) $f=$m[$n][0]; // Номер пункта
+    $name = $nm ? $nm : $m[$n][1];
+    if ($n==163){$fs9=' style="font-size:11px;"';}
+    if ($m[$n]!=false){
+        $out2='<tr><td class="tmdl" id="idtmdl_'.$n.'" colspan="6" style="cursor:pointer;padding-top:2px;line-height:15px" onclick="if($.qS('."'a'".',this))window.location.href=$.qS('."'a'".',this).href">'.$new.'<span style="font-weight:normal;font-size:12px">'.$f.'</span> '.(($pl2[$n]) ? ($pl2[$n].$name.'</'.'a>') : $name).' <span'.$fs9.'>'.($nm2 ? $nm2 : $m[$n][2]).'</span></td>';
+        $name=str_replace('%','',$name); $out2.='<td rowspan="2"></td></tr>'; // $out2.='<td class="fbuy" rowspan="2" style="font:bold 14px arial" onclick="f_b('.$n.',\''.$name."</span><br><span class=\'fwb fs12\'>".($nm2 ? $nm2 : $m[$n][2]).'\')" title="Купить '.$name.'"></td></tr>';
+        $lnk=' onclick="if($.qS('."'#idtmdl_".$n." a'".'))window.location.href=$.qS('."'#idtmdl_".$n." a'".').href"';
+        $out2.='<tr><td'.$lnk.'>'.$m[$n][3].'</td><td'.$lnk.'>'.$m[$n][4].'</td><td'.$lnk.'>'.$m[$n][5].'</td><td'.$lnk.'>'.$m[$n][6].'</td><td'.$lnk.'>'.$m[$n][7].'</td><td'.$lnk.'>'.$m[$n][8].'</td>';
+    }
+    if ($pl2[$n]) {
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'<span>'.substr($out2,$nm+1);
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'</span>'.substr($out2,$nm+1);
+    } else {
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'<span style="font-size:12px; font-weight:bold">'.substr($out2,$nm+1);
+        $nm=strpos($out2,'%'); if ($nm>0) $out2=substr($out2,0,$nm).'</span>'.substr($out2,$nm+1);
+    }
+    $m = strpos($out2,'<span> </span>'); if ($m>0) $out2=substr($out2,0,$m).substr($out2,$m+14);
+    $out=$out1.$out2;
+}
+return $out;
+}
+
+
+?>

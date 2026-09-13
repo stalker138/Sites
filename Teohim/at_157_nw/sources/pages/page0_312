@@ -1,0 +1,25 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+{*text5_32*}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*text5_31*}
+<img class="pb_ismall" src="/img/qr/qr3-7.png" style="width:250px;height:auto" onclick="$.zoomImg(this,'/img/qr/qr3-7.png',200,25,1024,737,'Элакор-ПУ',-25,1,0,1);" title="Элакор-ПУ" alt="Элакор-ПУ"/>
+{*text5_33*}
+<div class="fleft mr20">
+<?php
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-grunt-dlya-metalla.pdf?'.filemtime($pb_root.'instructions/elakor-pu-grunt-dlya-metalla.pdf').'" target="_blank"><span class="fs16">Грунт для металла</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-emal-dlya-metalla.pdf?'.filemtime($pb_root.'instructions/elakor-pu-emal-dlya-metalla.pdf').'" target="_blank"><span class="fs16">Эмаль для металла</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-lak-dlya-metalla.pdf?'.filemtime($pb_root.'instructions/elakor-pu-lak-dlya-metalla.pdf').'" target="_blank"><span class="fs16">Лак для металла</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-eko-grunt.pdf?'.filemtime($pb_root.'instructions/elakor-pu-eko-grunt.pdf').'" target="_blank"><span class="fs16">«Эко» Грунт</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-eko-emal60.pdf?'.filemtime($pb_root.'instructions/elakor-pu-eko-emal60.pdf').'" target="_blank"><span class="fs16">«Эко» Эмаль-60</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-eko-emal-dlya-metalla.pdf?'.filemtime($pb_root.'instructions/elakor-pu-eko-emal-dlya-metalla.pdf').'" target="_blank"><span class="fs16">«Эко» Эмаль для металла</span></a></p>';
+print '<p>- Элакор-ПУ <a href="https://teohim.ru/instructions/elakor-pu-eko-lak60.pdf?'.filemtime($pb_root.'instructions/elakor-pu-eko-lak60.pdf').'" target="_blank"><span class="fs16">«Эко» Лак-60</span></a></p>';
+?>
+</div>
+<div class="px10"></div>
+{*tpl17*}
+{*tpl18*}{*tpl19*}{*tpl20*}</body></html>{*tpl21*}

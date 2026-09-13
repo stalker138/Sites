@@ -1,0 +1,60 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#objList { position:relative; max-height:500px; overflow-y:scroll; margin-top:10px;}
+#objList table, #objList table th, #objList table td { border-collapse:collapse; text-align:center; border:solid 1px #808080; }
+#objList table { width:100%; text-align:center; }
+#objList table th { font-weight:bold; background:#d8d8d8; cursor:pointer; } #objList table th:hover { background:#eeeeee; }
+#objList table td { text-align:left; padding:0 5px; }
+#objList table .trs { background:#eeeeee; }
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+<?php /* Большие экраны (от 1000px) */ ?>
+{*tpl16*}
+{*block1_169*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}
+$.ready('f_tsort(1)');
+function f_tsort(n) {
+  var i, j, tr, td, ns, str, d1='<span>▲ </span>', d2='<span>▼ </span>',
+      obj = $.qS('#objList'), arr = [0], t=$.qS('#objList table')||0;
+  n=n||0; if(!n || !t || n<=0) return;
+
+  /* Выборка содержимого строк и ячеек в массив arr[][] */
+  tr=$.qSA('tr',t)||[];
+  for (i=1; i<tr.length; i+=1) {
+    td=$.qSA('td',tr[i])||[];
+    arr[i-1] = [[0]];
+    for(j=1;j<td.length;j+=1) {
+      arr[i-1][j-1] = td[j].innerHTML;
+    }
+  }
+  obj.ncol=n; /* Свойство с номером колонки (чтобы не использовать глобальную переменную) */
+  ns = obj.nsort || 0; /* Номер колонки последнего клика */
+  obj.nsort = n; /* Новый Номер колонки последнего клика */
+  ns = obj.tsort = (ns==n) ? (obj.tsort==2?1:2) : 1; /* Тип сортировки 1 - по возрастанию, 2 - по убыванию */
+
+  arr.sort(f_tsort2); /* Сортировка */
+
+  str = '<table><tbody><tr><th style="width:30px;background:#d8d8d8;cursor:auto;">№</th><th style="width:170px" onclick="f_tsort(1)">'+(n==1?(ns==1?d1:d2):'')+'Тип объекта</th><th style="width:50px;background:#d8d8d8;cursor:auto;">'+(n==2?(ns==1?d1:d2):'')+'Пл. м<sup>2</sup></th><th style="width:300px;" onclick="f_tsort(3)">'+(n==3?(ns==1?d1:d2):'')+'Регион</th><th onclick="f_tsort(4)">'+(n==4?(ns==1?d1:d2):'')+'Ремонт топпинга Элакором</th></tr>';
+  for(i=0; i<arr.length; i+=1) { /* Сборка HTML таблицы */
+    str+='<tr><td style="text-align:right;">'+(i+1)+'</td><td>'+arr[i][0]+'</td><td style="text-align:right">'+arr[i][1]+'</td><td>'+arr[i][2]+'</td><td>'+arr[i][3]+'</td></tr>';
+  }
+  t.innerHTML = str+'</tbody></table>';
+}
+function f_tsort2(a,b) { /* Callback - Функция сравнения */
+  var s1,s2, r1=-1, r2=1, n = parseInt($.qS('#objList').ncol,10)||0;
+  if(n==0) return; n-=1;
+  if (parseInt($.qS('#objList').tsort,10) == 2) { r1=1; r2=-1; } /* Тип сортировки */
+  s1 = a[n].replace(/<[^>]+>/g,''); /* Убрать html-теги */
+  s2 = b[n].replace(/<[^>]+>/g,'');
+  if (n==1) {
+    if(parseInt(s1,10) < parseInt(s2,10)) return r1;
+    if(parseInt(s1,10) > parseInt(s2,10)) return r2;
+  } else {
+    if(s1 < s2) return r1;
+    if(s1 > s2) return r2;
+  }
+  return 0;
+}
+{*tpl20*}</body></html>{*tpl21*}

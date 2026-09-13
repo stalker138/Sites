@@ -1,0 +1,30 @@
+<?php
+$m1=' style="color:#f5530e; background:#ffffff;"'; $m2=' style="color:#ffffff; background:#004f92; text-decoration:none;"'; $m3=' style="color:#004f92; background:#ffffff;"';
+// МАССИВ ID ПРЕДСТАВИТЕЛЕЙ С НОВОЙ АДМИНКОЙ
+$list_pred = array(13,17,26,63,64,2,3,4,5,6,7,8,9,10,11,12,14,15,16,18,19,20,21,22,24,25,27,28,29,30,32,33,34,36,37,38,39,40,41,42,43,44,45,46,47,49,50,51,52,53,54,55,56,57,58,59,60,61,62,65,66,67,68,69,70,71,75,76,77,78,79,80,81,82,83,84,85,86,92);
+?>
+<ul id="dl_menu_first">
+<?php if ($id_pred==1) { ?>
+  <li><l0 id="70">Работа с Прайс-листом</l0></li>
+<?php } ?>
+<?php if ($a_pred[$id_pred][10]!='none') { ?>
+  <li><?php print in_array($id_pred, $list_pred, true) ? ($id_pred==3 ? '<l0 id="64">Работа с Прайс-листом</l0>' : '<l0 id="65">Работа с Прайс-листом</l0>') : '<l0 id="55">Работа с Прайс-листом</l0>'; ?></li>
+<?php } ?>
+  <?php if ($id_pred!=94) { ?><li><l0 id="233"<?php if($pb_page==233) print $m1; ?>>Цены – Инструмент</l0></li>
+  <li><l0 id="81">Объекты на карте</l0></li><?php } ?>
+  <li><l0 id="84">ФОТО - хранилище</l0></li>
+  <?php if ($id_pred!=94) { ?><li><l0 id="77">Рассылки</l0></li><?php } ?>
+</ul>
+<ul id="dl_menu_second">
+  <li><l0 id="234"<?php if($pb_page==234) print $m2; ?>>Материалы</l0></li>
+  <li><l0 id="235"<?php if($pb_page==235) print $m2; ?>>Технологии</l0></li>
+  <li><l0 id="236"<?php if($pb_page==236) print $m2; ?>>Шаблоны для КП</l0></li>
+</ul>
+<ul id="dl_menu_third">
+  <li><l0 id="237"<?php if($pb_page==237) print $m3; ?>>Работа с Проектировщиками</l0></li>
+  <li><l0 id="238"<?php if($pb_page==238) print $m3; ?>>Конкуренты</l0></li>
+</ul>
+<ul class="dl_menu_first">
+  <li><a href="http://forum.teohim.ru/">Форум</a></li>
+  <li><l0 id="68">Заказчики - «кидальщики»</l0></li>
+</ul>

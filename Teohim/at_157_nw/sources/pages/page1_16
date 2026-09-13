@@ -1,0 +1,21 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+<?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
+#dsrt, #dprt { position:relative; width:49.3%; } #dsrt { float:left; } #dprt { float:right; }
+.dobjl, .dobjr { position:relative; width:182px; height:140px; text-align:center; font-size:13px; font-weight:bold; color:#000000; border:solid 2px transparent; transition:border 0.3s ease-out 0s; }
+.dobjl { float:left; } .dobjr { float:right; } .dobjl:hover, .dobjr:hover { border:solid 2px #004f92; }
+.dobjl a, .dobjr a { text-decoration:none; } .dobjl a:hover, .dobjr a:hover { text-decoration:underline; }
+.dflc { justify-content:space-between; }
+@media screen and (max-width:999px) {
+ #dsrt, #dprt { float:none; clear:both; width:100%; } .dobjl, .dobjr { float:left; margin:0 10px 0 0; }
+ .dflc { justify-content:space-evenly; }
+}
+{*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
+<?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
+{*tpl10*}</head><body>
+{*tpl16*}
+{*block1_16*}
+{*tpl17*}
+{*tpl18*}{*tpl19*}
+function f_over(el) { var n = null; $.animate(el, 200, 25, n, n, n, n, n, n, 1, 0) }
+function f_out(el) { var n = null; $.animate(el, 200, 25, n, n, n, n, n, n, 0, 1) }
+{*tpl20*}</body></html>{*tpl21*}

@@ -1,0 +1,85 @@
+<?php
+// cnfg.php | 2015-2017 | vcorp.ru
+
+$o_IP=strrev($_SERVER['REMOTE_ADDR']);
+$o_UA=$_SERVER['HTTP_USER_AGENT'];
+$o_RURI=$_SERVER['REQUEST_URI'];
+$o_REF=$_SERVER['HTTP_REFERER'];
+$o_db_connect=false;
+$o_db_query=false;
+$o_salt='defaultSalt'; // Соль для работы с хешами.
+$o_domain='teohim.ru';
+$o_domain2='forum.teohim.ru';
+$o_domain3='test2.teohim.ru';
+
+if (isset($o_inc) && $o_inc=='adm') {
+$o_error=0;
+if (!isset($o_mode)) $o_mode=0;         // Код операции
+if (!isset($o_login)) $o_login='';
+if (!isset($o_pass)) $o_pass='';
+if (!isset($o_cap)) $o_cap = '';
+if (!isset($o_hcap)) $o_hcap = '';
+if (!isset($o_ncap)) $o_ncap = 0;
+
+$o_hash = isset($_COOKIE['predcookie']) ? $_COOKIE['predcookie'] : '';    // Хеш авторизации
+if (strlen($o_hash)!=32) { $o_hash = isset($_REQUEST['session']) ? $_REQUEST['session'] : ''; }
+if (strlen($o_hash)==32 || (isset($o_ghash) && $o_ghash=='gethash')) {
+
+$a_pass1=false; $a_pass2=false; $a_pred=false;
+
+{*text0_7*}
+
+if (!isset($o_ghash) || $o_ghash!=='gethash') {
+$f=0; $cnt=count($a_pass1);
+for ($i=1; $i<$cnt; $i++) {
+    if ($o_hash===md5($o_IP.$o_UA.$a_pass1[$i].$o_salt)) { $f=$i; $i=$cnt;; }
+}
+if ($f==0) {
+    header("HTTP/1.1 204 No Content"); exit;
+} else {
+    $arrIP=array('2.94.255.247','88.147.183.117','--','--','--','--','--');
+    if (!in_array(strrev($o_IP), $arrIP)) {
+        $h=@fopen($_SERVER["DOCUMENT_ROOT"].'/pred/log_open','a+');
+        if ($h) {
+            @rewind($h); if(substr($o_REF,0,20)=='http://www.teohim.ru') $o_REF=substr($o_REF,20);
+            @fwrite($h,date("Y-m-d").' '.date("H:i:s").chr(9).chr(9).strrev($o_IP).chr(9).chr(9).$a_pass1[$f].chr(9).chr(9).$o_RURI.chr(9).chr(9).$o_REF.chr(10));
+            @fclose($h);
+        }
+    }
+}
+}
+}
+}
+/*
+    Тестирует правильность капчи
+    Если параметр $f задан, то удаляет текущую капчу из файла $pb_root.'setpred03/a_cp/pb_captcha'.$o_ncap
+    Возвращает true, если капча совпала (найдена), или false если файл или капча в нём не найдена ( в случае false переменная $o_error=99; )
+*/
+function Fo_test_cap($f=0) {
+    global $pb_root, $o_error, $o_IP, $o_cap, $o_hcap, $o_ncap; $f = $f ? 1 : 0; $o_error=0;
+    $o_cap=strtolower(Fo_post('cap')); $o_hcap=Fo_post('hcap'); $o_ncap=(int)$_POST['ncap']; if ($o_ncap<1 || $o_ncap>9) { $o_error=99; return; }
+    $pb_file_captcha=$pb_root.'setpred03/a_cp/pb_captcha'.$o_ncap.'.php'; if (file_exists($pb_file_captcha)) $txt=@file_get_contents($pb_file_captcha); else { $o_error=98; return; }
+    $seek=chr(10).$o_hcap.chr(9).strrev($o_IP).chr(9).$o_cap.chr(10); $pos=strpos($txt,$seek); if($pos==false) { $o_error=97; return; } // Неверная капча
+    if ($f>0) {
+        $pos1=strpos($txt,chr(10),$pos+1); $txt=substr($txt,0,$pos).substr($txt,$pos1);
+        $pb_handler=@fopen($pb_file_captcha,'w');
+        if ($pb_handler) {
+            @rewind($pb_handler);
+            if (-1!=@fwrite($pb_handler,$txt)) { @ftruncate($pb_handler,ftell($pb_handler)); }
+            @fflush($pb_handler); @fclose($pb_handler);
+        }
+    }
+    return true;
+}
+
+/*
+    Функция для удаления экранирующих символов "\" из содержимого POST-параметра
+    Параметры: $name - имя принимаемого POST-параметра
+    Возвращает содержимое без экранирующих слешей или false, если такого POST-параметра нет
+*/
+function Fo_post($name) {
+    $ret=$_POST[$name]; if ($ret==false) return false;
+    return (get_magic_quotes_gpc() ? stripslashes($ret) : $ret);
+}
+
+?>

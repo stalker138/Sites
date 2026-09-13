@@ -1,0 +1,42 @@
+<?php
+print 'Скрипт отключен'; exit;
+
+$o_inc='adm'; include "cnfg.php";
+$a = $a_pred[$f]; $id=$f;
+
+$file_source=$_SERVER["DOCUMENT_ROOT"].'/sys/objlist';
+$file_dest=$_SERVER["DOCUMENT_ROOT"].'/sys/objlist1';
+$src=@file_get_contents($file_source);
+
+{*text0_7*}
+{*text1_9*}
+{*text1_11*}
+
+$dst=''; $o=false; $pos=strpos($src,chr(10)); $o[]='';
+while ($pos!=false) {
+  $s=explode(chr(9),substr($src,0,$pos)); $src=substr($src,$pos+1); 
+  $f = (int)$s[0]; $id=0; $r=0;
+    // Определение главного ID для файла данных objlist1 (объединение для разных паролей представителей при авторизации)
+    $calstID = count($alstID);
+    for ($i=0; $i<$calstID; $i++) {
+        $a = $alstID[$i];
+        $c=count($a); // количество объединённых сайтов (-1)
+        for ($j=1; $j<$c; $j++) {
+            if ($f==$a[$j]) {
+              $id = $a[1]; $r = ($f==12) ? 86 : $a[0];
+            }
+        }
+    }
+  if ($id>0) {
+    $s[0] = $id; $s[10] = '0';
+    if (count($s)<14 || !$s[13]) $s[13] = '2017-08-25';
+    $s[14] = $r; $s[15] = '';
+    $dst.=implode(chr(9),$s).chr(10);
+  }
+  $pos=strpos($src,chr(10));
+}
+$fh=@fopen($file_dest,'w'); if ($fh==false) { print 'error1'; exit; } else {
+ @rewind($fh); if (-1==@fwrite($fh,$dst)) { @fflush($fh); @fclose($fh); print 'error2'; } else { @ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh); print 'ok'; }
+}
+
+?>

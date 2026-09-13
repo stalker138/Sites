@@ -1,0 +1,31 @@
+<?php
+// 2015-2016 | get_cimg - (вывод изображения указанной капчи - используется для форм обратной связи и окон регистрации) | developed by vcorp.ru
+if (!empty($_GET['w'])) $w=(int)$_GET['w'];    // Ширина рисунка капчи
+if (!empty($_GET['h'])) $h=(int)$_GET['h'];   // Высота рисунка капчи
+if (!empty($_GET['c1'])) $c1=(int)$_GET['c1']; // Начало диапазона цветов RGB (от 0 до 255) - одно значение для всех цветов
+if (!empty($_GET['c2'])) $c2=(int)$_GET['c2']; // Конец диапазона цветов RGB (от 0 до 255) - одно значение для всех цветов
+if (!empty($_GET['b'])) $b=(int)$_GET['b'];   // Фон, если 0 то прозрачный, иначе фон RGB - одно значение для всех цветов
+if (!empty($_GET['n'])) $n=(int)$_GET['n']; if ($n<1 || $n>99) $n=1; // Часть имени файла капчи
+if (!empty($_GET['t'])) $s=$_GET['t']; else { header("HTTP/1.1 204 No Content"); exit; } // Время в формате date("YmdHis").$sessionID
+$len=$s.chr(9).$_SERVER['REMOTE_ADDR'].chr(9);
+
+$txt_captcha=@file_get_contents($pb_root.'setpred03/a_cp/pb_captcha'.$n.'.php');
+$pos=strpos($txt_captcha,chr(10).$len); if ($pos==false) { header("HTTP/1.1 204 No Content"); exit; }
+$txt_captcha=substr($txt_captcha,$pos+strlen($len)+1); $pos=strpos($txt_captcha,chr(10)); $s=strtoupper(substr($txt_captcha,0,$pos));
+
+if ($b==0) { $transparent=1; $b=array(0,0,1); } else { $transparent=0; $b=explode(',',$b); }
+$im=imagecreate($w, $h); $len=strlen($s); $h-=10;
+$stepx=(int)$w/$len; if ($stepx<2) $stepx=1; $stepy=(int)$h/5;
+$x=(int)($w-$stepx*$len)/2+$w/20-1; if (mt_rand(1,10)<6) $y=($h+5)/2-$stepy; else $y=$h/2-$stepy;
+$b=imagecolorallocate($im, (int)$b[0], (int)$b[1], (int)$b[2]);
+if ($transparent) imageColorTransparent($im, $b);
+imagefilledrectangle($im,0,0,$w-1,$h+9,$b); 
+imageRectangle($im,0,0,$w-1,$h+9, imagecolorallocate($im, mt_rand($c1,$c2), mt_rand($c1,$c2), mt_rand($c1,$c2)));
+for ($i=0; $i<$len; $i++) {
+    $font=mt_rand(3,5); imagestring($im, $font, $x, $y, $s[$i], imagecolorallocate($im, mt_rand($c1,$c2), mt_rand($c1,$c2), mt_rand($c1,$c2)));
+    $x+=$stepx; $y = (int) ($h+5)/2 + ($y<($h+5)/2-$stepy ? $stepy : -$stepy)-imagefontheight($font)/2;
+}
+header("Content-type: image/png");
+imagepng($im);
+imagedestroy($im);
+?>
