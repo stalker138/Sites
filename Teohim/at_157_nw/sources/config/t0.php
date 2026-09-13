@@ -135,9 +135,9 @@
 *end*22
 
 *number*23
-*options*		0000000000
+*options*		1000000000
 *file*			text0_23
-*name*			empty23
+*name*			Функции автоматизации цен на инструмент
 *end*23
 
 *number*24
@@ -291,9 +291,9 @@
 *end*48
 
 *number*49
-*options*		0000000000
+*options*		1000000000
 *file*			text0_49
-*name*			empty49
+*name*			МАССИВ ПОКРЫТИЙ TST
 *end*49
 
 *number*50

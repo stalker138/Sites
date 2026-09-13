@@ -11,9 +11,9 @@
 <div class="dfbc">
 <?php
 print $tblt1;
-print ftech18(35, '<div class="px3"></div>2.3.', '', '', 'Светостойкий УФ-стойкий полимерный пол. Толщина цветного слоя 0,2-0,25мм.', null); 
-print ftech18(68, '<div class="px3"></div>5.12.', '', '', '<div class="px3"></div>', null); 
-print ftech18(70, '<div class="px3"></div>5.14. ', '', '', '<div class="px3"></div>', null); 
+print ftech18(35, '', '', '', 'Светостойкий УФ-стойкий полимерный пол. Толщина цветного слоя 0,2-0,25мм.', null); 
+print ftech18(68, '', '', '', '<div class="px3"></div>', null); 
+print ftech18(70, '', '', '', '<div class="px3"></div>', null); 
 print $tblt2;
 ?>
 </div>

@@ -103,5 +103,5 @@ $st1=' class="pb_ms" style="border-bottom:none; background:#d0d0d0;"'; $st2=' st
   </menu>
 </li>
 <li<?php print ($pb_page==217)?$st:''; ?>><div></div><?php if ($pb_page!=217) print '<l0 id="217">'; ?><span class="fs14">Проектировщикам</span><?php if ($pb_page!=217) print '</l0>'; ?></li>
-<li<?php print ($pb_page==1011)?$st:''; ?>><div></div><?php if ($pb_page!=1011) print '<l1 id="11">'; ?><span class="fs14">Инструмент</span><?php if ($pb_page!=1011) print '</l1>'; ?></li>
+<!--li<?php print ($pb_page==1011)?$st:''; ?>><div></div><?php if ($pb_page!=1011) print '<l1 id="11">'; ?><span class="fs14">Инструмент</span><?php if ($pb_page!=1011) print '</l1>'; ?></li-->
 </menu>

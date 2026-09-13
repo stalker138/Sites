@@ -3,7 +3,11 @@
 <div class="px5"></div>
 <p class="fs13">Цены в Москве и Московской области на условиях самовывоза со складов ООО «ТэоХим».</p>
 <p class="fwb fs13">В регионах приобретайте «Элакор» только у <!--noindex--><a href="/pred/">официальных представителей</a><!--/noindex--> «ТэоХим». <span class="cf00 fs14">&nbsp;Опасайтесь подделок!</span></p>
-<div class="px20b"></div><div class="px5"></div>
+
+<div class="px15"></div>
+<l1 id="11" class="divcidm" style="font-weight:normal; border-color:#f5530e"><span style="color: #004f92; font-weight:bold;">Цены – ИНСТРУМЕНТ и Дополнительные материалы</span> &nbsp; для устройства Полимерных полов</l1>
+<div class="px10"></div>
+
 <div class="fleft" style="min-width:300px; line-height: 18px; margin-top: -2px;">
 <div class="px5"></div>
 <span>Цены с НДС</span>, в зависимости от общего количества покупаемых материалов.<br>
@@ -13,12 +17,9 @@
 <p class="temp2 p1 mt5 fwb fs13 bg3 b1 br5" style="padding:5px 10px;box-shadow:4px 4px 7px 0 #999999;"><a href="javascript:void(f_clz(4))" class="a1 fwb fs14 ti">Заказать работы</a></p>
 <!--<p class="temp2 p1 mt7 fwb fs13 bg3 b1 br5" style="padding:5px 10px;box-shadow:4px 4px 7px 0 #999999;"><l1 id="11" class="a1 fwb fs14 ti" style="text-decoration:none">Цены - ИНСТРУМЕНТ</l1></p>-->
 </div>
-
-<div class="px15"></div>
-<l1 id="11" class="divcidm"><span>Цены – ИНСТРУМЕНТ и Дополнительные материалы</span> &nbsp; для устройства Полимерных полов</l1>
-<div class="px5"></div>
-<div class="px5n"></div>
+<div class="px10b"></div><div class="px5"></div>
 {*text5_9*}
+<div class="px5n"></div>
 <p class="h14l">&nbsp; <span class="c0">–</span>&nbsp; 1. Полиуретановые материалы <span class="fs11 fwn c0">(Элакор-ПУ)</span></p>
 <div class="px5"></div>
 
@@ -30,7 +31,7 @@
 <h3 class="divh4"><span style="font-weight:bold">1.1.</span> Грунты, Пропитки</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[11]); $i++) { if ($catmat[11][$i]==131) print fmtr7(131,'4.1.&nbsp; &nbsp;','%Люкс Грунт% - полиуретановый',' светостойкий'); else { if ($catmat[11][$i]==106) print fmtr7(106,'1.1.9. Силер-Б - ','%силер без запаха%'); else print fmtr7($catmat[11][$i]); } } ?></tbody></table>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[11]); $i++) { if ($catmat[11][$i]==131) print fmtr7(131,'','%Люкс Грунт% - полиуретановый',' светостойкий'); else { if ($catmat[11][$i]==106) print fmtr7(106,'1.1.9. &nbsp; Силер-Б - ','%силер без запаха%'); else print fmtr7($catmat[11][$i]); } } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -41,7 +42,7 @@
 <div class="px0"></div>
 <table class="tmtr mtrls"><tbody>
 <?php print $th7; for ($i=1; $i<count($catmat[121]); $i++) { print fmtr7($catmat[121][$i]); }
-print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глянцевая%',' ').fmtr7(136,'4.2.2.','%Люкс Эмаль Светостойкая Полуматовая%',' ').fmtr7(137,'4.2.3.','%Люкс Эмаль Светостойкая Матовая%',' ').fmtr7(134,'4.3.1.','%Люкс Эмаль Эластичная Светостойкая%',' '); ?>
+print fmtr7(135,'','%Люкс Эмаль Светостойкая Глянцевая%',' ').fmtr7(136,'','%Люкс Эмаль Светостойкая Полуматовая%',' ').fmtr7(137,'','%Люкс Эмаль Светостойкая Матовая%',' ').fmtr7(150).fmtr7(151).fmtr7(134,'','%Люкс Эмаль Эластичная Светостойкая%',' '); ?>
 </tbody></table>
 <div class="px10"></div>
 </div>
@@ -53,13 +54,24 @@ print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <div class="px0"></div>
 <table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[13]); $i++) { print fmtr7($catmat[13][$i]); } ?></tbody></table>
 <div class="px10"></div>
-<div class="c2 fwb bg3 fs14" style="padding-left:40px">Лаки полиуретановые светостойкие, УФ-стойкие</div>
+<!--div class="c2 fwb bg3 fs14" style="padding-left:40px">Лаки полиуретановые светостойкие, УФ-стойкие</div-->
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Лаки полиуретановые светостойкие, УФ-стойкие</div>
 <div class="px5"></div>
 <table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[43]); $i++) { print fmtr7($catmat[43][$i]); } ?></tbody></table>
 <div class="px10"></div>
-<div class="c2 fwb bg3 fs14" style="padding-left:40px">Лаки Эластичные</div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Защитные Лаки, блокирующие УФ-излучение <span class="dh3span"style="font-size: 11px;   font-weight: normal;color: #000000; white-space: pre-wrap;">(на растворителях)</span></div>
+<div class="px5"></div>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[404]); $i++) { print fmtr7($catmat[404][$i]); } ?></tbody></table>
+<div class="px10"></div>
+<!--div class="c2 fwb bg3 fs14" style="padding-left:40px">Лаки Водные</div-->
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Лаки Водные</div>
 <div class="px5"></div>
 <table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[44]); $i++) { print fmtr7($catmat[44][$i]); } ?></tbody></table>
+<div class="px10"></div>
+<!--div class="c2 fwb bg3 fs14" style="padding-left:40px">Лаки Эластичные</div-->
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Лаки Эластичные</div>
+<div class="px5"></div>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[45]); $i++) { print fmtr7($catmat[45][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -68,7 +80,7 @@ print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold">1.4.</span> Полиуретановые наливные полы</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px10"></div>
-<span class="cf00 ml10" style="font-weight:bold">Все составы – самонивелирующиеся (самовыравнивающиеся), искробезопасные.</span>
+<span class="cf00 fi ml10" style="font-weight:bold">Все составы – самовыравнивающиеся, искробезопасные.</span>
 <div class="px3"></div>
 <table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[14]); $i++) { print fmtr7($catmat[14][$i]); } ?></tbody></table>
 <div class="px10"></div>
@@ -76,10 +88,10 @@ print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <div class="px0b"></div>
 
 <div class="div_mc" style="height:25px">
-<h3 class="divh4"><span style="font-weight:bold">1.5.</span> Полиуретан-цементные покрытия <span class="fs11 fwn c0">(Элакор-ПЦ)</span></h3><div class="px0"></div>
+<h3 class="divh4"><span style="font-weight:bold">1.5.</span> Полиуретан-Цементные покрытия <span class="fs11 fwn c0">(Элакор-ПЦ)</span></h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[15]); $i++) { print fmtr7($catmat[15][$i]); } ?></tbody></table>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[15]); $i++) { if ($catmat[15][$i]==138) print fmtr7(138,'1.5.9. &nbsp;&nbsp; <span class="c2" style="font-size:12px; font-weight:bold">Т4 СК ПРОФ - </span>','%Универсальный полиуретан-цементный состав%'); else print fmtr7($catmat[15][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -125,7 +137,7 @@ print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold">2.4.</span> Эпоксидные наливные полы</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px10"></div>
-<span class="cf00 ml10" style="font-weight:bold">Все составы – самонивелирующиеся (самовыравнивающиеся), искробезопасные.</span>
+<span class="cf00 fi ml10" style="font-weight:bold">Все составы – самовыравнивающиеся, искробезопасные.</span>
 <div class="px3"></div>
 <table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[24]); $i++) { print fmtr7($catmat[24][$i]); } ?></tbody></table>
 <div class="px10"></div>
@@ -143,7 +155,7 @@ print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold">2.7.</span> Компаунды, Составы для заливки и инъектирования.</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[27]); $i++) { if ($catmat[27][$i]==64) print fmtr7(64,'2.7.7. Смола АРТ - ','%прозрачная смола для заливки%'); else print fmtr7($catmat[27][$i]); } ?></tbody></table>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[27]); $i++) { if ($catmat[27][$i]==64) print fmtr7(64,'2.7.8. &nbsp;&nbsp; Смола АРТ - ','%прозрачная смола для заливки%'); else print fmtr7($catmat[27][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -154,7 +166,7 @@ print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold"></span> Антистатические Грунты, Пропитки</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr mtrls"><tbody><?php print $th7.fmtr7(15).fmtr7(66); ?></tbody></table>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[31]); $i++) { print fmtr7($catmat[31][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -162,9 +174,9 @@ print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold"></span> Антистатические Наливные полы</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px10"></div>
-<span class="cf00 ml10" style="font-weight:bold">Все составы – самонивелирующиеся (самовыравнивающиеся), искробезопасные.</span>
+<span class="cf00 fi ml10" style="font-weight:bold">Все составы – самовыравнивающиеся, искробезопасные.</span>
 <div class="px3"></div>
-<table class="tmtr mtrls"><tbody><?php print $th7.fmtr7(65).fmtr7(69).fmtr7(29).fmtr7(56).fmtr7(67).fmtr7(92).fmtr7(123); ?></tbody></table>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[32]); $i++) { print fmtr7($catmat[32][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -172,7 +184,7 @@ print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold"></span> Антистатические Краски, Эмали</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr mtrls"><tbody><?php print $th7.fmtr7(51).fmtr7(90).fmtr7(52).fmtr7(91); ?></tbody></table>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[33]); $i++) { print fmtr7($catmat[33][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -180,9 +192,23 @@ print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <div class="div_mc">
 <h3 class="divh3">4. Покрытия стойкие к ультрафиолету <span class="dh3span">(Элакор-ПУ «Люкс»)</span></h3><div class="px0"></div>
 <p class="divh3span fright tar">Цена р/кг</p>
-<div class="px2"></div>
+<div class="px10"></div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Полиуретановые, на растворителях</div>
+<div class="px5"></div>
 <!--span class="cf00" style="font-weight:bold">Внимание! Теперь "Люкс Лаки-Р" можно приобрести в "мелкой" фасовке - 0,8кг и 2кг</span-->
-<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[4]); $i++) { print fmtr7($catmat[4][$i]); } ?></tbody></table>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[401]); $i++) { if($catmat[401][$i]==135) print fmtr7(135,'','Люкс Эмаль Полуглянцевая',' '); else if($catmat[401][$i]==136) print fmtr7(136,'','Люкс Эмаль Полуматовая',' '); else if($catmat[401][$i]==137) print fmtr7(137,'','Люкс Эмаль Матовая',' '); else print fmtr7($catmat[401][$i]); } ?></tbody></table>
+<div class="px10"></div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Защитные Лаки, блокирующие УФ-излучение <span class="dh3span"style="font-size: 11px;   font-weight: normal;color: #000000; white-space: pre-wrap;">(на растворителях)</span></div>
+<div class="px5"></div>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[404]); $i++) { print fmtr7($catmat[404][$i]); } ?></tbody></table>
+<div class="px10"></div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Водные, полиуретановые, паропроницаемые</div>
+<div class="px5"></div>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[402]); $i++) { print fmtr7($catmat[402][$i]); } ?></tbody></table>
+<div class="px10"></div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Эластичные, полиуретановые <span class="dh3span"style="font-size: 11px;   font-weight: normal;color: #000000; white-space: pre-wrap;">(на растворителях)</span></div>
+<div class="px5"></div>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[403]); $i++) { print fmtr7($catmat[403][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -192,14 +218,14 @@ print fmtr7(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <p class="divh3span fright tar">Цена р/кг</p>
 <div class="px0"></div>
 <table class="tmtr mtrls"><tbody><?php print $th7;
-print fmtr7(161,'5.1. Элакор-ПУ ','%Грунт для Металла полиуретановый%',' (1-комп.)');
-print fmtr7(164,'5.2. Элакор-ЭД Грунт-АКЗ - ','%Антикоррозионная Грунт-Эмаль%');
-print fmtr7(167,'5.3. Элакор-ПУ ','%Антикоррозионная Грунт-Эмаль% полиуретановая');
-print fmtr7(163,'5.4. Элакор-ЭД ','%Грунт-Цинк - цинковый грунт%',' эпоксидный');
-print fmtr7(168,'5.5. Элакор-ПУ ','%Цинковый грунт полиуретановый%',' (1-комп.)');
-print fmtr7(165,'5.6. Элакор-ПУ ','%Эмаль для Металла полиуретановая%',' (1-комп.)');
-print fmtr7(166,'5.7. Элакор-ПУ ','%Люкс Эмаль-Т% - светостойкая краска для металла');
-print fmtr7(169,'5.9. Элакор-ПУ ','%Лак для Металла%',' (полиуретановый, 1-комп.)');
+print fmtr7(161,'5.1. &nbsp;&nbsp; Элакор-ПУ ','%Грунт для Металла полиуретановый%',' (1-комп.)');
+print fmtr7(164,'5.2. &nbsp;&nbsp; Элакор-ЭД Грунт-АКЗ - ','%Антикоррозионная Грунт-Эмаль%');
+print fmtr7(167,'5.3. &nbsp;&nbsp; Элакор-ПУ ','%Антикоррозионная Грунт-Эмаль% полиуретановая');
+print fmtr7(163,'5.4. &nbsp;&nbsp; Элакор-ЭД ','%Грунт-Цинк - цинковый грунт%',' эпоксидный');
+print fmtr7(168,'5.5. &nbsp;&nbsp; Элакор-ПУ ','%Цинковый грунт полиуретановый%',' (1-комп.)');
+print fmtr7(165,'5.6. &nbsp;&nbsp; Элакор-ПУ ','%Эмаль для Металла полиуретановая%',' (1-комп.)');
+print fmtr7(166,'5.7. &nbsp;&nbsp; Элакор-ПУ ','%Люкс Эмаль-Т% - светостойкая краска для металла');
+print fmtr7(169,'5.9. &nbsp;&nbsp; Элакор-ПУ ','%Лак для Металла%',' (полиуретановый, 1-комп.)');
 ?></tbody></table>
 <p class="ml10 mt5 fs11">Также для металлических поверхностей могут применяться материалы из группы «для бетона»: наливные полы, шпатлевки, герметики и пр.</p>
 <div class="px10"></div>
@@ -210,7 +236,7 @@ print fmtr7(169,'5.9. Элакор-ПУ ','%Лак для Металла%',' (п
 <h3 class="divh3">6. Покрытия для Дерева, Паркета <span class="dh3span">(Элакор-ПУ)</span></h3><div class="px0"></div>
 <p class="divh3span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[6]); $i++) { print fmtr7($catmat[6][$i]); } ?></tbody></table>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[6]); $i++) { print ($catmat[6][$i]==189) ? fmtr7(189,'8.2. ','%Лак Акриловый для дерева%',' (прозрачный, светостойкий)') : fmtr7($catmat[6][$i]); } ?></tbody></table>
 <p class="ml10 mt5">Для деревянных поверхностей могут применяться материалы из <span style="font-weight:bold">раздела 1</span>: наливные полы, шпатлевки, герметики и т.д.</p>
 <div class="px10"></div>
 </div>
@@ -229,6 +255,8 @@ print fmtr7(169,'5.9. Элакор-ПУ ','%Лак для Металла%',' (п
 <h3 class="divh3">8. Флюат, Гидрофобизатор, Акриловые материалы, очистка бетона <span class="dh3span">(Элакор-МБ)</span></h3><div class="px0"></div>
 <p class="divh3span fright tar">Цена р/кг</p>
 <div class="px0"></div>
+<p class="ml10 mt10" style="font-size:11px;"><span class="c2" style="font-weight:bold;">Пояснение:</span> (конц.1 = 4 РС) – материал поставляется в виде концентрата, разводится водой, из 1кг получится 4кг рабочего состава (РС).</p>
+<div class="px10"></div>
 <table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[8]); $i++) { print fmtr7($catmat[8][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
@@ -252,7 +280,7 @@ print fmtr7(169,'5.9. Элакор-ПУ ','%Лак для Металла%',' (п
 <h3 class="divh4"><span style="font-weight:bold">1.1.</span> Грунты, Пропитки</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[11]); $i++) { if ($catmat[11][$i]==131) print fmtr8(131,'4.1.&nbsp; &nbsp;','%Люкс Грунт% - полиуретановый',' светостойкий'); else { if ($catmat[11][$i]==106) print fmtr8(106,'1.1.9. Силер-Б - ','%силер без запаха%'); else print fmtr8($catmat[11][$i]); } } ?></tbody></table>
+<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[11]); $i++) { if ($catmat[11][$i]==131) print fmtr8(131,'','%Люкс Грунт% - полиуретановый',' светостойкий'); else { if ($catmat[11][$i]==106) print fmtr8(106,'1.1.9. Силер-Б - ','%силер без запаха%'); else print fmtr8($catmat[11][$i]); } } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -263,7 +291,7 @@ print fmtr7(169,'5.9. Элакор-ПУ ','%Лак для Металла%',' (п
 <div class="px0"></div>
 <table class="tmtr"><tbody>
 <?php print $thp8; for ($i=1; $i<count($catmat[121]); $i++) { print fmtr8($catmat[121][$i]); }
-print fmtr8(135,'4.2.1.','%Люкс Эмаль Светостойкая Глянцевая%',' ').fmtr8(136,'4.2.2.','%Люкс Эмаль Светостойкая Полуматовая%',' ').fmtr8(137,'4.2.3.','%Люкс Эмаль Светостойкая Матовая%',' ').fmtr8(134,'4.3.1.','%Люкс Эмаль Эластичная Светостойкая%',' '); ?>
+print fmtr8(135,'','%Люкс Эмаль Светостойкая Глянцевая%',' ').fmtr8(136,'','%Люкс Эмаль Светостойкая Полуматовая%',' ').fmtr8(137,'','%Люкс Эмаль Светостойкая Матовая%',' ').fmtr8(150).fmtr8(151).fmtr8(134,'','%Люкс Эмаль Эластичная Светостойкая%',' '); ?>
 </tbody></table>
 <?php // print fmtr8(137,'4.2.4.','%Люкс Эмаль Матовая%',' '); ?>
 <div class="px10"></div>
@@ -276,13 +304,22 @@ print fmtr8(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <div class="px0"></div>
 <table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[13]); $i++) { print fmtr8($catmat[13][$i]); } ?></tbody></table>
 <div class="px10"></div>
-<div class="c2 fwb bg3" style="padding-left:12px">Лаки полиуретановые светостойкие, УФ-стойкие</div>
+<!--div class="c2 fwb bg3" style="padding-left:12px">Лаки полиуретановые светостойкие, УФ-стойкие</div-->
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Лаки полиуретановые светостойкие, УФ-стойкие</div>
 <div class="px5"></div>
 <table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[43]); $i++) { print fmtr8($catmat[43][$i]); } ?></tbody></table>
 <div class="px10"></div>
-<div class="c2 fwb bg3" style="padding-left:12px">Лаки Эластичные</div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Защитные Лаки, блокирующие УФ-излучение <span class="dh3span"style="font-size: 11px;   font-weight: normal;color: #000000; white-space: pre-wrap;">(на растворителях)</span></div>
+<div class="px5"></div>
+<table class="tmtr mtrls"><tbody><?php print $th8; for ($i=1; $i<count($catmat[404]); $i++) { print fmtr8($catmat[404][$i]); } ?></tbody></table>
+<div class="px10"></div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Лаки Водные</div>
 <div class="px5"></div>
 <table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[44]); $i++) { print fmtr8($catmat[44][$i]); } ?></tbody></table>
+<div class="px10"></div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Лаки Эластичные</div>
+<div class="px5"></div>
+<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[45]); $i++) { print fmtr8($catmat[45][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -291,7 +328,7 @@ print fmtr8(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold">1.4.</span> Полиуретановые наливные полы</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px10"></div>
-<p class="fleft mt0 fwb cf00">Все составы – самонивелирующиеся (самовыравнивающиеся), искробезопасные.</p>
+<span class="cf00 fi ml10" style="font-weight:bold">Все составы – самовыравнивающиеся, искробезопасные.</span>
 <div class="px3"></div>
 <table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[14]); $i++) { print fmtr8($catmat[14][$i]); } ?></tbody></table>
 <div class="px10"></div>
@@ -299,10 +336,10 @@ print fmtr8(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <div class="px0b"></div>
 
 <div class="div_mc" style="height:25px">
-<h3 class="divh4"><span style="font-weight:bold">1.5.</span> Полиуретан-цементные покрытия</h3><div class="px0"></div>
+<h3 class="divh4"><span style="font-weight:bold">1.5.</span> Полиуретан-Цементные покрытия</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[15]); $i++) { print fmtr8($catmat[15][$i]); } ?></tbody></table>
+<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[15]); $i++) {  if ($catmat[15][$i]==138) print fmtr8(138,'1.5.9. <span class="c2" style="font-size:12px; font-weight:bold">Т4 СК ПРОФ - </span>','%Универсальный полиуретан-цементный состав%'); else print fmtr8($catmat[15][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -348,7 +385,7 @@ print fmtr8(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold">2.4.</span> Эпоксидные наливные полы</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px10"></div>
-<p class="fleft mt0 fwb cf00">Все составы – самонивелирующиеся (самовыравнивающиеся), искробезопасные.</p>
+<span class="cf00 fi ml10" style="font-weight:bold">Все составы – самовыравнивающиеся, искробезопасные.</span>
 <div class="px3"></div>
 <table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[24]); $i++) { print fmtr8($catmat[24][$i]); } ?></tbody></table>
 <div class="px10"></div>
@@ -366,7 +403,7 @@ print fmtr8(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold">2.7.</span> Компаунды, Составы для заливки и инъектирования.</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[27]); $i++) { if ($catmat[27][$i]==64) print fmtr8(64,'2.7.7. Смола АРТ - ','%прозрачная смола для заливки%'); else print fmtr8($catmat[27][$i]); } ?></tbody></table>
+<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[27]); $i++) { if ($catmat[27][$i]==64) print fmtr8(64,'2.7.8. Смола АРТ - ','%прозрачная смола для заливки%'); else print fmtr8($catmat[27][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -378,7 +415,7 @@ print fmtr8(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold"></span> Грунты, Пропитки</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr"><tbody><?php print $thp8.fmtr8(15).fmtr8(66); ?></tbody></table>
+<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[31]); $i++) { print fmtr8($catmat[31][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -386,9 +423,9 @@ print fmtr8(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold"></span> Антистатические Наливные полы</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px10"></div>
-<p class="fleft mt0 fwb cf00">Все составы – самонивелирующиеся (самовыравнивающиеся), искробезопасные.</p>
+<span class="cf00 fi ml10" style="font-weight:bold">Все составы – самовыравнивающиеся, искробезопасные.</span>
 <div class="px3"></div>
-<table class="tmtr"><tbody><?php print $thp8.fmtr8(65).fmtr8(69).fmtr8(29).fmtr8(56).fmtr8(67).fmtr8(92).fmtr8(123); ?></tbody></table>
+<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[32]); $i++) { print fmtr8($catmat[32][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -396,7 +433,7 @@ print fmtr8(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <h3 class="divh4"><span style="font-weight:bold"></span> Антистатические Краски, Эмали</h3><div class="px0"></div>
 <p class="divh4span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr"><tbody><?php print $thp8.fmtr8(51).fmtr8(90).fmtr8(52).fmtr8(91); ?></tbody></table>
+<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[33]); $i++) { print fmtr8($catmat[33][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -405,9 +442,23 @@ print fmtr8(135,'4.2.1.','%Люкс Эмаль Светостойкая Глян
 <div class="div_mc">
 <h3 class="divh3 divh3_78">4. Покрытия стойкие к ультрафиолету <span class="dh3span">(Элакор-ПУ «Люкс»)</span></h3><div class="px0"></div>
 <p class="divh3span fright tar">Цена р/кг</p>
-<div class="px2"></div>
+<div class="px10"></div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Полиуретановые, на растворителях</div>
+<div class="px5"></div>
 <!--span class="cf00" style="font-weight:bold">Внимание! Теперь "Люкс Лаки-Р" можно приобрести в "мелкой" фасовке - 0,8кг и 2кг</span-->
-<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[4]); $i++) { print fmtr8($catmat[4][$i]); } ?></tbody></table>
+<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[401]); $i++) { print fmtr8($catmat[401][$i]); } ?></tbody></table>
+<div class="px10"></div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Защитные Лаки, блокирующие УФ-излучение <span class="dh3span"style="font-size: 11px;   font-weight: normal;color: #000000; white-space: pre-wrap;">(на растворителях)</span></div>
+<div class="px5"></div>
+<table class="tmtr mtrls"><tbody><?php print $th8; for ($i=1; $i<count($catmat[404]); $i++) { print fmtr8($catmat[404][$i]); } ?></tbody></table>
+<div class="px10"></div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Водные, полиуретановые, паропроницаемые</div>
+<div class="px5"></div>
+<table class="tmtr mtrls"><tbody><?php print $th8; for ($i=1; $i<count($catmat[402]); $i++) { print fmtr8($catmat[402][$i]); } ?></tbody></table>
+<div class="px10"></div>
+<div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Эластичные, полиуретановые <span class="dh3span"style="font-size: 11px;   font-weight: normal;color: #000000; white-space: pre-wrap;">(на растворителях)</span></div>
+<div class="px5"></div>
+<table class="tmtr mtrls"><tbody><?php print $th8; for ($i=1; $i<count($catmat[403]); $i++) { print fmtr8($catmat[403][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -435,7 +486,7 @@ print fmtr8(169,'5.9. Элакор-ПУ ','%Лак для Металла%',' (п
 <h3 class="divh3">6. Покрытия для Дерева, Паркета <span class="dh3span">(Элакор-ПУ)</span></h3><div class="px0"></div>
 <p class="divh3span fright tar">Цена р/кг</p>
 <div class="px0"></div>
-<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[6]); $i++) { print fmtr8($catmat[6][$i]); } ?></tbody></table>
+<table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[6]); $i++) { print ($catmat[6][$i]==189) ? fmtr8(189,'8.2. ','%Лак Акриловый для дерева%',' (прозрачный, светостойкий)') :  fmtr8($catmat[6][$i]); } ?></tbody></table>
 <p class="ml10 mt5">Для деревянных поверхностей могут применяться материалы из <span style="font-weight:bold">раздела 1</span>: наливные полы, шпатлевки, герметики и т.д.</p>
 <div class="px10"></div>
 </div>
@@ -454,6 +505,8 @@ print fmtr8(169,'5.9. Элакор-ПУ ','%Лак для Металла%',' (п
 <h3 class="divh3 divh3_78">8. Флюат, Гидрофобизатор, Акриловые материалы, очистка бетона <span class="dh3span">(Элакор-МБ)</span></h3><div class="px0"></div>
 <p class="divh3span fright tar">Цена р/кг</p>
 <div class="px0"></div>
+<p class="ml10 mt10" style="font-size:11px;"><span class="c2" style="font-weight:bold;">Пояснение:</span> (конц.1 = 4 РС) – материал поставляется в виде концентрата,<br>разводится водой, из 1кг получится 4кг рабочего состава (РС).</p>
+<div class="px10"></div>
 <table class="tmtr"><tbody><?php print $thp8; for ($i=1; $i<count($catmat[8]); $i++) { print fmtr8($catmat[8][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
@@ -472,13 +525,16 @@ print fmtr8(169,'5.9. Элакор-ПУ ','%Лак для Металла%',' (п
 </div><!--/mobilePrice-->
 <div class="temp1_price">
 <div class="px10"></div>
-<p class="mt5"><span><l0 id="209" class="fwb">Антидроновое одеяло</l0></span> - покрывало от тепловизора, антитепловизионное одеяло невидимка – купить, цены.</p>
-<p class="mt5"><span><l0 id="208" class="fwb">Мягкие носилки</l0></span> - купить бескаркасные тактические носилки волокуши – <span>цена от 1200р</span>.</p>
+<p class="mt5"><span><l0 id="209" class="fwb">Антидроновое одеяло</l0></span> - покрывало от тепловизора, антитепловизионное одеяло невидимка – купить, <span>цена от 1400р</span>.</p>
+<p class="mt5"><span><l0 id="208" class="fwb">Мягкие носилки</l0></span> - купить бескаркасные тактические носилки волокуши – <span>цена от 1100р</span>.</p>
 <div class="px10"></div>
 <p class="mt5"><span><l0 id="218" class="fwb">Разбавитель для эпоксидной смолы</l0> XY-748</span> (аналог AGE, SM90, Epodil 748) – продажа опт, розница.</p>
 <p class="mt5"><l0 id="212" class="fwb">Эпоксидная смола KER 828</l0> – продажа эпоксидной смолы, производства «KUMHO P&amp;B CHEMICALS», Корея. Минимальная цена.</p>
 <p class="mt5"><l0 id="213" class="fwb">Касторовое масло</l0> – продажа касторового масла FSG (первый специальный сорт), производство - Индия.</p>
-<p class="mt5"><l0 id="214" class="fwb">Полимерный МДИ</l0> – продажа полиизоцианата WANNATE PM-200, минимальная цена.</p>
+<p class="mt5"><l0 id="214" class="fwb">Полимерный МДИ</l0> – продажа полиизоцианата DESMODUR 44V20L, минимальная цена.</p>
+<div class="px10b"></div>
+<div class="px5"></div>
+<p class="mt5"><l6 id="1" class="fwb">ОБОРУДОВАНИЕ для устройства полимерных наливных полов</l6> (Мозаично-Шлифовальные машины; шлифовальные сегменты, промышленные пылесосы). </p>
 <div class="px10b"></div>
 <div class="px5"></div>
 <p class="mt5"><span><l1 id="2">Полимерные наливные полы</l1>  – описания, материалы, цены, технология</span></p>

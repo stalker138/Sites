@@ -4773,13 +4773,13 @@
 *end*477
 
 *number*478
-*options*		000000000
+*options*		1150000000
 *file*			page3_478
-*name*			empty478
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Отзыв ООО "Энергострой"
+*link*			/otz/128/
+*title*			Отзыв ООО "Энергострой"
+*keyw*			Отзыв ООО "Энергострой"
+*desc*			Отзыв ООО "Энергострой"
 *end*478
 
 *number*479

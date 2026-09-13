@@ -1,30 +1,30 @@
 <h1>Промышленные полы</h1>
 <div class="px5"></div>
-<p class="fs14 tal"><l1 id="21" class="fwb c0">Промышленные полы Элакор</l1> – производство и  поставка материалов, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span></span></p>
+<p class="fs14 tal"><l1 id="21" class="fwb c0">Промышленные полы Элакор</l1> – производство и  поставка материалов, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span></p>
 <p class="fs14 tal">На сегодняшний день промышленные полы Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м².</span></p>
 <!--noindex--><p class="fs14">В России и СНГ работают <l0 id="210" class="fwb c0">более 100 представительств ООО «ТэоХим»</l0>.</p><!--/noindex-->
 <div class="px10b"></div>
-<div class="px15"></div>
-<div class="fs11"><span class="fs13">Перейти в</span> &nbsp; <l1 id="23" class="pls01">КАЛЬКУЛЯТОР полов</l1> &nbsp; - моментальный расчет материалов и работ.</div>
-<div class="px15b"></div>
+<div class="px10"></div>
+<div class="fs11 lh24"><span class="fs13">Перейти в</span> &nbsp; <l1 id="23" class="pls01">КАЛЬКУЛЯТОР полов</l1> &nbsp; - моментальный расчет материалов и работ.</div>
+<div class="px10b"></div>
 <div class="px10"></div>
 <h2 class="h2_orange">Виды промышленных полов</h2>
 <div class="dflc">
 <div class="main_dbox">
   <l1 id="3" class="h14m">Полимерные полы</l1>
-  <l1 id="3"><img style="border:none; width:182px;" src="/img/polimernye-poly.jpg" alt="Полимерные полы" /></l1>
+  <l1 id="3"><img style="border:none; width:182px;" src="/img/polimernye-poly.jpg" alt="Полимерные полы"></l1>
 </div>
 <div class="main_dbox">
   <l1 id="2" class="h14m">Наливные полы</l1>
-  <l1 id="2"><img style="border:none; width:182px;" src="/img/nalivnie_poly_1.jpg" alt="Наливные полы" /></l1>
+  <l1 id="2"><img style="border:none; width:182px;" src="/img/nalivnie_poly_1.jpg" alt="Наливные полы"></l1>
 </div>
 <div class="main_dbox">
   <l1 id="5" class="h14m">Антистатические полы</l1>
-  <l1 id="5"><img style="border:none; width:182px; height:117px;" src="/img/obj/25/i4_s.jpg" alt="Антистатические полы" /></l1>
+  <l1 id="5"><img style="border:none; width:182px; height:117px;" src="/img/obj/25/i4_s.jpg" alt="Антистатические полы"></l1>
 </div>
 <div class="main_dbox">
   <l1 id="4" class="h14m">Бетонные полы</l1>
-  <l1 id="4"><img style="border:none; width:182px;" src="/img/betonnie_poly.jpg" alt="Бетонные полы" /></l1>
+  <l1 id="4"><img style="border:none; width:182px;" src="/img/betonnie_poly.jpg" alt="Бетонные полы"></l1>
 </div>
 </div>
 
@@ -33,15 +33,15 @@
 <div class="dflc">
 <div class="main_dbox">
   <l1 id="254" class="h14m">Полы для цеха</l1>
-  <l1 id="254"><img style="border:none; width:182px;" src="/img/poly-dlja-ceha.jpg" alt="Полы для цеха" /></l1>
+  <l1 id="254"><img style="border:none; width:182px;" src="/img/poly-dlja-ceha.jpg" alt="Полы для цеха"></l1>
 </div>
 <div class="main_dbox">
   <l1 id="255" class="h14m">Полы для склада</l1>
-  <l1 id="255"><img style="border:none; width:182px;" src="/img/poly-dlja-sklada.jpg" alt="Полы для склада" /></l1>
+  <l1 id="255"><img style="border:none; width:182px;" src="/img/poly-dlja-sklada.jpg" alt="Полы для склада"></l1>
 </div>
 <div class="main_dbox">
   <l1 id="251" class="h14m">Полы для гаража</l1>
-  <l1 id="251"><img style="border:none; width:182px;" src="/img/poly-dlja-garazha.jpg" alt="Полы для гаража" /></l1>
+  <l1 id="251"><img style="border:none; width:182px;" src="/img/poly-dlja-garazha.jpg" alt="Полы для гаража"></l1>
 </div>
 <div class="main_dbox">
   <l1 id="25" class="h14m">Для других объектов</l1>
@@ -50,7 +50,7 @@
 </div>
 
 <div class="px0"></div>
-<p class="mt0">Наши представители не только реализуют материалы, но производят работы, выполняя <l4 id="557">устройство промышленных полов</l4> &quot;под ключ&quot;.<br>
+<p class="mt0">Наши представители не только реализуют материалы, но и выполняют <l4 id="557">устройство промышленных полов</l4> &quot;под ключ&quot;.<br>
 Такой коллективный опыт в области устройства промышленных полов позволяет находить новые технические и технологические решения и сделать материалы Элакор максимально эффективными и экономически выгодными.</p>
 
 <div class="px10"></div>
@@ -159,14 +159,14 @@
 <div class="px10"></div>
 <div class="h16i">Наши работы</div>
 <div class="dflc">
-<img class="pb_ismall pb_gal_itm" src="/img/main/i5.jpg" onclick="$.zoomImg(this,'/img/obj/15/i5.jpg',200,25,800,600,'Наливные покрытия открытых площадок',-25,1,0,1);" title="Наливные покрытия открытых площадок" alt="Наливные покрытия открытых площадок." style="margin-left:2px;"/>
-<img class="pb_ismall pb_gal_itm" src="/img/main/i13.jpg" onclick="$.zoomImg(this,'/img/obj/3/i13.jpg',200,25,800,600,'Наливные полы складских помещений',-25,1,0,1);" title="Наливные полы складских помещений" alt="Наливные полы складских помещений"/>
-<img class="pb_ismall pb_gal_itm" src="/img/main/i6.jpg" onclick="$.zoomImg(this,'/img/obj/5/i6.jpg',200,25,800,600,'Наливные полы в цехе',-25,1,0,1);" title="Наливные полы в цехе" alt="Наливные полы в цехе"/>
-<img class="pb_ismall pb_gal_itm" src="/img/main/i19.jpg" onclick="$.zoomImg(this,'/img/obj/5/i19.jpg',200,25,800,600,'Качественные наливные полы',-25,1,0,1);" title="Качественные наливные полы" alt="Качественные наливные полы"/>
-<img class="pb_ismall pb_gal_itm" src="/img/main/i7.jpg" onclick="$.zoomImg(this,'/img/obj/7/i7.jpg',200,25,800,600,'Полимерные покрытия полов',-25,1,0,1);" title="Полимерные покрытия полов" alt="Полимерные покрытия полов"/>
-<img class="pb_ismall pb_gal_itm" src="/img/main/i1.jpg" onclick="$.zoomImg(this,'/img/obj/18/i1.jpg',200,25,800,600,'Наливные полы на автостоянках',-25,1,0,1);" title="Наливные полы на автостоянках" alt="Наливные полы на автостоянках"/>
-<img class="pb_ismall pb_gal_itm" src="/img/main/i15.jpg" onclick="$.zoomImg(this,'/img/obj/8/i15.jpg',200,25,800,600,'Полимерные полы',-25,1,0,1);" title="Полимерные полы" alt="Полимерные полы"/>
-<img class="pb_ismall pb_gal_itm" src="/img/main/i23.jpg" onclick="$.zoomImg(this,'/img/obj/4/i23.jpg',200,25,800,600,'Полы на автостоянке ГИБДД',-25,1,0,1);" title="Полы на автостоянке ГИБДД" alt="Полы на автостоянке ГИБДД"/>
+<img class="pb_ismall pb_gal_itm" src="/img/main/i5.jpg" onclick="$.zoomImg(this,'/img/obj/15/i5.jpg',200,25,800,600,'Наливные покрытия открытых площадок',-25,1,0,1);" title="Наливные покрытия открытых площадок" alt="Наливные покрытия открытых площадок." style="margin-left:2px;">
+<img class="pb_ismall pb_gal_itm" src="/img/main/i13.jpg" onclick="$.zoomImg(this,'/img/obj/3/i13.jpg',200,25,800,600,'Наливные полы складских помещений',-25,1,0,1);" title="Наливные полы складских помещений" alt="Наливные полы складских помещений">
+<img class="pb_ismall pb_gal_itm" src="/img/main/i6.jpg" onclick="$.zoomImg(this,'/img/obj/5/i6.jpg',200,25,800,600,'Наливные полы в цехе',-25,1,0,1);" title="Наливные полы в цехе" alt="Наливные полы в цехе">
+<img class="pb_ismall pb_gal_itm" src="/img/main/i19.jpg" onclick="$.zoomImg(this,'/img/obj/5/i19.jpg',200,25,800,600,'Качественные наливные полы',-25,1,0,1);" title="Качественные наливные полы" alt="Качественные наливные полы">
+<img class="pb_ismall pb_gal_itm" src="/img/main/i7.jpg" onclick="$.zoomImg(this,'/img/obj/7/i7.jpg',200,25,800,600,'Полимерные покрытия полов',-25,1,0,1);" title="Полимерные покрытия полов" alt="Полимерные покрытия полов">
+<img class="pb_ismall pb_gal_itm" src="/img/main/i1.jpg" onclick="$.zoomImg(this,'/img/obj/18/i1.jpg',200,25,800,600,'Наливные полы на автостоянках',-25,1,0,1);" title="Наливные полы на автостоянках" alt="Наливные полы на автостоянках">
+<img class="pb_ismall pb_gal_itm" src="/img/main/i15.jpg" onclick="$.zoomImg(this,'/img/obj/8/i15.jpg',200,25,800,600,'Полимерные полы',-25,1,0,1);" title="Полимерные полы" alt="Полимерные полы">
+<img class="pb_ismall pb_gal_itm" src="/img/main/i23.jpg" onclick="$.zoomImg(this,'/img/obj/4/i23.jpg',200,25,800,600,'Полы на автостоянке ГИБДД',-25,1,0,1);" title="Полы на автостоянке ГИБДД" alt="Полы на автостоянке ГИБДД">
 </div>
 <div class="px15"></div>
 <p class="fleft"><l1 id="15" class="c2 fwb">Промышленные полы ОТЗЫВЫ</l1></p>

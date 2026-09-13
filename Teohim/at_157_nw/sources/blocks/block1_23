@@ -2,9 +2,13 @@
 <div id="datePrice"></div>
 <div class="px5"></div>
 
-<p><strong>Цена полимерных полов</strong> <span>«Элакор»</span> - КАЛЬКУЛЯТОР расчета стоимости материалов и работ <span class="fs13 cf00">для Москвы и Московской обл.</span></p>
-<p class="fwb">Калькулятор рассчитывает <l1 id="3">полимерные полы</l1> цена за м2 и стоимость на всю площадь объекта.</p>
-<div class="px10b"></div>
+<p><strong>Цена полимерных полов</strong> <span>«Элакор»</span> - КАЛЬКУЛЯТОР расчета <span class="mediablock">стоимости материалов и работ <span class="fs13 cf00">для Москвы и Московской обл.</span></span></p>
+<p class="fwb nomedia">Калькулятор рассчитывает <l1 id="3">полимерные полы</l1> цена за м2 и стоимость на всю площадь объекта.</p>
+<!--noindex-->
+<p class="fwb ismedia">Калькулятор рассчитывает <l1 id="3">полимерные полы</l1><br>
+цена за м2 и стоимость на всю площадь объекта.</p>
+<!--/noindex-->
+<div class="px10b nomedia"></div>
 
 <div class="divPriceD">
 <div class="px5"></div>
@@ -27,11 +31,11 @@
 </div>
 </div>
 
-<div class="px10"></div>
-
+{*text5_4*}
+<div class="px5"></div>
 <h2>Расчет цены полимерных полов. Цены с НДС.</h2>
-<p class="fleft mt10 fs11">В стоимость работ ВКЛЮЧЕНА стоимость расходных материалов.<br>В стоимость НЕ включены транспортные и командировочные расходы.</p>
-<div class="fright mt10">{*text5_9*}</div>
+
+<div class="fright"><!--div class="px25 nomedia"></div-->{*text5_9*}</div>
 
 <div class="px10b"></div>
 
@@ -68,8 +72,8 @@
 <div class="div_mc">
 <h3 class="divh3"><span style="font-size:12px">Расчёт&nbsp;</span> 4. Полиуретан - Цементные полы.</h3>
 <div class="px0"></div><p class="divh3span">Цена с НДС</p><div class="px0"></div>
-<?php print $tbl1.fcvr3(97,'4.1.'); /* .fcvr3(93,'6.2.').fcvr3(95,'6.3.'); */
-print fcvr3(74,'4.5.','Антистатический Полиуретан-цементный пол','(без лент)').$tbl2;
+<?php print $tbl1.fcvr3(97).fcvr3(96).fcvr3(98); /* .fcvr3(93,'6.2.').fcvr3(95,'6.3.'); */
+print fcvr3(99).fcvr3(74).fcvr3(75).fcvr3(92).$tbl2;
 ?>
 </div>
 <div class="px0b"></div>
@@ -77,30 +81,34 @@ print fcvr3(74,'4.5.','Антистатический Полиуретан-це�
 <div class="div_mc">
 <h3 class="divh3"><span style="font-size:12px">Расчёт&nbsp;</span> 5. НАПОЛНЕННЫЕ полимерные полы <span>(с кварцем)</span></h3>
 <div class="px0"></div><p class="divh3span">Цена с НДС</p><div class="px0"></div>
-<?php print $tbl1.fcvr3(39,'5.1.').fcvr3(37,'5.2.').fcvr3(43,'5.3.').fcvr3(93).$tbl2; ?>
+<?php print $tbl1.fcvr3(39).fcvr3(37).fcvr3(43).fcvr3(93).$tbl2; ?>
 </div>
 <div class="px0b"></div>
 
 <div class="div_mc">
 <h3 class="divh3"><span style="font-size:12px">Расчёт&nbsp;</span> 6. АНТИСТАТИЧЕСКИЕ полы</h3>
 <div class="px0"></div><p class="divh3span">Цена с НДС</p><div class="px0"></div>
-<p class="fwb fi c3 ls1">НАЛИВНЫЕ полы Антистатические</p>
+<?php print $tbl1;
+print fcvr3(18);
+print $tbl2; ?>
+
+<p class="mt0 fwb fi c3 ls1">НАЛИВНЫЕ полы Антистатические</p>
 <div class="px5"></div>
 <?php print $tbl1;
-print fcvr3(63,'6.1.','','(с лентами)');
-print fcvr3(64,'6.2.','','(с лентами)');
-print fcvr3(65,'6.3.','','(без лент)');
-print fcvr3(66,'6.4.','','(без лент)');
+print fcvr3(63);
+print fcvr3(64);
+print fcvr3(65);
+print fcvr3(66);
 //print fcvr3(74,'4.5.','Антистатический Полиуретан-цементный пол','(без лент)');
 print $tbl2; ?>
 <div class="px0"></div>
 <p class="mt0 fwb fi c3 ls1">ОКРАСОЧНЫЕ покрытия Антистатические</p>
 <div class="px5"></div>
 <?php print $tbl1;
-print fcvr3(67,'6.11','','(с лентами)');
-print fcvr3(68,'6.12','','(с лентами)');
-print fcvr3(69,'6.13','','(без лент)');
-print fcvr3(70,'6.14','','(без лент)');
+print fcvr3(67);
+print fcvr3(68);
+print fcvr3(69);
+print fcvr3(70);
 print $tbl2; ?>
 </div>
 <div class="px0b"></div>
@@ -111,21 +119,21 @@ print $tbl2; ?>
 
 <div class="div_mc">
 <h3 class="divh3"><span style="font-size:12px">Расчёт&nbsp;</span> 1. ПРОПИТКИ для бетонных полов.</h3>
-<div class="px0"></div><p class="divh3span">Цена с НДС</p><div class="px0"></div>
+<div class="px0"></div><div class="px0"></div>
 <?php print $tblt23.ftbl23(11).ftbl23(13).ftbl23(17).ftbl23(87).ftbl23(23).ftbl23(25).$tblt23end; ?>
 </div>
 <div class="px0b"></div>
 
 <div class="div_mc">
 <h3 class="divh3"><span style="font-size:12px">Расчёт&nbsp;</span> 2. ОКРАСОЧНЫЕ полимерные покрытия.</h3>
-<div class="px0"></div><p class="divh3span d3span">Цена с НДС</p><div class="px0"></div>
+<div class="px0"></div><div class="px0"></div>
 <?php print $tblt23.ftbl23(31).ftbl23(33).ftbl23(35).ftbl23(85).fcvr3(89).ftbl23(83).ftbl23(81).$tblt23end; ?>
 </div>
 <div class="px0b"></div>
 
 <div class="div_mc">
 <h3 class="divh3"><span style="font-size:12px">Расчёт&nbsp;</span> 3. НАЛИВНЫЕ полимерные полы.</h3>
-<div class="px0"></div><p class="divh3span">Цена с НДС</p><div class="px0"></div>
+<div class="px0"></div><div class="px0"></div>
 <p class="fwb fi c3 ls1">Полиуретановые наливные полы</p>
 <div class="px5"></div>
 <?php print $tblt23.ftbl23(53).ftbl23(54).ftbl23(73).fcvr3(93).$tblt23end; /* .ftbl23(40) */ ?>
@@ -138,48 +146,51 @@ print $tbl2; ?>
 
 <div class="div_mc">
 <h3 class="divh3"><span style="font-size:12px">Расчёт&nbsp;</span> 4. Полиуретан - Цементные полы.</h3>
-<div class="px0"></div><p class="divh3span d3span">Цена с НДС</p><div class="px0"></div>
-<?php print $tblt23.ftbl23(97,'4.1.'); /* .ftbl23(93,'6.2.').ftbl23(95,'6.3.'); */
-print ftbl23(74,'4.5.','%Антистатический Полиуретан-цементный пол%').$tblt23end;
+<div class="px0"></div><div class="px0"></div>
+<?php print $tblt23.ftbl23(97).ftbl23(96).ftbl23(98); /* .ftbl23(93,'6.2.').ftbl23(95,'6.3.'); */
+print fcvr3(99).ftbl23(74).ftbl23(75).ftbl23(92).$tblt23end;
 ?>
 </div>
 <div class="px0b"></div>
 
 <div class="div_mc">
 <h3 class="divh3"><span style="font-size:12px">Расчёт&nbsp;</span> 5. НАПОЛНЕННЫЕ полимерные полы <span>(с кварцем)</span>.</h3>
-<div class="px0"></div><p class="divh3span d3span">Цена с НДС</p><div class="px0"></div>
-<?php print $tblt23.ftbl23(39,'5.1.').ftbl23(37,'5.2.').ftbl23(43,'5.3.').$tblt23end; ?>
+<div class="px0"></div><div class="px0"></div>
+<?php print $tblt23.ftbl23(39).ftbl23(37).ftbl23(43).$tblt23end; ?>
 </div>
 <div class="px0b"></div>
 
 <div class="div_mc">
 <h3 class="divh3"><span style="font-size:12px">Расчёт&nbsp;</span> 6. АНТИСТАТИЧЕСКИЕ полы</h3>
-<div class="px0"></div><p class="divh3span">Цена с НДС</p><div class="px0"></div>
+<div class="px0"></div>
+<div class="px0"></div><div class="px0"></div>
+<?php print $tblt23;
+print ftbl23(18);
+print $tblt23end; ?>
 <p class="fwb fi c3 ls1">НАЛИВНЫЕ полы Антистатические</p>
 <div class="px5"></div>
 <?php print $tblt23;
-print ftbl23(63,'6.1.');
-print ftbl23(64,'6.2.');
-print ftbl23(65,'6.3.');
-print ftbl23(66,'6.4.');
+print ftbl23(63);
+print ftbl23(64);
+print ftbl23(65);
+print ftbl23(66);
 //print ftbl23(74,'4.5.','Антистатический Полиуретан-цементный пол');
 print $tblt23end; ?>
 <div class="px10"></div>
 <p class="mt0 fwb fi c3 ls1">ОКРАСОЧНЫЕ покрытия Антистатические</p>
 <div class="px5"></div>
 <?php print $tblt23;
-print ftbl23(67,'6.11.');
-print ftbl23(68,'6.12.');
-print ftbl23(69,'6.13.');
-print ftbl23(70,'6.14.');
+print ftbl23(67);
+print ftbl23(68);
+print ftbl23(69);
+print ftbl23(70);
 print $tblt23end; ?>
 </div>
 <div class="px0b"></div>
 
 </div>
 <div class="px0"></div>
-<div class="dpleft23">Если Вы не уверены в выборе, есть вопросы по технологии:</div>
-{*text5_4*}
+<p class="fleft mt10 fs11">В стоимость работ ВКЛЮЧЕНА стоимость расходных материалов.<br>В стоимость НЕ включены транспортные и командировочные расходы.</p>
 <div class="px10b"></div>
 
 <div class="px5"></div>

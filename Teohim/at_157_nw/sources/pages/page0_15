@@ -70,7 +70,7 @@ if (1==2 && $pb_page!=1001 && $pb_page!=1002 && $pb_page!=1003 && $pb_page!=1004
     </ul>
     <!--noindex-->
 <!--div id="df_pred"><span>Ищем представителей в городах:</span><br>Астрахань, Курган, Пермь.<br>Звоните <a class="consult" href="tel:88001005010" style="color:#ffffff">8-800-100-50-10</a>, Дмитрий.</div-->
-    <l1 id="31" id="df_copyright">© ООО «ТэоХим» 2003-2025<br>ВСЕ ПРАВА ЗАЩИЩЕНЫ</l1>
+    <l1 id="31" id="df_copyright">© ООО «ТэоХим» 2003-2026<br>ВСЕ ПРАВА ЗАЩИЩЕНЫ</l1>
     <!--/noindex-->
     <div id="df_menu">
       <l0 id="201"<?php if ($pb_page==201) print $st_current; ?>>О компании</l0>

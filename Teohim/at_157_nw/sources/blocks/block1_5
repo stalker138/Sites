@@ -1,15 +1,51 @@
 <h1>Антистатические полы</h1>
 <div class="px5"></div>
 <p><strong>Антистатические полы</strong> – это покрытия, которые препятствуют накоплению на поверхности статического электрического заряда. Заряд или распределяется по поверхности, или отводится на систему заземления.</p>
-<p class="tal"><span class="fs13">«ТэоХим» производит Антистатические полимерные полы - эпоксидные,полиуретановые, полиуретан-цементные.</span><br>
+<p class="fs13" style="margin-top:15px;line-height: 18px;margin-bottom:5px;"><span class="fs13">«ТэоХим» производит Антистатические полимерные полы</span>: эпоксидные, полиуретановые, полиуретан-цементные.<br>
 Предлагает купить материалы или заказать устройство «под ключ».</p>
-<div class="px10b"></div>
 <div class="px0"></div>
-{*text5_7*}
+{*text5_12*}
 <div class="px0"></div>
 {*text5_9*}
 <div class="px0"></div>
-<h2 class="h2_orange">Материалы для антистатических полов</h2>
+
+<h2 class="h2_orange">ПОКРЫТИЯ антистатические - варианты</h2>
+<div class="px0b"></div>
+<div class="div_mc" style="height:25px">
+<h3 class="divh4"><span style="font-weight:bold"></span> НАЛИВНЫЕ полы Антистатические</h3><div class="px0"></div>
+<div class="px5"></div>
+<div class="div_itstr_tmp">
+<?php print $tblt1;
+print ftech18(63);
+print ftech18(64);
+print ftech18(65);
+print ftech18(66);
+print ftech18(174);
+print ftech18(175);
+print ftech18(176);
+print ftech18(77);
+print $tblt2; ?>
+<div class="px10"></div>
+</div></div>
+<div class="px0b"></div>
+<div class="div_mc" style="height:25px">
+<h3 class="divh4"><span style="font-weight:bold"></span> ОКРАСОЧНЫЕ покрытия Антистатические</h3><div class="px0"></div>
+<div class="px5"></div>
+<div class="div_itstr_tmp">
+<?php print $tblt1;
+print ftech18(67);
+print ftech18(68);
+print ftech18(69);
+print ftech18(70);
+print ftech18(76);
+print ftech18(79);
+print $tblt2; ?>
+<div class="px10"></div>
+</div></div>
+<div class="px0b"></div>
+<div class="px5"></div>
+
+<h2 class="h2_orange">МАТЕРИАЛЫ для антистатических полов</h2>
 <div class="px0"></div>
 
 <div class="divPriceD">
@@ -71,41 +107,6 @@
 </div>
 <div class="px0b"></div>
 </div>
-<div class="px5"></div>
-
-<h2 class="h2_orange">Варианты антистатических покрытий для пола</h2>
-<p class="fs11">По способу снятия статического заряда антистатические полы делятся на Токопроводящие и Электрорассеивающие.<br>
-По технологии нанесения – на Наливные и Окрасочные.</p>
-<div class="px10b"></div>
-<div class="div_mc" style="height:25px">
-<h3 class="divh4"><span style="font-weight:bold"></span> НАЛИВНЫЕ полы Антистатические</h3><div class="px0"></div>
-<div class="px5"></div>
-<div class="div_itstr_tmp">
-<?php print $tblt1;
-print ftech18(63);
-print ftech18(64);
-print ftech18(65);
-print ftech18(66);
-print ftech18(77);
-print $tblt2; ?>
-<div class="px10"></div>
-</div></div>
-<div class="px0b"></div>
-<div class="div_mc" style="height:25px">
-<h3 class="divh4"><span style="font-weight:bold"></span> ОКРАСОЧНЫЕ покрытия Антистатические</h3><div class="px0"></div>
-<div class="px5"></div>
-<div class="div_itstr_tmp">
-<?php print $tblt1;
-print ftech18(67);
-print ftech18(68);
-print ftech18(69);
-print ftech18(70);
-print ftech18(76);
-print ftech18(79);
-print $tblt2; ?>
-<div class="px10"></div>
-</div></div>
-<div class="px0b"></div>
 
 <div class="px10"></div>
 <h2 class="h2_orange">Нормативные требования к антистатическим полам</h2>

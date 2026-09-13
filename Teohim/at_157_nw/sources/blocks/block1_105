@@ -1,11 +1,10 @@
 <h1>Краска для бетона</h1>
-<div class="px5"></div>
+<div class="px3"></div>
 
 <p><strong>Эмали и Краски для бетона «Элакор»</strong>- современные материалы для устройства долговечных износостойких химически стойких покрытий бетона, бетонных полов</p>
-<div class="px5"></div>
-<p class="fs13"><span>ООО «ТэоХим»</span> - производство и поставка эмалей и красок для бетона, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
-Полы Элакор выполнены на площадях <span style="white-space:nowrap">свыше 34 000 000 м².</span> Более <a href="/pred/">100 Представительств</a> в России и СНГ.</p>
-{*text5_7*}
+<p class="fs13" style="margin-top:15px;line-height: 18px;margin-bottom:5px;"><span>ООО «ТэоХим»</span> - производство и поставка эмалей и красок для бетона, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
+{*text5_14*} Полы Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м².</span></p>
+{*text5_12*}
 <h2 class="h2_orange">Элакор - эмали и краски по бетону – обзор</h2>
 <div class="px5"></div>
 <div class="mt7"><div class="fleft fwb fs13 c3 fi ti10">Полиуретановые</div><div class="fright mt2 fs11">Цена р/кг</div></div>
@@ -14,7 +13,7 @@
 <div class="divPriceD">
 <div class="px0"></div>
 <table class="tmtr mtrls"><tbody><?php print $th7;
-print fmtr7(17).fmtr7(20).fmtr7(22).fmtr7(18).fmtr7(21).fmtr7(205);
+print fmtr7(17).fmtr7(20).fmtr7(22).fmtr7(24).fmtr7(18).fmtr7(21).fmtr7(205);
 ?></tbody></table>
 <div class="px0"></div>
 </div>
@@ -22,7 +21,7 @@ print fmtr7(17).fmtr7(20).fmtr7(22).fmtr7(18).fmtr7(21).fmtr7(205);
 <div class="divPriceM">
 <div class="px0"></div>
 <table class="tmtr"><tbody><?php print $thp8;
-print fmtr8(17).fmtr8(20).fmtr8(22).fmtr8(18).fmtr8(21).fmtr8(205);
+print fmtr8(17).fmtr8(20).fmtr8(22).fmtr8(24).fmtr8(18).fmtr8(21).fmtr8(205);
 ?></tbody></table>
 <div class="px0"></div>
 </div>
@@ -68,7 +67,6 @@ print fmtr8(49).fmtr8(51);
 <div class="px0"></div>
 </div>
 <div class="px7"></div>
-{*text5_10*}
 
 <h2 class="h2_orange">Применение эмалей и красок для бетона и бетонных полов </h2>
 <div class="px5"></div>

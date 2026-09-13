@@ -1,4 +1,5 @@
 <h1>Матовый лак полиуретановый</h1>
+<div class="px5"></div>
 <div itemscope itemtype="http://schema.org/Product">
 <?php 
 $ndx_mtr=145;

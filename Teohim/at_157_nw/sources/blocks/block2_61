@@ -1,11 +1,24 @@
 <h1>Полиуретановые наливные полы</h1>
-<div class="px5"></div>
-<p><strong>Полиуретановые наливные полы</strong> применяются для устройства наливных покрытий, высокопрочных кварцнаполненных покрытий и полиуретановых покрытий окрасочного типа, которые могут выполняться по бетонным, металлическим и деревянным основаниям.</p>
-<p class="tal"><span class="fs13 fwb" style="color:#004f92;">Наливные полиуретановые полы Элакор  </span> – производство и  поставка материалов, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>Покрытия Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м². </span>
-<!--noindex--><l0 id="210" class="fwb c0">Более 100 представительств</l0><!--/noindex--> в России и СНГ.</p>
-<div class="px10b"></div>
-{*text5_7*}
-<h2 class="h2_orange">Материалы для Полиуретановых наливных полов</h2>
+<div class="px3"></div>
+<p><strong>Полиуретановый наливной пол</strong> применяется для устройства покрытий: наливных, кварцнаполненных, окрасочных.
+Наносится по основаниям: бетонным, металлическим и деревянным и т.д.</p>
+<p class="fs13 tal" style="margin-top:15px;line-height: 18px;margin-bottom:5px;"><span class="fs13 fwb" style="color:#004f92;">Наливные полиуретановые полы Элакор  </span> – производство и  поставка материалов, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
+{*text5_14*} Покрытия Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м². </span>
+
+{*text5_12*}
+
+
+<h2 class="h2_orange">ПОКРЫТИЯ наливные полиуретановые - варианты</h2>
+<div class="px10"></div>
+
+<?php print '<div class="px0"></div>';
+print $tblt1;
+print ftech18(53).ftech18(54).ftech18(73).ftech18(48).ftech18(49);
+print $tblt2; ?>
+
+<div class="px10"></div>
+
+<h2 class="h2_orange">МАТЕРИАЛЫ для полиуретановых наливных полов</h2>
 <div class="px5"></div>
 <div class="divPriceD">
 <p class="fleft fwb">Все материалы - самовыравнивающиеся.</p>
@@ -20,20 +33,10 @@ print $th7.fmtr7(26).fmtr7(35).fmtr7(27).fmtr7(32).fmtr7(28).fmtr7(30).fmtr7(31)
 <p class="fright mt10 fs11">Цена за кг, с учётом НДС.</p>
 <div class="px3"></div>
 <table class="tmtr"><tbody><?php
-print $thp8.fmtr8(26).fmtr8(35).fmtr8(27).fmtr8(32).fmtr8(28).fmtr8(30).fmtr8(31).fmtr8(29);
+print $thp8.fmtr8(26).fmtr8(35).fmtr7(27).fmtr8(32).fmtr8(28).fmtr8(30).fmtr8(31).fmtr8(29);
 ?></tbody></table>
 <div class="px5"></div>
 </div>
-
-<div class="px10"></div>
-
-<h2 class="h2_orange">Варианты Полиуретановых наливных покрытий</h2>
-<div class="px10"></div>
-
-<?php print '<div class="px0"></div>';
-print $tblt1;
-print ftech18(53).ftech18(54).ftech18(73).ftech18(40).ftech18(48).ftech18(49);
-print $tblt2; ?>
 
 <?php if (1==2) {
 print fcvr5(53, 'Наливные полиуретановые полы с повышенной эластичностью и ударной прочностью.', '', '', ' '); 

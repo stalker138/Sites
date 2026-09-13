@@ -2,14 +2,11 @@
 {*text0_62*}
 <p class="fwb">Официальный представитель ООО «ТэоХим»: Ульяновск, Ульяновская область.</p>
 
-<!--h2 class="h14p">ООО «Полимер-Строй-Поволжье»</h2-->
-<h2 class="h14p">ООО «ТэоХим Ульяновск»</h2>
+<h2 class="h14p">ООО «ООО «Полимер Строй»»</h2>
 <table class="tbl2">
 <tbody>
-<!--tr><td style="width:200px"><span>Директор</span>:</td><td>Пономарёв Сергей Валентинович</td></tr>
-<tr><td style="width:200px"><span>Адрес</span>:</td><td>г.Ульяновск, ул. Октябрьская, д. 43А офис 45</td></tr>
-<tr><td><span>Отдел розничных продаж</span>:</td><td><div itemprop="telephone"><a href="tel:89176333363">8 (917) 633-33-63</a></div><div><a href="tel:88422936633">8 (8422) 93-66-33</a></div></td></tr-->
-<tr><td class="tdpred"><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+79687703341">+7 968 770-33-41</a></div></td></tr>
+<tr><td style="width:200px"><span>Руководитель</span>:</td><td>Пономарёв Сергей Валентинович</td></tr>
+<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+79176333363">+7 (917) 633-33-63</a></div></td></tr>
 <tr><td style="padding:3px 0"><span>WhatsApp/Telegram</span>:</td><td style="padding:0"><div itemprop="telephone"><a href="https://api.whatsapp.com/send?phone=79066576350">+7 906 657-63-50</a><?php f_print_wa('79066576350', 1, 1) ?></div></td></tr>
 <tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail"></span></div></td></tr>
 <tr><td><span>Сайт:</span></td><td id="dpIDsite"><a href="https://teohim-ulyanovsk.ru/" target="_blank">Полимерные наливные полы Ульяновск</a></tbody>

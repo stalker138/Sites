@@ -159,21 +159,21 @@
 *end*26
 
 *number*27
-*options*		0000000000
+*options*		1000000000
 *file*			block5_27
-*name*			empty27
+*name*			КОПИЯ РАСЧЕТЫ - 4.5. Рассеивающий пол наливной Полиуретан-цементный (без лент)
 *end*27
 
 *number*28
 *options*		0000000000
 *file*			block5_28
-*name*			empty28
+*name*			ДУБЛЬ НАЛИВНЫЕ ПОЛЫ - ЗАГЛАВНАЯ
 *end*28
 
 *number*29
-*options*		0000000000
+*options*		1000000000
 *file*			block5_29
-*name*			empty29
+*name*			Тестовое покрытие
 *end*29
 
 *number*30

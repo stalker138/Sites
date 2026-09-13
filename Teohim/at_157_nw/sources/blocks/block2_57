@@ -20,9 +20,9 @@ fmtr_links(array(1005,2062), array('%Все Антистатические по�
 <div class="matflex">
 <div class="matf1">
 <p class="mt0 fwb"><span class="fs13 c2">Элакор-ЭД</span><strong> <span class="fs13 c2">Антистатический наливной пол СК ПРОФ</span> цена</strong>.</p>
-<div class="px5"></div>
+<div class="px12"></div>
 <?php 
-fmtr_name($ndx_mtr, "Модификация: <span>АСТ-7</span> - для покрытий<br>согласно СП 29.13330.2011. п.5.11; п.5.12; п.5.14.", "", "", 1);
+fmtr_name($ndx_mtr, "Модификация:АСТ-7", "для покрытий<br>согласно СП 29.13330.2011. п.5.11; п.5.12; п.5.14.", 1);
 print fmtr2($ndx_mtr); 
 fmtr_ord_link($ndx_mtr, 'Купить антистатический наливной пол СК ПРОФ АСТ-7','</span><br>Модификация: <span>АСТ-7');
 ?>
@@ -40,13 +40,14 @@ fmtr_img($ndx_mtr, 'Эпоксидный Антистатический нали
 <div class="matflex">
 <div class="matf1">
 <?php 
-fmtr_name($ndx_mtr2, "Модификация: <span>АСТ-6</span> - для покрытий<br>согласно СП 29.13330.2011. п.5.13.", "", "", 1);
+fmtr_name($ndx_mtr2, "Модификация: АСТ-6", "для покрытий<br>согласно СП 29.13330.2011. п.5.13.", 1);
 print fmtr2($ndx_mtr2); 
 fmtr_ord_link($ndx_mtr2,'Купить антистатический наливной пол СК ПРОФ АСТ-6','</span><br>Модификация: <span>АСТ-6');
 fmtr_guar($ndx_mtr2);
 ?>
 </div>
-<div class="matf2" style="align-items:flex-end;">
+<div class="matf2" style="align-items:flex-end; flex-wrap:wrap; justify-content: flex-end; align-content: flex-end;">
+<?php fmtr_descr1($ndx_mtr); ?>
 {*text5_4*}
 </div>
 </div>
@@ -65,8 +66,6 @@ fmtr_repair($ndx_mtr2);
 <div id="mtr_body_1" class="active">
 
 <div class="fright tac" style="width:244px; margin:0 0 5px 20px;">
-<?php fmtr_descr1($ndx_mtr); ?>
-<div class=px10></div>
 Одностенная углеродная нанотрубка<br>
 <img class="pb_ismall" style="margin:5px 10px 0px 0px;;width:240px;height:143px;" src="/img/obj/antistaticheskij-nalivnoj-pol_2_s.jpg" onclick="$.zoomImg(this,'/img/obj/antistaticheskij-nalivnoj-pol_2.jpg',200,25,537,321,'Углеродная одностенная нанотрубка',-25);" title="Углеродная одностенная нанотрубка" alt="Углеродная одностенная нанотрубка">
 </div>

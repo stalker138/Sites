@@ -2,145 +2,21 @@
 <div class="px10"></div>
 <p class="fleft mt0">Цены с учетом НДС.</p>
 {*text5_9*}
+{*text0_23*}
 <div class="px10"></div>
-<div class="div_mc">
+<div class="div_mo">
 <h3 class="divh3">1. Приборы Контроля<span class="divh3span"></span></h3><div class="px0"></div>
 <div style="box-shadow:4px 4px 7px 0 #999999;">
-<table class="tsrt">
-    <tbody>
-        <tr class="bg3">
-        <th>Наименование</th>
-        <th style="width:70px;">Цена</th>
-        <th style="width:70px;">ед.изм.</th>
-        <th style="width:70px;">шт.в кор</th>
-        <th style="width:70px;">фото</th>
-        </tr>
-        <tr>
-            <td class="tdl"><div>1.1.</div>Пирометр Bosch PTD 1</td>
-            <td class="prtd1">11850р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/7_1.jpg',200,20,600,685,'Пирометр Bosch PTD 1',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>1.2.</div>Влагомер древесины и бетона Hydro-Tec CONDTROL</td>
-            <td class="prtd1">8790р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/7_2.jpg',200,20,500,638,'Влагомер древесины и бетона Hydro-Tec CONDTROL',-10)"></td>
-        </tr>
-    </tbody>
-</table>
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[1]); $i++) { print finstr($catinstr[1][$i],1); } ?></tbody></table>
 </div>
 <div class="px0"></div>
 </div>
 <div class="px0b"></div>
 
-<div class="div_mc">
+<div class="div_mo">
 <h3 class="divh3">2. Для полимерных наливных полов <span class="divh3span">(ракли, вкладыши, игольчатый валик, иглоступы…)</span></h3><div class="px0"></div>
 <div style="box-shadow:4px 4px 7px 0 #999999;">
-<table class="tsrt">
-    <tbody>
-        <tr class="bg3">
-        <th>Наименование</th>
-        <th style="width:70px;">Цена</th>
-        <th style="width:70px;">ед.изм.</th>
-        <th style="width:70px;">шт.в кор</th>
-        <th style="width:70px;">фото</th>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.1.</div>Подошва Stayer для наливных полов (иглоступы), 25мм</td>
-            <td class="prtd1">1050р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/5_9.jpg',200,20,1200,800,'Подошва Stayer для наливных полов (иглоступы), 25мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.2.</div>Валик Игольчатый Stayer, 75х250мм</td>
-            <td class="prtd1">685р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/stayer75_250.jpeg',200,20,1200,900,'Валик Игольчатый Stayer, 75х250мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.3.</div>Валик Игольчатый Stayer, 75х400мм</td>
-            <td class="prtd1">1380р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/stayer75_400.jpg',200,20,990,727,'Валик Игольчатый Stayer, 75х400мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.4.</div>Валик  Игольчатый Hardy, 250мм игла 11мм (для полиуретан-цементных покрытий)</td>
-            <td class="prtd1">1520р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/hardy.jpg',200,20,990,727,'Валик Игольчатый Hardy, 250мм игла 11мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.5.</div>Гладилка прямая Dekor 450мм (для полиуретан-цементных покрытий)</td>
-            <td class="prtd1">475р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/dekor450.jpg',200,20,482,222,'Гладилка прямая Dekor 450мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.6.</div>Ракля 56 см + держатель</td>
-            <td class="prtd1">4600р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/2_3.jpg',200,20,1024,507,'Ракля 56 см + держатель',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.7.</div>Ракля 56 см + регулировка зазора</td>
-            <td class="prtd1">5650р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.8.</div>Вкладыш R1 для ракли 56см (двухсторонний)</td>
-            <td class="prtd1">465р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/2_45.jpg',200,20,800,800,'Вкладыш R1 для ракли 56 см',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.9.</div>Вкладыш R2 для ракли 56см (двухсторонний)</td>
-            <td class="prtd1">465р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/2_45.jpg',200,20,800,800,'Вкладыш R2 для ракли 56 см',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.10.</div>Вкладыш S1 для ракли 28см (двухсторонний)</td>
-            <td class="prtd1">220р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/2_67.jpg',200,20,531,450,'Вкладыш S1 28 см',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.11.</div>Вкладыш S2 для ракли 28см (двухсторонний)</td>
-            <td class="prtd1">220р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/2_67.jpg',200,20,531,450,'Вкладыш S2 28 см',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.12.</div>Медная лента (для антистатических наливных полов), 20м.п./рулон</td>
-            <td class="prtd1">65р.</td>
-            <td>м.п.</td>
-            <td>30</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/2_8.jpg',200,20,800,533,'Медная лента (для антистатических наливных полов), 20м.п./рулон',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>2.13.</div>Разбавитель-К, п/п кан. 10л, 30л</td>
-            <td class="prtd1">210р.</td>
-            <td>л</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[2]); $i++) { print finstr($catinstr[2][$i],1); } ?></tbody></table>
 </div>
 <div class="px0"></div>
 </div>
@@ -149,101 +25,7 @@
 <div class="div_mc">
 <h3 class="divh3">3. Песок, Кварц-мука, Кварц окатанный, Декор <span class="divh3span">(чипсы, блёстки)</span></h3><div class="px0"></div>
 <div style="box-shadow:4px 4px 7px 0 #999999;">
-<table class="tsrt">
-    <tbody>
-        <tr class="bg3">
-        <th>Наименование</th>
-        <th style="width:70px;">Цена</th>
-        <th style="width:70px;">ед.изм.</th>
-        <th style="width:70px;">шт.в кор</th>
-        <th style="width:70px;">фото</th>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.1.</div>Песок доломитовый 0,2-0,5 / 24 кг/меш</td>
-            <td class="prtd1">17р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.2.</div>Мука кварцевая Sb 30 / 25кг/меш</td>
-            <td class="prtd1">16р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.3.</div>Кварц окатанный 0,1-0,2 / 50кг/меш</td>
-            <td class="prtd1">15р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.4.</div>Кварц окатанный 0,1-0,4 / 50кг/меш</td>
-            <td class="prtd1">15р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.5.</div>Кварц окатанный 0,3-0,6 / 25кг/меш</td>
-            <td class="prtd1">16р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.6.</div>Кварц окатанный 0,3-0,8 / 25кг/меш</td>
-            <td class="prtd1">16р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.7.</div>Кварц окатанный 0,6-0,8 / 25кг/меш</td>
-            <td class="prtd1">16р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.8.</div>Кварц окатанный 0,8-1,2 / 25кг/меш</td>
-            <td class="prtd1">17р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.9.</div>Кварц окатанный 1,0-2,0 / 25кг/меш</td>
-            <td class="prtd1">17р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.10.</div>Кварц окатанный 2,0-4,0 / 25кг/меш</td>
-            <td class="prtd1">18р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.11.</div>Чипсы (черно-белый микс)</td>
-            <td class="prtd1">935р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>3.12.</div>Глиттер (блестки) Голографические 0.3мм</td>
-            <td class="prtd1">6500р.</td>
-            <td>кг</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/3_2.jpg',200,20,750,750,'Глиттер (блестки) Голографические 0.3мм',-10)"></td>
-        </tr>
-    </tbody>
-</table>
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[3]); $i++) { print finstr($catinstr[3][$i],1); } ?></tbody></table>
 </div>
 <div class="px0"></div>
 </div>
@@ -252,122 +34,7 @@
 <div class="div_mc">
 <h3 class="divh3">4. Кисти, Валики, Щетки, Ручки, Скотч<span class="divh3span"></span></h3><div class="px0"></div>
 <div style="box-shadow:4px 4px 7px 0 #999999;">
-<table class="tsrt">
-    <tbody>
-        <tr class="bg3">
-        <th>Наименование</th>
-        <th style="width:70px;">Цена</th>
-        <th style="width:70px;">ед.изм.</th>
-        <th style="width:70px;">шт.в кор</th>
-        <th style="width:70px;">фото</th>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.1.</div>Кисть, натур. щетина, 20мм</td>
-            <td class="prtd1">20р.</td>
-            <td>шт</td>
-            <td>12</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_1.jpg',200,20,600,600,'Кисть, натур. щетина, 20мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.2.</div>Кисть, натур. щетина, 50мм</td>
-            <td class="prtd1">40р.</td>
-            <td>шт</td>
-            <td>12</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_2.jpg',200,20,600,600,'Кисть, натур. щетина, 50мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.3.</div>Кисть, натур. щетина, 100мм</td>
-            <td class="prtd1">75р.</td>
-            <td>шт</td>
-            <td>12</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_3.jpg',200,20,600,600,'Кисть, натур. щетина, 100мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.4.</div>Валик "Нейлон", ворс 12мм, 48х240мм (для грунтов)</td>
-            <td class="prtd1">185р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_4.jpg',200,20,1024,1024,'Валик &quot;Нейлон&quot; Профи, ворс12мм, 48х240мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.5.</div>Валик "Нейлон" Профи ворс 12мм, 48х250мм (для грунтов, эмалей и лаков)</td>
-            <td class="prtd1">185р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.6.</div>Валик "Велюр" ворс 4мм, 48х250мм</td>
-            <td class="prtd1">150р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.7.</div>Ручка для валика, бюг.8мм</td>
-            <td class="prtd1">91р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_6.jpg',200,20,1200,900,'Ручка для валика, бюг.8мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.8.</div>Валик &quot;Нейлон&quot; МИНИ, ворс10мм, 15х110мм</td>
-            <td class="prtd1">55р.</td>
-            <td>шт</td>
-            <td>20</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_7.jpg',200,20,1000,468,'Валик &quot;Нейлон&quot; МИНИ, ворс10мм, 15х110мм',-10)"></td>
-        </tr>
-<!--        <tr>
-            <td class="tdl"><div>4.0.</div>Валик &quot;Нейлон&quot; МИНИ, ворс10мм, 15х70мм</td>
-            <td class="prtd1">41р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_8.jpg',200,20,1024,768,'Валик &quot;Нейлон&quot; МИНИ, ворс10мм, 15х70мм',-10)"></td>
-        </tr>-->
-        <tr>
-            <td class="tdl"><div>4.9.</div>Валик &quot;Велюр&quot; МИНИ, ворс 4мм, 15х110мм</td>
-            <td class="prtd1">41р.</td>
-            <td>шт</td>
-            <td>20</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_9.jpg',200,20,800,600,'Валик &quot;Велюр&quot; МИНИ, ворс 4мм, 15х110мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.10.</div>Ручка для МИНИ валика, бюг.6мм</td>
-            <td class="prtd1">39р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_10.jpeg',200,20,1200,900,'Ручка для МИНИ валика, бюг.6мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.11.</div>Черенок деревянный 1,3м</td>
-            <td class="prtd1">130р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_11.jpeg',200,20,1200,900,'Черенок деревянный 1,3м',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.12.</div>Скотч малярный 48х50</td>
-            <td class="prtd1">265р.</td>
-            <td>шт</td>
-            <td>20</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_12.jpg',200,20,1000,796,'Скотч малярный 48х50',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.13.</div>Скотч упаковочный, прозрачный 48мм х50м</td>
-            <td class="prtd1">115р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_13.jpeg',200,20,1000,796,'Скотч упаковочный, прозрачный 48мм х50м',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>4.14.</div>Щетка для пола, искуств.щетина</td>
-            <td class="prtd1">110р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/4_14.jpg',200,20,1280,800,'Щетка для пола, искуств.щетина',-10)"></td>
-        </tr>
-    </tbody>
-</table>
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[4]); $i++) { print finstr($catinstr[4][$i],1); } ?></tbody></table>
 </div>
 <div class="px0"></div>
 </div>
@@ -376,80 +43,7 @@
 <div class="div_mc">
 <h3 class="divh3">5. Шпатели, Миксеры, Пистолет д/герметика<span class="divh3span"></span></h3><div class="px0"></div>
 <div style="box-shadow:4px 4px 7px 0 #999999;">
-<table class="tsrt">
-    <tbody>
-        <tr class="bg3">
-        <th>Наименование</th>
-        <th style="width:70px;">Цена</th>
-        <th style="width:70px;">ед.изм.</th>
-        <th style="width:70px;">шт.в кор</th>
-        <th style="width:70px;">фото</th>
-        </tr>
-        <tr>
-            <td class="tdl"><div>5.1.</div>Шпатель нерж. с пластм. ручкой, 60мм</td>
-            <td class="prtd1">25р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel60.jpg',200,20,1000,716,'Шпатель с пластмас.ручкой, 60мм',-10)"></td>
-        </tr>
-<!--        <tr>
-            <td class="tdl"><div>5.0.</div>Шпатель нерж. с пластм. ручкой, 120мм</td>
-            <td class="prtd1">85р.</td>
-            <td>шт</td>
-            <td>12</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel120.jpg',200,20,1500,1428,'Шпатель с пластмас.ручкой, 120мм',-10)"></td>
-        </tr>-->
-        <tr>
-            <td class="tdl"><div>5.2.</div>Шпатель нерж. с пластм. ручкой, 150мм</td>
-            <td class="prtd1">40р.</td>
-            <td>шт</td>
-            <td>12</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel150.jpg',200,20,1500,1074,'Шпатель малярный, 150мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>5.3.</div>Шпатель нерж. с пластм. ручкой, 200мм</td>
-            <td class="prtd1">52р.</td>
-            <td>шт</td>
-            <td>12</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel200.jpg',200,20,1500,1428,'Шпатель фасадный нерж. с пластм. ручкой, 200мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>5.4.</div>Шпатель нерж. с пластм. ручкой, 450мм</td>
-            <td class="prtd1">110р.</td>
-            <td>шт</td>
-            <td>12</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel450.jpg',200,20,1500,715,'Шпатель фасадный нерж. с пластм. ручкой, 450мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>5.5.</div>Шпатель нерж. с пластм. ручкой, 600мм</td>
-            <td class="prtd1">135р.</td>
-            <td>шт</td>
-            <td>12</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel600.jpg',200,20,1500,721,'Шпатель фасадный нерж. с пластм. ручкой, 600мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>5.6.</div>Миксер Stayer "Профи" оцинк, для ПГС 120X600мм</td>
-            <td class="prtd1">485р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/5_7.jpeg',200,20,1200,900,'Миксер Stayer &quot;Профи&quot; оцинк, для ПГС 120X600мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>5.7.</div>Миксер Stayer "PROFI" оцинк, для красок, 100х600мм</td>
-            <td class="prtd1">375р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/5_8.jpeg',200,20,1200,900,'Миксер Stayer &quot;PROFI&quot; оцинк, для красок, 100х600мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>5.8.</div>Пистолет закрытого типа для герметика PU-40</td>
-            <td class="prtd1">1400р.</td>
-            <td>шт</td>
-            <td>25</td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[5]); $i++) { print finstr($catinstr[5][$i],1); } ?></tbody></table>
 </div>
 <div class="px0"></div>
 </div>
@@ -458,66 +52,7 @@
 <div class="div_mc">
 <h3 class="divh3">6. Шлифовальный Инструмент<span class="divh3span"></span></h3><div class="px0"></div>
 <div style="box-shadow:4px 4px 7px 0 #999999;">
-<table class="tsrt">
-    <tbody>
-        <tr class="bg3">
-        <th>Наименование</th>
-        <th style="width:70px;">Цена</th>
-        <th style="width:70px;">ед.изм.</th>
-        <th style="width:70px;">шт.в кор</th>
-        <th style="width:70px;">фото</th>
-        </tr>
-        <tr>
-            <td class="tdl"><div>6.1.</div>Сегмент Корунд, зерно 40,60,80,100,120 (пр-во г.Луга)</td>
-            <td class="prtd1">245р.</td>
-            <td>шт</td>
-            <td>18</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/6_1.jpg',200,20,800,800,'Сегмент Корунд, зерно 40,60,80,100,120 (пр-во г.Луга)',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>6.2.</div>Алмазный сегмент треугольный 1000/800 Профи Ниборит</td>
-            <td class="prtd1">3707р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/6_3.jpeg',200,20,1522,800,'Алмазный сегмент треугольный 1000/800 Профи Ниборит',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>6.3.</div>Алмазный сегмент треугольный 800/500 Профи Ниборит</td>
-            <td class="prtd1">3083р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/6_4.jpeg',200,20,1513,800,'Алмазный сегмент треугольный 800/500 Профи Ниборит',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>6.4.</div>Алмазный сегмент Франкфурт 1000/800 Ф6 Ниборит</td>
-            <td class="prtd1">3329р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/6_5.jpeg',200,20,800,800,'Алмазный сегмент Франкфурт 1000/800 Ф6 Ниборит',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>6.5.</div>Алмазный сегмент Франкфурт 800/500 Ф6 Ниборит</td>
-            <td class="prtd1">2882р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/6_6.jpeg',200,20,800,800,'Алмазный сегмент Франкфурт 800/500 Ф6 Ниборит',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>6.6.</div>Чашка Алмаз "Дельфин", 125мм</td>
-            <td class="prtd1">2287р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/6_8.jpeg',200,20,800,800,'Чашка Алмаз &quot;Дельфин&quot;, 125мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>6.7.</div>Чашка Алмаз "Дельфин", 180мм</td>
-            <td class="prtd1">3890р.</td>
-            <td>шт</td>
-            <td>5</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/6_9.jpeg',200,20,800,800,'Чашка Алмаз &quot;Дельфин&quot;, 180мм',-10)"></td>
-        </tr>
-    </tbody>
-</table>
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[6]); $i++) { print finstr($catinstr[6][$i],1); } ?></tbody></table>
 </div>
 <div class="px0"></div>
 </div>
@@ -526,52 +61,7 @@
 <div class="div_mc">
 <h3 class="divh3">7. Защита <span class="divh3span">(респираторы, перчатки)</span></h3><div class="px0"></div>
 <div style="box-shadow:4px 4px 7px 0 #999999;">
-<table class="tsrt">
-    <tbody>
-        <tr class="bg3">
-        <th>Наименование</th>
-        <th style="width:70px;">Цена</th>
-        <th style="width:70px;">ед.изм.</th>
-        <th style="width:70px;">шт.в кор</th>
-        <th style="width:70px;">фото</th>
-        </tr>
-        <tr>
-            <td class="tdl"><div>7.1.</div>Респиратор РПГ-67 противогазовый (с патронами &quot;А&quot;)</td>
-            <td class="prtd1">1275р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/8_1.jpeg',200,20,1166,1200,'Респиратор РПГ-67 (с патронами &quot;А&quot;)',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>7.2.</div>Патрон "А" для РПГ-67</td>
-            <td class="prtd1">375р.</td>
-            <td>шт</td>
-            <td>2</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/8_2.jpeg',200,20,1200,795,'Патрон &quot;А&quot; для РПГ-67',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>7.3.</div>Респиратор ЗМ 8112 противопыльный</td>
-            <td class="prtd1">105р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/8_3.jpg',200,20,1000,1000,'Респиратор ЗМ 8122 противопыльный',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>7.4.</div>Перчатки х/б с обливной ладонью</td>
-            <td class="prtd1">21р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/8_4.jpg',200,20,720,720,'Перчатки х/б с обливной ладонью',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>7.5.</div>Перчатки одноразовые п/э 100шт</td>
-            <td class="prtd1">70р.</td>
-            <td>уп</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/8_5.jpeg',200,20,1440,1080,'Перчатки одноразовые п/э 100шт',-10)"></td>
-        </tr>
-    </tbody>
-</table>
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[7]); $i++) { print finstr($catinstr[7][$i],1); } ?></tbody></table>
 </div>
 <div class="px0"></div>
 </div>
@@ -580,68 +70,13 @@
 <div class="div_mc">
 <h3 class="divh3">8. Образцы полимерных наливных полов.<span class="divh3span"></span></h3><div class="px0"></div>
 <div style="box-shadow:4px 4px 7px 0 #999999;">
-<table class="tsrt">
-    <tbody>
-        <tr class="bg3">
-        <th>Наименование</th>
-        <th style="width:70px;">Цена</th>
-        <th style="width:70px;">ед.изм.</th>
-        <th style="width:70px;">шт.в кор</th>
-        <th style="width:70px;">фото</th>
-        </tr>
-        <tr>
-            <td class="tdl"><div>8.1.</div>Образец – 4 вида покрытий Элакор на бетоне</td>
-            <td class="prtd1">400р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/1_3.jpeg',200,20,1238,649,'Образец – 4 вида покрытий Элакор на бетоне',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>8.2.</div>Образец гладкого покрытия Элакор на ЦСП</td>
-            <td class="prtd1">50р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/1_4.jpeg',200,20,1280,522,'Образец гладкого покрытия Элакор на ЦСП',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>8.3.</div>Образец – полимерный наливной пол Элакор на ЦСП</td>
-            <td class="prtd1">50р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/1_5.jpeg',200,20,1280,507,'Образец – полимерный наливной пол Элакор на ЦСП',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl"><div>8.4.</div>Образец кварцнаполненного покрытия Элакор на ЦСП</td>
-            <td class="prtd1">50р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/1_6.jpeg',200,20,1280,655,'Образец кварцнаполненного покрытия Элакор на ЦСП',-10)"></td>
-        </tr>
-    </tbody>
-</table>
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[8]); $i++) { print finstr($catinstr[8][$i],1); } ?></tbody></table>
 </div>
 </div>
 <div class="px10b"></div>
 <div class="px10"></div>
 <div style="box-shadow:4px 4px 7px 0 #999999;">
-<table class="tsrt">
-    <tbody>
-    <tr class="bg3">
-        <th>Наименование</th>
-        <th style="width:70px;">Цена</th>
-        <th style="width:70px;">ед.изм.</th>
-        <th style="width:70px;">шт.в кор</th>
-        <th style="width:70px;">фото</th>
-    </tr>
-    <tr>
-        <td class="tdl">Таблица Цветов "RAL" К-7</td>
-        <td class="prtd1">3600р.</td>
-        <td>шт</td>
-        <td></td>
-        <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/1_2.jpg',200,20,750,750,'Таблица Цветов &quot;RAL&quot; К-7',-10)"></td>
-    </tr>
-    </tbody>
-</table>
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[9]); $i++) { print finstr($catinstr[9][$i],1); } ?></tbody></table>
 </div>
 
 <div class="px10"></div>

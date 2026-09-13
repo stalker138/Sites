@@ -2865,9 +2865,9 @@
 *end*477
 
 *number*478
-*options*		0000000000
+*options*		1000000000
 *file*			block3_478
-*name*			empty
+*name*			Отзыв ООО "Энергострой"
 *end*478
 
 *number*479

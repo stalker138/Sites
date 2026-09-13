@@ -7,9 +7,6 @@ h2 { margin-top:5px; }
 }
 .main_dbox:hover { box-shadow:0px 0px 10px 0 #999999; transition:box-shadow 0.3s ease-out 0s; }
 .main_dboxb { border:solid 1px #004f92; }
-
-
-
 /* .main_dbox_mobile, .main_dbox_mobileb { margin:0 11px 11px 0; } */
 .h14m { margin:0; padding:1px 0; font-size:13px; text-align:center; }
 .h14b { margin:0; } .dbox { float:left; width:367px; background:#fafafa; } .dbox { line-height:16px; }
@@ -31,6 +28,7 @@ h3 { text-align:left; background:none; }
 <?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
 {*tpl10*}</head><body>
 <?php /* Большие экраны (от 1000px) */ ?>
+{*text0_1*}
 {*tpl16*}
 {*block5_14*}
 {*tpl17*}

@@ -20,9 +20,10 @@ fmtr_links(array(1005,2062), array('%Все Антистатические по�
 <div class="matflex">
 <div class="matf1">
 <p class="mt0 fwb"><span class="c2 fs13">Элакор-ЭД</span> <strong><span class="c2 fs13">Антистатический наливной пол</span> цена</strong>.</p>
-<div class="px5"></div>
+<div class="px12"></div>
+
 <?php 
-fmtr_name($ndx_mtr, "Модификация: <span>АСТ-7</span> - для покрытий<br>согласно СП 29.13330.2011. п.5.11; п.5.12; п.5.14.", "", "", 1);
+fmtr_name($ndx_mtr, "Модификация: АСТ-7", "для покрытий<br>согласно СП 29.13330.2011. п.5.11; п.5.12; п.5.14.", 1);
 print fmtr2($ndx_mtr); 
 fmtr_ord_link($ndx_mtr, 'Купить антистатический наливной пол АСТ-7','</span><br>Модификация: <span>АСТ-7');
 ?>
@@ -40,13 +41,14 @@ fmtr_img($ndx_mtr, 'Эпоксидный Антистатический нали
 <div class="matflex">
 <div class="matf1">
 <?php 
-fmtr_name($ndx_mtr2, "Модификация: <span>АСТ-6</span> - для покрытий<br>согласно СП 29.13330.2011. п.5.13.", "", "", 1);
+fmtr_name($ndx_mtr2, "Модификация: АСТ-6", "для покрытий<br>согласно СП 29.13330.2011. п.5.13.", 1);
 print fmtr2($ndx_mtr2); 
 fmtr_ord_link($ndx_mtr2,'Купить антистатический наливной пол АСТ-6','</span><br>Модификация: <span>АСТ-6');
 fmtr_guar($ndx_mtr2);
 ?>
 </div>
-<div class="matf2" style="align-items:flex-end;">
+<div class="matf2" style="align-items:flex-end; flex-wrap:wrap; justify-content: flex-end; align-content: flex-end;">
+<?php fmtr_descr1($ndx_mtr); ?>
 {*text5_4*}
 </div>
 </div>
@@ -65,8 +67,6 @@ fmtr_repair($ndx_mtr2);
 <div id="mtr_body_1" class="active">
 
 <div class="fright tac" style="width:244px; margin:0 0 5px 20px;">
-<?php fmtr_descr1($ndx_mtr); ?>
-<div class=px10></div>
 Одностенная углеродная нанотрубка<br>
 <img class="pb_ismall" style="margin:5px 10px 0px 0px;;width:240px;height:143px;" src="/img/obj/antistaticheskij-nalivnoj-pol_2_s.jpg" onclick="$.zoomImg(this,'/img/obj/antistaticheskij-nalivnoj-pol_2.jpg',200,25,537,321,'Углеродная одностенная нанотрубка',-25);" title="Углеродная одностенная нанотрубка" alt="Углеродная одностенная нанотрубка">
 </div>
@@ -235,7 +235,7 @@ fmtr_repair($ndx_mtr2);
  <td class="tdl">Условная светостойкость покрытия, начало меления (ГОСТ 21903, метод 2), ч, не менее</td>
  <td>100</td>
 </tr><tr>
- <td class="tdl">Электрическое сопротивление между системой заземления и поверхностью покрытия,<br>
+ <td class="tdl">Электрическое сопротивление между системой заземления и поверхностью покрытия, ГОСТ EIC 61340-4-1-2017,<br>
 при толщине антистатического наливного слоя не более 1,5мм, Ом, не более:
 <div class="fright">- для модификации АСТ-7<br>- для модификации АСТ-6</div></td>
  <td>&nbsp;<br>10<sup>7</sup><br>10<sup>6</sup></td>

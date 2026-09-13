@@ -7,14 +7,20 @@ if (1==2 && $pb_page!=1001 && $pb_page!=1002 && $pb_page!=1003 && $pb_page!=1004
     <div id="dh_main">
       <div id="dh_teohim"></div>
       <div id="dh_slogan">Российский производитель <span class="upper fwn">промышленных полов</span><div id="dh_year"><div class="px3"></div>с 1996г</div></div>
-      <div id="dh_tel" style="letter-spacing:1px;"><div class="callback mr5" style="float:right;margin-top:-1px; font-family:tahoma;font-weight:normal;font-size:15px;">обратный звонок</div>
-<?php if ($cookie_utm=='UTM') { ?>
-Материалы: <a class="consult" href="tel:+74952212252" style="font-family:arial;font-size:14px;color:#ffffff;letter-spacing:0;">+7 495 221 2252</a> &nbsp;Работы: <a class="consult" href="tel:+74955184378" style="font-family:arial;font-size:14px;color:#ffffff;letter-spacing:0;">+7 495 518 4378</a> 
+<?php if ($pb_page==5014) { ?>
+      <div id="dh_tel" style="letter-spacing:1px; font-family:arial;font-size:13px;top:83px;"><div class="callback mr5" style="float:right;margin-top:-1px; font-weight:normal;font-family:arial;font-size:14px;letter-spacing: 2px;">обратный звонок</div>
+Москва: <a class="consult fwb" href="tel:+74952212252"  style="font-family:arial;font-size:13px;color:#ffffff;letter-spacing:0;">+7 495 221 22 52</a> &nbsp;&nbsp; &nbsp; Россия: <a class="consult fwb" href="tel:88001005010" style="font-family:arial;font-size:13px;color:#ffffff;letter-spacing:0;">8 800 100 50 10</a> 
+
 <?php } else { ?>
-Москва: <a class="consult" href="tel:+74952212252" style="font-family:arial;font-size:14px;color:#ffffff;letter-spacing:0;">+7 495 221 22 52</a> &nbsp; &nbsp; Россия: <a class="consult" href="tel:88001005010" style="font-family:arial;font-size:14px;color:#ffffff;letter-spacing:0;">8 800 100 50 10</a> 
+      <div id="dh_tel" style="letter-spacing:1px; font-family:arial;font-size:13px;top:83px;"><div class="callback mr5" style="float:right;margin-top:-1px; font-weight:normal;font-family:arial;font-size:14px;letter-spacing: 2px;">обратный звонок</div>
+<?php if ($cookie_utm=='UTM') { ?>
+Материалы: <a class="consult fwb" href="tel:+74952212252" style="font-family:arial;font-size:13px;color:#ffffff;letter-spacing:0;">+7 495 221 2252</a> &nbsp;Работы: <a class="consult fwb" href="tel:+74955184378" style="font-family:arial;font-size:13px;color:#ffffff;letter-spacing:0;">+7 495 518 4378</a> 
+<?php } else { ?>
+Москва: <a class="consult fwb" href="tel:+74952212252" style="font-family:arial;font-size:13px;color:#ffffff;letter-spacing:0;">+7 495 221 22 52</a> &nbsp;&nbsp; &nbsp; Россия: <a class="consult fwb" href="tel:88001005010" style="font-family:arial;font-size:13px;color:#ffffff;letter-spacing:0;">8 800 100 50 10</a> 
+<?php } ?>
 <?php } ?>
 </div>
-      <l0 id="210" id="dh_pred" style="width:360px;top:37px;letter-spacing:1px;font-size:14px;"><span style="letter-spacing:1px;">Представительства</span> в России, за рубежом</l0>
+      <l0 id="210" id="dh_pred" style="width:370px;top:37px;letter-spacing:1px;font-size:13px;font-family:arial;background:#0000ff; border-color:#ffffff;"><span style="letter-spacing:2px;font-size:16px;font-family:tahoma;">Представительства</span> в России, за рубежом</l0>
     </div>
     <div id="dh_menu">
       <l0 id="201"<?php if ($pb_page==201) print $st_current; ?>>о компании</l0><l1 id="16"<?php if ($pb_page==1016 || ($pb_page>1300 && $pb_page<1351)) print $st_current; ?>>ФОТО</l1><l1 id="20"<?php if ($pb_page==1020 || ($pb_page>1350 && $pb_page<1401)) print $st_current; ?>>видео</l1><l1 id="15"<?php if ($pb_page==1015 || ($pb_page>3350 && $pb_page<3501)) print $st_current; ?>>ОТЗЫВЫ</l1><l1 id="14"<?php if ($pb_page==1014 || ($pb_page>3150 && $pb_page<3351)) print $st_current; ?>>сертификаты</l1><l1 id="18"<?php if ($pb_page==1018 || ($pb_page>2500 && $pb_page<2700)) print $st_current; ?>>ИНСТРУКЦИИ</l1><l1 id="19"<?php if ($pb_page==1019 || ($pb_page>4500 && $pb_page<5000)) print $st_current; ?>>статьи</l1><l0 id="217"<?php if ($pb_page==217) print $st_current; ?>>проектировщикам</l0><l0 id="202" id="dh_menu_last"<?php if ($pb_page>201 && $pb_page<207) print $st_current; ?>>КОНТАКТЫ</l0>
@@ -24,7 +30,7 @@ if (1==2 && $pb_page!=1001 && $pb_page!=1002 && $pb_page!=1003 && $pb_page!=1004
   <div id="dl_menu"><aside>
     <div class="px5"></div>
     <?php if($pb_page<231 || $pb_page>249) { ?><l0 id="85" id="aobjlist" <?php print 'onclick="this.innerHTML='."'<span style=\'font-size:14px;line-height:35px\'>Карта открывается...</span>'".'"'; ?> title="Объекты на карте с возможностью выбора региона, типа объекта и типа покрытия">Выполненные объекты<br>на карте</l0><?php } ?>
-    <div class="px5"></div>
+    <div class="px20"></div>
     <?php include_once $pb_root.'inc/'.(($pb_page==1291 || $pb_page==1292)?'filters':'dlmenu'.(($pb_page>230 && $pb_page<250) ? '_p' : '')).'.php'; ?>
     <div class="px0"></div>
     <?php if ($pb_page!=250) { ?>
@@ -89,7 +95,7 @@ if (1==2 && $pb_page!=1001 && $pb_page!=1002 && $pb_page!=1003 && $pb_page!=1004
     </ul>
     <!--noindex-->
     <!--div id="df_pred"><span>Ищем представителей в городах:</span><br>Астрахань, Курган, Пермь.<br>Звоните <a class="consult" href="tel:88001005010" style="color:#ffffff">8-800-100-50-10</a>, Дмитрий.</div-->
-    <l1 id="31" id="df_copyright">© ООО «ТэоХим» 2003-2025<br>ВСЕ ПРАВА ЗАЩИЩЕНЫ</l1>
+    <l1 id="31" id="df_copyright">© ООО «ТэоХим» 2003-2026<br>ВСЕ ПРАВА ЗАЩИЩЕНЫ</l1>
     <!--/noindex-->
     <div id="df_menu">
       <l0 id="201"<?php if ($pb_page==201) print $st_current; ?>>О компании</l0>

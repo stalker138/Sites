@@ -6,5 +6,33 @@ $smb[1] = array("option"=>"250", "mb"=>"20");
 $smb[2] = array("option"=>"300", "mb"=>"22.5", "sel"=>1);
 $smb[3] = array("option"=>"350", "mb"=>"25");
 }
+
+$arr_fl = array(array("option"=>"НЕТ", "value"=>"0"), array("option"=>"матовый", "value"=>"1"), array("option"=>"полуматовый", "value"=>"2"), array("option"=>"глянцевый", "value"=>"3"));
+
+$arr_prm_in = array();
+
+for ($i=0; $i<200; $i++) {
+   $arr_prm_in[$i]=array(0);
+}
+$arr_prm_in[11] = array(array("id"=>"i_mb"));
+$arr_prm_in[13] = array(array("id"=>"i_mb"));
+$arr_prm_in[17] = array(array("id"=>"i_mb"));
+
+$arr_prm_in[23] = array(array("id"=>"i_mb"));
+$arr_prm_in[25] = array(array("id"=>"i_mb"));
+
+$arr_prm_in[31] = array(array("id"=>"i_mb"));
+$arr_prm_in[33] = array(array("id"=>"i_mb"));
+$arr_prm_in[35] = array(array("id"=>"i_mb"));
+
+$arr_prm_in[83] = array(array("id"=>"i_mb"));
+$arr_prm_in[85] = array(array("id"=>"i_mb"));
+$arr_prm_in[87] = array(array("id"=>"i_mb"));
+$arr_prm_in[89] = array(array("id"=>"i_mb"), 
+                        array("id"=>"i_fl", "id_td"=>"i_fl_td", "nm_td"=>"Финишный лак", "onchng"=>"f_i_t('i_fl'); $.id('id_sub').focus();", 
+                               "select"=>array($arr_fl[1], $arr_fl[2], $arr_fl[3])
+                              )
+                        );
+
 ?>
 <?php include $pb_root."inc/cin.php"; // page0_26 - Для РАСЧЁТОВ - общие блоки и переменные (HTML и входные PHP-параметры) ?>

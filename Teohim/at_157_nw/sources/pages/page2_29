@@ -6,7 +6,12 @@ h2 { padding:0; font-size:13px; color:#004f92; background:none; }
 @media screen and (max-width:999px) { .dmtrr { float:none; margin:10px 0 0 0; width:350px; max-width:350px; } }
 {*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
 <?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
-{*tpl10*}</head><body>
+{*tpl10*}
+<?php 
+$ndx_mtr=39;
+fmtr_og($ndx_mtr); 
+?>
+</head><body>
 <?php /* Большие экраны (от 1000px) */ ?>
 {*text0_1*}
 {*tpl16*}

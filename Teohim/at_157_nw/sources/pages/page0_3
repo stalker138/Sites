@@ -124,7 +124,6 @@ if ($mode==1) { // Пожелания, замечания, сообщение о
       $cm->Password   = 'MsblIg7H';
       $cm->setFrom('message@teohim.ru','ТэоХим'); // Адрес самой почты и имя отправителя
       $cm->addAddress($postMail);
-      $cm->addAddress('prog1@bk.ru');
       $cm->addAddress('7@teohim.ru');
       $cm->addAddress('control@teohim.ru');
       $cm->addAddress('nn@teohim.ru');
@@ -141,7 +140,7 @@ if ($mode==2) { // Запрос на обратный звонок
     if ($idText1=='empty' || ($idText2=='empty' && $idText3=='empty')) { header("HTTP/1.1 204 No Content"); exit; }
     if ($idText2=='empty') $idText2=''; if ($idText4=='empty' || $idText4=='0') $idText4='';
     $htm.='Запрос на обратный звонок с teohim.ru ('.$o_acb2[$o_cb2].')</title></head><body><div>';
-    $postMail = 'iv@teohim.ru'; if ($o_cb2==1) $postMail = '9568596@mail.ru'; if ($o_cb2==2) $postMail = 'gruzberg@teohim.ru';
+    $postMail = 'iv@teohim.ru'; if ($o_cb2==1) $postMail = 'px@teohim.ru'; if ($o_cb2==2) $postMail = 'gruzberg@teohim.ru'; if ($o_cb2==3) $postMail = 'px@teohim.ru';
     $theme=$o_acb2[$o_cb2].' - Обратный звонок '.date("Y-m-d").' '.date("H:i");
     $out0=$theme.' :'.'<br><br>';
     $out.='Контактное лицо : '.$idText1.'<br>';
@@ -180,7 +179,6 @@ if ($mode==2) { // Запрос на обратный звонок
       $cm->Password   = 'MsblIg7H';
       $cm->setFrom('message@teohim.ru','ТэоХим'); // Адрес самой почты и имя отправителя
       $cm->addAddress($postMail);
-      $cm->addAddress('prog1@bk.ru');
       $cm->addAddress('7@teohim.ru');
       $cm->addAddress('control@teohim.ru');
       $cm->addAddress('nn@teohim.ru');
@@ -210,7 +208,7 @@ if ($mode==3) { // Новый ЗАКАЗ материалов - произвол
         $cm->Port       = 465;
         $cm->CharSet    = 'utf-8';
         $cm->Username   = 'zakaz@teohim.ru';
-        $cm->Password   = 'z7oTmGP5';
+        $cm->Password   = 'JY7993038';
         $cm->setFrom('zakaz@teohim.ru','ТэоХим'); // Адрес самой почты и имя отправителя
         $cm->addAddress($idText3);
         $cm->isHTML(true);
@@ -227,13 +225,11 @@ if ($mode==3) { // Новый ЗАКАЗ материалов - произвол
       $cm->Port       = 465;
       $cm->CharSet    = 'utf-8';
       $cm->Username   = 'zakaz@teohim.ru';
-      $cm->Password   = 'z7oTmGP5';
+      $cm->Password   = 'JY7993038';
       $cm->setFrom('zakaz@teohim.ru','ТэоХим'); // Адрес самой почты и имя отправителя
-      $cm->addAddress('prog1@bk.ru');
       $cm->addAddress('zakaz@teohim.ru');
       $cm->addAddress('7@teohim.ru');
-      $cm->addAddress('ag@teohim.ru');
-      $cm->addAddress('9568596@mail.ru');
+      $cm->addAddress('iv@teohim.ru');
       $cm->addAddress('nn@teohim.ru');
       $cm->addAddress('control@teohim.ru');
       $cm->isHTML(true);
@@ -261,7 +257,7 @@ if ($mode==4 || $mode==7|| $mode==8) { // Новый ЗАКАЗ на выпол�
         $cm->Port       = 465;
         $cm->CharSet    = 'utf-8';
         $cm->Username   = 'zakaz@teohim.ru';
-        $cm->Password   = 'z7oTmGP5';
+        $cm->Password   = 'JY7993038';
         $cm->setFrom('zakaz@teohim.ru','ТэоХим'); // Адрес самой почты и имя отправителя
         $cm->addAddress($idText3);
         $cm->isHTML(true);
@@ -278,7 +274,7 @@ if ($mode==4 || $mode==7|| $mode==8) { // Новый ЗАКАЗ на выпол�
       $cm->Port       = 465;
       $cm->CharSet    = 'utf-8';
       $cm->Username   = 'zakaz@teohim.ru';
-      $cm->Password   = 'z7oTmGP5';
+      $cm->Password   = 'JY7993038';
       $cm->setFrom('zakaz@teohim.ru','ТэоХим'); // Адрес самой почты и имя отправителя
       if ($mode==4) {
       $cm->addAddress('zakaz@teohim.ru');
@@ -289,7 +285,6 @@ if ($mode==4 || $mode==7|| $mode==8) { // Новый ЗАКАЗ на выпол�
       $cm->addAddress('px@teohim.ru');
       }
       $cm->addAddress('control@teohim.ru');
-      $cm->addAddress('prog1@bk.ru');
       $cm->addAddress('7@teohim.ru');
       $cm->addAddress('nn@teohim.ru');
       $cm->isHTML(true);
@@ -299,7 +294,7 @@ if ($mode==4 || $mode==7|| $mode==8) { // Новый ЗАКАЗ на выпол�
 }
 if ($mode==5 || $mode==6) {
     if ($mode==5) { // Новый ЗАКАЗ расчитанных материалов - расчитанное покрытие.
-        $postMail = 'ag@teohim.ru'; $postMail2 = '9568596@mail.ru';
+        $postMail = 'px@teohim.ru'; $postMail2 = '';
         $theme='КАЛЬКУЛЯТОР заказ МАТЕРИАЛЫ '.$theme.' Заказ ('.$number.')';
     } else { // Новый ЗАКАЗ выполнения работ «под ключ» - расчитанное покрытие со стоимостью работ.
         $postMail = 'gruzberg@teohim.ru'; $postMail2 = '';
@@ -331,7 +326,7 @@ $h=@fopen($_SERVER["DOCUMENT_ROOT"].'/_open/mlist.htm','a+'); if ($h) { @fwrite(
         $cm->Port       = 465;
         $cm->CharSet    = 'utf-8';
         $cm->Username   = 'zakaz@teohim.ru';
-        $cm->Password   = 'z7oTmGP5';
+        $cm->Password   = 'JY7993038';
         $cm->setFrom('zakaz@teohim.ru','ТэоХим'); // Адрес самой почты и имя отправителя
         $cm->addAddress($idText3);
         $cm->isHTML(true);
@@ -348,12 +343,11 @@ $h=@fopen($_SERVER["DOCUMENT_ROOT"].'/_open/mlist.htm','a+'); if ($h) { @fwrite(
       $cm->Port       = 465;
       $cm->CharSet    = 'utf-8';
       $cm->Username   = 'zakaz@teohim.ru';
-      $cm->Password   = 'z7oTmGP5';
+      $cm->Password   = 'JY7993038';
       $cm->setFrom('zakaz@teohim.ru','ТэоХим'); // Адрес самой почты и имя отправителя
       $cm->addAddress('zakaz@teohim.ru');
       $cm->addAddress($postMail);
       if ($postMail2>'') $cm->addAddress($postMail2);
-      $cm->addAddress('prog1@bk.ru');
       $cm->addAddress('7@teohim.ru');
       $cm->addAddress('control@teohim.ru');
       $cm->addAddress('nn@teohim.ru');

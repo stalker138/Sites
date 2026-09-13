@@ -22,9 +22,9 @@
 <?php if($pb_page==5006 || $pb_page==5015) { ?><script src="/cssjs/vcorp_js_0003.js"></script><?php } else { ?><script src="/cssjs/vcorp_js_0002.js"></script><?php } ?>
 <?php if($pb_page==223 || $pb_page==224 || $pb_page==225) { ?><script src="/cssjs/js_019z.js"></script><?php } else {
 if($pb_page==222) print '<script src="/cssjs/js_03_5__.js"></script>';
-if($pb_page==226) print '<script src="/cssjs/js_04_20.js"></script>';
-if($pb_page==5001) print '<script src="/cssjs/js_04_20.js"></script>';
-if ($pb_page!=222 && $pb_page!=226 && $pb_page!=5001) print '<script src="/cssjs/js_04_05.js"></script>';
+if($pb_page==226) print '<script src="/cssjs/js_04_25.js"></script>';
+if($pb_page==5001) print '<script src="/cssjs/js_04_25.js"></script>';
+if ($pb_page!=222 && $pb_page!=226 && $pb_page!=5001) print '<script src="/cssjs/js_04_12.js"></script>';
 }
 ?>
 <script>{*text0_50*}

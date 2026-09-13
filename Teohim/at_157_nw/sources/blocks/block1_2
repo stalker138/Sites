@@ -1,64 +1,101 @@
 <h1>Полимерные наливные полы</h1>
 <div class="px3"></div>
-<p class="fs13"><strong>Наливные полимерные полы</strong> <span>Элакор</span> - производство и поставка материалов, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
-Полы Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м².</span> <!--noindex--><l0 id="210" class="fwb c0">Более 100 представительств «ТэоХим»</l0> в России и СНГ.<!--/noindex--></p>
-{*text5_7*}
-<h2 class="h2_orange">Материалы для Полимерных наливных полов</h2>
+<p class="fs13" style="line-height: 18px;margin-bottom:5px;"><strong>Наливные полимерные полы</strong> <span>Элакор</span> - производство и поставка материалов, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
+{*text5_14*} Полы Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м².</span></p>
+{*text5_12*}
+
+<h2 class="h2_orange">Варианты ПОКРЫТИЙ</h2>
+<div class="px0b"></div>
+<div class="div_mc" style="height:25px">
+<h3 class="divh4"><span style="font-weight:bold"></span> Полиуретановые</h3><div class="px0"></div>
 <div class="px5"></div>
+<div class="div_itstr_tmp">
+<?php
+print $tblt1;
+print ftech18(53); 
+print ftech18(54); 
+print ftech18(73); 
+print ftech18(48); 
+print ftech18(49); 
+print $tblt2;
+?>
+<div class="px10"></div>
+</div></div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<h3 class="divh4"><span style="font-weight:bold"></span> Эпоксидные</h3><div class="px0"></div>
+<div class="px5"></div>
+<div class="div_itstr_tmp">
+<?php
+print $tblt1;
+print ftech18(51);
+print ftech18(52); 
+print ftech18(55); 
+print ftech18(57); 
+print ftech18(59);
+print $tblt2;
+?>
+<div class="px10"></div>
+</div></div>
+<div class="px0b"></div>
+<div class="px5"></div>
+
+<h2 class="h2_orange">МАТЕРИАЛЫ для Полимерных наливных полов</h2>
 <div class="divPriceD">
-<p class="fleft fwb c2 fs14">Полиуретановые</p>
-<p class="fright mt10 fs11">Цена за кг, с учётом НДС.</p>
-<div class="px3"></div>
+<div class="px0b"></div>
+<div class="div_mc" style="height:25px">
+<h3 class="divh4"><span style="font-weight:bold"></span> Полиуретановые</h3><div class="px0"></div>
+<p class="divh4span fright tar">Цена с НДС, р/кг</p>
+<div class="px0"></div>
 <table class="tmtr mtrls"><tbody><?php
 print $th7.fmtr7(26).fmtr7(35).fmtr7(27).fmtr7(32).fmtr7(28).fmtr7(30).fmtr7(31).fmtr7(29);
 ?></tbody></table>
-<div class="px5"></div>
-<p class="fleft fwb c2 fs14">Эпоксидные</p>
-<p class="fright mt10 fs11">Цена за кг, с учётом НДС.</p>
-<div class="px3"></div>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+<div class="div_mc" style="height:25px">
+<h3 class="divh4"><span style="font-weight:bold"></span> Эпоксидные</h3><div class="px0"></div>
+<p class="divh4span fright tar">Цена с НДС, р/кг</p>
+<div class="px0"></div>
 <table class="tmtr mtrls"><tbody><?php
 print $th7.fmtr7(58).fmtr7(57).fmtr7(60).fmtr7(61).fmtr7(62).fmtr7(63).fmtr7(65);
 ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
 <div class="px5"></div>
-<p><l1 id="69" class="fwb c2 fs14">Полиуретан цементные наливные полы</l1></p>
+<p class="before" style="padding-left:40px;position:relative;"><l1 id="69" class="fwb c2 fs14">Полиуретан цементные наливные полы</l1> <span class="fwn fs11 c0">(смотрите отдельную страницу)</span></p>
 <div class="px5"></div>
 </div>
 <div class="divPriceM">
-<p class="fleft fwb c2 fs14">Полиуретановые</p>
-<p class="fright mt10 fs11">Цена за кг, с учётом НДС.</p>
-<div class="px3"></div>
+<div class="px0b"></div>
+<div class="div_mc" style="height:25px">
+<h3 class="divh4"><span style="font-weight:bold"></span> Полиуретановые</h3><div class="px0"></div>
+<p class="divh4span fright tar">Цена с НДС, р/кг</p>
+<div class="px0"></div>
 <table class="tmtr"><tbody><?php
 print $thp8.fmtr8(26).fmtr8(35).fmtr8(27).fmtr8(32).fmtr8(28).fmtr8(30).fmtr8(31).fmtr8(29);
 ?></tbody></table>
-<div class="px5"></div>
-<p class="fleft fwb c2 fs14">Эпоксидные</p>
-<p class="fright mt10 fs11">Цена за кг, с учётом НДС.</p>
-<div class="px3"></div>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+<div class="div_mc" style="height:25px">
+<h3 class="divh4"><span style="font-weight:bold"></span> Эпоксидные</h3><div class="px0"></div>
+<p class="divh4span fright tar">Цена с НДС, р/кг</p>
+<div class="px0"></div>
 <table class="tmtr"><tbody><?php
 print $thp8.fmtr8(58).fmtr8(57).fmtr8(60).fmtr8(61).fmtr8(62).fmtr8(63).fmtr8(65);
 ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
 <div class="px5"></div>
-<p><l1 id="69" class="fwb c2 fs14">Полиуретан цементные наливные полы</l1></p>
+<p class="before" style="padding-left:40px;position:relative;"><l1 id="69" class="fwb c2 fs14">Полиуретан цементные наливные полы</l1> <span class="fwn fs11 c0">(смотрите отдельную страницу)</span></p>
 <div class="px5"></div>
 </div>
-
-<h2 class="h2_orange">Варианты Полимерных наливных покрытий</h2>
-<div class="px15"></div>
-
-<?php
-print $tblt1;
-print ftech18(51, ' ', '', '', 'Наиболее часто применяемые полимерные наливные полы.');
-print ftech18(53, ' ', '', '', 'Наливные полиуретановые полы с повышенной эластичностью и ударной прочностью.'); 
-print ftech18(71, ' ', '%Эпоксидный наливной промышленный пол%', '', 'Эпоксидные наливные покрытия с кварцевым песком.'); 
-print ftech18(73, ' ', '%Полиуретановый наливной промышленный пол%', '', 'Полиуретановые наливные покрытия с кварцем, повышенная эластичность.'); 
-print ftech18(55, ' ', '', '', 'Эпоксидное наливное покрытие максимально близкое к чистому белому цвету.'); 
-print ftech18(57, ' ', '', '', 'Наливные полы с дополнительными декоративными элементами на поверхности.'); 
-print ftech18(59, ' ', '', '', 'Прозрачные наливные полимерные полы для нанесения поверх рисунков, фотографий, 3D полов.');
-print ftech18(61, ' ', '', '', 'Декоративные полы с запечатанными элементами (песок, листья, монеты и т.д.');
-print $tblt2;
-?>
 <div class="px10b"></div>
-<div class="px5"></div>
+
 <p><strong>Полимерный наливной пол</strong> – это полимерное покрытие, выполняемое методом «налива».<br>
 Основаниями для покрытия могут служить: бетон, металл, дерево и другие строительные материалы.</p>
 <p class="mt5">Мы предлагаем материалы и инструкции для самостоятельного нанесения или устройство «под ключ».</p>

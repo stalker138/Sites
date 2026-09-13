@@ -24,14 +24,6 @@
 <l2 id="182">Наливные полы технология</l2><br>
 <l4 id="654">Наливные полы в квартире</l4></p>
 <div class="pxmb"></div>
-<p class="fwb cf00">Макрос 2</p>
-{*text5_2*}
-<div class="px10"></div>
-<l2 id="9">Полиуретановый герметик для швов</l2><br>
-<l2 id="61">Полиуретановые наливные полы</l2><br>
-<l1 id="276">Полы для сельского хозяйства</l1><br>
-<l2 id="48">Пищевой грунт</l2><br>
-<div class="pxmb"></div>
 <p class="fwb cf00">Макрос 3</p>
 {*text5_3*}
 <div class="px0"></div>
@@ -71,23 +63,15 @@
 <div class="px0"></div>
 <p>--- Используется на 200 страницах (все материалы + другие)</p>
 <div class="pxmb"></div>
-<p class="fwb cf00">Макрос 7 <span class="fwn c0">noindex</span></p>
-{*text5_7*}
-<div class="px10"></div>
-<p><l1 id="21">Промышленные полы Элакор</l1><br>
-<l1 id="2">Полимерные наливные полы</l1><br>
-<l1 id="5">Антистатические полы</l1><br>
-<l2 id="61">Полиуретановые наливные полы</l2><br>
-<l2 id="63">Эпоксидные наливные полы</l2></p>
-<div class="pxmb"></div>
-<p class="fwb cf00">Макрос 10 <span class="fwn c0">noindex</span></p>
-{*text5_10*}
-<div class="px0"></div>
-<div class="pxmb"></div>
 <p class="fwb cf00">Макрос 12 <span class="fwn c0">noindex</span></p>
 {*text5_12*}
 <div class="px10"></div>
 <p><l1 id="3">Полимерные полы</l1></p>
+<div class="pxmb"></div>
+<p class="fwb cf00">Макрос 14 <span class="fwn c0">noindex</span></p>
+{*text5_14*}
+<div class="px10"></div>
+
 <div class="pxmb"></div>
 <p class="fwb cf00">Макрос 8</p>
 {*text5_8*}

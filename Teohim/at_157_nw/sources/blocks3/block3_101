@@ -5,7 +5,7 @@
 <h2 class="h14p">ООО «ТэоХим-Рязань»</h2>
 <table class="tbl2">
 <tbody>
-<tr><td class="tdpred"><span>Руководитель:</span></td><td>ИП Сычев Михаил Евгеньевич</td></tr>
+<tr><td class="tdpred"><span>Руководитель:</span></td><td>ИП Сычёва Евгения Михайловна</td></tr>
 <tr><td style="padding:3px 0"><span>Телефон:</span>:</td><td style="padding:0"><div><a href="tel:+74912999755">+7 4912 999-755</a></div><div><a href="tel:+79610092146">+7 961 009-21-46</a><?php f_print_wa('79610092146', 1, 1) ?></div></td></tr>
 <tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail"></span></div>&nbsp;<div><span id="dpIDmail2"></span></div></td></tr>
 <tr><td><span>Сайт:</span></td><td id="dpIDsite"><a href="https://teohim-rzn.ru/" target="_blank">Полимерные наливные полы Рязань</a></td></tr>

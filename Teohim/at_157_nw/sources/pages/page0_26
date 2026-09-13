@@ -1,3 +1,35 @@
+<?php
+$pg_pi_set = 0;
+if (isset($pg_pi)) {
+ $pg_pi_set = $pg_pi;
+}
+$prm_in = 0;
+if (isset($arr_prm_in)) {
+$arr_prm_in = $arr_prm_in[$pg_pi_set ];
+$prm_in = 0;
+}
+
+function make_tr_mb() {
+//вывод выбора марки бетона
+ global $smb;
+ $s_out='
+ <tr><td class="tdleft">Марка бетона / пескобетона</td>
+ <td id="i_mb_td" class="pad0" style="background:#49ff79">
+ <select id="i_mb" class="i_t" onchange="f_calc(\'i_mb\');">';
+ foreach ($smb as $row)
+ if ($row) {
+    $s_out .= '<option value="'.$row["option"].'"';
+    if ($row["sel"]) $s_out .= ' selected';
+    $s_out .= '>&nbsp;&nbsp;М'.$row["option"].' (B'.$row["mb"].')</option>';
+ }
+ $s_out .='</select>
+ </td></tr>';
+
+ print($s_out);
+}
+
+?>
+
 <div id="id_calcHead">
 <table class="table1">
 <tbody>
@@ -6,6 +38,15 @@
   <td class="tdleft">Площадь, м.кв.</td>
   <td id="i_so_td" class="pad0" style="background:#49ff79"><input class="i_t" style="width:118px;text-align:right;padding-right:2px;" type="text" id="i_so" value="1000" maxlength="5" onchange="f_calc('i_so')"></td>
 </tr>
+
+<?php if ($prm_in) { 
+
+foreach ($arr_prm_in as $prm_in) {
+  $prm = $prm_in["id"];
+  if ($prm=="i_mb") make_tr_mb();
+}
+
+ } else { ?>
 
 <?php if ($smb) { ?>
 <tr><td class="tdleft">Марка бетона / пескобетона</td>
@@ -23,7 +64,23 @@ print $opt;
 ?>
 </select>
 </td></tr>
-<?php } if ($pb_page==2226 || $pb_page==2243 || $pb_page==2244) { ?>
+<?php } if ($fs && $snt && !$sp && !$np && ($pg_pi_set==74 || $pg_pi_set==75 || $pg_pi_set==96 || $pg_pi_set==97 || $pg_pi_set==98 || $pg_pi_set==99 || $pb_page==2240 || $pb_page==5027)) {  // есть основной слой ?>
+<tr>
+<td class="tdleft">Толщина ПЦ пола, мм.</td>
+<td id="i_sen_td" class="pad0" style="background:#49ff79">
+<select id="i_np" class="i_t" onchange="f_i_t('i_np'); $.id('id_sub').focus();">
+<?php
+for ($t=0, $opt=''; $t<count($snt); $t++) {
+    $opt .= '<option value="'.$t.'"';
+    if (!$t) $opt .= ' selected';
+    $opt .= '>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'.$snt[$t].'</option>';
+}
+print $opt;
+?>
+</select>
+</td>
+</tr>
+<?php } if ($pg_pi_set==63 || $pg_pi_set==67 || $pg_pi_set==68 || $pg_pi_set==75) { ?>
 <tr><td class="tdleft">СП 29.13330.2011, пункт</td>
 <td id="i_ant_td" class="pad0" style="background:#49ff79">
 <select id="i_ant" class="i_t" onchange="f_calc('i_ant');">
@@ -35,8 +92,8 @@ print $opt;
 <tr><td class="tdleft">Количество слоёв Эмали</td>
 <td id="i_se_td" class="pad0" style="background:#49ff79">
   <select id="i_se" class="i_t" onchange="f_i_t('i_se'); $.id('id_sub').focus();">
-    <option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
-    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
+    <option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
+    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</option>
   </select>
 </td></tr>
 <?php } if ($sp) {    // ЭД с кварцем, ПУ с песком,  безыскровое ?>
@@ -60,7 +117,11 @@ print $opt;
 </tr>
 <?php } if ($np && $snt && !$sp) {  // есть напонитель, нет поверхности ?>
 <tr>
+<?php if ($pg_pi_set==99) { ?>
+<td class="tdleft">Толщина покрытия, мм.</td>
+<?php } else {   ?>
 <td class="tdleft">Толщина Наливного пола, мм.</td>
+<?php } ?>
 <td id="i_sen_td" class="pad0" style="background:#49ff79">
 <select id="i_np" class="i_t" onchange="f_i_t('i_np'); $.id('id_sub').focus();">
 <?php
@@ -74,30 +135,26 @@ print $opt;
 </select>
 </td>
 </tr>
-<?php } if ($fs && $snt && !$sp && !$np && ($pb_page==2239 || $pb_page==2240)) {  // есть основной слой ?>
-<tr>
-<td class="tdleft">Толщина ПЦ пола, мм.</td>
-<td id="i_sen_td" class="pad0" style="background:#49ff79">
-<select id="i_np" class="i_t" onchange="f_i_t('i_np'); $.id('id_sub').focus();">
-<?php
-for ($t=0, $opt=''; $t<count($snt); $t++) {
-    $opt .= '<option value="'.$t.'"';
-    if (!$t) $opt .= ' selected';
-    $opt .= '>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'.$snt[$t].'</option>';
-}
-print $opt;
-?>
-</select>
+<?php if ($pg_pi_set==99) { ?>
+<tr><td class="tdleft">Поверхность покрытия</td>
+<td id="i_shp_td" class="pad0" style="background:#49ff79">
+  <select id="i_se" class="i_t" onchange="f_i_t('i_se'); $.id('id_sub').focus();">
+    <option value="0" selected>&nbsp;Шероховатая</option>
+    <option value="1">&nbsp;Фактурная</option>
+  </select>
 </td>
 </tr>
-<?php } if ($fl==-1 || $pb_page==2234) { ?>
+<?php } ?>
+<?php } if ($fl==-1) { ?>
 <tr><td class="tdleft">Финишный лак</td>
 <td id="i_fl_td" class="pad0" style="background:#49ff79">
   <select id="i_fl" class="i_t" onchange="f_i_t('i_fl'); $.id('id_sub').focus();">
-    <?php if ($pb_page!=2234) { ?><option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;НЕТ</option><?php } ?>
+    <?php if ($pg_pi_set!=83) { ?><option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;НЕТ</option><?php } ?>
     <option value="1">&nbsp;матовый</option>
     <option value="2">&nbsp;полуматовый</option>
+<?php if ($pg_pi_set!=51 && $pg_pi_set!=52) { ?>
     <option value="3">&nbsp;глянцевый</option>
+<?php } ?>
   </select>
 </td>
 </tr>
@@ -110,11 +167,35 @@ print $opt;
   </select>
 </td>
 </tr>
+<?php } if ($bi) { ?>
+<tr><td class="tdleft">Безыскровое?</td>
+<td id="i_sh_td" class="pad0" style="background:#49ff79">
+  <select id="i_bi" class="i_t" onchange="f_i_t('i_bi'); $.id('id_sub').focus();">
+    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ДА</option>
+    <option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;НЕТ</option>
+  </select>
+</td>
+</tr>
 <?php } ?>
+
+<?php } ?>
+
 </tbody>
 </table>
 </div>
 <div id="dcalc"><div class="px7"></div>Введите данные<br>в зелёные ячейки.<div class="px8"></div><input type="submit" id="id_sub" value="Пересчитать" onclick="f_i_t('refresh')"/></div>
+
+<?php if (isset($pg_pi)) { ?>
+<div class="fright fwb">
+
+<?php
+if ($pg_pi_set > 0) {
+ print(ftech3($pg_pi_set)); 
+}
+?>
+</div>
+<?php } ?>
+
 
 <?php if (1==2) { ?>
 <div id="dchng"><p>&nbsp;&nbsp;Выбрать другое покрытие:</p><div class="px5"></div>

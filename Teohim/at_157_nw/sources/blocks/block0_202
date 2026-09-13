@@ -24,12 +24,12 @@
 <?php if ($cookie_utm=='UTM') { ?>
 <div class="dflex_contain">
 <div class="fwb dflex_item_left" style="width:135px;">Купить МАТЕРИАЛЫ:</div>
-<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74952212252">+7 (495) 221-2252</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone=79851442162"><img src="/img/css/whatsapp.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/teohim_msk"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
+<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74952212252">+7 (495) 221-2252</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://max.ru/u/f9LHodD0cOL0rk1LG9QzXrCz4bPZtDBTgSrBpaG2OhPtSShdMAMlIzoAJgI"><img src="/img/css/max-logo.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/teohim_msk"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
 </div>
 
 <div class="dflex_contain" style="border:none;">
 <div class="fwb dflex_item_left" style="width:135px;">Заказать РАБОТЫ:</div>
-<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74955184378">+7 (495) 518-4378</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone=79262940395"><img src="/img/css/whatsapp.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/+79262940395"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
+<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74955184378">+7 (495) 518-4378</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://max.ru/u/f9LHodD0cOIWT5ik7R_A3I994chhLcucvYC4n116l6z6Dk0vhFZNRprQqdM"><img src="/img/css/max-logo.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/+79262940395"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
 </div>
 </div>
 
@@ -37,17 +37,17 @@
 <?php } else { ?>
 <div class="dflex_contain">
 <div class="fwb dflex_item_left">Купить МАТЕРИАЛЫ:</div>
-<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74959568596">+7 (495) 956-8596</a>, <a class="consult" href="tel:+74952212252">+7 (495) 221-2252</a><!-- span class="fwn fs11">(многоканальный)</span-->; <a class="consult" href="tel:+79851442162">+7-985-144-2162</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone=79851442162"><img src="/img/css/whatsapp.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/teohim_msk"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
+<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74959568596">+7 (495) 956-8596</a>, <a class="consult" href="tel:+74952212252">+7 (495) 221-2252</a><!-- span class="fwn fs11">(многоканальный)</span-->; <a class="consult" href="tel:+79851442162">+7-985-144-2162</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://max.ru/u/f9LHodD0cOL0rk1LG9QzXrCz4bPZtDBTgSrBpaG2OhPtSShdMAMlIzoAJgI"><img src="/img/css/max-logo.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/teohim_msk"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
 </div>
 
 <div class="dflex_contain">
 <div class="fwb dflex_item_left">Заказать РАБОТЫ:</div>
-<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74955184378">+7 (495) 518-4378</a>, <a class="consult" href="tel:+79262940395">+7-926-294-0395</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone=79262940395"><img src="/img/css/whatsapp.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/+79262940395"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
+<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74955184378">+7 (495) 518-4378</a>, <a class="consult" href="tel:+79262940395">+7-926-294-0395</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://max.ru/u/f9LHodD0cOIWT5ik7R_A3I994chhLcucvYC4n116l6z6Dk0vhFZNRprQqdM"><img src="/img/css/max-logo.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/+79262940395"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
 </div>
 
 <div class="dflex_contain" style="border:none;">
 <div class="fwb dflex_item_left">КОНСУЛЬТАЦИИ:</div>
-<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74997034037">+7 (499) 703-4037</a>, <a class="consult" href="tel:+79035640656">+7-903-564-0656</a>; <a class="consult" href="tel:+79066576350">+7-906-657-6350</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://api.whatsapp.com/send?phone=79066576350"><img src="/img/css/whatsapp.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/ossir68"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
+<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74997034037">+7 (499) 703-4037</a>, <a class="consult" href="tel:+79035640656">+7-903-564-0656</a> <a class="consult" href="tel:+79066576350">+7-906-657-6350</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://max.ru/u/f9LHodD0cOL0rk1LG9QzXrCz4bPZtDBTgSrBpaG2OhPtSShdMAMlIzoAJgI"><img src="/img/css/max-logo.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/ossir68"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
 </div>
 </div>
 
@@ -110,7 +110,7 @@
 <div style="width:365px;background:#e0e0e0">
 <div class="fleft fwb fs14 c2">Розничный Магазин</div><div class="fright fwb fs13"></div>
 <div class="px0"></div>
-<p class="fleft fwn tal">Москва, Алтуфьевское ш., д.102-Б.<br><span>Продажи: +7-917-544-2517. &nbsp; Консультации: +7-916-811-3248</span>.</p>
+<p class="fleft fwn tal">Москва, Алтуфьевское ш., д.102-Б.<span class="fwn" style="font-size:11px;"> (по предварительному звонку)</span><br><span>Продажи: +7-917-544-2517. &nbsp; Консультации: +7-916-811-3248</span>.</p>
 <div class="px7"></div>
 <div class="fleft"><span class="fwn fs12">пн-пт 9<sup>00</sup>-20<sup>00</sup>, сб 10<sup>00</sup>-16<sup>00</sup></span></div><div class="fright ptmp1">Схема проезда</div>
 <div class="px1"></div></div></l0>

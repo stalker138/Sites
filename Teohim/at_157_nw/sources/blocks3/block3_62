@@ -2,18 +2,29 @@
 {*text0_62*}
 <p class="fwb">Официальный представитель ООО «ТэоХим»: Курске, Курская область.</p>
 
-<h2 class="h14p">ООО «ОПТИМААГРОСТРОЙ»</h2>
+<h2 class="h14p">ООО «ЦТМ»</h2>
+<table class="tbl2">
+<tbody>
+<tr><td class="tdpred"><span>Руководитель:</span></td><td>Непряхин Василий Васильевич</td></tr>
+<tr><td style="padding:3px 0;"><span>Телефон:</span></td><td style="padding:0"><div><a href="tel:+79102453094">+7 910 245-30-94</a><?php f_print_wa('79102453094', 1, 1) ?></div></td></tr>
+<tr><td><span>Менеджер по продажам:</span></td><td><div><a href="tel:+79050524145">+7 905 052-41-45 </a></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail"></span></div><div><span id="dpIDmail2"></span></div></td></tr>
+<tr><td><span>Сайт</span>:</td><td id="dpIDsite"><a href="https://teohim-kursk.ru/" target="_blank">Наливные полимерные полы Курск</a><br><a href="https://ctm36.ru" target="_blank">ctm36.ru</a></td></tr>
+</tbody>
+</table>
+
+<!--h2 class="h14p">ООО «ОПТИМААГРОСТРОЙ»</h2>
 <table class="tbl2">
 <tbody>
 <tr><td class="tdpred"><span>Руководитель:</span></td><td>Непряхина Илона</td></tr>
 <tr><td style="padding:3px 0;"><span>Сотовый</span>:</td><td style="padding:0"><div><a href="tel:+79601101017">+7 960 110-10-17</a></div><div><a href="tel:+79107324495">+7 910 732-44-95</a><?php f_print_wa('79107324495', 1, 1) ?></div></td></tr>
 
-<!--tr><td class="tdpred"><span>Контактное лицо:</span></td><td>Непряхина Илона</td></tr>
-<tr><td><span>Телефон:</span>:</td><td><div><a href="tel:89009290139">8-900-929-01-39</a></div></td></tr>
-<tr><td><span>Сотовый:</span>:</td><td><div><a href="tel:89107324495">8-910-732-44-95</a></div><div><a href="tel:89601101017">8-960-110-10-17</a></div></td></tr-->
+<tr><td style="padding:3px 0;"><span>Телефон:</span></td><td style="padding:0"><div><a href="tel:+79102453094">+7 910 245-30-94</a><?php f_print_wa('79102453094', 1, 1) ?></div></td></tr>
+
+
 <tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail"></span></div</td></tr>
 <tr><td><span>Сайт:</span></td><td id="dpIDsite"><a href="https://teohim-kursk.ru/" target="_blank">Наливные полимерные полы Курск</a></td></tr></tbody>
-</table>
+</table-->
 
 <div class="px10b"></div>
 
@@ -116,7 +127,7 @@
 
 <p class="fleft">Ближайшее представительство: <l3 id="27" class="fwb">наливные полимерные полы Белгород</l3></p>
 <p class="fright">ТэоХим Курск Элакор.</p>
-<div class="pb_hidden"><span id="spIDmail">im.rukursk@teoh</span></div>
+<div class="pb_hidden"><span id="spIDmail">l.comctmcompany36@gmai</span></div>
 <div class="pb_hidden">
  <img src="/img/pred/kyrsk/1_01.jpg" title="" alt=""/>
  <img src="/img/pred/kyrsk/1_02.jpg" title="" alt=""/>

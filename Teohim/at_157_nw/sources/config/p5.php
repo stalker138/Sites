@@ -265,29 +265,29 @@
 *number*27
 *options*		0000000000
 *file*			page5_27
-*name*			empty27
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			КОПИЯ РАСЧЕТЫ - 4.5. Рассеивающий пол наливной Полиуретан-цементный (без лент)
+*link*			/test/antistat/cena-er-pс-pol/
+*title*			test Рассеивающий полиуретан цементный наливной пол цена - расчет материалов и стоимость работ.
+*keyw*			цена полиуретан цементный наливной пол рассеивающий стоимость
+*desc*			Калькулятор расчета цены материалов и стоимости работ Рассеивающего полиуретан цементного наливной пола.
 *end*27
 
 *number*28
 *options*		0000000000
 *file*			page5_28
-*name*			empty28
-*link*			empty
-*title*			empty
+*name*			ДУБЛЬ НАЛИВНЫЕ ПОЛЫ - ЗАГЛАВНАЯ
+*link*			/test/nalivnye/
+*title*			ДУБЛЬ Полимерные Наливные Полы в Москве - Цена Производителя
 *keyw*			empty
 *desc*			empty
 *end*28
 
 *number*29
-*options*		0000000000
+*options*		1100000000
 *file*			page5_29
-*name*			empty29
-*link*			empty
-*title*			empty
+*name*			Тестовое покрытие
+*link*			/test/cover/
+*title*			Тестовое покрытие
 *keyw*			empty
 *desc*			empty
 *end*29

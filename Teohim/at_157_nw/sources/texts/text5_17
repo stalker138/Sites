@@ -1,0 +1,27 @@
+<!--noindex-->
+<div class="px10b"></div>
+
+<div style="display:flex; flex-wrap: wrap;">
+<div class="macb1l mt10 bg3 br5 fi tac" style="margin-right:8px;padding:6px 3px;width:257px"><span class="c2">Купить МАТЕРИАЛЫ</span><span class="fwb c4"> +Консультация</span>
+<div class="px3"></div>
+<?php if ($cookie_utm=='') { ?>
+<a class="consult fwb" href="tel:+74959568596">+7 (495) 956-85-96</a>, &nbsp;
+<?php } ?>
+<a class="consult fwb" href="tel:+74952212252">+7 (495) 221-22-52</a></div>
+
+<l1 id="23" class="mpls01 mt10 tac" style="display:block;float:left;padding:6px 7px; margin-right:8px; font-size:13px; width:104px;" title="Моментальный расчет материалов и работ.&#013;Без отсылок и ожиданий ответа.">КАЛЬКУЛЯТОР<div class="px1"></div>полов</l1>
+
+<div class="macb1l mt10 bg3 br5 fi tac" style="margin-right:8px;padding:6px 0;width:263px"><span class="c2">Заказать РАБОТЫ</span><span class="fwb c4"> + Консультация</span>
+<div class="px3"></div>
+<?php if ($cookie_utm=='') { ?>
+<a class="consult fwb" href="tel:+74955184378">+7 (495) 518-4378</a>, <a class="consult fwb" href="tel:+79262940395">+7-926-294-0395</a> <a class="consult" href="https://max.ru/u/f9LHodD0cOIWT5ik7R_A3I994chhLcucvYC4n116l6z6Dk0vhFZNRprQqdM"><img src="/img/css/max-logo.png" style="width:14px; vertical-align: text-bottom;"></a>
+<?php } else { ?>
+<a class="consult fwb" href="tel:+74955184378">+7 (495) 518-43-78</a>
+<?php } ?>
+</div>
+
+<div class="callback macb1r mt10 bg3 br5 fi c2 tac" style="clear:none;float:right;padding:6px 8px; font-size:12px; width:75px;"><span class="c2">ОБРАТНЫЙ<div class="px3"></div>звонок</span></div>
+</div>
+<div class="px10b"></div>
+<div class="px10"></div>
+<!--/noindex-->

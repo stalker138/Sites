@@ -5,8 +5,10 @@
 <h2 class="h14p">ООО «ТэоХим-Уфа»</h2>
 <table class="tbl2">
 <tbody>
-<tr><td class="tdpred"><span>Руководитель</span>:</td><td colspan="3">Новоженин Андрей Валерьевич</td></tr>
-<tr><td style="padding:3px 0"><span>Телефон:</span>:</td><td style="padding:0"><div itemprop="telephone"><a href="tel:+79172712060">+7 917 271-20-60</a></div><div itemprop="telephone"><a href="tel:+79172902060">+7 917 290-20-60</a><?php f_print_wa('79172902060', 1) ?></div></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<!--tr><td class="tdpred"><span>Руководитель</span>:</td><td colspan="3">Новоженин Андрей Валерьевич</td></tr>
+<tr><td style="padding:3px 0"><span>Телефон:</span>:</td><td style="padding:0"><div itemprop="telephone"><a href="tel:+79172712060">+7 917 271-20-60</a></div><div itemprop="telephone"><a href="tel:+79172902060">+7 917 290-20-60</a><?php f_print_wa('79172902060', 1) ?></div></td><td>&nbsp;</td><td>&nbsp;</td></tr-->
+<tr><td class="tdpred"><span>Руководитель</span>:</td><td colspan="3">Денис Афлятонов</td></tr>
+<tr><td class="tdpred"><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+79177594597">+7 917 759-45-97</a></div></td></tr>
 <tr><td><span>E-mail</span>:</td><td colspan="3"><div><span id="dpIDmail"></span></div></td></tr>
 <tr><td><span>Сайт:</span></td><td colspan="3" id="dpIDsite"><a href="https://ufa-teohim.ru/" target="_blank">Наливные полимерные полы Уфа</a></td></tr>
 </tbody>
@@ -18,7 +20,7 @@
 <p>«Хорошо» далеко не всегда синоним «Дорого»!<br>
 Очень часто наши клиенты бывают приятно удивлены возможностью получить экономию на покрытии для пола без ущерба для качества (а зачастую и с улучшением оного) за счет грамотно подобранного варианта наливных и промышленных полов.</p>
 <p>В настоящее время сотрудниками ООО «ТэоХим-Уфа» накоплен богатый опыт устройства наливных полимерных полов для самых разных помещений, что обеспечивает высокое качество выполняемых работ и возможность предложить оптимальное решение для ваших задач.</p>
-
+<!--
 <h2>О представителе</h2>
 <img class="pb_ismall" style="width:182px; height:196px; float:right; margin-top:8px; margin-left:16px;" src="/img/pred/yfa/1_s.png" onclick="$.zoomImg(this,'/img/pred/yfa/1.png',200,25,340,366,'Новоженин Андрей Валерьевич',-28)" title="" alt=""/>
 <p>Разрешите представиться.<br>
@@ -45,6 +47,7 @@
 </div>
 
 <div class="px10"></div>
+-->
 <h2>Работа с проектировщиками</h2>
 <p>При современном бурном развитии рынка полимерных покрытий для промышленных и наливных полов очень сложно отследить появление новых типов.<br>
 Сложно держать в голове все разнообразие материалов</p>

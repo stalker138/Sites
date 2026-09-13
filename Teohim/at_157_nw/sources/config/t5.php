@@ -17,7 +17,7 @@
 *number*3
 *options*		1000000000
 *file*			text5_3
-*name*			На сегодняшний день Элакор успешно эксплуатируется на площадях более 34 млн. м2
+*name*			На сегодняшний день Элакор успешно эксплуатируется на площадях более 41 млн. м2
 *end*3
 
 *number*4
@@ -29,13 +29,13 @@
 *number*5
 *options*		1000000000
 *file*			text5_5
-*name*			36 000 000
+*name*			41 000 000
 *end*5
 
 *number*6
 *options*		1000000000
 *file*			text5_6
-*name*			более 29 лет
+*name*			более 30 лет
 *end*6
 
 *number*7
@@ -81,9 +81,9 @@
 *end*13
 
 *number*14
-*options*		0000000000
+*options*		1000000000
 *file*			text5_14
-*name*			empty14
+*name*			Более 100 Представительств в России и СНГ.
 *end*14
 
 *number*15
@@ -101,13 +101,13 @@
 *number*17
 *options*		0000000000
 *file*			text5_17
-*name*			empty17
+*name*			text5_7 + text5_10
 *end*17
 
 *number*18
 *options*		0000000000
 *file*			text5_18
-*name*			empty18
+*name*			text5_7 + text5_10
 *end*18
 
 *number*19

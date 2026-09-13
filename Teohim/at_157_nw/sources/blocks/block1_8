@@ -10,7 +10,7 @@
 <p class="fright mt5 fs11">Цена за кг, с учётом НДС.</p>
 <div class="px3"></div>
 <table class="tmtr mtrls"><tbody><?php
-print $th7.fmtr7(161).fmtr7(164).fmtr7(167).fmtr7(163).fmtr7(168).fmtr7(165).fmtr7(166).fmtr7(169);
+print $th7.fmtr7(161).fmtr7(164).fmtr7(163).fmtr7(167).fmtr7(168).fmtr7(165).fmtr7(166).fmtr7(169);
 ?></tbody></table>
 <div class="px5"></div>
 </div>
@@ -29,7 +29,12 @@ print $thp8.fmtr8(161).fmtr8(164).fmtr8(167).fmtr8(163).fmtr8(168).fmtr8(165).fm
 <div class="div_itstr_tmp">
 <?php
 print $tblt1;
-for ($i=181; $i<=200; $i++) print ftech18($i);
+print ftech18(181);
+print ftech18(183);
+print ftech18(191);
+print ftech18(193);
+print ftech18(195);
+print ftech18(197);
 print $tblt2;
 ?>
 </div>

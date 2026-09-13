@@ -1,8 +1,8 @@
 <h1>Полимерные полы</h1>
 <div class="px3"></div>
 <p><strong>Полимерный пол</strong> обеспечивает требуемые эксплуатационные характеристики бетонного пола, защищает его от разрушающих воздействий (механических, химических и т.п.), обеспечивает длительную эксплуатацию.</p>
-<p class="fs13"><span>ООО «ТэоХим»</span> - производство и поставка Полимерных полов Элакор, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
-Полы Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м².</span> Более <l0 id="210">100 Представительств</l0> в России и СНГ.</p>
+<p class="fs13" style="margin-top:15px;line-height: 18px;margin-bottom:5px;"><span>ООО «ТэоХим»</span> - производство и поставка Полимерных полов Элакор, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
+{*text5_14*} Полы Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м².</span></p>
 {*text5_12*}
 
 <h2 class="h2_orange">Варианты полимерных полов</h2>
@@ -64,17 +64,22 @@ print $tblt2;
 <h3 class="divh3temp">3. <l1 id="2">НАЛИВНЫЕ полимерные полы</l1> <span class="fwn fs12 c0">(смотрите отдельную страницу)</span></h3><div class="px0"></div>
 <div class="px0b"></div>
 
+<h3 class="divh3temp">4. <l1 id="69">Полиуретан-Цементные полы</l1> <span class="fwn fs12 c0">(смотрите отдельную страницу)</span></h3><div class="px0"></div>
+<div class="px0b"></div>
+
 <a id="block4"></a>
 <div class="div_mc">
-<h3 class="divh3">4. НАПОЛНЕННЫЕ покрытия (с песком)</h3><div class="px0"></div>
+<h3 class="divh3">5. НАПОЛНЕННЫЕ покрытия (с песком)</h3><div class="px0"></div>
 <!--<p class="fright tar fwb" style="margin:-25px 5px 0 0;">Цена: материалы – от 250р/м&sup2; «Под ключ» – от 480р/м&sup2;</p>-->
 <div class="px0"></div>
 <p class="fs11 tal lh12">Максимально прочные и износостойкие полимерные полы, так как основные механические нагрузки принимает на себя кварц – прочный и износостойкий минерал. Для получения безыскровых покрытий вместо кварца используется мрамор или доломит.</p>
 <div class="px5"></div>
 <?php
 print $tblt1;
-print ftech18(37, '', '', '', 'Высокопрочный пол + для ударных и вибро нагрузок. Толщина 1…6мм.', null);
-print ftech18(39, '', '', '', 'Особо износостойкое покрытие для высоких нагрузок. Толщина 1…6мм.', null);
+print ftech18(39, '', '', '', 'Высокопрочный пол + для ударных и вибро нагрузок. Толщина 1…6мм.', null);
+print ftech18(37, '', '', '', 'Особо износостойкое покрытие для высоких нагрузок. Толщина 1…6мм.', null);
+print ftech18(43, '', '', '', '', null);
+print ftech18(47, '', '', '', '', null);
 print $tblt2;
 ?>
 <div class="px10"></div>
@@ -82,10 +87,7 @@ print $tblt2;
 <div class="px0b"></div>
 
 <a id="block5"></a>
-<h3 class="divh3temp">5. <l1 id="5">АНТИСТАТИЧЕСКИЕ полы</l1> <span class="fwn fs12 c0">(смотрите отдельную страницу)</span></h3><div class="px0"></div>
-<div class="px0b"></div>
-
-<h3 class="divh3temp">6. <l1 id="69">Полиуретан-Цементные полы</l1> <span class="fwn fs12 c0">(смотрите отдельную страницу)</span></h3><div class="px0"></div>
+<h3 class="divh3temp">6. <l1 id="5">АНТИСТАТИЧЕСКИЕ полы</l1> <span class="fwn fs12 c0">(смотрите отдельную страницу)</span></h3><div class="px0"></div>
 <div class="px0b"></div>
 
 <a id="block6"></a>

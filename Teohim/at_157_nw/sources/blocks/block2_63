@@ -1,12 +1,21 @@
 <h1>Эпоксидные наливные полы</h1>
-<div class="px5"></div>
-<p><strong>Эпоксидные наливные полы</strong> предназначены для устройства защитных и декоративных наливных покрытий бетонных полов.</p>
-<p class="tal"><span class="fs13 fwb" style="color:#004f92;">Наливные эпоксидные полы Элакор  </span> – производство и  поставка материалов, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
-Покрытия Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м². </span>
-<!--noindex--><l0 id="210" class="fwb c0">Более 100 представительств</l0><!--/noindex--> в России и СНГ.</p>
+<div class="px3"></div>
+<p><strong>Эпоксидный наливной пол</strong> предназначен для устройства защитных и декоративных наливных покрытий бетонных полов.</p>
+<p class="fs13" style="margin-top:15px;line-height: 18px;margin-bottom:5px;"><span class="fs13 fwb" style="color:#004f92;">Наливные эпоксидные полы Элакор  </span> – производство и  поставка материалов, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
+{*text5_14*} Покрытия Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м². </span>
+
 {*text5_12*}
 
-<h2 class="h2_orange">Материалы для Эпоксидных наливных полов</h2>
+<h2 class="h2_orange">ПОКРЫТИЯ наливные эпоксидные - варианты</h2>
+<div class="px10"></div>
+
+<?php print '<div class="px0"></div>'; print $tblt1;
+print ftech18(51).ftech18(52).ftech18(55).ftech18(57).ftech18(59).ftech18(61);
+print $tblt2; ?>
+
+<div class="px10"></div>
+
+<h2 class="h2_orange">МАТЕРИАЛЫ для эпоксидных наливных полов</h2>
 <div class="px5"></div>
 <div class="divPriceD">
 <p class="fleft fwb">Все материалы - самовыравнивающиеся.</p>
@@ -26,13 +35,6 @@ print $thp8.fmtr8(58).fmtr8(57).fmtr8(60).fmtr8(61).fmtr8(62).fmtr8(63).fmtr8(65
 ?></tbody></table>
 <div class="px5"></div>
 </div>
-
-<h2 class="h2_orange">Варианты Эпоксидных наливных покрытий</h2>
-<div class="px10"></div>
-
-<?php print '<div class="px0"></div>'; print $tblt1;
-print ftech18(51).ftech18(52).ftech18(71).ftech18(55).ftech18(57).ftech18(59).ftech18(61);
-print $tblt2; ?>
 
 <div class="px10b"></div>
 <div class="px5"></div>

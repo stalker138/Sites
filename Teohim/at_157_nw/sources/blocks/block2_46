@@ -28,10 +28,10 @@ fmtr_guar($ndx_mtr);
 ?>
 </div>
 
-<div class="matf2">
+<div class="matf2" style="width:330px;">
 <?php 
 fmtr_packing($ndx_mtr);
-//fmtr_img($ndx_mtr, 'Двухкомпонентная краска Матовая', 'Двухкомпонентная краска Матовая', 847, 814);
+fmtr_img($ndx_mtr, 'Двухкомпонентная краска Матовая', 'Двухкомпонентная краска Матовая', 844, 809);
 ?>
 </div>
 </div>

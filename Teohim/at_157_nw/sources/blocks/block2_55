@@ -1,5 +1,5 @@
 <h1>Антистатическая краска</h1>
-<div class="px10"></div>
+<div class="px5"></div>
 <div itemscope itemtype="http://schema.org/Product">
 <?php 
 $ndx_mtr=52;

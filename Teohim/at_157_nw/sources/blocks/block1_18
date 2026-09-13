@@ -8,7 +8,7 @@
 <h3 class="divh3">1. ПРОПИТКИ для бетонных полов</h3><div class="px0"></div>
 <?php print $tblt1; 
 for ($i=11; $i<=17; $i++) { print ftech18($i,''); }
-print ftech18(87,'1.5.','','','');
+print ftech18(87,'');
 for ($i=23; $i<=30; $i++) { print ftech18($i,''); }
 print $tblt2; ?><div class="px10"></div>
 </div>
@@ -60,10 +60,17 @@ print $tblt2; ?>
 <p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
 <div class="px0"></div>
 <?php print $tblt1;
-print ftech18(171,'4.1.');
-print ftech18(172,'4.2.');
-print ftech18(173,'4.3.');
-print ftech18(174,'4.5.');
+print ftech18(171,'');
+print ftech18(172,'');
+print ftech18(173,'');
+print ftech18(98,'');
+print ftech18(99,'');
+print ftech18(94,'');
+print ftech18(174,'');
+print ftech18(175,'');
+print ftech18(176,'');
+print ftech18(90,'');
+print ftech18(92,'');
 print $tblt2; ?><div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -73,10 +80,10 @@ print $tblt2; ?><div class="px10"></div>
 <p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
 <div class="px0"></div>
 <?php print $tblt1;
-print ftech18(39,'5.1.');
-print ftech18(37,'5.2.');
-print ftech18(43,'5.3.');
-print ftech18(47,'5.9.');
+print ftech18(39,'');
+print ftech18(37,'');
+print ftech18(43,'');
+print ftech18(47,'');
 print $tblt2; ?><div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -85,25 +92,38 @@ print $tblt2; ?><div class="px10"></div>
 <h3 class="divh3">6. АНТИСТАТИЧЕСКИЕ полы</h3><div class="px0"></div>
 <p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
 <div class="px0"></div>
-<p class="fwb fs13 c3 fi ti10">НАЛИВНЫЕ полы Антистатические</p>
+<?php print $tblt1;
+print ftech18(18,'');
+print $tblt2; ?>
+<div class="px15"></div>
+<p class="mt0 fwb fs13 c3 fi ti10">НАЛИВНЫЕ полы Антистатические</p>
 <div class="px5"></div>
 <?php print $tblt1;
-print ftech18(63,'6.1.');
-print ftech18(64,'6.2.');
-print ftech18(65,'6.3.');
-print ftech18(66,'6.4.');
-print ftech18(77,'6.7.');
+print ftech18(63,'');
+print ftech18(64,'');
+print ftech18(65,'');
+print ftech18(66,'');
+print ftech18(174,'');
+print ftech18(175,'');
+print ftech18(176,'');
+print ftech18(77,'');
 print $tblt2; ?>
 <div class="px15"></div>
 <p class="mt0 fwb fs13 c3 fi ti10">ОКРАСОЧНЫЕ покрытия Антистатические</p>
 <div class="px5"></div>
 <?php print $tblt1;
-print ftech18(67,'6.11.');
-print ftech18(68,'6.12.');
-print ftech18(69,'6.13.');
-print ftech18(70,'6.14.');
-print ftech18(76,'6.17.');
-print ftech18(79,'6.18.');
+print ftech18(67,'');
+print ftech18(68,'');
+print ftech18(69,'');
+print ftech18(70,'');
+print ftech18(76,'');
+print ftech18(79,'');
+print $tblt2; ?>
+<div class="px15"></div>
+<p class="mt0 fwb fs13 c3 fi ti10">ДОПОЛНИТЕЛЬНО</p>
+<div class="px5"></div>
+<?php print $tblt1;
+print ftech18(91,'');
 print $tblt2; ?>
 <div class="px10"></div>
 </div>
@@ -114,14 +134,14 @@ print $tblt2; ?>
 <p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
 <div class="px0"></div>
 <?php print $tblt1;
-print ftech18(101,'7.1.');
-print ftech18(103,'7.2.');
-print ftech18(105,'7.3.');
-print ftech18(107,'7.4.');
-print ftech18(109,'7.5.');
-print ftech18(113,'7.7.');
-print ftech18(115,'7.8.');
-print ftech18(117,'7.9.');
+print ftech18(101,'');
+print ftech18(103,'');
+print ftech18(105,'');
+print ftech18(107,'');
+print ftech18(109,'');
+print ftech18(113,'');
+print ftech18(115,'');
+print ftech18(117,'');
 print $tblt2; ?><div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -131,11 +151,11 @@ print $tblt2; ?><div class="px10"></div>
 <p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
 <div class="px0"></div>
 <?php print $tblt1;
-print ftech18(121,'8.1.');
-print ftech18(125,'8.3.');
-print ftech18(131,'8.6.');
-print ftech18(135,'8.8.');
-print ftech18(137,'8.9.');
+print ftech18(121,'');
+print ftech18(125,'');
+print ftech18(131,'');
+print ftech18(135,'');
+print ftech18(137,'');
 print $tblt2; ?><div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -145,10 +165,10 @@ print $tblt2; ?><div class="px10"></div>
 <p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
 <div class="px0"></div>
 <?php print $tblt1;
-print ftech18(142,'9.1.');
-print ftech18(143,'9.2.');
-print ftech18(147,'9.3.');
-print ftech18(150,'9.5.');
+print ftech18(142,'');
+print ftech18(143,'');
+print ftech18(147,'');
+print ftech18(150,'');
 print $tblt2; ?><div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -158,12 +178,12 @@ print $tblt2; ?><div class="px10"></div>
 <p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
 <div class="px0"></div>
 <?php print $tblt1;
-print ftech18(181,'10.1.');
-print ftech18(183,'10.2.');
-print ftech18(191,'10.3.');
-print ftech18(193,'10.4.');
-print ftech18(195,'10.8.');
-print ftech18(197,'10.9.');
+print ftech18(181,'');
+print ftech18(183,'');
+print ftech18(191,'');
+print ftech18(193,'');
+print ftech18(195,'');
+print ftech18(197,'');
 print $tblt2; ?><div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -172,7 +192,7 @@ print $tblt2; ?><div class="px10"></div>
 <h3 class="divh3">11. Покрытия для ДЕРЕВА</h3><div class="px0"></div>
 <p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
 <div class="px0"></div>
-<?php print $tblt1.ftech18(201,'11.1.').ftech18(213,'11.2.').$tblt2; ?><div class="px10"></div>
+<?php print $tblt1.ftech18(201).ftech18(213).$tblt2; ?><div class="px10"></div>
 </div>
 <div class="px0b"></div>
 <div class="px10"></div>

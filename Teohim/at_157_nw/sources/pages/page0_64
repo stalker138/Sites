@@ -8,7 +8,7 @@ $out.='<link rel="icon" href="/favicon.ico" type="image/ico"/><meta name="robots
 $out.='<link rel="stylesheet" href="/cssjs/pred_price_001.css" type="text/css"/>';
 $out.='<script type="text/javascript" charset="UTF-8" src="/cssjs/vcorp_js_0000.js"></script>';
 if (substr($a[9],0,4)=='http') $out.='<script type="text/javascript" charset="UTF-8" src="'.$a[9].'/cssjs/price_js_02.php"></script>'; else $out.='<script type="text/javascript">var o_PP="";</script>';
-$out.='<script type="text/javascript" charset="UTF-8" src="/cssjs/pred_price_002k_09.js"></script>';
+$out.='<script type="text/javascript" charset="UTF-8" src="/cssjs/pred_price_002k_10.js"></script>';
 $out.='</head><body><div id="main">';
 $out.='<div id="header">';
 $out.='<div id="logo"><div id="elakor">Элакор<div>™</div></div>промышленные полы<div id="logo1">максимальная защита</div><div id="logo2">минимальные затраты</div></div>';

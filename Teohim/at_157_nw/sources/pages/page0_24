@@ -18,7 +18,7 @@ $a_gr_link[1108]=array('<l1 id="108">', '%Все полиуретановые к
 // Лаки
 $a_gr_link[1106]=array('<l1 id="106">', '%Все лаки для бетона%');  // </l1> 
 $a_gr_link[1109]=array('<l1 id="109">', '%Все полиуретановые лаки%');  // </l1> 
-$a_gr_link[2096]=array('<l2 id="97">', '%Паркетный лак для дерева%');  // </l2> 
+$a_gr_link[2096]=array('<l2 id="96">', '%Паркетный лак для дерева%');  // </l2> 
 $a_gr_link[2097]=array('<l2 id="97">', '%Светостойкий паркетный лак%');  // </l2> 
 
 // Наливные полы
@@ -123,6 +123,7 @@ $a_descr[19]="downloads/kraska-asfalta.pdf";
 $a_descr[20]="downloads/elakor-pu-emal-60-polumat.pdf";
 $a_descr[22]="downloads/elakor-pu-emal-60-gl.pdf";
 $a_descr[23]="downloads/poliuretanovyi-lak.pdf";
+$a_descr[25]="downloads/elakor-pu-emal-60-t.pdf";
 $a_descr[26]="downloads/poliuretan-nalivnoj-pol-napolnennyi.pdf";  //  Полиуретановый наливной пол Наполненный
 $a_descr[27]="downloads/poliuretan-naliv-pol-classic.pdf";
 $a_descr[28]="downloads/elastichnyj-nalivnoj-pol.pdf";
@@ -183,18 +184,22 @@ $a_descr[128]="downloads/elakor-pz-kraska.pdf";  //
 $a_descr[129]="downloads/elakor-pz-grunt.pdf";  // 1.5.8. Полиуретан-цементный грунт
 $a_descr[130]="downloads/antistaticheskij-grunt_pp.pdf";  // 
 $a_descr[131]="downloads/elakor-pu-ljuks-grunt.pdf";  // 
+$a_descr[132]="downloads/elakor-pz-t1b-ast7.pdf";  // 
 $a_descr[133]="downloads/elakor-pz-t1b-ast6.pdf";  // 
 $a_descr[135]="downloads/elakor-pu-ljuks-emal.pdf";  // 
 $a_descr[136]="downloads/elakor-pu-ljuks-emal-polumat.pdf";   // 5.2. Люкс Эмаль - двухкомпонентная краска полуматовая
 $a_descr[137]="downloads/elakor-pu-luks-emal-svetostoikaya-matovaya.pdf";   // 
+$a_descr[138]="downloads/elakor-pz-t4-sk-prof.pdf";   // 
 $a_descr[139]="downloads/poliuretanovyj-lak-lux.pdf";   // 
 $a_descr[143]="downloads/lyuks_lak-r-polumatovyi.pdf";   // 
 $a_descr[145]="downloads/lyuks_lak-r-matovyi.pdf";   // 
 $a_descr[153]="downloads/elakor-pu-ljuks-lak-v-mat.pdf";   // Люкс Лак-В матовый (водный)
 $a_descr[154]="downloads/elakor-pu-ljuks-lak-v-polumat.pdf";   // 4.6.3. Люкс Лак-В Полуматовый (водный)
 $a_descr[157]="downloads/elakor-pu-ljuks-lak-r-elast-gl.pdf";   // 4.9.1. Люкс Лак-Р Эластичный Глянцевый
+$a_descr[161]="downloads/elakor-pu-grunt-metal.pdf";  // 
 $a_descr[163]="downloads/grunt-zinc.pdf";  // Элакор-ЭД %Грунт-Цинк - цинковый грунт% эпоксидный
 $a_descr[164]="downloads/elakor-ed-grunt-ak3-emal.pdf";  // 5.2. Элакор-ЭД Грунт-АКЗ - Антикоррозионная Грунт-Эмаль
+$a_descr[165]="downloads/elakor-pu-emal-metal.pdf";  // 
 $a_descr[166]="downloads/elakor-pu-luks-emal-t.pdf";  // Люкс Эмаль-Т - светостойкая краска для металла
 $a_descr[168]="downloads/elakor-pu-grunt-zinc.pdf";  // 
 $a_descr[181]="downloads/elakor-pu-parketnyj-lak.pdf";  // 6.1 Паркетный лак
@@ -203,6 +208,7 @@ $a_descr[201]="downloads/elakor-pu-eko-grunt.pdf";  //
 $a_descr[205]="downloads/eko-emal-60.pdf";  // 
 $a_descr[206]="downloads/elakor-pu-eko-emal-metal.pdf";  // 7.3. «Эко» Эмаль для Металла
 $a_descr[209]="downloads/eko-lak-60.pdf";  // 
+$a_descr[223]="downloads/elakor-mb2-kraska.pdf";  // 
 $a_descr[257]="downloads/betonokontakt.pdf";  // 
 $a_descr[261]="downloads/elakor-pu-kley-2k.pdf";  // 1.7.5. Клей для резиновых матов
 $a_descr[262]="downloads/kley-gazon.pdf";  // 
@@ -246,6 +252,7 @@ $a_tech[85]="instructions/antiskolzjawee-pokrytie.pdf";//Антискользя�
 $a_tech[87]="instructions/antiskolz-propitka.pdf";//Антискользящая пропитка
 $a_tech[89]="";//Химстойкие полы
 $a_tech[93]="";//Безыскровое покрытие
+$a_tech[99]="instructions/poliuretan-cement-knp.pdf";//Полиуретан-цементное покрытие с кварцем
 $a_tech[101]="instructions/ochistka-betona.pdf";//Химическая очистка бетона (Элакор-МБ3)
 $a_tech[103]="instructions/shpatlevanie-betona.pdf";//Шпатлевание бетона полиуретановыми материалами
 $a_tech[113]="instructions/kolerovka-cvetnoy-poliuretanovoy-emali.pdf";//Приготовление цветной эмали из пасты и лака
@@ -291,6 +298,24 @@ function fmtr_links($a_lnk=false, $a_lnk_nm=false) {
  print($s_out);
 }
 
+function fmtr_og($n_mat=0) {
+//вывод микроразметки og страницы по массиву индексов материалов 
+ global $mtr,$mtr_dop,$pb_domain,$pb_full_url;
+ $img=preg_replace('/webp/', 'png', $mtr_dop[$n_mat][1]); 
+ $price=preg_replace('/[^0-9]+/', '', $mtr[$n_mat][8]);
+$s_out='
+ <meta property="og:title" content="'.$mtr_dop[$n_mat][0].'" />
+ <meta property="og:type" content="article" />
+ <meta property="og:url" content="'.$pb_domain.$pb_full_url.'" />
+ <meta property="og:image" content="https://teohim.ru//img/mtr/p'.$n_mat.'.png" />
+ <meta property="og:product:availability" content="in stock" />
+ <meta property="og:product:price:amount" content="'.$price.'" />
+ <meta property="og:product:price:currency" content="RUB" />
+ ';
+
+ print($s_out);
+}
+
 function fmtr_micro($n_mat=0, $name="") {
 //вывод микроразметки страницы по массиву индексов материалов 
  global $mtr,$mtr_dop,$pb_domain,$pb_full_url;
@@ -299,7 +324,7 @@ function fmtr_micro($n_mat=0, $name="") {
    $price=preg_replace('/[^0-9]+/', '', $mtr[$n_mat][8]);
    $s_out.='
    <meta itemprop="name" content="'.$name.'">
-   <link itemprop="image" href="'.$pb_domain.'/img/mtr/p'.$n_mat.'.png">
+   <img class="pb_hidden" itemprop="image" src="'.$pb_domain.'/img/mtr/p'.$n_mat.'.png" alt="'.$name.'">
    <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
    <meta itemprop="name" content="Элакор">
    </div>';
@@ -308,6 +333,7 @@ function fmtr_micro($n_mat=0, $name="") {
    <meta itemprop="lowPrice" content="'.$price.'">
    <meta itemprop="priceCurrency" content="RUB">
    <link itemprop="url" href="'.$pb_domain.$pb_full_url.'">
+   <link itemprop="availability" href="http://schema.org/InStock">
    </div>';
  print($s_out);
 }
@@ -333,11 +359,18 @@ function fmtr_name_pr($n_mat=0, $descr = '', $pst='') {
 
 
 
-function fmtr_name($n_mat=0, $name='') {
+function fmtr_name($n_mat=0, $name='', $pst='', $no_price=0) {
 //вывод наименования материала
  global $mtr,$mtr_dop;
  if ($name=='') { $name = '<span class="c2 fs13">'.$mtr_dop[$n_mat][14].'</span>'; }
- $s_out='<p class="mt0 fwb"><span class="c3 fs13">Код: '.$mtr[$n_mat][0].'</span> <strong style="font-size:12px">'.$name.' - цена</strong></p>';
+ $s_out='<p class="mt0 fwb"><span class="c3 fs13">Код: '.$mtr[$n_mat][0].'</span> <strong style="font-size:13px">'.$name;
+ if ($no_price==0) {
+     $s_out.=' - цена';
+ }
+ $s_out.='</strong>';
+ if (!empty($pst))
+     $s_out.=' - <span class="fwn">'.$pst.'</span>';
+ $s_out.='</p>';
  print($s_out);
 }
 
@@ -395,7 +428,7 @@ function pack_compl($kol_comp=0) {
  if ($kol_comp<2) {return '';}
  $str_pack='<tr><td>Комп.«А» &nbsp;</td><td>Комп.«Б» &nbsp;</td>';
  if ($kol_comp==3) {
-  $str_pack.='<td>+Комп.«В» &nbsp;</td>';
+  $str_pack.='<td>Комп.«В» &nbsp;</td>';
  }
  $str_pack.='<td>= <span>Комплект</span></td></tr>';
  return $str_pack;
@@ -413,7 +446,7 @@ function pack_set($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weight
    }
    else {
     $str_pack.='<tr><td>'.$arow[0].'кг</td><td>+ '.$arow[1].'кг</td>';
-    if ($kol_comp>2) {$str_pack.='<td>+ '.$arow[2].'</td>';}
+    if ($kol_comp>2) {$str_pack.='<td>+ '.$arow[2].'кг</td>';}
     $str_pack.='<td>= <span>'.$arow[$kol_comp].'кг</span></td>';
    }
  }
@@ -442,7 +475,7 @@ function pack_set_o($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weig
  return $str_pack;
 }
 
-function fmtr_packing($n_mat=0, $dop_nm='', $mw=0, $no_flex=0) {
+function fmtr_packing($n_mat=0, $dop_nm='', $mw=0, $no_flex=0, $dop_nm_z='') {
 // Вывод фасовки
  global $mtr_dop; 
  $type_pack = 0;
@@ -453,23 +486,48 @@ function fmtr_packing($n_mat=0, $dop_nm='', $mw=0, $no_flex=0) {
  $arr_f=pack_explode($mtr_dop[$n_mat][8]);
  $arr_z=pack_explode($mtr_dop[$n_mat][11]);
  $arr_o=pack_explode($mtr_dop[$n_mat][9]);
+
+ $s_weight=(($n_mat==105 || $n_mat==227) ? 'л' : 'кг');
+ if ($n_mat==39) {$s_weight='мл';} 
+
+ if (($kol_comp==3)&&($arr_z))
+ {
+   $s_out='';
+   if ($no_flex==0) {
+     $s_out.='<div style="display:flex; align-items:flex-start;">'; }
+   $s_out.='<table class="tfas" style="padding:5px; '.$minw.'"><tbody>
+    <tr><td class="fwb">Фасовка: '.$dop_nm.'</td><td class="fwb tar">Основная</td><td class="fwb tar">Под заказ</td></tr>
+    <tr><td>Комп. «А»</td><td class="tar" style="padding-right:5px;">'.$arr_f[0][0].$s_weight.'</td><td class="tar" style="padding-right:5px;">'.$arr_z[0][0].$s_weight.'</td></tr>
+    <tr><td>Комп. «Б»</td><td class="tar" style="padding-right:5px;">'.$arr_f[0][1].$s_weight.'</td><td class="tar" style="padding-right:5px;">'.$arr_z[0][1].$s_weight.'</td></tr>
+    <tr><td>Комп. «В»</td><td class="tar" style="padding-right:5px;">'.$arr_f[0][2].$s_weight.'</td><td class="tar" style="padding-right:5px;">'.$arr_z[0][2].$s_weight.'</td></tr>
+    <tr><td class="fwb">Комплект</td><td class="tar fwb" style="padding-right:5px;">'.$arr_f[0][$kol_comp].$s_weight.'</td><td class="tar fwb" style="padding-right:5px;">'.$arr_z[0][$kol_comp].$s_weight.'</td></tr>';
+   if ($dop_nm_z !='') {
+     //$s_out.='<tr><td class="fwb" colspan="3">Для комплекта '.$arr_z[0][$kol_comp].$s_weight.' наценка +'.$dop_nm_z.'р/'.$s_weight.'</td></tr>';
+     $s_out.='<tr><td class="fwb" colspan="3">«Под заказ» - наценка +'.$dop_nm_z.'р/'.$s_weight.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>';
+   } 
+   $s_out.='</tbody></table>';
+   if ($no_flex==0) {
+     $s_out.='</div>'; }
+   print($s_out);
+   return;
+ }
+
+ if ($dop_nm_z !='') { $dop_nm_z = '<span class="fs10 fwn"> '. $dop_nm_z .'</span>'; }
  if ($kol_comp==1) {$type_pack=1;}//однокомпонентный - таблица в одну строку
  else
    if ((count($arr_f)==1) and !($arr_z)) {$type_pack=2;}//2-3 компонента - 1 строка на каждый компонент
 
  if ($type_pack == 0) {$colspan=(($kol_comp==2) ? 'colspan="3"' : 'colspan="5"');}
  if ($type_pack == 2) {$colspan='colspan="2"';}
- $s_weight=(($n_mat==105 || $n_mat==227) ? 'л' : 'кг');
- if ($n_mat==39) {$s_weight='мл';} 
  $th_f='<tr><th class="fwb" style="padding-top:0;" '.$colspan.'>Фасовка: '.$dop_nm.'</th></tr>';
- $th_z='<tr><th class="fwb" '.$colspan.'>Фасовка под заказ:</th></tr>';
+ $th_z='<tr><th class="fwb" '.$colspan.'>Фасовка под заказ'.$dop_nm_z.':</th></tr>';
  $th_o='<tr><td '.$colspan.' style="height:1px"></td></tr>
         <tr><th class="fwb" '.$colspan.'>Образец-пробник:</th></tr>';
  $s_out='';
  if ($no_flex==0) {
    $s_out.='<div style="display:flex; align-items:flex-start;">'; }
  if ($type_pack==0){
- $s_out.='<table class="tfas" style="padding:2px;"><tbody>';
+ $s_out.='<table class="tfas" style="padding:2px; '.$minw.'"><tbody>';
 
  $s_out.=$th_f;
  $s_out.=pack_compl($kol_comp);
@@ -516,12 +574,13 @@ function fmtr_packing($n_mat=0, $dop_nm='', $mw=0, $no_flex=0) {
  print($s_out);
 }
 
-function fmtr_img($n_mat=0, $title, $alt, $width=0, $height=0, $img='') {
+function fmtr_img($n_mat=0, $title, $alt, $width=0, $height=0, $img='', $pos='') {
 //Вывод фото
   global $pb_root;
   if ($img=='') { $img='/img/mtr/p'.$n_mat.'.webp'; }
+  if ($pos=='') { $pos='center'; }
  //$arr_size=wp_getimagesize('/img/mtr/p'.$n_mat);
-  $s_out='<div class="pb_ismall" style="max-width:145px;min-width:100px;height:100%; max-height:120px; width:max-content;position:relative;aspect-ratio:'.$width.'/'.$height.'; background-image:url(\''.$img.'\'); background-repeat:no-repeat;background-size:contain;background-position:center;" onclick="$.zoomImg(this,'.chr(39).$img.chr(39).',200,25,'.$width.','.$height.','.chr(39).$title.chr(39).',-25);" title="'.$title.'">
+  $s_out='<div class="pb_ismall" style="max-width:145px;min-width:100px;height:100%; max-height:120px; width:max-content;position:relative;aspect-ratio:'.$width.'/'.$height.'; background-image:url(\''.$img.'\'); background-repeat:no-repeat;background-size:contain;background-position:'.$pos.';" onclick="$.zoomImg(this,'.chr(39).$img.chr(39).',200,25,'.$width.','.$height.','.chr(39).$title.chr(39).',-25);" title="'.$title.'">
   <div class="plus01" style="bottom:0px;"></div>
 </div>';
   print($s_out);
@@ -590,7 +649,7 @@ function fmtr_descr1($n_mat=0, $title, $tech = 0) {
       if ($a_descr[$n_mat]==false) {return;}
       else { 
        $url= $a_descr[$n_mat];
-       $nm = $mtr_dop[$n_mat][14].$title.'. Техническое описание';
+       $nm = $mtr_dop[$n_mat][14].$title.'. Техническое описание, характеристики';
        $nm_butt='Описание';
       }
   }

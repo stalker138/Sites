@@ -6,8 +6,8 @@
 <table class="tbl2">
 <tbody>
 <tr><td class="tdpred"><span>Руководитель</span>:</td><td>Ясаков Андрей Николаевич</td></tr>
-<tr><td><span>Отдел продаж, тел:</span></td><td><div><a href="tel:+73833474749">+7 383 347-47-49</a></div><div><a href="tel:+78002016891">+7 800 201-68-91</a></div></td></tr>
-<tr><td style="padding:3px 0"><span>WhatsApp</span>:</td><td style="padding:0"><div itemprop="telephone"><a href="https://api.whatsapp.com/send?phone=79231156344">+7 923 115-63-44</a><?php f_print_wa('79231156344', 1) ?></div></td></tr>
+<tr><td><span>Отдел продаж, тел:</span></td><td><div><a href="tel:+73833474749">+7 (383) 347-47-49</a></div><div><a href="tel:+79231012444">+7 (923) 101-24-44</a></div></td></tr>
+<tr><td style="padding:3px 0"><span>Telegram</span>:</td><td style="padding:0"><div><a href="https://t.me/+79231156344">+7 923 115-63-44</a><?php f_print_wa('79231156344', 0, 1) ?></div></td></tr>
 <tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail"></span></div></td></tr>
 <tr><td><span>Сайт:</span></td><td id="dpIDsite"><a href="https://teohim-omsk.ru/" target="_blank">Наливные полимерные полы Омск</a></td></tr>
 </tbody>
@@ -161,9 +161,11 @@
 
 <p class="fleft">Ближайшее представительство: <l3 id="86" class="fwb">наливные полимерные полы Новосибирск</l3></p>
 <p class="fright">ТэоХим Омск Элакор.</p>
-<div class="pb_hidden">
+<div class="pb_hidden"><span id="spIDmail">il.rus.teohim@ma</span></div>
+
+<!--div class="pb_hidden">
  <span id="spIDmail">im.ruomsk@teoh</span>
-</div>
+</div-->
 <div class="pb_hidden">
  <img src="/img/pred/omsk/01_01.jpg" title="" alt=""/>
  <img src="/img/pred/omsk/01_02.jpg" title="" alt=""/>

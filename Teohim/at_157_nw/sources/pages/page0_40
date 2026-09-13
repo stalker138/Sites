@@ -1,4 +1,6 @@
-  <div class="px10b noprint"></div></section></div>
+  <div class="px10b noprint"></div></section>
+  <div class="tar"><?php if ($pb_page==6001) { ?><div class="px5"></div><l1 id="21" class="fs13 fwb">Промышленные полы</l1>  Элакор от Производителя – ООО «ТЭОХИМ-ПРОМ»<?php } ?></div>
+  </div>
   <div class="dsfooter"><?php if ($pb_page_index>2 || ($pb_page>200 && $pb_page<220 && $pb_page!=202) || ($pb_page_index==1 && $pb_page!=1023) || ($pb_page_index==2 && ($pb_page<2201 || $pb_page>2300))) {
 if (1==2 && $pb_page!=1001 && $pb_page!=1002 && $pb_page!=1003 && $pb_page!=1004 && $pb_page!=1014 && $pb_page!=1015 && $pb_page!=1021 && ($pb_page<3151 || $pb_page>3350)) { ?><a class="aprint" href="javascript:void(f_print())">Версия для печати</a><?php } } ?></div>
   <div id="dheader"><header>

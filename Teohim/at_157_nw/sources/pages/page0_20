@@ -1,8 +1,8 @@
 <?php
 $m1=' style="color:#f5530e; background:#ffffff;"'; $m1f='color:#f5530e;background:#ffffff;'; $m2=' style="color:#ffffff; background:#004f92; text-decoration:none;"'; $m3=' style="color:#004f92; background:#ffffff;"'; $m4=' style="color:#004f92; background:#c8c8c8;"'; $m5=' style="color:#ffffff; background:#007fc2;"'; $m7=' class="c0"';
 ?>
-<ul id="dl_menu_first">
-  <li><l1 id="10" style="font-size:15px;<?php if($pb_page==1010) print $m1f; ?>" title="Все материалы Элакор - описания, цены.">Материалы - ЦЕНЫ</l1></li>
+<ul id="dl_menu_first" style="margin-top:4px;">
+  <li><l1 id="10" style="font-size:15px;<?php if($pb_page==1010) print $m1f; ?>" title="Все материалы Элакор - описания, цены.">Материалы ЦЕНЫ /<span class="fwn fs13">прайс</span></l1></li>
   <li><l1 id="23" style="font-size:15px;<?php if($pb_page==1023) print $m1f; ?>" title="Расчет покрытий Элакор: количество и цена материалов, стоимость работ.">КАЛЬКУЛЯТОР полов</l1></li>
   <li><l1 id="25"<?php if($pb_page==1025) print $m1; ?> title="Помощник выбора покрытий Элакор в зависимости от задач, условий эксплуатации и т.п."><span style="font-weight:normal; letter-spacing:1px;">Помощник выбора</span></l1></li>
   <li><l0 id="221"<?php if($pb_page==221) print $m1; ?> title="Купить материалы или заказать выполнение работ «под ключ»."><span style="font-weight:normal; letter-spacing:1px;">Как Заказать</span></l0></li>
@@ -137,7 +137,7 @@ $m1=' style="color:#f5530e; background:#ffffff;"'; $m1f='color:#f5530e;backgroun
   <?php } ?>
   </li>
 </ul>
-<ul id="dl_menu_forth">
+<!--ul id="dl_menu_forth">
 <li class="dlli"><l1 id="11"<?php if($pb_page==1011) print $m2; ?>>Инструмент</l1></li>
 <li class="dlli"><l6 id="1"<?php if($pb_page==6001) print $m2; ?>>Оборудование</l6></li>
-</ul>
+</ul-->

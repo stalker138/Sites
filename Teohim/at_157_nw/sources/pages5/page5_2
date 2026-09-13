@@ -1,6 +1,8 @@
 {*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
 <?php /* Включение стилевых блоков от text0_101 до text0_199 */ ?>
 #dcontent { width:770px; min-width:770px; max-width:770px; }
+#dcontent .macb2w { margin-top: 34px; }
+
 .smiles { float:right; } .dpleft23 { float:left; margin:10px 0 0 0; max-width:430px; }
 .divPriceD { display:block; } .divPriceM { display:none; }
 #id_calcHead { position:relative; float:left; width:320px; box-shadow:4px 4px 7px 0 #999999; }
@@ -8,8 +10,8 @@
 .thead { padding:0 0 0 2px; height:23px; font-weight:bold; font-size:13px; text-align:left; background:yellow; }
 table .tdleft { width:195px; padding:0 0 0 2px; }
 .i_t, .i_t option { padding:0; margin:0; width:120px; height:22px; font-size:13px; text-align:left; line-height:22px; border:none 0px; font-weight:bold; background:#49ff79; }
-#dcalc { position:relative; float:left; margin:0 0 0 15px; font-size:11px; line-height:13px; text-align:center; }
-#dcalc input { margin:0; padding:0 10px; width:auto; height:30px; font-weight:bold; font-size:13px; letter-spacing:1px; text-shadow:2px 2px 2px #ffffff; box-shadow:4px 4px 7px 0 #999999; }
+#dcalc { position:relative; float:left; margin:0 0 0 9px; font-size:11px; line-height:13px; text-align:center; }
+#dcalc input { margin:0; padding:0 9px; width:auto; height:30px; font-weight:bold; font-size:13px; letter-spacing:1px; text-shadow:2px 2px 2px #ffffff; box-shadow:4px 4px 7px 0 #999999; }
 .div_mo, .div_mc { clear:both; }
 .div_mo .tmtr td { padding:2px 5px 2px 0; height:25px; font-size:12px; line-height:25px; text-align:right; border:solid 1px #c8c8c8; } .tmtr td a { font-size:12px; text-decoration:none; } .tmtr td a:hover { text-decoration:underline; }
 .div_mo .tmtr, .div_mo .tmtr th { border:solid 1px #808080; background:#ffffff; }
@@ -24,9 +26,21 @@ table .tdleft { width:195px; padding:0 0 0 2px; }
 .tmtr23 td a span { font-size:12px; font-weight:bold; color:inherit; }
 .d18text { float:left; padding:3px 0 0 0; text-align:left; } .d18dtext { clear:both; font-size:11px; font-weight:normal; }
 
+.ismedia { display:none; }
+.mediablock { font-weight:normal; }
+
 @media screen and (max-width:799px) { #dcontent { width:auto; min-width:320px; max-width:799px; } .divPriceD { display:none; } .divPriceM { display:block; } .d18text { float:none;padding:5px 0 0 0; } .tmtr td a { text-decoration:underline; } }
 @media screen and (max-width:630px) { .divh3 { font-size:13px; } .divh3span { margin:-27px 5px 0 0; } .dpleft23 { float:none; max-width:600px; } }
-@media screen and (max-width:440px) { .divh3_5 { padding-top:5px; padding-bottom:15px; line-height:15px; } .divh3span, .d3span { margin:-15px 5px 0 0; }
+@media screen and (max-width:440px) { .divh3_5 { padding-top:5px; padding-bottom:15px; line-height:15px; } .divh3span, .d3span { margin:-15px 5px 0 0; } }
+@media screen and (max-width: 700px) {
+    #dcontent .macb2w { float: none;
+    clear: both;
+    margin: 10px auto 0 auto;
+  }
+  .nomedia { display:none; }
+  .ismedia { display:block; }
+  .mediablock { display:block; }
+}
 
 {*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
 <?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
@@ -38,12 +52,12 @@ table .tdleft { width:195px; padding:0 0 0 2px; }
 {*tpl18*}{*tpl19*}{*tpl20*}
 <script>
 {*text0_51*}
-{*text0_53*}
+{*text0_49*}
 function f_refresh() {
   var i, cpkr=pkr.length, p=$.id('i_so'); if (p) $.sLS('i_so',p.value); p=$.id('i_mb'); if (p) $.sLS('i_mb',p.value);
   if (v_tmp_interval) { clearInterval(v_tmp_interval); v_tmp_interval=null; }
   for (i=11; i<cpkr; i+=1) {
-    if (pkr[i]&&i!=95) {
+    if (pkr[i]&&i!=95&&i!=40&&i!=71) { 
       $.id('m' + i).innerHTML = '';
       $.id('r' + i).innerHTML = '';
       $.id('mr' + i).innerHTML = '';

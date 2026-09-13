@@ -1,627 +1,84 @@
 <h1>Инструмент для наливных полов и полимерных полов</h1>
 <div class="px5"></div>
-<p class="tal">Цены на инструмент для наливных полов и полимерных полов, дополнительные материалы, разбавители, наполнители, шлифовальный инструмент, средства защиты, тара.</p>
-<p class="mt0 tar">Цены с учетом НДС.</p>
+<p class="tal">Цены на инструмент для наливных полов и полимерных полов, дополнительные материалы, разбавители, наполнители, шлифовальный инструмент, средства защиты, тара. <span>Цены с учетом НДС</span>.</p>
+{*text5_9*}
+{*text0_23*}
+<div class="px10"></div>
+<div class="px0b"></div>
+<div class="div_mc">
+<h3 class="divh3">1. Приборы Контроля<span></span></h3><div class="px0"></div>
 <div style="box-shadow:4px 4px 7px 0 #999999;">
-<table class="tsrt">
-    <tbody>
-        <tr class="bg3">
-            <th>Таблицы цветов.<br>Образцы полимерных наливных полов.</th>
-            <th style="width:70px;">Цена</th>
-            <th style="width:70px;">ед.изм.</th>
-            <th style="width:70px;">шт.в кор</th>
-            <th style="width:70px;">фото</th>
-        </tr>
-        <tr>
-            <td class="tdl">Таблица Цветов "ТэоХим"</td>
-            <td class="prtd1">400р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Таблица Цветов "RAL" К-7</td>
-            <td class="prtd1">1700р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Образец – 4 вида покрытий Элакор на бетоне</td>
-            <td class="prtd1">500р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Образец гладкого покрытия Элакор на ЦСП</td>
-            <td class="prtd1">100р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Образец – полимерный наливной пол Элакор на ЦСП</td>
-            <td class="prtd1">100р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Образец кварцнаполненного покрытия Элакор на ЦСП</td>
-            <td class="prtd1">100р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr class="bg3">
-            <th>Полимерные наливные полы</th>
-            <th>Цена</th>
-            <th>ед.изм.</th>
-            <th>шт.в кор</th>
-            <th>фото</th>
-        </tr>
-        <tr>
-            <td class="tdl">Валик Игольчатый Stayer, 75х250мм</td>
-            <td class="prtd1">430р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Валик Игольчатый Stayer, 75х400мм</td>
-            <td class="prtd1">850р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Ракля 56 см + держатель</td>
-            <td class="prtd1">2400р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Вкладыш R1 для ракли 56 см</td>
-            <td class="prtd1">240р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Вкладыш R2 для ракли 56 см</td>
-            <td class="prtd1">240р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Вкладыш S1 28 см</td>
-            <td class="prtd1">140р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Вкладыш S2 28 см</td>
-            <td class="prtd1">140р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Медная лента (для антистатических наливных полов), 20м.п./рулон</td>
-            <td class="prtd1">32р.</td>
-            <td>м.п.</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr class="bg3">
-            <th>Декоративные элементы. Наполнители</th>
-            <th>Цена</th>
-            <th>ед.изм.</th>
-            <th>шт.в кор</th>
-            <th>фото</th>
-        </tr>
-        <tr>
-            <td class="tdl">Чипсы (черно-белый микс)</td>
-            <td class="prtd1">1000р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Глиттер (блестки) Голографические 0.3мм</td>
-            <td class="prtd1">3400р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Маршалит (кварц пылевидный ) / 50кг/меш</td>
-            <td class="prtd1">10р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Кварц окатанный 0,1-0,4 / 50кг/меш</td>
-            <td class="prtd1">9р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Кварц окатанный 0,3-0,6 / 25кг/меш</td>
-            <td class="prtd1">12р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Кварц окатанный 0,3-0,8 / 25кг/меш</td>
-            <td class="prtd1">14р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Кварц окатанный 0,6-0,8 / 25кг/меш</td>
-            <td class="prtd1">14р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Кварц окатанный 0,8-1,2 / 25кг/меш</td>
-            <td class="prtd1">16р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Кварц окатанный 1,0-2,0 / 25кг/меш</td>
-            <td class="prtd1">16р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Кварц окатанный 2,0-4,0 / 25кг/меш</td>
-            <td class="prtd1">16р.</td>
-            <td>кг</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr class="bg3">
-            <th>Кисти, Валики, Щетки, Ручки</th>
-            <th>Цена</th>
-            <th>ед.изм.</th>
-            <th>шт.в кор</th>
-            <th>фото</th>
-        </tr>
-        <tr>
-            <td class="tdl">Кисть, натур. щетина, 20мм</td>
-            <td class="prtd1">16р.</td>
-            <td>шт</td>
-            <td>20</td>
-             <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Кисть, натур. щетина, 50мм</td>
-            <td class="prtd1">30р.</td>
-            <td>шт</td>
-            <td>20</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Кисть, натур. щетина, 100мм</td>
-            <td class="prtd1">65р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Валик "Нейлон" Профи, ворс12мм, 48х240мм</td>
-            <td class="prtd1">175р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Валик "Велюр" Профи, ворс 4мм, 48х250мм</td>
-            <td class="prtd1">185р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Ручка для валика, бюг.8мм</td>
-            <td class="prtd1">80р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Валик &quot;Нейлон&quot; МИНИ, ворс10мм, 15х110мм</td>
-            <td class="prtd1">40р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Валик &quot;Нейлон&quot; МИНИ, ворс10мм, 15х70мм</td>
-            <td class="prtd1">30р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Валик "Велюр" МИНИ, ворс 4мм, 15х110мм</td>
-            <td class="prtd1">45р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Ручка для МИНИ валика, бюг.6мм</td>
-            <td class="prtd1">35р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Черенок деревянный 1,3м</td>
-            <td class="prtd1">80р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Скотч малярный 48х50</td>
-            <td class="prtd1">220р.</td>
-            <td>шт</td>
-            <td>18</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Скотч упаковочный, прозрачный 48мм х50м</td>
-            <td class="prtd1">90р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Щетка для пола, искуств.щетина</td>
-            <td class="prtd1">65р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr class="bg3">
-            <th>Шпатели, Миксер, Подошва</th>
-            <th>Цена</th>
-            <th>ед.изм.</th>
-            <th>шт.в кор</th>
-            <th>фото</th>
-        </tr>
-        <tr>
-            <td class="tdl">Шпатель с пластмас.ручкой, 60мм</td>
-            <td class="prtd1">35р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel60.jpg',200,20,1000,716,'Шпатель с пластмас.ручкой, 60мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl">Шпатель с пластмас.ручкой, 120мм</td>
-            <td class="prtd1">95р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Шпатель малярный, 150мм</td>
-            <td class="prtd1">60р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel150.jpg',200,20,1500,1074,'Шпатель малярный, 150мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl">Шпатель фасадный нерж. с пластм. ручкой, 200мм</td>
-            <td class="prtd1">70р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel200.jpg',200,20,1500,1428,'Шпатель фасадный нерж. с пластм. ручкой, 200мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl">Шпатель фасадный нерж. с пластм. ручкой, 450мм</td>
-            <td class="prtd1">150р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel450.jpg',200,20,1500,715,'Шпатель фасадный нерж. с пластм. ручкой, 450мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl">Шпатель фасадный нерж. с пластм. ручкой, 600мм</td>
-            <td class="prtd1">220р.</td>
-            <td>шт</td>
-            <td></td>
-            <td class="phtd1" onclick="$.zoomImg(this,'/img/instr/shpatel600.jpg',200,20,1500,721,'Шпатель фасадный нерж. с пластм. ручкой, 600мм',-10)"></td>
-        </tr>
-        <tr>
-            <td class="tdl">Миксер Stayer "Профи" оцинк, для ПГС 120X600мм</td>
-            <td class="prtd1">360р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Миксер Stayer "PROFI" оцинк, для красок, 100х600мм</td>
-            <td class="prtd1">250р.</td>
-            <td>шт</td>
-            <td>10</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Подошва Stayer для наливных полов, 25мм</td>
-            <td class="prtd1">600р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr class="bg3">
-            <th>Шлифовальный Инструмент</th>
-            <th>Цена</th>
-            <th>ед.изм.</th>
-            <th>шт.в кор</th>
-            <th>фото</th>
-        </tr>
-        <tr>
-            <td class="tdl">Сегмент Корунд, зерно 40,60,80,100,120 (пр-во г.Луга)</td>
-            <td class="prtd1">125р.</td>
-            <td>шт</td>
-            <td>18</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Алмазный сегмент треугольный 1250/800 Терекалмаз</td>
-            <td class="prtd1">2841р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Алмазный сегмент треугольный 1000/800 Профи Ниборит</td>
-            <td class="prtd1">3038р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Алмазный сегмент треугольный 800/500 Профи Ниборит</td>
-            <td class="prtd1">2534р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Алмазный сегмент Франфурт 1000/800 Ф6 Ниборит</td>
-            <td class="prtd1">2730р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Алмазный сегмент Франфурт 800/500 Ф6 Ниборит</td>
-            <td class="prtd1">2366р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Алмазный сегмент треугольный GFB 2 (125/100) Адель</td>
-            <td class="prtd1">2811р.</td>
-            <td>шт</td>
-            <td>6</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Чашка Алмаз "Дельфин", 125мм</td>
-            <td class="prtd1">1995р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Чашка Алмаз "Дельфин", 180мм</td>
-            <td class="prtd1">3388р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr class="bg3">
-            <th>Разбавители</th>
-            <th>Цена</th>
-            <th>ед.изм.</th>
-            <th>шт.в кор</th>
-            <th>фото</th>
-        </tr>
-        <tr>
-            <td class="tdl">Ксилол</td>
-            <td class="prtd1">110р.</td>
-            <td>л</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Бутилацетат</td>
-            <td class="prtd1">150р.</td>
-            <td>л</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Разбавитель БК-12</td>
-            <td class="prtd1">125р.</td>
-            <td>л</td>
-            <td></td>
-            <td></td>
-        </tr>
- 
-        <tr class="bg3">
-            <th>Защита</th>
-            <th>Цена</th>
-            <th>ед.изм.</th>
-            <th>шт.в кор</th>
-            <th>фото</th>
-        </tr>
-        <tr>
-            <td class="tdl">Респиратор РПГ-67 (с патронами &quot;А&quot;)</td>
-            <td class="prtd1">600р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Патрон "А" для РПГ-67</td>
-            <td class="prtd1">160р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Респиратор ЗМ 8122 противопыльный</td>
-            <td class="prtd1">90р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Перчатки х/б с обливной ладонью</td>
-            <td class="prtd1">20р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Перчатки одноразовые п/э 100шт</td>
-            <td class="prtd1">60р.</td>
-            <td>уп</td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr class="bg3">
-            <th>ТАРА</th>
-            <th>Цена</th>
-            <th>ед.изм.</th>
-            <th>шт.в кор</th>
-            <th>фото</th>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ метал.Барабан 10л, с крыш."Корона"</td>
-            <td class="prtd1">200р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ метал.Барабан 20л, с крыш."Корона"</td>
-            <td class="prtd1">220р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ метал.Барабан 50л, с крыш."Хомут"</td>
-            <td class="prtd1">550р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ п/п Ведро 1л, с крыш.</td>
-            <td class="prtd1">20р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ п/п Ведро 3л, с крыш.</td>
-            <td class="prtd1">40р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ п/п Ведро 5л, с крыш.</td>
-            <td class="prtd1">60р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ п/п Ведро 10л, с крыш.</td>
-            <td class="prtd1">110р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ п/п Ведро 30л, с крыш.</td>
-            <td class="prtd1">300р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ п/п Канистра 1л</td>
-            <td class="prtd1">25р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ п/п Канистра 4л</td>
-            <td class="prtd1">45р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ п/п Канистра 5л</td>
-            <td class="prtd1">50р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ п/п Канистра 10л</td>
-            <td class="prtd1">90р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="tdl">Тара/ п/п Канистра 30л</td>
-            <td class="prtd1">270р.</td>
-            <td>шт</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[1]); $i++) { print finstr($catinstr[1][$i]); } ?></tbody></table>
 </div>
-<div class="px10b"></div>
-<p class="tal"><l0 id="212" class="fwb">Эпоксидная смола</l0> – прямая поставка эпоксидной смолы KER 828, производства «KUMHO P&amp;B CHEMICALS», Корея. Минимальная цена.<br>
-<l0 id="213" class="fwb">Касторовое масло</l0> – продажа касторового масла FSG (первый специальный сорт), производство - Индия.<br>
-<l0 id="214" class="fwb">Полимерный МДИ</l0> – прямая поставка Полиизоцианата WANNATE PM-200, минимальная цена.<br>
-<span><l1 id="2">Полимерные наливные полы</l1>  – описания, материалы, цены, технология</span></p>
+<div class="px0"></div>
+</div>
+<div class="px0b"></div>
 
-<div id="dateDoc">17апр19</div><div class="px0"></div>
+<div class="div_mc">
+<h3 class="divh3">2. Для полимерных наливных полов <span>(ракли, вкладыши, игольчатый валик, иглоступы…)</span></h3><div class="px0"></div>
+<div style="box-shadow:4px 4px 7px 0 #999999;">
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[2]); $i++) { print finstr($catinstr[2][$i]); } ?></tbody></table>
+</div>
+<div class="px0"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">3. Песок, Кварц-мука, Кварц окатанный, Декор <span>(чипсы, блёстки)</span></h3><div class="px0"></div>
+<div style="box-shadow:4px 4px 7px 0 #999999;">
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[3]); $i++) { print finstr($catinstr[3][$i]); } ?></tbody></table>
+</div>
+<div class="px0"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">4. Кисти, Валики, Щетки, Ручки, Скотч <span></span></h3><div class="px0"></div>
+<div style="box-shadow:4px 4px 7px 0 #999999;">
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[4]); $i++) { print finstr($catinstr[4][$i]); } ?></tbody></table>
+</div>
+<div class="px0"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">5. Шпатели, Миксеры, Пистолет д/герметика<span></span></h3><div class="px0"></div>
+<div style="box-shadow:4px 4px 7px 0 #999999;">
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[5]); $i++) { print finstr($catinstr[5][$i]); } ?></tbody></table>
+</div>
+<div class="px0"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">6. Шлифовальный Инструмент<span></span></h3><div class="px0"></div>
+<div style="box-shadow:4px 4px 7px 0 #999999;">
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[6]); $i++) { print finstr($catinstr[6][$i]); } ?></tbody></table>
+</div>
+<div class="px0"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">7. Защита <span>(респираторы, перчатки)</span></h3><div class="px0"></div>
+<div style="box-shadow:4px 4px 7px 0 #999999;">
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[7]); $i++) { print finstr($catinstr[7][$i]); } ?></tbody></table>
+</div>
+<div class="px0"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="px15"></div>
+<div style="box-shadow:4px 4px 7px 0 #999999;">
+<table class="tsrt"><tbody><?php print $th_instr ; for ($i=1; $i<count($catinstr[9]); $i++) { print finstr($catinstr[9][$i]); } ?></tbody></table>
+</div>
+<div class="px5b"></div>
+<div class="px10"></div>
+<div class="temp1_price">
+<p class="mt5"><span><l0 id="218" class="fwb">Активный разбавитель для эпоксидной смолы</l0> XY-748</span> (аналог AGE, Epodil 748, SM90) – продажа розница, опт.</p>
+<p class="mt5"><l0 id="212" class="fwb">Эпоксидная смола KER 828</l0> – продажа эпоксидной смолы, производства «KUMHO P&amp;B CHEMICALS», Корея. Минимальная цена.</p>
+<p class="mt5"><l0 id="213" class="fwb">Касторовое масло</l0> – продажа касторового масла FSG (первый специальный сорт), производство - Индия.</p>
+<p class="mt5"><l0 id="214" class="fwb">Полимерный МДИ</l0> – продажа полиизоцианата WANNATE PM-200, минимальная цена.</p>
+<p class="mt5"><span><l1 id="2">Полимерные наливные полы</l1>  – описания, материалы, цены, технология</span></p>
+</div>
+<div id="dateDoc">30июн25</div><div class="px0"></div>

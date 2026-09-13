@@ -38,7 +38,7 @@ $id = (int)$id; if($id<1 || $id>71) $id=0; $pos = (int)$pos; if($pos<1 || $pos>7
 <meta name='author' content='ООО ТэоХим' /><meta name='copyright' lang='ru' content='ООО ТэоХим' /><meta name='owner' content='ООО ТэоХим' />
 <link rel="stylesheet" href="/setpred01/photo_017.css" type="text/css"/>
 <script src="/setpred01/_vcorp_js_0002.js"></script>
-<script src="/setpred01/photo_017_.js"></script>
+<script src="/setpred01/photo_018_1.js"></script>
 </head>
 <body>
 <div id="main">

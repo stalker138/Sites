@@ -7,19 +7,40 @@
 <p class="fright mt5 fs11">Цена за кг, с учётом НДС.</p>
 <div class="px3"></div>
 <table class="tmtr mtrls"><tbody><?php
-print $th7.fmtr7(125).fmtr7(126).fmtr7(127).fmtr7(122).fmtr7(123).fmtr7(128).fmtr7(129);
-?></tbody></table>
+print ($th7);
+for ($i=1; $i<count($catmat[15]); $i++) { print fmtr7($catmat[15][$i]); }?></tbody></table>
 <div class="px5"></div>
 </div>
 <div class="divPriceM">
 <p class="fright mt5 fs11">Цена за кг, с учётом НДС.</p>
 <div class="px3"></div>
 <table class="tmtr"><tbody><?php
-print $thp8.fmtr4(125).fmtr8(126).fmtr8(127).fmtr8(122).fmtr8(123).fmtr8(128).fmtr8(129);
+print ($thp8);
+for ($i=1; $i<count($catmat[15]); $i++) { print fmtr8($catmat[15][$i]); }
 ?></tbody></table>
 <div class="px5"></div>
 </div>
+
+
+<div class="px10"></div>
+
+<h2 class="h2_orange">Варианты Полиуретан-цементных покрытий</h2>
+<div class="px10"></div>
+
+<?php print '<div class="px0"></div>';
+print $tblt1;
+print ftech18(171,'');
+print ftech18(172,'');
+print ftech18(173,'');
+print ftech18(174,'');
+print ftech18(175,'');
+print ftech18(176,'');
+print $tblt2; ?>
+
+
 <div class="px10b"></div>
+<div class="px5"></div>
+
 <p>За счет отличного сочетания эластичной полимерной матрицы с портландцементом и минеральными наполнителями полиуретан-цементные покрытия совмещают все положительные качества цементных стяжек и полимерных <l2 id="61">полиуретановых наливных полов</l2>:</p>
 <ul class="mt5">
 <li>Высокая стойкость к ударным и истирающим нагрузкам.</li>

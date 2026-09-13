@@ -903,21 +903,21 @@
 *end*90
 
 *number*91
-*options*		0000000000
+*options*		1000000000
 *file*			page0_91
-*name*			empty91
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			/setpred01/photolist_tst.php - ТЕСТ ФОТО хранилище всех фото всех представителей
+*link*			/setpred01/photolist_tst.php
+*title*			ТЕСТ ФОТО хранилище всех фото всех представителей
+*keyw*			ТЕСТ ФОТО хранилище всех фото всех представителей
+*desc*			ТЕСТ ФОТО хранилище всех фото всех представителей
 *end*91
 
 *number*92
 *options*		0000000000
 *file*			page0_92
-*name*			empty92
-*link*			empty
-*title*			empty
+*name*			Тест Карта объектов
+*link*			/objlist-test.php
+*title*			Тест Карта объектов
 *keyw*			empty
 *desc*			empty
 *end*92

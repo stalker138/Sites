@@ -16,7 +16,7 @@
 <div class="px10"></div>
 
 <div class="dotz" style="min-height:20px;font-size:14px;line-height:20px;background:#f0f0f0"><select id="sel1" onchange="f_otz_view()"><option value="0" selected>(все)</option><option value="6">Цеха</option><option value="9">Объекты РосАтом</option><option value="5">Склады</option><option value="3">Гаражи/Паркинги</option><option value="1">Пищевое Производство</option><option value="2">СельХоз. объекты</option><option value="13">Электростанции, ТЭК</option><option value="4">Резервуары (Антикор)</option><option value="8">Жилищное строительство</option><option value="10">Медицинские учреждения</option><option value="11">Учебные заведения</option><option value="12">Магазины</option><option value="7">Прочее</option></select>Тип Объекта:&nbsp;</div>
-<div class="dotz" style="min-height:20px;font-size:14px;line-height:20px;background:#f0f0f0"><select id="sel2" onchange="f_otz_view()"><option value="0" selected>(все)</option><option value="1">Пропитка бетона</option><option value="2">Полимерное покрытие бетона</option><option value="8">Наливные полимерные полы</option><option value="11">Антистатические полы</option><option value="3">Кварцнаполненное покрытие</option><option value="10">Покрытие для асфальта</option><option value="7">Полимерцементные полы</option><option value="6">Флюатирование</option><option value="9">Бетонные полы Эластобетон</option><option value="4">Покрытия для металла</option><option value="5">Покрытия для дерева</option></select>Тип Покрытия:&nbsp;</div>
+<div class="dotz" style="min-height:20px;font-size:14px;line-height:20px;background:#f0f0f0"><select id="sel2" onchange="f_otz_view()"><option value="0" selected>(все)</option><option value="1">Пропитка бетона</option><option value="2">Полимерное покрытие бетона</option><option value="8">Наливные полимерные полы</option><option value="11">Антистатические полы</option><option value="3">Кварцнаполненное покрытие</option><option value="10">Покрытие для асфальта</option><option value="7">Полимерцементные полы</option><option value="6">Флюатирование</option><option value="9">Бетонные полы Эластобетон</option><option value="4">Покрытия для металла</option><option value="5">Покрытия для дерева</option><option value="12">Полиуретан-цементные полы</option></select>Тип Покрытия:&nbsp;</div>
 <div class="px0"></div>
 
 <l3 id="380" class="dotz" id="dotz33" title="хорошие герметичные качества пропитки «Элакор»"><span class="c2">ОАО «Энерго-Тобольск»</span><div class="px7"></div>
@@ -527,6 +527,10 @@
 <l3 id="477" class="dotz" id="dotz127" title="Отзыв АО «Пикалевский торговый дом»"><span class="c2">Отзыв АО «Пикалевский торговый дом»</span><div class="px7"></div>
   <img src="/img/otz/127-logo.jpg" alt="Отзыв АО «Пикалевский торговый дом»"/>
   <p><span>Тип объекта:</span> Склады<br><span>Тип покрытия:</span> Полимерное покрытие бетона<br><span>Описание:</span> Полимерное покрытие полов на складах.</p></l3>
+
+<l3 id="478" class="dotz" id="dotz127" title="Отзыв ООО «Энергострой»"><span class="c2">Отзыв ООО «Энергострой»</span><div class="px7"></div>
+  <img src="/img/otz/128-logo.jpg" alt="Отзыв ООО «Энергострой»"/>
+  <p><span>Тип объекта:</span> Цеха<br><span>Тип покрытия:</span> Полиуретан-Цементные полы, Антистатические полы<br><span>Описание:</span> Полиуретан-цементные полы, в т.ч. антистатические, в производственных цехах.</p></l3>
 
 <div id="divotz"></div>
 <div class="px10"></div>

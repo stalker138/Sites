@@ -5,7 +5,12 @@
 @media screen and (max-width:999px) { .dmtrr { float:none; margin:10px 0 0 0; width:320px; max-width:320px; } }
 {*tpl6*}{*tpl7*}{*tpl8*}{*tpl9*}
 <?php /* Включение произвольных JS-скриптов (блоки от text0_201 до text0_299) */ ?>
-{*tpl10*}</head><body>
+{*tpl10*}
+<?php 
+$ndx_mtr=17;
+fmtr_og($ndx_mtr); 
+?>
+</head><body>
 <?php /* Большие экраны (от 1000px) */ ?>
 {*text0_1*}
 {*tpl16*}

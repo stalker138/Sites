@@ -1,0 +1,71 @@
+<h1>Эпоксидные грунты грунтовки</h1>
+<div class="px3"></div>
+
+<p><strong>Эпоксидные грунтовки и грунты</strong> <span class="fs13">Элакор-ЭД</span> - современные материалы для устройства долговечных износостойких химически стойких покрытий бетона, металла и других строительных материалов.</p>
+<p class="fs13" style="margin-top:15px;line-height: 18px;margin-bottom:5px;"><span>ООО «ТэоХим»</span> - производство и поставка эпоксидных грунтов / грунтовок; выполнение работ.. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
+Покрытия Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м².</span> {*text5_14*}</p>
+{*text5_12*}
+<h2 class="h2_orange">Эпоксидные грунты и грунтовки Элакор – обзор</h2>
+<div class="px10"></div>
+<span>Цены с НДС</span>, в зависимости от общего количества покупаемых материалов.</span>.
+
+<div class="mt7"><div class="fleft fwb fs13 c3 fi ti10">Для бетона, бетонных полов, стяжек и т.п.</div><div class="fright mt2 fs11">Цена р/кг</div></div>
+
+<div class="px5"></div>
+
+<!-- ДЕСКТОП 800 и более -->
+<div class="divPriceD">
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $th7;
+print fmtr7(42);
+print fmtr7(40);
+print fmtr7(41);
+print fmtr7(43);
+?></tbody></table>
+<div class="px0"></div>
+</div>
+<!--mobilePrice--><!-- Мобильные (менее 800) -->
+<div class="divPriceM">
+<div class="px0"></div>
+<table class="tmtr"><tbody><?php print $thp8;
+print fmtr8(42);
+print fmtr8(40);
+print fmtr8(41);
+print fmtr8(43);
+?></tbody></table>
+<div class="px0"></div>
+</div>
+<div class="px5"></div>
+
+<div class="mt7"><div class="fleft fwb fs13 c3 fi ti10">Для металла</div><div class="fright mt2 fs11">Цена р/кг</div></div>
+
+<div class="px5"></div>
+
+<!-- ДЕСКТОП 800 и более -->
+<div class="divPriceD">
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $th7;
+print fmtr7(164);
+print fmtr7(163);
+?></tbody></table>
+<div class="px0"></div>
+</div>
+<!--mobilePrice--><!-- Мобильные (менее 800) -->
+<div class="divPriceM">
+<div class="px0"></div>
+<table class="tmtr"><tbody><?php print $thp8;
+print fmtr8(164);
+print fmtr8(163);
+?></tbody></table>
+<div class="px0"></div>
+</div>
+<div class="px5"></div>
+
+<h2 class="h2_orange">Применение эпоксидных грунтов и грунтовок</h2>
+
+<p class="fwb fs13 c2">Эпоксидные грунтовки / грунты могут применяться:</p>
+<ul>
+<li>Для подготовки поверхности перед нанесением основных защитно-декоративных покрытий, полимерных наливных полов, огнезащитных составов и т.п.</li>
+<li>Для устройства готовых покрытий – без нанесения дополнительных материалов. Например: защитная пропитка бетонного пола или Грунт-Эмаль для металла.</li>
+<li>При необходимости грунты и грунтовки можно применять для шпатлевания-выравнивания поверхности, путём наполнения их песком.</li>
+</ul>
