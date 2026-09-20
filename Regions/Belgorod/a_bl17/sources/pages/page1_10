@@ -69,11 +69,13 @@ function f_refresh() {
   for (i=11; i<cpkr; i+=1) {
     if (pkr[i]) {
       fpb_ById('m' + i).innerHTML = fpb_ById('m_m' + i).innerHTML = '';
-      fpb_ById('r' + i).innerHTML = fpb_ById('m_r' + i).innerHTML = '';
-      fpb_ById('mr' + i).innerHTML = fpb_ById('m_mr' + i).innerHTML = '';
       fpb_ById('mi' + i).innerHTML = fpb_ById('m_mi' + i).innerHTML = '';
-      fpb_ById('ri' + i).innerHTML = fpb_ById('m_ri' + i).innerHTML = '';
-      fpb_ById('mri' + i).innerHTML = fpb_ById('m_mri' + i).innerHTML = '';
+      if (no_work == 0) {
+        fpb_ById('r' + i).innerHTML = fpb_ById('m_r' + i).innerHTML = '';
+        fpb_ById('mr' + i).innerHTML = fpb_ById('m_mr' + i).innerHTML = '';
+        fpb_ById('ri' + i).innerHTML = fpb_ById('m_ri' + i).innerHTML = '';
+        fpb_ById('mri' + i).innerHTML = fpb_ById('m_mri' + i).innerHTML = '';
+      }
     }
   }
   v_pi=1; v_tmp_interval=setInterval(f_iteration,40);

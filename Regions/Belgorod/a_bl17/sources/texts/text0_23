@@ -1,17 +1,25 @@
 // Для покрытий fcvr3()
-$tbl1='<div style="box-shadow:4px 4px 7px 0 #999999;"><div class="px5"></div><table class="tmtr" style="box-shadow:none;"><tbody><tr><th rowspan="2" style="width:350px">Перейти в подробный расчет:</th><th colspan="3"><span class="fs12">Цена за 1 м</span><span class="fs16">²</span><span class="fs12">, руб.</span></th><th colspan="3"><span class="fs12">Стоимость за всю площадь, руб.</span></th></tr><tr><th style="width:40px;">Мат-лы</th><th style="width:40px;">Работы</th><th style="width:45px; font-weight:bold;">Мат+Раб</th><th style="width:70px;">Материалы</th><th style="width:65px;">Работы</th><th style="width:70px; font-weight:bold;">Мат + Раб</th></tr>';
+if ($no_work==1) {
+  $tbl1='<div style="box-shadow:4px 4px 7px 0 #999999;"><div class="px5"></div><table class="tmtr" style="box-shadow:none;"><tbody><tr><th rowspan="2" style="width:350px">Перейти в подробный расчет:</th><th><span class="fs12">Цена за 1 м</span><span class="fs16">²</span><span class="fs12">, руб.</span></th><th><span class="fs12">Стоимость за всю площадь, руб.</span></th></tr><tr><th>Материалы</th><th>Материалы</th></tr>';
+} else {
+  $tbl1='<div style="box-shadow:4px 4px 7px 0 #999999;"><div class="px5"></div><table class="tmtr" style="box-shadow:none;"><tbody><tr><th rowspan="2" style="width:350px">Перейти в подробный расчет:</th><th colspan="3"><span class="fs12">Цена за 1 м</span><span class="fs16">²</span><span class="fs12">, руб.</span></th><th colspan="3"><span class="fs12">Стоимость за всю площадь, руб.</span></th></tr><tr><th style="width:40px;">Мат-лы</th><th style="width:40px;">Работы</th><th style="width:45px; font-weight:bold;">Мат+Раб</th><th style="width:70px;">Материалы</th><th style="width:65px;">Работы</th><th style="width:70px; font-weight:bold;">Мат + Раб</th></tr>';
+}
 $tbl2='</tbody></table></div><div class="px5"></div>';
 
 // ПОКРЫТИЯ. Вариант 3. Возвращает отформатированную строку с наименованием покрытия (ТОЛЬКО ОСНОВНАЯ ЧАСТЬ, БЕЗ МЕЛКОГО ДОПОЛНЕНИЯ). КАЛЬКУЛЯТОР.
 function fcvr3($n=false,$p=false,$nm=false,$nm2='') {
-global $pkr,$pc,$list_cvr; $out='';
+global $pkr,$pc,$list_cvr,$no_work; $out='';
 if ($n>9 && $pkr[$n] && in_array($n, $list_cvr, true)) {
     if ($p==false) $p=$pkr[$n][0];
     if ($nm==false) $nm=$pkr[$n][1]; $nm=str_replace('%','',$nm);
     $out='<tr><td class="tmdl" style="text-align:left;padding-left:3px; font-size:11px;">'.$p.' '.($pc[$n]?($pc[$n].'<span style=" font-size:11px;">'.$nm.'</span></'.'a>'):($nm));
     if ($nm2) $out.=' <span style="font-weight:normal; font-size:11px">'.$nm2.'</span>';
     $out.='</td>';
-    $out.='<td id="m'.$n.'">&nbsp;</td><td id="r'.$n.'">&nbsp;</td><td id="mr'.$n.'" style="font-weight:bold;">&nbsp;</td><td id="mi'.$n.'">&nbsp;</td><td id="ri'.$n.'">&nbsp;</td><td id="mri'.$n.'" style="font-weight:bold;">&nbsp;</td></tr>';
+    if ($no_work==1) {
+      $out.='<td id="m'.$n.'">&nbsp;</td><td id="mi'.$n.'">&nbsp;</td></tr>';
+    } else {
+      $out.='<td id="m'.$n.'">&nbsp;</td><td id="r'.$n.'">&nbsp;</td><td id="mr'.$n.'" style="font-weight:bold;">&nbsp;</td><td id="mi'.$n.'">&nbsp;</td><td id="ri'.$n.'">&nbsp;</td><td id="mri'.$n.'" style="font-weight:bold;">&nbsp;</td></tr>';
+    }
 }return $out;
 }
 
@@ -19,7 +27,7 @@ $tbl1p='<div style="box-shadow:4px 4px 7px 0 #999999;"><table class="tmtr" style
 
 // ПОКРЫТИЯ. Вариант 6. Возвращает отформатированную строку с наименованием покрытия (ТОЛЬКО ОСНОВНАЯ ЧАСТЬ, БЕЗ МЕЛКОГО ДОПОЛНЕНИЯ). page1_23/block1_23 /polymer/cena/
 function fcvr6($n, $p='', $nm='',$nm2='', $m_mob='') {
-global $pkr,$pc;
+global $pkr,$pc,$no_work;
 if ($n>9 && $pkr[$n]) {
     if ($p==false) $p=$pkr[$n][0];
     if ($nm==false) $nm=$pkr[$n][1]; $nm=str_replace('%','',$nm); $link = $nm;
@@ -30,7 +38,11 @@ if ($n>9 && $pkr[$n]) {
         $link .= $nm.'</'.'a>';
         if ($nm2) $link.=' <span style="font-weight:normal; font-size:11px">'.$nm2.'</span>';
     } $out2='<tr><td class="tmdl fwb" colspan="6">'.$p.' '.$link.'</td></tr>';
-    $out2.='<tr><td id="'.$m_mob.'m'.$n.'">&nbsp;</td><td id="'.$m_mob.'r'.$n.'">&nbsp;</td><td id="'.$m_mob.'mr'.$n.'" class="fwb">&nbsp;</td><td id="'.$m_mob.'mi'.$n.'">&nbsp;</td><td id="'.$m_mob.'ri'.$n.'">&nbsp;</td><td id="'.$m_mob.'mri'.$n.'" class="fwb">&nbsp;</td></tr>';
+    if ($no_work==1) {
+      $out2.='<tr><td id="'.$m_mob.'m'.$n.'">&nbsp;</td><td id="'.$m_mob.'mi'.$n.'">&nbsp;</td></tr>';
+    } else {
+      $out2.='<tr><td id="'.$m_mob.'m'.$n.'">&nbsp;</td><td id="'.$m_mob.'r'.$n.'">&nbsp;</td><td id="'.$m_mob.'mr'.$n.'" class="fwb">&nbsp;</td><td id="'.$m_mob.'mi'.$n.'">&nbsp;</td><td id="'.$m_mob.'ri'.$n.'">&nbsp;</td><td id="'.$m_mob.'mri'.$n.'" class="fwb">&nbsp;</td></tr>';
+    }
     $out=$out1.$out2;
 }
 return $out;

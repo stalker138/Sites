@@ -1,12 +1,14 @@
 // МАТЕРИАЛЫ. Вариант 1. Возвращает отформатированную строку с Наименованием материала (основная часть + дополнение) и Ценами.
 function fmtr1($n=false, $f=false, $nm='',$nm2='', $id=0) {
-global $mtr,$mtrt,$pl,$list_mtr,$new_mtr,$is_price,$pl_col,$is_basket; $out='';if($id<11) $id=$n; $out=''; $m=$mtr; $new='';
+global $mtr,$mtrt,$pl,$list_mtr,$new_mtr,$mtr_names,$is_price,$pl_col,$is_basket; $out='';if($id<11) $id=$n; $out=''; $m=$mtr; $new='';
 
-if ($mtr[$n] && in_array($n, $list_mtr, true)) {
+if ($mtr[$n] && in_array($n, $list_mtr, true) && (($is_price==0) || (($is_price!=0) && ($mtr[$n][$pl_col[0]]!=0)))) {
     if (in_array($n, $new_mtr, true)) $new='<div style="float:right;padding:2px;font:bold 12px arial;color:#f00000">new!</div>';
     if (!$f) $f=$mtr[$n][0]; // Номер пункта
-    $name = $nm ? $nm : $mtr[$n][1];
-    $name2 = $nm2 ? $nm2 : $mtr[$n][2];
+    $local_name = $mtr_names[$n][1];
+    $name = $nm ? $nm : $mtr_names[$n][1];
+    if ($name == '') { $name = $mtr[$n][1]; }
+    if ($local_name == '') { $name2 = $nm2 ? $nm2 : $mtr[$n][2]; }
     $ndx = strpos($name2 ,'^');
     $nm0 = '';
     if ($ndx > 0) {
@@ -41,7 +43,7 @@ if ($mtr[$n] && in_array($n, $list_mtr, true)) {
 // МАТЕРИАЛЫ. Вариант 2. Возвращает отформатированную таблицу с ценами материала (основная часть + дополнение). Цены.
 function fmtr2($n=false,$f=false,$w=false) {
 global $mtr,$list_mtr,$is_price,$pl_col,$tmh_vol,$tmh_w; $out='';
-if ($is_price==0) return;
+if (($is_price==0) || (($is_price!=0) && ($mtr[$n][$pl_col[0]]==0))) return;
 if ($mtr[$n] && in_array($n, $list_mtr, true)) {
  if (count($pl_col)==1) {
     $out='<div'.($w?'':' style="width:350px;"').'><p><span style="color:#ff5506; font-size:25px;">'.$mtr[$n][3].'&nbsp;';
@@ -62,4 +64,3 @@ else
  }
 }return $out;
 }
-

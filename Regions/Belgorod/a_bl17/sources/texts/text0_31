@@ -18,6 +18,8 @@ var ne = <?php print $snt? 1:0; ?>;   /* Толщина наполнителя *
 var se = <?php print $se? $se:0; ?>;  /* Кол-во слоев финишного слоя */
 var sp = <?php print $sp? $sp:0; ?>;  /* Тип поверхности (фактурная/шероховатая) */
 
+var no_work = <?php print $no_work? $no_work:0; ?>;  /* Отсутствует стоимость работ на калькуляторе */
+
 /* Объявление глобальных переменных */
 var pirgr = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]; /* Расход первичного покрытия по маркам бетона */
 var pirnp = [0.0, 0.0, 0.0, 0.0];  /* Расход подстилки от толщины */
@@ -393,21 +395,27 @@ function f_i_t() {
     fpb_ById('o_ikol').innerHTML=f_r(kol);
     fpb_ById('o_icena_').innerHTML=f_r(st/pi_so);    /* Цена руб/м.кв */
     fpb_ById('o_ist').innerHTML=f_r0(st);            /* Стоимость руб */
-    fpb_ById('o_voc').innerHTML=f_r(st/pi_so);       /* Основные материалы, инструмент */
-    fpb_ById('o_vos').innerHTML=f_r0(st);            /* Основные материалы, инструмент - На всю площадь */
-    fpb_ById('o_vmc').innerHTML=f_r(pi_vmc);         /* Прочие материалы, инструмент */
-    fpb_ById('o_vms').innerHTML=f_r0(pi_vmc*pi_so);  /* Прочие материалы, инструмент - На всю площадь */
-    fpb_ById('o_vrc').innerHTML=f_r(pi_vrc);         /* Работы */
-    fpb_ById('o_vrs').innerHTML=f_r0(pi_vrc*pi_so);  /* Работы На всю площадь */
-    fpb_ById('o_ic').innerHTML=f_r(st/pi_so+pi_vmc+pi_vrc);    /* цена работ */
-    fpb_ById('o_is').innerHTML=f_r0(st+(pi_vmc+pi_vrc)*pi_so);  /* и стоимость */
-<?php } else { // КАЛКУЛЯТОР ?>
+    if (no_work ==1) {
+    } else {
+      fpb_ById('o_voc').innerHTML=f_r(st/pi_so);       /* Основные материалы, инструмент */
+      fpb_ById('o_vos').innerHTML=f_r0(st);            /* Основные материалы, инструмент - На всю площадь */
+      fpb_ById('o_vmc').innerHTML=f_r(pi_vmc);         /* Прочие материалы, инструмент */
+      fpb_ById('o_vms').innerHTML=f_r0(pi_vmc*pi_so);  /* Прочие материалы, инструмент - На всю площадь */
+      fpb_ById('o_vrc').innerHTML=f_r(pi_vrc);         /* Работы */
+      fpb_ById('o_vrs').innerHTML=f_r0(pi_vrc*pi_so);  /* Работы На всю площадь */
+      fpb_ById('o_ic').innerHTML=f_r(st/pi_so+pi_vmc+pi_vrc);    /* цена работ */
+      fpb_ById('o_is').innerHTML=f_r0(st+(pi_vmc+pi_vrc)*pi_so);  /* и стоимость */
+    }
+<?php } else { // КАЛЬКУЛЯТОР ?>
     fpb_ById('m' + pi).innerHTML = fpb_ById('m_m' + pi).innerHTML = f_r0(st/pi_so);
     fpb_ById('mi' + pi).innerHTML = fpb_ById('m_mi' + pi).innerHTML = f_r0(st);
-    fpb_ById('r' + pi).innerHTML = fpb_ById('m_r' + pi).innerHTML = f_r0(pi_vmc+pi_vrc);
-    fpb_ById('ri' + pi).innerHTML = fpb_ById('m_ri' + pi).innerHTML = f_r0((pi_vmc+pi_vrc)*pi_so);
-    fpb_ById('mr' + pi).innerHTML = fpb_ById('m_mr' + pi).innerHTML = f_r0(st/pi_so+pi_vmc+pi_vrc);
-    fpb_ById('mri' + pi).innerHTML = fpb_ById('m_mri' + pi).innerHTML = f_r0(st+(pi_vmc+pi_vrc)*pi_so);
+    if (no_work ==1) {
+    } else {
+      fpb_ById('r' + pi).innerHTML = fpb_ById('m_r' + pi).innerHTML = f_r0(pi_vmc+pi_vrc);
+      fpb_ById('ri' + pi).innerHTML = fpb_ById('m_ri' + pi).innerHTML = f_r0((pi_vmc+pi_vrc)*pi_so);
+      fpb_ById('mr' + pi).innerHTML = fpb_ById('m_mr' + pi).innerHTML = f_r0(st/pi_so+pi_vmc+pi_vrc);
+      fpb_ById('mri' + pi).innerHTML = fpb_ById('m_mri' + pi).innerHTML = f_r0(st+(pi_vmc+pi_vrc)*pi_so);
+   } 
 <?php } ?>
 }
 <?php if($show) { ?>

@@ -1,3 +1,38 @@
-{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}
+<style>
+#id_oc_all { float:right; margin:0; text-align:center; }
+#id_open_all,#id_close_all { cursor:pointer; float:right; margin:5px 0 0 10px; font-size:11px; text-decoration:underline; color:#004f92; } #id_open_all:hover,#id_close_all:hover { color:#f00000; }
+.techflex, .techflex1 {display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+.techflex {padding:4px 0; border-bottom: solid 1px #c8c8c8}
+.techflex1, .techflex2 {width:60%; height:25px; padding: 0 10px;}
+.techflex1 { height:auto; padding: 5px 10px; }
+.techflex2 {width:30%; display:flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; align-items: center;}
+@media screen and (max-width:600px) {
+.techflex1, .techflex2 {width:100%}
+}
+#content .tpdf, .butr { width:120px; }
+#content .tpdf { color:#000000; text-decoration:none }
+#content .butr { color:#ffffff;  background: #f5530e; text-indent:0; text-align:center; ; text-decoration:none; }
+#content .butr:hover { background: #006400; color:#ffffff; text-decoration:underline; }
+#content .tpdf:hover { color:#000000; text-decoration:underline; }
+
+#content .techflex .tpdf { background-size: 16px; width: 90px;padding: 4px 0px 4px 20px;text-indent: 0;text-align: center; }
+#content .techflex .butr {width: 100px;padding: 4px 0px 4px 0; text-indent: 0;text-align: center; }
+</style>
+{*tpl3*}</head><body>{*tpl7*}
 {*block1_4*}
-{*tpl8*}{*tpl4*}</body></html>
+{*tpl8*}{*tpl4*}
+<script>
+function f_page1010(o,f) {
+  var a,p,i,h,ls=f?[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,f_gdhm()]:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,f_gdhm()];
+  a=document.querySelectorAll('.divh3'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt(fpb_getStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==40) || (!f&&h!=40)) fpb_a_height(p,200,25,p.scrollHeight,40);
+    }
+  }
+  fpb_setLS("page1023items",JSON.stringify(ls));
+}
+function f_gdhm() { var d=new Date(), y='000'+d.getFullYear(),l=y.length,m=(d.getMonth()+1),h=d.getHours(),dt=d.getDate(),t=d.getMinutes(); if(l>4)y=y.substr(l-4,4); if(m<10)m='0'+m; if(h<10)h='0'+h; if(dt<10)dt='0'+dt; if(t<10)t='0'+t; return parseInt(y.substr(2,2)+m+dt+h+t); } /* Возврат строки yymmddhhtt из объекта даты */
+
+</script>
+</body></html>

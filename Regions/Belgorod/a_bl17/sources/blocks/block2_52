@@ -274,7 +274,7 @@ fmtr_repair($ndx_mtr);
 
 <div id="mtr_body_4">
 <!--noindex-->
-<?php fmtr_srt(array(54,51,53,1026,57)); ?>
+<?php fmtr_srt($a_srt_ast); ?>
 <div class="px5"></div>
 <!--/noindex-->
 </div>

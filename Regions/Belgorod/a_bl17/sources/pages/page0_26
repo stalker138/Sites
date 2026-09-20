@@ -99,7 +99,9 @@ print $opt;
     <?php if ($pb_page!=3083) { ?><option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;НЕТ</option><?php } ?>
     <option value="1">&nbsp;матовый</option>
     <option value="2">&nbsp;полуматовый</option>
+<?php if ($pb_page!=3051 && $pb_page!=3052) { ?>
     <option value="3">&nbsp;глянцевый</option>
+<?php } ?>
   </select>
 </td>
 </tr>

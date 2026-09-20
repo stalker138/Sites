@@ -1,3 +1,15 @@
-{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}
+<style>
+@media screen and (max-width:999px) { .div_mo, .div_mc { height:45px; } }
+
+.div_mo ul li, .div_mc ul li, #content .div_mc ul li a, #content .div_mo ul li a {
+    font-size: 13px;
+    line-height: 20px;
+}
+#content ul span {font-weight:normal; }
+ul {list-style: none;}
+.p11 {margin-left: 30px;}
+</style>
+{*tpl3*}</head><body>{*tpl7*}
 {*block1_5*}
 {*tpl8*}{*tpl4*}</body></html>

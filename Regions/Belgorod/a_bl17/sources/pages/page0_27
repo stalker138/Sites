@@ -296,6 +296,8 @@ if ($ml) { ?>
 <div class="fright mt7"><input type="button" value="&nbsp;&nbsp;КУПИТЬ рассчитанные Материалы&nbsp;&nbsp;" onclick="f_post(5);" style="cursor:pointer; height:25px; font-weight:bold; font-size:13px; letter-spacing:1px; color:#ff0000; text-shadow:2px 2px 2px #ffffff; box-shadow:3px 3px 7px 0 #999999;"/></div>
 <div class="px15"></div>
 
+<?php if ($no_work==0) { ?>
+
 <div id="table1" style="display:none;box-shadow:4px 4px 7px 0 #999999;">
 <table class="table3"><tbody>
 <tr><td class="thead thead3" style="cursor:pointer" onclick="showTable()">3. <span style="font-weight:bold;font-size:13px;text-decoration:underline;">ПОКАЗАТЬ стоимость Работы + Материалы</span></td></tr>
@@ -305,7 +307,7 @@ if ($ml) { ?>
 <div id="table2">
 <div style="box-shadow:4px 4px 7px 0 #999999;"><table class="table3">
 <tbody>
-<tr><td class="thead" colspan="4">3. Стоимость Работы + Материалы <span style="font-weight:normal">(с НДС).</span> <span class="cf00">Расчёт только для Москвы и МО</span></td></tr>
+<tr><td class="thead" colspan="4">3. Стоимость Работы + Материалы <span style="font-weight:normal">(с НДС).</span></td></tr>
 <tr style="height:35px;">
 <th style="width:224px;font-size:11px;"><span>Материалы, работы</span></th>
 <th style="font-size:11px;"><span>Цена за<br>м2</span>, руб</th>
@@ -339,8 +341,9 @@ if ($ml) { ?>
 </tbody>
 </table></div>
 <div class="px5"></div>
-<div id="table2p" style="float:right;margin-top:10px;"><input type="button" value="&nbsp;&nbsp;ЗАКАЗАТЬ Работы + Материалы&nbsp;&nbsp;" onclick="f_post(6);" style="cursor:pointer; height:25px; font-weight:bold; font-size:13px; letter-spacing:1px; color:#ff0000; text-shadow:2px 2px 2px #ffffff; box-shadow:3px 3px 7px 0 #999999;"/></div>
+<!--div id="table2p" style="float:right;margin-top:10px;"><input type="button" value="&nbsp;&nbsp;ЗАКАЗАТЬ Работы + Материалы&nbsp;&nbsp;" onclick="f_post(6);" style="cursor:pointer; height:25px; font-weight:bold; font-size:13px; letter-spacing:1px; color:#ff0000; text-shadow:2px 2px 2px #ffffff; box-shadow:3px 3px 7px 0 #999999;"/></div-->
 <!--noindex--><div class="fleft"><p><span>Более точный расчёт стоимости работ предоставляется после осмотра объекта</span>.</p>
 <p style="margin-top:3px">Транспортные и командировочные расходы НЕ включены.</p></div><!--/noindex-->
 </div>
+<?php }  ?>
 <div class="px5"></div>

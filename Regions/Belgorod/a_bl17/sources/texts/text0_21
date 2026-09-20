@@ -1,4 +1,24 @@
-function fmtr_srt($asrt=false) {
+function fmtr_price_h1() {
+//вывод H1 на странице прайс-листа
+global $is_price;
+if ($is_price==0) {
+ $s_out='<h1>Продукция «Элакор»</h1>'.'{*text1_6*}';
+}
+else {
+ $s_out='<h1>Материалы «Элакор». Цены.</h1>'.'{*text1_6*}';
+ $s_out.='
+<div class="px5"></div>
+<div>
+Цены указаны с учётом НДС и тары, на условиях предоплаты 100%.<br>
+Цены зависят от общего количества покупаемых материалов.<br>
+Позиции * - для фасовки в бочки по 200кг цена <span>дешевле на 5р/кг</span>.</div>
+';
+}
+$s_out.='{*text1_13*}';
+print $s_out;
+}
+
+function fmtr_srt($asrt=false, $lst=false) {
 //вывод списка сертификатов по массиву индексов сертификатов 
  global $a_srt;
  $s_out='';
@@ -7,9 +27,13 @@ function fmtr_srt($asrt=false) {
  $s_out="<ul> ";
 
  foreach($asrt as $n_srt){
-   $s_out.='
-   <li class="mt10"><a '.$href.$a_srt[$n_srt][0].'" rel="nofollow" target="_blank" title="Открыть/Скачать PDF '.$a_srt[$n_srt][1].'">'.$a_srt[$n_srt][1].'</a></li>
-  ';
+   $s_out.='<li style="text-align: left"';
+   if ($lst) {$s_out.='><span>'.$a_srt[$n_srt][2].'.</span> &nbsp;&nbsp;';}
+   else {$s_out.=' class="mt10">';}
+   $s_out.='<a '.$href.$a_srt[$n_srt][0].'" rel="nofollow" target="_blank" title="Открыть/Скачать PDF '.$a_srt[$n_srt][1].'">'.$a_srt[$n_srt][1].'</a>.';
+   if ($a_srt[$n_srt][3])
+      $s_out.='<br><span class="p11">'.$a_srt[$n_srt][3].'</span>';
+   $s_out.='</li>';
  }
  $s_out.="</ul> ";
 
@@ -76,7 +100,7 @@ if ($a_tech[$n_tech]=="" && $a_tech_cvr[$n_tech]=="") {return;}
  $s_out='
     <div class="rlink" style="margin-top:7px;">';
  if ($a_tech_cvr[$n_tech]!="") {
-   $s_out.=$a_tech_cvr[$n_tech].$pkr_dop[$n_tech][0].'</a> <span>Описание</span>
+   $s_out.=$a_tech_cvr[$n_tech].$pkr_dop[$n_tech][0].'Описание</a>
       <div class="px10"></div>';
  }
  if ($a_tech[$n_tech]!="") {
@@ -313,14 +337,22 @@ $s_out='<div class="foto_mtr" style="min-width:100px; width: max-content; backgr
 
 function fmtr_og($n_mat=0) {
 //вывод микроразметки og страницы по массиву индексов материалов 
- global $mtr_dop,$pb_domain,$pb_full_url;
+ global $mtr,$mtr_dop,$pb_domain,$pb_full_url,$is_price;
  $img=preg_replace('/webp/', 'png', $mtr_dop[$n_mat][1]); 
+ $price=preg_replace('/[^0-9]+/', '', $mtr[$n_mat][8]);
 $s_out='
  <meta property="og:title" content="'.$mtr_dop[$n_mat][0].'" />
  <meta property="og:type" content="article" />
  <meta property="og:url" content="'.$pb_domain.$pb_full_url.'" />
  <meta property="og:image" content="https://elakors.ru/img/mtr/p'.$n_mat.'.png" />
+ <meta property="og:product:availability" content="in stock" />
 ';
+if ($is_price==1) {
+$s_out.='
+ <meta property="og:product:price:amount" content="'.$price.'" />
+ <meta property="og:product:price:currency" content="RUB" />
+ ';
+}
  print($s_out);
 }
 
@@ -375,7 +407,6 @@ function fmtr_ord($n_mat=0, $title, $dop='') {
   $s_out='<div class="bzakmat" style="float:left;" onclick="f_b('.$n_mat.','.chr(39).$nm.$dop.chr(39).')" title="'.$title.'">Купить</div>';
   }
   print($s_out);
-
 }
 
 function fmtr_ord_link($n_mat=0, $title, $dop='') {
@@ -387,5 +418,38 @@ function fmtr_ord_link($n_mat=0, $title, $dop='') {
   $s_out='<div id="idsal" style="float:none; margin-bottom:5px;" onclick="f_b('.$n_mat.','.chr(39).$nm.$dop.chr(39).')">'.$title.'</div>';
   }
   print($s_out);
+}
 
+function ftech_set($atech=false) {
+//вывод плашек инструкций по массиву индексов инструкций 
+ global $a_cattech, $a_tech, $pkr, $pkr_dop, $a_ref_tech, $pc;
+ $s_out='<div class="bsh1">';
+ foreach($atech as $n_tech){
+   if ($n_tech==0) {continue;}
+   $ref=(($a_ref_tech[$n_tech]=='') ? '' : $a_ref_tech[$n_tech]);
+   $ref_calc=(($pc[$n_tech]=='') ? '' : $pc[$n_tech]);
+   $ref_tech=(($a_tech[$n_tech]=='') ? '' : $a_tech[$n_tech]);
+   $nm=(($ref=='') ? '<span>'.$pkr[$n_tech][0].' '.$pkr[$n_tech][1].'</span>' : $a_ref_tech[$n_tech].' class="atech">'.$pkr[$n_tech][0].' '.$pkr[$n_tech][1].'</a>');
+   $nm=str_replace('%','',$nm);
+   $nm2=$pkr[$n_tech][2];
+   if ($nm2!='') { $nm2=' <span style="font-size:11px; font-weight:normal;">'.$nm2.'</span>'; }
+   $s_out.='<div class="techflex">
+         <div class="techflex1"><div>'.$nm.$nm2.'</div></div>';
+   if ($ref_tech || $ref_calc) {
+   $s_out.='<div class="techflex2">';
+   if ($ref_tech != '') {
+   $s_out.='<a class="tpdf" style="float:none;" href="'.$a_tech[$n_tech].'" target="_blank" title="PDF '.$pkr_dop[$n_tech][0].' технология" rel="nofollow">Инструкция</a>';
+   }
+    if ($ref_calc!= '') {
+      $ref_calc = rtrim($ref_calc, '>');
+      $s_out.=$ref_calc.' class="butr" style="float:none;" title="Расчет количества и цены материалов, стоимости работ">ЦЕНА-расчет</a>';
+   } else {
+      $s_out.=' <div style="width:100px;"> &nbsp;</div>';
+   }
+   $s_out.=' </div>';
+   }
+   $s_out.=' </div>';
+ }
+ $s_out.=' </div>';
+ print($s_out);
 }
