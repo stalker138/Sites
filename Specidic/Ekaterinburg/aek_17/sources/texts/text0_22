@@ -1,6 +1,7 @@
 // Для Материалов
-$tmh='<tr><th style="padding-left:7px; text-align:left;"><div style="float:left;width:33px;text-align:left;"><span style="vertical-align:top;">Код</span></div><span>Описание материала</span></th><th style="width:7%"><span>10-39кг</span></th><th style="width:8%"><span>40-199кг</span></th><th style="width:8%"><span>200-499кг</span></th><th style="width:7%"><span>500-1тн</span></th><th style="width:7%"><span>1-3тн</span></th><th style="width:7%"><span>от 3тн</span></th></tr>';
-$tmhb1='<tr><th style="padding-left:7px; text-align:left;"><div style="float:left;width:33px;text-align:left;"><span style="vertical-align:top;">Код</span></div><span>Описание материала</span></th><th style="width:6.5%"><span>10-39кг</span></th><th style="width:6.5%"><span>40-199кг</span></th><th style="width:6.5%"><span>200-499</span></th><th style="width:6.5%"><span>500-1тн</span></th><th style="width:6%"><span>1-3тн</span></th><th style="width:6%"><span style="white-space:nowrap">от 3тн</span></th><th style="width:3.5%;min-width:22px"></th></tr>';
+$is_price=1;
+$tmh='<tr><th style="padding-left:7px; text-align:left;"><div style="float:left;width:33px;text-align:left;"><span style="vertical-align:top;">Код</span></div><span>Описание материала</span></th><th style="width:7%"><span>до 59кг</span></th><th style="width:8%"><span>60-199кг</span></th><th style="width:8%"><span>200-499кг</span></th><th style="width:7%"><span>500-1тн</span></th><th style="width:7%"><span>1-3тн</span></th><th style="width:7%"><span>от 3тн</span></th></tr>';
+$tmhb1='<tr><th style="padding-left:7px; text-align:left;"><div style="float:left;width:33px;text-align:left;"><span style="vertical-align:top;">Код</span></div><span>Описание материала</span></th><th style="width:6.5%"><span>до 59кг</span></th><th style="width:6.5%"><span>60-199кг</span></th><th style="width:6.5%"><span>200-499</span></th><th style="width:6.5%"><span>500-1тн</span></th><th style="width:6%"><span>1-3тн</span></th><th style="width:6%"><span style="white-space:nowrap">от 3тн</span></th><th style="width:3.5%;min-width:22px"></th></tr>';
 
 // МАТЕРИАЛЫ. Вариант 1. Возвращает отформатированную строку с Наименованием материала (основная часть + дополнение) и Ценами.
 function fmtr1($n=false, $f=false, $nm='',$nm2='', $id=0) {
@@ -32,9 +33,9 @@ global $mtr,$list_mtr,$is_price; $out='';
 if ($is_price==0) {return '';}
 if ($mtr[$n] && in_array($n, $list_mtr, true)) {
   if ($n==227||$n==105) {
-    $out='<table class="tmtr"'.($w?'':' style="width:336px;"').'><tbody><tr><th style="height:15px;">10-39л</th><th style="height:15px;">40-199л</th><th style="height:15px;">200-499л</th><th style="height:15px;">500-1000л</th><th style="height:15px;">1000-3000л</th><th style="height:15px;">от 3000л</th></tr>';
+    $out='<table class="tmtr"'.($w?'':' style="width:336px;"').'><tbody><tr><th style="height:15px;">до 59л</th><th style="height:15px;">60-199л</th><th style="height:15px;">200-499л</th><th style="height:15px;">500-1000л</th><th style="height:15px;">1000-3000л</th><th style="height:15px;">от 3000л</th></tr>';
   } else {
-    $out='<table class="tmtr"'.($w?'':' style="width:336px;"').'><tbody><tr><th style="height:15px;">10-39кг</th><th style="height:15px;">40-199кг</th><th style="height:15px;">200-499кг</th><th style="height:15px;">500-1тн</th><th style="height:15px;">1-3тн</th><th style="height:15px;">от 3тн</th></tr>';
+    $out='<table class="tmtr"'.($w?'':' style="width:336px;"').'><tbody><tr><th style="height:15px;">до 59кг</th><th style="height:15px;">60-199кг</th><th style="height:15px;">200-499кг</th><th style="height:15px;">500-1тн</th><th style="height:15px;">1-3тн</th><th style="height:15px;">от 3тн</th></tr>';
   }
     $out.='<tr><td style="font-size:13px; font-weight:bold; height:26px; line-height:26px;">'.$mtr[$n][3].'</td><td style="font-size:13px; font-weight:bold; height:26px; line-height:26px;">'.$mtr[$n][4].'</td><td style="font-size:13px; font-weight:bold; height:26px; line-height:26px;">'.$mtr[$n][5].'</td><td style="font-size:13px; font-weight:bold; height:26px; line-height:26px;">'.$mtr[$n][6].'</td><td style="font-size:13px; font-weight:bold; height:26px; line-height:26px;">'.$mtr[$n][7].'</td><td style="font-size:13px; font-weight:bold; height:26px; line-height:26px;">'.$mtr[$n][8].'</td></tr>';
     $out.='</tbody></table>';

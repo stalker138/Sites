@@ -3,15 +3,22 @@
 ?>
 {*text0_12*}
 <div id="fcnt">
-<?php if (1==2) { ?>
-<!-- Yandex.Metrika informer --><a href="http://metrika.yandex.ru/stat/?id=4973767&amp;from=informer" target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/4973767/3_0_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:none 0px;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"></a><!-- /Yandex.Metrika informer -->
-<!-- Yandex.Metrika counter -->
-<div style="display:none;"><script>(function(w, c) {(w[c]=w[c]||[]).push(function(){try{w.yaCounter4973767=new Ya.Metrika(4973767);yaCounter4973767.clickmap(true);yaCounter4973767.trackLinks(true);}catch(e){}});})(window,'yandex_metrika_callbacks');</script></div>
-<script src="//mc.yandex.ru/metrika/watch.js" defer="defer"></script><noscript><img src="//mc.yandex.ru/watch/4973767" style="position:absolute; left:-9999px;" alt=""></noscript>
-<!-- /Yandex.Metrika counter -->
-<?php } ?>
 
-<?php if (1==1) { ?>
+<?php
+
+//Проверка ботов. Проверяется прямой заход на главную страницу от пользователя, который не помечен как бот.
+function chk_remote_user() {
+  global $no_metrix;
+  $r=$_SERVER['HTTP_REFERER']; $ret=1; $p=strpos($_SERVER['HTTP_USER_AGENT'],'bot');
+  if (isset($no_metrix) && ($no_metrix==1)) $ret=0;
+  if (!$p || $p<1) {
+     $uri = $_SERVER['REQUEST_URI'];
+     if (!$r && ($uri == "/")) { $ret=0; }
+  }
+  return $ret;
+}
+
+ if (chk_remote_user()==1) { ?>
 <!-- <noindex><nofollow> -->
 <!-- Yandex.Metrika counter -->
 <script>
@@ -34,7 +41,10 @@
         webvisor:true
    });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/100245409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+<div><img src="https://mc.yandex.ru/watch/4973767" style="position:absolute; left:-9999px;" alt="" /></div>
+<div><img src="https://mc.yandex.ru/watch/100245409" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
 <!-- Yandex.Metrika informer -->
 <a href="https://metrika.yandex.ru/stat/?id=4973767&amp;from=informer"
 target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/4973767/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"

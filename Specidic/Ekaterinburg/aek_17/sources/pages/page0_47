@@ -12,5 +12,8 @@ body #d404:hover { text-decoration:underline; background:#ffffff; box-shadow:1px
 <div class="px0" style="height:70px"></div>
 <l1 id="1" id="d404" style=""><h1>404 Not found<br>Страница не найдена</h1><div class="px15"></div>Перейти на<br>главную страницу<div class="px10"></div></l1>
 <div class="px0" style="height:70px"></div>
+<?php
+$no_metrix=1;
+?>
 
 {*tpl8*}{*tpl5*}{*tpl6*}</body></html>{*tpl10*}
