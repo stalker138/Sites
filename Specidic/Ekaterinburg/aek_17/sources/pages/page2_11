@@ -1,0 +1,5 @@
+{*tpl1*}{*tpl9*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}
+<?php fmtr_og(11); ?>
+{*tpl3*}</head><body>{*tpl7*}
+{*block2_11*}
+{*tpl8*}{*tpl5*}{*tpl6*}</body></html>{*tpl10*}

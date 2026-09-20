@@ -1,0 +1,54 @@
+</div>
+<div id="shiftfooter"></div>
+<div id="header">
+<l1 id="1"  id="logo"></l1>
+<div id="topmenu">
+<div id="tmb1"></div><div id="tmb2"></div><div id="tmb3"></div><div id="tmb4"></div><div id="tmb5"></div><div id="tmb6"></div>
+<l1 id="7" id="tm1">Прайс-лист</l1><l1 id="1" id="tm2">Главная</l1><l1 id="6" id="tm3">Карта цветов</l1><l1 id="4" id="tm4">Наши работы</l1><l1 id="241" id="tm5">Фото</l1><l1 id="2" id="tm6">Контакты</l1>
+<div id="rtm1" class="rtms"></div><div id="rtm2" class="rtms"></div><div id="rtm3" class="rtms"></div><div id="rtm4" class="rtms"></div><div id="rtm5" class="rtms"></div><div id="rtm6" class="rtms"></div>
+</div>
+<div id="pblock"></div>
+<div id="helakor">Промышленные полы <p>Элакор</p></div>
+<div id="adrtel">телефоны: <span style="color:red;"> 8-800-300-87-65</span>&nbsp;&nbsp;&nbsp;(343) 213-48-72 / 213-10-94</div>
+</div>
+<div id="bleft"></div><div id="bright"></div>
+
+<div id="leftmenu"><aside>
+<?php $tlm=' style="text-shadow:#005093 1px 1px 2px; color:#ffffff; background:#f00000;"'; ?>
+<div>
+<l1 id="24"<?php if ($pb_page==9999) print $tlm; ?>>Промышленные полы</l1>
+<l1 id="25"<?php if ($pb_page==9999) print $tlm; ?>>Наливные полы</l1>
+<l1 id="21"<?php if ($pb_page==9999) print $tlm; ?>>Полимерные полы</l1>
+<l1 id="28"<?php if ($pb_page==9999) print $tlm; ?>>Бетонные полы</l1>
+<div class="px10"></div>
+<l1 id="12"<?php if ($pb_page==9999) print $tlm; ?>>Как выбрать бетонные<br>промышленные полы</l1>
+<div class="px10"></div>
+<l1 id="33"<?php if ($pb_page==9999) print $tlm; ?>>Добавки для бетона</l1>
+<l1 id="10"<?php if ($pb_page==1010) print $tlm; ?>>Выбор покрытия</l1>
+<l1 id="257"<?php if ($pb_page==9999) print $tlm; ?>>Покрытия для металла</l1>
+<l1 id="258"<?php if ($pb_page==9999) print $tlm; ?>>Покрытия для дерева</l1>
+<div class="px10"></div>
+<a href="https://teohim.ru/tech/" target="_blank" <?php if ($pb_page==1008) print $tlm; ?>>Инструкции</a>
+<a href="https://teohim.ru/sert/" target="_blank"<?php if ($pb_page==1003) print $tlm; ?>>Сертификаты / Испытания</a>
+
+</div>
+<div class="px10"></div>
+<a href="https://teohim.ru/objlist.php?pos=17" id="aobjlist" target="_blank" title="Объекты на карте с возможностью выбора региона, типа объекта и типа покрытия">Выполненные<br>объекты на карте</a>
+</aside></div>
+<br><br><br>
+<?php if ($pb_page!=1014) { ?><div id="search">
+<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://teohim-ek.ru/search/','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск по teohim-ek.ru','suggest':false,'target':'_self','tld':'ru','type':3,'usebigdictionary':false,'searchid':2243875,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'поиск по сайту','input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}"><form action="https://yandex.ru/search/site/" method="get" target="_self"><input type="hidden" name="searchid" value="2243875"><input type="hidden" name="l10n" value="ru"><input type="hidden" name="reqenc" value=""><input type="search" name="text" value=""><input type="submit" value="Найти"></form></div><script>(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='http:'?'https:':'https:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+</div><?php } ?>
+
+</div>
+<div id="footer">
+<div id="ftop"></div>
+<div id="fmenu">&nbsp;|&nbsp;<l1 id="1">Главная</l1>&nbsp;|&nbsp;<l1 id="3">Сертификаты</l1>&nbsp;|&nbsp;<l1 id="8">Инструкции</l1>&nbsp;|&nbsp;<l1 id="4">Наши работы</l1>&nbsp;|&nbsp;<l1 id="7">Цены</l1>&nbsp;|&nbsp;<l1 id="10">Виды покрытий</l1>&nbsp;|&nbsp;<l1 id="9">Протоколы испытаний</l1>&nbsp;|&nbsp;<l1 id="6">Таблица цветов</l1>&nbsp;|&nbsp;<l1 id="11">Нормативные документы</l1>&nbsp;|&nbsp;<l1 id="13">Статьи</l1>&nbsp;|&nbsp;<br>&nbsp;|&nbsp;<l1 id="12">Как выбрать промышленный бетонный пол</l1>&nbsp;|&nbsp;<l1 id="2" title="Контакты ООО ТэоХим - Екатеринбург">Контакты</l1>&nbsp;|&nbsp;</div>
+<div id="fcopy">&copy; 2003-2024<br>ООО "ТэоХим" Екатеринбург</div>
+
+<?php $np='<div id="asws">Все <a href="https://www.teohim.ru/nalivnye/">полимерные наливные полы</a></div>' ?>
+<?php if (($pb_page!=1020) && ($pb_page!=1130)) print $np; ?>
+ <?php if ($pb_page>1000) { ?><div style="position:absolute;left:245px;top:70px;font:normal 12px arial; color:#2878bb;"><l0 id="30" style="color:#2878bb;">Политика конфиденциальности</l0></div><?php } ?>
+
+{*tpl4*}
+</div>

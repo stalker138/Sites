@@ -1,0 +1,32 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<table class="tbl" style="vertical-align:top;">
+<tbody>
+<tr><td>&nbsp;</td><td style="text-align:center;width:410px;"><span class="bold">Схема проезда</span></td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td><span class="bold">Адрес:</span></td>
+<td rowspan="14">
+<!--img src="/images/main/map_small.jpg" class="pb_ismall" onclick="fpb_zoomImg(this,'/images/main/map_big.jpg',200,25,914,851)" title="Схема презда ООО «ТэоХим» - Екатеринбург" alt="Схема презда ООО «ТэоХим» - Екатеринбург">
+<img src="/images/main/map_big.jpg" class="pb_hidden" title="Схема презда ООО «ТэоХим» - Екатеринбург" alt="Схема презда ООО «ТэоХим» - Екатеринбург"-->
+<div id="ymaps-map-id_7c790bad271642d692c73366b25c3e8c" style="width:100%; height:400px; max-width:750px;"></div>
+<script type="text/javascript">function fid_7c790bad271642d692c73366b25c3e8c(ymaps) {var map = new ymaps.Map("ymaps-map-id_7c790bad271642d692c73366b25c3e8c", {center: [56.822331, 60.558029], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([56.822331, 60.558029], {balloonContent: "Компания «ТэоХим Екатеринбург»"}, {preset: "twirl#lightblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_7c790bad271642d692c73366b25c3e8c"></script>
+</div>
+</td>
+</tr>
+<tr><td>620043, г. Екатеринбург,<br>ул. Черкасская, 9, оф. 105</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td><span class="bold">Телефоны:</span></td></tr>
+<tr><td><a href="tel:88003008765" style="font-size:14px; font-weight:bold;">8-800-300-87-65</a></td></tr>
+<tr><td><a href="tel:83432134872">8 (343) 213-48-72</a>, <a href="tel:+73432131094">213-10-94</a></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td><span class="bold">E-mail:</span></td></tr>
+<tr><td><a href="mailto:trest33@bk.ru">trest33@bk.ru</a>, <a href="mailto:ural@teohim.ru">ural@teohim.ru</a></td></tr>
+<tr style="height:50px;"><td>&nbsp;</td></tr>
+<tr><td><div id="clb">Форма обратной связи</div></td></tr>
+<tr><td>&nbsp;</td></tr>
+</tbody>
+</table>
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>

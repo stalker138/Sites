@@ -1,0 +1,14 @@
+{*tpl1*}{*tpl9*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}<style>
+table.obj {
+ width: 740px;
+}
+table.obj td {
+ width: 170px;
+ padding-right: 15px;
+ padding-bottom: 10px;
+ text-align: center;
+ vertical-align: bottom;
+}
+</style></head><body>{*tpl7*}
+{*block1_242*}
+{*tpl8*}{*tpl5*}{*tpl6*}</body></html>{*tpl10*}

@@ -1,0 +1,17 @@
+{*tpl1*}{*tpl9*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block1_7*}
+{*tpl8*}{*tpl5*}{*tpl6*}<script>
+var v_page1003=0;
+function f_page1003(o) {
+  var a,p,i,f1=v_page1003?'div_mo':'div_mc',f2=v_page1003?'div_mc':'div_mo'; v_page1003=v_page1003?0:1; o.innerHTML=v_page1003?'Закрыть все':'Раскрыть все';
+  a=document.querySelectorAll('.divh3'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; if (p.className==f1) { p.className=f2; fpb_a_height(p,200,25,p.scrollHeight,40); }
+    }
+  }
+  a=document.querySelectorAll('.divh4'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; if (p.className==f1) { p.className=f2; fpb_a_height(p,200,25,p.scrollHeight,25); }
+    }
+  }
+}</script></body></html>{*tpl10*}

@@ -1,0 +1,47 @@
+<?php
+// price export/import for teohim.ru 2015 | asws | asws.ru |
+$pass='tek9'; $t_salt='defaultSalt';
+if (empty($_POST['data'])) {
+header("Expires: Thu, 01 Jan 1970 00:00:01 GMT");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+header("Pragma: no-cache"); // HTTP/1.0
+include $pb_root.'inc/mtr.php';
+$a=array('<span>1. Серия Элакор-ПУ – основные материалы.</span> Полиуретановые материалы.','<span>2. Серия Элакор-ЭД.</span> Эпоксидные материалы, без растворителей, без запаха, сухой остаток около 100%.','<span>3. Серия Элакор-ПУ - спецматериалы.</span> Материалы специального назначения.','<span>4. Элакор-ПУ.</span> Дополнительные материалы, добавки.','<span>5. Элакор-ПУ «Люкс».</span> Полиуретановые материалы светостойкие, стойкие к ультрафиолету.','<span>6. Элакор-ПУ для Металла.</span> Системы антикоррозионной защиты.','<span>7. Элакор-ПУ для Дерева.</span> Материалы для дерева и паркета.','<span>8. Элакор-ПУ "Эко".</span> Для прямого контакта с питьевой водой и сухими пищевыми продуктами.','<span>9. «Элакор-МБ».</span> Серия «Элакор-МБ» - составы для бетона и других минеральных поверхностей.','<span>10. Элакор «Эластобетон».</span>');
+$cnt=count($m); $dlmn='<div class="px3b"></div><div class="px3"></div>'; $on='" onfocus="f_focus(this)" onchange="f_change(this)" onblur="f_change(this)" onkeydown="f_keydown(event,this)"';
+$out='<div class="pstring"><p>'.$a[0].'</p></div>'.$dlmn;
+for ($i=1; $i<111; $i++) {
+    if ($m[$i]==false) {
+        $out.='<div id="p'.$i.'" style="display:none"></div>';
+    } else {
+        $out.='<div id="d'.$i.'" class="pstring">';
+        $out.='<div id="d'.$i.'_0" style="width:30px;">'.$m[$i][0].'</div><div id="d'.$i.'_1" style="width:500px;padding:0 10px 0 0;">'.preg_replace("/\%/i",'',$m[$i][1]).' '.preg_replace("/\%/i",'',$m[$i][2]).'</div>';
+        $out.='<div><input id="i'.$i.'_3" type="text" value="'.$m[$i][3].$on.'/></div><div><input id="i'.$i.'_4" type="text" value="'.$m[$i][4].$on.'/></div><div><input id="i'.$i.'_5" type="text" value="'.$m[$i][5].$on.'/></div>';
+        $out.='<div><input id="i'.$i.'_6" type="text" value="'.$m[$i][6].$on.'/></div><div><input id="i'.$i.'_7" type="text" value="'.$m[$i][7].$on.'/></div><div><input id="i'.$i.'_8" type="text" value="'.$m[$i][8].$on.'/></div>';
+        $out.='</div>'.$dlmn;
+    } if (($i==18||$i==30||$i==40||$i==50||$i==60||$i==70||$i==80||$i==90||$i==100)) $out.='<div class="pstring"><p>'.$a[$i/10-1].'</p></div><div class="px5"></div>'.$dlmn; 
+}
+print 'var o_PP='."'".$out."'".';';
+} else {
+header("Access-Control-Allow-Origin: http://www.teohim.ru");
+$data=$_POST['data']; if (substr($data,0,10)!='0123456789' || empty($_POST['hash']) || strlen($_POST['hash'])!=32) { header("HTTP/1.1 204 No Content"); exit; }
+$o_hash=$_POST['hash']; $data=substr($data,10);
+if ($o_hash!=md5(strrev($_SERVER['REMOTE_ADDR']).$_SERVER['HTTP_USER_AGENT'].$pass.$t_salt)) { header("HTTP/1.1 204 No Content"); exit; }
+$file=$pb_root.'inc/mtr.php'; $txt=@file_get_contents($file); $pos=strpos($txt,chr(10)); $new=substr($txt,0,$pos+1); $pos0=$pos+1;
+for ($i=0; $i<110; $i++) {
+    $pos1=strpos($txt,chr(10),$pos0); $s=substr($txt,$pos0,$pos1-$pos0+1); $pos0=$pos1+1;
+    if (substr($s,0,11)=='$m[]=array(') {
+        $pos=strpos($data,chr(10)); $a=explode(chr(9),substr($data,0,$pos)); $data=substr($data,$pos+1);
+        $pos=strpos($s,"','",0)+3; $pos=strpos($s,"','",$pos)+3; $pos=strpos($s,"','",$pos)+3;
+        $s=substr($s,0,$pos).$a[0]."','".$a[1]."','".$a[2]."','".$a[3]."','".$a[4]."','".((count($a)>=6) ? $a[5] : '')."');".chr(10);
+    }
+    $new.=$s;
+}
+$new.=substr($txt,$pos0);
+$fh=@fopen($file,'w');
+if ($fh==false) { @fclose($fh); print 'error'; exit; }
+@rewind($fh); if (-1==@fwrite($fh,$new)) { @fflush($fh); @fclose($fh); print 'error'; exit; }
+@ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh);
+print 'ok';
+}
+?>

@@ -1,0 +1,49 @@
+<?php
+// include_once $pb_root."inc/tpl4.php"; // Для объемных php - дополнений к Шаблону 4 - подключается дополнительный php-файл (page0_4)
+?>
+{*text0_12*}
+<div id="fcnt">
+<?php if (1==2) { ?>
+<!-- Yandex.Metrika informer --><a href="http://metrika.yandex.ru/stat/?id=4973767&amp;from=informer" target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/4973767/3_0_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:none 0px;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"></a><!-- /Yandex.Metrika informer -->
+<!-- Yandex.Metrika counter -->
+<div style="display:none;"><script>(function(w, c) {(w[c]=w[c]||[]).push(function(){try{w.yaCounter4973767=new Ya.Metrika(4973767);yaCounter4973767.clickmap(true);yaCounter4973767.trackLinks(true);}catch(e){}});})(window,'yandex_metrika_callbacks');</script></div>
+<script src="//mc.yandex.ru/metrika/watch.js" defer="defer"></script><noscript><img src="//mc.yandex.ru/watch/4973767" style="position:absolute; left:-9999px;" alt=""></noscript>
+<!-- /Yandex.Metrika counter -->
+<?php } ?>
+
+<?php if (1==1) { ?>
+<!-- <noindex><nofollow> -->
+<!-- Yandex.Metrika counter -->
+<script>
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(4973767, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+
+   ym(100245409, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/100245409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=4973767&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/4973767/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="4973767" data-lang="ru"></a>
+<!-- /Yandex.Metrika informer --><noscript><div><img src="https://mc.yandex.ru/watch/4973767" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<a href="https://webmaster.yandex.ru/siteinfo/?site=https://teohim-ek.ru"><img style="width:88px;height:31px;border:none 0px;" src="https://yandex.ru/cycounter?https://teohim-ek.ru&theme=light&lang=ru" alt=""></a><!--<a href="http://www.yandex.ru/cy?base=0&amp;host=www.teohim-ek.ru"><img src="http://www.yandex.ru/cycounter?www.teohim-ek.ru" style="width:88px;height:31px;border:none 0px;" alt="Яндекс цитирования"></a>-->
+<!--Rating@Mail.ru COUNTEr--><a target="_top" href="https://top.mail.ru/jump?from=1442414"><img src="https://top-fwz1.mail.ru/counter?id=1442414;t=479;l=1" style="width:88px;height:31px;border:none 0px;" alt="Рейтинг@Mail.ru"></a><!--/COUNTER-->
+<!-- </nofollow></noindex> -->
+<?php } ?>
+</div>

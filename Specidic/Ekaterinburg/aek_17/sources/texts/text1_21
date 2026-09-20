@@ -1,0 +1,2 @@
+<div style="width:100%; margin-top:5px;"><div class="consult"><a href="tel:88003008765" style="display:inline-block; padding-right:10px; vertical-align:middle;"><span>Нужна консультация?</span><br>Звоните: 8-800-300-87-65</a><?php f_print_wa('79028701094', 1, 0, 0, 1) ?></div></div>
+

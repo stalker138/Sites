@@ -1,0 +1,110 @@
+<?php
+// 2014
+if (empty($_POST['mode']) || empty($_POST['login']) || empty($_POST['pass'])) { print 'error'; exit; }
+else { $Asw_mode=$_POST['mode']; $Asw_login=$_POST['login']; $Asw_pass=$_POST['pass']; }
+
+if ($Asw_mode=='2' && $Asw_login=1 && $Asw_pass==1)
+{
+// используется служебный файл /pb_captcha.txt для хранения даты-времени, IP клиента, капчи
+$pb_file_captcha=$pb_root.'inc/pb_captcha.php';
+if (file_exists($pb_file_captcha)) $pb_txt=@file_get_contents($pb_file_captcha); else $pb_txt='<php'.chr(10).'?>'.chr(10);
+
+$headtext='<input type="checkbox" id="Fcheck" style="vertical-align:middle" onclick="fpb_BI(\'IDsubmit\').style.color=(this.checked?\'#000000\':\'#999999\');fpb_BI(\'FcheckTxt\').style.color=(this.checked?\'#000000\':\'#d80000\')"/> <span id="FcheckTxt" style="color:#d80000">Я согласен (согласна) с</span> <a href="/policies-privacy/" target="_blank">Политикой конфиденциальности</a>';
+$mess='Введите код на картинке';
+$style_error='background-color:#ffeaea;';
+$text1=''; $text2=''; $text3=''; $texta=''; $mess1=''; $mess2=''; $mess3=''; $messa=''; $messk='';
+
+if (!empty($_POST['hcaptcha'])) {
+    if (get_magic_quotes_gpc()) {
+    if (!empty($_POST['text1'])) $text1=htmlspecialchars(stripslashes(trim($_POST['text1']))); else $mess1=$style_error;
+    if (!empty($_POST['text2'])) $text2=stripslashes(trim($_POST['text2'])); else $mess2=$style_error;
+    if (!empty($_POST['text3'])) $text3=htmlspecialchars(stripslashes(trim($_POST['text3'])));
+    if (!empty($_POST['texta'])) $texta=htmlspecialchars(stripslashes(trim($_POST['texta']))); else $messa=$style_error;
+    } else {
+    if (!empty($_POST['text1'])) $text1=htmlspecialchars(trim($_POST['text1'])); else $mess1=$style_error;
+    if (!empty($_POST['text2'])) $text2=trim($_POST['text2']); else $mess2=$style_error;
+    if (!empty($_POST['text3'])) $text3=htmlspecialchars(trim($_POST['text3']));
+    if (!empty($_POST['texta'])) $texta=htmlspecialchars(trim($_POST['texta'])); else $messa=$style_error;
+    }
+    if (!empty($text2)) {
+        $mess2 ='/^[a-z0-9!#$%&*+-=?^_`{|}~]+(\.[a-z0-9!#$%&*+-=?^_`{|}~]+)*';
+        $mess2.='@([-a-z0-9]+\.)+([a-z]{2,3}';
+        $mess2.='|info|arpa|aero|coop|name|museum|mobi)$/ix';
+        if (preg_match($mess2, $text2)) $mess2=''; else $mess2=$style_error; $text2=htmlspecialchars($text2);
+    }
+    $pb_captcha=trim(strtolower($_POST['captcha'])); if (empty($pb_captcha)) $pb_captcha='error';
+    $pb_seek=chr(10).$_POST['hcaptcha'].chr(9).$_SERVER['REMOTE_ADDR'].chr(9).$pb_captcha;
+    $messk=$style_error; $pb_pos=strpos($pb_txt,$pb_seek);
+    if ($pb_pos>0) {
+        if (!empty($text1) && !empty($text2) && empty($mess2) && !empty($texta)) {
+            // Отправка e-mail
+            $postmail='trest33@bk.ru'; $crlf=chr(13).chr(10);
+            $text=date("Y-m-d").' '.date("H:i:s")."   Новое сообщение:".$crlf;
+            $text.='Имя / Организация     : '.$text1.$crlf;
+            $text.='e-mail                : '.$text2.$crlf;
+            $text.='Контактный телефон    : '.$text3.$crlf;
+            $text.='Сообщение : '.$crlf;
+            $texta=preg_replace('/\r/','',$texta);
+            $texta=preg_replace('/\n\n\n\n\n\n\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n/',chr(10),$texta);
+
+            $text.=wordwrap($texta,100,"\n",1).$crlf;
+            $text=preg_replace('/\t/','    ',$text);
+
+            mail($postmail,date("Y-m-d").' '.date("H:i:s").' Новое сообщение с teohim-ek.ru',$text,"From: message@teohim-ek.ru\nContent-Type: text/plain; charset=UTF-8");
+            mail('prog1@bk.ru',date("Y-m-d").' '.date("H:i:s").' Новое сообщение с teohim-ek.ru',$text,"From: message@teohim-ek.ru\nContent-Type: text/plain; charset=UTF-8");
+            $pb_pos1=strpos($pb_txt,chr(10),$pb_pos+1); $pb_txt=substr($pb_txt,0,$pb_pos).substr($pb_txt,$pb_pos1);
+            $headtext='<b>Сообщение отправлено. Спасибо.</b>'; $text1=''; $text2=''; $text3=''; $texta=''; $mess1=''; $mess2=''; $mess3=''; $messa=''; $messk='';
+        }
+    } else $mess = ($pb_captcha=='error') ? 'Код не был введен.' : 'Был введен неправильный код.';
+}
+?>
+<table style="width:100%; height:100%; font-family:arial; font-size:12px; font-weight:bold; color:#555555; text-align:left; border:none 0px;"><tbody>
+<tr><td colspan="3" style="text-align:center; color:#000080; letter-spacing:1px;"><div class="px5"></div><?php print $headtext; ?><br><div class="px5"></div></td></tr>
+<tr><td><span style="color:#ff0000">*</span>&nbsp;Имя или организация:</td>
+<td colspan="2"><input class="inpbox" type="text" id="Ftext1" maxlength="100" value="<?php print $text1; ?>" style="width:400px; <?php print $mess1; ?>" /></td></tr>
+<tr><td><span style="color:#ff0000">*</span>&nbsp;e-mail:</td>
+<td colspan="2"><input class="inpbox" type="text" id="Ftext2" maxlength="100" value="<?php print $text2; ?>" style="width:200px; <?php print $mess2; ?>" />
+&nbsp;<?php print empty($mess2) ? '&nbsp;' : '<span style="color:#800000;">Неправильный e-mail</span>'; ?></td>
+</tr>
+<tr><td>Телефон:</td>
+<td colspan="2"><input class="inpbox" type="text" id="Ftext3" maxlength="100" value="<?php print $text3; ?>" style="width:200px;" /></td></tr>
+<tr><td style="padding-top:5px; vertical-align:top;"><span style="color:#ff0000">*</span>&nbsp;Сообщение:<br></td>
+<td colspan="2"><textarea class="inparea" rows="10" cols="50" id="Ftexta" style="<?php print $messa; ?>"><?php print $texta; ?></textarea></td></tr>
+<tr><td>
+<?php
+$pb_width=100; $pb_height=25; // Ширина-высота рисунка капчи
+$pb_c1=0; $pb_c2=200;         // Диапазон для цветов R, G, B
+$pb_background='null';        // Фон (если null то прозрачный) иначе $pb_background='r,g,b'
+$pb_count=5;                  // Кол-во символов в капче
+
+$pb_handler=@fopen($pb_file_captcha,'w');
+if ($pb_handler) {
+    $pb_captcha=''; $pb_oldtime=date("Ymd").''.date("H"); $pb_pos=strpos($pb_txt,chr(10).$pb_oldtime,0);
+    if ($pb_pos) $pb_txt='<?php'.substr($pb_txt,$pb_pos);
+    else { $pb_oldtime=date("Ymd"); $pb_pos=strpos($pb_txt,chr(10).$pb_oldtime,0); if ($pb_pos) $pb_txt='<?php'.substr($pb_txt,$pb_pos); }
+    $pb_time=date("Ymd").''.date("His"); for ($i=1; $i<=$pb_count; $i++) { $s=array(chr(mt_rand(50,57)),chr(mt_rand(112,122)),chr(mt_rand(97,104)),chr(mt_rand(106,107)),chr(mt_rand(50,57)),chr(mt_rand(112,122)),chr(mt_rand(97,104)),chr(mt_rand(109,110))); $pb_captcha.=$s[mt_rand(1,8)-1]; }
+    $pb_txt=substr($pb_txt,0,strpos($pb_txt,chr(10).'?>'.chr(10),0)).chr(10).$pb_time.chr(9).$_SERVER['REMOTE_ADDR'].chr(9).strtolower($pb_captcha).chr(10).'?>'.chr(10);
+    @rewind($pb_handler);
+    if (-1==@fwrite($pb_handler,$pb_txt)) { @fflush($pb_handler); @fclose($pb_handler); }
+    else {
+        @ftruncate($pb_handler,ftell($pb_handler)); @fflush($pb_handler); @fclose($pb_handler);
+        print '<img src="'.$pb_start_site.'inc/pb_captcha_img.php?t='.$pb_time.'&w='.$pb_width.'&h='.$pb_height.'&c1='.$pb_c1.'&c2='.$pb_c2.'&b='.$pb_background.'" style="border-style:none; margin-bottom:1px; width:'.$pb_width.'px; height:'.$pb_height.'px;"/>';
+        print '<input id="Fhcaptcha" type="hidden" value="'.$pb_time.'" />';
+    }
+}
+else $mess='Сервис временно недоступен';
+unset($pb_width,$pb_height,$pb_c1,$pb_c2,$pb_background,$pb_count,$pb_file_captcha,$pb_txt,$pb_handler,$pb_oldtime,$pb_time,$pb_pos,$pb_pos1,$pb_seek);
+?>
+<img src="/img/css/refresh.gif" title="обновить рисунок" alt="обновить рисунок" style="border-style:none; margin:3px;" onclick="fpb_ById('IDsubmit').click()" /></td>
+<td style="padding-top:3px; vertical-align:top;"><input class="inpbox" type="text" id="Fcaptcha" maxlength="10" value="" style="width:100px;<?php print $messk; ?>" />&nbsp;<span style="color:#805050;"><?php print $mess; ?></span><br>
+<div style="width:100%; border:none 0px; font-size:10px; text-align:center;">( поля, отмеченные <span style="color:#ff0000;font-size:12px;font-weight:bold;"> * </span> - обязательны для заполнения )</span></td>
+<td style="text-align:right;"><input type="button" id='IDsubmit' value="Отправить" style="cursor:pointer; width:90px; height:30px; color:#999999" onclick="if(fpb_BI('Fcheck').checked) f_postmail(); else alert('Вы должны согласиться с политикой конфиденциальности');" /></td></tr>
+</tbody></table>
+<?php
+exit;
+}
+?>

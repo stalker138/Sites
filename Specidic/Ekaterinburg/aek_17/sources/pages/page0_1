@@ -1,0 +1,32 @@
+<?php
+// page1 - вывод изображения капчи. Используется страницами с формами обратной связи.
+$width=70; $height=25; $color1=0; $color2=200; $backgr=null; $s='';
+if (!empty($_GET['w'])); $width=(int)$_GET['w'];
+if (!empty($_GET['h'])); $height=(int)$_GET['h'];
+if (!empty($_GET['c1'])); $color1=(int)$_GET['c1'];
+if (!empty($_GET['c2'])); $color2=(int)$_GET['c2'];
+if (!empty($_GET['b'])); $backgr=(int)$_GET['b'];
+if (!empty($_GET['t'])) $s=$_GET['t']; else { exit; }
+$txt_captcha=@file_get_contents($pb_root.'/inc/pb_captcha.php'); $len=$s.chr(9).$_SERVER['REMOTE_ADDR'].chr(9);
+$fun_pos=strpos($txt_captcha,chr(10).$len); if ($fun_pos==false) exit;
+$txt_captcha=substr($txt_captcha,$fun_pos+strlen($len)+1); $fun_pos=strpos($txt_captcha,chr(10)); $s=strtoupper(substr($txt_captcha,0,$fun_pos));
+if ($backgr==null) { $transparent=1; $backgr=array(0,0,1); } else { $transparent=0; $backgr=explode(',',$backgr); }
+$im=imagecreate($width, $height);
+$len=strlen($s);
+$height-=10;
+$stepx=(int)$width/$len; if ($stepx<2) $stepx=1;
+$stepy=(int)$height/5;
+$x=(int)($width-$stepx*$len)/2+$width/20-1;
+if (mt_rand(1,10)<6) $y=($height+5)/2-$stepy; else $y=$height/2-$stepy;
+$backgr=imagecolorallocate($im, (int)$backgr[0], (int)$backgr[1], (int)$backgr[2]);
+if ($transparent) imageColorTransparent($im, $backgr);
+imagefilledrectangle($im,0,0,$width-1,$height+9,$backgr); 
+imageRectangle($im,0,0,$width-1,$height+9, imagecolorallocate($im, mt_rand($color1,$color2), mt_rand($color1,$color2), mt_rand($color1,$color2)));
+for ($i=0; $i<$len; $i++) {
+    $font=mt_rand(3,5); imagestring($im, $font, $x, $y, $s[$i], imagecolorallocate($im, mt_rand($color1,$color2), mt_rand($color1,$color2), mt_rand($color1,$color2)));
+    $x+=$stepx; $y = (int) ($height+5)/2 + ($y<($height+5)/2-$stepy ? $stepy : -$stepy)-imagefontheight($font)/2;
+}
+header("Content-type: image/png");
+imagepng($im);
+imagedestroy($im);
+?>

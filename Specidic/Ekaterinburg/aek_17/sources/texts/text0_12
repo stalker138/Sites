@@ -1,0 +1,15 @@
+<script>
+fpb_ready(function() {
+ var t='',d,s,r,ls=fpb_getLS('fcoockie')||'';
+ if (ls!='y') {
+  d=document.createElement('div'); s=d.style; d.id='id_fcoockie'; r=parseInt(fpb_getStyle(document.body,'width'),10)||0; r-=1000; if(r<=0)r=0; else r=parseInt(r/2,10)+2;
+  s.position='fixed'; s.bottom='40px';s.right=r+'px';s.maxWidth='765px';s.zIndex=300;s.background='#eeeeee';s.border='solid 1px #808080';s.borderRadius='4px';s.padding='5px';
+  t+='<div style="cursor:pointer;float:right;margin-left:10px;padding:5px;width:60px;font-weight:bold;text-align:center;color:#ffffff;background:#004f92;border-radius:4px;" onclick="f_pconf()">Принять</div>';
+  t+='<p class="mt0">Сайт собирает файлы Cookie для корректной работы и аналитики. Используя его, вы соглашаетесь с <l0 id="30">Политикой обработки персональных данных</l0>. Если вам это не подходит — отключите Cookies в настройках браузера. </p>';
+  d.innerHTML=t; document.body.appendChild(d);
+ }
+});
+function f_pconf() {
+  var d=fpb_ById('id_fcoockie')||0; if(d){ fpb_setLS('fcoockie','y'); document.body.removeChild(d);}
+}
+</script>

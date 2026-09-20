@@ -1,0 +1,4 @@
+<?php
+$t=preg_replace('/\n/',' ',ob_get_contents()); $t=preg_replace('/\r/',' ',$t); $t=preg_replace('/\t/',' ',$t); $t=preg_replace('/ +/',' ',$t); $t=preg_replace('/\> +\</','> <',$t);
+ob_end_clean(); print $t; flush();
+?>

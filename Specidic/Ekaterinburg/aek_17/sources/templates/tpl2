@@ -1,0 +1,23 @@
+<?php // tpl2 - Для раздела HEAD внешние css и js-файлы, стили и скрипты.
+// include_once $pb_root."inc/tpl2.php"; // Для объемных php - дополнений к Шаблону 2 - подключается дополнительный php-файл (page0_2)
+?>
+<link rel="icon" href="/favicon.ico" type="image/ico"/><link rel="icon" type="image/png" href="/favicon.png"/><link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="/cssjs/style_004_.css" type="text/css">
+{*text0_24*}
+<?php if ($pb_page==1006) { ?><style>.tblc tr { height:50px; }</style><?php } ?>
+<?php if ($pb_page==1007) { ?><style>
+#id_open_all { cursor:pointer; float:right; margin-top:-17px; text-decoration:underline; color:#004f92; } #id_open_all:hover { color:#f00000; }
+</style><?php } ?>
+<?php print '<!--page'.$pb_page.'-->'; ?><script src="/cssjs/lib0071.js"></script><script src="/cssjs/js_003.js"></script>
+<?php if (1==2) { ?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7YRX36G12N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7YRX36G12N');
+</script>
+<?php } ?>

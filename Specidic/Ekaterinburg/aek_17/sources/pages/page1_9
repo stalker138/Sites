@@ -1,0 +1,13 @@
+{*tpl1*}{*tpl9*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}
+<script type="text/javascript">function sm_click(obj) {if(obj.className=='pb_mc') fpb_setCookie("openobj",obj.id); else fpb_deleteCookie("openobj");}</script>
+<style type="text/css">
+menu li,.pb_ms,.pb_mi { clear:both; background:none; padding-left:0px; line-height:20px; overflow:visible; } .pb_mo,.pb_mc { padding-left:35px; overflow:hidden; }
+menu li span { font:normal 12px tahoma; }
+menu li .p11,menu li .p11:hover { float:left; margin-left:35px; margin-top:0; font:normal 11px tahoma; color:#000000; }
+#content menu li a { font-weight:normal; color:#005093; text-decoration:underline; }
+</style></head><body>{*tpl7*}
+{*block1_9*}
+{*tpl8*}
+<script type="text/javascript">var openobj=fpb_getCookie('openobj');if (openobj&&openobj.substr(0,3)=='pbm')fpb_ById(openobj).className='pb_mo';
+function sm_click(obj) {if(obj.style.height=='20px') fpb_setCookie("openobj",obj.id); else fpb_deleteCookie("openobj");}</script>
+{*tpl5*}{*tpl6*}</body></html>{*tpl10*}
