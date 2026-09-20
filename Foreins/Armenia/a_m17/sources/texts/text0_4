@@ -1,0 +1,6 @@
+<script>
+function f_ym(f) {
+ a=['','','CallBack','OrderGoods','OrderWork','OrderGoodsCvr','OrderGoodsWorkCvr','ClickForm','ClickOrd'];
+ if ('{*text1_23*}') {ym({*text1_23*},'reachGoal',(typeof(f)=='string' ? f : a[f]));}
+}
+</script>

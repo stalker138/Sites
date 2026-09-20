@@ -1,0 +1,39 @@
+</section>
+</div><div class="shiftfooter"></div>
+<div id="header">
+<header>
+<div id="contacts" style="top:70px;">
+<div><a href="tel:+37499602999">+374 99 60 29 99</a></div>
+<div class="px3"></div>
+<!--div id="dpIDmail">&nbsp;</div-->
+<div class="callback" onclick="f_swtch(4);return false;">Обратный звонок</div>
+</div>
+<a href="http://www.teohim.ru/objlist.php?pos=88" id="aobjlist" target="_blank" title="Объекты на карте с возможностью выбора региона, типа объекта и типа покрытия">Выполненные<br>объекты на карте</a>
+
+</header>
+</div>
+<div id="leftblock"><div class="px50"></div>
+<div id="ltmenu"><?php include_once $pb_root."auto/inc_menu_lt.php"; ?></div><div class="px0"></div>
+<div id="leftmenu"><aside>{*tpl9*}</aside><div class="px0"></div><div class="callback" onclick="f_swtch(4);return false;">Обратный звонок</div><div class="px10"></div>
+</div><div class="px0"></div>
+</div>
+  <div id="mtblock">
+    <l1 id="1" id="mtlogo"></l1>
+    <div id="mtpanel"><table class="mtlink"><tbody><tr>
+      <th><a href="tel:+37499602999" id="mtpanel_a">+374 99 60 29 99</a></th>
+    </tr></tbody></table></div>
+  </div>
+  <div id="ltblock" onclick="f_ltblock()"></div>
+</div>
+<div id="footer"><footer><div id="fcontent"><div id="fmenu"></div>
+  <div id="fcount" style="text-align:right">
+  </div>
+<?php
+$exlude_pages = array(1001, 1121, 1011, 1012, 1013, 1015, 1016, 1019, 2065, 1031, 1032, 2057, 2027, 1039, 1096, 1081, 1041, 2041, 2083, 1051, 2053, 1061, 2049, 1123, 1111, 1062, 1091, 1094, 2019, 1042, 2227, 1070, 1024, 1017, 1103, 1104, 1112, 1108, 1021, 1040, 1085, 2071, 2033, 1014, 2257, 1106, 1027);
+if (!in_array($pb_page, $exlude_pages)) { ?>
+<div id="idnalivnoj">Все <a href="http://www.teohim.ru/nalivnye/">Наливные полимерные полы</a> от производителя</div>
+<?php } ?>
+
+</div></footer>
+</div>
+<div id="topline"></div>

@@ -1,0 +1,22 @@
+User-agent: Yandex
+
+Clean-param: etext
+Clean-param: utm
+Clean-param: gbraid
+Clean-param: calltouch_tm
+Clean-param: yclid
+
+Allow: /
+
+Disallow: /search
+Disallow: /colors/
+Disallow: /404/
+
+User-agent: *
+
+Allow: /
+Disallow: /search
+Disallow: /colors/
+Disallow: /404/
+
+Sitemap: https://teohim.am/sitemap.xml
