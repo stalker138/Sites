@@ -341,7 +341,7 @@ if ($ml) { ?>
 </tbody>
 </table></div>
 <div class="px5"></div>
-<div id="table2p" style="float:right;margin-top:10px;"><input type="button" value="&nbsp;&nbsp;ЗАКАЗАТЬ Работы + Материалы&nbsp;&nbsp;" onclick="f_post(6);" style="cursor:pointer; height:25px; font-weight:bold; font-size:13px; letter-spacing:1px; color:#ff0000; text-shadow:2px 2px 2px #ffffff; box-shadow:3px 3px 7px 0 #999999;"/></div>
+<!--div id="table2p" style="float:right;margin-top:10px;"><input type="button" value="&nbsp;&nbsp;ЗАКАЗАТЬ Работы + Материалы&nbsp;&nbsp;" onclick="f_post(6);" style="cursor:pointer; height:25px; font-weight:bold; font-size:13px; letter-spacing:1px; color:#ff0000; text-shadow:2px 2px 2px #ffffff; box-shadow:3px 3px 7px 0 #999999;"/></div-->
 <!--noindex--><div class="fleft"><p><span>Более точный расчёт стоимости работ предоставляется после осмотра объекта</span>.</p>
 <p style="margin-top:3px">Транспортные и командировочные расходы НЕ включены.</p></div><!--/noindex-->
 </div>

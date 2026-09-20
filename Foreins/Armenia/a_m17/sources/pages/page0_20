@@ -118,29 +118,29 @@ if (!empty($_POST['hcaptcha'])) {
     } else $mess = ($pb_captcha=='error') ? 'Код не был введен.' : 'Был введен неправильный код.';
 }
 ?>
-<table style="width:100%; height:100%; font-family:arial; font-size:11px; font-weight:bold; color:#000000; text-align:left; border:none 0px;"><tbody>
-<tr><td colspan="3" style="text-align:center;"><div class="px5"></div><?php print ($compl==0) ? '<input type="checkbox" id="Fcheck" style="vertical-align:middle" onclick="fpb_BI(\'IDsubmit\').style.color=(this.checked?\'#000000\':\'#999999\');fpb_BI(\'FcheckTxt\').style.color=(this.checked?\'#000000\':\'#d80000\')"/> <span id="FcheckTxt" style="color:#d80000">Я согласен (согласна) с</span> <a href="/policies-privacy/" target="_blank">Политикой конфиденциальности</a>' : $headtext; ?><br><div class="px5"></div></td></tr>
+<table style="width:95%; height:95%; font-family:arial; font-size:11px; font-weight:bold; color:#000000; text-align:left; border:none 0px;"><tbody>
+<tr><td colspan="3" style="text-align:center;border:none 0px;"><div class="px5"></div><?php print ($compl==0) ? '<input type="checkbox" id="Fcheck" style="vertical-align:middle" onclick="fpb_BI(\'IDsubmit\').style.color=(this.checked?\'#000000\':\'#999999\');fpb_BI(\'FcheckTxt\').style.color=(this.checked?\'#000000\':\'#d80000\')"/> <span id="FcheckTxt" style="color:#d80000">Я согласен (согласна) с</span><br><a href="/policies-privacy/" target="_blank">Политикой конфиденциальности</a>' : $headtext; ?><br><div class="px5"></div></td></tr>
 <?php if ($compl==0) { ?>
-<tr><td style="width:<?php print ($Asw_mode==4)?'150':'250'; ?>px;padding-left:10px;"><span style="color:#ff0000">*</span>&nbsp;1. <?php print (($Asw_mode==1) ? 'Ваше имя и телефон/e-mail' : ( ($Asw_mode==4) ? 'Контактное лицо' : 'Заказчик, контактное лицо')); ?> :</td>
-<td colspan="2"><input class="inpbox" type="text" id="Ftext1" maxlength="100" value="<?php print $text1; ?>" style="width:<?php print ($Asw_mode==4)?'400':'400'; ?>px; <?php print $mess1; ?>" onchange="f_ch_clb(1)" /></td></tr>
-<tr><td style="padding-left:10px;"><span style="color:#ff0000">*</span>&nbsp;2.  <?php print ($Asw_mode==1) ? 'URL страницы' : (($Asw_mode==4)?'e-mail / Телефон':'Телефон'); ?> :</td>
-<td colspan="2"><input class="inpbox" type="text" id="Ftext2" maxlength="100" value="<?php print $text2; ?>" style="width:<?php print ($Asw_mode==4)?'400':'400'; ?>px; <?php if ($Asw_mode!=1) print $mess2; ?>"<?php print ($Asw_mode==1) ? ' disabled' : ' onchange="f_ch_clb(2)"'; ?> /></td></tr>
+<tr><td style="width:<?php print ($Asw_mode==4)?'140':'250'; ?>px;border:none 0px;"><span style="color:#ff0000">*</span>&nbsp;1. <?php print (($Asw_mode==1) ? 'Ваше имя и телефон/e-mail' : ( ($Asw_mode==4) ? 'Контактное лицо' : 'Заказчик, контактное лицо')); ?> :</td>
+<td colspan="2" style="padding:0 0 3px 0;border:none 0px;"><input class="inpbox" type="text" id="Ftext1" maxlength="100" value="<?php print $text1; ?>" style="width:<?php print ($Asw_mode==4)?'180':'180'; ?>px; <?php print $mess1; ?>" onchange="f_ch_clb(1)" /></td></tr>
+<tr><td style="border:none 0px;"><span style="color:#ff0000">*</span>&nbsp;2.  <?php print ($Asw_mode==1) ? 'URL страницы' : (($Asw_mode==4)?'e-mail / Телефон':'Телефон'); ?> :</td>
+<td colspan="2" style="border:none 0px;"><input class="inpbox" type="text" id="Ftext2" maxlength="100" value="<?php print $text2; ?>" style="width:<?php print ($Asw_mode==4)?'180':'180'; ?>px; <?php if ($Asw_mode!=1) print $mess2; ?>"<?php print ($Asw_mode==1) ? ' disabled' : ' onchange="f_ch_clb(2)"'; ?> /></td></tr>
 <?php if ($Asw_mode!=1 && $Asw_mode!=4) { ?>
-<tr><td style="padding-left:10px;">&nbsp;&nbsp;3. Почта (e-mail) :</td><td colspan="2"><input class="inpbox" type="text" id="Ftext3" maxlength="100" value="<?php print $text3; ?>" style="width:200px; <?php print $mess3; ?>" onchange="f_ch_clb(3)" />
+<tr><td style="padding-left:10px;border:none 0px;">&nbsp;&nbsp;3. Почта (e-mail) :</td><td colspan="2"><input class="inpbox" type="text" id="Ftext3" maxlength="100" value="<?php print $text3; ?>" style="width:200px; <?php print $mess3; ?>" onchange="f_ch_clb(3)" />
 &nbsp;<?php print empty($mess3) ? '&nbsp;' : '<span style="color:#800000;">Неправильный e-mail</span>'; ?></td></tr>
-<tr><td style="padding-left:10px;">&nbsp;4. Заказчик, наименование, реквизиты :</td><td colspan="2"><input class="inpbox" type="text" id="Ftext4" maxlength="100" value="<?php print $text4; ?>" style="width:400px;" onchange="f_ch_clb(4)" /></td></tr>
-<tr><td style="padding-top:5px;padding-left:10px;vertical-align:top;">&nbsp;5. Примечание к заказу:<br></td>
-<td colspan="2"><textarea class="inparea" rows="10" cols="50" id="Ftexta" style="<?php print $messa; ?>" onchange="f_ch_clb(5)"><?php print $texta; ?></textarea></td></tr>
+<tr><td style="padding-left:10px;border:none 0px;">&nbsp;4. Заказчик, наименование, реквизиты :</td><td colspan="2"><input class="inpbox" type="text" id="Ftext4" maxlength="100" value="<?php print $text4; ?>" style="width:400px;" onchange="f_ch_clb(4)" /></td></tr>
+<tr><td style="padding-top:5px;padding-left:10px;vertical-align:top;border:none 0px;">&nbsp;5. Примечание к заказу:<br></td>
+<td colspan="2" style="border:none 0px;"><textarea class="inparea" rows="10" cols="50" id="Ftexta" style="<?php print $messa; ?>" onchange="f_ch_clb(5)"><?php print $texta; ?></textarea></td></tr>
 <?php } else {
 if ($Asw_mode==4) { ?>
-<tr><td style="padding-top:5px; text-align:center" colspan="3">Пожалуйста, опишите, что Вас интересует,<br>тогда с Вами свяжется «нужный» специалист.</td></tr>
-<tr><td colspan="3" style="text-align:center;"><textarea class="inparea" rows="12" id="Ftexta" style="width:550px;<?php print $messa; ?>" onchange="f_ch_clb(5)"><?php print $texta; ?></textarea></td></tr>
+<tr><td style="padding-top:5px; text-align:center;border:none 0px;" colspan="3">Пожалуйста, опишите, что Вас интересует,<br>тогда с Вами свяжется «нужный» специалист.</td></tr>
+<tr><td colspan="3" style="text-align:center;border:none 0px;"><textarea class="inparea" rows="8" id="Ftexta" style="width:320px;min-width:320px;max-width:320px;<?php print $messa; ?>" onchange="f_ch_clb(5)"><?php print $texta; ?></textarea></td></tr>
 <?php } else { ?>
-<tr><td style="padding-top:5px;padding-left:10px;vertical-align:top;"><span style="color:#ff0000">*</span>&nbsp;3. Пожелания, замечания,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;сообщение об ошибке :<br></td>
+<tr><td style="padding-top:5px;padding-left:10px;vertical-align:top;border:none 0px;"><span style="color:#ff0000">*</span>&nbsp;3. Пожелания, замечания,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;сообщение об ошибке :<br></td>
 <td colspan="2"><textarea class="inparea" rows="<?php print (($Asw_mode==1)?'14':'10'); ?>" cols="50" id="Ftexta" style="<?php print $messa; ?>" onchange="f_ch_clb(5)"><?php print $texta; ?></textarea></td></tr>
 <?php }
 } ?>
-<tr><td style="padding-left:10px;padding-bottom:14px;">
+<tr><td colspan="2" style="padding:5px 0 5px 5px;border:none 0px;">
 <?php
 $pb_width=100; $pb_height=25; // Ширина-высота рисунка капчи
 $pb_c1=0; $pb_c2=200;         // Диапазон для цветов R, G, B
@@ -164,9 +164,9 @@ if ($pb_handler) {
 }
 else $mess='Сервис временно недоступен';
 ?>
-<img src="/img/css/refresh.gif" title="обновить рисунок" alt="обновить рисунок" style="border-style:none; margin:3px;" onclick="fpb_ById('IDsubmit').click()" /></td>
-<td style="width:300px;padding-top:3px;vertical-align:top;"><input class="inpbox" type="text" id="Fcaptcha" maxlength="10" value="" style="width:100px;<?php print $messk; ?>" />&nbsp;<span style="color:#800000;"><?php print $mess; ?></span><br>
-<div style="width:100%; border:none 0px; font-size:10px; text-align:center;">( поля, отмеченные <span style="color:#ff0000;font-size:12px;font-weight:bold;"> * </span> - обязательны для заполнения )</span></td>
-<td style="text-align:right;padding-right:<?php print ($Asw_mode==2)?'10':'18'; ?>px;padding-bottom:14px;"><input type="button" class="abut" id='IDsubmit' value="Отправить" style="width:90px;color:#999999" onclick="if(fpb_BI('Fcheck').checked)f_postmail(<?php print $Asw_mode; ?>);else alert('Вы должны согласиться с политикой конфиденциальности');" /></td></tr>
+<img src="/img/css/refresh.gif" title="обновить рисунок" alt="обновить рисунок" style="border-style:none; margin:3px;" onclick="fpb_ById('IDsubmit').click()" /><br>
+<input class="inpbox" type="text" id="Fcaptcha" maxlength="10" value="" style="width:70px;<?php print $messk; ?>" />&nbsp;<span style="color:#800000;"><?php print $mess; ?></span><br>
+<div style="border:none 0px; font-size:10px; text-align:center;">( поля, отмеченные <span style="color:#ff0000;font-size:12px;font-weight:bold;"> * </span> - обязательны для заполнения )</span></td>
+<td style="width:100px;text-align:right;border:none 0px;"><input type="button" class="abut" id='IDsubmit' value="Отправить" style="width:90px;color:#999999" onclick="if(fpb_BI('Fcheck').checked)f_postmail(<?php print $Asw_mode; ?>);else alert('Вы должны согласиться с политикой конфиденциальности');" /></td></tr>
 <?php } ?>
 </tbody></table>

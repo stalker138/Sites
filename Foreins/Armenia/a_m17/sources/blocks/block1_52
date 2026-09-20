@@ -3,13 +3,17 @@
 <p><strong>Полиуретан цементные полы</strong> – трехкомпонентные наливные покрытия на основе связующих из полиуретана и цемента.</p>
 <p><span>Полиуретан цементный пол</span> от компании {*text1_4*}. <br>
 <span>Полиуретан цементные полы</span> – материалы и услуги по выполнению работ в {*text1_5*}.</p>
-<?php if (1==2) { ?>
 <div class="px20"></div>
-
+<?php 
+if ($is_price == 1) {
+print('
 <div class="divh4pd" style="margin:-15px 0 0 0;">Цена, руб/кг.</div><p class="divh4p">Цена, руб/кг.</p>
 <div class="px0"></div>
+');
+}
+?>
 <table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[15]); $i++) { print fmtr1($catmat[15][$i]); } ?></tbody></table>
-<?php } ?>
+
 <div class="px10"></div>
 {*text1_1*}
 <div class="px0"></div>
