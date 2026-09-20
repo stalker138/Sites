@@ -1,0 +1,1 @@
+<div style="width:100%; margin-top:5px;"><div class="consult"><a href="tel:+79109731244" style="display:inline-block; padding-right:10px; vertical-align:middle;"><span>Нужна консультация?</span><br>Звоните: +7 910 245-30-94</a><?php f_print_wa('79102453094', 1, 1, 0, 1) ?></div></div>

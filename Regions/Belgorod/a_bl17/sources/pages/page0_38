@@ -1,0 +1,36 @@
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}
+<style>
+#clc,#clz { cursor:pointer; position:relative; display:block; padding:5px; width:208px; height:20px; font-size:15px; text-align:center; border-radius:5px; transition:background .5s ease; }
+#clc { float:left; color:#000000; border:solid 1px #800000; background:#ffb0a0; } #clc:hover {; color:#ffffff; background:#800000; }
+#clz { float:right; color:#ffffff; border:solid 1px #2878bb; background:#2878bb; } #clz:hover {; color:#800000; background:#ffcc6c; }
+@media screen and (max-width:560px) { #clc,#clz {width:140px;} }
+</style>
+{*text0_10*}
+{*tpl3*}</head>
+<body>
+<?php $pb_page=38; ?>
+{*tpl39*}
+{*tpl44*}
+
+<h1 style="width:auto">Ваш заказ оборудования</h1>
+<div class="px10"></div>
+<div id="clc" onclick="f_tssclc()">Очистить заказ</div>
+<div id="clz" onclick="f_tssclz();">Оформить заказ</div>
+<div class="px10b"></div>
+<div class="px10"></div>
+<div id="tss_page_order">
+</div>
+<div class="px15"></div>
+
+{*tpl40*}
+<?php
+$txt=@file_get_contents('https://elakors.ru/sys/equips');
+$zakaz=false; $zakaz[]=array(0,'000000',0,'');
+$i=0; $h='<div class="pb_hidden">'; $strs=explode(chr(10),$txt);
+foreach($strs as $str) {
+  $s=explode(chr(9),$str);
+  $h.='<div id="tss'.$s[3].'_n">'.$s[4].'</div><div id="tss'.$s[3].'_c">'.$s[5].'</div>';
+} $h.='</div>'; print $h;
+?>
+<div id="pb_page38">38</div>
+{*tpl4*}</body></html>

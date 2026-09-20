@@ -1,0 +1,7 @@
+<style>
+#teohim p { top:-7px; font-size:10px;}
+#eltxt { font-size:15px; letter-spacing:1.4px; font-weight:normal; color:#ff5506; top:2px; left:17px; }
+#elakor { top:150px; }
+#contacts { top:80px; }
+#contacts div.callback { top:5px; }
+</style>

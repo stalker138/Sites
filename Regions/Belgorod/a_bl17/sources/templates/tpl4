@@ -1,0 +1,21 @@
+<?php
+// include_once $pb_root."auto/inc_counters.php";
+?>
+<div id="pb_page" class="pb_hidden"><?php print (isset($pb_page) && $pb_page>50) ? $pb_page : $pb_special; ?></div>
+<?php
+// include_once $pb_root."auto/inc_css_js.php";
+if($pb_page!=1010 && ($pb_page<3000 || $pb_page>3300)) {
+  print '{*text0_2*}';
+}
+?>
+{*text0_4*}
+{*text0_11*}
+{*text0_12*}
+
+<?php
+ print '<div id="pb_isbasket" class="pb_hidden">'.$is_basket.'</div>';
+ print '<div id="pb_isbcolor" class="pb_hidden">'.$is_bcolor.'</div>';
+?>
+<script src="https://elakors.ru/cssjs/vcorp_js_0003.js"></script><script>{*text0_17*}{*text0_19*}</script>
+
+{*text0_7*}

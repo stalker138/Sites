@@ -1,0 +1,31 @@
+  <div class="px10b"></div></section></div>
+  <div class="dsfooter"></div>
+  <div id="dheader"><header>
+  <l1 id="1" id="teohim" title="промышленные полы ЭЛАКОР"><p>БЕЛГОРОД</p></l1>
+    <div id="dh_menu">
+      <l1 id="13"<?php if ($pb_page==1013) print $st_current; ?>>Полимерные полы</l1><l1 id="11"<?php if ($pb_page==1011) print $st_current; ?>>Бетонные полы</l1><l1 id="3"<?php if ($pb_page==1003) print $st_current; ?>>ЦЕНЫ материалов</l1><l1 id="10"<?php if ($pb_page==1010) print $st_current; ?>>КАЛЬКУЛЯТОР покрытий</l1><l0 id="38"<?php if ($pb_page==38) print $st_current; ?> id="abasket">ЗАКАЗ</l0><l1 id="6" id="dh_menu_last"<?php if ($pb_page==1006) print $st_current; ?>>КОНТАКТЫ</l1>
+    </div>
+    <?php include_once $pb_root."inc/tssnavigator.php"; ?>
+    <div id="dnav"><nav><?php print $snav; ?></nav></div>
+    <div class="tsstel">{*text1_11*}</div>
+  </header></div>
+<div id="leftblock"><div class="px50"></div>
+<div id="ltmenu"><?php include_once $pb_root."inc/tssmmenu.php"; ?></div><div class="px0"></div>
+<div id="leftmenu"><aside>{*tpl9*}</aside><div class="px10"></div><div class="callback" onclick="f_swtch(4);return false;">Обратный звонок</div><div class="px0"></div></div>
+</div><div class="px0"></div>
+</div>
+  <div id="mtblock">
+    <l1 id="1" id="mtlogo"></l1>
+  </div>
+  <div id="ltblock" onclick="f_ltblock()"><div id="melakor"></div></div>
+</div>
+</div>
+<div id="dfooter"><footer>
+  <div id="dc_footer">
+    <div id="df_menu">
+    </div>
+  </div>
+</footer></div>
+<div id="mfooter">
+  <div id="m_teohim"></div>
+</div>
