@@ -1,0 +1,77 @@
+<?php
+// price export/import for teohim.ru 2018 | vcorp.ru | Октябрь 2018
+{*text1_8*} $t_salt='defaultSalt';
+
+{*text0_5*}
+{*text0_15*}
+
+// МАТЕРИАЛЫ из CSV-файла materials в массив $mtr
+$file=$pb_root.'sys/materials'; $txt=@file_get_contents($file); $mtr=false; $mtr[]=false;
+for ($i=1; $i<351; $i++) {
+    $pos=strpos($txt,chr(10)); if ($pos==false) break; $str=substr($txt,0,$pos); $txt=substr($txt,$pos+1);
+    if ($str!=' ') $mtr[]=explode(chr(9),$str); // $mtr[$i][1]=preg_replace('/\%/','',$mtr[$i][1]);
+    else $mtr[]=false;
+}
+
+ /* ****************** LOAD DATA ****************** */ if (empty($_POST['data'])) {
+
+header("Expires: Thu, 01 Jan 1970 00:00:01 GMT");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+header("Pragma: no-cache"); // HTTP/1.0
+$dlmn='<div class="px3b"></div><div class="px3"></div>'; $on='" onfocus="f_focus(this)" onchange="f_change(this)" onblur="f_change(this)" onkeydown="f_keydown(event,this)"';
+$a=array('<span>1. Полиуретановые материалы</span> (серия Элакор-ПУ).','<span>2. Эпоксидные материалы</span> (серия Элакор-ЭД).','<span>3. Антистатические полы и покрытия</span>','<span>4. Материалы стойкие к ультрафиолету</span> (полиуретановые, серия Элакор-ПУ «Люкс»).','<span>5. Покрытия для Металла</span> (серия Элакор-ПУ).','<span>6. Материалы для Дерева, Паркета</span> (серия Элакор-ПУ).','<span>7. Для прямого контакта с питьевой водой и продуктами</span> (серия Элакор-ПУ «Эко»).','<span>8. Акриловые материалы, составы для обработки бетона</span> (серия Элакор-МБ).','<span>9. Добавки для бетона, грунтовка Бетоноконтакт</span> (серия Эластобетон)');
+$out='<div class="pstring"><p>'.$a[0].'</p></div>'.$dlmn; $j=1;
+for ($icat=1; $icat<10; $icat++) {
+  for ($jcat=1; $jcat<count($catmat[$icat]); $jcat++) {
+  $i=$catmat[$icat][$jcat];
+  if ($mtr[$i] && in_array($i, $list_mtr, true)) {
+    $out.='<div id="d'.$i.'" class="pstring">';
+    $out.='<div id="d'.$i.'_0" style="width:40px;">'.$mtr[$i][0].'</div><div id="d'.$i.'_1" style="width:580px;padding:0 10px 0 0;">'.preg_replace("/\%/i",'',$mtr[$i][1]).' '.preg_replace("/\%/i",'',$mtr[$i][2]).'</div>';
+    foreach($pl_col as $n_col){
+      $out.='<div><input id="i'.$i.'_'.$n_col.'" type="text" value="'.$mtr[$i][$n_col].$on.'/></div>';
+    }
+    $out.='</div>'.$dlmn;
+  }
+  }
+  $out.='<div class="pstring"><p>'.$a[$j++].'</p></div><div class="px5"></div>'.$dlmn;
+}
+print 'var v_PP='."'".$out."'".';';
+
+/* ****************** SAVE DATA ****************** */ } else {
+
+header("Access-Control-Allow-Origin: https://teohim.ru"); // Разрешение на кросс-доменный запрос из админки ТэоХим
+$txt=$_POST['data']; if (substr($txt,0,10)!='0123456789' || empty($_POST['hash']) || strlen($_POST['hash'])!=32) { header("HTTP/1.1 204 No Content"); exit; }
+$o_hash=$_POST['hash']; if ($o_hash!=md5(strrev($_SERVER['REMOTE_ADDR']).$_SERVER['HTTP_USER_AGENT'].$pass.$t_salt)) { header("HTTP/1.1 204 No Content"); exit; }
+$tara = empty($_POST['tara']) ? 0 : (int)$_POST['tara'];
+
+// Замена цен в массиве $mtr
+$txt=substr($txt,10); // $txt - в формате CSV (350 строк с одним пробелом или 6 значениями через табуляцию, каждая строка оканчивается переводом строки UNIX - код 10)
+for ($i=1; $i<351; $i++) {
+    $pos=strpos($txt,chr(10)); if ($pos==false) break; $str=substr($txt,0,$pos); $txt=substr($txt,$pos+1);
+    if ($str!=' ' && $mtr[$i] && in_array($i, $list_mtr, true)) {
+        $arr=explode(chr(9),$str);
+        if ($tara==0) { /* Если $tara==1, значит вызов по кнопке "Только обновление Тары" в групповом пересчёте, тогда цены перезаписывать нельзя, только тару (ниже) */
+          foreach($pl_save as $arr_col){  
+            $mtr[$i][$arr_col[0]]=$arr[$arr_col[1]];
+          }
+        }
+        if (count($arr)>10) {
+            $mtr[$i][9]=$arr[6]; $mtr[$i][10]=$arr[7]; $mtr[$i][11]=$arr[8]; $mtr[$i][12]=$arr[9]; $mtr[$i][13]=$arr[10]; $mtr[$i][14]=$arr[11]; $mtr[$i][15]=$arr[12];
+        }
+    }
+} $txt='';
+// Преобразование массива $mtr в CSV-файл
+for ($i=1; $i<351; $i++) {
+  $txt.=($mtr[$i] ? implode(chr(9),$mtr[$i]) : ' ').chr(10);
+}
+// Перезапись файла materials
+$fh=@fopen($file,'w');
+if ($fh==false) { @fclose($fh); print 'error'; exit; }
+@rewind($fh); if (-1==@fwrite($fh,$txt)) { @fflush($fh); @fclose($fh); print 'error'; exit; }
+@ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh);
+
+print 'ok';
+
+/* ****************** END ****************** */ }
+?>

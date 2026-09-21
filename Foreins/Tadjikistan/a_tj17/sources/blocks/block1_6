@@ -1,0 +1,23 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим»: Душанбе и Республика Таджикистан.</span></p>
+
+<div itemscope itemtype="http://schema.org/Organization" >
+<h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+<table><tbody>
+<tr><td style="width:150px;"><span>Адрес</span>:</td><td itemprop="address">Таджикистан, Душанбе, ул Пирогова, 3</td></tr>
+<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+992919589879">+992 91 958 98 79</a></div><div itemprop="telephone"><a href="tel:+992918836006">+992 91 883 60 06</a></div><div itemprop="telephone"><a href="tel:+79777370004">+7 977 737 00 04</a></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div><div><span id="dpIDmail2"></span></div></td></tr>
+</tbody></table>
+</div>
+
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<img src="/img/css/pismo.png" alt="" onclick="f_swtch(4)" style="cursor:pointer"/>
+
+<div class="pb_hidden">
+ <span id="spIDmail1">im.tjsales@teoh</span>
+<span id="spIDmail2">im.tjinfo@teoh</span>
+</div>

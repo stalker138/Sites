@@ -1,0 +1,2 @@
+<link rel="stylesheet" href="https://elakors.ru/cssjs/css003.css" type="text/css"/>
+<?php if ($pb_page>3000 && $pb_page<4000) { ?><link rel="stylesheet" href="https://elakors.ru/cssjs/css000_elakors.css" type="text/css"/><?php } ?>

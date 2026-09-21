@@ -1,0 +1,71 @@
+<?php
+$stb=' style="font-weight:bold;"'; $stbm=' style="margin-top:10px;font-size:13px;font-weight:bold;"'; $stbf=' style="font-size:13px;font-weight:bold;"';
+?>
+<menu id="lt_menu">
+<li<?php print ($pb_page==1001)?$stb:''; ?>><?php if ($pb_page!=1001) print '<l1 id="1">'; ?>Главная страница<?php if ($pb_page!=1001) print '</l1>'; ?></li>
+<li class="<?php print ($pb_page==1012 || $pb_page==1030 || $pb_page==1031 || $pb_page==1032 || $pb_page==1035 || $pb_page==1036 || $pb_page==1039 || $pb_page==1040 || $pb_page==1052)?'pb_mo"':'pb_mc"';
+  print $stbm; ?>><?php if ($pb_page!=1012) print '<l1 id="12"'.$stbf.'>'; ?>Наливные полы<?php if ($pb_page!=1012) print '</l1>'; ?>
+  <menu>
+    <li<?php print ($pb_page==1035)?$stb:''; ?>><?php if ($pb_page!=1035) print '<l2 id="57">'; ?>Эпоксидные наливные полы<?php if ($pb_page!=1035) print '</l2>'; ?></li>
+    <li<?php print ($pb_page==1036)?$stb:''; ?>><?php if ($pb_page!=1036) print '<l2 id="27">'; ?>Полиуретановые наливные полы<?php if ($pb_page!=1036) print '</l2>'; ?></li>
+    <li<?php print ($pb_page==1030)?$stb:''; ?>><?php if ($pb_page!=1030) print '<l2 id="65">'; ?>Антистатический наливной пол<?php if ($pb_page!=1030) print '</l2>'; ?></li>
+    <li<?php print ($pb_page==1052)?$stb:''; ?>><?php if ($pb_page!=1052) print '<l1 id="52">'; ?>Полиуретан-цементные полы<?php if ($pb_page!=1052) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1039)?$stb:''; ?>><?php if ($pb_page!=1039) print '<l1 id="39">'; ?>3D полы<?php if ($pb_page!=1039) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1040)?$stb:''; ?>><?php if ($pb_page!=1040) print '<l1 id="40">'; ?>Декоративные полы<?php if ($pb_page!=1040) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1032)?$stb:''; ?>><?php if ($pb_page!=1032) print '<l1 id="32">'; ?>Заливные полы<?php if ($pb_page!=1032) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1031)?$stb:''; ?>><?php if ($pb_page!=1031) print '<l1 id="31">'; ?>Жидкий пол<?php if ($pb_page!=1031) print '</l1>'; ?></li>
+  </menu>
+</li>
+<li class="<?php print ($pb_page==1013 || $pb_page==1016 || $pb_page==1015 || $pb_page==1096 || $pb_page==1081 || $pb_page==1085 || $pb_page==1041 || $pb_page==1047 || $pb_page==1046 || $pb_page==1051 || $pb_page==1054 || $pb_page==1061 || $pb_page==1064)?'pb_mo"':'pb_mc"';
+  print $stbm; ?>><?php if ($pb_page!=1013) print '<l1 id="13"'.$stbf.'>'; ?>Полимерные полы<?php if ($pb_page!=1013) print '</l1>'; ?>
+  <menu>
+    <li<?php print ($pb_page==1016)?$stb:''; ?>><?php if ($pb_page!=1016) print '<l1 id="16">'; ?>Полиуретановые полы<?php if ($pb_page!=1016) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1015)?$stb:''; ?>><?php if ($pb_page!=1015) print '<l1 id="15">'; ?>Эпоксидные полы<?php if ($pb_page!=1015) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1096)?$stb:''; ?>><?php if ($pb_page!=1096) print '<l1 id="96">'; ?>Полиуретановая пропитка<?php if ($pb_page!=1096) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1081)?$stb:''; ?>><?php if ($pb_page!=1081) print '<l1 id="81">'; ?>Полиуретановое покрытие<?php if ($pb_page!=1081) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1085)?$stb:''; ?>><?php if ($pb_page!=1085) print '<l1 id="85">'; ?>Кварцевые полы<?php if ($pb_page!=1085) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1041)?$stb:''; ?>><?php if ($pb_page!=1041) print '<l1 id="41">'; ?>Полиуретановый грунт<?php if ($pb_page!=1041) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1047)?$stb:''; ?>><?php if ($pb_page!=1047) print '<l2 id="41">'; ?>Эпоксидный грунт<?php if ($pb_page!=1047) print '</l2>'; ?></li>
+    <li<?php print ($pb_page==1046)?$stb:''; ?>><?php if ($pb_page!=1046) print '<l2 id="83">'; ?>Грунтовка глубокого проникновения<?php if ($pb_page!=1046) print '</l2>'; ?></li>
+    <li<?php print ($pb_page==1051)?$stb:''; ?>><?php if ($pb_page!=1051) print '<l1 id="51">'; ?>Полиуретановый лак<?php if ($pb_page!=1051) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1054)?$stb:''; ?>><?php if ($pb_page!=1054) print '<l2 id="53">'; ?>Эпоксидный лак<?php if ($pb_page!=1054) print '</l2>'; ?></li>
+    <li<?php print ($pb_page==1061)?$stb:''; ?>><?php if ($pb_page!=1061) print '<l1 id="61">'; ?>Полиуретановая краска<?php if ($pb_page!=1061) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1064)?$stb:''; ?>><?php if ($pb_page!=1064) print '<l2 id="49">'; ?>Эпоксидная краска<?php if ($pb_page!=1064) print '</l2>'; ?></li>
+  </menu>
+</li>
+<li class="<?php print ($pb_page==1019 || $pb_page==1121 || $pb_page==1123 || $pb_page==1126 || $pb_page==1111 || $pb_page==1062 || $pb_page==1091 || $pb_page==1094 || $pb_page==1068 || $pb_page==1042 || $pb_page==1105 || $pb_page==1077 || $pb_page==1076)?'pb_mo"':'pb_mc"';
+  print $stbm; ?>><?php if ($pb_page!=1019) print '<l1 id="19"'.$stbf.'>'; ?>Промышленные полы<?php if ($pb_page!=1019) print '</l1>'; ?>
+  <menu>
+    <li<?php print ($pb_page==1121)?$stb:''; ?>><?php if ($pb_page!=1121) print '<l1 id="121">'; ?>Пол в гараже<?php if ($pb_page!=1121) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1123)?$stb:''; ?>><?php if ($pb_page!=1123) print '<l1 id="123">'; ?>Полы для склада<?php if ($pb_page!=1123) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1126)?$stb:''; ?>><?php if ($pb_page!=1126) print '<l1 id="126">'; ?>Производственные полы<?php if ($pb_page!=1126) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1111)?$stb:''; ?>><?php if ($pb_page!=1111) print '<l1 id="111">'; ?>Пропитка для бетона<?php if ($pb_page!=1111) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1062)?$stb:''; ?>><?php if ($pb_page!=1062) print '<l1 id="62">'; ?>Краска по бетону<?php if ($pb_page!=1062) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1091)?$stb:''; ?>><?php if ($pb_page!=1091) print '<l1 id="91">'; ?>Антискользящие покрытия<?php if ($pb_page!=1091) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1094)?$stb:''; ?>><?php if ($pb_page!=1094) print '<l1 id="94">'; ?>Антистатические полы<?php if ($pb_page!=1094) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1068)?$stb:''; ?>><?php if ($pb_page!=1068) print '<l2 id="19">'; ?>Краска для асфальта<?php if ($pb_page!=1068) print '</l2>'; ?></li>
+    <li<?php print ($pb_page==1042)?$stb:''; ?>><?php if ($pb_page!=1042) print '<l1 id="42">'; ?>Грунтовка для бетона<?php if ($pb_page!=1042) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1105)?$stb:''; ?>><?php if ($pb_page!=1105) print '<l2 id="227">'; ?>Флюатирование (флюаты)<?php if ($pb_page!=1105) print '</l2>'; ?></li>
+    <li<?php print ($pb_page==1077)?$stb:''; ?>><?php if ($pb_page!=1077) print '<l2 id="71">'; ?>Эпоксидная шпатлевка<?php if ($pb_page!=1077) print '</l2>'; ?></li>
+    <li<?php print ($pb_page==1076)?$stb:''; ?>><?php if ($pb_page!=1076) print '<l2 id="33">'; ?>Полиуретановая шпатлевка<?php if ($pb_page!=1076) print '</l2>'; ?></li>
+  </menu>
+</li>
+<li class="<?php print ($pb_page==1011 || $pb_page==1070 || $pb_page==1024 || $pb_page==1014 || $pb_page==1017 || $pb_page==1103 || $pb_page==1025 || $pb_page==1104 || $pb_page==1112 || $pb_page==1108 || $pb_page==1106 || $pb_page==1021 || $pb_page==1027)?'pb_mo"':'pb_mc"';
+  print $stbm; ?>><?php if ($pb_page!=1011) print '<l1 id="11"'.$stbf.'>'; ?>Бетонные полы<?php if ($pb_page!=1011) print '</l1>'; ?>
+  <menu>
+    <li<?php print ($pb_page==1070)?$stb:''; ?>><?php if ($pb_page!=1070) print '<l1 id="70">'; ?>Добавки для бетона<?php if ($pb_page!=1070) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1024)?$stb:''; ?>><?php if ($pb_page!=1024) print '<l1 id="24">'; ?>Мозаичные полы<?php if ($pb_page!=1024) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1014)?$stb:''; ?>><?php if ($pb_page!=1014) print '<l1 id="14">'; ?>Полимерцементные полы<?php if ($pb_page!=1014) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1017)?$stb:''; ?>><?php if ($pb_page!=1017) print '<l1 id="17">'; ?>Полимербетон<?php if ($pb_page!=1017) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1103)?$stb:''; ?>><?php if ($pb_page!=1103) print '<l1 id="103">'; ?>Шлифовка бетона<?php if ($pb_page!=1103) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1102)?$stb:''; ?>><?php if ($pb_page!=1102) print '<l1 id="102">'; ?>Фрезеровка бетона<?php if ($pb_page!=1102) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1025)?$stb:''; ?>><?php if ($pb_page!=1025) print '<l2 id="257">'; ?>Бетоноконтакт<?php if ($pb_page!=1025) print '</l2>'; ?></li>
+    <li<?php print ($pb_page==1104)?$stb:''; ?>><?php if ($pb_page!=1104) print '<l1 id="104">'; ?>Обеспыливание бетона<?php if ($pb_page!=1104) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1112)?$stb:''; ?>><?php if ($pb_page!=1112) print '<l1 id="112">'; ?>Защита бетона<?php if ($pb_page!=1112) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1108)?$stb:''; ?>><?php if ($pb_page!=1108) print '<l1 id="108">'; ?>Укрепление бетона<?php if ($pb_page!=1108) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1106)?$stb:''; ?>><?php if ($pb_page!=1106) print '<l1 id="106">'; ?>Ремонт бетона<?php if ($pb_page!=1106) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1021)?$stb:''; ?>><?php if ($pb_page!=1021) print '<l1 id="21">'; ?>Бетонная стяжка<?php if ($pb_page!=1021) print '</l1>'; ?></li>
+    <li<?php print ($pb_page==1027)?$stb:''; ?>><?php if ($pb_page!=1027) print '<l1 id="27">'; ?>Бетонные работы<?php if ($pb_page!=1027) print '</l1>'; ?></li>
+  </menu>
+</li>
+</menu>

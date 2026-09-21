@@ -1,0 +1,20 @@
+<?php $tlm=' style="text-shadow:#005093 1px 1px 2px; color:#ffffff; background:#f00000;"'; ?>
+<div>
+<l1 id="3"<?php if ($pb_page==1003) print $tlm; ?>>Продукция «Элакор»</l1><div class="px5_"></div>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+<l1 id="9"<?php if ($pb_page==1009) print $tlm; ?>>Задачи и решения</l1><div class="px5_"></div>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+
+<a href="https://teohim.ru/tech/" target="_blank"<?php if ($pb_page==1004) print $tlm; ?>>Инструкции</a><div class="px5_"></div>
+<a href="https://teohim.ru/sert/" target="_blank"<?php if ($pb_page==1005) print $tlm; ?>>Сертификаты</a><div class="px5_"></div>
+<l1 id="2"<?php if ($pb_page==1002) print $tlm; ?>>Таблица цветов</l1><div class="px5_"></div>
+<div class="px5b"></div><div class="px5"></div>
+<l1 id="6"<?php if ($pb_page==1006) print $tlm; ?>>Контакты</l1>
+</div>
+<div class="px10"></div>
+
+<?php if ($pb_page!=1020) { ?>
+<div class="px10"></div>
+<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'http://teohim.tj/search/','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск по teohim.tj','suggest':false,'target':'_self','tld':'ru','type':3,'usebigdictionary':false,'searchid':2444759,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'поиск по сайту','input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}"><form action="https://yandex.ru/search/site/" method="get" target="_self"><input type="hidden" name="searchid" value="2444759"/><input type="hidden" name="l10n" value="ru"/><input type="hidden" name="reqenc" value=""/><input type="search" name="text" value=""/><input type="submit" value="Найти"/></form></div>
+<script>(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+<?php } ?>
