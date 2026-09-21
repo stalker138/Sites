@@ -1,4 +1,4 @@
-    if (kol<40)   return 3;
+    if (kol<60)   return 3;
     if (kol<200)  return 4; 
     if (kol<500)  return 5;
     if (kol<1000) return 6;

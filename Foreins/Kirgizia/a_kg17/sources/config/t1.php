@@ -75,9 +75,9 @@
 *end*12
 
 *number*13
-*options*		0000000000
+*options*		1000000000
 *file*			text1_13
-*name*			empty13
+*name*			Пояснения к ПРАЙСУ
 *end*13
 
 *number*14
