@@ -1,14 +1,26 @@
 <?php
 // include_once $pb_root."auto/inc_counters.php";
+// include_once $pb_root."auto/inc_css_js.php";
 ?>
 <div id="pb_page" class="pb_hidden"><?php print (isset($pb_page) && $pb_page>50) ? $pb_page : $pb_special; ?></div>
 <?php
-// include_once $pb_root."auto/inc_css_js.php";
-if($pb_page!={*text2_1*} && ($pb_page<3000 || $pb_page>3300)) {
+if($pb_page!=1010 && ($pb_page<3000 || $pb_page>3300)) {
   print '{*text0_2*}';
 }
+
+//Проверка ботов. Проверяется прямой заход на главную страницу от пользователя, который не помечен как бот.
+function chk_remote_user() {
+  global $no_metrix;
+  $r=$_SERVER['HTTP_REFERER']; $ret=1; $p=strpos($_SERVER['HTTP_USER_AGENT'],'bot');
+  if (isset($no_metrix) && ($no_metrix==1)) $ret=0;
+  if (!$p || $p<1) {
+     $uri = $_SERVER['REQUEST_URI'];
+     if (!$r && ($uri == "/")) { $ret=0; }
+  }
+  return $ret;
+}
 ?>
-{*text0_4*}
+
 {*text0_11*}
 {*text0_12*}
 
@@ -18,11 +30,7 @@ if($pb_page!={*text2_1*} && ($pb_page<3000 || $pb_page>3300)) {
 ?>
 <script src="https://elakors.ru/cssjs/vcorp_js_0003.js"></script><script>{*text0_17*}{*text0_19*}</script>
 
-<?php if($pb_page==1001 || $pb_page==1011 || $pb_page==1012 || $pb_page==1013 || $pb_page==1019) { ?>
-<script>{*text5_1*}</script>
-<?php } ?>
-<?php if($pb_page==1007) { ?>
-<script>{*text5_3*}</script>
-<?php } ?>
-
 {*text0_7*}
+<?php if (chk_remote_user()==1) { ?>
+{*text0_4*}
+<?php } ?>

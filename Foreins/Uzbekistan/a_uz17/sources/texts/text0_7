@@ -25,13 +25,6 @@
         accurateTrackBounce:true
    });
 
-   if ('{*text1_23*}') {
-   ym('{*text1_23*}', "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });}
 </script>
 <noscript><div>
 <img src="https://mc.yandex.ru/watch/{*text1_20*}" style="position:absolute; left:-9999px;" alt="" />
