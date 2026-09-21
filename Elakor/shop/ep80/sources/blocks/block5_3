@@ -1,0 +1,246 @@
+<h1 class="h11s">Полиуретановая пропитка для гаража</h1>
+<div class="px20"></div>
+<div class="cblock">
+<div class="pb_gal"><div class="pb_gal_scroll">
+<div class="pb_gal_item"><img src="/img/pokr/p1.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokr/p2.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokr/p3.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokr/p4.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokr/p5.jpg" alt=""/></div>
+</div>
+<div class="pb_gal_left"></div><div class="pb_gal_right"></div>
+</div>
+</div>
+<div class="px20"></div>
+
+<?php fcvr_cin(); ?>
+<div class="px10"></div>
+<?php fcvr_cout($i_pkr); ?>
+<div class="px10"></div>
+
+<div class="calc_block">
+
+<div class="calc_mat" style="height:auto">
+<div class="calc_mf_header calc_mf_header_" onclick="f_mfHeaderClick(this)"><span>Стоимость основных материалов</span> (с учётом НДС)</div>
+<div class="px0"></div>
+<div class="calc_fmat" id="fmat123">
+<div class="dfrh">
+ <div class="dfhl">Операция</div>
+ <div class="dfhl">Материал</div>
+ <div class="dfh"><div>Расход<br>кг/м<sup>2</sup></div></div>
+ <div class="dfh"><div>Цена<br>руб/кг</div></div>
+ <div class="dfh"><div>Кол-во<br>кг</div></div>
+ <div class="dfh"><div>Цена за<br>м<sup>2</sup></div></div>
+ <div class="dfh"><div>На всю площадь<br>стоимость, руб</div></div>
+</div>
+<div class="dfr bee">
+ <div class="dfco" onclick="f_dfcoClick(this)">Грунтование</div>
+<div class="dfh_">Материал</div>
+ <div class="dfcl">Элакор-ПУ Грунт-П</div>
+<div class="dfh_"><div>Расход, кг/м<sup>2</sup></div></div>
+ <div class="dfc" id="c_123_rgr">0,30</div>
+<div class="dfh_"><div>Цена, руб/кг</div></div>
+ <div class="dfc" id="c_123_cgr">295,00</div>
+<div class="dfh_"><div>Кол-во, кг</div></div>
+ <div class="dfc" id="c_123_kgr">308,00</div>
+<div class="dfh_"><div>Цена за м<sup>2</sup></div></div>
+ <div class="dfc" id="c_123_mgr">90,86</div>
+<div class="dfh_"><div>На всю площадь, стоимость, руб</div></div>
+ <div class="dfc" id="c_123_sgr">90 860</div>
+</div>
+<div class="dfr1" id="f123_b1">
+ <div class="dfco1" onclick="f_dfcoClick(this)">Шпатлевание</div>
+<div class="dfh_">Материал</div>
+ <div class="dfcl1">Элакор-ПУ Шпатлевка-2К</div>
+<div class="dfh_"><div>Расход, кг/м<sup>2</sup></div></div>
+ <div class="dfc1" id="c_123_rsh">0,50</div>
+<div class="dfh_"><div>Цена, руб/кг</div></div>
+ <div class="dfc1" id="c_123_csh">245,00</div>
+<div class="dfh_"><div>Кол-во, кг</div></div>
+ <div class="dfc1" id="c_123_ksh">516,80</div>
+<div class="dfh_"><div>Цена за м<sup>2</sup></div></div>
+ <div class="dfc1" id="c_123_msh">126,62</div>
+<div class="dfh_"><div>На всю площадь, стоимость, руб</div></div>
+ <div class="dfc1" id="c_123_ssh">126 616</div>
+</div>
+<div class="dfr2" id="f123_b1_2">
+ <div class="dfco2"></div>
+<div class="dfh_">Материал</div>
+ <div class="dfcl2">Кварц окатанный 0,1-0,4мм</div>
+<div class="dfh_"><div>Расход, кг/м<sup>2</sup></div></div>
+ <div class="dfc2" id="c_123_rsk">0,25</div>
+<div class="dfh_"><div>Цена, руб/кг</div></div>
+ <div class="dfc2" id="c_123_csk">9,00</div>
+<div class="dfh_"><div>Кол-во, кг</div></div>
+ <div class="dfc2" id="c_123_ksk">250,00</div>
+<div class="dfh_"><div>Цена за м<sup>2</sup></div></div>
+ <div class="dfc2" id="c_123_msk">2,25</div>
+<div class="dfh_"><div>На всю площадь, стоимость, руб</div></div>
+ <div class="dfc2" id="c_123_ssk">2 250</div>
+</div>
+<div class="dfr bee">
+ <div class="dfco" onclick="f_dfcoClick(this)">Нанесение Эмали</div>
+<div class="dfh_">Материал</div>
+ <div class="dfcl">Элакор-ПУ Эмаль-60</div>
+<div class="dfh_"><div>Расход, кг/м<sup>2</sup></div></div>
+ <div class="dfc" id="c_123_rfs">0,35</div>
+<div class="dfh_"><div>Цена, руб/кг</div></div>
+ <div class="dfc" id="c_123_cfs">375,00</div>
+<div class="dfh_"><div>Кол-во, кг</div></div>
+ <div class="dfc" id="c_123_kfs">352,00</div>
+<div class="dfh_"><div>Цена за м<sup>2</sup></div></div>
+ <div class="dfc" id="c_123_mfs">132,00</div>
+<div class="dfh_"><div>На всю площадь, стоимость, руб</div></div>
+ <div class="dfc" id="c_123_sfs">132 000</div>
+</div>
+<div class="dfri">
+ <div class="dfci">Итого:</div>
+ <div class="dfhl"></div>
+ <div class="dfc"></div>
+ <div class="dfc"></div>
+<div class="dfh_"><div>Кол-во, кг</div></div>
+ <div class="dfc" id="c_123_ikol">1426,80</div>
+<div class="dfh_"><div>Цена за м<sup>2</sup></div></div>
+ <div class="dfc" id="c_123_icena">351,73</div>
+<div class="dfh_"><div>На всю площадь, стоимость, руб</div></div>
+ <div class="dfc" id="c_123_ist">351 726</div>
+</div>
+</div>
+<div class="px10"></div>
+<div class="calc_order_mat">
+   <div class="butr">Заказать расчитанные материалы</div>
+   <div class="px10"></div>
+</div>
+<div class="px10"></div>
+</div>
+<div class="px10"></div>
+
+<div class="calc_rab">
+<div class="calc_mf_header" onclick="f_mfHeaderClick(this)"><span>Стоимость работ и материалов</span> (с учётом НДС).<br><span>Расчёт только для Москвы и Московской области.</span></div>
+<div class="px0"></div>
+<div class="calc_frab" id="frab123">
+<div class="dfrh">
+ <div class="dfhl">Материалы, работы</div>
+ <div class="dfh"><div>Цена за<br>м<sup>2</sup></div></div>
+ <div class="dfh"><div>На всю площадь<br>стоимость, руб</div></div>
+ <div class="dfhl"><div>Примечания</div></div>
+</div>
+<div class="dfr1 bee" id="fr123_r1">
+ <div class="dfco1" onclick="f_dfcoClick(this)">Материалы, работы</div>
+ <div class="dfclr1">Основные материалы</div>
+<div class="dfh_"><div>Цена за м<sup>2</sup></div></div>
+ <div class="dfc1" id="c_123_voc">351,73</div>
+<div class="dfh_"><div>На всю площадь, стоимость, руб</div></div>
+ <div class="dfc1" id="c_123_vos">351 726</div>
+<div class="dfh_">Примечания</div>
+ <div class="dfcl1">То, что написано в таблице 2</div>
+</div>
+<div class="dfr2" id="fr123_r1_2">
+ <div class="dfco2"></div>
+ <div class="dfclr2">Прочие материалы, инструмент</div>
+<div class="dfh_"><div>Цена за м<sup>2</sup></div></div>
+ <div class="dfc2" id="c_123_vmc">69,60</div>
+<div class="dfh_"><div>На всю площадь, стоимость, руб</div></div>
+ <div class="dfc2" id="c_123_vms">69 600</div>
+<div class="dfh_">Примечания</div>
+ <div class="dfcl2">Расходные: шлиф.сегменты, валики и т.д.</div>
+</div>
+<div class="dfr2 bee" id="fr123_r1_3">
+ <div class="dfco2"></div>
+ <div class="dfclr2">Работы</div>
+<div class="dfh_"><div>Цена за м<sup>2</sup></div></div>
+ <div class="dfc2" id="c_123_vrc">202,80</div>
+<div class="dfh_"><div>На всю площадь, стоимость, руб</div></div>
+ <div class="dfc2" id="c_123_vrs">202 800</div>
+<div class="dfh_">Примечания</div>
+ <div class="dfcl2">С учетом шлифования-зачистки поверхности</div>
+</div>
+<div class="dfri">
+ <div class="dfci">Итого работы + материалы:</div>
+<div class="dfh_"><div>Цена за м<sup>2</sup></div></div>
+ <div class="dfc" id="c_123_ic">624,13</div>
+<div class="dfh_"><div>На всю площадь, стоимость, руб</div></div>
+ <div class="dfc" id="c_123_is">624 126</div>
+</div>
+</div>
+<div class="px10"></div>
+<div class="calc_order_rab">
+   <div class="butr fright">Заказать работы «под ключ»</div>
+   Более точный расчёт стоимости работ предоставляется после осмотра объекта. <span class="fwn c80">Транспортные и командировочные расходы не включены.</span>
+   <div class="px20"></div>
+</div>
+<div class="px10"></div>
+</div>
+<div class="px10"></div>
+
+</div>
+<div class="px20"></div>
+<div class="px10n"></div>
+
+<div class="ot_head_block">
+<div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="px0"></div>
+</div>
+<div class="px0"></div>
+<div class="ot_block">
+<div class="ot_item active" id="fot123_o">
+<p class="fwdb c55">Полиуретановая пропитка - экономичный и эффективный способ защиты бетона, бетонного пола.</p>
+<p>Для устройства полиуретановой пропитки используется материал <l1 id="1">полиуретановый грунт</l1> для бетона Элакор-ПУ (и для грунтовочного и для лицевого слоя).</p>
+<p>Полиуретановые пропитки предназначены для защиты бетонных поверхностей от механического и химического воздействия; для упрочнения, обеспылевания и герметизации бетонных полов.</p>
+</div>
+<div class="ot_item" id="fot123_t">
+<p class="c55"><span>Краткие указания к применению</span> (подробные указания смотрите в инструкциях для конкретных покрытий).</p>
+<p class="fwdb">Основные требования к поверхностям.</p>
+<ul>
+<li>Бетонные полы на нижних этажах должны иметь гидроизоляцию для исключения капиллярного подсоса и подпора воды снизу.</li>
+<li>Новый бетонный пол выдержать до нанесения грунта не менее 28 суток при нормальных условиях твердения.</li>
+<li>Не допускаются замасленные участки, которые невозможно удалить при подготовке.</li>
+</ul>
+</div>
+</div>
+<div class="px5b"></div><div class="px20"></div>
+
+<div class="dh2">Использованные материалы</div>
+<div class="px20"></div>
+<l1 id="1" class="mat_block">
+<div class="matb_h1">Элакор-ПУ Грунт-П</div>
+<div class="matb_price">от 295<p>руб./кг</p></div>
+<div class="px0"></div>
+<div class="matb_content">
+<p class="matb_cnts">Свойства</p>
+<p><span>Химическая стойкость</span>. Отвержденный полиуретановый грунт для бетона Элакор-ПУ стоек к постоянному и переменному контакту с веществами: ...</p>
+</div>
+<div class="butb">Подробнее</div>
+<div class="px0"></div><div class="mat_block_img" style="background-image:url('/img/mat/lak60.png')"></div></l1>
+<div class="px20"></div>
+<l1 id="1" class="mat_block">
+<div class="matb_h1">Элакор-ПУ Эмаль-60</div>
+<div class="matb_price">от 375<p>руб./кг</p></div>
+<div class="px0"></div>
+<div class="matb_content">
+<p class="matb_cnts">Полиуретановая краска для бетона</p>
+<p><span>Для эксплуатации</span> внутри помещений, «под навесом», на открытом воздухе – ограничено. При эксплуатации на открытом воздухе обязательно наличие гидроизоляции бетона от грунтовых вод.</p>
+</div>
+<div class="butb">Подробнее</div>
+<div class="px0"></div><div class="mat_block_img" style="background-image:url('/img/mat/pu_gr_1k.jpg')"></div></l1>
+<div class="px20"></div>
+<l1 id="1" class="mat_block">
+<div class="matb_h1">Элакор-ПУ Шпатлевка-2К</div>
+<div class="matb_price">от 245<p>руб./кг</p></div>
+<div class="px0"></div>
+<div class="matb_content">
+<p class="matb_cnts">Полиуретановая шпатлевка для бетона</p>
+<p>Двухкомпонентная полиуретановая шпаклевка для бетона, бетонного пола, дерева, металла. Колеруется в любые цвета.</p>
+</div>
+<div class="butb">Подробнее</div>
+<div class="px0"></div><div class="mat_block_img" style="background-image:url('/img/mat/pu_gr_1k.jpg')"></div></l1>
+<div class="px20"></div>
+<l1 id="1" class="mat_block">
+<div class="matb_h1">Кварц окатанный 0,1-0,4мм</div>
+<div class="matb_price">от 9<p>руб./кг</p></div>
+<div class="px0"></div>
+<div class="matb_content">
+<p class="matb_cnts">Свойства</p>
+<p></p>
+</div>
+<div class="butb">Подробнее</div>
+<div class="px0"></div><div class="mat_block_img" style="background-image:url('/img/mat/pu_gr_1k.jpg')"></div></l1>

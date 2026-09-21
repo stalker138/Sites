@@ -1,0 +1,32 @@
+{*tpl1*}{*tpl2*}{*tpl3*}{*tpl0*}
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="ООО ТэоХим"><meta name="copyright" lang="ru" content="ООО ТэоХим"><meta name="owner" content="ООО ТэоХим"><meta name="robots" content="noindex, nofollow, noarchive">
+<?php
+print '<link rel="icon" type="image/ico" href="/favicon.ico">';
+print '<link rel="icon" type="image/png" href="/favicon.png">';
+print '<link rel="icon" type="image/svg+xml" href="/favicon.svg">';
+print '<link rel="canonical" href="'.$pb_domain.$pb_full_url.'">';
+{*text1_15*}
+{*text1_16*}
+{*text1_17*}
+?>
+{*tpl5*}
+{*text1_13*}
+
+body { width:1077px; height:auto;
+background-color:rgba(244,244,244,1);
+padding:80px 40px;}
+
+{*tpl6*}{*tpl7*}{*tpl8*}
+{*tpl9*}{*tpl10*}{*tpl11*}
+{*tpl12*}{*tpl13*}
+
+{*block5_16*}
+
+{*tpl18*}{*tpl19*}{*tpl20*}
+<script src="/cssjs/vcorp_js_0003.js"></script>
+<script>
+{*text1_14*}
+</script>
+{*tpl25*}

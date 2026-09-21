@@ -1,0 +1,21 @@
+<div class="dcallback">
+<div class="dcallback_head">Запрос на обратный звонок</div>
+<div class="px10"></div>
+<p>Контактное лицо:</p>
+<div class="px5"></div>
+<input type="text" class="inpbox" maxlength="70" style="width:auto;" id="idText1" value="" onkeypress="f_changePost(this)" onchange="f_changePost(this)">
+<div class="px5"></div>
+<p>Телефон:</p>
+<div class="px5"></div>
+<input type="text" class="inpbox" maxlength="70" style="width:auto;" id="idText2" value="" onkeypress="f_changePost(this)" onchange="f_changePost(this)">
+<div class="px5"></div>
+<p>Почта (e-mail):</p>
+<div class="px5"></div>
+<input type="text" class="inpbox" maxlength="70" style="width:auto;" id="idText3" value="" onkeypress="f_changePost(this)" onchange="f_changePost(this)">
+<div class="px5"></div>
+<p>Площадь объекта:</p>
+<div class="px5"></div>
+<textarea id="idArea1" class="inparea" style="width:auto;" onkeypress="f_changePost(this)" onchange="f_changePost(this)"></textarea>
+<div class="px5"></div>
+<input type="button" class="pb_buttons" value="Отправить" id="idSend" onclick="f_postGo(2)">
+</div>

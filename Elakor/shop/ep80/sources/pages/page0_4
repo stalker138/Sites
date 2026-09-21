@@ -1,0 +1,18 @@
+<?php if (1==2) { ?>
+<!doctype html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>ЗАКАЗ</title><style>
+* { margin:0; padding:0; font:inherit; font-family:inherit; color:inherit; outline:none 0px; }
+html,body { width:100%; height:100%; background:#ffffff; } body { font-size:15px; font-weight:400; font-family:ArticulatCF,arial,helvetica,sans-serif; color:#272727; }
+.dcontent { position:relative; padding:10px; min-width:1000px; max-width:1000px; }
+.calc_mat, .calc_rab { position:relative; display:block; } .bee { background:#c8c8c8; }
+.calc_fmat, .calc_frab { display:table; width:100%; font-size:12px; line-height:15px; text-align:right; color:#272727; border:none 0px; border-collapse:collapse; }
+.dfr,.dfrh,.dfr1,.dfr2,.dfr3,.dfri,.dfh,.dfhl,.dfc,.dfc1,.dfc2,.dfc3,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfci { display:table-row; border:none 0px; border-collapse:collapse; }
+.dfh,.dfhl,.dfc,.dfc1,.dfc2,.dfc3,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfci { display:table-cell; padding:7px 10px 7px 0; } .dfci, .dfri .dfc { font-weight:600; }
+.dfco1,.dfco2,.dfco3 { border-right:solid 1px #eeeeee; } .bee .dfco1, .bee .dfco2, .bee .dfco3 { border-right:solid 1px #ffffff; }
+.dfcl1, .dfcl2, .dfcl3, .dfc1, .dfc2, .dfc3,.dfri { border-top:solid 1px #eeeeee; } .bee .dfcl1, .bee .dfcl2, .bee .dfcl3, .bee .dfc2, .bee .dfc3 { border-top:solid 1px #ffffff; }
+.dfh,.dfhl { color:#808080; } .dfhl,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfci { padding:7px 0 7px 10px; text-align:left; } .dfh,.dfhl { }
+.dfhl div, .dfh div { display:inline-block; text-align:center; }
+.calc_frab *, .calc_frab .dfco1, .calc_frab .dfco2, .calc_frab .dfco3, .calc_frab .bee .dfco1, .calc_frab .bee .dfco2, .calc_frab .bee .dfco3  { border:none 0px; border-top:none 0px; border-right:none 0px; }
+.calc_frab .bee .dfco1, .calc_frab .bee .dfco2, .calc_frab .bee .dfco3 { background:#ffffff; }
+</style></head><body><div id="dcnt" class="dcontent">
+</div></body></html>
+<?php } ?>

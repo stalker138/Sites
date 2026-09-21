@@ -1,0 +1,11 @@
+<div id="calc_iitem_comb_se33" class="calc_iitem">
+  <div class="px0"></div><p>Количество слоёв Эмали</p><div class="px5"></div>
+  <div class="pb_combobox" style="width:140px">
+    <input type="text" value="1" maxlength="30" placeholder="1" style="width:90px" readonly />
+    <div class="pb_cb_image"></div>
+    <div class="pb_cb_select" style="width:148px">
+      <div class="pb_cb_option">1</div>
+      <div class="pb_cb_option">2</div>
+   </div>
+  </div><div class="px0"></div>
+</div>

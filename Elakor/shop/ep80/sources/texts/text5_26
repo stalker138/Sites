@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="svg_to_obraz" viewBox="0 0 41.508 37.629">
+  <g id="university" transform="translate(0 -21.68)">
+    <g transform="translate(0 21.68)">
+      <g transform="translate(0 0)">
+        <path d="M40.792,39.163H31.639V37.4a.716.716,0,0,0-.365-.623l-9.8-5.511V28.457h1.939v1.066a.716.716,0,0,0,.716.716h5.847a.716.716,0,0,0,.673-.959l-.587-1.667.594-1.632a.716.716,0,0,0-.673-.959H27.316V23.984a.716.716,0,0,0-.716-.716H21.47V22.4a.716.716,0,1,0-1.431,0v8.867l-9.8,5.5a.716.716,0,0,0-.365.623v1.768H.716A.716.716,0,0,0,0,39.872V58.593a.716.716,0,0,0,.716.716H40.792a.716.716,0,0,0,.716-.716V39.879A.716.716,0,0,0,40.792,39.163ZM27.316,27.742l-.029-.029V26.482h1.632l-.293.916a.716.716,0,0,0,0,.494l.336.916H24.84v-.351H26.6A.716.716,0,0,0,27.316,27.742ZM21.47,24.7h4.416v2.326H21.47ZM9.869,57.878H1.431V40.595H9.869Zm10.169,0H16.281V49.7h3.757Zm5.188,0H21.47V49.7h3.757Zm5.01,0H26.658V48.989a.716.716,0,0,0-.716-.716H15.565a.716.716,0,0,0-.716.716v8.888H11.272V37.839L20.754,32.5l9.454,5.31.029,2.061Zm9.84,0H31.639V40.595h8.438Z" transform="translate(0 -21.68)" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(17.755 34.691)">
+      <g  transform="translate(0 0)">
+        <path d="M201.479,167.12a3,3,0,1,0,3,2.991A3.006,3.006,0,0,0,201.479,167.12Zm0,4.566a1.567,1.567,0,1,1,1.567-1.56h.007A1.567,1.567,0,0,1,201.479,171.686Z" transform="translate(-198.48 -167.12)" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(3.156 42.169)">
+      <g>
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(6.684 42.169)">
+      <g>
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(13.447 42.169)">
+      <g>
+        <rect width="2.863" height="1.431" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(19.323 42.169)">
+      <g>
+        <rect width="2.863" height="1.431" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(25.198 42.169)">
+      <g>
+        <rect width="2.863" height="1.431" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(13.447 45.504)">
+      <g>
+        <rect width="2.863" height="1.431" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(19.323 45.504)">
+      <g>
+        <rect width="2.863" height="1.431" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(25.198 45.504)">
+      <g>
+        <rect width="2.863" height="1.431" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(3.156 47.801)">
+      <g>
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(6.684 47.801)">
+      <g>
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(3.156 53.441)">
+      <g transform="translate(0 0)">
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(6.684 53.441)">
+      <g transform="translate(0 0)">
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(33.392 42.169)">
+      <g>
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(36.92 42.169)">
+      <g>
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(33.392 47.801)">
+      <g>
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(36.92 47.801)">
+      <g>
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(33.392 53.441)">
+      <g transform="translate(0 0)">
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+    <g transform="translate(36.92 53.441)">
+      <g transform="translate(0 0)">
+        <rect width="1.431" height="2.863" fill="#777"/>
+      </g>
+    </g>
+  </g>
+</svg>

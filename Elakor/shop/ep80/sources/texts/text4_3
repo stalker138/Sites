@@ -1,0 +1,4 @@
+<div id="calc_iitem_recalc" class="calc_iitem" style="width:125px">
+  <div class="px30"></div>
+  <div class="butb" onclick="f_refresh()">Пересчитать</div>
+</div>

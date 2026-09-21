@@ -1,0 +1,138 @@
+<h1 class="h11s">Эпоксидное покрытие</h1>
+<div class="px20"></div>
+<div class="cblock">
+<div class="pb_gal"><div class="pb_gal_scroll">
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p01.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p02.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p03.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p04.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p05.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p06.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p07.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p08.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p09.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p10.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p11.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p12.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p13.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p14.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p15.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-epoksid/p16.webp" alt=""/></div>
+</div>
+<div class="pb_gal_left"></div><div class="pb_gal_right"></div>
+</div>
+</div>
+<div class="px20"></div>
+
+<?php fcvr_cin(); ?>
+<div class="px10"></div>
+<?php fcvr_cout(); ?>
+<div class="px20"></div>
+<div class="px10n"></div>
+
+<div class="ot_head_block">
+<div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="px0"></div>
+</div>
+<div class="px0"></div>
+<div class="ot_block">
+<div class="ot_item active" id="fot123_o">
+<?php fmtr_tech($i_pkr,1); ?>
+<p>
+<span class="fwdb c55">Эпоксидное покрытие  </span>–цветное полимерное покрытие. Наносится окрасочным способом. Экономичный и эффективный способ защиты бетонной поверхности от механического и химического воздействия. Обеспечивает упрочнение, обеспыливание и герметизацию бетонных полов. <br>
+<span class="fwdb c55">Внешний вид</span> - фактурное покрытие заданного цвета.<br>
+<span class="fwdb c55">Применяемые материалы:</span></p>
+<ul style="margin-top:0;">
+<li>Двухкомпонентные эпоксидные грунты: Элакор-ЭД Грунт 2К/100 или Элакор-ЭД Грунт-2К/100П (более экономичный).</li>
+<li>Двухкомпонентная эпоксидная Элакор-ЭД Эмаль 2К/100.</li>
+<li>Если требуется выравнивание поверхности, двухкомпонентная эпоксидная Элакор-ЭД Шпатлевка 2К (наносится после грунтования).</li>
+</ul>
+<p>
+<span class="fwdb c55">Назначение.</span><br>
+Эпоксидное покрытие  рекомендовано для следующих задач: 
+</p>
+<ul style="margin-top:0;">
+<li>Устройство новых покрытий, ремонт существующих на действующих объектах или на вновь строящихся, когда есть требование об отсутствии запаха при производстве работ.</li>
+<li>Высокие декоративные свойства (выше, чем у полиуретановых, в том числе довольно высокая светостойкость).</li>
+<li>Эффективный и экономичный ремонт топпинга.</li>
+<li>Устройство разметки.</li>
+</ul>
+<p>
+<span class="fwdb c55">Условия применения.</span>
+</p>
+<ul style="margin-top:0;">
+<li>Выдержка бетона после укладки до нанесения пропитки - не менее 28 суток при нормальных условиях твердения.</li>
+<li>Влажность поверхности бетона - не более 5масс.%.</li>
+</ul>
+
+ <div class="dh_min_max">
+ <div class="dh_mm_head">↓ Показать больше... ↓</div>
+<p class="fwdb c55">Свойства:</p>
+<ul>
+<li>Полное обеспыливание поверхности.</li>
+<li>Полная герметизация, гидроизоляция поверхности от внешних воздействий.</li>
+<li>Глубина пропитки – 1-2мм.</li>
+<li>Работы по устройству эпоксидных полов проводятся при температурах от + 5 до + 25 °С.</li>
+<li>Условная марочная прочность – не менее М600 (независимо от начальной прочности).</li>
+<li>Износостойкость бетонного пола повышается не менее чем в 10 раз.</li>
+<li>Ударная вязкость (ударопрочность) повышается не менее чем в 2 раза.</li>
+<li>Высокая химическая стойкость поверхности (см. таблицу Химической Стойкости):
+<ul style="margin-top:0;">
+<li>вода и водные растворы солей (до концентрированных), щелочей (до концентрированных) и кислот (до 10%);</li>
+<li>масла и жиры минеральные, синтетические, органические;</li>
+<li>бензин, дизельное топливо и т.п.</li>
+</ul>
+</li>
+<li>Поверхность не скользкая (даже мокрая).</li>
+</ul>
+
+<p class="fwdb c55">Наносится на минеральные капиллярно-пористые поверхности:</p>
+<ul>
+<li>Бетонные и пескоцементные стяжки от М200, топпинг.</li>
+<li>Мозаичный бетон, брекчия.</li>
+<li>Бетонная плитка, метлахская плитка (не глянцевая); шифер (ацэид), кирпич.</li>
+</ul>
+
+<p class="fwdb c55">Преимущества:</p>
+<ul>
+<li>Высокие декоративные свойства.</li>
+<li>Отсутствие запаха при нанесении.</li>
+<li>Светостойкость.</li>
+<li>Обеспечивают простоту уборки и возможность использования моющих средств.</li>
+</ul>
+
+<p class="fwdb c55">Эксплуатация:</p>
+<ul>
+<li>Пешеходная нагрузка возможна через 3 дня, полная механическая через 7 дней.</li>
+<li>Может эксплуатироваться в помещениях и под навесом. На открытом воздухе может применяться только для поверхностей, имеющих гидроизоляцию, или для поверхностей, у которых отсутствует капиллярный подсос воды.</li>
+<li>При эксплуатации покрытия при отрицательных температурах рекомендовано выполнять противоскользящий вариант покрытия.</li>
+</ul>
+
+<p class="fwdb c55">Объекты применения:</p>
+<ul>
+<li>Производственные цеха, склады, технические помещения.</li>
+<li>Гаражи, паркинги, автосервисы, автомойки.</li>
+<li>Выставочные и торговые залы, кафе, столовые.</li>
+<li>Объекты пищевой промышленности: цеха мясо- и рыбопереработки, холодильники, морозильники и т.п.</li>
+<li>Объекты сельского хозяйства: теплицы, птицефермы, животноводческие комплексы.</li>
+</ul>
+
+<p class="fwdb c55">Разрешена к применению на всех объектах промышленного и гражданского строительства, в том числе:</p>
+<ul>
+<li>На предприятиях пищевой промышленности, на предприятиях фармацевтической промышленности.</li>
+<li>В жилищном строительстве, в детских и лечебно-профилактических учреждениях.</li>
+</ul>
+
+ </div>
+ <div class="px0"></div>
+</div>
+<div class="ot_item" id="fot123_t">
+<?php fmtr_tech($i_pkr); ?>
+</div>
+</div>
+<div class="px5b"></div><div class="px20"></div>
+
+<div class="dh2">Используемые материалы</div>
+<?php
+$amtr=fmtr_get($i_pkr);
+fmtr_set($amtr);
+?>

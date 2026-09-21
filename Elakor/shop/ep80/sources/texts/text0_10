@@ -1,0 +1,294 @@
+<?php
+{*text2_1*}
+
+
+//ПОКРЫТИЯ
+$plc=false;
+$plc[11]='<l3 id="11"';///></l3>
+$plc[13]='<l3 id="13"';///></l3>
+$plc[17]='<l3 id="17"';///></l3>
+$plc[23]='<l3 id="23"';///></l3>
+$plc[25]='<l3 id="25"';///></l3>
+$plc[25]='<l3 id="25"';///></l3>
+$plc[31]='<l3 id="31"';///></l3>
+$plc[33]='<l3 id="33"';///></l3>
+$plc[35]='<l3 id="35"';///></l3>
+$plc[37]='<l3 id="37"';///></l3>
+$plc[39]='<l3 id="39"';///></l3>
+$plc[40]='<l3 id="40"';///></l3>
+$plc[51]='<l3 id="51"';///></l3>
+$plc[52]='<l3 id="52"';///></l3>
+$plc[53]='<l3 id="53"';///></l3>
+$plc[54]='<l3 id="54"';///></l3>
+$plc[55]='<l3 id="55"';///></l3>
+$plc[63]='<l3 id="63"';///></l3>
+$plc[64]='<l3 id="64"';///></l3>
+$plc[65]='<l3 id="65"';///></l3>
+$plc[66]='<l3 id="66"';///></l3>
+$plc[67]='<l3 id="67"';///></l3>
+$plc[68]='<l3 id="68"';///></l3>
+$plc[69]='<l3 id="69"';///></l3>
+$plc[70]='<l3 id="70"';///></l3>
+$plc[71]='<l3 id="71"';///></l3>
+$plc[73]='<l3 id="73"';///></l3>
+$plc[81]='<l3 id="81"';///></l3>
+$plc[83]='<l3 id="83"';///></l3>
+$plc[85]='<l3 id="85"';///></l3>
+$plc[87]='<l3 id="87"';///></l3>
+$plc[89]='<l3 id="89"';///></l3>
+$plc[93]='<l3 id="93"';///></l3>
+$plc[97]='<l3 id="97"';///></l3>
+
+//СЕРТИФИКАТЫ
+$a_srt=false;
+//Серия «Элакор-ПУ» 
+$a_srt[11]=array('https://elakors.ru/pdf/sert/sgr-elakor-pu.pdf','Свидетельство о государственной регистрации, Таможенный союз (гигиенический сертификат)');
+$a_srt[12]=array('https://elakors.ru/pdf/sert/phz-elakor-pu-km1.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-ПУ» Класс КМ 1');
+$a_srt[14]=array('https://elakors.ru/pdf/sert/sertifikat_sootvetstvija_jelakor-pu.pdf','Сертификат соответствия «Элакор-ПУ»');
+$a_srt[16]=array('https://elakors.ru/pdf/sert/deti-elakor-pu.pdf','Заключение на применение в детских и лечебно-профилактичеких учреждениях');
+$a_srt[17]=array('https://elakors.ru/pdf/sert/radiation-elakor-pu.pdf','Заключение НИКИМТ «Дезактивируемость и радстойкость». Разрешение на применение на объектах Росатома');
+$a_srt[18]=array('https://elakors.ru/pdf/sert/sgr-elakor-pu-lux.pdf','Свидетельство о государственной регистрации «Элакор-ПУ» Люкс. Таможенный союз (гигиенический сертификат)');
+//Серия «Элакор-ПУ» 2К
+$a_srt[21]=array('https://elakors.ru/pdf/sert/sgr-elakor-pu-2k.pdf','Свидетельство о государственной регистрации «Элакор-ПУ 2К». Таможенный союз (гигиенический сертификат)');
+$a_srt[22]=array('https://elakors.ru/pdf/sert/phz-elakor-pu-2k.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-ПУ 2К» Класс КМ2');
+$a_srt[23]=array('https://elakors.ru/pdf/sert/pi/antistat-pol-pu.pdf','Испытания антистатических свойств – Антистатический Полиуретановый Наливной пол');
+$a_srt[24]=array('https://elakors.ru/pdf/sert/pi/antistat-grunt-pu.pdf','Испытания антистатических свойств – Антистатический Полиуретановый грунт');
+$a_srt[25]=array('https://elakors.ru/pdf/sert/sootvetstvija-elakor-pu-2k.pdf',' Сертификат соответствия «Элакор-ПУ 2К»');
+$a_srt[26]=array('https://elakors.ru/pdf/sert/jelakor-pu-2k-primenenie-v-parkingah.pdf','Письмо МОСГОСЭКСПЕРТИЗА о применении «Элакор-ПУ 2К» на объектах гаражного назначения');
+//3. Серия «Элакор-ПУ Эко»
+$a_srt[31]=array('https://elakors.ru/pdf/sert/sez-elakor-pu-eko-emal.pdf','Свидетельство о государственной регистрации «Элакор-ПУ Эко» эмаль пищевая. Таможенный союз (гигиенический сертификат). Контакт с пищевыми продуктами, питьевой водой.');
+$a_srt[32]=array('https://elakors.ru/pdf/sert/sez-elakor-pu-eko-lak.pdf','Свидетельство о государственной регистрации «Элакор-ПУ Эко» лак пищевой. Таможенный союз (гигиенический сертификат). Контакт с пищевыми продуктами, питьевой водой.');
+//4. Серия «Элакор-ПЦ» - 
+$a_srt[41]=array('https://elakors.ru/pdf/sert/elakor-pz.pdf','Свидетельство о государственной регистрации «Элакор-ПЦ». Таможенный союз (гигиенический сертификат)');
+$a_srt[42]=array('https://elakors.ru/pdf/sert/phz-elakor-pz.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-ПЦ», класс КМ2');
+$a_srt[43]=array('https://elakors.ru/pdf/sert/stv-elakor-pz.pdf','Сертификат соответствия «Элакор-ПЦ»');
+//5. Серия «Элакор-ЭД»
+$a_srt[51]=array('https://elakors.ru/pdf/sert/sez-elakor-ed.pdf','Свидетельство о государственной регистрации «Элакор-ЭД». Таможенный союз (гигиенический сертификат)');
+$a_srt[52]=array('https://elakors.ru/pdf/sert/phz-elakor-ed.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-ЭД» Класс КМ2');
+$a_srt[53]=array('https://elakors.ru/pdf/sert/phz-elakor-ed-np-antistat.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-ЭД» Антистатический Наливной пол Класс КМ2');
+$a_srt[54]=array('https://elakors.ru/pdf/sert/sert-antistat-svojstva.pdf','Испытания антистатических свойств – Антистатический Эпоксидный Наливной пол');
+$a_srt[55]=array('https://elakors.ru/pdf/sert/phz-ast-propitka.pdf','Сертификат соответствия (пожарной безопасности) Антистатическая пропитка «Элакор-ЭД» Класс КМ1');
+$a_srt[56]=array('https://elakors.ru/pdf/sert/radiation-elakor-ed.pdf','Заключение НИКИМТ на дезактивируемость и радстойкость «Элакор ЭД»');
+$a_srt[57]=array('https://elakors.ru/pdf/sert/sertifikat-sootvetstviya-elakor-ed.pdf','Сертификат соответствия «Элакор-ЭД»');
+//6. Серия «Элакор-ЭДВ» 
+$a_srt[61]=array('https://elakors.ru/pdf/sert/elakor-edv.pdf','Свидетельство о государственной регистрации «Элакор-ЭДВ». Таможенный союз (гигиенический сертификат)');
+$a_srt[62]=array('https://elakors.ru/pdf/sert/stv-elakor-edv.pdf','Сертификат соответствия «Элакор-ЭДВ»');
+//7. Серия «Элакор-МБ»
+$a_srt[71]=array('https://elakors.ru/pdf/sert/sgr-elakor-mb1.pdf','Свидетельство о государственной регистрации «Элакор-МБ1». Таможенный союз (гигиенический сертификат)');
+$a_srt[72]=array('https://elakors.ru/pdf/sert/sgr-elakor-mb2-mb5.pdf','Свидетельство о государственной регистрации «Элакор-МБ2», «Элакор-МБ5». Таможенный союз (гигиенический сертификат)');
+$a_srt[73]=array('https://elakors.ru/pdf/sert/phz-elakor-mb.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-МБ1» Класс КМ0');
+$a_srt[74]=array('https://elakors.ru/pdf/sert/pozh-sert-elakor-mb2.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-МБ2» Класс КМ1');
+$a_srt[75]=array('https://elakors.ru/pdf/sert/sertifikat_sootvetstvija_jelakor_mb.pdf','Сертификат соответствия «Элакор-МБ»');
+$a_srt[76]=array('https://elakors.ru/pdf/sert/pismo-elakor-mb4.pdf','Информационное письмо «Элакор-МБ4» (отказное).');
+//8. Серия «Элакор-Эластобетон»
+$a_srt[81]=array('https://elakors.ru/pdf/sert/elakor-elastobeton.pdf','Свидетельство о государственной регистрации «Элакор-Эластобетон». Таможенный союз (гигиенический сертификат)');
+$a_srt[82]=array('https://elakors.ru/pdf/sert/phz-elakor-elastobeton.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-Эластобетон А1, А2, Б» Класс КМ0');
+$a_srt[83]=array('https://elakors.ru/pdf/sert/phz-elakor-elastobeton-v.pdf','Сертификат соответствия (пожарной безопасности) «Элакор-Эластобетон В» Класс КМ0');
+$a_srt[84]=array('https://elakors.ru/pdf/sert/elb-a-mosstroy.pdf','Добавки для бетона «Эластобетон-А» - сертификат «НИИМосстрой»');
+$a_srt[85]=array('https://elakors.ru/pdf/sert/sertifikat_sootvetstvija_elakor-elastobeton.pdf','Сертификат соответствия «Элакор-Эластобетон»');
+
+
+//ПРОТОКОЛЫ ИСПЫТАНИЙ
+//1. Полиуретановые покрытия «Элакор-ПУ» 
+$a_srt[1101]=array('https://teohim.ru/sert/tehnicheskie-harakteristiki-elakor-pu/','Технические характеристики.','Свойства полиуретановых материалов Элакор-ПУ (до отверждения) и покрытий (после отверждения).');
+$a_srt[1102]=array('https://elakors.ru/pdf/sert/pi/tablica-himstojkosti.pdf','Таблица химстойкости.','Стойкость полиуретановых покрытий Элакор-ПУ к агрессивным средам.');
+$a_srt[1103]=array('https://elakors.ru/pdf/sert/pi/neftestoikost.pdf','Нефтестойкость покрытия.','Исследования полимерного покрытия Элакор-ПУ на нефтепоглощение, нефтепроницаемость, защитных свойств до и после контакта с нефтью.');
+$a_srt[1104]=array('https://elakors.ru/pdf/sert/pi/stojkost-uksusnoj-kislote.pdf','Стойкость к 70% уксусной кислоте.','Важный параметр химстойких покрытий Элакор-ПУ, используемых в пищевой промышленности.');
+$a_srt[1105]=array('https://elakors.ru/pdf/sert/pi/atmosferostoikost.pdf','Атмосферостойкость.','Влагостойкость, термостойкость, морозостойкость покрытий, в среде минеральных удобрений. Физико-механические свойства полиуретановых покрытий Элакор-ПУ до и после испытаний.');
+$a_srt[1106]=array('https://elakors.ru/pdf/sert/pi/atmosferostoikost_cynk.pdf','Атмосферостойкость, сравнительные испытания Элакор-ПУ и металлического цинка.','Ужесточение режимов климатических испытаний с целью моделирования воздействия антиобледенительных реагентов, щелочных и кислотных осадков.');
+$a_srt[1107]=array('https://elakors.ru/pdf/sert/pi/cink.pdf','Долговечность цинковых покрытий','');
+$a_srt[11081]=array('https://elakors.ru/pdf/sert/pi/gost28011a.pdf','Износостойкость покрытий по ГОСТ 28011, метод А','Прочность покрытий Элакор-ПУ к истиранию. Испытания по ГОСТ28011 метод А');
+$a_srt[11082]=array('https://elakors.ru/pdf/sert/pi/gost20811b.pdf','Износостойкость покрытий по ГОСТ 28011, метод Б','Прочность покрытий Элакор-ПУ к истиранию. Испытания по ГОСТ28011 метод Б');
+$a_srt[1109]=array('https://elakors.ru/pdf/sert/pi/zakljuchenie-po-ispytaniju-adgezionnoj-prochnosti.pdf','Адгезия к металлам.','Адгезионная прочность покрытия Элакор-ПУ к стали, алюминию, оцинкованной поверхности, ржавому металлу.');
+$a_srt[1110]=array('https://elakors.ru/pdf/sert/pi/opredelenie-adgezii-pri-otryve-lkm.pdf','Адгезия к металлам – нормальный отрыв.','Сравнительные испытания «Элакор-ПУ» и других покрытий по определение адгезии методом нормального отрыва в соответствии с ИСО 4624-98.');
+$a_srt[1111]=array('https://elakors.ru/pdf/sert/pi/adgezia-mbeton.pdf','Адгезия к магнезиальному бетону.','Определение предела прочности на отрыв (усилие сцепления) покрытия Элакор-ПУ к магнезиальному бетону «АльфаПол МБ» по ГОСТ 22690-88.');
+$a_srt[1112]=array('https://elakors.ru/pdf/sert/pi/tverdost.pdf','Твердость покрытия по Бухгольцу.','Испытание полимерного покрытия «Элакор-ПУ» по определению прочности при вдавливании по Бухгольцу, определению блеска по ГОСТ 896-69, определению адгезии по ГОСТ 15140-78.');
+$a_srt[1113]=array('https://elakors.ru/pdf/sert/pi/uroven-el-polja.pdf','Антистатическая добавка.','Определение уровня напряженности электростатического поля на поверхности покрытия «Элакор-ПУ».');
+$a_srt[1114]=array('https://elakors.ru/pdf/sert/pi/elakor-pu-ocenka-zawitnyh-svojstv.pdf','Антикоррозионная защита.','Испытания физико-механических и защитных свойств полимерного покрытия «Элакор»-ПУ для противокоррозионной защиты вагонов-минераловозов (ВНИИЖТ).');
+$a_srt[1115]=array('https://teohim.ru/sert/iskrobezopasnost-elakor-pu/','Искробезопасность Элакор-ПУ (окрасочное покрытие толщина 0,25мм, наливной пол толщина 1мм, 2мм).','Испытание по определению искробезопасности полимерного покрытия «Элакор-ПУ», «Элакор-ПУ 2К».');
+
+$a_srt[1117]=array('https://teohim.ru/sert/pi/elakor-pu-kompleksnye-ispytanija.pdf','Комплексные испытания «Элакор-ПУ».','Истираемость, твердость, химстойкость, светостойкость.');
+
+//2. Эпоксидные покрытия «Элакор-ЭД»
+$a_srt[1206]=array('https://elakors.ru/pdf/sert/pi/iskrobezopasnost-elakor-ed-nalivnoj.pdf','Искробезопасность - эпоксидный наливной пол «Элакор-ЭД»');
+
+$a_srt_pu=array(11,12,14,16,17);
+$a_srt_pu_2k=array(21,22,25,26);
+$a_srt_pu_lux_lak=array(11,12,14,16);
+$a_srt_pu_eco_emal=array(31,12,14,16,17);
+$a_srt_pu_eco_lak=array(32,12,14,16,17);
+$a_srt_ed=array(51,52,57);
+$a_srt_ed_np=array(51,52,1206,57);
+$a_srt_pz=array(41,42,43);
+$a_srt_mb1=array(71,73);
+$a_srt_mb2=array(72,74,75);
+
+//ОПИСАНИЯ
+$a_descr=false;
+$a_descr[11]="https://elakors.ru/pdf/descr/elakor-pu-grunt.pdf";
+$a_descr[13]="https://elakors.ru/pdf/descr/elakor-pu-grunt-2k100.pdf";
+$a_descr[17]="https://elakors.ru/pdf/descr/elakor-pu-emal-60.pdf";
+$a_descr[19]="https://elakors.ru/pdf/descr/kraska-asfalta.pdf";
+$a_descr[20]="https://elakors.ru/pdf/descr/elakor-pu-emal-60-polumat.pdf";
+$a_descr[22]="https://elakors.ru/pdf/descr/elakor-pu-emal-60-gl.pdf";
+$a_descr[23]="https://elakors.ru/pdf/descr/poliuretanovyi-lak.pdf";
+$a_descr[26]="https://elakors.ru/pdf/descr/poliuretan-nalivnoj-pol-napolnennyi.pdf";  //  Полиуретановый наливной пол Наполненный
+$a_descr[27]="";
+$a_descr[28]="https://elakors.ru/pdf/descr/elastichnyj-nalivnoj-pol.pdf";
+$a_descr[30]="https://elakors.ru/pdf/descr/rezinovyj-nalivnoj-pol.pdf";
+$a_descr[31]="https://elakors.ru/pdf/descr/poliuretan-naliv-pol-sk-prof.pdf";
+$a_descr[32]="https://elakors.ru/pdf/descr/poliuretan-nalivnoj-pol-br.pdf";  //  Наливной пол БР
+$a_descr[33]="https://elakors.ru/pdf/descr/shpaklevka-dlja-betona.pdf";
+$a_descr[34]="https://elakors.ru/pdf/descr/pu-shpaklevka-bp.pdf";
+$a_descr[35]="https://elakors.ru/pdf/descr/poliuretan-nalivnoj-pol-promyshlennyj.pdf";
+$a_descr[40]="https://elakors.ru/pdf/descr/elakor-ed-2k100p.pdf";
+$a_descr[42]="https://elakors.ru/pdf/descr/elakor-ed-grunt-2k-pr.pdf";  // 2.1.1. Грунт-2К/ПР - грунт порозаполняющий (с растворителем)
+$a_descr[43]="https://elakors.ru/pdf/descr/elakor-ed-2k60.pdf";  // 2.1.4. Грунт-2К/60 - эпоксидная грунтовка глубокая
+$a_descr[45]="https://elakors.ru/pdf/descr/elakor-edv-grunt-v.pdf";  // 2.9.1. Грунт-В - водный эпоксидный грунт 
+$a_descr[46]="https://elakors.ru/pdf/descr/elakor-edv-lak-v.pdf";  // 2.9.2. Лак-В-В - матовый эпоксидный лак (водоразбавляемый)
+$a_descr[47]="https://elakors.ru/pdf/descr/elakor-edv-nalivnoy-pol-v.pdf";  // 2.9.4. Наливной пол-В - водный эпоксидный наливной пол
+$a_descr[48]="https://elakors.ru/pdf/descr/elakor-edv-emal-v.pdf";  // 2.9.3. Эмаль-В – водоразбавляемая эпоксидная краска 
+$a_descr[51]="https://elakors.ru/pdf/descr/epoxide-emal2k80.pdf";  // Эмаль 2К-80
+$a_descr[52]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-emal-ast-7.pdf";  // 3.7. Антистатическая краска - Люкс АСТ-7, АСТ-6 (светостойкая)
+$a_descr[54]="https://elakors.ru/pdf/descr/elakor-edv-lak-v-gl.pdf";  // Эмаль 2К-80
+$a_descr[57]="https://elakors.ru/pdf/descr/elakor-ed-nalivnoj-pol-classic.pdf";
+$a_descr[58]="https://elakors.ru/pdf/descr/epoksid-nalivnoj-pol-promyshlennyj.pdf";
+$a_descr[60]="https://elakors.ru/pdf/descr/epoksid-nalivnoj-pol-dekor.pdf";  //  2.4.5. Эпоксидный наливной пол ДЕКОР
+$a_descr[62]="https://elakors.ru/pdf/descr/ed-naliv-pol-sk-prof.pdf";  //  2.4.7. Эпоксидный наливной пол СК ПРОФ
+$a_descr[66]="https://elakors.ru/pdf/descr/ast-propitka.pdf";  // АСТ Пропитка
+$a_descr[67]="https://elakors.ru/pdf/descr/ast-sk-prof-pol.pdf";  // 3.8. Антистатический наливной пол СК ПРОФ
+$a_descr[68]="https://elakors.ru/pdf/descr/elakor-ed-in-sostav.pdf";  
+$a_descr[73]="https://elakors.ru/pdf/descr/remontnyi-epoksidnyi-sostav.pdf";  // Ремонтный эпоксидный состав (ровнитель для пола)
+$a_descr[76]="https://elakors.ru/pdf/descr/elakor-ed-ankerovochnyi-sostav.pdf";  // 2.7.2. Анкеровочный состав
+$a_descr[79]="https://elakors.ru/pdf/descr/elakor-pu-grunt-p.pdf";
+$a_descr[81]="https://elakors.ru/pdf/descr/elakor-pu-grunt-25.pdf";
+$a_descr[83]="https://elakors.ru/pdf/descr/elakor-pu-grunt-2k-50.pdf";
+$a_descr[85]="https://elakors.ru/pdf/descr/elakor-pu-grunt-2k-40.pdf";
+$a_descr[93]="https://elakors.ru/pdf/descr/lak-kamnja-kirpicha.pdf";
+$a_descr[95]="https://elakors.ru/pdf/descr/pu-1k-lak-polumatovyj.pdf";
+$a_descr[97]="https://elakors.ru/pdf/descr/pu-1k-lak-matovyj.pdf";
+$a_descr[105]="https://elakors.ru/pdf/descr/sealer.pdf";  // 
+$a_descr[125]="https://elakors.ru/pdf/descr/elakor-pz-t1.pdf";  // 1.5.1. Полиуретан-цементный пол Т1
+$a_descr[126]="https://elakors.ru/pdf/descr/elakor-pz-t2.pdf";  // 1.5.2. Полиуретан-цементный пол Т2
+$a_descr[127]="https://elakors.ru/pdf/descr/elakor-pz-t3.pdf";  // 1.5.3. Полиуретан-цементный пол Т3
+$a_descr[128]="https://elakors.ru/pdf/descr/elakor-pz-kraska.pdf";  // 
+$a_descr[129]="https://elakors.ru/pdf/descr/elakor-pz-grunt.pdf";  // 1.5.8. Полиуретан-цементный грунт
+$a_descr[131]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-grunt.pdf";  // 
+$a_descr[135]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-emal.pdf";  // 
+$a_descr[136]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-emal-polumat.pdf";   // 5.2. Люкс Эмаль - двухкомпонентная краска полуматовая
+$a_descr[137]="https://elakors.ru/pdf/descr/elakor-pu-luks-emal-svetostoikaya-matovaya.pdf";   // 5.2. Люкс Эмаль - двухкомпонентная краска полуматовая
+$a_descr[139]="https://elakors.ru/pdf/descr/poliuretanovyj-lak-lux.pdf";   // 
+$a_descr[143]="https://elakors.ru/pdf/descr/lyuks_lak-r-polumatovyi.pdf";   // 
+$a_descr[145]="https://elakors.ru/pdf/descr/lyuks_lak-r-matovyi.pdf";   // 
+$a_descr[153]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-lak-v-mat.pdf";   // 
+$a_descr[154]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-lak-v-polumat.pdf";   // 4.6.3. Люкс Лак-В Полуматовый (водный)
+$a_descr[157]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-lak-r-elast-gl.pdf";   // 4.9.1. Люкс Лак-Р Эластичный Глянцевый
+$a_descr[158]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-lak-r-elast-mat.pdf";   // 4.9.1. Люкс Лак-Р Эластичный Глянцевый
+$a_descr[163]="https://elakors.ru/pdf/descr/grunt-zinc.pdf";  // Элакор-ЭД %Грунт-Цинк - цинковый грунт% эпоксидный
+$a_descr[164]="https://elakors.ru/pdf/descr/elakor-ed-grunt-ak3-emal.pdf";  // 5.2. Элакор-ЭД Грунт-АКЗ - Антикоррозионная Грунт-Эмаль
+$a_descr[166]="https://elakors.ru/pdf/descr/elakor-pu-luks-emal-t.pdf";  // Люкс Эмаль-Т - светостойкая краска для металла
+$a_descr[168]="https://elakors.ru/pdf/descr/elakor-pu-grunt-zinc.pdf";  // 
+$a_descr[206]="https://elakors.ru/pdf/descr/elakor-pu-eko-emal-metal.pdf";  // 7.3. «Эко» Эмаль для Металла
+$a_descr[257]="https://elakors.ru/pdf/descr/betonokontakt.pdf";  // 
+$a_descr[261]="https://elakors.ru/pdf/descr/elakor-pu-kley2k.pdf";  // 1.7.5. Клей для резиновых матов
+
+
+$a_descr[1143]="https://elakors.ru/pdf/descr/lyuks_laki-r.pdf";   // 
+$a_descr[1145]="https://elakors.ru/pdf/descr/lyuks_laki-r.pdf";   // 
+$a_descr[1111]="https://elakors.ru/pdf/instr/kolerovka-cvetnoy-poliuretanovoy-emali.pdf";   // 
+
+//ТЕХНОЛОГИЯ
+$a_tech=false;
+$a_tech[11]="https://elakors.ru/pdf/instr/poliuretanovaja-propitka.pdf";//Полиуретановая пропитка
+$a_tech[13]="https://elakors.ru/pdf/instr/propitka-glubokaja.pdf";//Пропитка глубокого проникновения 
+$a_tech[17]="https://elakors.ru/pdf/instr/epoksidnaya-propitka-technology.pdf";//Эпоксидная пропитка
+$a_tech[23]="https://elakors.ru/pdf/instr/fljuat-propitka.pdf";//Флюат пропитка
+$a_tech[25]="https://elakors.ru/pdf/instr/akrilovaja-propitka.pdf";//Акриловая пропитка
+$a_tech[31]="https://elakors.ru/pdf/instr/poliuretanovoe-pokrytie.pdf";//Полиуретановое покрытие
+$a_tech[33]="https://elakors.ru/pdf/instr/epoksidnoe-pokrytie.pdf";//Эпоксидное покрытие
+$a_tech[35]="https://elakors.ru/pdf/instr/svetostojkoe_pokrytie_ljuks.pdf";//Светостойкое полимерное покрытие
+$a_tech[37]="https://elakors.ru/pdf/instr/poliuretanovoe-pokrytie-peskom.pdf";//Полиуретановое покрытие с песком
+$a_tech[39]="https://elakors.ru/pdf/instr/kvarc-pokrytie.pdf";//Эпоксидное покрытие с песком
+$a_tech[40]="https://elakors.ru/pdf/instr/pu-pokrytie-peskom-gladkoe.pdf";//Полиуретановое покрытие с песком гладкое ( Высоконаполненный Полиуретановый)
+$a_tech[41]="https://elakors.ru/pdf/instr/akrilovje-pokrytie.pdf";//Акриловое покрытие
+$a_tech[43]="https://elakors.ru/pdf/instr/svetoskoikoe-kvartz-pokrytie.pdf";//Светостойкое покрытие с кварцем
+$a_tech[45]="https://elakors.ru/pdf/instr/fakturnoe-pokrytie.pdf";//Фактурное покрытие полиуретановое
+$a_tech[51]="https://elakors.ru/pdf/instr/epoksidnyj-nalivnoj-pol-tech.pdf";//Эпоксидный наливной пол Классик
+$a_tech[52]="https://elakors.ru/pdf/instr/epoksidnyj-nalivnoj-pol-tech.pdf";//Эпоксидный наливной пол Промышленный
+$a_tech[53]="https://elakors.ru/pdf/instr/poliuretanovyj-nalivnoj-pol-tech.pdf";//Полиуретановый наливной пол Классик
+$a_tech[54]="https://elakors.ru/pdf/instr/poliuretanovyj-nalivnoj-pol-tech.pdf";//Полиуретановый наливной пол Промышленный
+$a_tech[55]="https://elakors.ru/pdf/instr/beloe-pokrytie.pdf";//Эпоксидный наливной пол Экстра Белый
+$a_tech[63]="https://elakors.ru/pdf/instr/antistat-tp-ed-pol.pdf";//Антистатический наливной пол токопроводящий Эпоксидный
+$a_tech[64]="https://elakors.ru/pdf/instr/antistat-tp-pu-pol.pdf";//Антистатический наливной пол токопроводящий Эпоксидный
+$a_tech[65]="https://elakors.ru/pdf/descr/antistat-er-ed-pol.pdf";//Антистатический наливной пол рассеивающий Эпоксидный
+$a_tech[66]="https://elakors.ru/pdf/instr/antistat-er-pu-pol.pdf";//Антистатический наливной пол рассеивающий Полиуретановый
+$a_tech[67]="https://elakors.ru/pdf/instr/antistat-tp-ed-pokr.pdf";//Проводящее покрытие Эпоксидное
+$a_tech[68]="https://elakors.ru/pdf/instr/antistat-tp-pu-pokr.pdf";//Проводящее покрытие Полиуретановое
+$a_tech[69]="https://elakors.ru/pdf/instr/antistat-er-ed-pokr.pdf";//Рассеивающее покрытие Эпоксидное
+$a_tech[70]="https://elakors.ru/pdf/instr/antistat-er-pu-pokr.pdf";//Рассеивающее покрытие Полиуретановое
+$a_tech[71]="https://elakors.ru/pdf/instr/promyshlennyj-nalivnoj-pol-jepoksidnyj.pdf";//Эпоксидный наливной пол Высоконаполненный
+$a_tech[73]="https://elakors.ru/pdf/instr/promyshlennyj-nalivnoj-pol-poliuretanovyj.pdf";//Полиуретановый наливной пол Наполненный
+$a_tech[76]="https://elakors.ru/pdf/instr/antistat-pu-r-metal.pdf";//Антистатическое Окрасочное покрытие по рифленому металлу
+$a_tech[77]="https://elakors.ru/pdf/instr/antistat-pu-pol-metal.pdf";//Антистатический наливной пол по металлу
+$a_tech[81]="https://elakors.ru/pdf/instr/pokrytie-dlja-asfalta.pdf";//Покрытие для асфальта
+$a_tech[83]="https://elakors.ru/pdf/instr/dekorativnoe-pokrytie.pdf";//Декоративное покрытие
+$a_tech[85]="https://elakors.ru/pdf/instr/antiskolzjawee-pokrytie.pdf";//Антискользящее покрытие
+$a_tech[87]="https://elakors.ru/pdf/instr/antiskolz-propitka.pdf";//Антискользящая пропитка
+$a_tech[89]="";//Химстойкие полы
+$a_tech[93]="";//Безыскровое покрытие
+$a_tech[101]="https://elakors.ru/pdf/instr/ochistka-betona.pdf";//Химическая очистка бетона (Элакор-МБ3)
+$a_tech[103]="https://elakors.ru/pdf/instr/shpatlevanie-betona.pdf";//Шпатлевание бетона полиуретановыми материалами
+$a_tech[113]="https://elakors.ru/pdf/instr/kolerovka-cvetnoy-poliuretanovoy-emali.pdf";//Приготовление цветной эмали из пасты и лака
+$a_tech[117]="https://elakors.ru/pdf/instr/remont-polov.pdf";//Ремонт полимерных и наливных полов
+$a_tech[131]="https://elakors.ru/pdf/instr/zawita-fasadov.pdf";//Защита фасадов (Элакор-МБ4 + МБ2)
+$a_tech[135]="https://elakors.ru/pdf/instr/fljuatirovanie-mb1.pdf";//Флюатирование (Элакор-МБ1)
+$a_tech[137]="https://elakors.ru/pdf/instr/gidrofobizacija-mb4.pdf";//Гидрофобизация (Элакор-МБ4)
+$a_tech[142]="https://elakors.ru/pdf/instr/elastobeton-a1.pdf";//Добавка для бетона «Эластобетон-А1»
+$a_tech[143]="https://elakors.ru/pdf/instr/elastobeton-a2.pdf";//Добавка для бетона «Эластобетон-А2»
+$a_tech[147]="https://elakors.ru/pdf/instr/elastobeton-b.pdf";//Добавка для бетона «Эластобетон-Б»
+$a_tech[150]="https://elakors.ru/pdf/instr/gelkout.pdf";//Гелькоут – заделка пор и раковин при полировке бетона
+$a_tech[181]="https://elakors.ru/pdf/instr/himicheskaja-ochistka-metalla.pdf";//Химическая очистка металла (Элакор-МБ3)
+$a_tech[183]="https://elakors.ru/pdf/instr/antikorrozionnoe-pokrytie.pdf";//Антикоррозионная защита (общая инструкция)
+$a_tech[197]="https://elakors.ru/pdf/instr/antikorrozionnoe-pokrytie-metallicheskih-polov.pdf";//Наливной пол по металлу
+$a_tech[213]="https://elakors.ru/pdf/instr/instr22.doc";//Цветное покрытие для дерева
+$a_tech[219]="https://elakors.ru/pdf/instr/ekcpluataciya-poiliuretanovye-nalivnye-poly.pdf";//Правила ЭКСПЛУАТАЦИИ - Полиуретановые наливные полы 
+$a_tech[220]="https://elakors.ru/pdf/instr/ekcpluataciya-epoksidnye-nalivnye-poly.pdf";//Правила ЭКСПЛУАТАЦИИ - Эпоксидные наливные полы     
+
+$a_ref_tech=$plc;
+$a_ref_tech[27]='<l2 id="115"';///></l2>;
+$a_ref_tech[47]='<l1 id="101"';///></l1>;
+$a_ref_tech[57]='<l1 id="113"';///></l1>;
+$a_ref_tech[59]='<l1 id="114"';///></l1>;
+$a_ref_tech[61]='<l1 id="112"';///></l1>;
+$a_ref_tech[105]='<l1 id="102"';///></l1>;
+$a_ref_tech[107]='<l1 id="103"';///></l1>;
+$a_ref_tech[109]='<l1 id="104"';///></l1>;
+$a_ref_tech[115]='<l1 id="105"';///></l1>;
+$a_ref_tech[121]='<l1 id="106"';///></l1>;
+$a_ref_tech[191]='<l1 id="107"';///></l1>;
+$a_ref_tech[193]='<l1 id="108"';///></l1>;
+$a_ref_tech[195]='<l1 id="109"';///></l1>;
+$a_ref_tech[201]='<l1 id="110"';///></l1>;
+$a_ref_tech[213]='<l1 id="111"';///></l1>;
+
+/* Массивы по разделам меню «Инструкции» */
+$a_cattech=false;
+$a_cattech[0]=[0];
+$a_cattech[1]=[0,11,13,17,87,23,25,27]; /* 1. ПРОПИТКИ для бетонных полов */
+$a_cattech[2]=[0,31,33,35,41,85,45,83,81]; /* 2. ОКРАСОЧНЫЕ полимерные покрытия */
+$a_cattech[3]=[0,53,54,73,40,48,49]; /* 3. НАЛИВНЫЕ полимерные покрытия Полиуретановые */
+$a_cattech[4]=[0,51,52,71,55,57,59,61]; /* 3. НАЛИВНЫЕ полимерные покрытия Эпоксидные*/
+$a_cattech[5]=[0,219,220]; /* 3. НАЛИВНЫЕ полимерные покрытия Правила ЭКСПЛУАТАЦИИ*/
+$a_cattech[6]=[0,39,37,43,47]; /* 4. НАПОЛНЕННЫЕ полимерные покрытия*/
+$a_cattech[7]=[0,63,64,65,66,77]; /* 5. НАЛИВНЫЕ полы Антистатические*/
+$a_cattech[8]=[0,67,68,69,70,76]; /* 5. ОКРАСОЧНЫЕ покрытия Антистатические*/
+$a_cattech[9]=[0,101,103,105,107,109,113,115,117]; /* 6. ДОПОЛНИТЕЛЬНЫЕ операции для бетона*/
+$a_cattech[10]=[0,121,125,131,135,137]; /* 7. ПРОЧИЕ покрытия, пропитки*/
+$a_cattech[11]=[0,142,143,147,150]; /* 8. Промышленные БЕТОННЫЕ полы*/
+$a_cattech[12]=[0,181,183,191,193,195,197]; /* 9. Покрытия для МЕТАЛЛА*/
+$a_cattech[13]=[0,201,213]; /* 10. Покрытия для ДЕРЕВА*/
+
+?>
+
+
+

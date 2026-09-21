@@ -1,0 +1,11 @@
+<div id="calc_iitem_comb_se" class="calc_iitem">
+  <div class="px0"></div><p>Поверхность покрытия</p><div class="px5"></div>
+  <div class="pb_combobox" style="width:140px">
+    <input type="text" value="Шероховатая" maxlength="30" placeholder="Шероховатая" style="width:90px" readonly />
+    <div class="pb_cb_image"></div>
+    <div class="pb_cb_select" style="width:148px">
+      <div class="pb_cb_option">Шероховатая</div>
+      <div class="pb_cb_option">Фактурная</div>
+   </div>
+  </div><div class="px0"></div>
+</div>

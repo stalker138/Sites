@@ -1,0 +1,148 @@
+<h1 class="h11s">Полиуретановое покрытие</h1>
+<div class="px20"></div>
+<div class="cblock">
+<div class="pb_gal"><div class="pb_gal_scroll">
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p01.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p02.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p03.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p04.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p05.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p06.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p07.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p10.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p11.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p12.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p13.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p14.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p15.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p16.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p17.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p18.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p19.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p20.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p21.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p22.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p23.webp" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/pokrytija/okras-poliuretan/p24.webp" alt=""/></div>
+</div>
+<div class="pb_gal_left"></div><div class="pb_gal_right"></div>
+</div>
+</div>
+<div class="px20"></div>
+
+<?php fcvr_cin(); ?>
+<div class="px10"></div>
+<?php fcvr_cout(); ?>
+<div class="px20"></div>
+<div class="px10n"></div>
+
+<div class="ot_head_block">
+<div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="px0"></div>
+</div>
+<div class="px0"></div>
+<div class="ot_block">
+<div class="ot_item active" id="fot123_o">
+<?php fmtr_tech($i_pkr,1); ?>
+<p>
+<span class="fwdb c55">Полиуретановое покрытие </span>– цветное полимерное покрытие. Наносится окрасочным способом. Экономичный и эффективный способ защиты бетонной поверхности от механического и химического воздействия. Обеспечивает упрочнение, обеспыливание и герметизацию бетонных полов. <br>
+<span class="fwdb c55">Внешний вид</span> - покрытие заданного цвета. <br>
+<span class="fwdb c55">Применяемые материалы:</span>
+</p>
+<ul style="margin-top:0;">
+<li>Однокомпонентный полиуретановый Элакор-ПУ Грунт-П (порозаполняющий).</li>
+<li>Если основание М350 и более рекомендуем использовать двухкомпонентный полиуретановый Элакор-ПУ Грунт-2К/50 глубокого проникновения.</li>
+<li>Однокомпонентная полиуретановая Элакор-ПУ Эмаль-60.</li>
+<li>Если требуется выравнивание поверхности двухкомпонентная полиуретановая Элакор-ПУ 2К Шпатлевка (наносится после грунтования).</li>
+</ul>
+<p>
+<span class="fwdb c55">Назначение.</span> 
+</p>
+<ul>
+<li>Наиболее универсальное и распространенное защитно-декоративное покрытие для бетонных полов. </li>
+<li>Защитно-декоративное покрытие для стен, потолков, конструкций, изделий и т.д.</li>
+<li>Устройство разметки.</li>
+</ul>
+<p>
+<span class="fwdb c55">Условия применения.</span>
+</p>
+<ul>
+<li>Выдержка бетона после укладки до нанесения пропитки - не менее 28 суток при нормальных условиях твердения.</li>
+<li>Влажность поверхности бетона - не более 5масс.%.</li>
+</ul>
+
+ <div class="dh_min_max">
+ <div class="dh_mm_head">↓ Показать больше... ↓</div>
+<p class="fwdb c55">Свойства:</p>
+<ul>
+<li>Полное обеспыливание поверхности.</li>
+<li>Полная герметизация, гидроизоляция поверхности от внешних воздействий.</li>
+<li>Глубина пропитки – от 1 мм до 4 мм, глубина пропитки грунтом глубокого проникновения - от 4 мм до 6 мм и более. Может регулироваться в зависимости от задачи.</li>
+<li>Толщина покрытия - 200-400 мкм, в зависимости от количества слоев.</li>
+<li>Условная марочная прочность – не менее М600 (независимо от начальной прочности).</li>
+<li>Истираемость при нагрузке средней интенсивности (цеха, склады и т.п.) составляет 10-15 мкм/год.</li>
+<li>Ударная вязкость (ударопрочность) повышается не менее чем в 2 раза.</li>
+<li>Высокая химическая стойкость поверхности (см. таблицу Химической Стойкости):
+<ul style="margin-top:0;">
+<li>вода и водные растворы солей (до концентрированных), щелочей (до концентрированных) и кислот (до 10%);</li>
+<li>масла и жиры минеральные, синтетические, органические;</li>
+<li>бензин, дизельное топливо и т.п.</li>
+</ul>
+</li>
+<li>Поверхность не скользкая (даже мокрая).</li>
+</ul>
+
+<p class="fwdb c55">Наносится на любые минеральные капиллярно-пористые поверхности:</p>
+<ul>
+<li>Бетонные и пескоцементные стяжки от М200, топпинг.</li>
+<li>Мозаичный бетон, брекчия.</li>
+<li>Бетонная плитка, метлахская плитка; шифер (ацэид), кирпич.</li>
+</ul>
+
+<p class="fwdb c55">Преимущества эпоксидной пропитки:</p>
+<ul>
+<li>Долговечность покрытия. Существуют объекты, выполненные более 15 лет назад.</li>
+<li>Может наноситься при температуре от минус 30°С.</li>
+<li>Можно упрочнять бетонные полы даже марок М100 и менее.</li>
+<li>Короткая послойная сушка (3-6 ч) – короткие сроки работ.</li>
+<li>Простая технология нанесения, недорогое оборудование, быстрый ввод в эксплуатацию – всё это обеспечивает высокую экономическую эффективность.</li>
+<li>Хорошие декоративные свойства и простота уборки любыми моющими средствами.</li>
+</ul>
+
+<p class="fwdb c55">Эксплуатация:</p>
+<ul>
+<li>После нанесения: через 1 сутки - можно ходить, через 3 суток - полная механическая нагрузка.</li>
+<li>Может эксплуатироваться в помещениях и под навесом. На открытом воздухе может применяться только для поверхностей, имеющих гидроизоляцию, или для поверхностей, у которых отсутствует капиллярный подсос воды.</li>
+<li>Постепенно происходит изменение цвета (желтеет) или смещение оттенка (скорость изменения зависит от интенсивности УФ-излучения), защитные свойства НЕ меняются. Если существует требование, не допускающее изменение цвета покрытия, необходимо для финишного слоя использовать Элакор-ПУ Эмаль Люкс стойкую к ультрафиолетовому излучению.</li>
+<li>При эксплуатации покрытия при отрицательных температурах рекомендовано выполнять противоскользящий вариант покрытия.</li>
+</ul>
+
+<p class="fwdb c55">Объекты применения:</p>
+<ul>
+<li>Производственные цеха, склады, технические помещения.</li>
+<li>Гаражи, паркинги, автосервисы, автомойки.</li>
+<li>Выставочные и торговые залы, кафе, столовые.</li>
+<li>Объекты пищевой промышленности: цеха мясо- и рыбопереработки, холодильники, морозильники и т.п.</li>
+<li>Объекты сельского хозяйства: теплицы, птицефермы, животноводческие комплексы.</li>
+</ul>
+
+<p class="fwdb c55">Разрешена к применению на всех объектах промышленного и гражданского строительства, в том числе:</p>
+<ul>
+<li>На предприятиях пищевой промышленности, на предприятиях фармацевтической промышленности.</li>
+<li>В жилищном строительстве, в детских и лечебно-профилактических учреждениях.</li>
+<li>На предприятиях атомной энергетики (заключение НИКИМТ).</li>
+</ul>
+
+ </div>
+ <div class="px0"></div>
+</div>
+<div class="ot_item" id="fot123_t">
+<?php fmtr_tech($i_pkr); ?>
+</div>
+</div>
+<div class="px5b"></div><div class="px20"></div>
+
+<div class="dh2">Используемые материалы</div>
+<?php
+$amtr=fmtr_get($i_pkr);
+fmtr_set($amtr);
+?>

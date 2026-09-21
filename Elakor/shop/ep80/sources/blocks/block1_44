@@ -1,0 +1,10 @@
+<h1 class="h11s">Лаки для бетона</h1>
+<div class="px5"></div>
+<div class="cblock">
+<div class="px0"></div>
+</div>
+<div class="px10b"></div>
+<?php
+//fmtr_set([79,11,83,40,13,45,17,22,135,18,23,139,143,145,53]);
+fmtr_set($a_catmat[4]);
+?>

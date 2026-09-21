@@ -1,0 +1,49 @@
+<?php
+
+/* Фильтр на клиенте - десктоп */
+function fltout_desc(){
+  global $a_fltn;
+  $l=count($a_fltn); $tfl='<div class="lflt" id="lm_filter">'.chr(10);
+  $tfl.='<div class="px10"></div><div class="lfltb"><div class="butr fleft" onclick="f_gsG5(1)">Применить</div><div class="butb fright" onclick="f_fltClear()">Сбросить</div><div class="px10"></div></div><div class="px5b"></div>'.chr(10);
+  for ($i=1; $i<$l; $i++) {
+    $tfl.='<div class="lfihead">'.$a_fltn[$i][0].'</div>';
+    $ll=count($a_fltn[$i]);
+    for ($j=1; $j<$ll; $j++) {
+     if(substr($a_fltn[$i][$j],0,1)!='-') {
+      $tfl.='<div class="pb_checked_false" id="fc'.$i.''.$j.'d"><div class="pb_ch0"></div><span class="pb_chs0">'.$a_fltn[$i][$j].'</span></div>'.chr(10);
+     }
+    } $tfl.='<div class="px15b"></div>'.chr(10);
+  } $tfl.='<div class="px15"></div><div class="lfltb"><div class="butr fleft" onclick="f_gsG5(1)">Применить</div><div class="butb fright" onclick="f_fltClear()">Сбросить</div><div class="px10"></div></div><div class="px5b"></div></div>'.chr(10);
+  return $tfl;
+}
+
+/* Фильтр на клиенте - мобильный */
+function fltout_mob(){
+  global $a_fltn;
+  $l=count($a_fltn); $tfl='<div class="mflt" id="m_filter">
+<div class="px40"></div>
+<div id="lftbody">'.chr(10);
+  for ($i=1; $i<$l; $i++) {
+    $tfl.='<div class="lfihead">'.$a_fltn[$i][0].'</div>'.chr(10);
+    $ll=count($a_fltn[$i]);
+    for ($j=1; $j<$ll; $j++) {
+     if(substr($a_fltn[$i][$j],0,1)!='-') {
+      $tfl.='<div class="pb_checked_false" id="fc'.$i.''.$j.'m"><div class="pb_ch0"></div><span class="pb_chs0">'.$a_fltn[$i][$j].'</span></div>'.chr(10);
+     }
+    } $tfl.='<div class="px15b"></div>'.chr(10);
+  } $tfl.='</div><div class="px10"></div>
+<div class="lfltb"><div class="butr fleft" onclick="f_gsG5(1)">Применить</div><div class="butb fright" onclick="f_fltClear()">Сбросить</div><div class="px15"></div></div>
+<div id="fltclose" onclick="f_filter()">
+<svg xmlns="http://www.w3.org/2000/svg" id="svg_fltclose" viewBox="0 0 51 51">
+<g transform="translate(-49 -32)">
+  <circle cx="25.5" cy="25.5" r="25.5" transform="translate(49 32)"></circle>
+<g transform="translate(-27 -30)">
+  <rect width="22" height="3" rx="1.5" transform="translate(95.282 78.661) rotate(45)" fill="#272727"></rect>
+  <rect width="22" height="3" rx="1.5" transform="translate(110.839 80.782) rotate(135)" fill="#272727"></rect>
+</g></g>
+</svg>
+</div><div class="px10"></div></div>';
+  return $tfl;
+}
+
+?>

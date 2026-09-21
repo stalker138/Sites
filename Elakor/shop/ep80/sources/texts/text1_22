@@ -1,0 +1,56 @@
+<div class="mflt" id="m_filter">
+<div class="px40"></div>
+<div id="lftbody">
+
+<div class="px10"></div>
+<div class="ml10">Показано отзывов: <span id="mtotOtz"></span></div><div class="px15"></div>
+<div class="lfltb"><div class="butr fleft" id="id_mbset2" onclick="f_refreshOtz()">Применить</div><div class="butb fright" onclick="f_fltClearOtz()">Сбросить</div><div class="px0"></div></div>
+<div class="px10b"></div><div class="px0b"></div><div class="px5"></div>
+<div class="hside" id="mhsideo" onclick="f_mclickItems('o')">Типы объектов <div class="dhclose"></div></div>
+<div class="px5"></div>
+<div class="side_items" id="mhsideio">
+  <div class="pb_checked_false" id="mto06"><div class="pb_ch0"></div><span class="pb_chs0">Цеха</span></div>
+  <div class="pb_checked_false" id="mto09"><div class="pb_ch0"></div><span class="pb_chs0">Объекты РосАтом</span></div>
+  <div class="pb_checked_false" id="mto05"><div class="pb_ch0"></div><span class="pb_chs0">Склады</span></div>
+  <div class="pb_checked_false" id="mto03"><div class="pb_ch0"></div><span class="pb_chs0">Гаражи/Паркинги</span></div>
+  <div class="pb_checked_false" id="mto01"><div class="pb_ch0"></div><span class="pb_chs0">Пищевое Производство</span></div>
+  <div class="pb_checked_false" id="mto02"><div class="pb_ch0"></div><span class="pb_chs0">СельХоз. объекты</span></div>
+  <div class="pb_checked_false" id="mto13"><div class="pb_ch0"></div><span class="pb_chs0">Электростанции, ТЭК</span></div>
+  <div class="pb_checked_false" id="mto04"><div class="pb_ch0"></div><span class="pb_chs0">Резервуары</span></div>
+  <div class="pb_checked_false" id="mto08"><div class="pb_ch0"></div><span class="pb_chs0">Жилищное строительство</span></div>
+  <div class="pb_checked_false" id="mto10"><div class="pb_ch0"></div><span class="pb_chs0">Медицинские учреждения</span></div>
+  <div class="pb_checked_false" id="mto11"><div class="pb_ch0"></div><span class="pb_chs0">Учебные заведения</span></div>
+  <div class="pb_checked_false" id="mto12"><div class="pb_ch0"></div><span class="pb_chs0">Магазины</span></div>
+  <div class="pb_checked_false" id="mto07"><div class="pb_ch0"></div><span class="pb_chs0">Прочее</span></div>
+  <div class="px5"></div>
+</div>
+<div class="px5"></div>
+<div class="hside" id="mhsidep" onclick="f_mclickItems('p')">Типы покрытий <div class="dhclose"></div></div>
+<div class="px5"></div>
+<div class="side_items" id="mhsideip">
+  <div class="pb_checked_false" id="mtp01"><div class="pb_ch0"></div><span class="pb_chs0">Пропитка бетона</span></div>
+  <div class="pb_checked_false" id="mtp02"><div class="pb_ch0"></div><span class="pb_chs0">Полимерное покрытие бетона</span></div>
+  <div class="pb_checked_false" id="mtp08"><div class="pb_ch0"></div><span class="pb_chs0">Наливные полимерные полы</span></div>
+  <div class="pb_checked_false" id="mtp11"><div class="pb_ch0"></div><span class="pb_chs0">Антистатические полы</span></div>
+  <div class="pb_checked_false" id="mtp03"><div class="pb_ch0"></div><span class="pb_chs0">Кварцнаполненное покрытие</span></div>
+  <div class="pb_checked_false" id="mtp10"><div class="pb_ch0"></div><span class="pb_chs0">Покрытие для асфальта</span></div>
+  <div class="pb_checked_false" id="mtp07"><div class="pb_ch0"></div><span class="pb_chs0">Полимерцементные полы</span></div>
+  <div class="pb_checked_false" id="mtp06"><div class="pb_ch0"></div><span class="pb_chs0">Флюатирование</span></div>
+  <div class="pb_checked_false" id="mtp09"><div class="pb_ch0"></div><span class="pb_chs0">Бетонные полы Эластобетон</span></div>
+  <div class="pb_checked_false" id="mtp04"><div class="pb_ch0"></div><span class="pb_chs0">Покрытия для металла</span></div>
+  <div class="pb_checked_false" id="mtp05"><div class="pb_ch0"></div><span class="pb_chs0">Покрытия для дерева</span></div>
+  <div class="px5"></div>
+</div>
+
+</div><div class="px10"></div>
+<div class="lfltb"><div class="butr fleft" id="id_mbset" onclick="f_refreshOtz()">Применить</div><div class="butb fright" onclick="f_fltClearOtz()">Сбросить</div><div class="px15"></div></div>
+<div id="fltclose" onclick="f_filter()">
+<svg xmlns="http://www.w3.org/2000/svg" id="svg_fltclose" viewBox="0 0 51 51">
+<g transform="translate(-49 -32)">
+  <circle cx="25.5" cy="25.5" r="25.5" transform="translate(49 32)"></circle>
+<g transform="translate(-27 -30)">
+  <rect width="22" height="3" rx="1.5" transform="translate(95.282 78.661) rotate(45)" fill="#272727"></rect>
+  <rect width="22" height="3" rx="1.5" transform="translate(110.839 80.782) rotate(135)" fill="#272727"></rect>
+</g></g>
+</svg>
+</div><div class="px10"></div></div>

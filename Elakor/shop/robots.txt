@@ -1,0 +1,24 @@
+User-agent: Yandex
+
+Clean-param: etext
+
+
+Allow: /
+
+DDisallow: /search
+Disallow: /colors/
+Disallow: /404/
+
+Sitemap: https://elakor.shop/sitemap.xml
+
+User-agent: *
+
+Allow: /
+
+Disallow: /search
+Disallow: /colors/
+Disallow: /404/
+
+Sitemap: https://elakor.shop/sitemap.xml
+
+Host: elakor.shop

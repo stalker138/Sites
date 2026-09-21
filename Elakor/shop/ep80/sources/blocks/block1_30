@@ -1,0 +1,47 @@
+<h1 class="h11s">Материалы «Элакор»</h1>
+<div class="px5"></div>
+<div class="cblock">
+<div class="px0"></div>
+</div>
+<div class="px10b"></div>
+<div class="px20"></div>
+
+<?php
+//fmtr_set([79,11,83,40,13,45,17,22,135,18,23,139,143,145,53]);
+$arr_set = false;
+$arr_set=array_merge($a_catmat[1], $a_catmat[2], $a_catmat[3], $a_catmat[4], $a_catmat[5], $a_catmat[6], $a_catmat[7], $a_catmat[8], $a_catmat[9], $a_catmat[10],
+$a_catmat[11], $a_catmat[12], $a_catmat[13], $a_catmat[14], $a_catmat[15], $a_catmat[16], $a_catmat[17], $a_catmat[18], $a_catmat[19]);
+
+fmtr_micro_cat($arr_set, 'Материалы «Элакор»', 'Материалы «Элакор»');
+
+$b = false; $cnt=count($arr_set);
+for ($i=0; $i<$cnt; $i++) if ($arr_set[$i]>0) $b[] = $arr_set[$i];
+$s_out2=''; $max=ceil(count($b)/10);
+$d1 = ($pgn<4) ? 1 : ($pgn-2);
+$d2 = ($pgn>($max-2)) ? $max : ($d1+4);
+if ($d2==$max) $d1=$d2-4;
+for ($i=$d1; $i<=$d2; $i++) {
+  $s_out2.= ($pgn==$i) ? ('<span>'.$pgn.'</span>') : ('<'.'a href="'.$pb_full_url.'?pgn='.$i.'">'.$i.'</'.'a>');
+}
+if ($pgn==2) $s_out2 = '<'.'a class="pagination_prev" href="'.$pb_full_url.'">Назад</'.'a>'.$s_out2;
+if ($pgn>2) $s_out2 = '<'.'a class="pagination_prev" href="'.$pb_full_url.'?pgn='.($pgn-1).'">Назад</'.'a>'.$s_out2;
+if ($pgn<$max) $s_out2 .= '<'.'a class="pagination_next" href="'.$pb_full_url.'?pgn='.($pgn+1).'">Вперёд</'.'a>';
+?>
+
+<div class="pagination">
+<?php print $s_out2; ?>
+</div>
+
+<?php 
+$a = false; $cnt=count($b);
+for ($i=0; $i<$cnt; $i++) {
+  if ($pgn>=(($i+1)/10) && $pgn<(($i+1)/10+1) && count($a)<10) { $a[] = $b[$i]; }
+}
+fmtr_set($a);
+?>
+<div class="px20"></div>
+<?php //print $pgn.' '.count($b).' '.count($a); ?>
+
+<div class="pagination">
+<?php print $s_out2; ?>
+</div>

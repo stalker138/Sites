@@ -1,0 +1,171 @@
+<div style="float:right; background-color:#225098; padding:8px 18px;"><img style="width:85.66px" src="/img/svg/svg_teohim_w.svg" alt=""></div>
+<div style="float:right; padding:7px 11px;;">
+<img style="width:99.71px" src="/img/svg/elakor_2024.svg" alt="">
+</div>
+<p style="font-size:28px; font-weight:bold">ПРАЙС-ЛИСТ МАТЕРИАЛОВ «ЭЛАКОР»</p>
+<div class="px0"></div>
+<div style="float:right; margin-top:35px;">
+<p style="font-size:14px; margin:0; text-align:right;"><span style="font-size:14px; padding-right:10px; font-weight:500;">Moсква</span> +7 495 221-22-52</p>
+<p style="font-size:14px; text-align:right;"><span style="font-size:14px; padding-right:12px; font-weight:500;">Россия</span> 8 800 100-50-10</p>
+</div>
+
+<p style="font-size:14px; width:600px; margin-top:35px;">
+Цены в Москве и Московской области на условиях самовывоза со складов ООО «ТэоХим».<br>
+Цены с НДС, в зависимости от общего количества покупаемых материалов.<br>
+Позиции * - для фасовки в бочки по 200кг цена дешевле на 5р/кг.</p>
+<?php 
+{*text2_1*}
+
+$txt=@file_get_contents($pb_root.'sys/materials');
+$a_mtr=false; $a_mtr[]=false; $s = explode(chr(10),$txt);
+for ($i=0; $i<351; $i++) {
+  $a_mtr[] = ($s[$i]===' ') ? false : explode(chr(9),$s[$i]);
+}
+$txt=@file_get_contents($pb_root.'sys/materials_dop');
+$a_mtr_dop=false; $a_mtr_dop[]=false; $s = explode(chr(10),$txt);
+for ($i=0; $i<351; $i++) {
+  $a_mtr_dop[] = ($s[$i]===' ') ? false : explode(chr(9),$s[$i]);
+}
+
+$list_mtr = array(11, 13, 15, 17, 18, 19, 21, 23, 26, 27, 28, 29, 30, 32, 33, 34, 35, 37, 40, 41, 43, 49, 51, 52, 53, 57, 58, 60, 61, 63, 64, 65, 66, 67, 71, 72, 73, 75, 79, 81, 83, 85, 93, 101, 105, 111, 125, 126, 127, 128, 129, 135, 139, 143, 145, 161, 163, 164, 165, 166, 169, 181, 201, 205, 206, 209, 221, 223, 227, 231, 235, 241, 243, 247, 257, 261);
+$list_art = array('PU_011', 'PU_013', 'PU_015', 'PU_017', 'PU_018', 'PU_019', 'PU_021', 'PU_023', 'PU_026', 'PU_027', 'PU_028', 'PU_029', 'PU_030', 'PU_032', 'PU_033', 'PU_034', 'PU_035', 'PU_037', 'ED_040', 'ED_041', 'ED_043', 'ED_049', 'ED_051', 'PU_052', 'ED_053', 'ED_057', 'ED_058', 'ED_060', 'ED_061', 'ED_063', 'ED_064', 'ED_065', 'ED_066', 'ED_067', 'ED_071', 'ED_072', 'ED_073', 'ED_075', 'PU_079', 'PU_081', 'PU_083', 'PU_085', 'PU_093', 'PU_101', 'PU_105', 'PU_111', 'PZ_125', 'PZ_126', 'PZ_127', 'PZ_128', 'PZ_129', 'PU_135', 'PU_139', 'PU_143', 'PU_145', 'PU_161', 'ED_163', 'ED_164', 'PU_165', 'PU_166', 'PU_169', 'PU_181', 'PU_201', 'PU_205', 'PU_206', 'PU_209', 'MB_221', 'MB_223', 'MB_227', 'MB_231', 'MB_235', 'EL_241', 'EL_243', 'EL_247', 'MB_257', 'PU_261');
+$new_mtr =array();
+$pl =array();
+
+$seq_mtr=array(0,0,0,0,0,0,0,0,0,0,0,
+79,11,83,85,81,13,105, /* 1.1.1. - 1.1.9. (11-17) 1.1. Грунты + Силер */
+17,20,22,18,21,19,89,        /* 1.2.1. - 1.2.9. (18-24) 1.2. Эмали */
+23,95,97,93,101,       /* 1.3.1. - 1.3.5. (25-29) 1.3. Лаки */
+26,35,27,32,28,30,        /* 1.4.1. - 1.4.5. (30-35) 1.4. Полиуретановые наливные полы */
+125,126,127,129,128,       /* 1.5.1. - 1.5.3. (36-40) 1.5. Полиуретан-цементные покрытия (Элакор-ПЦ) */
+33,34,37,0,39,261,262,        /* 1.4.1. - 1.9.2. (41-47) 1.6. Шпатлевки. 1.7. Герметики */
+111,115,118,119,0,               /* 1.8.1. - 1.9.3. (48-52) 1.8. Колоранты. 1.9. Добавки */
+42,40,41,43,49,50,53,58,57,60,61,62,63,71,72,73,75,76,64,0,0,0,0, /* 2.1.1. - 2.11 (53-75) 2. Эпоксидные материалы */
+15,66,65,29,51,52,67,                /* 3.1. - 3.5. (76-82) 3. Антистатические */
+131,135,136,134,139,0,143,145,154,153,155,157,158, /* 4.1. - 4.6.1. (83-95) 4. Элакор-ПУ «Люкс» */
+161,164,167,163,168,165,166,169,       /* 5.1. - 5.4. (96-103) 5. Элакор-ПУ для Металла */
+181,185,189,193,195,   /* 6.1. - 6.5. (104-108) 6. Элакор-ПУ для Дерева */
+201,205,206,209,           /* 7.1. - 7.3. (109-112) 7. Элакор-ПУ «Эко» */
+221,223,227,231,235,   /* 8.1. - 8.5. (113-117) 8. «Элакор-МБ» */
+241,243,247,257,      /* 9.1. - 9.7. (118-121) 9. Элакор «Эластобетон» */
+0,0,0,0,0,0,0,0,0);
+
+
+
+$th='<tr>
+<th style="background-color:rgba(230,230,230,1); font-size:12px; padding:17px 12px; text-align:left; border:2px solid #F4F4F4; border-left:none;">НАЗВАНИЕ МАТЕРИАЛА</th>
+<th style="background-color:#225098; font-size:14px; font-weight:500; padding:15px 0; color:#FFFFFF; border:2px solid #F4F4F4; width:111px;">10–39 кг</th>
+<th style="background-color:#225098; font-size:14px; font-weight:500; padding:15px 0; color:#FFFFFF; border:2px solid #F4F4F4; width:111px;">40–199 кг</th>
+<th style="background-color:#225098; font-size:14px; font-weight:500; padding:15px 0; color:#FFFFFF; border:2px solid #F4F4F4; width:111px;">200–499 кг</th>
+<th style="background-color:#225098; font-size:14px; font-weight:500; padding:15px 0; color:#FFFFFF; border:2px solid #F4F4F4; width:111px;">500–1 т</th>
+<th style="background-color:#225098; font-size:14px; font-weight:500; padding:15px 0; color:#FFFFFF; border:2px solid #F4F4F4; width:111px;">1–3 т</th>
+<th style="background-color:#225098; font-size:14px; font-weight:500; padding:15px 0; color:#FFFFFF; border:2px solid #F4F4F4; width:112px; border-right:none;">от 3 т</th>
+</tr>';  
+
+function fmtr1($n=false, $f=false, $nm='',$nm2='', $id=0) {
+global $a_mtr, $a_mtr_dop,$plm,$pl,$list_mtr,$new_mtr; $out='';if($id<11) $id=$n; $out=''; $m=$mtr; $new='';
+$mtr=$a_mtr;
+if ($mtr[$n] && in_array($n, $list_mtr, true)) {
+    if (in_array($n, $new_mtr, true)) $new='<div style="float:right;padding:2px;font:bold 12px arial;color:#f00000">new!</div>';
+    if (!$f) $f=$mtr[$n][0]; // Номер пункта
+    $name = $nm ? $nm : $a_mtr_dop[$n][0];
+    $nm_dop = $plm[$n][2] ? '. '.$plm[$n][2] : '';
+    $name .= $nm2 ? $nm2 : $nm_dop ;
+    $out='<tr>
+<td  style="background-color:rgba(230,230,230,1); font-size:14px; padding:15px 0; padding-left:12px; text-align:left; border:2px solid #F4F4F4; border-left:none;">'.$new.' '.($plm[$n][0]?($plm[$n][0].'>'.$name):$name).($plm[$n][0]?('</'.'a>'):'').(($mtr[$n][2]!='#')?'':(' '.'<span>'.$mtr[$n][2]).'</span>').'</td>
+<td  style="background-color:#eeeeee; font-size:14px; font-weight:500; padding:15px 0; border:2px solid #F4F4F4;">'.$mtr[$n][3].'</td>
+<td  style="background-color:#eeeeee; font-size:14px; font-weight:500; padding:15px 0; border:2px solid #F4F4F4;">'.$mtr[$n][4].'</td>
+<td  style="background-color:#eeeeee; font-size:14px; font-weight:500; padding:15px 0; border:2px solid #F4F4F4;">'.$mtr[$n][5].'</td>
+<td  style="background-color:#eeeeee; font-size:14px; font-weight:500; padding:15px 0; border:2px solid #F4F4F4;">'.$mtr[$n][6].'</td>
+<td  style="background-color:#eeeeee; font-size:14px; font-weight:500; padding:15px 0; border:2px solid #F4F4F4;">'.$mtr[$n][7].'</td>
+<td  style="background-color:#eeeeee; font-size:14px; font-weight:500; padding:15px 0; border:2px solid #F4F4F4; border-right:none;">'.$mtr[$n][8].'</td>
+</tr>';
+    $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).''.($pl[$n]?'':' ').' '.substr($out,$f+1);
+    $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).''.substr($out,$f+1);
+}return $out;
+}
+
+function fmtr2($n=false, $id_cat=0, $f=false, $nm='',$nm2='') {
+global $pb_domain, $pb_full_url, $a_mtr, $a_mtr_dop,$plm,$pl,$list_mtr,$list_art,$new_mtr; $out='';if($id<11) $id=$n; $out=''; $m=$mtr; $new='';
+$mtr=$a_mtr;
+$n_mat=$n;
+if ($mtr[$n] && in_array($n, $list_mtr, true)) {
+    if (!$f) $f=$mtr[$n][0]; // Номер пункта
+    $price=preg_replace('/[^0-9.]+/', '', $a_mtr[$n_mat][8]);
+    $href=$pb_domain.substr($plm[$n_mat][0], 9, strlen($plm[$n_mat][0])-9);
+    $href=str_replace('"', '', $href); 
+    $name = $nm ? $nm : $a_mtr_dop[$n][14];
+    $nm_dop = $plm[$n][2] ? '. '.$plm[$n][2] : '';
+    $name .= $nm2 ? $nm2 : $nm_dop ;
+    $n_art = array_search($n, $list_mtr);
+    $art = $list_art[$n_art];
+    $out='<offer id="'.$art.'">';
+    $out.='<url>'.$href.'</url>';
+    $out.='<price>'.$price.'</price>';
+    $out.='<currencyId>RUB</currencyId>';
+    $out.='<categoryId>'.$id_cat.'</categoryId>';
+    $out.='<picture>'.$pb_domain.$a_mtr_dop[$n_mat][1].'</picture>';
+    $out.='<name>'.$name.'</name>';
+    $out.='<vendor>Элакор</vendor>';
+    $out.='<description><![CDATA['.$a_mtr_dop[$n_mat][2].']]></description>';
+    $out.='<country_of_origin>Россия</country_of_origin>';
+    $out.='</offer>';
+}
+return $out;
+}
+
+$s_yml='<code>';
+
+$s_yml.='<?xml version="1.0" encoding="UTF-8"?>';
+$s_yml.='<yml_catalog>';
+$s_yml.='<shop>';
+$s_yml.='<categories>';
+$s_yml.='<category id="1">Полимерные материалы «Элакор»</category>';
+$s_yml.='<category id="11" parentId="1">Грунты для бетона «Элакор»</category>';
+$s_yml.='<category id="12" parentId="1">Эмали для бетона «Элакор»</category>';
+$s_yml.='<category id="13" parentId="1">Лаки для бетона «Элакор»</category>';
+$s_yml.='<category id="14" parentId="1">Наливные полы «Элакор»</category>';
+$s_yml.='<category id="15" parentId="1">Антистатические полы «Элакор»</category>';
+$s_yml.='<category id="16" parentId="1">Полиуретан-цементные полы «Элакор»</category>';
+$s_yml.='<category id="17" parentId="1">Шпатлёвки, Герметики, Ремонтные составы «Элакор»</category>';
+$s_yml.='<category id="18" parentId="1">Смолы для декора и заливки «Элакор»</category>';
+$s_yml.='<category id="19" parentId="1">Прочие материалы «Элакор»</category>';
+$s_yml.='<category id="20" parentId="1">Флюат, Гидрофобизатор, Акриловые материалы, очистка бетона «Элакор»</category>';
+$s_yml.='<category id="21" parentId="1">Материалы для прямого контакта с питьевой водой и продуктами «Элакор»</category>';
+$s_yml.='<category id="22" parentId="1">Добавки для бетона «Элакор»</category>';
+$s_yml.='<category id="23" parentId="1">Покрытия для Металла «Элакор»</category>';
+$s_yml.='<category id="111" parentId="11">Полиуретановые грунты для бетона «Элакор»</category>';
+$s_yml.='<category id="112" parentId="11">Эпоксидные грунты для бетона «Элакор»</category>';
+$s_yml.='<category id="131" parentId="13">Светостойкие лаки для бетона «Элакор»</category>';
+$s_yml.='<category id="141" parentId="14">Полиуретановые наливные полы «Элакор»</category>';
+$s_yml.='<category id="142" parentId="14">Эпоксидные наливные полы «Элакор»</category>';
+$s_yml.='</categories>';
+$s_yml.='<offers>';
+print($s_yml);
+for ($i=1; $i<count($a_catmat[1]); $i++) { print fmtr2($a_catmat[1][$i], 111); }
+for ($i=1; $i<count($a_catmat[2]); $i++) { print fmtr2($a_catmat[2][$i], 112); }
+for ($i=1; $i<count($a_catmat[3]); $i++) { print fmtr2($a_catmat[3][$i], 12); }
+for ($i=1; $i<count($a_catmat[4]); $i++) { print fmtr2($a_catmat[4][$i], 13); }
+for ($i=1; $i<count($a_catmat[5]); $i++) { print fmtr2($a_catmat[5][$i], 131); }
+for ($i=1; $i<count($a_catmat[6]); $i++) { print fmtr2($a_catmat[6][$i], 141); }
+for ($i=1; $i<count($a_catmat[7]); $i++) { print fmtr2($a_catmat[7][$i], 142); }
+for ($i=1; $i<count($a_catmat[8]); $i++) { print fmtr2($a_catmat[8][$i], 15); }
+for ($i=1; $i<count($a_catmat[9]); $i++) { print fmtr2($a_catmat[9][$i], 16); }
+for ($i=1; $i<count($a_catmat[10]); $i++) { print fmtr2($a_catmat[10][$i], 17); }
+for ($i=1; $i<count($a_catmat[12]); $i++) { print fmtr2($a_catmat[12][$i], 18); }
+for ($i=1; $i<count($a_catmat[15]); $i++) { print fmtr2($a_catmat[15][$i], 19); } for ($i=1; $i<count($a_catmat[16]); $i++) { print fmtr2($a_catmat[16][$i], 19); }
+for ($i=1; $i<count($a_catmat[13]); $i++) { print fmtr2($a_catmat[13][$i], 20); }
+for ($i=1; $i<count($a_catmat[17]); $i++) { print fmtr2($a_catmat[17][$i], 21); }
+for ($i=1; $i<count($a_catmat[18]); $i++) { print fmtr2($a_catmat[18][$i], 22); }
+for ($i=1; $i<count($a_catmat[19]); $i++) { print fmtr2($a_catmat[19][$i], 23); }
+$s_yml='</offers>';
+$s_yml.='</shop>';
+$s_yml.='</yml_catalog>';
+$s_yml.='</code>';
+print($s_yml);
+
+
+?>
+
+
+

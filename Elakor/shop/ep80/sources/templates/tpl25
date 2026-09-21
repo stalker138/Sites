@@ -1,0 +1,7 @@
+</body></html>
+<?php if (1==2) {
+$t=ob_get_contents();
+$t=preg_replace('/\n/',' ',$t); $t=preg_replace('/\r/',' ',$t); $t=preg_replace('/\t/',' ',$t); $t=preg_replace('/ +/',' ',$t);
+$t=preg_replace('/\/\*.*?\*\//','',$t); $t=preg_replace('/\> +\</','> <',$t);
+ob_end_clean(); print $t; flush();
+} ?>

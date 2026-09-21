@@ -1,0 +1,96 @@
+<h1 style="margin: 20px 0;">Сертификаты</h1>
+<div class="px5"></div>
+<div class="ocall">
+<div class="butb" onclick="f_mfAllClick(1)">Раскрыть всё</div>
+<div class="butb" onclick="f_mfAllClick(0)">Закрыть всё</div>
+</div>
+<div class="px5"></div>
+<div class="blk_oc">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>1. Серия «Элакор-ПУ» </span>- однокомпонентные полиуретановые полы, грунты, эмали.</div></div><div class="px10"></div>
+<?php 
+$arr=false;
+  for ($i=11; $i<20; $i++) {
+    $arr[]=$i;
+}
+
+fmtr_srt($arr); 
+?>
+</div>
+<div class="blk_oc">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>2. Серия «Элакор-ПУ 2К» </span>- двухкомпонентные полиуретановые наливные полы, грунты, шпатлевки.</div></div><div class="px10"></div>
+<?php 
+$arr=false;
+  for ($i=21; $i<30; $i++) {
+    $arr[]=$i;
+}
+
+fmtr_srt($arr); 
+?>
+</div>
+<div class="blk_oc">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>3. Серия «Элакор-ПУ Эко» </span>- полиуретановые покрытия для прямого контакта с пищевыми продуктами.</div></div><div class="px10"></div>
+<?php 
+$arr=false;
+  for ($i=31; $i<40; $i++) {
+    $arr[]=$i;
+}
+
+fmtr_srt($arr); 
+?>
+</div>
+<div class="blk_oc">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>4. Серия «Элакор-ПЦ» </span>- полиуретан-цементные полы, покрытия.</div></div><div class="px10"></div>
+<?php 
+$arr=false;
+  for ($i=41; $i<50; $i++) {
+    $arr[]=$i;
+}
+
+fmtr_srt($arr); 
+?>
+</div>
+<div class="blk_oc">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>5. Серия «Элакор-ЭД» </span>- эпоксидные наливные полы, покрытия.</div></div><div class="px10"></div>
+<?php 
+$arr=false;
+  for ($i=51; $i<60; $i++) {
+    $arr[]=$i;
+}
+
+fmtr_srt($arr); 
+?>
+</div>
+<div class="blk_oc">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>6. Серия «Элакор-ЭДВ» </span>- паропроницаемые эпоксидные полы, покрытия.</div></div><div class="px10"></div>
+<?php 
+$arr=false;
+  for ($i=61; $i<70; $i++) {
+    $arr[]=$i;
+}
+
+fmtr_srt($arr); 
+?>
+</div>
+<div class="blk_oc">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>7. Серия «Элакор-МБ» </span>- водные составы для пропитки и окраски бетона.</div></div><div class="px10"></div>
+<?php 
+$arr=false;
+  for ($i=71; $i<80; $i++) {
+    $arr[]=$i;
+}
+
+fmtr_srt($arr); 
+?>
+</div>
+<div class="blk_oc">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>8. Серия «Элакор-Эластобетон» </span>- комплексные добавки-модификаторы для бетона.</div></div><div class="px10"></div>
+<?php 
+$arr=false;
+  for ($i=81; $i<90; $i++) {
+    $arr[]=$i;
+}
+
+fmtr_srt($arr); 
+?>
+</div>
+

@@ -1,0 +1,48 @@
+<?php
+$st=' class="pb_ms" style="color:#fd5202;background:#d0d0d0;"';$st1=' style="border-bottom:none"'; $st2=' style="border-bottom:solid 1px #c8c8c8"'; //' style="border-bottom:solid 1px #c8c8c8;"';
+$sto=' style="color:#fd5202';
+?>
+<div class="px0"></div>
+<div class="lmenu">
+<div class="px0b"></div>
+<menu id="mmenu2">
+<li<?php print ($pb_page==1030)?$st:$st2; ?>><div><?php if ($pb_page!=1030) print '<l1 id="30">'; ?><span>Каталог Материалов</span><?php if ($pb_page!=1030) print '</l1>'; ?></div></li>
+<li class="<?php print ($pb_page>=1031 && $pb_page<=1033)?('pb_mo"'.$sto):'pb_mc'; ?>"><div></div><?php if ($pb_page!=1031) print '<l1 id="31">'; ?><span>Грунты</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[1])+count($a_catmat[2])-2).'</span>'; ?><?php if ($pb_page!=1031) print '</l1>'; ?>
+  <menu>
+  <li<?php print ($pb_page==1032)?$st:$st2; ?>><div><?php if ($pb_page!=1032) print '<l1 id="32">'; ?><span>Полиуретановые</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[1])-1).'</span>'; ?><?php if ($pb_page!=1032) print '</l1>'; ?></div></li>
+  <li<?php print ($pb_page==1033)?$st:$st1; ?>><div><?php if ($pb_page!=1033) print '<l1 id="33">'; ?><span>Эпоксидные</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[2])-1).'</span>'; ?><?php if ($pb_page!=1033) print '</l1>'; ?></div></li>
+  </menu>
+</li>
+<li<?php print ($pb_page==1034)?$st:$st2; ?>><div><?php if ($pb_page!=1034) print '<l1 id="34">'; ?><span>Эмали</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[3])-1).'</span>'; ?><?php if ($pb_page!=1034) print '</l1>'; ?></div></li>
+<li class="<?php print ($pb_page>=1043 && $pb_page<=1045)?('pb_mo"'.$sto):'pb_mc'; ?>"><div></div><?php if ($pb_page!=1043) print '<l1 id="43">'; ?><span>Лаки</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[4])+count($a_catmat[5])-2).'</span>'; ?><?php if ($pb_page!=1043) print '</l1>'; ?>
+  <menu>
+  <li<?php print ($pb_page==1044)?$st:$st2; ?>><div><?php if ($pb_page!=1044) print '<l1 id="44">'; ?><span>Лаки</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[4])-1).'</span>'; ?><?php if ($pb_page!=1044) print '</l1>'; ?></div></li>
+  <li<?php print ($pb_page==1045)?$st:$st1; ?>><div><?php if ($pb_page!=1045) print '<l1 id="45">'; ?><span>Лаки Светостойкие</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[5])-1).'</span>'; ?><?php if ($pb_page!=1045) print '</l1>'; ?></div></li>
+  </menu>
+</li>
+<li class="<?php print ($pb_page>=1035 && $pb_page<=1037)?('pb_mo"'.$sto):'pb_mc'; ?>"><div></div><?php if ($pb_page!=1035) print '<l1 id="35">'; ?><span>Наливные полы</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[6])+count($a_catmat[7])-2).'</span>'; ?><?php if ($pb_page!=1035) print '</l1>'; ?>
+  <menu>
+  <li<?php print ($pb_page==1036)?$st:$st2; ?>><div><?php if ($pb_page!=1036) print '<l1 id="36">'; ?><span>Полиуретановые</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[6])-1).'</span>'; ?><?php if ($pb_page!=1036) print '</l1>'; ?></div></li>
+  <li<?php print ($pb_page==1037)?$st:$st1; ?>><div><?php if ($pb_page!=1037) print '<l1 id="37">'; ?><span>Эпоксидные</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[7])-1).'</span>'; ?><?php if ($pb_page!=1037) print '</l1>'; ?></div></li>
+  </menu>
+</li>
+<li<?php print ($pb_page==1038)?$st:$st2; ?>><div><?php if ($pb_page!=1038) print '<l1 id="38">'; ?><span>Антистатические полы</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[8])-1).'</span>'; ?><?php if ($pb_page!=1038) print '</l1>'; ?></div></li>
+<li<?php print ($pb_page==1042)?$st:$st2; ?>><div><?php if ($pb_page!=1042) print '<l1 id="42">'; ?><span>ПЦ полы</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[9])-1).'</span>'; ?><?php if ($pb_page!=1042) print '</l1>'; ?></div></li>
+<li<?php print ($pb_page==1039)?$st:$st2; ?>><div><?php if ($pb_page!=1039) print '<l1 id="39">'; ?><span>Шпатлёвки, Герметики, Рем. составы</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[10])-1).'</span>'; ?><?php if ($pb_page!=1039) print '</l1>'; ?></div></li>
+<!--li<?php print ($pb_page==9999)?$st:$st2; ?>><div><?php if ($pb_page!=9999) print '<l2 id="1">'; ?><span>ЭДВ полы</span><?php if ($pb_page!=9999) print '</l2>'; ?></div></li-->
+<li<?php print ($pb_page==1046)?$st:$st2; ?>><div><?php if ($pb_page!=1046) print '<l1 id="46">'; ?><span>Смолы для декора и заливки</span><?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[12])-1).'</span>'; ?><?php if ($pb_page!=1046) print '</l1>'; ?></div></li>
+<li class="<?php print ($pb_page>=1040 && $pb_page<=1041 || $pb_page>=1047 && $pb_page!=2002 && $pb_page!=5017)?('pb_mo"'.$sto):'pb_mc'; ?>"><div></div><?php if ($pb_page!=1040) print '<l1 id="40">'; ?><span>Прочее</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[13])-1+count($a_catmat[15])-1+count($a_catmat[16])-1+count($a_catmat[17])-1+count($a_catmat[18])-1+count($a_catmat[19])-1).'</span>'; ?><?php if ($pb_page!=1040) print '</l1>'; ?>
+  <menu>
+  <li<?php print ($pb_page==1041)?$st:$st2; ?>><div><?php if ($pb_page!=1041) print '<l1 id="41">'; ?><span>МБ (водные)</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[13])-1).'</span>'; ?><?php if ($pb_page!=1041) print '</l1>'; ?></div></li>
+  <li<?php print ($pb_page==2111)?$st:$st2; ?>><div><?php if ($pb_page!=2111) print '<l2 id="111">'; ?><span>Колеровочная паста</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">1</span>'; ?><?php if ($pb_page!=2111) print '</l2>'; ?></div></li>
+  <li<?php print ($pb_page==2105)?$st:$st2; ?>><div><?php if ($pb_page!=2105) print '<l2 id="105">'; ?><span>Силер</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">1</span>'; ?><?php if ($pb_page!=2105) print '</l2>'; ?></div></li>
+  <!--li<?php print ($pb_page==9999)?$st:$st2; ?>><div><?php if ($pb_page!=9999) print '<l2 id="1">'; ?><span>Лаки (прочее)</span><?php if ($pb_page!=9999) print '</l2>'; ?></div></li-->
+  <li<?php print ($pb_page==1047)?$st:$st2; ?>><div><?php if ($pb_page!=1047) print '<l1 id="47">'; ?><span>Пищевые</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[17])-1).'</span>'; ?><?php if ($pb_page!=1047) print '</l1>'; ?></div></li>
+  <li<?php print ($pb_page==1048)?$st:$st2; ?>><div><?php if ($pb_page!=1048) print '<l1 id="48">'; ?><span>Добавки для бетона</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[18])-1).'</span>'; ?><?php if ($pb_page!=1048) print '</l1>'; ?></div></li>
+  <li<?php print ($pb_page==1049)?$st:$st1; ?>><div><?php if ($pb_page!=1049) print '<l1 id="49">'; ?><span>Для металла</span> <?php print '<span class="fwn fs12" style="padding-left:5px;color:#777777">'.(count($a_catmat[19])-1).'</span>'; ?><?php if ($pb_page!=1049) print '</l1>'; ?></div></li>
+  </menu>
+</li>
+</menu>
+<div class="px0"></div>
+</div>
+<div class="px0"></div>

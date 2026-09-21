@@ -1,0 +1,45 @@
+<div class="px10"></div>
+<div class="ml10">Показано отзывов: <span id="totOtz"></span></div>
+<div class="px15"></div>
+<div class="butr fleft" id="id_bset2" onclick="f_refreshOtz(1)">Применить</div>
+<div class="butb fright" onclick="f_fltClearOtz(1)">Сбросить</div>
+<div class="px10b"></div><div class="px0b"></div><div class="px5"></div>
+<div class="hside" id="hsideo" onclick="f_clickItems('o')">Типы объектов <div class="dhclose"></div></div>
+<div class="px5"></div>
+<div class="side_items" id="hsideio">
+  <div class="pb_checked_false" id="to06"><div class="pb_ch0"></div><span class="pb_chs0">Цеха</span></div>
+  <div class="pb_checked_false" id="to09"><div class="pb_ch0"></div><span class="pb_chs0">Объекты РосАтом</span></div>
+  <div class="pb_checked_false" id="to05"><div class="pb_ch0"></div><span class="pb_chs0">Склады</span></div>
+  <div class="pb_checked_false" id="to03"><div class="pb_ch0"></div><span class="pb_chs0">Гаражи/Паркинги</span></div>
+  <div class="pb_checked_false" id="to01"><div class="pb_ch0"></div><span class="pb_chs0">Пищевое Производство</span></div>
+  <div class="pb_checked_false" id="to02"><div class="pb_ch0"></div><span class="pb_chs0">СельХоз. объекты</span></div>
+  <div class="pb_checked_false" id="to13"><div class="pb_ch0"></div><span class="pb_chs0">Электростанции, ТЭК</span></div>
+  <div class="pb_checked_false" id="to04"><div class="pb_ch0"></div><span class="pb_chs0">Резервуары</span></div>
+  <div class="pb_checked_false" id="to08"><div class="pb_ch0"></div><span class="pb_chs0">Жилищное строительство</span></div>
+  <div class="pb_checked_false" id="to10"><div class="pb_ch0"></div><span class="pb_chs0">Медицинские учреждения</span></div>
+  <div class="pb_checked_false" id="to11"><div class="pb_ch0"></div><span class="pb_chs0">Учебные заведения</span></div>
+  <div class="pb_checked_false" id="to12"><div class="pb_ch0"></div><span class="pb_chs0">Магазины</span></div>
+  <div class="pb_checked_false" id="to07"><div class="pb_ch0"></div><span class="pb_chs0">Прочее</span></div>
+  <div class="px5"></div>
+</div>
+<div class="px5"></div>
+<div class="hside" id="hsidep" onclick="f_clickItems('p')">Типы покрытий <div class="dhclose"></div></div>
+<div class="px5"></div>
+<div class="side_items" id="hsideip">
+  <div class="pb_checked_false" id="tp01"><div class="pb_ch0"></div><span class="pb_chs0">Пропитка бетона</span></div>
+  <div class="pb_checked_false" id="tp02"><div class="pb_ch0"></div><span class="pb_chs0">Полимерное покрытие бетона</span></div>
+  <div class="pb_checked_false" id="tp08"><div class="pb_ch0"></div><span class="pb_chs0">Наливные полимерные полы</span></div>
+  <div class="pb_checked_false" id="tp11"><div class="pb_ch0"></div><span class="pb_chs0">Антистатические полы</span></div>
+  <div class="pb_checked_false" id="tp03"><div class="pb_ch0"></div><span class="pb_chs0">Кварцнаполненное покрытие</span></div>
+  <div class="pb_checked_false" id="tp10"><div class="pb_ch0"></div><span class="pb_chs0">Покрытие для асфальта</span></div>
+  <div class="pb_checked_false" id="tp07"><div class="pb_ch0"></div><span class="pb_chs0">Полимерцементные полы</span></div>
+  <div class="pb_checked_false" id="tp06"><div class="pb_ch0"></div><span class="pb_chs0">Флюатирование</span></div>
+  <div class="pb_checked_false" id="tp09"><div class="pb_ch0"></div><span class="pb_chs0">Бетонные полы Эластобетон</span></div>
+  <div class="pb_checked_false" id="tp04"><div class="pb_ch0"></div><span class="pb_chs0">Покрытия для металла</span></div>
+  <div class="pb_checked_false" id="tp05"><div class="pb_ch0"></div><span class="pb_chs0">Покрытия для дерева</span></div>
+  <div class="px5"></div>
+</div>
+<div class="px10"></div>
+<div class="butr fleft" id="id_bset" onclick="f_refreshOtz(1)">Применить</div>
+<div class="butb fright" onclick="f_fltClearOtz(1)">Сбросить</div>
+<div class="px30b"></div>

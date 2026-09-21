@@ -1,0 +1,74 @@
+<main>
+<aside id="aside1">
+{*text1_20*}
+<h1>Карта выполненных объектов</h1>
+<a id="daback" href="javascript:void(f_testSS())">Вернуться на сайт</a>
+</aside>
+<section id="divIdMain">
+<div id="div_map"><div id="dlm">Карта загружается...</div></div>
+</section>
+<div id="mapfs" title="Свернуть" onclick="f_mapfs()">◄</div>
+
+<div id="hopen">
+<svg xmlns="http://www.w3.org/2000/svg" id="svg_openmenu" viewBox="0 0 51 51">
+<g transform="translate(-49 -32)">
+  <circle cx="25.5" cy="25.5" r="25.5" transform="translate(49 32)"/>
+<g transform="translate(-27 -37)">
+  <rect width="22" height="3" rx="1.5" transform="translate(91 86)" fill="#272727"/>
+  <rect width="22" height="3" rx="1.5" transform="translate(91 93)" fill="#272727"/>
+  <rect width="22" height="3" rx="1.5" transform="translate(91 100)" fill="#272727"/>
+</g></g>
+</svg>
+</div>
+<div id="hclose">
+<svg xmlns="http://www.w3.org/2000/svg" id="svg_closemenu" viewBox="0 0 51 51">
+<g transform="translate(-49 -32)">
+  <circle cx="25.5" cy="25.5" r="25.5" transform="translate(49 32)"/>
+<g transform="translate(-27 -30)">
+  <rect width="22" height="3" rx="1.5" transform="translate(95.282 78.661) rotate(45)" fill="#272727"/>
+  <rect width="22" height="3" rx="1.5" transform="translate(110.839 80.782) rotate(135)" fill="#272727"/>
+</g></g>
+</svg>
+</div>
+</main>
+<?php
+print '<div class="pb_hidden">'.chr(10).'<div id="pb_page">'.$pb_page.'</div><div id="idNpos">0</div><div id="idNpred">0</div>'.chr(10);
+/* Список координат для всех представителей */
+$cnt=count($a_pred); print '<div id="kolPred">'.$cnt.'</div>'.chr(10).'<div id="idCoordsAll">'.chr(10);
+for ($i=1; $i<$cnt; $i++) { print '<div id="tpos'.$i.'">'.$a_pred[$i][2].','.$a_pred[$i][3].'</div>'; }
+/* Список регионов для всех представителей */
+print chr(10).'</div>'.chr(10);
+/*
+print '<div id="idRegsAll">'.chr(10);
+$cnt=count($a_pass2);
+for ($i=1; $i<$cnt; $i++) { print '<div id="idPredRegs'.$i.'">'.($a_pass2[$i] ? $a_pass2[$i] : '0').'</div>'; }
+print chr(10).'</div>'.chr(10);
+*/
+
+print '<div>'.chr(10);
+//$obj_txt=@file_get_contents($_SERVER["DOCUMENT_ROOT"].'/sys/objlist1');
+$obj_txt=@file_get_contents('https://teohim.ru/sys/objlist1');
+$pos=strpos($obj_txt,chr(10)); if ($pos!=false) {
+  $obj_txt=substr($obj_txt,$pos+1);
+  for ($i=1; $i<=100000; $i++) {
+    $pos=strpos($obj_txt,chr(10)); if ($pos==false) break;
+    $str=substr($obj_txt,0,$pos); if (empty($str)) break;
+    print '<div id="mapsobj'.$i.'" class="mapsobj">'.$str.'</div>';
+    $obj_txt=substr($obj_txt,$pos+1);
+  }
+} print chr(10).'</div>'.chr(10);
+
+print '<div>'.chr(10);
+//$obj_txt=@file_get_contents($_SERVER["DOCUMENT_ROOT"].'/sys/objphotolist1');
+$obj_txt=@file_get_contents('https://teohim.ru/sys/objphotolist1');
+$pos=strpos($obj_txt,chr(10)); if ($pos!=false) {
+  $obj_txt=substr($obj_txt,$pos+1);
+  for ($i=1; $i<=100000; $i++) {
+    $pos=strpos($obj_txt,chr(10)); if ($pos==false) break;
+    $str=substr($obj_txt,0,$pos); if (empty($str)) break;
+    print '<div id="moph'.$i.'" class="moph">'.$str.'</div>';
+    $obj_txt=substr($obj_txt,$pos+1);
+  }
+} print chr(10).'</div>'.chr(10);
+?>
+</div>

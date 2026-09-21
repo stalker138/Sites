@@ -1,0 +1,15 @@
+<meta name="robots" content="<?php if ($pb_page!=9999) print 'noindex, nofollow, '; ?>noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="ООО ТэоХим"><meta name="copyright" lang="ru" content="ООО ТэоХим"><meta name="owner" content="ООО ТэоХим"><meta name="robots" content="noindex, nofollow, noarchive">
+<?php
+print '<link rel="icon" type="image/ico" href="/favicon.ico">';
+print '<link rel="icon" type="image/png" href="/favicon.png">';
+print '<link rel="icon" type="image/svg+xml" href="/favicon.svg">';
+print '<link rel="canonical" href="'.$pb_domain.$pb_full_url.'">';
+if ($pb_page==1002) {
+  print '<link rel="canonical" href="https://elakor.shop/pokrytija/">';
+  //$s=(int)$_GET['s']; $n=(int)$_GET['n']; $v=(int)$_GET['v'];
+}
+if ($pb_page>2000 && $pb_page<3000) { fmtr_og($pb_page_number); }
+
+?>

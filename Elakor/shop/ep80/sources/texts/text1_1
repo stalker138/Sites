@@ -1,0 +1,161 @@
+<div class="mainmenu1">
+
+<div class="mm4i"><l4 id="2">Прайс-лист</l4></div>
+<div class="mm5i"><l4 id="4">Отзывы</l4></div>
+<div class="mm6i"><l4 id="1">Сертификаты</l4></div>
+<div class="mm7i"><l4 id="5">Инструкции</l4></div>
+<div class="mm8i"><l4 id="3">Контакты</l4></div>
+<div class="px10"></div>
+<div class="mm3i">
+<div class="px10"></div>
+<div class="mm3ih"><l1 id="2">Каталог покрытий</l1></div>
+<div class="px10"></div>
+<ul class="mm3ul">
+ <li>Пропитки<ul class="mm3l2">
+   <li><l3 id="11">Полиуретановая пропитка</l3></li>
+   <li><l3 id="13">Пропитка глубокого проникновения</l3></li>
+   <li><l3 id="17">Эпоксидная пропитка без запаха</l3></li>
+   <!--li>Эпоксидная водная паропроницаемая пропитка</li-->
+   <li><l3 id="87">Антискользящая пропитка</l3></li>
+   <li><l3 id="23">Флюат пропитка</l3></li>
+   <li><l3 id="25">Акриловая пропитка</l3></li>
+ </ul></li>
+ <li>Окрасочные покрытия<ul class="mm3l2">
+   <li><l3 id="31">Полиуретановое покрытие</l3></li>
+   <li><l3 id="33">Эпоксидное покрытие</l3></li>
+   <!--li>Эпоксидное водное паропроницаемое покрытие</li-->
+   <li><l3 id="35">Светостойкое полиуретановое покрытие</l3></li>
+   <li><l3 id="85">Антискользящее покрытие</l3></li>
+   <li><l3 id="83">Декоративное покрытие с чипсами</l3></li>
+   <li><l3 id="81">Покрытие для асфальта</l3></li>
+ </ul></li>
+ <li>Наливные полы<ul class="mm3l2">
+   <li><l3 id="51">Эпоксидный наливной пол Классик</l3></li>
+   <li><l3 id="53">Полиуретановый наливной пол Классик</l3></li>
+   <li><l3 id="52">Эпоксидный наливной пол Промышленный</l3></li>
+   <li><l3 id="54">Полиуретановый наливной пол Промышленный</l3></li>
+   <!--li><l3 id="71">Эпоксидный наливной пол Высоконаполненный</l3></li>
+   <li><l3 id="40">Полиуретановый наливной пол Высоконаполненный</l3></li-->
+   <li><l3 id="73">Полиуретановый наливной пол Наполненный</l3></li>
+   <li><l3 id="55">Полиуретановый наливной пол Белый</l3></li>
+   <!--li>Эпоксидный наливной пол Экстра</li-->
+   <!--li>Эпоксидный прозрачный наливной пол 3Д</li-->
+ </ul></li>
+ <!--li>ПЦ Полы<ul class="mm3l2">
+   <li>Полиуретан-цементное покрытие</li>
+   <li>Полиуретан-цементный наливной пол</li>
+ </ul></li-->
+ <li>Кварцнаполненные полы<ul class="mm3l2">
+   <li><l3 id="39">Эпоксидное покрытие с песком</l3></li>
+   <li><l3 id="37">Полиуретановое покрытие с песком</l3></li>
+   <!--li>Эпоксидное покрытие с песком гладкое</li-->
+   <!--li>Полиуретановое покрытие с песком гладкое</li-->
+   <!--li>Эпоксидное водное покрытие с песком</li-->
+  </ul></li>
+ <li>Антистатические полы<ul class="mm3l2">
+  <li><l3 id="63">Проводящий наливной пол Эпоксидный</l3></li>
+  <li><l3 id="64">Проводящий наливной пол Полиуретановый</l3></li>
+  <li><l3 id="67">Проводящее покрытие Эпоксидное</l3></li>
+  <li><l3 id="68">Проводящее покрытие Полиуретановое</l3></li>
+  <li><l3 id="65">Рассеивающий наливной пол Эпоксидный</l3></li>
+  <li><l3 id="66">Рассеивающий наливной пол Полиуретановый</l3></li>
+  <li><l3 id="69">Рассеивающее покрытие Эпоксидное</l3></li>
+  <li><l3 id="70">Рассеивающее покрытие Полиуретановое</l3></li>
+ </ul></li>
+ <li>Специальные покрытия<ul class="mm3l2">
+   <li><l3 id="89">Химстойкое покрытие</l3></li>
+   <li><l3 id="93">Безыскровое покрытие</l3></li>
+ </ul></li>
+</ul>
+<div class="mm3ul" style="top:470px;width:210px;padding-left:20px;">
+   <div class="px40"></div>
+   <div class="mbutr" onclick="f_callback(2)">Заказать звонок</div>
+</div>
+</div>
+
+<div class="mm2i">
+<div class="px10"></div>
+<div class="mm2ih"><l1 id="30">Каталог материалов</l1></div>
+<div class="px10"></div>
+<ul class="mm2ul">
+ <li><l1 id="31">Грунты</l1><ul class="mm2l2 mm212_">
+  <li><l1 id="32">Полиуретановые</l1><ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[1]); ?>
+  </ul></li>
+  <li><l1 id="33">Эпоксидные</l1><ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[2]); ?>
+  </ul></li>
+ </ul></li>
+ <li><l1 id="34">Эмали</l1><ul class="mm2l2">
+   <?php fmtr_menu($a_catmat[3]); ?>
+ </ul></li>
+ <li><l1 id="43">Лаки</l1><ul class="mm2l2 mm212_">
+   <li><l1 id="44">Лаки</l1><ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[4]); ?>
+  </ul></li>
+   <li><l1 id="45">Лаки Светостойкие</l1><ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[5]); ?>
+  </ul></li>
+ </ul></li>
+ <li><l1 id="35">Наливные полы</l1><ul class="mm2l2 mm212_">
+   <li><l1 id="36">Полиуретановые Наливные полы</l1><ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[6]); ?>
+  </ul></li>
+   <li><l1 id="37">Эпоксидные Наливные полы, без запаха</l1><ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[7]); ?>
+  </ul></li>
+ </ul></li>
+ <li><l1 id="38">Антистатические полы</l1><ul class="mm2l2">
+   <?php fmtr_menu($a_catmat[8]); ?>
+ </ul></li>
+ <li><l1 id="42">ПЦ Полы</l1><ul class="mm2l2">
+   <?php fmtr_menu($a_catmat[9]); ?>
+ </ul></li>
+ <li><l1 id="39">Шпатлёвки, Герметики</l1><ul class="mm2l2">
+   <?php fmtr_menu($a_catmat[10]); ?>
+ </ul></li>
+ <!--li>ЭДВ Полы<ul class="mm2l2">
+   <li>ЭДВ Грунт-В</li>
+   <li>ЭДВ Лак-В</li>
+   <li>ЭДВ Эмаль-В</li>
+   <li>ЭДВ Наливной пол-В</li>
+ </ul></li-->
+ <li><l1 id="46">Смолы для декора и заливки</l1><ul class="mm2l2">
+   <?php fmtr_menu($a_catmat[12]); ?>
+ </ul></li>
+ <li><l1 id="40">Прочее</l1><ul class="mm2l2 mm212_">
+   <li><l1 id="41">МБ (водные)</l1><ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[13]); ?>
+   </ul></li>
+   <!--li>Лаки (прочее)<ul class="mm2l3">
+   <li>ПУ Лак для кирпича, камня</li>
+   <li>ПУ Лак Универсальный Приготовление эмали</li>
+   <li>ПУ Паркетный Лак</li>
+   </ul></li-->
+   <li>Колеровочная паста<ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[15]); ?>
+   </ul></li>
+   <li>Силер<ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[16]); ?>
+   </ul></li>
+   <li><l1 id="47">Пищевые</l1><ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[17]); ?>
+   </ul></li>
+   <li><l1 id="48">Добавки для бетона</l1><ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[18]); ?>
+   </ul></li>
+   <li><l1 id="49">Для металла</l1><ul class="mm2l3">
+   <?php fmtr_menu($a_catmat[19]); ?>
+   </ul></li>
+ </ul></li>
+</ul>
+<div class="mm2ul" style="top:520px;width:210px;padding-left:20px;">
+   <div class="px30"></div>
+   <a class="pdf2" href="/downloads/price_elakor.pdf?<?php print filemtime($pb_root.'downloads/price_elakor.pdf'); ?>" rel="nofollow" title="Открыть/Скачать PDF Прайс-лист материалов"></a>
+   <p class="fs13">Прайс-лист материалов<br><span class="fwn c80">PDF</span></p>
+   <div class="px30"></div>
+   <div class="mbutr" onclick="f_callback(2)">Заказать звонок</div>
+</div>
+</div>
+
+</div>

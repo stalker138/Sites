@@ -1,0 +1,4 @@
+<div class="calc_iitem_help" style="height:50px" onclick="f_callback(2)">
+   <div class="px10"></div>
+   <div class="butr">Помощь в подборе</div>
+</div>

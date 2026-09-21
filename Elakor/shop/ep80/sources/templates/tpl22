@@ -1,0 +1,5 @@
+<?php if ($pb_page==5005 || $pb_page==21 || $pb_php21) { ?>{*text0_5*}<?php } else { ?>{*text0_5*}<?php } ?>
+<?php if(($pb_page>3010 && $pb_page<3100) || ($pb_page>2000 && $pb_page<3000) || ($pb_page>1001 && $pb_page<1009) || $pb_page==1013 || $pb_page==5010 || $pb_page==5012) { ?>
+{*text0_23*}
+<?php } ?>
+</script>

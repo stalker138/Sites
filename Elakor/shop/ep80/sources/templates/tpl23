@@ -1,0 +1,4 @@
+<?php
+include_once $pb_root."inc/functions.php";
+include_once $pb_root."inc/fflt.php";
+?>

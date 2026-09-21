@@ -1,0 +1,24 @@
+<Files ~ "^(recip.txt|config.inc|footer.inc|form.inc|header.inc)$">
+  deny from all
+</Files>
+DirectoryIndex index.html index.htm index.php
+AddDefaultCharset utf-8
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^.htaccess$ -[F]
+
+RewriteCond %{HTTP_HOST} ^www.elakor.shop$ [NC]
+RewriteRule ^(.*)$ https://elakor.shop/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-HTTPS} !1
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|htm|html)\ HTTP/ 
+RewriteRule ^index\.(php|htm|html)$ https://elakor.shop/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^(.*)\/index\.(php|htm|html)\ HTTP/ 
+RewriteRule ^(.*)\/index\.(php|htm|html)$ https://elakor.shop/$1/ [R=301,L]
+</IfModule>
+
+ErrorDocument 404 /
+ErrorDocument 403 /

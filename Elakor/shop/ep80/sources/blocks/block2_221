@@ -1,0 +1,120 @@
+<?php fmtr_h1($i_pkr,'акриловый лак'); ?>
+<div class="px15"></div>
+<?php fmtr_micro($i_pkr); ?>
+
+<div class="cblock">
+
+<div class="matflex">
+<div class="matf1">
+  <?php fmtr_price($i_pkr); ?>
+  <div class="matf13">
+     <?php fmtr_guar($i_pkr); ?>
+  </div>
+  <div class="matf14">
+     <?php fmtr_packing($i_pkr); ?>
+  </div>
+  <div class="matf15">
+    <?php fmtr_ord($i_pkr); ?>
+  </div>
+
+</div>
+
+<div class="matf3">
+<img src="/img/product/p221.webp" alt="">
+</div>
+<div class="matf4">
+</div>
+</div>
+</div>
+<div class="px20"></div>
+
+<div class="dzmt1"></div>
+<div class="ot_head_block">
+<div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="ot_hb_item" id="foth123_p">Свойства</div><div class="ot_hb_item" id="foth123_s">Сертификация</div>
+<div class="px0"></div>
+</div>
+<div class="px0"></div>
+<div class="ot_block">
+<div class="ot_item active" id="fot123_o">
+<?php fmtr_descr($i_pkr); ?>
+
+<p><span>Элакор-МБ2 поставляется в виде Концентрата</span>, разводится водой 1:1.</p>
+<p><strong>Элакор-МБ2 - однокомпонентный водный акриловый лак.</strong><br>Не содержит органических растворителей, не имеет запаха.</p>
+<p class="fs11">К вопросам: <strong>акриловый лак</strong>, <strong>акриловый лак</strong> <span class="fi">для дерева</span>, <strong>акриловый лак</strong> <span class="fi">для бетона</span>, <strong>акриловый лак</strong> <span class="fi">для камня</span>, <strong>акриловый лак</strong> <span class="fi">цена</span>, <strong>акриловый лак</strong> <span class="fi">купить</span>.</p>
+
+<p class="fwb">Акриловый лак Элакор-МБ2 используется:</p>
+<ul>
+<li>для устройства защитно-декоративной акриловой пропитки поверхностей;</li>
+<li>для грунтования поверхностей под дальнейшее нанесение цветных акриловых покрытий;</li>
+<li>для финишной обработки – запечатки поверхностей после операций флюатирования или гидрофобизации.</li>
+<li>для обеспыливания бетонных поверхностей, не испытывающих механических нагрузок.</li>
+</ul>
+<p class="fwb">Области применения:</p>
+<ul>
+<li>Суперэкономичное покрытие для промышленных полов с небольшим сроком службы (не более 2-3 лет).</li>
+<li>Обеспыливание бетонных, пескобетонных стяжек, перед укладкой паркета, ламината, линолеума.</li>
+<li>Обеспыливание бетонных, пескобетонных стяжек под фальшполами.</li>
+<li>Защита и проявление фактуры пористых поверхностей и изделий: на основе портландцементов (бетон, пескобетон, штукатурка); минералов (известняк, мрамор и т.д.), искусственного камня; деревянных поверхностей.</li>
+</ul>
+<p><span>Для эксплуатации</span> внутри помещений и на открытом воздухе.</p>
+<p class="fwb">Свойства акрилового лака Элакор-МБ2.</p>
+<ul>
+<li>Пленка (покрытие), полученная из акрилового лака паропроницаемая.</li>
+<li>Пленка лака полностью прозрачна, устойчива к УФ-излучению.</li>
+<li>Лак можно наносить на новые (через 3 суток нормального твердения после укладки) и старые бетонные основания.</li>
+</ul>
+<p class="fwb">Общие требования:</p>
+<ul>
+<li>влажность основания должна быть не более 7мас.%;</li>
+<li>температура воздуха не менее +5°С;</li>
+<li>температура основания не менее +5°С.</li>
+</ul>
+<p>Акриловый лак Элакор-МБ2 поставляется в виде концентрата.<br>Перед применением необходимо разбавить в следующих пропорциях: на 1литр концентрата - 1литр воды.</p>
+<p><span>Примерный расход</span> Элакор-МБ2 на бетонные поверхности в зависимости от класса прочности бетона:<br>
+B17,5 (М200) – 0,3-0,4кг/м² за два слоя;<br>
+B22,5 (М300) – 0,2-0,3кг/м² за один-два слоя;<br>
+B25,0 (М350) – 0,15-0,2кг/м² за один слой.</p>
+
+</div>
+
+<div class="ot_item" id="fot123_t">
+</div>
+
+<div class="ot_item" id="fot123_p">
+
+</div>
+
+<!--noindex-->
+<div class="ot_item" id="fot123_s">
+
+</div>
+<!--/noindex-->
+</div>
+<!--div class="px10b"></div>
+
+<div class="pb_gal"><div class="pb_gal_scroll">
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p0.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p1.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p2.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p3.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p4.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p5.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p6.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p7.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p8.jpg" alt=""/></div>
+</div>
+<div class="pb_gal_left"></div><div class="pb_gal_right"></div><div class="pb_gal_lft"></div><div class="pb_gal_rgt"></div>
+</div-->
+<div class="px10b"></div>
+
+<?php fcvr_mat($i_pkr); ?>
+
+<div class="px20"></div>
+<div class="svg_to_block">
+<div class="dh2">Применяется на объектах</div>
+<div class="px20"></div>
+<?php f_SvgObj(array(8,6,9,5,7,4,3,2,1)); ?>
+<div class="px0"></div>
+</div>
+<div class="px20"></div>
+

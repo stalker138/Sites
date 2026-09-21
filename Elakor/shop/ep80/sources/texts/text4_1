@@ -1,0 +1,5 @@
+<div id="calc_iitem_sq" class="calc_iitem">
+  <div class="px0"></div><p>Введите площадь</p><div class="px5"></div>
+  <input id="i_so" class="calc_iitem_i" type="text" value="" maxlength="6" placeholder="Площадь объекта" onchange="f_refresh()">
+  <div class="calc_iitem_r">м<sup>2</sup></div><div class="px0"></div>
+</div>

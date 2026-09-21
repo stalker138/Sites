@@ -1,0 +1,4 @@
+<?php
+// print '<link rel="stylesheet" href="/cssjs/test1.css" type="text/css"/>';
+?><style>
+<?php if ($pb_page==5005 || $pb_page==5010 || $pb_php21) { ?> {*text5_2*} <?php } else { ?> {*text5_2*} <?php } ?>

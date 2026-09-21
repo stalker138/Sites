@@ -1,0 +1,36 @@
+{*tpl1*}{*tpl2*}{*tpl23*}
+{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+.butr, .butb { margin:5px; padding:7px; } p { margin:10px 0 0 0; line-height:17px; }
+.hside,.hside2 { position:relative; padding:0 10px; height:20px; line-height:20px; } .hside { cursor:pointer; height:30px; line-height:30px; }
+.hside div { position:absolute; top:0; right:10px; width:30px; height:30px; line-height:30px; text-align:center; color:#333333; }
+.hside .dhopen { background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='svg_arrow_up' width='9' height='9' viewBox='0 0 9.932 9.932'%3E%3Cpath d='M5.023,0H0V5.023' transform='translate(4.966 4.966) rotate(45)' fill='none' stroke='%23272727' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E%0A") 98% center no-repeat #eeeeee; }
+.hside .dhclose { background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 9.932 9.932'%3E%3Cpath d='M5.023,0H0V5.023' transform='translate(4.966 8.518) rotate(-135)' fill='none' stroke='%23272727' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E") 98% center no-repeat #eeeeee; }
+.hside:hover, .hside:hover div, .hside div:hover { background-color:#ffffff; }
+.side_items { position:relative; display:block; height:0; border:solid 1px #c8c8c8; overflow-y:scroll; }
+.calc_iitem { padding:0 0 0 10px; width:130px; } .calc_iitem_i { padding:5px 10px; width:90px; background:#ffffff; } .calc_iitem_r { right:20px; }
+
+.dotzmain { display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-evenly; }
+.dotz { cursor:pointer; position:relative; margin:10px 5px; padding:10px 0 5px 10px; width:289px; height:200px; border-radius:4px; background:#f4f4f4; box-shadow:0 0 5px 0 #545454; transition:box-shadow 0.2s ease-out 0s; }
+.dotz img { margin:5px 0 0 0; } .dotz .dotpdf, .dotz .dotzl, .dotz .dotzr { float:left; margin:5px 0 0 0; } .dotz .dotzr { margin:5px 0 0 10px; }
+.dotz .dotzi { clear:both; padding:3px 0 0 0; } .dotz p { margin:0; }
+.dotz:hover { box-shadow:0 0 7px 0 #004f92; }
+#divotz { position:absolute; left:0; top:0; right:0; bottom:0; background:#ffffff; visibility:hidden; }
+.dotz .dotpdf { cursor:pointer; position:absolute; display:block; bottom:5px; right:7px; width:32px; height:48px; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBpZD0ic3ZnX2Fycm93ZG93biIgdmlld0JveD0iMCAwIDY0IDY0Ij4NCjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjMyIi8+DQo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMi4zNDYgNDEuODg4KSByb3RhdGUoLTEzNSkiPg0KIDxwYXRoIGQ9Ik0xNC41MDgsMTQuNTA4LDAsMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KIDxwYXRoIGQ9Ik0xNC41MDgsMEgwVjE0LjUwOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9nPg0KPC9zdmc+DQo=') top center no-repeat; background-size:contain; }
+.dotz .dotpdf div { position:absolute; display:block; bottom:0; left:0; right:0; color:#808080; text-align:center; }
+.dotz .dotpdf:hover { background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBpZD0ic3ZnX2Fycm93ZG93biIgdmlld0JveD0iMCAwIDY0IDY0Ij4NCjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjMyIiBmaWxsPSIjZmQ1MjAyIi8+DQo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMi4zNDYgNDEuODg4KSByb3RhdGUoLTEzNSkiPg0KIDxwYXRoIGQ9Ik0xNC41MDgsMTQuNTA4LDAsMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KIDxwYXRoIGQ9Ik0xNC41MDgsMEgwVjE0LjUwOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9nPg0KPC9zdmc+DQo=") center top no-repeat; background-size:contain; }
+.dotz .dotpdf:hover div { color:#fd5202; }
+{*tpl6*}
+{*tpl7*}{*tpl8*}
+{*tpl9*}{*tpl10*}{*tpl11*}
+{*tpl12*}{*tpl13*}
+{*tpl14*}{*tpl15*}{*tpl16*}
+
+{*block4_4*}
+
+{*tpl17*}{*tpl18*}{*tpl19*}{*tpl20*}
+{*tpl21*}
+{*tpl22*}{*tpl24*}
+<script>
+{*text1_23*}
+</script>
+{*tpl25*}

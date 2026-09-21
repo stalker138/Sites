@@ -1,0 +1,336 @@
+var v_MLayer=0,v_MLayerD=0, v_storage=0, v_esc=0, v_dialogEsc=0, v_aLS=[], v_queryHttp=0, v_queryXHR=0, v_sessionID, v_cap='', v_capID, v_XHRC=$.httpNew(), v_XHR=$.httpNew(), v_int=null, v_int_b=0;
+var v_map=0, v_npred=0, v_npos=0, v_obj=[], v_photo=[], v_fobj, v_fpkr, v_freg, v_timg;
+var v_cb='<div class="px', v_cp='"></div>', v_px0=v_cb+'0'+v_cp,v_px0b=v_cb+'0b'+v_cp,v_px1=v_cb+'1'+v_cp,v_px3=v_cb+'3'+v_cp,v_px3b=v_cb+'3b'+v_cp,v_px5=v_cb+'5'+v_cp,v_px5b=v_cb+'5b'+v_cp,v_px10=v_cb+'10'+v_cp,v_px10b=v_cb+'10b'+v_cp,v_px15=v_cb+'15'+v_cp,v_px15b=v_cb+'15b'+v_cp,v_px20=v_cb+'20'+v_cp,v_px20b=v_cb+'20b'+v_cp,v_px25=v_cb+'25'+v_cp,v_px25b=v_cb+'25b'+v_cp,v_px30=v_cb+'30'+v_cp,v_px30b=v_cb+'30b'+v_cp;
+var v_wlhg='',v_wlh=window.location.href, v_layer=null, v_fields;
+var a_gal_kol=0,a_gal_kload=0,a_gal=[], a_fgal=[]; /* Массив для фотогалерей на странице - содержит подмассивы с характеристиками каждой галереи */
+var v_galItem=-1, a_galItems=[-1,0,0,0]; /* Активное изображение в full - режиме галереи; Массив значений активной галереи. */
+var v_page=0, o_tpos=[[55,75]], o_zoom=4, o_kolPred=0, i_s1=0,i_s2=999999,i_y1=2001,i_y2=new Date().getFullYear(), v_id_d_phs=0;
+var o_tObj=[' ','Цех промышленный','Цех пищевой','Технические помещения','Склад','Холодильник / Морозильник','Гараж (паркинг)','Автосервис','Автомойка','Торг./Развлек./Выстав.зал','Офис','Мед. Учреждения','Животноводство','Сельхоз. объекты','Электростанции, ТЭК','Объекты РосАтом','Жилищное строительство','ПРОЧЕЕ','Спортивные объекты','Объекты Минобороны','Образовательные учреждения','Кафе, рестораны, столовые','Резервуары','Транспортная инфраструктура','На открытом воздухе','Лестницы'];
+var o_tPkr=[' ','Пропитка Полиуретановая','Пропитка Эпоксидная','Пропитка Флюат','Покрытие Полиуретановое','Покрытие Эпоксидное','Покрытие Светостойкое','Покрытие для Асфальта','КНП Эпоксидное','КНП Полиуретановое','Наливной пол Эпоксидный','Наливной пол Полиуретановый','Наливной пол Промышленный Эпоксидный','Наливной пол Антистатический Эпоксидный','Антискольжение','Фрезер-насечка','Безыскровое покрытие','Стяжка Эластобетон-А','Стяжка Эластобетон-Б','Стяжка Эластобетон-В','ПРОЧЕЕ','Покрытие по металлу','Покрытие Полиуретановое ЭКО','Разметка, логотипы, дизайн','Компенсационные швы','3D-полы','Наливной пол Промышленный Полиуретановый','Наливной пол Антистатический Полиуретановый','Бетонные полы','Полиуретан-цементное покрытие','Покрытие Эпоксидное Водное','Наливной пол Эпоксидный Водный','Пропитка Полиуретановая 2К','Чипсы','Декоративные, художественные','Шпатлевание','Матовый Лак','Пропитка Эпоксидная Водная','Покрытие по дереву','Наливной пол Полиуретановый Эластичный','Наливной пол Полиуретановый Резиновый','Пропитка Силер'];
+var v_valObj=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,20,21,22,23,24,25,17];
+var v_valPkr=[0,1,2,37,3,41,4,5,30,6,7,9,8,11,10,31,26,12,27,13,39,40,29,14,33,23,35,36,25,34,15,16,28,17,18,19,21,38,22,24,20];
+
+function vcorpJS_onload(v) {
+    var i,p;
+    v_storage=window.localStorage?window.localStorage:0;
+    if (!v_storage){f_mesErr('Ограничение','Ваш браузер устарел'+v_px5+'и нуждается в замене.',450,130,3); return; }
+    if (v!='vcorp_js_00_80') { f_mesErr('Диагностика','Неверная версия JS-библиотеки<br>(необходима сборка vcorp_js_00_01)'+v_px5+'Обновите (перезагрузите) страницу.'+v_px5+'Рекомендуется сбросить кеш браузера.',320,150,3); return false; }
+    $.EH.add('hopen','click',f_openMenu); $.EH.add('hclose','click',f_closeMenu);
+    $.cbUpdate(); $.cbCallback(f_change); $.uCheckeds(f_checked); v_npred=parseInt($.id('idNpred').innerHTML,10)||0; v_npos=parseInt($.id('idNpos').innerHTML,10)||0;
+    $.EH.add(window,'scroll',f_scroll_desc); $.EH.add(window,'resize',f_scroll_desc);
+    $.id('i_so1').value=i_s1; $.id('i_so2').value=i_s2; $.id('pb__cbInput1').value=i_y1; $.id('pb__cbInput2').value=i_y2;
+    if (parseInt($.gCW(),10)<1200) { o_zoom=3; } if (parseInt($.gCW(),10)<600) { o_tpos=[[55,37]]; }
+    setTimeout(function(e){$.loadJs('https://api-maps.yandex.ru/2.1/?lang=ru_RU',f_start);},20);
+}
+function f_testSS() {
+    var u=window.sessionStorage.getItem('url')||'';
+    if (u) { history.length>1?history.back():false; } else window.location.href='https://elakor.shop/';
+}
+function f_openMenu(e) { $.id('hopen').style.width='0'; $.id('hclose').style.width='40px'; $.qS('aside').style.width='300px'; $.qS('aside').style.padding='10px'; }
+function f_closeMenu(e) { $.id('hopen').style.width='40px'; $.id('hclose').style.width='0'; $.qS('aside').style.width='0'; $.qS('aside').style.padding='0'; }
+function f_change(e) {
+  if (v_int==null) v_int = setInterval(f_iteration_set,700);
+}
+function f_iteration_set() {
+  var p=$.id('id_bset'); v_int_b = v_int_b==0 ? 1 : 0;  p.style.background = $.id('id_bset2').style.background = v_int_b==0 ? '#ff8030' : '#fd5202';
+}
+function f_refresh() {
+  clearInterval(v_int); v_int=null; v_int_b=0; $.id('id_bset').style.background=$.id('id_bset2').style.background='#fd5202'; f_setChek();
+  if (parseInt($.id('hclose').style.width,10)>0) f_closeMenu();
+}
+function f_checked(e) {
+  var cnt,id=this.id, ids=this.id.substr(0,2); if (!id || (id!='d_phs' && ids!='pr' && ids!='to' && ids!='tp')) return false;
+  if (id!='d_phs') {
+  if (ids=='pr') s='r'; if (ids=='to') s='o'; if (ids=='tp') s='p';
+  cnt=$.qSA('#hsidei'+s+' .pb_checked_true').length; $.qS('#hside'+s).style.color = $.qS('#hside'+s+' div').style.color = cnt==0 ? '#333333' : '#fd5202';
+  } f_change();
+}
+function f_clickItems(s) {
+  var p,h;
+  if (s!='r' && s!='o' && s!='p') return false;
+  p=$.qS('#hsidei'+s); h=parseInt(p.style.height,10)||0; $.qS('#hside'+s+' div').className = h==0 ? 'dhopen':'dhclose';
+  $.aHeight('hsidei'+s,200.20,0,250);
+}
+function f_fltClear() {
+  var i,a=$.qSA('.pb_checked_true, .pb_checked_false'),l=a.length;
+  for (i=0; i<l; i+=1) { a[i].className='pb_checked_false'; a[i].checked=false; }
+  $.qS('#hsider').style.color = $.qS('#hsider div').style.color = $.qS('#hsideo').style.color = $.qS('#hsideo div').style.color = $.qS('#hsidep').style.color = $.qS('#hsidep div').style.color = '#333333';
+  /*$.qS('#pb__cbInput1').value='Все';*/ $.qS('#pb__cbInput1').value='2001'; $.qS('#pb__cbInput2').value='2025';
+  $.qS('#i_so1').value='0'; $.qS('#i_so2').value='999999';
+  f_refresh();
+}
+function f_scroll_desc(e) {
+    var cw,ch,st;
+    $.uEnv(); cw=parseInt($.gCW(),10); ch=parseInt($.gCH(),10); st=parseInt($.gPST(),10);
+    if (cw>1000) {
+      $.id('hopen').style.width=$.id('hclose').style.width='0'; $.qS('aside').style.width='300px'; $.qS('aside').style.padding='10px';
+    } else {
+      if ($.id('hclose').style.width=='40px') { $.qS('aside').style.width='300px'; $.qS('aside').style.padding='10px'; }
+      else { $.id('hopen').style.width='40px'; $.qS('aside').style.width='0'; $.qS('aside').style.padding='0'; }
+    }
+}
+function f_start(e) {
+    var i, t=$.gCC(9), a=$.qSA('.mapsobj'); if(a) {
+        for (i=a.length-1; i>=0; i-=1) {
+            v_obj[i]=a[i].innerHTML.split(t);
+        }
+    } else return;
+    a=$.qSA('.moph'); if(a) {
+        for (i=a.length-1; i>=0; i-=1) {
+            v_photo[i]=a[i].innerHTML.split(t);
+        }
+    }
+    f_setChek(); ymaps.ready(f_initObj);
+}
+function f_setChek() {
+    var i,a,o=[0],p=[0],pr=[999],t,i_o=1,i_pr=1,i_p=1,m,j;
+    i_s1=parseInt($.id('i_so1').value,10)||0; i_s2=parseInt($.id('i_so2').value,10)||999999; i_y1=$.id('pb__cbInput1').value; i_y2=$.id('pb__cbInput2').value;
+    if (i_s1<0 || i_s2<0 || i_s1>i_s2) { $.id('i_so1').value='0'; $.id('i_so1').value='999999'; return false; }
+    if (i_y1>i_y2) { $.id('pb__cbInput1').value='2001'; $.id('pb__cbInput2').value=new Date().getFullYear(); return false; }
+    a=$.qSA('.pb_checked_true'); v_id_d_phs=0;
+    if(a) {
+        for (i=a.length-1; i>=0; i-=1) {
+            t=a[i].id;
+            if (t.substr(0,2)=='to') {
+                o[i_o++]=parseInt(t.substr(2),10);
+            } else {
+                if (t.substr(0,2)=='pr') {
+                    m=parseInt(t.substr(2),10);
+                    for(j=pr.length-1; j>0; j-=1) { if(pr[j]==m) j=m=-1; }
+                    if(m>-1) pr[i_pr++]=m;
+                } else {
+                    if (t=='d_phs') v_id_d_phs=1; else p[i_p++]=parseInt(t.substr(2),10);
+                }
+            }
+        }
+    }
+    if (pr.length==1) { for(i=0;i<112;i+=1) pr[i]=i; } 
+    if (o.length==1) o=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26];
+    if (p.length==1) p=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41];
+    v_freg=pr; v_fobj=o; v_fpkr=p;
+    if(v_map) { v_map.geoObjects.removeAll(); f_initObj(); }
+}
+
+function f_initObj() {
+    var i,j,k,lf,d,s,p,a,to,tp,f,n=0,c=[],l=v_obj.length,cl = new ymaps.Clusterer();
+    var coord, ci, cn=0, v_coord=[], v_cobj=[];
+    if (!v_map) v_map = new ymaps.Map("div_map", { center:o_tpos[v_npos], zoom:o_zoom, controls: ['typeSelector',  'fullscreenControl'] });
+    v_map.controls.add('zoomControl',{ float: 'none', position: { right: 10, top: 50 }});
+    for (i=0; i<l; i+=1) {
+        f=0; s=v_obj[i]; s[0]=parseInt(s[0],10); s[10]=parseInt(s[10],10); s[14]=parseInt(s[14],10);
+        if (v_id_d_phs && s[10]<1) continue;
+        if(v_freg.indexOf(s[14])==-1) continue;
+        if (v_npred==0||v_npred==s[0]) f=1; if (!f) continue;
+        f=0; p=v_fobj; lf=v_fobj.length; a=s[2].split(','); for(j=0; j<lf; j+=1) { if(p[j]) for (k=0;k<3;k+=1) {if(a[k]==p[j]){f=1;k=3;j=lf;}} } if (!f) continue;
+        f=0; p=v_fpkr; lf=v_fpkr.length; a=s[3].split(','); for(j=0; j<lf; j+=1) { if(p[j]) for (k=0;k<5;k+=1) {if(a[k]==p[j]){f=1;k=5;j=lf;}} } if (!f) continue;
+        if (parseInt(s[4],10)<i_s1 || parseInt(s[4],10)>i_s2 || parseInt(s[5],10)<i_y1 || parseInt(s[5],10)>i_y2) continue;
+        coord = s[6]+s[7]; ci = v_coord.indexOf(coord);
+        if (~ci) v_cobj[ci].push(v_obj[i]); else { v_coord[cn]=coord; v_cobj[cn]=[]; v_cobj[cn++][0]=v_obj[i]; }
+    }
+    for (var o=0; o<cn; o+=1) {
+        var v_o=v_cobj[o], so="Объект", sn="", vl=v_o.length;
+        for (i=0; i<vl; i+=1) {
+            s=v_o[i];
+            a=s[2].split(',');
+            to=''; for(j=0;j<3;j+=1) { to+=o_tObj[a[j]]+'<br>'; } to=to.replace(/ <br>/g,''); if(!to) to=' <br>';
+            a=s[3].split(',');
+            tp=''; for(j=0;j<5;j+=1) { tp+=o_tPkr[a[j]]+'<br>'; } tp=tp.replace(/ <br>/g,''); if(!tp) tp=' <br>';
+            if (i) sn=" "+(i+1);
+            j = $.trim(s[9]) ? ('<span class="fb">Описание</span>:<br>'+s[9].replace(new RegExp('☆','g'),'<br>')+'<br>') : '';
+            c[n] = new ymaps.GeoObject({
+            geometry: {
+                type: "Point",
+                coordinates: [s[6], s[7]]
+            }, properties: {
+                hintContent: '<span class="fb">'+so+sn+'</span>:<br>'+s[1]+'<br><span class="fb">Описание</span>:<br>'+s[9].replace(new RegExp('☆','g'),'<br>')+(s[15]?('<br><span class="fb">Город</span> (нас.пункт): '+s[15]):'')+v_px5b+v_px5+'<span class="fb">Год</span>: <span class="o5">'+s[5]+'</span> &nbsp; &nbsp; &nbsp; <span class="fb">Площадь</span>: <span class="o5">'+s[4]+' м.кв.</span>'+v_px5b+v_px5+'<span class="fb">Тип объекта</span>:<br>'+to+'<span class="fb">Тип покрытия</span>:<br>'+tp+'<span class="fb">Адрес</span>:<br>'+s[8],        // наименование + описание + типы + адрес
+                balloonContentHeader: s[1],        // наименование
+                balloonContentBody: j+(s[15]?('<span class="fb">Город</span> (нас.пункт): '+s[15]):'')+'<br><span class="fb">Год</span>: <span class="o5">'+s[5]+'</span> &nbsp; &nbsp; &nbsp; <span class="fb">Площадь</span>: <span class="o5">'+s[4]+' м.кв.</span>'+v_px5b+v_px5+'<span class="fb">Тип объекта</span>:<br>'+to+'<span class="fb">Тип покрытия</span>:<br>'+tp+'<span class="fb">Адрес</span>:<br>'+s[8],        // описание + год + площадь + типы + адрес
+                balloonContentFooter: (s[10] ? f_viewPhoto(s[0],s[12],s[10]) : ''),        // Галерея
+            }},{ preset: 'islands#redIcon'}); n+=1;
+        }
+    }$.id('totObj').innerHTML=n;
+    cl.add(c); v_map.geoObjects.add(cl); v_map.controls.remove('trafficControl'); v_map.controls.remove('typeSelector'); a_gal_kload=0;
+}
+
+function f_viewPhoto(id,idO,kol) {
+    var p,s,src='https://teohim.ru/img/mobj/'+id+'-', l=v_photo.length;
+    $.uEnv();
+    s='<div class="pb_gal"><div class="pb_gal_scroll">';
+    for (i=0; i<l; i+=1) {
+      if (v_photo[i][0]==id && v_photo[i][1]==idO) {
+        s+='<div class="pb_gal_item"><img src="'+src+v_photo[i][2]+'.jpg" alt="" onload="f_iload('+idO+','+kol+',0)" onerror="f_iload('+idO+','+kol+',1)"/></div>';
+      }
+    } s+='</div><div class="pb_gal_left"></div><div class="pb_gal_right"></div></div>';
+    p=$.qS('.pb_gal'); if (p) p.parentNode.removeChild(p);
+    return s;
+}function f_iload(idO,kol,f) { 
+    a_gal_kol=kol; if (a_gal_kload>a_gal_kol) return; a_gal_kload+=1; /*console.log(a_gal_kload+' '+a_gal_kol+' '+f);*/
+    if (a_gal_kload==a_gal_kol) { a_gal_kload=a_gal_kol+1; photoGal(); }
+}
+
+/* *********************************************************************************** */
+/* ФОТОГАЛЕРЕЯ */
+function photoGal(e) {
+  var i, j, k, ps, pi, pimg, wimg,himg, ws,hs, wi,hi, pg=$.qSA('.pb_gal'), l=pg.length||0; if (l<1) return false; if(a_gal_kload<a_gal_kol)return; a_gal_kload=0;
+  for (i=0; i<l; i+=1) {
+    if (pg[i]) {
+      ws=0; ps=$.qS('.pb_gal_scroll',pg[i])||0; hs=ps?(parseInt($.gStyle(ps,'height'),10)||0):0; pi=ps?($.qSA('.pb_gal_item',ps)||0):0; pimg=ps?($.qSA('.pb_gal_item img',ps)||0):0;
+      if(!ps||!hs||!pi||!pimg) { f_mesErr('Ошибка HTML галереи','Ошибка HTML галереи<br>'+(ps?'':'.pb_gal_scroll ')+(pi?'':'.pb_gal_item ')+(pimg?'':'images ')+' not found',300,120); return false; }
+      k=pi.length; if (k!=pimg.length) { f_mesErr('Ошибка HTML галереи','Ошибка HTML галереи<br>Количество изображений не равно количеству .pb_gal_item',300,120); return false; }
+      wi=new Array(k); hi=new Array(k); wimg=new Array(k); himg=new Array(k);
+      for (j=0; j<k; j+=1) {
+          if(j==k-1)pi[j].style.paddingRight=0;
+          wi[j]=pi[j].offsetWidth||0; hi[j]=pi[j].offsetHeight||0; wimg[j]=$.qS('img',pi[j]).width; himg[j]=$.qS('img',pi[j]).height; ws+=wi[j];
+      }
+      ps.style.width=(ws+1)+'px';
+      a_gal[i]=[0,pg[i],ps,0,0,ws,hs,wi,hi,0,0,0,0,wimg,himg,0,0,-1,0];
+      $.EH.add($.qS('.pb_gal_left',pg[i]),'click',photoGal_scroll,false); $.EH.add($.qS('.pb_gal_right',pg[i]),'click',photoGal_scroll,false); $.EH.add(pg[i],'mouseout',photoGal_scroll,false);
+      $.EH.add(ps,'mousedown',photoGal_scroll,false); $.EH.add(ps,'mouseup',photoGal_scroll,false); $.EH.add(ps,'mousemove',photoGal_scroll,false);
+      if ($.isTOUCH()) { $.EH.add(ps,'touchstart',photoGal_scroll,false); $.EH.add(ps,'touchend',photoGal_scroll,false); $.EH.add(ps,'touchmove',photoGal_scroll,false); }
+      $.EH.add(ps,'click',photoGal_full); $.EH.add($.W,'resize', function(e){if($.qS('.pb_fgal')) {setTimeout(function(e){photoGal_full(e,1);},200)}});
+      /* a_gal[item]:
+      0 - текущий скролл в пикселях; 1 - ссылка на галерею (.pb_gal); 2 - ссылка на DIV скролл .pb_gal_scroll; 3 - резерв;
+      4 - X в пикселях при mousedown/touchstart; 5 - width of scroll DIV, 6 - height of scroll DIV; 7 - array of width of DIV(>image), 8 - array of height of DIV(>image);
+      9 - mousedown/touchstart, 10 - mousemove/touchmove; 11 и 12 - резерв; 13 - width images, 14 - height images (k - количество картинок);
+      15 - ссылка на DIV layer (слой для full-режима), 16 - ссылка на DIV .pb_fgal; 17 - индекс текущего img для full-режима, 18 - desc animation pb_gal_scroll */
+    }
+  }
+  for (i=0; i<l; i+=1) { photoGal_lr(i); }
+}
+function photoGal_scroll(e) {
+  var i,t,p,g,s=0,wg=0,ws=0,f=1,k=-1,ls,rs,n=null,a=a_gal;
+  e=e||window.event; i=photoGal_gItem(e); k=i[0]; t=i[1]; p=i[2]; g=i[3]; if (!g) return;
+  s=0-a[k][0]; /* k - индекс активной галереи; s - Величина скролла в активной галерее; */
+  ws=$.qS('.pb_gal_scroll',g).offsetWidth; wg=g.offsetWidth;
+  ls = s<=wg ? s : wg-50; rs = ((ws-wg-s)>=wg) ? wg-50 : (ws-wg-s);
+  if (e.type=='click') {
+      f=0; // $._(24)(e);
+      if (t.className=='pb_gal_left') {
+        $.aClear(a[k][18]); a[k][18]=$.animate(a[k][2],200,20,[0-s,n,n,n],[0-(s-ls),n,n,n]); a[k][0]=0-(s-ls);
+      }
+      if (t.className=='pb_gal_right') {
+        $.aClear(a[k][18]); a[k][18]=$.animate(a[k][2],200,20,[0-s,n,n,n],[0-(s+rs),n,n,n]); a[k][0]=0-(s+rs);
+      }
+  }
+  if (f) {
+    if ((e.type=='touchstart'&&e.targetTouches.length==1) || e.type=='mousedown') {
+      a[k][4]=$.gMX(); a[k][9]=1; a[k][10]=0; if (e.type=='mousedown') $._(24)(e);
+    }
+    if ((e.type=='touchend'&&e.targetTouches.length==1) || e.type=='mouseup') {
+      a[k][4]=a[k][9]=0; // $._(24)(e);
+    }
+    if ((e.type=='touchmove'&&e.targetTouches.length==1) || e.type=='mousemove') {
+      if (a[k][4]!=0) {
+        l=$.gMX()-a[k][4]; if(l!=0) {
+          a[k][4]+=l; a[k][0]+=l; if (a[k][0]>0) a[k][0]=0; if (a[k][0]<wg-ws) a[k][0]=wg-ws;
+          a[k][2].style.left=a[k][0]+'px'; a[k][10]+=l<0?(0-l):l;
+          if (e.type=='touchmove') $._(24)(e);
+        }
+      }
+    }
+    if (e.type=='mouseout' || e.type=='touchout') {
+      a[k][4]=a[k][9]=0; a[k][10]=99; // $._(24)(e);
+    }
+    photoGal_lr(k);
+  }
+}
+/* photoGal_gItem(e) => return [k, target, target.parentNode, g]; где: k - индекс активной галереи (-1 - ошибка), g - .pb_gal  */
+function photoGal_gItem(e) {
+  var i,t,p,g,gs,k=-1,a=a_gal,l=a.length;
+  e=e||window.event; t=e.target; p=t.parentNode;
+  if (t.className=='pb_gal_left' || t.className=='pb_gal_right') g=t.parentNode; /* p и g - .pg_gal */
+  if (t.className=='pb_gal_item') { g=p.parentNode; } /* t - pb_gal_item; p - .pb_gal_scroll; g - .pg_gal */
+  if (p.className=='pb_gal_item') { g=p.parentNode.parentNode; }  /* t - img; p - .pb_gal_item; g - .pg_gal */
+  if (!g) { a_galItems=[-1,0,0,0]; return a_galItems; }
+  for (i=0; i<l; i+=1) { if (g==a[i][1]) {k=i; i=l;} }
+  a_galItems=[k,t,p,g]; return a_galItems;
+}
+/* photoGal_lr() Управление видимостью элкментов прокрутки (слева и справа) для всех галерей и Full-режима */
+function photoGal_lr(n) {
+  var i,j,k, a, w=0, aa=a_gal, l=aa.length; n=n||0; if (l<1) return false;
+  k=$.qS('.pb_fgal'); if(k) {
+     $.qS('.pb_fgal_left',k).style.display = $.qS('.pb_fgal_lft',k).style.display = (v_galItem==0)?'none':'block';
+     $.qS('.pb_fgal_right',k).style.display = $.qS('.pb_fgal_rgt',k).style.display = (v_galItem==a_fgal[13].length-1)?'none':'block';
+  } else {
+    if(n<0||n>l-1)return false;
+    for (j=0; j<l; j+=1) {
+      i=(n<0)?j:n; a=aa[i]; $.qS('.pb_gal_left',a[1]).style.display=(a[0]==0)?'none':'block';
+      for(k=a[7].length-1;k>=0;k-=1)w+=a[7][k]; $.qS('.pb_gal_right',a[1]).style.display=(a[0]<(0-w+a[1].offsetWidth))?'none':'block';
+      if(i==n)j=l;
+    }
+  }
+}
+/* photoGal_full(e) переход в full-режим галереи (полнооконный/полноэкранный) */
+function photoGal_full(e,f) {
+  var i,w,h,wi,hi,t,p,g,gs,k,pi,tx='',a=a_gal; f=f||0;
+  e=e||window.event; i=f?a_galItems:photoGal_gItem(e); a_galItems=i; k=i[0]; t=i[1]; p=i[2]; g=i[3]; if (!g) return;
+  if (t.className=='pb_gal_item' || p.className=='pb_gal_item') {
+    if(a[k][9]==0 && (a[k][10]<5||a[k][10]==99)) {
+      a[k][10]=0; $.uEnv(); w=$.gCW(); h=$.gCH(); if(!f) $._(24)(e);
+      pi = (t.className=='pb_gal_item') ? t : (t.parentNode.className=='pb_gal_item' ? t.parentNode : 0); if(!pi) return;
+      p = $.qSA('.pb_gal_item',a[k][2]); l=p.length; a[k][17]=f?v_galItem:-1;
+      for (i=0; i<l; i+=1) {
+        tx+='<div class="pb_fgal_item" style="width:'+w+'px;height:'+h+'px;background-image:url(\''+$.qS('img',p[i]).src+'\')"></div>';
+        if(!f && pi==p[i]) { a[k][17]=i; }
+      } if(a[k][17]<0) return; v_galItem=a[k][17];
+      if (f) p=a[k][16]; else { a[k][15]=$.addLayer(0,'#000000',210,'hidden',1); p=$.D.createElement('div'); p.className='pb_fgal'; p.style.zIndex=210; }
+      p.innerHTML = '<div class="pb_fgal_scroll" style="width:'+(w*l)+'px;left:-'+parseInt((w*v_galItem),10)+'px;">'+tx+'</div><div class="pb_fgal_left"></div><div class="pb_fgal_right"></div><div class="pb_fgal_lft"></div><div class="pb_fgal_rgt"></div><div class="pb_fgal_close" onclick="photoGal_rest('+k+')"></div>';
+      if (!f) { $.B.appendChild(p); a[k][16]=p; } gs=$.qS('.pb_fgal_scroll');
+      a_fgal=[0-parseInt((w*v_galItem),10),g,gs,0,0,(w*l), 0,0,0, 0,0, 0,0, JSON.parse(JSON.stringify(a[k][13])), JSON.parse(JSON.stringify(a[k][14])), a[k][15], v_galItem, 0];
+      /* a_fgal - КОПИЯ a_gal[item], а не ссылка на a_gal[item] :
+      0 - текущий скролл в пикселях; 1 - ссылка на галерею (.pb_gal); 2 - ссылка на DIV скролл .pb_fgal_scroll; 3 - резерв;
+      4 - X в пикселях при mousedown/touchstart; 5 - width of scroll DIV pb_fgal_scroll, 6 7 8 - резерв;
+      9 - mousedown/touchstart, 10 - сумма смещение при mousemove/touchmove от стартового; 11 и 12 - резерв; 13 - width images, 14 - height images;
+      15 - ссылка на DIV layer (слой для full-режима), 16 - ссылка на DIV .pb_fgal; 17 - индекс текущего img для full-режима, 18 - desc animation pb_gfal_scroll */
+      $.EH.add($.qS('.pb_fgal_left'),'click',photoGal_fScroll,false); $.EH.add($.qS('.pb_fgal_right'),'click',photoGal_fScroll,false);
+      $.EH.add($.qS('.pb_fgal_lft'),'click',photoGal_fScroll,false); $.EH.add($.qS('.pb_fgal_rgt'),'click',photoGal_fScroll,false);
+      if(!f) $.EH.add($.qS('.pb_fgal'),'mouseout',photoGal_fScroll,false);
+      $.EH.add(gs,'mousedown',photoGal_fScroll,false); $.EH.add(gs,'mouseup',photoGal_fScroll,false); $.EH.add(gs,'mousemove',photoGal_fScroll,false);
+      if ($.isTOUCH()) { $.EH.add(gs,'touchstart',photoGal_fScroll,false); $.EH.add(gs,'touchend',photoGal_fScroll,false); $.EH.add(gs,'touchmove',photoGal_fScroll,false); }
+      photoGal_lr(-1);
+    }
+  }
+}
+function photoGal_rest(k) { /* 0 - возврат из full-режима, -1 - прокрутка влевао, 1 - прокрутка вправо */
+    k=k||0; if(k<0||!a_gal[k])return; $.removeLayer(a_gal[k][15]); a_gal[k][16].parentNode.removeChild(a_gal[k][16]);
+}
+function photoGal_fScroll(e) {
+  var i,s,w,ws=0,k,l,a=a_fgal; e=e||window.event; ws=$.qS('.pb_fgal_scroll'); if(!ws)return false;
+  w=$.gCW(); h=$.gCH(); ws=ws.offsetWidth; s=a[0]; l=a[13].length-1; k=e.target.className; /* s - Величина скролла в активной галерее; l - количество картинок */
+  if (e.type=='click' && (k=='pb_fgal_left' || k=='pb_fgal_right' || k=='pb_fgal_lft' || k=='pb_fgal_rgt')) {
+    if (k=='pb_fgal_left' && v_galItem>0) { v_galItem=a[17]=v_galItem-1; }
+    if (k=='pb_fgal_right' && v_galItem<l) { v_galItem=a[17]=v_galItem+1; }
+    if (k=='pb_fgal_lft' && v_galItem>0) { v_galItem=a[17]=0; }
+    if (k=='pb_fgal_rgt' && v_galItem<l) { v_galItem=a[17]=l; }
+    photoGal_fScroll_a(w,s,a);
+  }
+  if ((e.type=='touchstart'&&e.targetTouches.length==1) || e.type=='mousedown') {
+    a[4]=$.gMX(); a[10]=0; if (e.type=='mousedown') $._(24)(e);
+  }
+  if ((e.type=='touchmove'&&e.targetTouches.length==1) || e.type=='mousemove') {
+    if (a[4]!=0) {
+      k=$.gMX()-a[4]; if(k!=0) {
+        a[4]+=k; a[0]+=k; if (a[0]>0) a[0]=0; if (a[0]<w-ws) a[0]=w-ws;
+        a[2].style.left=a[0]+'px'; a[10]+=k;
+        if (e.type=='touchmove') $._(24)(e);
+      }
+    }
+  }
+  if (e.type=='touchend' || e.type=='mouseup' || e.type=='mouseout' || e.type=='touchout') {
+    a[4]=0; if(a[10]<-99)v_galItem+=1; if(a[10]>99)v_galItem-=1; if(v_galItem<0)v_galItem=0; if(v_galItem>l)v_galItem=l; a[17]=v_galItem; a[10]=0;
+    photoGal_fScroll_a(w,s,a);
+  }
+  photoGal_lr(-1);
+}
+function photoGal_fScroll_a(w,s,a) {
+    var n=null; a[0]=0-parseInt((w*v_galItem),10); if(s!=a[0]) { $.aClear(a[18]); a[18]=$.animate(a[2],200,20,[s,n,n,n],[a[0],n,n,n]); }
+}
+function f_mapfs() {
+  var p=$.id('mapfs'),l=0; if(!p) return false;
+  l=parseInt($.gStyle(p,'left'),10); p.style.left = (l==10) ? '330px' : '10px';
+  p.innerHTML = (l==10) ? '◄' : '►';
+  p.title = (l==10) ? 'Свернуть' : 'Развернуть';
+  $.id('aside1').style.width = (l==10) ? '300px' : '0px';
+  $.id('aside1').style.padding = (l==10) ? '10px' : '0px';
+/*  $.id('divIdMain').style.left = (l==10) ? '320px' : '0px'; */
+}

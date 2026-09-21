@@ -1,0 +1,86 @@
+<?php fmtr_h1($i_pkr,'концентрат'); ?>
+<div class="px15"></div>
+<?php fmtr_micro($i_pkr); ?>
+
+<div class="cblock">
+
+<div class="matflex">
+<div class="matf1">
+  <?php fmtr_price($i_pkr); ?>
+  <div class="matf13">
+     <?php fmtr_guar($i_pkr); ?>
+  </div>
+  <div class="matf14">
+     <?php fmtr_packing($i_pkr); ?>
+  </div>
+  <div class="matf15">
+    <?php fmtr_ord($i_pkr); ?>
+  </div>
+
+</div>
+
+<div class="matf3">
+<img src="/img/product/p223.webp" alt="">
+</div>
+<div class="matf4">
+</div>
+</div>
+</div>
+<div class="px20"></div>
+
+<div class="dzmt1"></div>
+<div class="ot_head_block">
+<div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="ot_hb_item" id="foth123_p">Свойства</div><div class="ot_hb_item" id="foth123_s">Сертификация</div>
+<div class="px0"></div>
+</div>
+<div class="px0"></div>
+<div class="ot_block">
+<div class="ot_item active" id="fot123_o">
+<?php fmtr_descr($i_pkr); ?>
+<p class="fwb">Элакор-МБ2 – Акриловая краска - водно дисперсионная, однокомпонентная, атмосферостойкая, УФ-стойкая.</p>
+<p>Цвета: белый, серый, черный; другие – по согласованию.</p>
+<p class="fwb">Для покрытий, эксплуатируемых в помещениях и на открытом воздухе.</p>
+<p class="fwb">Назначение.</p>
+<ul>
+ <li>Устройство защитно-декоративных акриловых покрытий стен, потолков, конструкций, изделий и т.п.</li>
+ <li>Устройство покрытий полов в помещениях для эксплуатации при слабых механических воздействиях (СП 29.13330.2011).</li>
+</ul>
+<p class="fwb">Ограничения.</p>
+<p>Покрытия на основе акриловой краски Элакор-МБ2 имеют ограниченную водостойкость, НЕ предназначены для эксплуатации:<br>
+- на горизонтальных поверхностях (полы, кровли) на открытом воздухе;<br>
+- на полах в помещениях, где присутствует воздействие воды более 2 часов в сутки.</p>
+</div>
+
+<div class="ot_item" id="fot123_t">
+<p class="fwb">Технология нанесения Акрилового покрытия на бетонные и пескобетонные поверхности –</p>
+<p>Акриловая краска наносится на очищенные поверхности, грунтованные составом Элакор-МБ2 Акриловый лак.<br>
+Допускается грунтовать поверхность непосредственно акриловой краской, для грунтования добавить в краску воды 30-50% в зависимости от впитывающей способности поверхности.</p>
+
+<p><span>Способ нанесения:</span> кисть, валик, безвоздушное или воздушное распыление.<br>
+Перед применением в краску добавить 10-30% воды, тщательно перемешать миксером.<br>
+Количество воды зависит от способа нанесения.</p>
+</div>
+
+<div class="ot_item" id="fot123_p">
+
+</div>
+
+<!--noindex-->
+<div class="ot_item" id="fot123_s">
+<?php fmtr_srt($a_srt_mb2); ?>
+</div>
+<!--/noindex-->
+</div>
+
+<div class="px10b"></div>
+
+<?php fcvr_mat($i_pkr); ?>
+
+<div class="px20"></div>
+<div class="svg_to_block">
+<div class="dh2">Применяется на объектах</div>
+<div class="px20"></div>
+<?php f_SvgObj(array(8,6,9,5,7,4,3,2,1)); ?>
+<div class="px0"></div>
+</div>
+<div class="px20"></div>

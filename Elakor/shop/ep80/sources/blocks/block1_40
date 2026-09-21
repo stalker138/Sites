@@ -1,0 +1,11 @@
+<h1 class="h11s">Прочие материалы Элакор</h1>
+<div class="px5"></div>
+<div class="cblock">
+<div class="px0"></div>
+</div>
+<div class="px10b"></div>
+<?php
+//fmtr_set([79,11,83,40,13,45,17,22,135,18,23,139,143,145,53]);
+$arr_set=array_merge($a_catmat[13], $a_catmat[14], $a_catmat[15], $a_catmat[16], $a_catmat[17], $a_catmat[18], $a_catmat[19]);
+fmtr_set($arr_set);
+?>

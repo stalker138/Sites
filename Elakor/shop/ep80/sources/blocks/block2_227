@@ -1,0 +1,151 @@
+<?php fmtr_h1($i_pkr); ?>
+<div class="px15"></div>
+<?php fmtr_micro($i_pkr); ?>
+
+<div class="cblock">
+
+<div class="matflex">
+<div class="matf1">
+  <?php fmtr_price($i_pkr); ?>
+  <div class="matf13">
+     <?php fmtr_guar($i_pkr); ?>
+  </div>
+  <div class="matf14">
+     <?php fmtr_packing($i_pkr); ?>
+  </div>
+  <div class="matf15">
+    <?php fmtr_ord($i_pkr); ?>
+  </div>
+
+</div>
+
+<div class="matf3">
+<img src="/img/product/p227.webp" alt="">
+</div>
+<div class="matf4">
+</div>
+</div>
+</div>
+<div class="px20"></div>
+
+<div class="dzmt1"></div>
+<div class="ot_head_block">
+<div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="ot_hb_item" id="foth123_p">Свойства</div><div class="ot_hb_item" id="foth123_s">Сертификация</div>
+<div class="px0"></div>
+</div>
+<div class="px0"></div>
+<div class="ot_block">
+<div class="ot_item active" id="fot123_o">
+<?php fmtr_descr($i_pkr); ?>
+
+<p><span>Элакор-МБ1 поставляется в виде Концентрата</span>, разводится: 3 части воды на 1 часть Концентрата (по объёму).</p>
+
+<p><span>Принцип действия:</span> связывание "свободного" кальция (растворимых солей кальция) фторосиликатами.</p>
+
+<p><span>Очень Важно!<br>Элакор-МБ1</span> <strong>Флюат</strong> по Пожарному Сертификату имеет Группу Горючести «НГ» (негорючие материалы).</p>
+<p class="fwb">Назначение:</p>
+<ul>
+<li>повышение прочности, обеспыливание и увеличение химической стойкости поверхностного слоя изделий, изготовленных на основе портландцементов (бетон, стяжки, штукатурка и т.п), а также изделий из кальций-содержащих минералов (известняк / бут, мрамор, доломит и т.п.);</li>
+<li>предотвращение высолов на кирпичной кладке, бетоне, бетонной плитке и других кальцийсодержащих материалах.</li>
+</ul>
+<p class="fwb">Области применения:</p>
+<ul>
+<li>устройство экономичных бетонных полов складов, хранилищ, производственных цехов, гаражей и т.п. в том числе на предприятиях пищевой промышленности.</li>
+<li>открытые бетонные площадки, стоянки, аэродромы, взлетные полосы.</li>
+<li>защита от атмосферных воздействий и газовой агрессии бетонных поверхностей, натурального камня, кирпичной кладки.</li>
+</ul>
+<p><span>Для эксплуатации</span> внутри помещений и на открытом воздухе.</p>
+<p class="fwb">Флюаты - основные свойства.</p>
+<ul>
+<li>Может применяться как для новых, так и для старых бетонных поверхностей.</li>
+<li>Повышает марочную прочность бетона на 30-50%.</li>
+<li>Повышает износостойкость бетонной поверхности в 2-3 раза.</li>
+<li>Защищает поверхность от воздействия влаги, масел, химических веществ.</li>
+<li>Наносится 1 раз за весь срок службы, не вымывается из обработанной поверхности.</li>
+<li>Поверхность остается паропроницаемой.</li>
+<li>Увеличивает морозостойкость поверхности.</li>
+<li>Не содержит органических растворителей.</li>
+<li>Не оказывает коррозионного воздействия на арматуру.</li>
+<li>Не меняет электропроводность материалов, на которые наносится.</li>
+<li>Не образует на поверхности пленки, подверженной истиранию.</li>
+</ul>
+
+</div>
+
+<div class="ot_item" id="fot123_t">
+<p class="fwb fs13 c2">Указания к применению.</p>
+<p>Флюатирование может производиться при температуре от 0 до +25°С.</p>
+<p>Поверхность очистить от старой краски, жировых пятен и грязи. Рыхлые участки поверхности удалить металлическими щетками.</p>
+<p><span>Основная задача:</span> открыть поры бетона и обеспечить максимальное впитывание Флюатирующего состава.</p>
+<p><span>Элакор-МБ1 Флюат</span> поставляется в виде Концентрата.<br>Перед применением на 1л концентрата добавить 3л воды (по объёму).</p>
+<p class="mt0 fwb">Расход состава на 1м<sup>2</sup>, Готовый состав (Концентрат).</p>
+<table class="tsrt"><tbody>
+<tr class="bg3"><th>Поверхность</th><th>Готовый состав, л</th><th>Концентрат, л</th><th>Примечания</th></tr>
+<tr><td class="tdl">Бетон М350 и более</td><td>0,6</td><td>0,15</td><td>&nbsp;</td></tr>
+<tr><td class="tdl">Бетон М250..М350</td><td>0,8</td><td>0,2</td><td>&nbsp;</td></tr>
+<tr><td class="tdl">Бетон менее М250</td><td>1,0</td><td>0,25</td><td>&nbsp;</td></tr>
+<tr><td class="tdl">Известняк (бут)</td><td>0,6...1,0</td><td>0,15-0,25</td><td>Зависит от пористости</td></tr>
+<tr><td class="tdl">Мрамор, доломит</td><td>0,2</td><td>0,05</td><td>&nbsp;</td></tr>
+<tr><td class="tdl">Кирпичная кладка</td><td>0,6...1,0</td><td>0,15-0,25</td><td>Зависит от пористости</td></tr>
+</tbody></table>
+<p>В зависимости от задач рекомендуется применять совместно с составами:</p>
+<ul>
+<li>Элакор-МБ2 (герметизирующий);</li>
+<li>Элакор-МБ4 (гидрофобизирующий).</li>
+</ul>
+
+</div>
+
+<div class="ot_item" id="fot123_p">
+<p class="fwb fs13 c2">Технические характеристики флюатирующего состава Элакор-МБ1.</p>
+<div class="px10"></div>
+<table class="tsrt"><tbody>
+<tr class="bg3"><th>Наименование показателя</th><th style="width:100px;">Значение</th>
+</tr><tr>
+ <td class="tdl">Внешний вид</td><td>Бесцветная жидкость</td>
+</tr><tr>
+ <td class="tdl">Массовая доля нелетучих веществ, %, не менее</td>
+ <td>33</td>
+</tr><tr>
+ <td class="tdl">Плотность, кг/л</td>
+ <td>1,3</td>
+</tr>
+</tbody></table>
+<p>Флюаты не меняют свойств при замораживании / размораживании.<br>
+Негорюч. Пожаро-, взрывобезопасен. Не требует специального разрешения при транспортировке.</p>
+
+</div>
+
+<!--noindex-->
+<div class="ot_item" id="fot123_s">
+<?php fmtr_srt($a_srt_mb1); ?>
+
+</div>
+<!--/noindex-->
+</div>
+<!--div class="px10b"></div>
+
+<div class="pb_gal"><div class="pb_gal_scroll">
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p0.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p1.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p2.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p3.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p4.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p5.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p6.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p7.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p8.jpg" alt=""/></div>
+</div>
+<div class="pb_gal_left"></div><div class="pb_gal_right"></div><div class="pb_gal_lft"></div><div class="pb_gal_rgt"></div>
+</div-->
+
+<?php fcvr_mat($i_pkr); ?>
+
+<div class="px20"></div>
+<div class="svg_to_block">
+<div class="dh2">Применяется на объектах</div>
+<div class="px20"></div>
+<?php f_SvgObj(array(8,6,9,5,7,4,3,2,1)); ?>
+<div class="px0"></div>
+</div>
+<div class="px20"></div>

@@ -1,0 +1,13 @@
+<div id="calc_iitem_comb_np37" class="calc_iitem">
+  <div class="px0"></div><p>Толщина покрытия, мм.</p><div class="px5"></div>
+  <div class="pb_combobox" style="width:140px">
+    <input type="text" value="1,0 - 1,5" maxlength="30" placeholder="1,0 - 1,5" style="width:90px" readonly />
+    <div class="pb_cb_image"></div>
+    <div class="pb_cb_select" style="width:148px">
+      <div class="pb_cb_option">1,0 - 1,5</div>
+      <div class="pb_cb_option">2,0 - 2,5</div>
+      <div class="pb_cb_option">3,0 - 3,5</div>
+      <div class="pb_cb_option">4,0 - 4,5</div>
+   </div>
+  </div><div class="px0"></div>
+</div>

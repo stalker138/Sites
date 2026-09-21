@@ -1,0 +1,11 @@
+<div class="lmenu" id="lm_tobj">
+<div class="lmhead">Тип объекта</div>
+<div class="px10"></div>
+<l1 id="3" class="lmlink">Производства и склады</l1>
+<l1 id="4" class="lmlink">Паркинги и автосервисы</l1>
+<l1 id="5" class="lmlink">Гражданское строительство</l1>
+<l1 id="6" class="lmlink">Медицина</l1>
+<l1 id="7" class="lmlink">Пищевая промышленность</l1>
+<l1 id="8" class="lmlink">Сельское хозяйство</l1>
+<div class="px20"></div>
+</div>

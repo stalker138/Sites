@@ -1,0 +1,71 @@
+{*tpl1*}{*tpl2*}{*tpl23*}
+{*tpl3*}{*tpl0*}{*tpl4*}{*tpl5*}
+#clc,#clz,#dordEdit,#dordEdit2 { cursor:pointer; position:relative; display:block; padding:5px; width:170px; height:20px; font-size:15px; font-weight:bold; letter-spacing:1px; text-align:center; box-shadow:4px 4px 7px 0 #999999; border-radius:5px; /*transition:background .5s ease;*/ }
+#dordEdit,#dordEdit2 { margin:0 auto; color:#ffffff; width:250px; border:solid 1px #808080; background:#f5530e; } #dordEdit:hover,#dordEdit2:hover  { color:#800000; background:#ffcc6c; text-shadow:2px 2px 2px #ffffff; }
+.tmtrt tr { background:#f0f0f0; }
+#idSumMatUp,#idSumMatDown { width:170px; } .tmtr { margin:5px 0 0 0; } .tmtr tr { height:22px; } .tmtr td { height:auto; line-height:17px; border:solid 1px #c8c8c8; } .tmtr .tar { padding-right:3px; }
+.tbl1 td { padding:1px 5px 2px 0; text-align:right; font-weight:bold; font-size:13px; border-collapse:collapse; border:solid 1px #000000; background:#ffff00; box-shadow:#999999 4px 4px 7px 0px; }
+.trt_none { display:none; } .trt_tr { display:table-row; } #clz,#clc,#idOrdert,#dordEdit,#dordEdit2 { /*display:none;*/ }
+.f_r { margin:3px 0 2px 2px; } 
+.ordDtd { cursor:pointer; } .ordDtd:hover { background:#f5530e; }
+.ordD { width:19px; height:19px; background-position:-106px -76px; }
+.ordD { background-image: url('data:image/png;base64,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');}
+{*tpl6*}
+{*tpl7*}{*tpl8*}
+{*tpl9*}{*tpl10*}{*tpl11*}
+{*tpl12*}{*tpl13*}
+{*tpl14*}{*tpl15*}{*tpl16*}
+
+<h1 class="h11s">Корзина заказов</h1>
+<div class="px15"></div>
+<?php $dcb='<div style="position:relative;height:32px;"><div class="fright"><div class="butr fright fs13" style="margin-left:10px;" onclick="f_cbmr(3)">Оформить заказ</div></div><div class="fright"><div class="butb fright fs13" onclick="f_cbmr(4)">Заказать выполнение работ</div></div></div>'; ?>
+<div style="max-width:auto"><?php print $dcb; ?></div>
+<div class="px15"></div>
+<div style="width:100%;min-width:400px">
+<div id="dordEdit" onclick="f_ordEdit()">Редактировать заказ</div>
+<div class="px0"></div>
+<?php function ford222($i) {
+global $a_mtrt;
+$a=$a_mtrt[$i]; $cnt=0; $t='';
+if ($a!=false) {
+    $tara=explode('/',$a[17]); $cnt=count($tara); if($cnt>0) {
+    $tara[0]=explode(',',$tara[0]); $tara[1]=explode(',',$tara[1]); $tara[2]=explode(',',$tara[2]); $tara[3]=explode(',',$tara[3]);
+    $tar='['.$tara[0][0].','.$tara[0][1].','.$tara[1][0].','.$tara[1][1].','.$tara[2][0].','.$tara[2][1].','.$tara[3][0].','.$tara[3][1].',0,0,0,0]';
+    if ($tar=='[,,,,,,,,0,0,0,0]' || $tar=='[0,,,,,,,,0,0,0,0]') $tar='none';
+    $t.='<tr id="trt'.$i.'" class="trt_none" style="height:35px;color:#808080;background:#fafafa"><td colspan="4" class="tmdl" style="padding:5px;font-weight:bold;color:#004f92;">'.$a[0].' '.$a[1].(($a[2]==' ')?'':(' <span>'.$a[2].'</span>')).' <div id="ordD'.$i.'" style="float:right;" onclick="f_ordDel('.$i.')"></td></tr>';
+     for($ii=0; $ii<$cnt; $ii++) {
+      $t.='<tr id="trt'.$i.'_'.$ii.'" class="trt_none" style="height:35px;color:#808080">';
+      $t.='<td id="ordF'.$i.'_'.$ii.'" class="tac"><span style="font:bold 13px arial">0</span> по '.$tara[$ii][0].(($i==105||$i==227)?'л':'кг').'</td>';
+      $t.='<td id="ordK'.$i.'_'.$ii.'" style="padding-right:3px;text-align:right;white-space:nowrap"><div class="f_l">-</div><input type="text" style="width:55px; height:15px; text-align:right;" maxlength="5" value="нет"/><div class="f_r">+</div></td>';
+      $t.='<td id="ordC'.$i.'_'.$ii.'" style="padding-right:3px;text-align:right;"></td><td id="ordS'.$i.'_'.$ii.'" style="padding-right:5px;text-align:right;"></td></tr>';
+     }if ($cnt>1) { $t.='<tr id="trt'.$i.'_I" class="trt_none" style="height:35px"><td>Итого</td><td id="ordKI'.$i.'" style="padding-right:3px;text-align:right;">0</td><td colspan="2" id="ordCS'.$i.'" style="padding-right:3px;text-align:right;">0</td></tr>'; }
+     if ($tar=='none') { } else print $t.'<tr id="trt'.$i.'_ld" class="trt_none" style="height:10px;background:#ffffff"><td colspan="6" class="sepl" style="height:10px"></td></tr>';
+    }
+ }
+}?>
+<div class="px0"></div>
+<div id="id_div_clear"></div>
+<div class="px10"></div>
+<div id="idOrdert" style="min-width:400px">
+<p class="nds mt0 fright" style="margin:5px 0 10px 0;font-size:13px">Цены с НДС, руб</p><div class="px0"></div>
+<table class="tmtrt"><tbody><?php print $tht; for ($j=11; $j<=351; $j++) { ford222($j); } ?>
+<tr style="background:#ffff00;"><td style="padding-left:3px;font-weight:bold;">ИТОГО:</td><td id="idSumKgTara" style="padding-right:3px;font-weight:bold;text-align:right">0</td><td colspan="2" id="idSumMatTara" style="padding-right:3px;font-weight:bold;text-align:right;">0</td></tr>
+<tr style="background:#ffff00;"><td colspan="4" style="padding-left:3px;font-weight:bold;">Наименований: <span id="idSumNmTara" style="padding-right:3px;font-weight:bold;font-size:13px">0</span></td></tr>
+</tbody></table>
+<div class="px0b"></div>
+<div class="px40"></div>
+</div>
+</div>
+<div id="dordEdit2" onclick="f_ordEdit()">Редактировать заказ</div>
+<div class="px0"></div>
+<div class="px10n"></div>
+<div class="px10n"></div>
+<div style="max-width:auto"><div id="idDclrAll"></div><div class="px20"></div><?php print $dcb; ?></div>
+<div class="px20b"></div>
+
+<div class="px20"></div>
+
+{*tpl17*}{*tpl18*}{*tpl19*}{*tpl20*}
+{*tpl21*}{*tpl22*}
+{*tpl24*}
+{*tpl25*}

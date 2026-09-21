@@ -1,0 +1,37 @@
+<h1 class="h11s">Рассеивающее покрытие Полиуретановое</h1>
+<div class="px20"></div>
+<div class="cblock">
+<div class="pb_gal"><div class="pb_gal_scroll">
+<div class="pb_gal_item"><img src="/img/pokrytija/antistat-pol-epoxid-provod/p01.webp" alt=""/></div>
+</div>
+<div class="pb_gal_left"></div><div class="pb_gal_right"></div>
+</div>
+</div>
+<div class="px20"></div>
+
+<?php fcvr_cin(); ?>
+<div class="px10"></div>
+<?php fcvr_cout(); ?>
+<div class="px20"></div>
+<div class="px10n"></div>
+
+<div class="ot_head_block">
+<div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="px0"></div>
+</div>
+<div class="px0"></div>
+<div class="ot_block">
+<div class="ot_item active" id="fot123_o">
+<?php fmtr_tech($i_pkr,1); ?>
+<div class="px0"></div>
+</div>
+<div class="ot_item" id="fot123_t">
+<?php fmtr_tech($i_pkr); ?>
+</div>
+</div>
+<div class="px5b"></div><div class="px20"></div>
+
+<div class="dh2">Используемые материалы</div>
+<?php
+$amtr=fmtr_get($i_pkr);
+fmtr_set($amtr);
+?>

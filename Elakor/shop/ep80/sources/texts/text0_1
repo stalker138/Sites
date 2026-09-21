@@ -1,0 +1,56 @@
+<footer id="dfooter">
+<?php if ($pb_page!=$ampages[1] && $pb_page!=$ampages[2]) { ?><div id="fteohim"><img src="/img/svg/svg_teohim.svg" alt=""></div><?php } ?>
+
+<div class="dfooter df1">
+<div class="dfcontent dfc11">
+<p>Телефон в Москве:</p>
+<div class="dfh1"><a href="tel:+74951180659">+7 495 118 06 59</a></div>
+</div>
+<!--div class="dfcontent dfc12">
+<p>Звонок из России бесплатный:</p>
+<div class="dfh1"><a href="tel:88001005010">8 800 100 50 10</a></div>
+</div-->
+<div class="dfcontent dfc13">
+<p>Адрес:</p>
+<p class="c27">ООО «Тэохим», 107023, г.Москва,<br>ул. Суворовская д.10, оф.15</p>
+</div>
+<div class="dfcontent dfc14">
+<div><div class="px30"></div><div class="mbutr" onclick="f_callback(2)">Заказать звонок</div><div class="px10"></div></div>
+</div>
+</div>
+
+<div class="dfooter df2">
+<div class="dfcontent dfc21">
+<p><a>Промышленные полы</a></p>
+<p><a>Наливные полы</a></p>
+<p><a>Полимерные полы</a></p>
+<p><l1 id="13">Антистатические полы</l1></p>
+<p><a>Бетонные полы</a></p>
+<p><a>Полимерцементные полы</a></p>
+<p><a>Добавки для бетона</a></p><!--p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p-->
+</div>
+
+<div class="dfcontent dfc22">
+<p><a>Готовые решения</a></p>
+<p><a>Типы объектов</a></p>
+<p><a>О компании</a></p>
+<p><l4 id="3">Контакты</l4></p>
+<p><a>Оплата</a></p>
+<p><a>Доставка</a></p><!--p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p-->
+</div>
+
+<div class="dfcontent dfc23">
+<p><l1 id="2">Калькулятор</l1></p>
+<p><l0 id="20">Заказ</l0></p>
+<p><l4 id="1">Сертификаты</l4></p>
+<p><l4 id="4">Отзывы</l4></p>
+<p><l4 id="5">Инструкции</l4></p>
+<p><l4 id="2">Цены</l4></p>
+<p><l2 id="1">Карта объектов</l2></p>
+</div>
+
+<div class="dfcontent dfc24"><p>© ООО «ТэоХим» 2003-2025</p></div>
+<div class="dfcontent dfc26"><p><l0 id="51">Политика конфиденциальности</l0></p></div>
+</div>
+
+</footer>

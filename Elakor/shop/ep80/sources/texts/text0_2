@@ -1,0 +1,42 @@
+<header id="<?php print ($pb_page==$ampages[1] || $pb_page==$ampages[2])?'dmheader':'dheader'; ?>">
+<div id="hopen">
+<svg xmlns="http://www.w3.org/2000/svg" id="svg_openmenu" viewBox="0 0 51 51">
+<g transform="translate(-49 -32)">
+  <circle cx="25.5" cy="25.5" r="25.5" transform="translate(49 32)"/>
+<g transform="translate(-27 -37)">
+  <rect width="22" height="3" rx="1.5" transform="translate(91 86)" fill="#272727"/>
+  <rect width="22" height="3" rx="1.5" transform="translate(91 93)" fill="#272727"/>
+  <rect width="22" height="3" rx="1.5" transform="translate(91 100)" fill="#272727"/>
+</g></g>
+</svg>
+</div>
+<div id="hclose">
+<svg xmlns="http://www.w3.org/2000/svg" id="svg_closemenu" viewBox="0 0 51 51">
+<g transform="translate(-49 -32)">
+  <circle cx="25.5" cy="25.5" r="25.5" transform="translate(49 32)"/>
+<g transform="translate(-27 -30)">
+  <rect width="22" height="3" rx="1.5" transform="translate(95.282 78.661) rotate(45)" fill="#272727"/>
+  <rect width="22" height="3" rx="1.5" transform="translate(110.839 80.782) rotate(135)" fill="#272727"/>
+</g></g>
+</svg>
+</div>
+<a id="hemail" href="mailto:z@teohim.ru">
+<svg xmlns="http://www.w3.org/2000/svg" id="svg_email" viewBox="0 0 51 51">
+<g transform="translate(-1820 -32)">
+<circle cx="25.5" cy="25.5" r="25.5" transform="translate(1820 32)"/>
+<g transform="translate(1833.234 44)">
+  <path d="M4.877,6H19.89a1.882,1.882,0,0,1,1.877,1.877v11.26a1.882,1.882,0,0,1-1.877,1.877H4.877A1.882,1.882,0,0,1,3,19.136V7.877A1.882,1.882,0,0,1,4.877,6Z" fill="none" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+  <path d="M21.766,9l-9.383,6.568L3,9" transform="translate(0 -1.123)" fill="none" stroke="#272727" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+</g></g>
+</svg></a>
+<div id="hbasket" onclick="f_goUrlBasket()"><div id="hb_amount"></div>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg_basket" viewBox="0 0 25.377 24.36">
+  <path d="M14.034,31.017A1.017,1.017,0,1,1,13.017,30,1.017,1.017,0,0,1,14.034,31.017Z" transform="translate(-3.38 -9.174)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M30.534,31.017A1.017,1.017,0,1,1,29.517,30,1.017,1.017,0,0,1,30.534,31.017Z" transform="translate(-8.692 -9.174)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M1.5,1.5H5.569L8.294,15.119a2.034,2.034,0,0,0,2.034,1.638h9.887a2.034,2.034,0,0,0,2.034-1.638l1.627-8.534H6.586" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>
+</div>
+<a id="htel" href="tel:+74951180659">+7 495 118 06 59</a>
+<div id="<?php print array_search($pb_page, $ampages)?'hmteohim':'hteohim'; ?>"><img src="/img/svg/svg_teohim.svg" alt=""></div>
+<a href="/" id="<?php print array_search($pb_page, $ampages)?'hmelakor':'helakor'; ?>"><img src="/img/svg/elakor_2024.svg" alt=""></a>
+</header>

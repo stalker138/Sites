@@ -1,0 +1,100 @@
+<h1 class="h11s">КОНТАКТЫ</h1>
+<div class="dcnt01">
+<div class="dcnt11">
+<p class="dcnt01p1">Купить МАТЕРИАЛЫ:</p><div class="px0"></div><p class="dcnt01p2"><p class="dcnt01p2"><a href="tel:+74951180659">+7 495 118 06 59</a></p>
+</div>
+<div class="dcnt12">
+<p class="dcnt01p1">Заказать РАБОТЫ:</p><div class="px0"></div><p class="dcnt01p2"><p class="dcnt01p2"><a href="tel:+74955184378">+7-495-518-43-78</a></p>
+</div>
+<div class="dcnt13">
+<p class="dcnt01p1">КОНСУЛЬТАЦИЯ:</p><div class="px0"></div><p class="dcnt01p2"><p class="dcnt01p2"><a href="tel:+79067695507">+7 (906) 769-55-07</a></p>
+</div>
+</div>
+<div class="px0"></div>
+
+<div class="dcnt02">
+<div class="px20"></div>
+<div class="blk_oc" style="height:auto;">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>Офис г.Москва</span></div></div>
+<div class="px10"></div>
+<p class="fs14 c55"><span>Из Москвы:</span> <a href="tel:+74952212252">(495) 221-22-52</a> (многоканальный), <a href="tel:+74951180659" style=" white-space:nowrap">+7 495 118 06 59</a><br>
+<span>Из России:</span> <a class="consult" href="tel:88001005010">8-800-100-50-10</a> (звонок бесплатный)<br>
+с 9-00 до 18-00 , кроме Сб и Вс.</p>
+
+<p class="fleft fs14 c55"><span>ООО «ТэоХим - ПРОМ»:</span><br>
+ОГРН: 1177746300621, ИНН: 9718055161,<br>
+107023 г.Москва, ул. Суворовская д.10 офис 15. (вход с ул. Девятая Рота).</p>
+<p class="fright fs14 c55">&nbsp;<br><span>Адрес для навигатора:</span> ул. Девятая Рота д.14</p>
+<div class="px10"></div>
+
+<div><div class="px10"></div><a class="mbutr ml10" style="color:#ffffff" href="https://yandex.ru/maps/-/CGstNWYa" target="_blank">Как добраться</a><div class="px10"></div></div>
+
+<div class="px10"></div>
+<div style="position:relative;">
+<div id="ymaps-map-id_134184383131817963691" style="height:400px;"></div>
+<script type="text/javascript">function fid_134184383131817963691(ymaps) {var map = new ymaps.Map("ymaps-map-id_134184383131817963691", {center: [37.7118, 55.7924], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([37.71213198413023, 55.79109171554929], {balloonContent: "Тэохим"}, {preset: "twirl#darkblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134184383131817963691"></script>
+</div>
+<div class="px0"></div>
+</div>
+
+<div class="px20"></div>
+<div class="blk_oc" style="height:60px;">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>Склад № 1</span></div></div>
+<div class="px10"></div>
+<p class="fleft"><span>Адрес: </span>142470, Московская область, гор. округ Электросталь, пос. Новые дома, строение 10.</p>
+<div class="px0"></div>
+
+<div class="fleft">
+<p><span>Телефон 1:</span> <a class="consult" href="tel:+79162250224">8-916-225-02-24</a> - <span>Контактное лицо:</span> Кондратьев Олег</p>
+<p><span>Телефон 2:</span> <a class="consult" href="tel:+79167784933">8-916-778-49-33</a> - <span>Контактное лицо:</span> Юрий Пинясов</p>
+</div>
+<p class="fright">&nbsp;<br><span>Время работы:</span> будни с 9<sup>00</sup> до 17<sup>00</sup></p>
+
+<div class="px10"></div>
+
+<div><div class="px10"></div><a class="mbutr ml10" style="color:#ffffff" href="https://yandex.ru/maps/-/CGwEIA06" target="_blank">Как добраться</a><div class="px10"></div></div>
+<div class="px10"></div>
+<div style="position:relative;">
+<div id="ymaps-map-id_1" style="height:400px;"></div>
+<script type="text/javascript">function fid_1(ymaps) {var map = new ymaps.Map("ymaps-map-id_1", {center: [55.713132, 38.464934], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([55.713132, 38.464934], {balloonContent: "Склад №1 ООО «ТэоХим»"}, {preset: "twirl#darkblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_1"></script>
+</div>
+<div class="px10"></div>
+</div>
+
+<div class="px20"></div>
+<div class="blk_oc" style="height:60px;">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>Склад № 2</span></div></div>
+<div class="px10"></div>
+<p class="fleft"><span>Адрес:</span> Москва, Черницынский пр. д.3 (м. Щёлковская), (территория Моск. Абразивного завода)<br>
+<span>Для проезда на склад нужно заказать пропуск, звоните на склад!!!</span></p>
+<div class="px0"></div>
+
+<p><span>Телефон:</span> <a class="consult" href="tel:+79167163578">8-916-716-35-78</a></p>
+<p class="fleft"><span>Контактное лицо:</span>  Евграфов Олег</p>
+<p class="fright"><span>Время работы:</span> будни с 9<sup>00</sup> до 17<sup>00</sup></p>
+<div class="px10"></div>
+<?php //<div class="px0"></div><p>Для ускорения процессов: подготовки заказа, изготовления материалов (если их нет в наличии), перемещения на другой склад (если есть необходимость), присылайте платёжное поручение сразу после осуществления оплаты.</p> ?>
+<div><div class="px10"></div><a class="mbutr ml10" style="color:#ffffff" href="https://yandex.ru/maps/-/CGstFOmo" target="_blank">Как добраться</a><div class="px10"></div></div>
+<div class="px10"></div>
+<div style="position:relative;">
+<div id="ymaps-map-id_134184383131817963691_2" style="height:400px;"></div>
+<script type="text/javascript">function fid_134184383131817963691_2(ymaps) {var map = new ymaps.Map("ymaps-map-id_134184383131817963691_2", {center: [55.819499, 37.792376], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([55.819499, 37.792376], {balloonContent: "Склад №2 ООО «ТэоХим»"}, {preset: "twirl#darkblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134184383131817963691_2"></script>
+</div>
+<div class="px10"></div>
+</div>
+</div>
+<div class="px40"></div>
+
+<div class="dcnt01">
+<div class="dcnt20">Бесплатный звонок по всей России:<br><a class="fs20 fwn" href="tel:88001005010">8-800-100-50-10</a></div>
+<div class="dcnt20">E-mail:<br><a class="fs20 fwn" href="mailto:teohim@teohim.ru">teohim@teohim.ru</a></div>
+</div>
+<div class="px20"></div>
+<div class="dcnt02">
+<p class="tac fs20">Внимание!</p>
+<p class="tac fs14 c77">Перед выездом на склад уточните у Вашего менеджера, на каком складе находится Ваш заказ!<br>Для качественного выполнения работ обращайтесь к нашим представителям в Вашем регионе</p>
+</div>
+<div class="px40"></div>

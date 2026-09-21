@@ -1,0 +1,252 @@
+<div class="px50"></div><div class="px5"></div>
+<div class="ml10">Показано объектов: <span id="totObj"></span></div>
+<div class="px15"></div>
+<div class="butr fleft" id="id_bset2" onclick="f_refresh()">Применить</div>
+<div class="butb fright" onclick="f_fltClear()">Сбросить</div>
+<div class="px5"></div>
+<div id="d_phs" style="margin-left:5px" class="pb_checked_false"><div class="pb_ch0"></div><span class="pb_chs0">Показывать только с ФОТО</div>
+<div class="px10b"></div><div class="px0b"></div><div class="px5"></div>
+<div class="hside" id="hsider" onclick="f_clickItems('r')">Регионы <div class="dhclose"></div></div>
+<div class="px5"></div>
+<div class="side_items" id="hsideir">
+  <div class="pb_checked_false" id="pr077"><div class="pb_ch0"></div><span class="pb_chs0">Москва</span> (и область)</div>
+  <div class="pb_checked_false" id="pr078"><div class="pb_ch0"></div><span class="pb_chs0">Санкт-Петербург</span> (и область)</div>
+  <div class="pb_checked_false" id="pr019"><div class="pb_ch0"></div><span class="pb_chs0">Абакан</span> (респ. Хакасия)</div>
+  <div class="pb_checked_false" id="pr087"><div class="pb_ch0"></div><span class="pb_chs0">Анадырь</span> (Чукотский АО)</div>
+  <div class="pb_checked_false" id="pr029"><div class="pb_ch0"></div><span class="pb_chs0">Архангельск</span></div>
+  <div class="pb_checked_false" id="pr030"><div class="pb_ch0"></div><span class="pb_chs0">Астрахань</span></div>
+  <div class="pb_checked_false" id="pr022"><div class="pb_ch0"></div><span class="pb_chs0">Барнаул</span> (Алтайский край)</div>
+  <div class="pb_checked_false" id="pr031"><div class="pb_ch0"></div><span class="pb_chs0">Белгород</span></div>
+  <div class="pb_checked_false" id="pr079"><div class="pb_ch0"></div><span class="pb_chs0">Биробиджан</span> (Еврейская АО)</div>
+  <div class="pb_checked_false" id="pr028"><div class="pb_ch0"></div><span class="pb_chs0">Благовещенск</span> (Амурская обл)</div>
+  <div class="pb_checked_false" id="pr032"><div class="pb_ch0"></div><span class="pb_chs0">Брянск</span></div>
+  <div class="pb_checked_false" id="pr053"><div class="pb_ch0"></div><span class="pb_chs0">Великий Новгород</span></div>
+  <div class="pb_checked_false" id="pr025"><div class="pb_ch0"></div><span class="pb_chs0">Владивосток</span> (Приморский край)</div>
+  <div class="pb_checked_false" id="pr015"><div class="pb_ch0"></div><span class="pb_chs0">Владикавказ</span> (Осетия-Алания)</div>
+  <div class="pb_checked_false" id="pr033"><div class="pb_ch0"></div><span class="pb_chs0">Владимир</span></div>
+  <div class="pb_checked_false" id="pr034"><div class="pb_ch0"></div><span class="pb_chs0">Волгоград</span></div>
+  <div class="pb_checked_false" id="pr035"><div class="pb_ch0"></div><span class="pb_chs0">Вологда</span></div>
+  <div class="pb_checked_false" id="pr036"><div class="pb_ch0"></div><span class="pb_chs0">Воронеж</span></div>
+  <div class="pb_checked_false" id="pr004"><div class="pb_ch0"></div><span class="pb_chs0">Горно-Алтайск</span> (респ. Алтай)</div>
+  <div class="pb_checked_false" id="pr020"><div class="pb_ch0"></div><span class="pb_chs0">Грозный</span> (Чеченская респ)</div>
+  <div class="pb_checked_false" id="pr066"><div class="pb_ch0"></div><span class="pb_chs0">Екатеринбург</span> (Свердловская)</div>
+  <div class="pb_checked_false" id="pr037"><div class="pb_ch0"></div><span class="pb_chs0">Иваново</span></div>
+  <div class="pb_checked_false" id="pr018"><div class="pb_ch0"></div><span class="pb_chs0">Ижевск</span> (Удмуртская респ)</div>
+  <div class="pb_checked_false" id="pr038"><div class="pb_ch0"></div><span class="pb_chs0">Иркутск</span></div>
+  <div class="pb_checked_false" id="pr012"><div class="pb_ch0"></div><span class="pb_chs0">Йошкар-Ола</span> (респ. Марий Эл)</div>
+  <div class="pb_checked_false" id="pr016"><div class="pb_ch0"></div><span class="pb_chs0">Казань</span> (респ. Татарстан)</div>
+  <div class="pb_checked_false" id="pr039"><div class="pb_ch0"></div><span class="pb_chs0">Калининград</span></div>
+  <div class="pb_checked_false" id="pr040"><div class="pb_ch0"></div><span class="pb_chs0">Калуга</span></div>
+  <div class="pb_checked_false" id="pr042"><div class="pb_ch0"></div><span class="pb_chs0">Кемерово</span></div>
+  <div class="pb_checked_false" id="pr043"><div class="pb_ch0"></div><span class="pb_chs0">Киров</span></div>
+  <div class="pb_checked_false" id="pr044"><div class="pb_ch0"></div><span class="pb_chs0">Кострома</span></div>
+  <div class="pb_checked_false" id="pr023"><div class="pb_ch0"></div><span class="pb_chs0">Краснодар</span></div>
+  <div class="pb_checked_false" id="pr024"><div class="pb_ch0"></div><span class="pb_chs0">Красноярск</span></div>
+  <div class="pb_checked_false" id="pr091"><div class="pb_ch0"></div><span class="pb_chs0">Крым</span></div>
+  <div class="pb_checked_false" id="pr045"><div class="pb_ch0"></div><span class="pb_chs0">Курган</span></div>
+  <div class="pb_checked_false" id="pr046"><div class="pb_ch0"></div><span class="pb_chs0">Курск</span></div>
+  <div class="pb_checked_false" id="pr017"><div class="pb_ch0"></div><span class="pb_chs0">Кызыл</span> (республика Тыва)</div>
+  <div class="pb_checked_false" id="pr048"><div class="pb_ch0"></div><span class="pb_chs0">Липецк</span></div>
+  <div class="pb_checked_false" id="pr049"><div class="pb_ch0"></div><span class="pb_chs0">Магадан</span></div>
+  <div class="pb_checked_false" id="pr006"><div class="pb_ch0"></div><span class="pb_chs0">Магас</span> (Ингушетия)</div>
+  <div class="pb_checked_false" id="pr001"><div class="pb_ch0"></div><span class="pb_chs0">Майкоп</span> (респ. Адыгея)</div>
+  <div class="pb_checked_false" id="pr005"><div class="pb_ch0"></div><span class="pb_chs0">Махачкала</span> (Дагестан)</div>
+  <div class="pb_checked_false" id="pr051"><div class="pb_ch0"></div><span class="pb_chs0">Мурманск</span></div>
+  <div class="pb_checked_false" id="pr007"><div class="pb_ch0"></div><span class="pb_chs0">Нальчик</span> (Кабардино-Балкария)</div>
+  <div class="pb_checked_false" id="pr083"><div class="pb_ch0"></div><span class="pb_chs0">Нарьян-Мар</span> (Ненецкий АО)</div>
+  <div class="pb_checked_false" id="pr052"><div class="pb_ch0"></div><span class="pb_chs0">Н.Новгород</span></div>
+  <div class="pb_checked_false" id="pr054"><div class="pb_ch0"></div><span class="pb_chs0">Новосибирск</span></div>
+  <div class="pb_checked_false" id="pr055"><div class="pb_ch0"></div><span class="pb_chs0">Омск</span></div>
+  <div class="pb_checked_false" id="pr056"><div class="pb_ch0"></div><span class="pb_chs0">Оренбург</span></div>
+  <div class="pb_checked_false" id="pr057"><div class="pb_ch0"></div><span class="pb_chs0">Орёл</span></div>
+  <div class="pb_checked_false" id="pr058"><div class="pb_ch0"></div><span class="pb_chs0">Пенза</span></div>
+  <div class="pb_checked_false" id="pr059"><div class="pb_ch0"></div><span class="pb_chs0">Пермь</span> (Пермский край)</div>
+  <div class="pb_checked_false" id="pr010"><div class="pb_ch0"></div><span class="pb_chs0">Петрозаводск</span> (респ.Карелия)</div>
+  <div class="pb_checked_false" id="pr041"><div class="pb_ch0"></div><span class="pb_chs0">Петропавловск-Камчатский</span></div>
+  <div class="pb_checked_false" id="pr060"><div class="pb_ch0"></div><span class="pb_chs0">Псков</span></div>
+  <div class="pb_checked_false" id="pr061"><div class="pb_ch0"></div><span class="pb_chs0">Ростов-на-дону</span></div>
+  <div class="pb_checked_false" id="pr062"><div class="pb_ch0"></div><span class="pb_chs0">Рязань</span></div>
+  <div class="pb_checked_false" id="pr089"><div class="pb_ch0"></div><span class="pb_chs0">Салехард</span> (Ямало-Ненецкий АО)</div>
+  <div class="pb_checked_false" id="pr063"><div class="pb_ch0"></div><span class="pb_chs0">Самара</span></div>
+  <div class="pb_checked_false" id="pr013"><div class="pb_ch0"></div><span class="pb_chs0">Саранск</span> (респ. Мордовия)</div>
+  <div class="pb_checked_false" id="pr064"><div class="pb_ch0"></div><span class="pb_chs0">Саратов</span></div>
+  <div class="pb_checked_false" id="pr067"><div class="pb_ch0"></div><span class="pb_chs0">Смоленск</span></div>
+  <div class="pb_checked_false" id="pr026"><div class="pb_ch0"></div><span class="pb_chs0">Ставрополь</span></div>
+  <div class="pb_checked_false" id="pr011"><div class="pb_ch0"></div><span class="pb_chs0">Сыктывкар</span> (республика Коми)</div>
+  <div class="pb_checked_false" id="pr068"><div class="pb_ch0"></div><span class="pb_chs0">Тамбов</span></div>
+  <div class="pb_checked_false" id="pr069"><div class="pb_ch0"></div><span class="pb_chs0">Тверь</span></div>
+  <div class="pb_checked_false" id="pr070"><div class="pb_ch0"></div><span class="pb_chs0">Томск</span></div>
+  <div class="pb_checked_false" id="pr071"><div class="pb_ch0"></div><span class="pb_chs0">Тула</span></div>
+  <div class="pb_checked_false" id="pr072"><div class="pb_ch0"></div><span class="pb_chs0">Тюмень</span></div>
+  <div class="pb_checked_false" id="pr003"><div class="pb_ch0"></div><span class="pb_chs0">Улан-Удэ</span> (респ. Бурятия)</div>
+  <div class="pb_checked_false" id="pr073"><div class="pb_ch0"></div><span class="pb_chs0">Ульяновск</span></div>
+  <div class="pb_checked_false" id="pr002"><div class="pb_ch0"></div><span class="pb_chs0">Уфа</span> (Башкортостан)</div>
+  <div class="pb_checked_false" id="pr027"><div class="pb_ch0"></div><span class="pb_chs0">Хабаровск</span></div>
+  <div class="pb_checked_false" id="pr086"><div class="pb_ch0"></div><span class="pb_chs0">Ханты-Мансийск</span> (АО Югра)</div>
+  <div class="pb_checked_false" id="pr014"><div class="pb_ch0"></div><span class="pb_chs0">Якутск</span> (республика Саха)</div>
+  <div class="pb_checked_false" id="pr076"><div class="pb_ch0"></div><span class="pb_chs0">Ярославль</span></div>
+  <div class="pb_checked_false" id="pr021"><div class="pb_ch0"></div><span class="pb_chs0">Чебоксары</span> (Чувашская респ)</div>
+  <div class="pb_checked_false" id="pr074"><div class="pb_ch0"></div><span class="pb_chs0">Челябинск</span></div>
+  <div class="pb_checked_false" id="pr009"><div class="pb_ch0"></div><span class="pb_chs0">Черкесск</span> (КЧР)</div>
+  <div class="pb_checked_false" id="pr075"><div class="pb_ch0"></div><span class="pb_chs0">Чита</span> (Забайкальский край)</div>
+  <div class="pb_checked_false" id="pr008"><div class="pb_ch0"></div><span class="pb_chs0">Элиста</span> (респ. Калмыкия)</div>
+  <div class="pb_checked_false" id="pr065"><div class="pb_ch0"></div><span class="pb_chs0">Южно-Сахалинск</span></div>
+  <div class="pb_checked_false" id="pr171"><div class="pb_ch0"></div><span class="pb_chs0">Донецк</span></div>
+  <div class="pb_checked_false" id="pr172"><div class="pb_ch0"></div><span class="pb_chs0">Луганск</span></div>
+  <div class="pb_checked_false" id="pr184"><div class="pb_ch0"></div><span class="pb_chs0">Херсон</span></div>
+  <div class="pb_checked_false" id="pr185"><div class="pb_ch0"></div><span class="pb_chs0">Запорожье</span></div>
+  <div class="pb_checked_false" id="pr101"><div class="pb_ch0"></div><span class="pb_chs0">Казахстан</span></div>
+  <div class="pb_checked_false" id="pr102"><div class="pb_ch0"></div><span class="pb_chs0">Беларусь</span></div>
+  <div class="pb_checked_false" id="pr104"><div class="pb_ch0"></div><span class="pb_chs0">Узбекистан</span></div>
+  <div class="pb_checked_false" id="pr112"><div class="pb_ch0"></div><span class="pb_chs0">Таджикистан</span></div>
+  <div class="pb_checked_false" id="pr110"><div class="pb_ch0"></div><span class="pb_chs0">Кыргызстан</span></div>
+  <div class="pb_checked_false" id="pr105"><div class="pb_ch0"></div><span class="pb_chs0">Молдова</span></div>
+  <div class="pb_checked_false" id="pr106"><div class="pb_ch0"></div><span class="pb_chs0">Армения</span></div>
+  <div class="px5"></div>
+</div>
+<div class="px5"></div>
+<div class="hside" id="hsideo" onclick="f_clickItems('o')">Типы объектов <div class="dhclose"></div></div>
+<div class="px5"></div>
+<div class="side_items" id="hsideio">
+  <div class="pb_checked_false" id="to01"><div class="pb_ch0"></div><span class="pb_chs0">Цех промышленный</span></div>
+  <div class="pb_checked_false" id="to02"><div class="pb_ch0"></div><span class="pb_chs0">Цех пищевой</span></div>
+  <div class="pb_checked_false" id="to03"><div class="pb_ch0"></div><span class="pb_chs0">Технические помещения</span></div>
+  <div class="pb_checked_false" id="to04"><div class="pb_ch0"></div><span class="pb_chs0">Склад</span></div>
+  <div class="pb_checked_false" id="to05"><div class="pb_ch0"></div><span class="pb_chs0">Холодильник/Морозильник</span></div>
+  <div class="pb_checked_false" id="to06"><div class="pb_ch0"></div><span class="pb_chs0">Гараж (паркинг)</span></div>
+  <div class="pb_checked_false" id="to07"><div class="pb_ch0"></div><span class="pb_chs0">Автосервис</span></div>
+  <div class="pb_checked_false" id="to08"><div class="pb_ch0"></div><span class="pb_chs0">Автомойка</span></div>
+  <div class="pb_checked_false" id="to09"><div class="pb_ch0"></div><span class="pb_chs0">Торг./Развлек./Выстав.зал</span></div>
+  <div class="pb_checked_false" id="to10"><div class="pb_ch0"></div><span class="pb_chs0">Офис</span></div>
+  <div class="pb_checked_false" id="to11"><div class="pb_ch0"></div><span class="pb_chs0">Мед. Учреждения</span></div>
+  <div class="pb_checked_false" id="to12"><div class="pb_ch0"></div><span class="pb_chs0">Животноводство</span></div>
+  <div class="pb_checked_false" id="to13"><div class="pb_ch0"></div><span class="pb_chs0">Сельхоз. объекты</span></div>
+  <div class="pb_checked_false" id="to14"><div class="pb_ch0"></div><span class="pb_chs0">Электростанции, ТЭК</span></div>
+  <div class="pb_checked_false" id="to15"><div class="pb_ch0"></div><span class="pb_chs0">Объекты РосАтом</span></div>
+  <div class="pb_checked_false" id="to16"><div class="pb_ch0"></div><span class="pb_chs0">Жилищное строительство</span></div>
+  <div class="pb_checked_false" id="to18"><div class="pb_ch0"></div><span class="pb_chs0">Спортивные объекты</span></div>
+  <div class="pb_checked_false" id="to19"><div class="pb_ch0"></div><span class="pb_chs0">Объекты Минобороны</span></div>
+  <div class="pb_checked_false" id="to20"><div class="pb_ch0"></div><span class="pb_chs0">Образов. учреждения</span></div>
+  <div class="pb_checked_false" id="to21"><div class="pb_ch0"></div><span class="pb_chs0">Кафе, рестораны, столовые</span></div>
+  <div class="pb_checked_false" id="to22"><div class="pb_ch0"></div><span class="pb_chs0">Резервуары</span></div>
+  <div class="pb_checked_false" id="to23"><div class="pb_ch0"></div><span class="pb_chs0">Транспортная инфраструктура</span></div>
+  <div class="pb_checked_false" id="to24"><div class="pb_ch0"></div><span class="pb_chs0">На открытом воздухе</span></div>
+  <div class="pb_checked_false" id="to25"><div class="pb_ch0"></div><span class="pb_chs0">Лестницы</span></div>
+  <div class="pb_checked_false" id="to17"><div class="pb_ch0"></div><span class="pb_chs0">ПРОЧЕЕ</span></div>
+  <div class="px5"></div>
+</div>
+<div class="px5"></div>
+<div class="hside" id="hsidep" onclick="f_clickItems('p')">Типы покрытий <div class="dhclose"></div></div>
+<div class="px5"></div>
+<div class="side_items" id="hsideip">
+  <div class="pb_checked_false" id="tp01"><div class="pb_ch0"></div><span class="pb_chs0">Пропитка Полиуретановая</span></div>
+  <div class="pb_checked_false" id="tp02"><div class="pb_ch0"></div><span class="pb_chs0">Пропитка Эпоксидная</span></div>
+  <div class="pb_checked_false" id="tp37"><div class="pb_ch0"></div><span class="pb_chs0">Пропитка Эпоксидная Водная</span></div>
+  <div class="pb_checked_false" id="tp03"><div class="pb_ch0"></div><span class="pb_chs0">Пропитка Флюат</span></div>
+  <div class="pb_checked_false" id="tp41"><div class="pb_ch0"></div><span class="pb_chs0">Пропитка Силер </span></div>
+  <div class="px5"></div>
+  <div class="pb_checked_false" id="tp04"><div class="pb_ch0"></div><span class="pb_chs0">Покрытие Полиуретановое</span></div>
+  <div class="pb_checked_false" id="tp05"><div class="pb_ch0"></div><span class="pb_chs0">Покрытие Эпоксидное</span></div>
+  <div class="pb_checked_false" id="tp30"><div class="pb_ch0"></div><span class="pb_chs0">Покрытие Эпоксидное Водное</span></div>
+  <div class="pb_checked_false" id="tp06"><div class="pb_ch0"></div><span class="pb_chs0">Покрытие Светостойкое</span></div>
+  <div class="pb_checked_false" id="tp07"><div class="pb_ch0"></div><span class="pb_chs0">Покрытие для Асфальта</span></div>
+  <div class="px5"></div>
+  <div class="pb_checked_false" id="tp09"><div class="pb_ch0"></div><span class="pb_chs0">КНП Полиуретановое</span></div>
+  <div class="pb_checked_false" id="tp08"><div class="pb_ch0"></div><span class="pb_chs0">КНП Эпоксидное</span></div>
+  <div class="px5"></div>
+  <div class="pb_checked_false" id="tp11"><div class="pb_ch0"></div><span class="pb_chs0">Наливной пол Полиуретановый</span></div>
+  <div class="pb_checked_false" id="tp10"><div class="pb_ch0"></div><span class="pb_chs0">Наливной пол Эпоксидный</span></div>
+  <div class="pb_checked_false" id="tp31"><div class="pb_ch0"></div><span class="pb_chs0">Наливной пол Эпоксидный Водный</span></div>
+  <div class="pb_checked_false" id="tp26"><div class="pb_ch0"></div><span class="pb_chs0">Наливной пол Промышленный Полиуретановый</span></div>
+  <div class="pb_checked_false" id="tp12"><div class="pb_ch0"></div><span class="pb_chs0">Наливной пол Промышленный Эпоксидный</span></div>
+  <div class="pb_checked_false" id="tp27"><div class="pb_ch0"></div><span class="pb_chs0">Наливной пол Антистатический Полиуретановый</span></div>
+  <div class="pb_checked_false" id="tp13"><div class="pb_ch0"></div><span class="pb_chs0">Наливной пол Антистатический Эпоксидный</span></div>
+  <div class="pb_checked_false" id="tp39"><div class="pb_ch0"></div><span class="pb_chs0">Наливной пол ПУ Эластичный</span></div>
+  <div class="pb_checked_false" id="tp40"><div class="pb_ch0"></div><span class="pb_chs0">Наливной пол ПУ Резиновый</span></div>
+  <div class="px5"></div>
+  <div class="pb_checked_false" id="tp29"><div class="pb_ch0"></div><span class="pb_chs0">Полиуретан-цементное покрытие</span></div>
+  <div class="pb_checked_false" id="tp14"><div class="pb_ch0"></div><span class="pb_chs0">Антискольжение</span></div>
+  <div class="pb_checked_false" id="tp33"><div class="pb_ch0"></div><span class="pb_chs0">Чипсы</span></div>
+  <div class="pb_checked_false" id="tp23"><div class="pb_ch0"></div><span class="pb_chs0">Разметка, логотипы, дизайн</span></div>
+  <div class="pb_checked_false" id="tp35"><div class="pb_ch0"></div><span class="pb_chs0">Шпатлевание</span></div>
+  <div class="pb_checked_false" id="tp36"><div class="pb_ch0"></div><span class="pb_chs0">Матовый Лак</span></div>
+  <div class="pb_checked_false" id="tp25"><div class="pb_ch0"></div><span class="pb_chs0">3D-полы</span></div>
+  <div class="pb_checked_false" id="tp34"><div class="pb_ch0"></div><span class="pb_chs0">Декоративные, художественные</span></div>
+  <div class="pb_checked_false" id="tp15"><div class="pb_ch0"></div><span class="pb_chs0">Фрезер-насечка</span></div>
+  <div class="pb_checked_false" id="tp16"><div class="pb_ch0"></div><span class="pb_chs0">Безыскровое покрытие</span></div>
+  <div class="px5"></div>
+  <div class="pb_checked_false" id="tp28"><div class="pb_ch0"></div><span class="pb_chs0">Бетонные полы</span></div>
+  <div class="px5"></div>
+  <div class="pb_checked_false" id="tp17"><div class="pb_ch0"></div><span class="pb_chs0">Стяжка Эластобетон-А</span></div>
+  <div class="pb_checked_false" id="tp18"><div class="pb_ch0"></div><span class="pb_chs0">Стяжка Эластобетон-Б</span></div>
+  <div class="pb_checked_false" id="tp19"><div class="pb_ch0"></div><span class="pb_chs0">Стяжка Эластобетон-В</span></div>
+  <div class="px5"></div>
+  <div class="pb_checked_false" id="tp21"><div class="pb_ch0"></div><span class="pb_chs0">Покрытие по металлу</span></div>
+  <div class="pb_checked_false" id="tp38"><div class="pb_ch0"></div><span class="pb_chs0">Покрытие по дереву</span></div>
+  <div class="pb_checked_false" id="tp22"><div class="pb_ch0"></div><span class="pb_chs0">Покрытие Полиуретановое ЭКО</span></div>
+  <div class="pb_checked_false" id="tp24"><div class="pb_ch0"></div><span class="pb_chs0">Компенсационные швы</span></div>
+  <div class="pb_checked_false" id="tp20"><div class="pb_ch0"></div><span class="pb_chs0">ПРОЧЕЕ</span></div>
+  <div class="px5"></div>
+</div>
+<?php if (1==2) { ?>
+<div class="px10"></div>
+<div class="hside2">Представитель</div>
+<div id="calc_iitem_comb_pred" class="calc_iitem" style="padding:0;width:275px;height:40px;">
+  <div class="px5"></div>
+  <div class="pb_combobox" style="width:275px">
+    <input type="text" value="ООО «ТэоХим» Москва (Москва)" maxlength="80" placeholder="" style="width:240px;font-size:12px" onchange="f_change()" readonly>
+    <div class="pb_cb_image"></div>
+    <div class="pb_cb_select" style="width:280px">
+<div class="pb_cb_option">Все</div>
+<?php
+$cnt=count($tPreds); for ($i=1; $i<$cnt; $i++) { print '<div class="pb_cb_option">'.$tPreds[$i][2].' ('.$tPreds[$i][1].')</div>'; }
+?>
+   </div>
+  </div><div class="px0"></div>
+</div>
+<div class="px10b"></div>
+<?php } ?>
+<div class="px10"></div>
+<div class="hside2">Диапазон площадей объектов</div>
+<div id="calc_iitem_sq1" class="calc_iitem">
+  <div class="px0"></div><p>От площади:</p><div class="px5"></div>
+  <input id="i_so1" class="calc_iitem_i" type="text" value="0" maxlength="8" placeholder="От..." onchange="f_change()">
+  <div class="calc_iitem_r">м<sup>2</sup></div><div class="px0"></div>
+</div>
+<div id="calc_iitem_sq2" class="calc_iitem">
+  <div class="px0"></div><p>До площади:</p><div class="px5"></div>
+  <input id="i_so2" class="calc_iitem_i" type="text" value="999999" maxlength="6" placeholder="До..." onchange="f_change()">
+  <div class="calc_iitem_r">м<sup>2</sup></div><div class="px0"></div>
+</div>
+<div class="px5b"></div>
+<div class="px10"></div>
+<div class="hside2">Диапазон лет ввода в эксплуатацию</div>
+<div id="calc_iitem_comb_y1" class="calc_iitem">
+  <div class="px0"></div><p>От года:</p><div class="px5"></div>
+  <div class="pb_combobox" style="width:100px">
+    <input type="text" value="2000" maxlength="4" placeholder="Год от..." style="width:70px" onchange="f_change()" readonly>
+    <div class="pb_cb_image"></div>
+    <div class="pb_cb_select" style="width:108px">
+<?php
+for ($i=2025; $i>=2000; $i--) { print '<div class="pb_cb_option">'.$i.'</div>'; }
+?>
+   </div>
+  </div><div class="px0"></div>
+</div>
+<div id="calc_iitem_comb_y2" class="calc_iitem">
+  <div class="px0"></div><p>До года:</p><div class="px5"></div>
+  <div class="pb_combobox" style="width:100px">
+    <input type="text" value="2025" maxlength="4" placeholder="Год до..." style="width:70px" onchange="f_change()" readonly>
+    <div class="pb_cb_image"></div>
+    <div class="pb_cb_select" style="width:108px">
+<?php
+for ($i=2025; $i>=2000; $i--) { print '<div class="pb_cb_option">'.$i.'</div>'; }
+?>
+   </div>
+  </div><div class="px0"></div>
+</div>
+<div class="px5b"></div>
+<div class="px20"></div>
+<div class="butr fleft" id="id_bset" onclick="f_refresh()">Применить</div>
+<div class="butb fright" onclick="f_fltClear()">Сбросить</div>
+<div class="px10"></div>

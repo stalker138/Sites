@@ -1,0 +1,13 @@
+<div id="calc_iitem_comb_mb" class="calc_iitem">
+  <div class="px0"></div><p>Марка бетона / пескобетона</p><div class="px5"></div>
+  <div class="pb_combobox" style="width:140px">
+    <input type="text" value="" maxlength="30" placeholder="Марка бетона" style="width:90px" readonly>
+    <div class="pb_cb_image"></div>
+    <div class="pb_cb_select" style="width:148px">
+      <div class="pb_cb_option">М200 (В15)</div>
+      <div class="pb_cb_option">М250 (В20)</div>
+      <div class="pb_cb_option">М300 (В22,5)</div>
+      <div class="pb_cb_option">М350 (В25)</div>
+   </div>
+  </div><div class="px0"></div>
+</div>
