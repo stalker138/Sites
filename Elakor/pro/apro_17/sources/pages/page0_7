@@ -1,0 +1,1 @@
+<div id="main"><div class="sheader"></div><div id="content"<?php if($pb_page==1001) print ' style="padding:0;"'; ?>><section>

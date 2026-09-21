@@ -1,0 +1,17 @@
+{*tpl1*}{*tpl11*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block1_5*}
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script type="text/javascript">
+var myMap;ymaps.ready(myMapInit);
+function myMapInit(){
+  myMap = new ymaps.Map('idMap',{center:[55.8196, 37.79247],zoom:16,type:'yandex#hybrid'});
+  var myPlacemark = new ymaps.Placemark([55.8196, 37.79247], {
+            hintContent:'Склад № 3 ООО «ТэоХим»<br>Москва, Черницынский пр. д.3 (м. Щёлковская),<br>Территория Моск. Абразивного завода<br>8-965-404-02-20',
+            balloonContentHeader: 'Склад № 3 ООО «ТэоХим»',
+            balloonContentBody:'Москва, Черницынский пр. д.3 (м. Щёлковская),<br>Территория Моск. Абразивного завода',
+            balloonContentFooter:'8-965-404-02-20'
+        });
+    myMap.geoObjects.add(myPlacemark);
+}
+</script>
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}</body></html>{*tpl12*}

@@ -1,0 +1,54 @@
+<?php
+// oconfig.php | 2015 | asws | asws.ru
+
+$o_IP=strrev($_SERVER['REMOTE_ADDR']);
+$o_UA=$_SERVER['HTTP_USER_AGENT'];
+$o_db_connect=false;
+$o_db_query=false;
+
+$postMail='zakaz@teohim.ru';
+$o_DOMAIN = 'elakor.pro';
+
+if (isset($o_inc) && $o_inc=='main') {
+$o_error=0;
+if (!isset($o_mode)) $o_mode=0;         // Код операции
+if (!isset($o_login)) $o_login='';
+if (!isset($o_pass)) $o_pass='';
+if (!isset($o_cap)) $o_cap = '';
+if (!isset($o_hcap)) $o_hcap = '';
+if (!isset($o_ncap)) $o_ncap = 0;
+}
+
+/*
+    Тестирует правильность капчи
+    Если параметр $f задан, то удаляет текущую капчу из файла $pb_root.'a_cp/pb_captcha'.$o_ncap
+    Возвращает true, если капча совпала (найдена), или false если файл или капча в нём не найдена ( в случае false переменная $o_error=99; )
+*/
+function Fo_test_cap($f=0) {
+    global $pb_root, $o_error, $o_IP, $o_cap, $o_hcap, $o_ncap; $f = $f ? 1 : 0; $o_error=0;
+    $o_cap=strtolower(Fo_post('cap')); $o_hcap=Fo_post('hcap'); $o_ncap=(int)$_POST['ncap']; if ($o_ncap<1 || $o_ncap>9) { $o_error=99; return; }
+    $pb_file_captcha=$pb_root.'a_cp/pb_captcha'.$o_ncap.'.php'; if (file_exists($pb_file_captcha)) $txt=@file_get_contents($pb_file_captcha); else { $o_error=98; return; }
+    $seek=chr(10).$o_hcap.chr(9).strrev($o_IP).chr(9).$o_cap.chr(10); $pos=strpos($txt,$seek); if($pos==false) { $o_error=97; return; } // Неверная капча
+    if ($f>0) {
+        $pos1=strpos($txt,chr(10),$pos+1); $txt=substr($txt,0,$pos).substr($txt,$pos1);
+        $pb_handler=@fopen($pb_file_captcha,'w');
+        if ($pb_handler) {
+            @rewind($pb_handler);
+            if (-1!=@fwrite($pb_handler,$txt)) { @ftruncate($pb_handler,ftell($pb_handler)); }
+            @fflush($pb_handler); @fclose($pb_handler);
+        }
+    }
+    return true;
+}
+
+/*
+    Функция для удаления экранирующих символов "\" из содержимого POST-параметра
+    Параметры: $name - имя принимаемого POST-параметра
+    Возвращает содержимое без экранирующих слешей или false, если такого POST-параметра нет
+*/
+function Fo_post($name) {
+    $ret=$_POST[$name]; if ($ret==false) return false;
+    return (get_magic_quotes_gpc() ? stripslashes($ret) : $ret);
+}
+
+?>

@@ -1,0 +1,17 @@
+{*tpl1*}{*tpl11*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block1_2*}
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script type="text/javascript">
+var myMap;ymaps.ready(myMapInit);
+function myMapInit(){
+  myMap = new ymaps.Map('idMap',{center:[55.7911, 37.7121],zoom:16,type:'yandex#hybrid'});
+  var myPlacemark = new ymaps.Placemark([55.7911, 37.7121], {
+            hintContent:'ООО «ТэоХим»<br>107023 г.Москва, ул. Суворовская д.10 оф.15<br>(вход с ул. Девятая Рота)<br>(495) 221-22-52, 8-800-100-50-10',
+            balloonContentHeader: 'ООО «ТэоХим»',
+            balloonContentBody:'107023 г.Москва, ул. Суворовская д.10 оф.15<br>(вход с ул. Девятая Рота)',
+            balloonContentFooter:'(495) 221-22-52, 8-800-100-50-10'
+        });
+    myMap.geoObjects.add(myPlacemark);
+}
+</script>
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}</body></html>{*tpl12*}

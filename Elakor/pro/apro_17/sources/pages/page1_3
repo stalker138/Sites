@@ -1,0 +1,17 @@
+{*tpl1*}{*tpl11*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block1_3*}
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script type="text/javascript">
+var myMap;ymaps.ready(myMapInit);
+function myMapInit(){
+  myMap = new ymaps.Map('idMap',{center:[55.802, 38.1915],zoom:16,type:'yandex#hybrid'});
+  var myPlacemark = new ymaps.Placemark([55.802, 38.1915], {
+            hintContent:'Склад № 1 ООО «ТэоХим»<br>Мос.обл, п.Старая Купавна, ул.Дорожная 4<br>(Территория "Базы №1 Химреактивов")<br>8-916-778-49-33',
+            balloonContentHeader: 'Склад № 1 ООО «ТэоХим»',
+            balloonContentBody:'Мос.обл, п.Старая Купавна, ул.Дорожная 4<br>(Территория "Базы №1 Химреактивов")',
+            balloonContentFooter:'8-916-778-49-33'
+        });
+    myMap.geoObjects.add(myPlacemark);
+}
+</script>
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}</body></html>{*tpl12*}

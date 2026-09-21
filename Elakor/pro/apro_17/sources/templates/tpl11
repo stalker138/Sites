@@ -1,0 +1,4 @@
+<?php
+// if (file_exists('index.html')) { header('HTTP/1.1 301 Moved Permanently'); header ('Location: '.$pb_full_url); exit; } else ob_start();
+// ob_start();
+?>

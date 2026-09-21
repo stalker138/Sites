@@ -1,0 +1,8 @@
+<?php // tpl2 - Для раздела HEAD внешние css и js-файлы, стили и скрипты. ?>
+<meta name="robots" content="noarchive"/><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" type="image/ico"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic" type='text/css'>
+<?php // <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic&subset=latin,cyrillic' type='text/css'> ?>
+<link rel="stylesheet" href="/cssjs/style_000.css" type="text/css"/>
+<?php // print '<script type="text/javascript" charset="UTF-8" src="/cssjs/apb_0077.js"></script>'; ?>
+<script type="text/javascript" charset="UTF-8" src="/cssjs/js_000.js"></script>

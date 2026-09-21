@@ -1,0 +1,17 @@
+{*tpl1*}{*tpl11*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block1_4*}
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script type="text/javascript">
+var myMap;ymaps.ready(myMapInit);
+function myMapInit(){
+  myMap = new ymaps.Map('idMap',{center:[55.7147, 38.4664],zoom:16,type:'yandex#hybrid'});
+  var myPlacemark = new ymaps.Placemark([55.7147, 38.4664], {
+            hintContent:'Склад № 2 ООО «ТэоХим»<br>Мос.обл., п.Новые дома<br>(Территория "Спецстроя России")<br>8-903-730-54-55',
+            balloonContentHeader: 'Склад № 2 ООО «ТэоХим»',
+            balloonContentBody:'Мос.обл., п.Новые дома<br>(Территория "Спецстроя России")',
+            balloonContentFooter:'8-903-730-54-55'
+        });
+    myMap.geoObjects.add(myPlacemark);
+}
+</script>
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}</body></html>{*tpl12*}

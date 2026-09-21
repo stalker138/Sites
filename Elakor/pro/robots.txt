@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow: /
+User-agent: *
+Allow: /
+
+Host: elakor.pro
+Sitemap: http://elakor.pro/sitemap.xml
