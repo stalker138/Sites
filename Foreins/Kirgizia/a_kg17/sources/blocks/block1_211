@@ -1,0 +1,83 @@
+<?php
+$pi=21;     // Индекс покрытия
+$mi=11;     // Индекс материала первичного слоя
+$si=15;     // Индекс шпатлевки
+$fi=12;     // Индекс финишного слоя
+$f8=0;      // Индекс второго финишного слоя
+$ni=0;      // Индекс наполнителя
+$se=0;      // Кол-во слоев
+$smn=array('Грунтование', 'Элакор-ПУ Грунт');    // Первичный слой
+$ssn=array('Шпатлевание', 'Элакор-ПУ Шпатлевка-2К', 'Кварц окат.0,1-0,4');  // Шпатлевка
+$sfn=array('Нанесение Эмали', 'Элакор-ПУ Эмаль-60');  // Финишный слой
+$snn=0;      // Наполнитель
+?>
+
+<script type="text/javascript">
+
+var pi_rkat=6;
+var pir = [0.6, 0.5, 0.4, 0.35, 0.3, 0.2];    // Коэфф-ты расхода покрытия по маркам бетона
+var pirm = 0;
+var ini = // Инициализация
+' \
+    pi_vmc=<?php print (int)$p[$pi][4]; ?>; \
+    pi_vrsh=<?php print (int)$p[10][3]; ?>; \
+    pi_vrc=<?php print (int)$p[$pi][3]; ?>; \
+    pi_ck=8; pi_rsh=0.25; pi_rk=0.25; pi_rm=0.35; \
+';
+
+var pise = ''; // Слои эмали/толщина слоя
+
+var vrc=1;     // Добавка в зависимости от марки бетона (pi_mb)
+var pivrc = 'switch (pi_rkat) {    case 2: pi_vrc*=1.3; break;    case 3: pi_vrc*=1.15; break;    case 4: pi_vrc*=1.05; }';
+var pivrc1 = pivrc;
+var pivrc2 = '';
+var pish0 = '';
+var pish1 = // Шпатлевание
+' \
+   pi_vmc+=<?php print (int)$p[10][4]; ?>; \
+    if (pi_rkat==2) pi_vrc+=pi_vrsh*1.3; \
+    if (pi_rkat==3) pi_vrc+=pi_vrsh*1.15; \
+    if (pi_rkat==4) pi_vrc+=pi_vrsh*1.05; \
+    if (pi_rkat>4) pi_vrc+=pi_vrsh; \
+';
+
+function showTable() {var table1=fpb_ById('table1'), table2=fpb_ById('table2'); table1.style.display='none'; table2.style.display='inline';}
+
+var v_tmp_interval=null,v_tmp_h=0; fpb_addCss('.i_t { padding:0; margin:0; width:110px; height:18px; border:none 0px; font:bold 12px arial; background-color:#49ff79; } .o_t { width:70px; text-align:right; padding-right:2px; } .tmtr td { border:solid 1px #000000; }');
+function f_z_to_t(s) { return parseFloat(fpb_ById(s).innerHTML.replace(/,/g,".")); }
+function f_add_zakaz() {
+var p_kol,p_ksh,p_kk; if(pb_storage>0){
+    p_kol=f_z_to_t('o_kol'); p_ksh=f_z_to_t('o_ksh'); p_kk=f_z_to_t('o_kk'); if (p_kol=='0.00') { alert('Нулевое количество!'); return; }
+    localStorage.setItem('z401','¡¡11¡'+p_kol+'¡¡15¡'+p_ksh+'¡¡113¡'+p_kk+'¡¡¡'); alert('Заказ материалов для расчета\nПолиуретановая пропитка Элакор-ПУ\nОБНОВЛЕН');
+}}function fById(id) { return document.getElementById(id); }
+</script>
+
+{*text0_2*}    <!-- f_i_t -->
+{*text0_1*}    <!-- f_calc -->
+
+<h1>Полиуретановое покрытие ЦЕНА</h1>
+<p style="float:left;font:normal 11px arial;">Глубина пропитки бетона 2-3мм, толщина цветного слоя 0,2-0,25мм.<br>Внешний вид - однотонная поверхность заданного цвета, блеск пол углянцевый.<br>Гарантия на выполненные работы:<br>защитные свойства - 5лет, декоративные свойства - 2года.</p>
+<p class="rlink" style="margin-top:7px"><l1 id="81">Полиуретановое покрытие</l1></p><div class="px15"></p></div>
+
+<div style="box-shadow:4px 4px 7px 0 #999999;">
+{*text0_3*}    <!-- Таблицы -->
+</div>
+<div class="px15"></div>
+
+<div class="h14">Дополнительная информация.</div>
+<p>1. Марочная прочность бетонной или пескобетонной поверхности не всегда точно определяет расход полиуретанового грунта для бетона. Лучший способ проверки – нанести полиуретановый грунт для бетона на пробном участке и замерить расход.</p>
+<p>2. Вышеуказанное шпатлевание служит для заделки мелких дефектов поверхности, выглаживания поверхности.<br>Для более крупных дефектов потребуется дополнительный расход материалов для шпатлевания.</p>
+<p>3. Описание используемых материалов:</p>
+<ul>
+<li>Элакор-ПУ Грунт – <l1 id="43">полиуретановый грунт для бетона</l1>, однокомпонентный.</li>
+<li>Элакор-ПУ Шпатлевка-2К – <l1 id="76">шпаклевка для бетона</l1>, двухкомпонентная.</li>
+<li>Элакор-ПУ Эмаль-60 – <l1 id="63">полиуретановая краска для бетона</l1>, однокомпонентная</li>
+</ul>
+
+<script type="text/javascript">fpb_ById('i_sh').value='0';fpb_ById('i_so').value='1000'; fpb_ById('i_mb').value="300"; v_tmp_i_pkr='21'; fpb_ById('i_pkr').value="21"; f_set();
+function f_set() {
+var p; if (pb_storage>0) {
+    p=localStorage.getItem('i_so')||0; if (p) fpb_ById('i_so').value=p;
+    p=localStorage.getItem('i_mb')||0; if (p) fpb_ById('i_mb').value=p;
+} f_i_t();
+}</script>

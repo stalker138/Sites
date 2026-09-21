@@ -1,0 +1,196 @@
+<h1>Продукция «Элакор»</h1>
+{*text1_6*}
+<div class="px5"></div>
+<p style="font-weight:bold;font-size:16px;color:#004f92;">&nbsp; <span style="color:#000000;">–</span>&nbsp; 1. Полиуретановые материалы <span>(серия Элакор-ПУ)</span></p><div class="px3"></div>
+<div id="id_open_all" onclick="f_page1003(this)">Раскрыть все</div><div class="px5_"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">1.1. Грунты</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[11]); $i++) { if ($catmat[11][$i]==131) print fmtr1($catmat[11][$i],'1.1.6.','%Люкс Грунт% - полиуретановый, светостойкий'); else print fmtr1($catmat[11][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">1.2. Эмали</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[12]); $i++) { if ($catmat[12][$i]==134) print fmtr1($catmat[12][$i],'4.3.1.','%Люкс Эмаль Эластичная Светостойкая%'); else if ($catmat[12][$i]==135) print fmtr1($catmat[12][$i],'4.2.1.','%Люкс Эмаль Светостойкая Глянцевая%'); else if ($catmat[12][$i]==136) print fmtr1($catmat[12][$i],'4.2.2.','%Люкс Эмаль Светостойкая Полуматовая%'); else if ($catmat[12][$i]==137) print fmtr1($catmat[12][$i],'4.2.3.','%Люкс Эмаль Светостойкая Матовая%'); else print fmtr1($catmat[12][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">1.3. Лаки</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[13]); $i++) { print fmtr1($catmat[13][$i]); } ?></tbody></table>
+<div class="px3"></div>
+<p style="padding-left:40px;font-weight:bold;color:#004f92;">Лаки полиуретановые светостойкие, УФ-стойкие</p>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[43]); $i++) { print fmtr1($catmat[43][$i]); } ?></tbody></table>
+<div class="px3"></div>
+<p style="padding-left:40px;font-weight:bold;color:#004f92;">Лаки Эластичные</p>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[44]); $i++) { print fmtr1($catmat[44][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">1.4. Полиуретановые наливные полы</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[14]); $i++) { print fmtr1($catmat[14][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">1.5. Полиуретан-цементные покрытия</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[15]); $i++) { print fmtr1($catmat[15][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">1.6. Шпатлевки. &nbsp; 1.7. Герметики, Клеи</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[16]); $i++) { print fmtr1($catmat[16][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">1.8. Колоранты. &nbsp; 1.9. Добавки</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[18]); $i++) { print fmtr1($catmat[18][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<p style="font-weight:bold;font-size:16px;color:#004f92;">&nbsp; <span style="color:#000000;">–</span>&nbsp; 2. Эпоксидные материалы <span>(серия Элакор-ЭД)</span></p><div class="px3"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">2.1. Грунты, Пропитки</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[21]); $i++) { print fmtr1($catmat[21][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">2.2. Эмали, Краски.&nbsp;2.3. Лаки</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[22]); $i++) { print fmtr1($catmat[22][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">2.4. Эпоксидные наливные полы</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[24]); $i++) { print fmtr1($catmat[24][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">2.5. Шпатлёвки, Рем.составы.</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[25]); $i++) { print fmtr1($catmat[25][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">2.7. Компаунды, Составы для заливки.</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[27]); $i++) { print fmtr1($catmat[27][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<p style="font-weight:bold;font-size:16px;color:#004f92;">&nbsp; <span style="color:#000000;">–</span>&nbsp; 3. Антистатические полы и покрытия</p><div class="px3"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">Антистатические Грунты, Пропитки</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[31]); $i++) { print fmtr1($catmat[31][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">Антистатические Наливные полы</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[32]); $i++) { print fmtr1($catmat[32][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<div class="divh4">Антистатические Краски, Эмали</div><div class="px0"></div>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[33]); $i++) { print fmtr1($catmat[33][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<div class="divh3">4. Материалы стойкие к ультрафиолету <span class="divh3span">(полиуретановые, серия Элакор-ПУ «Люкс»)</span></div><div class="px0"></div>
+<p class="divh3pb">(полиуретановые, серия Элакор-ПУ «Люкс»)</p>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[4]); $i++) { print fmtr1($catmat[4][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<div class="divh3">5. Покрытия для Металла</div><div class="px0"></div>
+<p class="divh3pb">(серия Элакор-ПУ)</p>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[5]); $i++) { print fmtr1($catmat[5][$i]); } ?></tbody></table>
+<p class="p11">Также для металлических поверхностей могут применяться материалы из группы «для бетона»: наливные полы, шпатлевки, герметики и пр.</p>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<div class="divh3">6. Материалы для Дерева, Паркета <span class="divh3span">(серия Элакор-ПУ)</span></div><div class="px0"></div>
+<p class="divh3pb">(серия Элакор-ПУ)</p>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[6]); $i++) { print fmtr1($catmat[6][$i]); } ?></tbody></table>
+<p class="p11">Для деревянных поверхностей могут применяться материалы из <span style="font-weight:bold">раздела 1</span>: наливные полы, шпатлевки, герметики и т.д.</p>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<div class="divh3 divh3_78">7. Для прямого контакта с питьевой водой и продуктами <span class="divh3span">(серия Элакор-ПУ «Эко»)</span></div><div class="px0"></div>
+<p class="divh3pb">(серия Элакор-ПУ «Эко»)</p>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[7]); $i++) { print fmtr1($catmat[7][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<div class="divh3 divh3_78">8. Акриловые материалы, составы для обработки бетона <span class="divh3span">(серия Элакор-МБ</span></div><div class="px0"></div>
+<p class="divh3pb">(серия Элакор-МБ</p>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[8]); $i++) { print fmtr1($catmat[8][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<div class="divh3 divh3_78">9. Добавки для бетона, грунтовка Бетоноконтакт <span class="divh3span">(серия Эластобетон)</span></div><div class="px0"></div>
+<p class="divh3pb">(серия Эластобетон)</p>
+<div class="px0"></div>
+<table class="tmtr mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[9]); $i++) { print fmtr1($catmat[9][$i]); } ?></tbody></table>
+<p class="p11">Добавки для бетона Эластобетон-А2 поставляются в виде КОНЦЕНТРАТА (разводятся водой 1:1).</p>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+
+<div class="px10"></div>
+

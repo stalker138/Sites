@@ -1,0 +1,18 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим»: Бишкек и Киргизия.</span></p>
+<h2>ОсОО «ТэоХим Бишкек»</h2><div class="px20"></div>
+<table><tbody>
+<tr><td style="width:200px"><span>Адрес</span>:</td><td colspan="3">г. Бишкек, ул. Ала-Арчинская 83Б</td></tr>
+<tr><td><span>Руководитель</span>:</td><td style="width: 200px;">Шукуров Эдик Скандарбекович</td><td colspan="2" style="text-align:left;"><div><a href="tel:+996700605003">+996 700 605003</a></div></td></tr>
+<!--tr><td><span>Менеджер</span>:</td><td>Болотбек уулу Аманбек</td><td colspan="2" style="text-align:left;"><div><a href="tel:+996777239230">+996 777 239230</a></div></td></tr-->
+<tr><td><span>E-mail</span>:</td><td colspan="3"><span id="dpIDmail">&nbsp;</span></td></tr>
+</tbody></table>
+
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<img src="/img/css/pismo.png" alt="" onclick="f_swtch(4)" style="cursor:pointer"/>
+
+<div class="pb_hidden"><span id="spIDmail">l.comteohim.kgbishkek@gmai</span></div>

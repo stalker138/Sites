@@ -1,0 +1,63 @@
+<?php
+$pi=17;     // Индекс покрытия
+$mi=91;     // Индекс материала первичного слоя
+$si=0;      // Индекс шпатлевки
+$fi=93;     // Индекс финишного слоя
+$f8=0;      // Индекс второго финишного слоя
+$ni=0;      // Индекс наполнителя
+$se=0;      // Кол-во слоев
+$smn=array('Флюатирование', 'Элакор-МБ1 (концентрат)'); // Первичный слой
+$ssn=0;     // Шпатлевка
+$sfn=array('Герметизация', 'Элакор-МБ2 (концентрат)');  // Финишный слой
+$snn=0;     // Наполнитель
+?>
+
+<script type="text/javascript">
+
+var pi_rkat=6;
+var pir  = [0.3, 0.28, 0.25, 0.23, 0.2, 0.15]; // Коэфф-ты расхода первичного покрытия (грунта) по маркам бетона
+var pirm = [0.2, 0.17, 0.15, 0.12, 0.1, 0.1];  // Коэфф-ты расхода финишного покрытия по маркам бетона
+var ini = 'pi_vmc=<?php print (int)$p[$pi][4]; ?>;  pi_vrc=<?php print (int)$p[$pi][3]; ?>;';  // Инициализация
+var pise =  '';  // Слои эмали/толщина слоя
+
+var vrc=0;     // Добавка в зависимости от марки бетона (pi_mb)
+var pivrc = 'switch (pi_rkat) {    case 2: pi_vrc*=1.3; break;    case 3: pi_vrc*=1.15; break;    case 4: pi_vrc*=1.05; }';
+var pivrc1 = pivrc;
+var pivrc2 = '';
+var pish0 = '';
+var pish1 = '';  // Шпатлевание
+
+function showTable() {var table1=fpb_ById('table1'), table2=fpb_ById('table2'); table1.style.display='none'; table2.style.display='inline';}
+
+var v_tmp_interval=null,v_tmp_h=0; fpb_addCss('.i_t { padding:0; margin:0; width:110px; height:18px; border:none 0px; font:bold 12px arial; background-color:#49ff79; } .o_t { width:70px; text-align:right; padding-right:2px; } .tmtr td { border:solid 1px #000000; }');
+function f_z_to_t(s) { return parseFloat(fpb_ById(s).innerHTML.replace(/,/g,".")); }
+function f_add_zakaz() {
+var p_kol,p_ksh,p_kk; if(pb_storage>0){
+    p_kol=f_z_to_t('o_kol'); p_ksh=f_z_to_t('o_ksh'); p_kk=f_z_to_t('o_kk'); if (p_kol=='0.00') { alert('Нулевое количество!'); return; }
+    localStorage.setItem('z401','¡¡11¡'+p_kol+'¡¡15¡'+p_ksh+'¡¡113¡'+p_kk+'¡¡¡'); alert('Заказ материалов для расчета\nПолиуретановая пропитка Элакор-ПУ\nОБНОВЛЕН');
+}}function fById(id) { return document.getElementById(id); }
+</script>
+
+{*text0_2*}    <!-- f_i_t -->
+{*text0_1*}    <!-- f_calc -->
+
+<h1>Флюат пропитка ЦЕНА</h1>
+<p style="float:left;font:normal 11px arial;">Глубина пропитки бетона 4-5мм. Внешний вид - лакированный бетон.<br>Применяется внутри помещений и на открытом воздухе. Паропроницаемая.<br>Гарантия на выполненные работы - 5лет.</p>
+<p class="rlink" style="margin-top:7px"><l1 id="105">Флюатирование</l1><div class="px15"></p></div>
+
+<div style="box-shadow:4px 4px 7px 0 #999999;">
+{*text0_3*}    <!-- Таблицы -->
+</div>
+<div class="px15"></div>
+
+<div class="h14">Дополнительная информация.</div>
+<p>1. Марочная прочность бетона/пескобетона не всегда точно определяет расход материала.<br>Лучший способ проверки - пробное нанесение.</p>
+<p>2. Описание используемых материалов:<br>Элакор-МБ1 <l1 id="79">флюат</l1> – флюатирующий состав (концентрат)<br>Элакор-МБ2 - <l1 id="59">лак акриловый</l1> (концентрат)</p>
+
+<script type="text/javascript">fpb_ById('i_so').value='1000'; fpb_ById('i_mb').value="300"; v_tmp_i_pkr='17'; fpb_ById('i_pkr').value="17"; f_set();
+function f_set() {
+var p; if (pb_storage>0) {
+    p=localStorage.getItem('i_so')||0; if (p) fpb_ById('i_so').value=p;
+    p=localStorage.getItem('i_mb')||0; if (p) fpb_ById('i_mb').value=p;
+} f_i_t();
+}</script>

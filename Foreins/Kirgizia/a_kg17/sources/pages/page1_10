@@ -1,0 +1,154 @@
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}
+<style>
+.div_mo .tmtr td { padding:2px 5px 2px 0; height:22px; font-size:12px; line-height:22px; text-align:right; border:solid 1px #c8c8c8; } .tmtr td a { font-size:12px; text-decoration:none; } .tmtr td a:hover { text-decoration:underline; }
+.div_mo .tmtr, .div_mo .tmtr th { border:solid 1px #808080; background:#ffffff; }
+.div_mo .tmtr .tmdl { padding:2px 0 2px 5px; text-align:left; }
+#content .div_mo .tmtr a, #content .div_mo .tmtr a span { text-decoration: none; }
+
+</style>
+{*tpl3*}</head><body>{*tpl7*}
+{*block1_10*}
+{*tpl8*}{*tpl4*}
+<script>
+{*text0_31*}
+var vrm, pirgr, pirfs, pivfs, nkif, pirnp, pirnk, pivrn, pivrm, ifl, pirfl, pivfl, v_pi, gk, fl2, pirfl2, pirgk, pirnk14, a_mtr=[], v_fIter=0;
+         /* [ pi, gr, ml, sh,pirsh, sk,pirsk, fs, fl, np, nk, ne, se, sp, vrm, pirgr, pirfs, pivfs, nkif, pirnp, pirnk, 0, fl2, pirfl2 ] */
+/*1.*/
+ a_mtr[2] = a_cvr_main[11];
+ a_mtr[10] = a_cvr_main[13];
+a_mtr[18] = a_cvr_main[17];
+a_mtr[24] = a_cvr_main[87];
+a_mtr[29] = a_cvr_main[23];
+a_mtr[31] = a_cvr_main[25];
+
+/*2.*/
+ a_mtr[3] = a_cvr_main[31];
+a_mtr[11] = a_cvr_main[33];
+a_mtr[19] = a_cvr_main[35];
+a_mtr[25] = a_cvr_main[85];
+a_mtr[30] = a_cvr_main[89];
+a_mtr[32] = a_cvr_main[83];
+a_mtr[33] = a_cvr_main[81];
+
+/*3.1.*/
+ a_mtr[1] = a_cvr_main[53];
+ a_mtr[9] = a_cvr_main[54];
+a_mtr[17] = a_cvr_main[73];
+
+/*3.2.*/
+ a_mtr[4] = a_cvr_main[51];
+a_mtr[12] = a_cvr_main[52];
+a_mtr[20] = a_cvr_main[55];
+
+/*4.*/
+ a_mtr[5] = a_cvr_main[97];
+a_mtr[13] = a_cvr_main[74];
+
+/*5.*/
+ a_mtr[6] = a_cvr_main[39];
+a_mtr[14] = a_cvr_main[37];
+a_mtr[21] = a_cvr_main[43];
+a_mtr[26] = a_cvr_main[93];
+
+/*6.1.*/
+ a_mtr[7] = a_cvr_main[63];
+a_mtr[15] = a_cvr_main[64];
+a_mtr[22] = a_cvr_main[65];
+a_mtr[27] = a_cvr_main[66];
+
+/*6.2.*/
+ a_mtr[8] = a_cvr_main[67];
+a_mtr[16] = a_cvr_main[68];
+a_mtr[23] = a_cvr_main[69];
+a_mtr[28] = a_cvr_main[70];
+
+
+function f_refresh() {
+  var i, cpkr=pkr.length, p=fpb_ById('i_so'); if (p) fpb_setLS('i_so',p.value); p=fpb_ById('i_mb'); if (p) fpb_setLS('i_mb',p.value);
+  if (v_tmp_interval) { clearInterval(v_tmp_interval); v_tmp_interval=null; }
+  for (i=11; i<cpkr; i+=1) {
+    if (pkr[i]) {
+      fpb_ById('m' + i).innerHTML = fpb_ById('m_m' + i).innerHTML = '';
+      fpb_ById('mi' + i).innerHTML = fpb_ById('m_mi' + i).innerHTML = '';
+      if (no_work == 0) {
+        fpb_ById('r' + i).innerHTML = fpb_ById('m_r' + i).innerHTML = '';
+        fpb_ById('mr' + i).innerHTML = fpb_ById('m_mr' + i).innerHTML = '';
+        fpb_ById('ri' + i).innerHTML = fpb_ById('m_ri' + i).innerHTML = '';
+        fpb_ById('mri' + i).innerHTML = fpb_ById('m_mri' + i).innerHTML = '';
+      }
+    }
+  }
+  v_pi=1; v_tmp_interval=setInterval(f_iteration,40);
+} function f_iteration() {
+  if (v_pi>20 && v_fIter==0) { v_fIter=1; return; } if(v_fIter==1 && v_pi==21) { v_fIter=2; return; } v_fIter=0;
+  pi = a_mtr[v_pi][0]; /* Покрытие */
+  gr = a_mtr[v_pi][1]; /* Грунтовка */
+  ml = a_mtr[v_pi][2]; /* Медная лента */
+  sh = a_mtr[v_pi][3]; /* Шпатлёвка */ sh=0;
+  pirsh = a_mtr[v_pi][4]; /* Шпатлёвка Расход */ pirsh=0;
+  sk = a_mtr[v_pi][5]; /* Кварц */
+  pirsk = a_mtr[v_pi][6]; /* Кварц Расход */
+  fs = a_mtr[v_pi][7]; /* Финишный слой */
+  fl = a_mtr[v_pi][8]; /* Финишный лак */
+  np = a_mtr[v_pi][9]; /* Наполнитель */
+  nk = a_mtr[v_pi][10]; /* Индекс кварца наполнителя */
+  ne = a_mtr[v_pi][11]; /* Толщина наполнителя */
+  se = a_mtr[v_pi][12]; /* Кол-во слоев финишного слоя */
+  sp = a_mtr[v_pi][13]; /* Тип поверхности (фактурная/шероховатая) */
+  vrm = a_mtr[v_pi][14]; /* Влияние выбранной марки бетона (pi_mb) на стоимость доп.работ */
+  pirgr = a_mtr[v_pi][15]; /* Коэфф-ты расхода грунтовки по маркам бетона */
+  pirfs = a_mtr[v_pi][16]; /* Расход финишного покрытия */
+  nkif = a_mtr[v_pi][18]; /* Индекс кварца */
+  pirnp = a_mtr[v_pi][19]; /* Расход подстилки от толщины */
+  pirnk = a_mtr[v_pi][20]; /* Расход кварца от толщины */
+  fl2 = a_mtr[v_pi][22];
+  pirfl2 =  a_mtr[v_pi][23];
+  ifl = a_mtr[v_pi][24] || [0, 0, 0, 0];
+  pirfl = a_mtr[v_pi][25] || 0;
+  pivfl = a_cvr_w[pi][4] || 0;
+  pivrn = a_cvr_w[pi][0];
+  pivrm = a_cvr_w[pi][1];
+  pivfs = a_cvr_w[pi][2];
+  gk = (pi==71) ? 329 : 0;  /* Разбавитель К */
+
+  //if (pi==63) { alert(fl2 ); }
+
+  if (pi==71 || pi==73) { pivrn = [0, 0, 1.2, 2.4, 243.6, 244.8]; pivrm = [0, 1.2, 2.4, 3.6, 9.6, 9.6]; }
+  if (pi==83) { /* pirfl = 0.25; pivfl = 0; */ v_pageCalc=1; } else v_pageCalc=0;
+  if (pi==93) { 
+      pirnp = [0.35, 1.0, 1.5, 1.9]; /* Расход подстилки от толщины */
+      pirnk = [1.5, 3, 4.5, 6]; /* Расход кварца от толщины */
+      pivrn = [0, 0, 2.59, 4.32]; pivrm = [0, 0, 0.04, 0.09]; 
+  }
+  if (pi===39 || pi===37) {
+    pirnk14 = a_mtr[v_pi][33]; /* Расход кварца 0.1-0.4 от толщины */
+  }
+  if (pi===71) {
+    pirgk = [0.04, 0.04, 0.04];     /* Расход Разбавитель К от толщины */
+  }
+  f_i_t(); v_pi+=1; if (v_pi>=a_mtr.length) { clearInterval(v_tmp_interval); v_tmp_interval=null; }
+}
+
+{*text0_32*}
+fpb_ready(function() {
+  var i,a,p,h,oh,sh,t=f_gdhm(),ls=fpb_getLS('page1023items')||[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,f_gdhm()];
+  if(typeof ls=='string') ls=JSON.parse(ls); if ((t-ls[21])>60) ls=[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,t];
+  a=document.querySelectorAll('.divh3');
+  if (a) { for (i=0; i<a.length; i+=1) {
+     p=a[i].parentNode; p.style.height = (ls[i] ? p.scrollHeight : 40) + 'px'; p.className = ls[i] ? 'div_mo' : 'div_mc';
+     pb_event.add(a[i],'click',new Function('e','var ls=fpb_getLS("page1023items")||[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],p=e.target.parentNode; if(typeof ls=="string") ls=JSON.parse(ls); ls[21]=f_gdhm(); ls['+i+']=ls['+i+']==1?0:1; fpb_setLS("page1023items",JSON.stringify(ls));'));
+  }}
+/*  oh=e.offsetHeight; sh=e.scrollHeight; h=((oh>sh)?oh:sh)+'px'; */
+f_set();});
+function f_page1010(o,f) {
+  var a,p,i,h,ls=f?[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,f_gdhm()]:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,f_gdhm()];
+  a=document.querySelectorAll('.divh3'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt(fpb_getStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==40) || (!f&&h!=40)) fpb_a_height(p,200,25,p.scrollHeight,40);
+    }
+  }
+  fpb_setLS("page1023items",JSON.stringify(ls));
+}
+function f_gdhm() { var d=new Date(), y='000'+d.getFullYear(),l=y.length,m=(d.getMonth()+1),h=d.getHours(),dt=d.getDate(),t=d.getMinutes(); if(l>4)y=y.substr(l-4,4); if(m<10)m='0'+m; if(h<10)h='0'+h; if(dt<10)dt='0'+dt; if(t<10)t='0'+t; return parseInt(y.substr(2,2)+m+dt+h+t); } /* Возврат строки yymmddhhtt из объекта даты */
+</script>
+</body></html>
