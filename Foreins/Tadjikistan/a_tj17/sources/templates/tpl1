@@ -1,1 +1,4 @@
 <!DOCTYPE html><html lang="ru" prefix="og: https://ogp.me/ns#"><head>
+<?php
+$no_metrix=0;
+?>
