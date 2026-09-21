@@ -1,0 +1,91 @@
+<!--h1>Промышленные полы</h1-->
+<!--<h1 style="padding:220px 0 0 0; font:bold 20px arial; text-align:center; background:transparent; color:#ffffff;">ПРОМЫШЛЕННЫЕ ПОЛИМЕРНЫЕ ПОЛЫ ДЛЯ ЛЮБЫХ ТИПОВ ПОМЕЩЕНИЙ</h1>-->
+
+<div class="px0"></div>
+<p class="bold colored up">Внимание! В Каталог добавлены 3D-модели покрытий  (BIM) в формате .rvt</p>
+<div class="px5"></div>
+
+<p class="h1">Как пользоваться электронным каталогом:</p>
+
+<p class="bold colored up">Выбор покрытия для конкретного помещения.</p>
+<p><span>Выберите «Область применения»</span>, например, <span>«Транспорт»</span>, далее выберите <span>«Тип помещения»</span>, например, <span>«Паркинги»</span>.<br>
+На странице конкретного типа помещения (пример – «Паркинги») предлагается на выбор несколько вариантов покрытий.<br>
+Напротив каждого покрытия есть ссылка <span>«Подробнее»</span>, по которой можно перейти в подробное описание этого покрытия.</p>
+<div class="px10"></div>
+
+<p class="bold colored up">Цена покрытий и технология нанесения.</p>
+<p>На странице каждого покрытия есть ссылка <span>«Расчет стоимости материалов»</span>. <br>
+Перейдя по ней, Вы сможете рассчитать количество и стоимость материалов по реальным текущим ценам. <br>
+На странице расчета стоимости (вверху справа) есть ссылка <span>« … ТЕХНОЛОГИЯ»</span> - подробная инструкция нанесения покрытия. </p>
+
+<!-- Комментарий блока с фотографиями
+
+<div style="border: solid 1px #f5530e; border-bottom:none; float:left; width: 768px; margin-left: 15px;">
+
+  <h2 style="font: normal bold 14px/20px arial; margin-top:4px; background:none; color:#f5530e;" class="center">Виды промышленных полов</h2>
+  <div style="background:url('/img/css/h2_home_f.png') 50% 100% no-repeat; width:100%; height:18px;"></div>
+
+  <div class="out">
+
+    <div class="dbox" style="background: #fafafa; float:left;width:178px; margin-top:0; margin-left:11px;">
+        <div class="h14" style="line-height: 20px; float:left; width:178px; clear:none;"><a href="http://www.teohim.ru/" style="font-size:13px; font-style:normal;">Полимерные полы</a></div>
+        <a href="http://www.teohim.ru/" style="float:left; clear:none; line-height: 0;" title="полимерные полы"><img style="border:none;" src="/img/css/polimernye-poly.jpg" alt="полимерные полы" /></a>
+    </div>
+
+    <div class="dbox" style="background: #fafafa; float:left;width:178px; margin-top:0; margin-left:11px;">
+        <div class="h14" style="line-height: 20px; float:right; width:178px; clear:none;"><a href="http://www.teohim.ru/" style="font-size:13px; font-style:normal;">Наливные полы</a></div>
+        <a href="http://www.teohim.ru/" style="float:right; clear:none; line-height: 0;" title="наливные полы"><img style="border:none;" src="/img/css/nalivnie_poly_1.jpg" alt="наливные полы" /></a>
+    </div>
+
+    <div class="dbox" style="background: #fafafa; float:left;width:178px; margin-top:0;  margin-left:11px;">
+        <div class="h14" style="line-height: 20px; float:left; width:178px; clear:none;"><a href="http://www.teohim.ru/" style="font-size:13px; font-style:normal;">Бетонные полы</a></div>
+        <a href="http://www.teohim.ru/" style="float:left; clear:none; line-height: 0;" title="бетонные полы"><img style="border:none;" src="/img/css/betonnie_poly.jpg" alt="бетонные полы" /></a>
+    </div>
+
+    <div class="dbox" style="background: #fafafa; float:left;width:178px; margin-top:0; margin-left:11px;">
+        <div class="h14" style="line-height: 20px; float:left; width:178px; clear:none;"><a href="http://www.teohim.ru/" style="font-size:13px; font-style:normal;">Полимерцементные полы</a></div>
+        <a href="http://www.teohim.ru/" style="float:right; clear:none; line-height: 0;" title="полимерцементные полы"><img style="border:none;" src="/img/css/polimercementnye-poly.jpg" alt="полимерцементные полы" /></a>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="px15"></div>
+
+<div style="border: solid 1px #004f92;  border-bottom:none; float:left; width: 768px; margin-left: 15px;">
+
+  <h2 style="font: normal bold 14px/20px arial; background:none; color:#004f92; margin-top:5px;" class="center">Промышленные полы по типу объекта</h2>
+  <div style="background:url('/img/css/h2_home_s.png') 50% 100% no-repeat; width:100%; height:18px;"></div>
+
+  <div class="out">
+
+    <div class="dbox" style="background: #fafafa; float:left;width:178px; margin-top:0; margin-left:11px;">
+        <div class="h14" style="line-height: 20px; float:left; width:178px; clear:none;"><a href="http://www.teohim.ru/" style="font-size:13px; font-style:normal;">Полы для цеха</a></div>
+        <a href="http://www.teohim.ru/" style="float:left; clear:none; line-height: 0;" title="Полы для цеха"><img style="border:none;" src="/img/css/poly-dlja-ceha.jpg" alt="Полы для цеха" /></a>
+    </div>
+
+    <div class="dbox" style="background: #fafafa; float:left;width:178px; margin-top:0; margin-left:11px;">
+        <div class="h14" style="line-height: 20px; float:right; width:178px; clear:none;"><a href="http://www.teohim.ru/" style="font-size:13px; font-style:normal;">Полы для склада</a></div>
+        <a href="http://www.teohim.ru/" style="float:right; clear:none; line-height: 0;" title="Полы для склада"><img style="border:none;" src="/img/css/poly-dlja-sklada.jpg" alt="Полы для склада" /></a>
+    </div>
+
+    <div class="dbox" style="background: #fafafa; float:left;width:178px; margin-top:0; margin-left:11px;">
+        <div class="h14" style="line-height: 20px; float:left; width:178px; clear:none;"><a href="http://www.teohim.ru/" style="font-size:13px; font-style:normal;">Полы для гаража</a></div>
+        <a href="http://www.teohim.ru/" style="float:left; clear:none; line-height: 0;" title="Полы для гаража"><img style="border:none;" src="/img/css/poly-dlja-garazha.jpg" alt="Полы для гаража" /></a>
+    </div>
+
+    <div class="dbox" style="background: #fafafa; float:left;width:178px; margin-top:0; margin-left:11px;">
+        <div class="h14" style="line-height: 20px; float:left; width:178px; clear:both;"><a href="http://www.teohim.ru/" style="font-size:13px; font-style:normal;">Для других объектов</a></div>
+        <div style="float:left; clear:both; width:168px; height: 98px; padding: 8px 5px; background:#EEE; text-align:center;"><a href="http://www.teohim.ru/" style="color: #000;text-decoration:none;"><span style="font-weight:700;color: #004f92;">Выбор пола</span> в зависимости<br>от назначения объекта,<br>отрасли промышленности,<br>условий эксплуатации,<br>типа покрытия, <br>материала и др.</a></div>
+    </div>
+
+  </div>
+
+</div>
+
+-->
+<div class="px10"></div>
+{*text0_2*}
+
+<p></p>

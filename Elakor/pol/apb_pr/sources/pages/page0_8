@@ -1,0 +1,28 @@
+<?php
+if (empty($_GET['name'])) { header('HTTP/1.0 204 No Content'); exit; }
+$name = $_GET['name'];
+$name = get_magic_quotes_gpc() ? stripslashes($name) : $name;
+f_download($name);
+
+function f_download($name='') {
+    global $pb_root, $pb_start_site;
+    if (empty($name)) { header('HTTP/1.0 204 No Content'); exit; }
+    $ua=$_SERVER['HTTP_USER_AGENT'];
+    $ip=$_SERVER['REMOTE_ADDR'];
+    $t=$_SERVER['REQUEST_URI'];
+    $v=$pb_root.'dwg/'.$name;
+    if (file_exists($v)) {
+        header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+        header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+        header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
+        header("Cache-Control: post-check=0, pre-check=0", false);
+        header("Pragma: no-cache"); // HTTP/1.0
+        header('Accept-Ranges: bytes');
+        header('Content-Disposition: attachment; filename='.$name);
+        header('Content-Type: application/zip; name="'.$name.'"');
+        readfile($v);
+    } else {
+        header('HTTP/1.0 204 No Content');
+    }
+}
+?>

@@ -1,0 +1,4 @@
+<?php header("HTTP/1.0 404 Not Found"); ?>
+{*tpl1*}<!DOCTYPE html><html><head><!--1_1-->{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+<h1>404<br>Страница не найдена</h1><div class="px20b"></div><p><l1 id="1">Перейти на главную страницу</l1></p>
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}</body></html>

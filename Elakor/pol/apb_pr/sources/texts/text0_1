@@ -1,0 +1,217 @@
+<div id="leftmenu">
+
+<?php if ($test) { ?>
+
+<div style="width:100%;height:30px;font:bold 16px arial;line-height:32px;color:#ffffff;background:#005093">Области применения</div>
+
+<div style="border:1px solid #005093;">
+<div class="lmsep"></div>
+
+<div class="lmitem<?php echo ($pb_page == 1031 || $pb_page == 1032 || $pb_page == 1033 || $pb_page == 1034 || $pb_page == 1035) ? ' active' : ''; ?>">Транспорт
+<div class="lmitem1" id="lms1">
+  <l1 id="31" class="item<?php echo ($pb_page == 1031) ? ' active' : ''; ?>">Паркинги</l1>
+  <l1 id="32" class="item<?php echo ($pb_page == 1032) ? ' active' : ''; ?>">На улице под навесом (открытые паркинги)</l1>
+  <l1 id="33" class="item<?php echo ($pb_page == 1033) ? ' active' : ''; ?>">Автосервис, ремонтная мастерская</l1>
+  <l1 id="34" class="item<?php echo ($pb_page == 1034) ? ' active' : ''; ?>">Автомойка</l1>
+  <l1 id="35" class="item<?php echo ($pb_page == 1035) ? ' active' : ''; ?>">Пандус (паркинг, склад)</l1>
+</div>
+</div>
+
+<div class="lmitem<?php echo ($pb_page == 1041 || $pb_page == 1042 || $pb_page == 1043 || $pb_page == 1044 || $pb_page == 1045 || $pb_page == 1046 || $pb_page == 1047 || $pb_page == 1048) ? ' active' : ''; ?>">Производственно-складские
+<div class="lmitem1" id="lms2">
+  <l1 id="41" class="item<?php echo ($pb_page == 1041) ? ' active' : ''; ?>">Склад, Цех общего назначения</l1>
+  <l1 id="42" class="item<?php echo ($pb_page == 1042) ? ' active' : ''; ?>">Склад металлопродукции. Склад металлолома. Стоянка гусеничной техники.</l1>
+  <l1 id="44" class="item<?php echo ($pb_page == 1044) ? ' active' : ''; ?>">Цех металлообработки</l1>
+  <l1 id="45" class="item<?php echo ($pb_page == 1045) ? ' active' : ''; ?>">Цех металлургический. Цех термообработки.</l1>
+  <l1 id="48" class="item<?php echo ($pb_page == 1048) ? ' active' : ''; ?>">Аккумуляторная при складе/цехе</l1>
+</div>
+</div>
+
+<div class="lmitem<?php echo ($pb_page == 1051 || $pb_page == 1052 || $pb_page == 1053 || $pb_page == 1054 || $pb_page == 1055 || $pb_page == 1056 || $pb_page == 1057) ? ' active' : ''; ?>">Пищевая промышленность
+<div class="lmitem1" id="lms3">
+  <l1 id="51" class="item<?php echo ($pb_page == 1051) ? ' active' : ''; ?>">Переработка мяса, рыбы, птицы</l1>
+  <l1 id="52" class="item<?php echo ($pb_page == 1052) ? ' active' : ''; ?>">Переработка (консервирование) овощей/фруктов</l1>
+  <l1 id="53" class="item<?php echo ($pb_page == 1053) ? ' active' : ''; ?>">Производство молочной и пивобезалкогольной продукции</l1>
+  <l1 id="54" class="item<?php echo ($pb_page == 1054) ? ' active' : ''; ?>">Холодильник</l1>
+  <l1 id="55" class="item<?php echo ($pb_page == 1055) ? ' active' : ''; ?>">Морозильная камера</l1>
+  <l1 id="56" class="item<?php echo ($pb_page == 1056) ? ' active' : ''; ?>">Моечные (посуда, овощи/фрукты) помещения</l1>
+  <l1 id="57" class="item<?php echo ($pb_page == 1057) ? ' active' : ''; ?>">Пекарня</l1>
+</div>
+</div>
+
+<div class="lmitem<?php echo ($pb_page == 1081 || $pb_page == 1048) ? ' active' : ''; ?>" id="lms4">Химическая промышленность
+<div class="lmitem1" id="lms4">
+  <l1 id="81" class="item<?php echo ($pb_page == 1081) ? ' active' : ''; ?>">Склад/цех химпродукции</l1>
+  <l1 id="48" class="item<?php echo ($pb_page == 1048) ? ' active' : ''; ?>">Аккумуляторная при складе/цехе</l1>
+</div>
+</div>
+
+<div class="lmitem<?php echo ($pb_page == 1084 || $pb_page == 1085) ? ' active' : ''; ?>">Электронная промышленность
+<div class="lmitem1" id="lms5">
+  <l1 id="84" class="item<?php echo ($pb_page == 1084) ? ' active' : ''; ?>">Сборочные цеха электроники</l1>
+  <l1 id="85" class="item<?php echo ($pb_page == 1085) ? ' active' : ''; ?>">Серверные</l1>
+</div>
+</div>
+
+<!--div class="lmitem" id="lms6">РосАтом</dov-->
+<l2 id="6" class="lmitem<?php echo ($pb_page == 2006) ? ' active' : ''; ?>">РосАтом</l2>
+
+<div class="lmitem<?php echo ($pb_page == 1061 || $pb_page == 1062 || $pb_page == 1063 || $pb_page == 1064 || $pb_page == 1065 || $pb_page == 1066 || $pb_page == 1067 || $pb_page == 1068) ? ' active' : ''; ?>">Сельское Хозяйство
+<div class="lmitem1" id="lms7">
+  <l1 id="61" class="item<?php echo ($pb_page == 1061) ? ' active' : ''; ?>">Птицеферма</l1>
+  <l1 id="62" class="item<?php echo ($pb_page == 1062) ? ' active' : ''; ?>">Коровник</l1>
+  <l1 id="63" class="item<?php echo ($pb_page == 1063) ? ' active' : ''; ?>">Свинарник (ванна, канал навозоудаленя)</l1>
+  <l1 id="64" class="item<?php echo ($pb_page == 1064) ? ' active' : ''; ?>">Кормостол</l1>
+  <l1 id="65" class="item<?php echo ($pb_page == 1065) ? ' active' : ''; ?>">Зернохранилище</l1>
+  <l1 id="66" class="item<?php echo ($pb_page == 1066) ? ' active' : ''; ?>">Овощехранилище</l1>
+  <l1 id="67" class="item<?php echo ($pb_page == 1067) ? ' active' : ''; ?>">Инкубатор</l1>
+  <l1 id="68" class="item<?php echo ($pb_page == 1068) ? ' active' : ''; ?>">Теплица, оранжерея</l1>
+</div>
+</div>
+
+<div class="lmitem<?php echo ($pb_page == 1071 || $pb_page == 1072 || $pb_page == 1073) ? ' active' : ''; ?>">Общественные
+<div class="lmitem1" id="lms8">
+  <l1 id="71" class="item<?php echo ($pb_page == 1071) ? ' active' : ''; ?>">Офис</l1>
+  <l1 id="72" class="item<?php echo ($pb_page == 1072) ? ' active' : ''; ?>">Выставочный зал</l1>
+  <l1 id="73" class="item<?php echo ($pb_page == 1073) ? ' active' : ''; ?>">Торговый зал</l1>
+</div>
+</div>
+
+<!--div class="lmitem<?php echo ($pb_page == 1077 || $pb_page == 1078 || $pb_page == 1079) ? ' active' : ''; ?>">Медицина
+<div class="lmitem1" id="lms9">
+  <l1 id="77" class="item<?php echo ($pb_page == 1077) ? ' active' : ''; ?>">Лаборатории</l1>
+  <l1 id="78" class="item<?php echo ($pb_page == 1078) ? ' active' : ''; ?>">Палаты</l1>
+  <l1 id="79" class="item<?php echo ($pb_page == 1079) ? ' active' : ''; ?>">Операционные</l1>
+</div>
+</dov-->
+
+<l1 id="77" class="lmitem<?php echo ($pb_page == 1077) ? ' active' : ''; ?>">Медицина</l1>
+
+<l1 id="87" class="lmitem<?php echo ($pb_page == 1087) ? ' active' : ''; ?>">Вспомогательные</l1>
+
+<div class="lmitem">Прочее</div>
+
+<div class="lmsep" style="height:10px"></div>
+
+</div>
+
+<!--div class="lmsep" style="height:20px"></dov-->
+<div class="lmitem0" style="background:#004f92; border: 1px solid #004f92;">
+  <l1 id="10" class="item<?php echo ($pb_page == 1010) ? ' active' : ''; ?>" style="font-size: 14px;">Все Покрытия</l1>
+  <l1 id="4" class="item<?php echo ($pb_page == 1004) ? ' active' : ''; ?>" style="font-size: 14px;">Преимущества покрытий</l1>
+</div>
+
+<div class="lmitem0" style="border: 1px solid #f5530e;">
+  <l1 id="1" class="item<?php echo ($pb_page == 1001) ? ' active' : ''; ?>" style="font-size: 14px;">Главная</l1>
+  <l1 id="2" class="item<?php echo ($pb_page == 1002) ? ' active' : ''; ?>" style="font-size: 14px;">О компании</l1>
+  <l1 id="5" class="item<?php echo ($pb_page == 1005) ? ' active' : ''; ?>" style="font-size: 14px;">Контакты</l1>
+</div>
+
+<?php } else { ?>
+
+<div style="width:100%;height:30px;font:bold 16px arial;line-height:32px;color:#ffffff;background:#005093">Области применения</div>
+
+<div style="border:1px solid #005093;">
+<div class="lmsep"></div>
+
+<div class="lmitem<?php echo ($pb_page == 1031 || $pb_page == 1032 || $pb_page == 1033 || $pb_page == 1034 || $pb_page == 1035) ? ' active' : ''; ?>">Транспорт
+<div class="lmitem1" id="lms1">
+  <l1 id="31" class="item<?php echo ($pb_page == 1031) ? ' active' : ''; ?>">Паркинг</l1>
+  <l1 id="32" class="item<?php echo ($pb_page == 1032) ? ' active' : ''; ?>">На улице под навесом (открытые паркинги)</l1>
+  <l1 id="33" class="item<?php echo ($pb_page == 1033) ? ' active' : ''; ?>">Автосервис, ремонтная мастерская</l1>
+  <l1 id="34" class="item<?php echo ($pb_page == 1034) ? ' active' : ''; ?>">Автомойка</l1>
+  <l1 id="35" class="item<?php echo ($pb_page == 1035) ? ' active' : ''; ?>">Пандус, рампа (паркинг, склад)</l1>
+</div>
+</div>
+
+<div class="lmitem<?php echo ($pb_page == 1041 || $pb_page == 1042 || $pb_page == 1043 /*|| $pb_page == 1044*/ || $pb_page == 1045 || $pb_page == 1046 || $pb_page == 1047 || $pb_page == 1048 || $pb_page == 1087) ? ' active' : ''; ?>">Производства, склады
+<div class="lmitem1" id="lms2">
+  <l1 id="41" class="item<?php echo ($pb_page == 1041) ? ' active' : ''; ?>">Цех, склад общего назначения </l1>
+  <l1 id="87" class="item<?php echo ($pb_page == 1087) ? ' active' : ''; ?>">Технические помещения: бойлерные, котельные, венткамеры, электрощитовые и т.п.</l1>
+  <l1 id="42" class="item<?php echo ($pb_page == 1042) ? ' active' : ''; ?>">Тяжелые нагрузки: гусеничная техника, склады металлолома, металлопродукции и т.п.</l1>
+  <l1 id="44" class="item<?php echo ($pb_page == 1044) ? ' active' : ''; ?>">Цех металлообработки</l1>
+  <l1 id="45" class="item<?php echo ($pb_page == 1045) ? ' active' : ''; ?>">Горячие цеха: металлургические, термообработки и т.п.</l1>
+  <l1 id="48" class="item<?php echo ($pb_page == 1048) ? ' active' : ''; ?>">Аккумуляторная при складе/цехе</l1>
+</div>
+</div>
+
+<div class="lmitem<?php echo ($pb_page == 1051 || $pb_page == 1052 || $pb_page == 1053 || $pb_page == 1054 || $pb_page == 1055 || $pb_page == 1056 || $pb_page == 1057) ? ' active' : ''; ?>">Пищевая Промышленность
+<div class="lmitem1" id="lms3">
+  <l1 id="51" class="item<?php echo ($pb_page == 1051) ? ' active' : ''; ?>">Преработка мяса, рыбы, птицы</l1>
+  <l1 id="52" class="item<?php echo ($pb_page == 1052) ? ' active' : ''; ?>">Переработка овощей, фруктов</l1>
+  <l1 id="53" class="item<?php echo ($pb_page == 1053) ? ' active' : ''; ?>">Молочная и пивобезалкогольная продукция</l1>
+  <l1 id="54" class="item<?php echo ($pb_page == 1054) ? ' active' : ''; ?>">Холодильная камера</l1>
+  <l1 id="55" class="item<?php echo ($pb_page == 1055) ? ' active' : ''; ?>">Морозильная камера</l1>
+  <l1 id="56" class="item<?php echo ($pb_page == 1056) ? ' active' : ''; ?>">"Мокрые" помещения: моечные отделения и т.п.</l1>
+  <l1 id="57" class="item<?php echo ($pb_page == 1057) ? ' active' : ''; ?>">"Горячие" помещения: пекарня, кухня и т.п.</l1>
+</div>
+</div>
+
+<div class="lmitem<?php echo ($pb_page == 1071 || $pb_page == 1072 || $pb_page == 1073) ? ' active' : ''; ?>">Гражданское строительство
+<div class="lmitem1" id="lms8">
+  <l1 id="71" class="item<?php echo ($pb_page == 1071) ? ' active' : ''; ?>">Офис</l1>
+  <l1 id="72" class="item<?php echo ($pb_page == 1072) ? ' active' : ''; ?>">Выставочный зал</l1>
+  <l1 id="73" class="item<?php echo ($pb_page == 1073) ? ' active' : ''; ?>">Торговый зал</l1>
+  <l1 id="1" class="item<?php echo ($pb_page == 1000) ? ' active' : ''; ?>">Образовательные учреждения</l1>
+</div>
+</div>
+
+<div class="lmitem<?php echo ($pb_page == 1061 || $pb_page == 1062 || $pb_page == 1063 || $pb_page == 1064 || $pb_page == 1065 || $pb_page == 1066 || $pb_page == 1067 || $pb_page == 1068) ? ' active' : ''; ?>">Сельское хозяйство
+<div class="lmitem1" id="lms7">
+  <l1 id="61" class="item<?php echo ($pb_page == 1061) ? ' active' : ''; ?>">Птицеферма</l1>
+  <l1 id="62" class="item<?php echo ($pb_page == 1062) ? ' active' : ''; ?>">Коровник</l1>
+  <l1 id="63" class="item<?php echo ($pb_page == 1063) ? ' active' : ''; ?>">Свинарник: каналы навозоудаления </l1>
+  <l1 id="64" class="item<?php echo ($pb_page == 1064) ? ' active' : ''; ?>">Кормостол</l1>
+  <l1 id="65" class="item<?php echo ($pb_page == 1065) ? ' active' : ''; ?>">Зернохранилище</l1>
+  <l1 id="66" class="item<?php echo ($pb_page == 1066) ? ' active' : ''; ?>">Овощехранилище</l1>
+  <l1 id="67" class="item<?php echo ($pb_page == 1067) ? ' active' : ''; ?>">Инкубатор</l1>
+  <l1 id="68" class="item<?php echo ($pb_page == 1068) ? ' active' : ''; ?>">Теплица, оранжерея</l1>
+</div>
+</div>
+
+<!--div class="lmitem<?php echo ($pb_page == 1077 || $pb_page == 1078 || $pb_page == 1079) ? ' active' : ''; ?>">Медицина
+<div class="lmitem1" id="lms9">
+  <l1 id="77" class="item<?php echo ($pb_page == 1077) ? ' active' : ''; ?>">Лаборатории</l1>
+  <l1 id="78" class="item<?php echo ($pb_page == 1078) ? ' active' : ''; ?>">Палаты</l1>
+  <l1 id="79" class="item<?php echo ($pb_page == 1079) ? ' active' : ''; ?>">Операционные</l1>
+</div>
+</div-->
+<l1 id="77" class="lmitem<?php echo ($pb_page == 1077) ? ' active' : ''; ?>">Медицина</l1>
+
+<div class="lmsep" style="height:10px"></div>
+
+</div>
+
+<div style="width:100%;height:30px;font:bold 16px arial;line-height:32px;color:#ffffff;background:#005093">Специальные покрытия</div>
+
+<div style="border:1px solid #005093;">
+<div class="lmsep"></div>
+
+<l1 id="29" class="lmitem<?php echo ($pb_page == 1029) ? ' active' : ''; ?>">Антистатические</l1>
+<l1 id="24" class="lmitem<?php echo ($pb_page == 1024) ? ' active' : ''; ?>">Безыскровые</l1>
+<l1 id="92" class="lmitem<?php echo ($pb_page == 1092) ? ' active' : ''; ?>">Антискользящие</l1>
+<l2 id="4" class="lmitem<?php echo ($pb_page == 2004) ? ' active' : ''; ?>">Химстойкие</l2>
+<l1 id="17" class="lmitem<?php echo ($pb_page == 1017) ? ' active' : ''; ?>" title="Прямой контакт с пищевыми продуктами и питьевой водой">Пищевые (прямой контакт)</l1>
+<l2 id="6" class="lmitem<?php echo ($pb_page == 2006) ? ' active' : ''; ?>">Дезактивируемые (РосАтом)</l2>
+
+<div class="lmsep" style="height:10px"></div>
+</div>
+
+<!--div class="lmsep" style="height:20px"></dov-->
+<div class="lmitem0" style="background:#004f92; border: 1px solid #004f92;">
+  <l1 id="10" class="item<?php echo ($pb_page == 1010) ? ' active' : ''; ?>" style="font-size: 14px;">Все Покрытия</l1>
+  <l1 id="4" class="item<?php echo ($pb_page == 1004) ? ' active' : ''; ?>" style="font-size: 14px;">Преимущества покрытий</l1>
+</div>
+
+<div class="lmitem0" style="border: 1px solid #f5530e;">
+  <l1 id="1" class="item<?php echo ($pb_page == 1001) ? ' active' : ''; ?>" style="font-size: 14px;">Главная</l1>
+  <l1 id="2" class="item<?php echo ($pb_page == 1002) ? ' active' : ''; ?>" style="font-size: 14px;">О компании</l1>
+  <l1 id="5" class="item<?php echo ($pb_page == 1005) ? ' active' : ''; ?>" style="font-size: 14px;">Контакты</l1>
+</div>
+
+
+
+<?php } ?>
+
+</div>
+<img src="img/css/stamp.png" alt=""/>

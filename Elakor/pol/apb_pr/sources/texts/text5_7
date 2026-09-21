@@ -1,0 +1,6 @@
+<style type="text/css">
+.pb_iprev,
+.pb_inext {
+    display: none !important;
+}
+</style>

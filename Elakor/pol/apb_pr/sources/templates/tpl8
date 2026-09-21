@@ -1,0 +1,22 @@
+<?php if (($pb_page>1001 && $pb_page<2000) || $pb_page==2010) { ?>
+{*text0_2*}
+<?php } ?></div><!--/content-->
+
+<!--<dov id="dright"><div class="sheader"></div><div class="px10"></div>-->
+
+<!--</div>--><!--/dright-->
+
+<div id="header">
+<l1 id="1" class="logo"></l1>
+<div id="hcenter">
+<div class="slogan"><span style="font-weight:100; text-transform:uppercase;">каталог &nbsp;покрытий</span><br>промышленных &nbsp;полов</div>
+<a class="contacts" href="tel:+74997034037">Онлайн-консультация <br><span>+7 (499) 703-40-37</span></a>
+</div>
+<!--<dov id="hright"></div>-->
+</div>
+
+<div class="sfooter"></div>
+</div><!--/main-->
+
+<div id="footer">
+</div>

@@ -1,0 +1,66 @@
+/* CSS for (c) Asw pages builder 00.77 beta | asws | 2010-2015 | asws.ru */
+* { margin:0; padding:0; outline:none; font:normal 12px arial; color:#000000; background:none; text-align:left; font:inherit; color:inherit; } * strong { font-weight:bold; } * em { font-style:italic; } * sup,* sub { font-size:10px; }
+html,body { width:100%; height:100%; background:#ffffff; }
+table,th,td { border-collapse:collapse; border:none 0px; }
+#main,.aarea,#iarea,#tarea,#idquery,#idmessage,.diarea,.trarea,#id_group,#id_opt ,#w3c{ position:absolute; }
+#main { top:0; left:0; right:0; bottom:0; min-width:1240px; min-height:600px; }
+
+/* screen areas */
+.aarea { top:55px; left:10px; width:198px; padding:10px 0; min-height:495px; display:block; border:solid 1px #000080; background:#c8c8c8; }
+#tarea { top:5px; left:220px; min-width:1010px; height:45px; }
+#iarea { top:55px; left:220px; right:50px; bottom:115px; min-width:1010px; min-height:310px; }
+#id_group ,#id_opt { left:0; top:0; right:0; bottom:0; min-width:1240px; min-height:600px; z-index:200; background:#f0f0f0; display:none; }
+#w3c { bottom:10px; left:65px; width:180px; height:31px; background:url(asw_pb_index_0077.png) 0 -106px; }
+
+.dtarea { cursor:pointer; position:relative; float:left; top:5px; width:40px; height:35px; margin-left:5px; text-align:center; font:normal 16px tahoma; color:#000000; border:solid 1px #000000; background:#f0f0f0; }
+.dtarea:hover { font-weight:bold; background:#e8e8e8; background:linear-gradient(to bottom,#f0f0f0,#c8c8c8); }
+.diarea { top:0; left:0; right:0; bottom:0; overflow-y:scroll; overflow-x:hidden; border:solid 1px #000000; visibility:hidden; }
+.tiarea { cursor:pointer; width:100%; font:normal 13px arial; text-align:left; line-height:17px; border:solid 5px #ffffff; } .tiarea tr:hover { color:#c80000; }
+.trarea { top:0; left:0; width:100%; min-height:100%; max-width:100%; font:normal 12px "courier new"; border:none 0px; background:#ece9d8; display:none; }
+
+/* buttons */
+.dis,.abut,.abut2 { cursor:pointer; position:relative; text-align:center; width:180px; height:25px; margin:5px 0 0 10px; font:normal 12px tahoma; letter-spacing:1px; color:navy; border:solid 1px #000080; background:#f8f8f8; background:linear-gradient(to bottom,#ffffff,#d8d8d8); }
+.dis { color:#808080; } .abut:hover,.abut2:hover, .dis:hover { font-weight:bold; background:#e0e0e0; background:linear-gradient(to bottom,#f0f0f0,#c0c0c0); } .abut:hover,.abut2:hover { color:#800000; }
+
+.px0,.px0b,.px1,.px1b,.px3,.px3b,.px5,.px5b,.px10,.px10b,.px15,.px15b,.px20,.px20b,.px25,.px25b,.px30,.px30b { position:relative; clear:both; width:100%; }
+.px0,.px0b { height:0px; } .px1,.px1b { height:1px; } .px3,.px3b { height:3px; } .px5,.px5b { height:5px; } .px10,.px10b { height:10px; } .px15,.px15b { height:15px; } .px20,.px20b { height:20px; } .px25,.px25b { height:25px; } .px30,.px30b { height:30px; }
+.px0b,.px1b,.px3b,.px5b,.px10b,.px15b,.px20b,.px25b,.px30b { border-bottom:solid 1px #000080; }
+
+.hlpspan { font:italic normal 12px arial; color:#333333; }
+
+#support_block{ position:fixed; bottom:0; left:0; width:0; height:30px; padding:5px 5px 10px 5px; background:#78bb28; border:solid 1px #000080; border-radius:5px; overflow:hidden; z-index:150; display:block; }
+.sb_swtch { cursor:pointer; position:relative; text-align:center; width:280px; height:25px; margin:5px 0 0 10px; font:normal 12px tahoma; letter-spacing:1px; color:navy; border:solid 1px #000080; background:#f8f8f8; background:linear-gradient(to bottom,#ffffff,#d8d8d8); }
+.sb_swtch:hover  { color:#800000; font-weight:bold; background:#e8e8e8; background:linear-gradient(to bottom,#f0f0f0,#c8c8c8); }
+#hlp { position:fixed; left:0; bottom:0; right:0; height:15px; min-width:1240px; padding:2px 30px; font:normal 12px tahoma; background:#f0f0f0; border:solid 1px #000080; display:block; overflow:hidden; }
+.twajax { width:100%;height:100%;border:none;text-align:center; background:#f0f0f0; } .twajax td { font:normal 13px arial; color:#000000; text-align:center; }
+
+.winarea { position:absolute; top:0; left:0; padding:10px; max-width:580px; max-height:145px; min-width:780px; min-height:145px; font:normal 13px "courier new"; color:#000000; border:solid 1px #808080; background:#ece9d8; }
+.tdlb { width:100px; font:bold 12px arial; text-align:left; }
+.iinfo { width:98%; height:20px; padding:0 5px; font:normal 12px arial; color:#000000; text-align:left; line-height:20px; border:solid 1px #000080; background:#ffffff; } .iinfo:disabled { color:#303030; }
+
+#id_winfo  { float:left;margin-left:50px;padding-top:5px;letter-spacing:0px;font:normal 13px "courier new"; color:#000000; }
+#id_winfo span, #id_winfo a { font:bold 13px "courier new"; color:#000080; } #id_winfo a { display:block; float:left; height:16px; font-size:15px; color:#000080; text-decoration:none; border-bottom:dashed 1px #800000; } #id_winfo a:hover  { color:#800000; border-bottom:none; }
+
+/* CSS for javascript library (c) Asw pages builder 00.73 beta | asws | 2010-2015 | asws.ru */
+.pb_hidden { position:absolute; top:0; left:0; width:0; height:0; visibility:hidden; overflow:hidden; }
+
+.pb_buttons { cursor:pointer; width:30px; height:25px; text-align:center; border:solid 1px #a0a0a0; border-radius:3px; background:#f8f8f8; background:linear-gradient(to bottom,#ffffff,#d8d8d8); }
+.pb_buttons:hover { background:#e8e8e8; background:linear-gradient(to bottom,#f0f0f0,#c8c8c8); }
+
+.pb_win_panel { cursor:pointer; left:30px; right:10px; bottom:25px; min-width:1160px; height:30px; border:solid 1px #000080; background:#c8c8c8; border-radius:5px; visibility:hidden; }
+.pb_win_panel_elem, .pb_win_panel_elem_sel { cursor:pointer; width:100px; height:26px; font:bold 12px arial; letter-spacing:1px; text-align:center; border:solid 1px #000080; border-radius:5px; background:#eeeeee; }
+.pb_win_panel_elem_sel { border:solid 1px #800000; background:#ffc8c8; background:linear-gradient(to bottom,#fff0f0,#ffc8c8); }
+.pb_win_panel_elem table tr td, .pb_win_panel_elem_sel table tr td { font:inherit; color:inherit; }
+
+.pb_win,.pb_win_sel { padding:5px; margin:0; border:solid 1px #808080; background:#eeeeee; box-shadow:1px 3px 10px rgba(0, 0, 0, 0.6); }
+.pb_win_head, .pb_win_head_sel { cursor:pointer; padding:0; height:30px; color:#000080; font:italic normal 18px arial; letter-spacing:1px; text-align:left; }
+.pb_win_head_sel { font:italic bold 18px arial; } .pb_win_head_text { position:absolute; top:5px; bottom:0; left:5px; right:60px; font:inherit; color:inherit; } #pb__win_head_2 { border-bottom:solid 1px #808080; background:#eeeeee; }
+.pb_win_head_del, .pb_win_head_hide  { position:relative; float:right; width:26px; height:26px; }
+.pb_win_head_del { background:url(asw_pb_index_0077.png) -32px -78px; } .pb_win_head_hide { background:url(asw_pb_index_0077.png) -4px -78px; }
+.pb_win_body, .pb_win_body_sel { position:absolute; top:36px; left:5px; bottom:5px; right:5px; padding:0; font:normal 12px arial; text-align:left; color:#000000; }
+
+.pb_alert { padding:5px; margin:0; border:solid 2px #000080; border-radius:10px; background:#f8f8f8; box-shadow:1px 3px 10px rgba(0, 0, 0, 0.6); }
+.pb_alert_head { cursor:pointer; padding:0; height:30px; font:italic bold 14px arial; color:#000080; border-bottom:solid 1px #000080; }
+.pb_alert_head .pb_ahr,.pb_alert_head .pb_ahb,.pb_alert_head .pb_ah0 { float:left; font:inherit; }
+.pb_ahr,.pb_ahb,.pb_ah0 { margin:5px 0 0 5px; font:italic bold 14px arial; } .pb_ahr { color:#800000; } .pb_ahb { color:#000080; } .pb_ah0 { font:normal 14px arial; color:#000000; }
+.pb_alert_body { position:absolute; top:36px; left:0; bottom:0; right:0; padding:0; font:bold 12px arial; text-align:center; color:#000080; }

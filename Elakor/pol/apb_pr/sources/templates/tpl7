@@ -1,0 +1,8 @@
+<div id="main">
+<div id="sleft"></div><!--<div id="sright"></div>-->
+
+<div id="dleft"><div class="sheader"></div><div class="px10"></div>
+<!--меню слева-->{*text0_1*}<!--/меню слева-->
+</div><!--/dleft-->
+
+<div id="content"><div class="sheader"></div><div class="px10"></div>

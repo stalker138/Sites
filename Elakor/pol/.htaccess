@@ -1,0 +1,12 @@
+DirectoryIndex index.html index.htm index.php
+AddDefaultCharset utf-8
+RewriteEngine On
+RewriteRule ^.htaccess$ -[F]
+RewriteCond %{HTTP_HOST} ^www.elakor-pol.ru$ [NC]
+RewriteRule ^(.*)$ https://elakor-pol.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-HTTPS} !1
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+ErrorDocument 404 /404/
+ErrorDocument 403 /404/

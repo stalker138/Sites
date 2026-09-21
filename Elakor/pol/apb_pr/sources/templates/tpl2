@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="cssjs/style_012.css" type="text/css"/>
+<script type="text/javascript" charset="UTF-8" src="cssjs/vcorp_js_0000.js"></script>
+<script type="text/javascript" charset="UTF-8" src="cssjs/js_012.js"></script>
+<?php $home = 1; ?>
+<?php if (($pb_page>1001 && $pb_page<2000) || $pb_page==2006 || $pb_page==2010) { ?>
+<style type="text/css">#phBlockMain {position:absolute; display:none; padding:20px 0 10px 0; top:150px; left:10px; border:solid 1px #005093; border-radius:5px; z-index:1;} #phBlock,.phblk {border-radius:5px;}</style>
+<script type="text/javascript">$.EH.add(document,'click',function(){$.id('phBlockMain').style.display='none'})</script>
+<?php } ?>

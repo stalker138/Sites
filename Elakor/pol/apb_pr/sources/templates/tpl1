@@ -1,0 +1,12 @@
+<?php
+$o_inc='main'; include_once $pb_root."auto/cnfg.php"; // page0_3
+if (1==1 && strlen($o_hash)!==38) {
+print '<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>Enter password.</title><link rel="stylesheet" href="/cssjs/style_011.css" type="text/css"/><script type="text/javascript" charset="UTF-8" src="/cssjs/vcorp_js_0000.js"></script><script type="text/javascript" charset="UTF-8" src="/cssjs/js_000.js"></script></head><body style="background:url(../img/css/elakor-pol.jpg) no-repeat #ffffff; background-size:cover;">';
+print '<div id="main" style="width:850px"><div id="sleft"></div><div id="dleft"><div class="sheader"></div><div class="px10"></div></div>';
+print '<div id="content" style="width:620px"><div class="sheader"></div><div class="px10"></div></div>';
+print '<div id="header" style="width:840px;background:#ffffff;"><div id="autorization" class="logo"></div><div id="hcenter" style="left:220px;width:620px;background:url(../img/css/teohim_v4.png) 400px 16px no-repeat #004f92;"><div class="slogan"><span style="font-weight:100; text-transform:uppercase;">каталог &nbsp;покрытий</span><br>промышленных &nbsp;полов</div></div></div>';
+print '<div class="sfooter"></div></div>';
+print '</body></html>';
+exit;
+}
+?>

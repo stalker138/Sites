@@ -1,0 +1,115 @@
+<?php
+/*
+0. Ссылка на страницу покрытия, 1. Наименование
+2. Экспликация маленькая, 3. Экспликация большая, 
+4. dwg, 5. rvt
+6. Ссылка на расчет, 7. Ссылка на описание
+8. Изображение по умолч. маленькое, 9. Изображение по умолч. большое
+*/
+$a_pkr=false;
+
+$a_pkr[110]=['/p1_1.php', 'Полиуретановая пропитка – «Элакор-ПУ»', '/img/expl/1_1_s.jpg', '/img/expl/1_1.jpg', '1_1.dwg', 'pu_propitka.rvt', 'https://teohim.ru/polymer/cena/poliuretanovaja-propitka/', 'https://teohim.ru/polymer/poliuretanovaja-propitka/', '/img/pkr/p1-1_s.jpg', '/img/pkr/p1-1.jpg', '1.1.'];
+$a_pkr[111]=['/p1_1.php#1.1A', 'Полиуретановая пропитка Антискользящая – «Элакор-ПУ»', '/img/expl/1_1a_s.jpg', '/img/expl/1_1a.jpg', '1_1a.dwg', 'pu_propitka_antiskolz.rvt', 'https://teohim.ru/polymer/cena/antiskolz-propitka/', 'https://teohim.ru/polymer/antiskolz-propitka/', '/img/pkr/p1-1a_s.jpg', '/img/pkr/p1-1a.jpg', '1.1А'];
+$a_pkr[120]=['/p1_2.php', 'Полиуретановая пропитка глубокого проникновения – «Элакор-ПУ»', '/img/expl/1_2_s.jpg', '/img/expl/1_2.jpg', '1_2.dwg', 'gp_propitka.rvt', 'https://teohim.ru/polymer/cena/glubokaja-propitka/', 'https://teohim.ru/polymer/glubokaja-propitka/', '/img/pkr/p1-2_s.jpg', '/img/pkr/p1-2.jpg', '1.2.'];
+$a_pkr[121]=['/p1_2.php#1.2A', 'Полиуретановая пропитка глубокого проникновения Антискользящая – «Элакор-ПУ»', '/img/expl/1_2a_s.jpg', '/img/expl/1_2a.jpg', '1_2a.dwg', 'gp_propitka_antiskolz.rvt', 'https://teohim.ru/polymer/cena/antiskolz-propitka/', 'https://teohim.ru/polymer/antiskolz-propitka/', '/img/pkr/p1-2a_s.jpg', '/img/pkr/p1-2a.jpg', '1.2А'];
+$a_pkr[130]=['/p1_3.php', 'Эпоксидная пропитка – «Элакор-ЭД»', '/img/expl/1_3_s.jpg', '/img/expl/1_3.jpg', '1_3.dwg', 'ed_propitka.rvt', 'https://teohim.ru/polymer/cena/epoksidnaya-propitka/', 'https://teohim.ru/polymer/epoksidnaya-propitka/', '/img/pkr/p1-3_s.jpg', '/img/pkr/p1-3.jpg', '1.3.'];
+$a_pkr[140]=['/p1_4.php', 'Флюатирующая пропитка', '/img/expl/1_4_s.jpg', '/img/expl/1_4.jpg', '1_4.dwg', 'fljuat_propitka.rvt', 'https://teohim.ru/beton/fljuat-propitka-cena/', 'https://teohim.ru/beton/fljuat-propitka/', '/img/pkr/p1-4_s.jpg', '/img/pkr/p1-4.jpg', '1.4.'];
+$a_pkr[150]=['/p1_5.php', 'Акриловая пропитка', '/img/expl/1_5_s.jpg', '/img/expl/1_5.jpg', '1_5.dwg', '', 'https://teohim.ru/polymer/cena/akrilovaja-propitka/', 'https://teohim.ru/polymer/akrilovaja-propitka/', '/img/pkr/p1-4_s.jpg', '/img/pkr/p1-4.jpg', '1.5.'];
+$a_pkr[210]=['/p2_1.php', 'Полиуретановое окрасочное покрытие – «Элакор-ПУ»', '/img/expl/2_1_s.jpg', '/img/expl/2_1.jpg', '2_1.dwg', 'pu_pokrytie.rvt', 'https://teohim.ru/polymer/cena/poliuretanovoe-pokrytie/', 'https://teohim.ru/polymer/poliuretanovoe-pokrytie/', '/img/pkr/p2-1_s.jpg', '/img/pkr/p2-1.jpg', '2.1.'];
+$a_pkr[211]=['/p2_1.php#2.1A', 'Полиуретановое окрасочное покрытие Антискользящее – «Элакор-ПУ»', '/img/expl/2_1a_s.jpg', '/img/expl/2_1a.jpg', '2_1a.dwg', 'pu_pokrytie_antiskolz.rvt', 'https://teohim.ru/polymer/cena/antiskolzjawee-pokrytie/', 'https://teohim.ru/polymer/antiskolzjawee-pokrytie/', '/img/pkr/p2-1a_s.jpg', '/img/pkr/p2-1a.jpg', '2.1А'];
+$a_pkr[212]=['/p2_1.php#2.1G', 'Полиуретановое окрасочное покрытие с Глубокой грунтовкой «Элакор-ПУ»', '/img/expl/2_1g_s.jpg', '/img/expl/2_1g.jpg', '2_1g.dwg', 'gp_pokrytie.rvt', 'https://teohim.ru/polymer/cena/poliuretanovoe-pokrytie/', 'https://teohim.ru/polymer/poliuretanovoe-pokrytie/', '/img/pkr/p2-1g_s.jpg', '/img/pkr/p2-1g.jpg', '2.1Г'];
+$a_pkr[213]=['/p2_1.php#2.1AG', 'Полиуретановое окрасочное покрытие Антискользящее с глубокой пропиткой – «Элакор-ПУ»', '/img/expl/2_1ag_s.jpg', '/img/expl/2_1ag.jpg', '2_1ag.dwg', 'gp_pokrytie_antiskolz.rvt', 'https://teohim.ru/polymer/cena/antiskolzjawee-pokrytie/', 'https://teohim.ru/polymer/antiskolzjawee-pokrytie/', '/img/pkr/p2-1ag_s.jpg', '/img/pkr/p2-1ag.jpg', '2.1АГ'];
+$a_pkr[214]=['/p2_1.php#2.1S', 'Полиуретановое окрасочное покрытие со шпатлеванием – «Элакор-ПУ»', '/img/expl/2_1s_s.jpg', '/img/expl/2_1s.jpg', '2_1s.dwg', 'pu_shpatlevanie.rvt', 'https://teohim.ru/polymer/cena/poliuretanovoe-pokrytie/', 'https://teohim.ru/polymer/poliuretanovoe-pokrytie/', '/img/pkr/p2-1s_s.jpg', '/img/pkr/p2-1s.jpg', '2.1Ш'];
+$a_pkr[220]=['/p2_2.php', 'Эпоксидное окрасочное покрытие – «Элакор-ЭД»', '/img/expl/2_2_s.jpg', '/img/expl/2_2.jpg', '2_2.dwg', 'ed_pokrytie.rvt', 'https://teohim.ru/polymer/cena/epoksidnoe-pokrytie/', 'https://teohim.ru/polymer/epoksidnoe-pokrytie/', '/img/pkr/p2-2_s.jpg', '/img/pkr/p2-2.jpg', '2.2.'];
+$a_pkr[221]=['/p2_2.php#2.2A', 'Эпоксидное окрасочное покрытие Антискользящее «Элакор-ЭД»', '/img/expl/2_2a_s.jpg', '/img/expl/2_2a.jpg', '2_2a.dwg', 'ed_pokrytie_antiskolz.rvt', 'https://teohim.ru/polymer/cena/kvarc-pokrytie/', 'https://teohim.ru/vybor/protivoskolzjawie-pokrytija/', '/img/i/s3.jpg', '/img/i/s3.jpg', '2.2.А'];
+$a_pkr[230]=['/p2_3.php', 'Полиуретановое окрасочное покрытие пищевое «Элакор-ПУ» Эко', '/img/expl/2_3_s.jpg', '/img/expl/2_3.jpg', '2_3.dwg', 'eko_pokrytie.rvt', 'https://teohim.ru/polymer/cena/himstojkoe-pokrytie/', 'https://teohim.ru/polymer/himstojkoe-pokrytie/', '/img/pkr/p2-3-1_s.jpg', '/img/pkr/p2-3-1.jpg', '2.3.'];
+$a_pkr[240]=['/p2_4.php', 'Полиуретановое светостойкое окрасочное покрытие – «Элакор-ПУ» Люкс', '/img/expl/2_4_s.jpg', '/img/expl/2_4.jpg', '2_4.dwg', 'lux_pokrytie.rvt', 'https://teohim.ru/polymer/cena/polimernoe-pokrytie/', 'https://teohim.ru/polymer/poliuretanovoe-pokrytie/', '/img/pkr/p2-4_s.jpg', '/img/pkr/p2-4.jpg', '2.4.'];
+$a_pkr[250]=['/p2_5.php', 'Декоративное покрытие', '/img/expl/2_5_s.jpg', '/img/expl/2_5.jpg', '2_5.dwg', '', 'https://teohim.ru/polymer/cena/pokrytie-floki/', 'https://teohim.ru/polymer/pokrytie-floki/', '/img/pkr/p4_4.jpg', '/img/pkr/p4_4.jpg', '2.5.'];
+$a_pkr[310]=['/p3.php', 'КНП – «Элакор-ЭД» Шероховатое', '/img/expl/3_1_s.jpg', '/img/expl/3_1.jpg', '3_1.dwg', 'kvarc_pokrytie.rvt', 'https://teohim.ru/polymer/cena/kvarc-pokrytie/', 'https://teohim.ru/polymer/kvarc-pokrytie/', '/img/pkr/p3-1_s.jpg', '/img/pkr/p3-1.jpg', '3.1.'];
+$a_pkr[320]=['/p3.php#3.2.', 'КНП – «Элакор-ЭД» Фактурное', '/img/expl/3_2_s.jpg', '/img/expl/3_2.jpg', '3_2.dwg', '', 'https://teohim.ru/polymer/cena/kvarc-pokrytie/', 'https://teohim.ru/polymer/kvarc-pokrytie/', '/img/pkr/p3-2_s.jpg', '/img/pkr/p3-2.jpg', '3.2.'];
+$a_pkr[330]=['/p3_3.php', 'КНП – «Элакор-ПУ» Шероховатое', '/img/expl/3_3_s.jpg', '/img/expl/3_3.jpg', '3_3.dwg', '', 'https://teohim.ru/polymer/cena/pokrytie-peskom/', 'https://teohim.ru/polymer/pokrytie-peskom/', '/img/pkr/p3-1_s.jpg', '/img/pkr/p3-1.jpg', '3.3.'];
+$a_pkr[340]=['/p3_3.php#3.4.', 'КНП – «Элакор-ПУ» Фактурное', '/img/expl/3_4_s.jpg', '/img/expl/3_4.jpg', '3_4.dwg', '', 'https://teohim.ru/polymer/cena/pokrytie-peskom/', 'https://teohim.ru/polymer/pokrytie-peskom/', '/img/pkr/p3-2_s.jpg', '/img/pkr/p3-2.jpg', '3.4.'];
+$a_pkr[350]=['/p3_5.php', 'КНП – «Элакор-ПУ» Шероховатое Светостойкое', '/img/expl/3_5_s.jpg', '/img/expl/3_5.jpg', '3_5.dwg', '', 'https://teohim.ru/polymer/cena/pokrytie-peskom/', 'https://teohim.ru/polymer/pokrytie-peskom/', '/img/pkr/p3-1_s.jpg', '/img/pkr/p3-1.jpg', '3.5.'];
+$a_pkr[360]=['/p3_5.php#3.6.', 'КНП – «Элакор-ПУ» Фактурное Светостойкое', '/img/expl/3_6_s.jpg', '/img/expl/3_6.jpg', '3_6.dwg', '', 'https://teohim.ru/polymer/cena/pokrytie-peskom/', 'https://teohim.ru/polymer/pokrytie-peskom/', '/img/pkr/p3-2_s.jpg', '/img/pkr/p3-2.jpg', '3.6.'];
+$a_pkr[410]=['/p4_2.php', 'Классик наливной пол полиуретановый – «Элакор-ПУ 2К»', '/img/expl/4_1_s.jpg', '/img/expl/4_1.jpg', '4_1.dwg', 'pu_naliivnoj_pol.rvt', 'https://teohim.ru/nalivnye/poliuretanovyj-nalivnoj-pol-cena/', 'https://teohim.ru/nalivnye/poliuretanovye-nalivnye-pokrytija/', '/img/pkr/p4-2_s.jpg', '/img/pkr/p4-2.jpg', '4.1.'];
+$a_pkr[420]=['/p4_6.php', 'Промышленный наливной пол полиуретановый – «Элакор-ПУ 2К»', '/img/expl/4_2_s.jpg', '/img/expl/4_2.jpg', '4_2.dwg', '', 'https://teohim.ru/nalivnye/poliuretan-prom-naliv-pol-cena/', 'https://teohim.ru/nalivnye/promyshlennyj-nalivnoj-pol/', '/img/pkr/p4_6.jpg', '/img/pkr/p4_6.jpg', '4.2.'];
+$a_pkr[430]=['/p4_31.php', 'Наполненный наливной пол полиуретановый – «Элакор-ПУ 2К»', '/img/expl/4_3_s.jpg', '/img/expl/4_3.jpg', '4_3.dwg', '', 'https://teohim.ru/nalivnye/prom-nalivpol-pu-cena/', 'https://teohim.ru/nalivnye/poliuretanovyj-nalivnoj-pol/', '/img/pkr/p4_6.jpg', '/img/pkr/p4_6.jpg', '4.3.'];
+$a_pkr[440]=['/p4_41.php', 'Высоконаполненный наливной пол полиуретановый – «Элакор-ПУ 2К»', '/img/expl/4_4_s.jpg', '/img/expl/4_4.jpg', '4_4.dwg', '', 'https://teohim.ru/polymer/cena/pu-pokrytie-peskom-gladkoe/', 'https://teohim.ru/nalivnye/poliuretanovyj-nalivnoj-pol/', '/img/pkr/p4_6.jpg', '/img/pkr/p4_6.jpg', '4.4.'];
+$a_pkr[450]=['/p4_4.php', 'Полиуретановый наливной пол – «Элакор-ПУ» с чипсами', '/img/expl/4_5_s.jpg', '/img/expl/4_5.jpg', '4_5.dwg', '', '', 'https://teohim.ru/nalivnye/poly-chipsy/', '/img/pkr/p4_4.jpg', '/img/pkr/p4_4.jpg', '4.5.'];
+$a_pkr[460]=['/p4_1.php', 'Классик наливной пол эпоксидный – «Элакор-ЭД»', '/img/expl/4_6_s.jpg', '/img/expl/4_6.jpg', '4_6.dwg', 'ed_nalivnoj_pol.rvt', 'https://teohim.ru/nalivnye/epoksidnyj-nalivnoj-pol-cena/', 'https://teohim.ru/nalivnye/epoksidnye-nalivnye-pokrytija/', '/img/pkr/p4-1_s.jpg', '/img/pkr/p4-1.jpg', '4.6.'];
+$a_pkr[470]=['/p4_5.php', 'Промышленный наливной пол эпоксидный – «Элакор-ЭД»', '/img/expl/4_7_s.jpg', '/img/expl/4_7.jpg', '4_7.dwg', '', 'https://teohim.ru/nalivnye/epoksid-prom-naliv-pol-cena/', 'https://teohim.ru/nalivnye/promyshlennyj-nalivnoj-pol/', '/img/pkr/p4_5.jpg', '/img/pkr/p4_5.jpg', '4.7.'];
+$a_pkr[480]=['/p4_8.php', 'Высоконаполненный наливной пол эпоксидный – «Элакор-ЭД»', '/img/expl/4_8_s.jpg', '/img/expl/4_8.jpg', '4_8.dwg', '', 'https://teohim.ru/nalivnye/prom-nalivpol-ed-cena/', 'https://teohim.ru/nalivnye/epoksidnyj-nalivnoj-pol/', '/img/pkr/p4_6.jpg', '/img/pkr/p4_6.jpg', '4.8.'];
+$a_pkr[490]=['/p4_9.php', 'Белый наливной пол эпоксидный – «Элакор-ЭД»', '/img/expl/4_9_s.jpg', '/img/expl/4_9.jpg', '4_9.dwg', '', 'https://teohim.ru/nalivnye/beloe-nalivnoe-pokrytie-cena/', 'https://teohim.ru/nalivnye/beloe-pokrytie//', '', '', '4.9.'];
+$a_pkr[4100]=['/p4_3.php', 'Эпоксидный наливной пол – «Элакор-ЭД» с чипсами', '/img/expl/4_10_s.jpg', '/img/expl/4_10.jpg', '4_10.dwg', '', '', 'https://teohim.ru/nalivnye/poly-chipsy/', '/img/pkr/p4_3.jpg', '/img/pkr/p4_3.jpg', '4.10.'];
+$a_pkr[510]=['/p5_1.php', 'Полиуретановое покрытие для асфальта – «Элакор-ПУ»', '/img/expl/5_1_s.jpg', '/img/expl/5_1.jpg', '5_1.dwg', 'pu_asfalt.rvt', 'https://teohim.ru/polymer/cena/pokrytie-dlja-asfalta/', 'https://teohim.ru/polymer/pokrytie-dlja-asfalta/', '/img/pkr/p5-1_s.jpg', '/img/pkr/p5-1.jpg', '5.1.'];
+$a_pkr[511]=['/p5_1.php#5.1A', 'Полиуретановое покрытие по асфальтобетону Антискользящее – «Элакор-ПУ»', '/img/expl/5_1a_s.jpg', '/img/expl/5_1a.jpg', '5_1a.dwg', 'pu_asfalt_antiskolz.rvt', 'https://teohim.ru/polymer/cena/antiskolzjawee-pokrytie/', 'https://teohim.ru/polymer/pokrytie-dlja-asfalta/', '/img/pkr/p5-1a_s.jpg', '/img/pkr/p5-1a.jpg', '5.1А'];
+$a_pkr[520]=['/p5_2.php', 'Фрезер-насечка с полиуретановой пропиткой – «Элакор-ПУ»', '/img/expl/5_2_s.jpg', '/img/expl/5_2.jpg', '5_2.dwg', '', '', 'https://teohim.ru/beton/frezerovanie-betona/', '/img/pkr/p5-2a_s.jpg', '/img/pkr/p5-2a.jpg', '5.2.'];
+$a_pkr[521]=['/p5_2.php#5.2A', 'Фрезер-насечка с окрасочным полиуретановым покрытием – «Элакор-ПУ»', '/img/expl/5_2a_s.jpg', '/img/expl/5_2a.jpg', '5_2a.dwg', '', '', 'https://teohim.ru/beton/frezerovanie-betona/', '/img/pkr/p5-2_s.jpg', '/img/pkr/p5-2.jpg', '5.2А'];
+$a_pkr[530]=['/p5_3.php', 'Безыскровое покрытие', '/img/expl/5_3_s.jpg', '/img/expl/5_3.jpg', '5_3.dwg', 'pu_beziskrovoe.rvt', 'https://teohim.ru/polymer/cena/bezyskrovoe-pokrytie/', 'https://teohim.ru/polymer/bezyskrovoe-pokrytie/', '/img/pkr/p5-3_s.jpg', '/img/pkr/p5-3.jpg', '5.3.'];
+$a_pkr[540]=['/p5_4.php', 'Антистатический наливной пол - «Элакор-ЭД» (без токоотводящих лент)', '/img/expl/5_4_s.jpg', '/img/expl/5_4.jpg', '5_4.dwg', 'antistat_pol_rass.rvt', 'https://teohim.ru/antistat/cena-er-ed-pol/', 'https://teohim.ru/nalivnye/antistaticheskij-nalivnoj-pol-tech/', '/img/pkr/p5-4-1_s.jpg', '/img/pkr/p5-4-1.jpg', '5.4.'];
+$a_pkr[550]=['/p5_5.php', 'Антистатический наливной пол - «Элакор-ЭД» (с токоотводящими лентами)', '/img/expl/5_5_s.jpg', '/img/expl/5_5.jpg', '5_5.dwg', 'antistat_pol_tok.rvt', 'https://teohim.ru/antistat/cena-tp-ed-pol/', 'https://teohim.ru/nalivnye/antistaticheskij-nalivnoj-pol-tech/', '/img/pkr/p5-4_s.jpg', '/img/pkr/p5-4.jpg', '5.5.'];
+$a_pkr[560]=['/p5_6.php', 'Эластичный наливной пол - «Элакор-ПУ»', '/img/expl/5_6_s.jpg', '/img/expl/5_6.jpg', '5_6.dwg', '', '', '', '/img/pkr/p5-6_s.jpg', '/img/pkr/p5-6.jpg', '5.6.'];
+$a_pkr[570]=['/p5_7.php', 'Резиновый наливной пол - «Элакор-ПУ»', '/img/expl/5_7_s.jpg', '/img/expl/5_7.jpg', '5_7.dwg', '', '', '', '/img/pkr/p5-7_s.jpg', '/img/pkr/p5-7.jpg', '5.7.'];
+$a_pkr[610]=['/p6_1.php', 'Полированный бетон на основе Эластобетона-Б', '/img/expl/6_1_s.jpg', '/img/expl/6_1.jpg', '6_1.dwg', 'elastobeton_b.rvt', 'https://teohim.ru/beton/dobavki-betona/b-cena/', 'https://teohim.ru/beton/polirovanny-beton/', '/img/i/61.jpg', '/img/i/61.jpg', '6.1.'];
+$a_pkr[620]=['/p6_2.php', 'Бетон с повышенными прочностными характеристиками на основе Эластобетона-А2', '/img/expl/6_2_s.jpg', '/img/expl/6_2.jpg', '6_2.dwg', 'elastobeton_a.rvt', 'https://teohim.ru/beton/dobavki-betona/a-cena/', 'https://teohim.ru/beton/dobavki-betona/a/', '/img/i/68.jpg', '/img/i/68.jpg', '6.2.'];
+
+function fhd($id=0, $h2=0) {/*Вывод заголовка*/
+global $a_pkr;
+$sh='h1';
+if ($h2==1) {$sh='h2';}
+$out='<'.$sh.' class="dh red">'.$a_pkr[$id][10].' '.$href.$a_pkr[$id][1].'</'.$sh.'>';
+print($out);
+}
+
+function fct($id=0) {/*Вывод строки каталога покрытий*/
+global $a_pkr;
+$href='href="';
+$out='<tr><td class="tdl"><a '.$href.$a_pkr[$id][0].'">'.$a_pkr[$id][1].'</a></td><td class="tdl">'.$a_pkr[$id][10].'</td></tr>';
+print($out);
+}
+
+function fcvr($id=0,$flag=0,$img='',$dop_text='') {/*Вывод плашки на странице*/
+global $a_pkr, $pb_root;
+$href='href="';
+$out='<div style="text-align:left;">';
+if ($flag==0){
+    $out.='<p><a class="bold" '.$href.$a_pkr[$id][7].'">Подробное описание</a> на сайте производителя</a></p>';
+} else {
+    $out.='<span style="text-align:left;"><a class="bold" '.$href.$a_pkr[$id][0].'">'.$a_pkr[$id][1].'</a></span>';
+}
+$out.='<div class="px10"></div>';
+$out.='<div style="float:right;">';
+if ($a_pkr[$id][6]!='') {
+    $out.='<div class="rleft"><a '.$href.$a_pkr[$id][6].'">Расчет стоимости материалов</a></div>';
+}
+if ($a_pkr[$id][5]!='') {
+$out.='<div class="rright" style="padding-left:4px;"><a '.$href.'/download.php?name='.$a_pkr[$id][5].'">Скачать 3D-модель (BIM) .rvt</a></div>';
+}
+if ($a_pkr[$id][4]!='') {
+$out.='<div class="rright"><a '.$href.'/download_dwg.php?name='.$a_pkr[$id][4].'">Скачать экспликацию .dwg</a></div>';
+}
+$out.='</div>';
+$out.='<div class="px10"></div>';
+$out.='<div class="px5"></div>';
+
+$out.='<div style="float:left;width:550px;">';
+$arr_size=getimagesize('https://elakor-pol.ru'.$a_pkr[$id][3]);
+$out.='<img class="pb_ismall ipkr1" src="'.$a_pkr[$id][2].'" alt="" onclick="fpb_zoomImg(this,'.chr(39).$a_pkr[$id][3].chr(39).',200,25,'.$arr_size[0].','.$arr_size[1].')"/>';
+$out.=$dop_text;
+if ($img=='') {
+    $img=$a_pkr[$id][9];
+    $img_small=$a_pkr[$id][8];
+} else {
+    $img_small=$img;
+
+}
+
+$arr_size=getimagesize('https://elakor-pol.ru'.$img);
+$out.='</div>
+<img class="pb_ismall ir198" src="'.$img_small.'" alt="" onclick="fpb_zoomImg(this,'.chr(39).$img.chr(39).',200,25,'.$arr_size[0].','.$arr_size[1].')"/>
+<div class="px10b"></div>';
+$out.="</div>";
+print($out);
+}
+
+?>

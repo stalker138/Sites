@@ -1,0 +1,85 @@
+{*text4_4*}
+<h1>Перечень покрытий «Элакор» для бетонных полов и асфальта</h1>
+<div class="px10"></div>
+<table class="tbl1"><tbody>
+<tr><th>Покрытие</th><th>Код</th></tr>
+<tr><td colspan="2" style="font:bold 14px arial;color:#005093;">Пропитки для бетона (бесцветные покрытия)</td></tr>
+
+<?php
+fct(110);
+fct(111);
+fct(120);
+fct(121);
+fct(130);
+fct(140);
+fct(150);
+?>
+<tr><td colspan="2">&nbsp;</td></tr>
+
+<tr><td colspan="2" style="font:bold 14px arial;color:#005093;">Цветные окрасочные покрытия</td></tr>
+<?php
+fct(210);
+fct(211);
+fct(213);
+fct(214);
+fct(220);
+fct(240);
+fct(250);
+fct(510);
+fct(511);
+?>
+<tr><td colspan="2">&nbsp;</td></tr>
+
+<tr><td colspan="2" style="font:bold 14px arial;color:#005093;">Цветные кварцнаполненные покрытия песком</td></tr>
+
+<?php
+fct(310);
+fct(320);
+fct(330);
+fct(340);
+fct(350);
+fct(360);
+?>
+<tr><td colspan="2">&nbsp;</td></tr>
+
+<tr><td colspan="2" style="font:bold 14px arial;color:#005093;">Полимерные наливные полы</td></tr>
+
+<?php
+fct(410);
+fct(420);
+fct(430);
+fct(440);
+fct(450);
+fct(460);
+fct(470);
+fct(480);
+fct(490);
+fct(4100);
+?>
+<tr><td colspan="2">&nbsp;</td></tr>
+
+<tr><td colspan="2" style="font:bold 14px arial;color:#005093;">Специальные покрытия</td></tr>
+
+<?php
+fct(230);
+fct(520);
+fct(521);
+fct(530);
+fct(540);
+fct(550);
+fct(560);
+fct(570);
+?>
+
+<tr><td colspan="2">&nbsp;</td></tr>
+
+<tr><td colspan="2" style="font:bold 14px arial;color:#005093;">Бетонные покрытия </td></tr>
+<?php
+fct(610);
+fct(620);
+
+?>
+</tbody></table>
+<?php
+// <p><span>Памятка.</span> На стр. покрытий указать (отдельный блок) группу горючести, гигиену и др.разрешения…</p>
+?>

@@ -1,0 +1,18 @@
+<div class="px10"></div>
+<div id="phBlockMain">
+  <l2 id="1" class="aphblock"><img src="img/m1_1.jpg" alt="" class="phblock" style="margin:0"/><div><table><tbody><tr><td>Транспорт</td></tr></tbody></table></div></l2>
+  <l2 id="2" class="aphblock"><img src="img/m2_1.jpg" alt="" class="phblock" style="margin:0"/><div><table><tbody><tr><td>Производство<br>Склады</td></tr></tbody></table></div></l2>
+  <l2 id="3" class="aphblock"><img src="img/m3_1.jpg" alt="" class="phblock" style="margin:0"/><div><table><tbody><tr><td>Пищевая<br>промышленность</td></tr></tbody></table></div></l2>
+<div class="px0"></div>
+<!--<l2 id="4"><img src="img/m4.png" alt="" class="phblock"/></l2>-->
+  <l2 id="8" class="aphblock"><img src="img/m8.jpg" alt="" class="phblock" style="margin:0"/><div><table><tbody><tr><td>Гражданское строительство</td></tr></tbody></table></div></l2>
+  <l2 id="7" class="aphblock"><img src="img/m5_1.jpg" alt="" class="phblock" style="margin:0"/><div><table><tbody><tr><td>Сельское<br>хозяйство</td></tr></tbody></table></div></l2>
+  <l1 id="77" class="aphblock"><img src="img/m6_1.jpg" alt="" class="phblock" style="margin:0"/><div><table><tbody><tr><td>Медицина</td></tr></tbody></table></div></l1>
+<div class="px0"></div>
+  <!--l2 id="6"><img src="img/m6.png" alt="" class="phblock"/></l2-->
+  <!--l2 id="5"><img src="img/m4.png" alt="" class="phblock"/></l2-->
+  <!--l2 id="9"><img src="img/m5.png" alt="" class="phblock"/></l2-->
+  <!--l2 id="4" class="aphblock"><img src="img/m4.jpg" alt="" class="phblock" style="margin:0"/><div><table><tbody><tr><td>Химическая промышленность</td></tr></tbody></table></div></l2-->
+ {*text1_1*}
+</div>
+

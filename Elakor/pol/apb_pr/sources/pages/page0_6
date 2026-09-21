@@ -1,0 +1,11 @@
+<?php
+if (empty($_POST['mode']) || empty($_POST['pass'])) { header("HTTP/1.1 204 No Content"); exit; }
+$o_inc='main'; include_once $pb_root."auto/cnfg.php"; // page0_3
+$pass=Fo_post('pass'); $mode=(int)$_POST['mode']; $cnt=count($a_pass); if(strlen($pass)<3 || strlen($pass)>20 || $mode!=99 || $cnt==0) { header("HTTP/1.1 204 No Content"); exit; }
+for ($i=0; $i<$cnt; $i++) {
+    if($a_pass[$i]===$pass) {
+        setcookie('hash', 'teohim'.md5($pass.$o_UA), time()+60*60*24*1000, '/', $o_DOMAIN);
+        print 1; exit;
+    }
+} header("HTTP/1.1 204 No Content");
+?>

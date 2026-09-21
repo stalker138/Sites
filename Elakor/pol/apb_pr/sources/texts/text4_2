@@ -1,0 +1,6 @@
+<div class="px10"></div>
+<div id="id_oc_all_1">
+<p id="id_close_all_1" onclick="f_mtr_body_1(this,0)">Закрыть все</p>
+<p id="id_open_all_1" onclick="f_mtr_body_1(this,1)">Раскрыть все</p>
+</div>
+<div class="px10"></div>

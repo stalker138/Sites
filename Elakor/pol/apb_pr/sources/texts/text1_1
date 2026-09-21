@@ -1,0 +1,63 @@
+<div id="phBlock">
+  <div class="phblk" id="ph01">
+    <?php if (isset($home)) echo '<div class="pbBlockH">Транспорт</div>'; ?>
+    <l1 id="31" class="aphblock"><img src="img/obj/o1_1_6.jpg" alt=""/><div><table><tbody><tr><td>Паркинги</td></tr></tbody></table></div></l1>
+    <l1 id="32" class="aphblock"><img src="img/obj/o1_2_2.jpg" alt=""/><div><table><tbody><tr><td>Открытые<br>Паркинги</td></tr></tbody></table></div></l1>
+    <l1 id="33" class="aphblock"><img src="img/obj/o1_3_3.jpg" alt=""/><div><table><tbody><tr><td>Автосервисы,<br>ремонтные<br>мастерские</td></tr></tbody></table></div></l1><div class="px0"></div><div class="px0"></div>
+    <l1 id="34" class="aphblock"><img src="img/obj/o1_4_1.jpg" alt=""/><div><table><tbody><tr><td>Автомойки</td></tr></tbody></table></div></l1>
+    <l1 id="35" class="aphblock"><img src="img/obj/o1_5_1.jpg" alt=""/><div><table><tbody><tr><td>Пандусы,<br>въездные рампы</td></tr></tbody></table></div></l1>
+  </div>
+  <div class="phblk" id="ph02">
+    <?php if (isset($home)) echo '<div class="pbBlockH">Производство. Склады</div>'; ?>
+    <l1 id="41" class="aphblock"><img src="img/obj/o2_1_1.jpg" alt=""/><div><table><tbody><tr><td>Склад, Цех общего назначения</td></tr></tbody></table></div></l1>
+    <l1 id="87" class="aphblock"><img src="img/i/70.jpg" alt=""/><div><table><tbody><tr><td>Технические помещения</td></tr></tbody></table></div></l1>
+    <l1 id="42" class="aphblock"><img src="img/i/68.jpg" alt=""/><div><table><tbody><tr><td>Склад металлопродукции. <br>Склад металлолома.<br>Стоянка гусеничной техники.</td></tr></tbody></table></div></l1>
+    <l1 id="44" class="aphblock"><img src="img/i/69.jpg" alt=""/><div><table><tbody><tr><td>Цех металлообработки</td></tr></tbody></table></div></l1>
+    <l1 id="45" class="aphblock"><img src="img/i/27.jpg" alt=""/><div><table><tbody><tr><td>Цех металлургический.<br>Цех термообработки.</td></tr></tbody></table></div></l1>
+    <l1 id="48" class="aphblock"><img src="img/obj/o2_8_3.jpg" alt=""/><div><table><tbody><tr><td>Аккумуляторная при складе/цехе</td></tr></tbody></table></div></l1>
+  </div>
+  <div class="phblk" id="ph03">
+    <?php if (isset($home)) echo '<div class="pbBlockH">Пищевая промышленность</div>'; ?>
+    <l1 id="51" class="aphblock"><img src="img/obj/o3_1_5.jpg" alt=""/><div><table><tbody><tr><td>Переработка мяса, рыбы, птицы</td></tr></tbody></table></div></l1>
+    <l1 id="52" class="aphblock"><img src="img/obj/o3_2_4.jpg" alt=""/><div><table><tbody><tr><td>Переработка (консервирование) овощей/фруктов</td></tr></tbody></table></div></l1>
+    <l1 id="53" class="aphblock"><img src="img/obj/o3_3_2.jpg" alt=""/><div><table><tbody><tr><td>Производство молочной и пивобезалкогольной продукции</td></tr></tbody></table></div></l1><div class="px0"></div>
+    <l1 id="54" class="aphblock"><img src="img/obj/o3_4_1.jpg" alt=""/><div><table><tbody><tr><td>Холодильник</td></tr></tbody></table></div></l1>
+    <l1 id="55" class="aphblock"><img src="img/obj/o3_5_3.jpg" alt=""/><div><table><tbody><tr><td>Морозильная камера</td></tr></tbody></table></div></l1>
+    <l1 id="56" class="aphblock"><img src="img/obj/o3_6_1.jpg" alt=""/><div><table><tbody><tr><td>Моечные (посуда, овощи/фрукты) помещения</td></tr></tbody></table></div></l1><div class="px0"></div>
+    <l1 id="57" class="aphblock"><img src="img/obj/o3_7_2.jpg" alt=""/><div><table><tbody><tr><td>Пекарня</td></tr></tbody></table></div></l1>
+  </div>
+  <div class="phblk" id="ph04">
+    <?php if (isset($home)) echo '<div class="pbBlockH">Химическая промышленность</div>'; ?>
+    <l1 id="81" class="aphblock"><img src="img/obj/o4_1_3.jpg" alt=""/><div><table><tbody><tr><td>Склад/цех химпродукции</td></tr></tbody></table></div></l1>
+    <l1 id="48" class="aphblock"><img src="img/obj/o2_8_3.jpg" alt=""/><div><table><tbody><tr><td>Аккумуляторная при складе/цехе</td></tr></tbody></table></div></l1>
+  </div>
+  <div class="phblk" id="ph05">
+    <?php if (isset($home)) echo '<div class="pbBlockH">Электронная промышленность</div>'; ?>
+  </div>
+  <div class="phblk" id="ph06">
+    <?php if (isset($home)) echo '<div class="pbBlockH">РосАтом</div>'; ?>
+  </div>
+  <div class="phblk" id="ph07">
+    <?php if (isset($home)) echo '<div class="pbBlockH">Сельское Хозяйство</div>'; ?>
+<l1 id="61" class="aphblock"><img src="img/obj/o7_1_3.jpg" alt=""/><div><table><tbody><tr><td>Птицеферма</td></tr></tbody></table></div></l1>
+<l1 id="62" class="aphblock"><img src="img/obj/o7_2_2.jpg" alt=""/><div><table><tbody><tr><td>Коровник</td></tr></tbody></table></div></l1>
+<l1 id="63" class="aphblock"><img src="img/obj/o7_3_2.jpg" alt=""/><div><table><tbody><tr><td>Свинарник (ванна, канал навозоудаленя)</td></tr></tbody></table></div></l1><div class="px0"></div>
+<!--<l1 id="64" class="aphblock"><img src="img/obj/o7_3_2.jpg" alt=""/><div><table><tbody><tr><td>Кормостол</td></tr></tbody></table></div></l1>
+<l1 id="65" class="aphblock"><img src="img/obj/o7_3_2.jpg" alt=""/><div><table><tbody><tr><td>Зернохранилище</td></tr></tbody></table></div></l1>
+<l1 id="66" class="aphblock"><img src="img/obj/o7_3_2.jpg" alt=""/><div><table><tbody><tr><td>Овощехранилище</td></tr></tbody></table></div></l1>
+<l1 id="67" class="aphblock"><img src="img/obj/o7_3_2.jpg" alt=""/><div><table><tbody><tr><td>Инкубатор</td></tr></tbody></table></div></l1>-->
+<l1 id="68" class="aphblock"><img src="img/obj/o7_8_0.png" alt=""/><div><table><tbody><tr><td>Теплица, оранжерея</td></tr></tbody></table></div></l1>
+  </div>
+  <div class="phblk" id="ph08">
+    <?php if (isset($home)) echo '<div class="pbBlockH">Гражданское строительство</div>'; ?>
+<l1 id="71" class="aphblock"><img src="img/obj/o8_1_1.jpg" alt=""/><div><table><tbody><tr><td>Офис</td></tr></tbody></table></div></l1>
+<l1 id="72" class="aphblock"><img src="img/obj/o8_2_1.jpg" alt=""/><div><table><tbody><tr><td>Выставочный зал</td></tr></tbody></table></div></l1>
+<l1 id="73" class="aphblock"><img src="img/obj/o8_3_3.jpg" alt=""/><div><table><tbody><tr><td>Торговый зал</td></tr></tbody></table></div></l1>
+  </div>
+  <div class="phblk" id="ph09">
+    <?php if (isset($home)) echo '<div class="pbBlockH">Медицина</div>'; ?>
+    <l1 id="1" class="aphblock"><img src="img/obj/o4_1_3.jpg" alt=""/><div><table><tbody><tr><td>Лаборатории</td></tr></tbody></table></div></l1>
+    <l1 id="1" class="aphblock"><img src="img/obj/o4_1_3.jpg" alt=""/><div><table><tbody><tr><td>Палаты</td></tr></tbody></table></div></l1>
+    <l1 id="1" class="aphblock"><img src="img/obj/o4_1_3.jpg" alt=""/><div><table><tbody><tr><td>Операционные</td></tr></tbody></table></div></l1>
+  </div>
+</div>
