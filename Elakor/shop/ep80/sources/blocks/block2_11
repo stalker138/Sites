@@ -28,6 +28,22 @@
 </div>
 <div class="px20"></div>
 
+
+<div class="pb_gal"><div class="pb_gal_scroll">
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p1.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p2.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p3.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p4.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p5.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p6.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p7.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p8.jpg" alt=""/></div>
+</div>
+<div class="pb_gal_left"></div><div class="pb_gal_right"></div><div class="pb_gal_lft"></div><div class="pb_gal_rgt"></div>
+</div>
+
+<div class="px20"></div>
+
 <div class="dzmt1"></div>
 <div class="ot_head_block">
 <div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="ot_hb_item" id="foth123_p">Свойства</div><div class="ot_hb_item" id="foth123_s">Сертификация</div>
@@ -76,7 +92,7 @@
  <li>Объекты сельского хозяйства: теплицы, птицефермы, животноводческие комплексы.</li>
  </ul>
  
- <p class="fwb">Разрешена к применению на всех объектах промышленного и гражданского строительства, в том числе:</p>
+ <p class="fwb">Разрешен к применению на всех объектах промышленного и гражданского строительства, в том числе:</p>
  <ul>
  <li>На предприятиях пищевой промышленности, на предприятиях фармацевтической промышленности.</li>
  <li>В жилищном строительстве, в детских и лечебно-профилактических учреждениях.</li>
@@ -278,20 +294,6 @@
 <!--/noindex-->
 </div>
 <div class="px10b"></div>
-
-<div class="pb_gal"><div class="pb_gal_scroll">
-<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p0.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p1.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p2.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p3.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p4.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p5.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p6.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p7.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/grunt-polyuretan/p8.jpg" alt=""/></div>
-</div>
-<div class="pb_gal_left"></div><div class="pb_gal_right"></div><div class="pb_gal_lft"></div><div class="pb_gal_rgt"></div>
-</div>
 
 <?php fcvr_mat($i_pkr); ?>
 

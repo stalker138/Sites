@@ -28,6 +28,26 @@
 </div>
 <div class="px20"></div>
 
+<div class="pb_gal"><div class="pb_gal_scroll">
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p1.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p2.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p3.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p4.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p5.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p6.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p7.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p8.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p9.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p10.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p11.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p12.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p13.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p14.jpg" alt=""/></div>
+</div>
+<div class="pb_gal_left"></div><div class="pb_gal_right"></div><div class="pb_gal_lft"></div><div class="pb_gal_rgt"></div>
+</div>
+<div class="px20"></div>
+
 <div class="dzmt1"></div>
 <div class="ot_head_block">
 <div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="ot_hb_item" id="foth123_p">Свойства</div><div class="ot_hb_item" id="foth123_s">Сертификация</div>
@@ -216,26 +236,6 @@
 <!--/noindex-->
 </div>
 <div class="px10b"></div>
-
-<div class="pb_gal"><div class="pb_gal_scroll">
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p0.png" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p1.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p2.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p3.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p4.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p5.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p6.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p7.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p8.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p9.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p10.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p11.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p12.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p13.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/naliv-pol-polyuretan/p14.jpg" alt=""/></div>
-</div>
-<div class="pb_gal_left"></div><div class="pb_gal_right"></div><div class="pb_gal_lft"></div><div class="pb_gal_rgt"></div>
-</div>
 
 <?php fcvr_mat($i_pkr); ?>
 

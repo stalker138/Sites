@@ -43,8 +43,9 @@
  <li class="mm1li" onclick="f_ocLM(event,1,13)"><div>Лаки</div></li>
  <li class="mm1li" onclick="f_ocLM(event,1,14)"><div>Наливные полы</div></li>
  <li class="mm1li" onclick="f_ocLM(event,1,15)"><div>Антистатические полы</div></li>
- <li class="mm1li" onclick="f_ocLM(event,1,16)"><div>ПЦ Полы</div></li>
- <li class="mm1li" onclick="f_ocLM(event,1,17)"><div>Шпатлёвки, Герметики</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,1,16)"><div>Полиуретан-цементные полы</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,1,17)"><div>Шпатлёвки, Герметики, Клеи</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,1,21)"><div>Составы ремонтные, анкеровочные</div></li>
  <!--li class="mm1li" onclick="f_ocLM(event,1,18)"><div>ЭДВ Полы</div></li-->
  <li class="mm1li" onclick="f_ocLM(event,1,19)"><div>Смолы для декора и заливки</div></li>
  <li class="mm1li" onclick="f_ocLM(event,1,20)"><div>Прочее</div></li>
@@ -59,10 +60,10 @@
  <li class="mm1li" onclick="f_ocLM(event,1,31)"><div>Пропитки</div></li>
  <li class="mm1li" onclick="f_ocLM(event,1,32)"><div>Окрасочные покрытия</div></li>
  <li class="mm1li" onclick="f_ocLM(event,1,33)"><div>Наливные полы</div></li>
- <!--li class="mm1li" onclick="f_ocLM(event,1,34)"><div>ПЦ Полы</div></li-->
+ <li class="mm1li" onclick="f_ocLM(event,1,34)"><div>Полиуретан-цементные полы</div></li>
  <li class="mm1li" onclick="f_ocLM(event,1,35)"><div>Кварцнаполненные полы</div></li>
  <li class="mm1li" onclick="f_ocLM(event,1,36)"><div>Антистатические полы</div></li>
- <li class="mm1li" onclick="f_ocLM(event,1,37)"><div>Специальные покрытия</div></li>
+ <!--li class="mm1li" onclick="f_ocLM(event,1,37)"><div>Специальные покрытия</div></li-->
 </ul>
 </div>
 <div class="cmobm1" id="mobm31">
@@ -70,13 +71,8 @@
 <div class="mmHead" onclick="f_ocLM(event,31,2)">Покрытия - Пропитки</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-<li><l3 id="11">Полиуретановая пропитка</l3></li>
-<li><l3 id="13">Пропитка глубокого проникновения</l3></li>
-<li><l3 id="17">Эпоксидная пропитка без запаха</l3></li>
-<!--li><a>Эпоксидная водная паропроницаемая пропитка</a></li-->
-<li><l3 id="87">Антискользящая пропитка</l3></li>
-<li><l3 id="23">Флюат пропитка</l3></li>
-<li><l3 id="25">Акриловая пропитка</l3></li>
+   <?php fmtr_menu_cvr($a_catcvr[1]); ?>
+ <li><l1 id="14"><div>Все Пропитки</div></l1></li>
 </ul>
 </div>
 <div class="cmobm1" id="mobm32">
@@ -84,13 +80,8 @@
 <div class="mmHead" onclick="f_ocLM(event,32,2)">Покрытия - Окрасочные покрытия</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-<li><l3 id="31">Полиуретановое покрытие</l3></li>
-<li><l3 id="33">Эпоксидное покрытие</l3></li>
-<!--li><a>Эпоксидное водное паропроницаемое покрытие</l3></li-->
-<li><l3 id="35">Светостойкое полиуретановое покрытие</l3></li>
-<li><l3 id="85">Антискользящее покрытие</l3></li>
-<li><l3 id="83">Декоративное покрытие с чипсами</l3></li>
-<li><l3 id="81">Покрытие для асфальта</l3></li>
+   <?php fmtr_menu_cvr($a_catcvr[2]); ?>
+ <li><l1 id="15"><div>Все Окрасочные покрытия</div></l1></li>
 </ul>
 </div>
 <div class="cmobm1" id="mobm33">
@@ -98,25 +89,17 @@
 <div class="mmHead" onclick="f_ocLM(event,33,2)">Покрытия - Наливные полы</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <li><l3 id="51">Эпоксидный наливной пол Классик</l3></li>
-   <li><l3 id="53">Полиуретановый наливной пол Классик</l3></li>
-   <li><l3 id="52">Эпоксидный наливной пол Промышленный</l3></li>
-   <li><l3 id="54">Полиуретановый наливной пол Промышленный</l3></li>
-   <!--li><l3 id="71">Эпоксидный наливной пол Высоконаполненный</l3></li>
-   <li><l3 id="40">Полиуретановый наливной пол Высоконаполненный</l3></li-->
-   <li><l3 id="73">Полиуретановый наливной пол Наполненный</l3></li>
-   <li><l3 id="55">Полиуретановый наливной пол Белый</l3></li>
-   <!--li>Эпоксидный наливной пол Экстра</li-->
-   <!--li>Эпоксидный прозрачный наливной пол 3Д</li-->
+   <?php fmtr_menu_cvr($a_catcvr[3]); ?>
+ <li><l1 id="16"><div>Все Наливные полы</div></l1></li>
 </ul>
 </div>
 <div class="cmobm1" id="mobm34">
 <div class="px0b"></div><div class="px10"></div>
-<div class="mmHead" onclick="f_ocLM(event,34,2)">Покрытия - ПЦ полы</div>
+<div class="mmHead" onclick="f_ocLM(event,34,2)">Покрытия - Полиуретан-цементные полы</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-<li><a>Полиуретан-цементное покрытие</a></li>
-<li><a>Полиуретан-цементный наливной пол</a></li>
+   <?php fmtr_menu_cvr($a_catcvr[4]); ?>
+ <li><l1 id="17"><div>Все Полиуретан-цементные полы</div></l1></li>
 </ul>
 </div>
 <div class="cmobm1" id="mobm35">
@@ -124,11 +107,8 @@
 <div class="mmHead" onclick="f_ocLM(event,35,2)">Покрытия - Кварцнаполненные полы</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-<li><l3 id="39">Эпоксидное покрытие с песком</l3></li>
-<li><l3 id="37">Полиуретановое покрытие с песком</l3></li>
-<!--li><a>Эпоксидное покрытие с песком гладкое</a></li-->
-<!--li><a>Полиуретановое покрытие с песком гладкое</a></li-->
-<!--li><a>Эпоксидное водное покрытие с песком</a></li-->
+   <?php fmtr_menu_cvr($a_catcvr[5]); ?>
+ <li><l1 id="18"><div>Все Кварцнаполненные Полы</div></l1></li>
 </ul>
 </div>
 <div class="cmobm1" id="mobm36">
@@ -136,14 +116,8 @@
 <div class="mmHead" onclick="f_ocLM(event,36,2)">Покрытия - Антистатические полы</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-  <li><l3 id="63">Проводящий наливной пол Эпоксидный</l3></li>
-  <li><l3 id="64">Проводящий наливной пол Полиуретановый</l3></li>
-  <li><l3 id="67">Проводящее покрытие Эпоксидное</l3></li>
-  <li><l3 id="68">Проводящее покрытие Полиуретановое</l3></li>
-  <li><l3 id="65">Рассеивающий наливной пол Эпоксидный</l3></li>
-  <li><l3 id="66">Рассеивающий наливной пол Полиуретановый</l3></li>
-  <li><l3 id="69">Рассеивающее покрытие Эпоксидное</l3></li>
-  <li><l3 id="70">Рассеивающее покрытие Полиуретановое</l3></li>
+   <?php fmtr_menu_cvr($a_catcvr[6]); ?>
+ <li><l1 id="13"><div>Все Антистатические Полы</div></l1></li>
 </ul>
 </div>
 <div class="cmobm1" id="mobm37">
@@ -171,7 +145,9 @@
 <div class="mmHead" onclick="f_ocLM(event,12,1)">Материалы - Эмали</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[3]); ?>
+ <li class="mm1li" onclick="f_ocLM(event,12,121)"><div>Полиуретановые</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,12,122)"><div>Светостойкие</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,12,123)"><div>Эпоксидные</div></li>
  <li><l1 id="34"><div>Все Эмали</div></l1></li>
 </ul>
 </div>
@@ -180,8 +156,9 @@
 <div class="mmHead" onclick="f_ocLM(event,13,1)">Материалы - Лаки</div>
 <div class="px0b"></div>
 <ul class="mm1ul">
- <li class="mm1li" onclick="f_ocLM(event,13,131)"><div>Лаки</div></li>
- <li class="mm1li" onclick="f_ocLM(event,13,132)"><div>Лаки Светостойкие</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,13,131)"><div>Полиуретановые</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,13,132)"><div>Светостойкие</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,13,133)"><div>Эпоксидные</div></li>
  <li><l1 id="43"><div>Все Лаки</div></l1></li>
 </ul>
 </div>
@@ -201,26 +178,38 @@
 <div class="mmHead" onclick="f_ocLM(event,15,1)">Материалы - Антистатические полы</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[8]); ?>
+ <li class="mm1li" onclick="f_ocLM(event,15,151)"><div>Антистатические грунты</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,15,152)"><div>Антистатические Наливные полы</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,15,153)"><div>Антистатические Эмали</div></li>
+ <li><l1 id="38"><div>Все Антистатические полы</div></l1></li>
 </ul>
 </div>
 <div class="cmobm1" id="mobm16">
 <div class="px0b"></div><div class="px10"></div>
-<div class="mmHead" onclick="f_ocLM(event,16,1)">Материалы - ПЦ полы</div>
+<div class="mmHead" onclick="f_ocLM(event,16,1)">Материалы - Полиуретан-цементные Полы</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[9]); ?>
- <li><l1 id="42"><div>Все ПЦ полы</div></l1></li>
+   <?php fmtr_menu($a_catmat[6]); ?>
+ <li><l1 id="42"><div>Все Полиуретан-цементные Полы</div></l1></li>
 
 </ul>
 </div>
 <div class="cmobm1" id="mobm17">
 <div class="px0b"></div><div class="px10"></div>
-<div class="mmHead" onclick="f_ocLM(event,17,1)">Материалы - Шпатлёвки, Герметики</div>
+<div class="mmHead" onclick="f_ocLM(event,17,1)">Материалы - Шпатлёвки, Герметики, Клеи</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[10]); ?>
- <li><l1 id="39"><div>Все Шпатлёвки, Герметики</div></l1></li>
+   <?php fmtr_menu($a_catmat[7]); ?>
+ <li><l1 id="39"><div>Все Шпатлёвки, Герметики, Клеи</div></l1></li>
+</ul>
+</div>
+<div class="cmobm1" id="mobm21">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,21,1)">Материалы - Составы ремонтные, анкеровочные</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[8]); ?>
+ <li><l1 id="60"><div>Все Составы ремонтные, анкеровочные</div></l1></li>
 </ul>
 </div>
 <div class="cmobm1" id="mobm18">
@@ -239,7 +228,7 @@
 <div class="mmHead" onclick="f_ocLM(event,19,1)">Материалы - Смолы для декора и заливки</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[12]); ?>
+   <?php fmtr_menu($a_catmat[9]); ?>
 </ul>
 </div>
 <div class="cmobm1" id="mobm20">
@@ -249,15 +238,13 @@
 <ul class="mm1ul">
  <li class="mm1li" onclick="f_ocLM(event,20,201)"><div>МБ (водные)</div></li>
  <!--li class="mm1li" onclick="f_ocLM(event,20,202)"><div>Лаки (прочее)</div></li-->
+ <li class="mm1li" onclick="f_ocLM(event,20,206)"><div>Колоранты, добавки</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,20,207)"><div>Силеры</div></li>
  <li class="mm1li" onclick="f_ocLM(event,20,203)"><div>Пищевые</div></li>
  <li class="mm1li" onclick="f_ocLM(event,20,204)"><div>Добавки для бетона</div></li>
  <li class="mm1li" onclick="f_ocLM(event,20,205)"><div>Для металла</div></li>
+ <li class="mm1li" onclick="f_ocLM(event,20,208)"><div>Для дерева</div></li>
  <li><l1 id="40"><div>Все прочие материалы</div></l1></li>
-</ul>
-<div class="px10"></div>
-<ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[15]); ?>
-   <?php fmtr_menu($a_catmat[16]); ?>
 </ul>
 </div>
 
@@ -266,7 +253,7 @@
 <div class="mmHead" onclick="f_ocLM(event,111,11)">Грунты Полиуретановые</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[1]); ?>
+   <?php fmtr_menu($a_catmat[11]); ?>
 </ul>
 </div>
 <div class="cmobm1" id="mobm112">
@@ -274,15 +261,39 @@
 <div class="mmHead" onclick="f_ocLM(event,112,11)">Грунты Эпоксидные</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[2]); ?>
+   <?php fmtr_menu($a_catmat[12]); ?>
+</ul>
+</div>
+<div class="cmobm1" id="mobm121">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,121,12)">Материалы - Эмали Полиуретановые</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[21]); ?>
+</ul>
+</div>
+<div class="cmobm1" id="mobm122">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,122,12)">Материалы - Эмали Светостойкие</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[22]); ?>
+</ul>
+</div>
+<div class="cmobm1" id="mobm123">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,123,12)">Материалы - Эмали Эпоксидные</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[23]); ?>
 </ul>
 </div>
 <div class="cmobm1" id="mobm131">
 <div class="px0b"></div><div class="px10"></div>
-<div class="mmHead" onclick="f_ocLM(event,131,13)">Материалы - Лаки</div>
+<div class="mmHead" onclick="f_ocLM(event,131,13)">Материалы - Лаки Полиуретановые</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[4]); ?>
+   <?php fmtr_menu($a_catmat[31]); ?>
 </ul>
 </div>
 <div class="cmobm1" id="mobm132">
@@ -290,7 +301,15 @@
 <div class="mmHead" onclick="f_ocLM(event,132,13)">Материалы - Лаки Светостойкие</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[5]); ?>
+   <?php fmtr_menu($a_catmat[32]); ?>
+</ul>
+</div>
+<div class="cmobm1" id="mobm133">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,133,13)">Материалы - Лаки Эпоксидные</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[33]); ?>
 </ul>
 </div>
 <div class="cmobm1" id="mobm141">
@@ -298,7 +317,7 @@
 <div class="mmHead" onclick="f_ocLM(event,141,14)">Полиуретановые Наливные полы</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[6]); ?>
+   <?php fmtr_menu($a_catmat[41]); ?>
 </ul>
 </div>
 <div class="cmobm1" id="mobm142">
@@ -306,7 +325,31 @@
 <div class="mmHead" onclick="f_ocLM(event,142,14)">Эпоксидные Наливные полы</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[7]); ?>
+   <?php fmtr_menu($a_catmat[42]); ?>
+</ul>
+</div>
+<div class="cmobm1" id="mobm151">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,151,15)">Антистатические грунты</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[51]); ?>
+</ul>
+</div>
+<div class="cmobm1" id="mobm152">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,152,15)">Материалы - Антистатические Наливные полы</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[52]); ?>
+</ul>
+</div>
+<div class="cmobm1" id="mobm153">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,153,15)">Материалы - Антистатические Эмали</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[53]); ?>
 </ul>
 </div>
 <div class="cmobm1" id="mobm201">
@@ -314,17 +357,7 @@
 <div class="mmHead" onclick="f_ocLM(event,201,20)">Материалы - Прочее - МБ (водные)</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[13]); ?>
-</ul>
-</div>
-<div class="cmobm1" id="mobm202">
-<div class="px0b"></div><div class="px10"></div>
-<div class="mmHead" onclick="f_ocLM(event,202,20)">Материалы - Прочее - Лаки</div>
-<div class="px0b"></div><div class="px10"></div>
-<ul class="mm1ul">
-<li><a>ПУ Лак Универсальный Приготовление эмали</a></li>
-<li><a>ПУ Паркетный Лак</a></li>
-<li><a>ПУ Лак для кирпича, камня</a></li>
+   <?php fmtr_menu($a_catmat[101]); ?>
 </ul>
 </div>
 <div class="cmobm1" id="mobm203">
@@ -332,7 +365,7 @@
 <div class="mmHead" onclick="f_ocLM(event,203,20)">Материалы - Прочее - Пищевые</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[17]); ?>
+   <?php fmtr_menu($a_catmat[104]); ?>
 </ul>
 </div>
 <div class="cmobm1" id="mobm204">
@@ -340,7 +373,7 @@
 <div class="mmHead" onclick="f_ocLM(event,204,20)">Материалы - Прочее - Добавки для бетона</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[18]); ?>
+   <?php fmtr_menu($a_catmat[105]); ?>
 </ul>
 </div>
 <div class="cmobm1" id="mobm205">
@@ -348,7 +381,31 @@
 <div class="mmHead" onclick="f_ocLM(event,205,20)">Материалы - Прочее - Для металла</div>
 <div class="px0b"></div><div class="px10"></div>
 <ul class="mm1ul">
-   <?php fmtr_menu($a_catmat[19]); ?>
+   <?php fmtr_menu($a_catmat[106]); ?>
+</ul>
+</div>
+<div class="cmobm1" id="mobm206">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,206,20)">Материалы - Прочее - Колоранты, добавки</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[102]); ?>
+</ul>
+</div>
+<div class="cmobm1" id="mobm207">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,207,20)">Материалы - Прочее - Силеры</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[103]); ?>
+</ul>
+</div>
+<div class="cmobm1" id="mobm208">
+<div class="px0b"></div><div class="px10"></div>
+<div class="mmHead" onclick="f_ocLM(event,208,20)">Материалы - Прочее - Для дерева</div>
+<div class="px0b"></div><div class="px10"></div>
+<ul class="mm1ul">
+   <?php fmtr_menu($a_catmat[107]); ?>
 </ul>
 </div>
 <div id="mbasket" onclick="f_goUrlBasket()"><div id="mb_amount"></div>

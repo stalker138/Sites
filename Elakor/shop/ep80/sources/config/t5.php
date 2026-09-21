@@ -5,13 +5,13 @@
 *number*1
 *options*		1000000000
 *file*			text5_1
-*name*			CSS
+*name*			CSS устарвевший
 *end*1
 
 *number*2
 *options*		1000000000
 *file*			text5_2
-*name*			CSS 2 - копия
+*name*			CSS 2 - рабочая версия
 *end*2
 
 *number*3

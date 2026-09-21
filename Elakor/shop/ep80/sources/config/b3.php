@@ -105,9 +105,9 @@
 *end*17
 
 *number*18
-*options*		0000000000
+*options*		1000000000
 *file*			block3_18
-*name*			empty18
+*name*			Эпоксидная Антистатическая пропитка
 *end*18
 
 *number*19
@@ -255,9 +255,9 @@
 *end*42
 
 *number*43
-*options*		0000000000
+*options*		1000000000
 *file*			block3_43
-*name*			empty43
+*name*			Покрытие с песком полиуретановое светостойкое
 *end*43
 
 *number*44
@@ -441,15 +441,15 @@
 *end*73
 
 *number*74
-*options*		0000000000
+*options*		1000000000
 *file*			block3_74
-*name*			empty74
+*name*			Антистатический Полиуретан-Цементный пол
 *end*74
 
 *number*75
-*options*		0000000000
+*options*		1000000000
 *file*			block3_75
-*name*			empty75
+*name*			Антистатический Проводящий Полиуретан-Цементный пол
 *end*75
 
 *number*76
@@ -573,9 +573,9 @@
 *end*95
 
 *number*96
-*options*		0000000000
+*options*		1000000000
 *file*			block3_96
-*name*			empty96
+*name*			Фактурный полиуретан-цементный пол
 *end*96
 
 *number*97
@@ -583,5 +583,29 @@
 *file*			block3_97
 *name*			ГЛАДКИЙ полиуретан-цементный пол
 *end*97
+
+*number*98
+*options*		1000000000
+*file*			block3_98
+*name*			Безыскровый полиуретан-цементный пол (гладкий)
+*end*98
+
+*number*99
+*options*		1000000000
+*file*			block3_99
+*name*			Полиуретан-цементное покрытие с кварцем
+*end*99
+
+*number*100
+*options*		0000000000
+*file*			block3_100
+*name*			empty100
+*end*100
+
+*number*101
+*options*		0000000000
+*file*			block3_101
+*name*			Тестовое покрытие
+*end*101
 
 [END LIST]

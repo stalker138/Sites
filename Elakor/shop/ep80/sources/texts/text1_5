@@ -1,0 +1,54 @@
+var list_mtr = []; 
+var a_catmat = [];
+var list_cvr = []; 
+var a_catcvr = [];
+
+<?php
+
+$cnt_mtr = count($list_mtr);
+for($i=0; $i<$cnt_mtr; $i++) {
+    print 'list_mtr['.$i.']='.((int)$list_mtr[$i]).';'.chr(10);
+}
+
+$cnt_mtr = count($a_catmat);
+for($i=0; $i<$cnt_mtr; $i++) {
+    $s_arr = '[';
+    $s_arr .= implode(', ', $a_catmat[$i]);
+    $s_arr .= ']';
+    print 'a_catmat['.$i.']='.$s_arr.';'.chr(10);
+}
+
+$cnt_mtr = count($list_cvr);
+for($i=0; $i<$cnt_mtr; $i++) {
+    print 'list_cvr['.$i.']='.((int)$list_cvr[$i]).';'.chr(10);
+}
+
+$cnt_mtr = count($a_catcvr);
+for($i=0; $i<$cnt_mtr; $i++) {
+    $s_arr = '[';
+    $s_arr .= implode(', ', $a_catcvr[$i]);
+    $s_arr .= ']';
+    print 'a_catcvr['.$i.']='.$s_arr.';'.chr(10);
+}
+?>
+
+
+function f_cmAdd(n, tr, nm, nm2, k) { /* Изменение заказанного материала в dataLayer */
+alert("add");
+  window.dataLayer.push({
+    "ecommerce": {
+        "currencyCode": "RUB",    
+        "add": {
+            "products": [
+                {
+                    "id": n,
+                    "name": nm,
+                    "brand": "ТэоХим",
+                    "category": "Грунты/Полиуретановые",
+                    "quantity": k
+                }
+            ]
+        }
+    }
+  });
+}

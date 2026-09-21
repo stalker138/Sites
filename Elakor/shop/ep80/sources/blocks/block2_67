@@ -13,6 +13,7 @@
   <div class="matf14">
      <?php fmtr_packing($i_pkr); ?>
   </div>
+  <?php fmtr_link(array('<div>Модификация АСТ-7</div>','<l2 id="92">Модификация АСТ-6</l2>')); ?>
   <div class="matf15">
     <?php fmtr_ord($i_pkr); ?>
   </div>
@@ -36,6 +37,7 @@
 <div class="ot_block">
 <div class="ot_item active" id="fot123_o">
 <?php fmtr_descr($i_pkr); ?>
+<p class="fwb">Модификация: АСТ-7 - для покрытий согласно СП 29.13330.2011. п.5.11; п.5.12; п.5.14.</p>
 
 </div>
 

@@ -1,0 +1,11 @@
+<div id="calc_iitem_comb_bi" class="calc_iitem">
+  <div class="px0"></div><p>Безыскровое?</p><div class="px5"></div>
+  <div class="pb_combobox" style="width:140px">
+    <input type="text" value="НЕТ" maxlength="30" placeholder="НЕТ" style="width:90px" readonly />
+    <div class="pb_cb_image"></div>
+    <div class="pb_cb_select" style="width:148px">
+      <div class="pb_cb_option">ДА</div>
+      <div class="pb_cb_option">НЕТ</div>
+   </div>
+  </div><div class="px0"></div>
+</div>

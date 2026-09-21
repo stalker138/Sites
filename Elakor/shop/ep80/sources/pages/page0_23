@@ -12,11 +12,20 @@ global $i_pkr; $f = empty($f) ? $i_pkr : $f;
 {*text4_1*}
 <?php if ($f==97) { ?>
 {*text4_21*}
+<?php } else if ($f==96) { ?>
+{*text4_22*}
+<?php } else if ($f==98) { ?>
+{*text4_23*}
+<?php } else if ($f==74) { ?>
+{*text4_25*}
+<?php } else if ($f==75) { ?>
+{*text4_27*}
+<?php } else if ($f==99) { ?>
+{*text4_26*}
 <?php } else { ?>
 {*text4_2*}
 <?php } ?>
 <?php /* if ($f==31 || $f==33 || $f==35 || $f==81 || $f==85 || $f==89 || $f==95) { ?>{*text4_5*}<?php } */?>
-<?php if ($f==33) { ?>{*text4_24*}<?php } ?>
 <?php if ($f==51) { ?>{*text4_11*}<?php } ?>
 <?php if ($f==52) { ?>{*text4_12*}<?php } ?>
 <?php if ($f==53) { ?>{*text4_12*}<?php } ?>
@@ -25,10 +34,10 @@ global $i_pkr; $f = empty($f) ? $i_pkr : $f;
 <?php if ($f==71) { ?>{*text4_14*}<?php } ?>
 <?php if ($f==73) { ?>{*text4_15*}<?php } ?>
 <?php if ($f==51 || $f==52 || $f==53 || $f==54 || $f==55) { ?>{*text4_7*}<?php } ?>
-<?php if ($f==37 || $f==39 || $f==93) { ?>{*text4_17*}{*text4_20*}<?php } ?>
+<?php if ($f==37 || $f==39 || $f==43 || $f==93) { ?>{*text4_17*}{*text4_20*}<?php } ?>
 <?php if ($f==40) { ?>{*text4_18*}<?php } ?>
 <?php if ($f==83) { ?>{*text4_8*}<?php } ?>
-<?php if ($f==63 || $f==67 || $f==68) { ?>{*text4_9*}<?php } ?>
+<?php if ($f==63 || $f==67 || $f==68 || $f==75) { ?>{*text4_9*}<?php } ?>
 {*text4_3*}
 <div class="calc_iitem_help" onclick="f_callback(2)">
    <div class="px30"></div>
@@ -37,8 +46,8 @@ global $i_pkr; $f = empty($f) ? $i_pkr : $f;
 <?php if ($tel) { ?>
 <div class="calc_iitem_tel">
 <div class="px20"></div>
-<p>Купить МАТЕРИАЛЫ: <a class="consult fwb" href="tel:+74959568596">+7-495-956-85-96</a><br>
-Заказать РАБОТЫ: <a class="consult fwb" href="tel:+74955184378">+7-495-518-43-78</a></p>
+<p>Купить МАТЕРИАЛЫ: <a class="consult fwb" href="tel:+href="tel:+74951180659">+7 495 118 06 59</a><br>
+Заказать РАБОТЫ: <a class="consult fwb" href="tel:+74955184378">+7 495 518 43 78</a></p>
 </div>
 <?php } ?>
 <div class="px0"></div>
@@ -59,15 +68,28 @@ function fmtr_menu($amtr=false) {
  print($s_out);
 }
 
+
+function fmtr_menu_cvr($amtr=false) {
+//вывод пунктов меню покрытий по массиву индексов покрытий 
+ global $a_cvr_dop,$plc;
+ $s_out='';
+ foreach($amtr as $n_mat){
+   if ($n_mat==0) {continue;}
+   $s_out.='
+   <li>'.$plc[$n_mat].'>'.$a_cvr_dop[$n_mat][0].'</a></li>
+  ';
+ }
+ print($s_out);
+}
+
+
 function fmtr_get($ipkr=0) {
 //получить массив материалов по индексу покрытия
- global $a_cvr_mtr, $a_catmat;
+ global $a_cvr_mtr, $list_mtr;
  if (!$ipkr || !$a_cvr_mtr[$ipkr]){return false;}
- $arr_set = false;
+ $arr_set = $list_mtr;
  $arr_ret = false;
  $arr = false;
- $arr_set=array_merge($a_catmat[1], $a_catmat[2], $a_catmat[3], $a_catmat[4], $a_catmat[5], $a_catmat[6], $a_catmat[7], $a_catmat[8], $a_catmat[9], $a_catmat[10],
- $a_catmat[11], $a_catmat[12], $a_catmat[13], $a_catmat[14], $a_catmat[15], $a_catmat[16], $a_catmat[17], $a_catmat[18], $a_catmat[19]);
  $arr = $a_cvr_mtr[$ipkr][0];
  foreach($arr as $n_mat){
  if (in_array($n_mat, $arr_set)){
@@ -82,11 +104,11 @@ function fmtr_set($amtr=false) {
  $s_out='';
  foreach($amtr as $n_mat){
    if ($n_mat==0) {continue;}
-   $nm=(($plm[$n_mat][2]=='') ? '' : ' '.$plm[$n_mat][2]);
+   $nm=(($plm[$n_mat][2]=='') ? '' : '. '.$plm[$n_mat][2]);
    $s_out.='
    <div class="px20"></div>
    '.$plm[$n_mat][0].' class="mat_block">
-   <div class="matb_h1">'.$a_mtr_dop[$n_mat][0].'.'.$nm.'</div>
+   <div class="matb_h1">'.$a_mtr_dop[$n_mat][0].$nm.'</div>
    <div class="matb_price">от '.$a_mtr[$n_mat][8].'<p>руб./кг</p></div>
    <div class="px0"></div>
    <div class="matb_content">
@@ -177,11 +199,12 @@ function fmtr_micro($n_mat=0) {
 //вывод микроразметки страницы по массиву индексов материалов 
  global $a_mtr, $a_mtr_dop,$plm,$pb_domain,$pb_full_url;
  $s_out='';
+   $img=preg_replace('/webp/', 'png', $a_mtr_dop[$n_mat][1]); 
    $price=preg_replace('/[^0-9.]+/', '', $a_mtr[$n_mat][8]);
    $s_out.='
    <div class="pb_hidden" itemscope itemtype="https://schema.org/Product">
-   <meta itemprop="name" content="'.$a_mtr_dop[$n_mat][0].'">
-   <link itemprop="image" href="'.$pb_domain.$a_mtr_dop[$n_mat][1].'" >
+   <meta itemprop="name" content="'.$a_mtr_dop[$n_mat][14].'">
+   <img itemprop="image" src="'.$pb_domain.$img.'" alt="'.$a_mtr_dop[$n_mat][14].'" >
    <div itemprop="description">'.$a_mtr_dop[$n_mat][2].'"</div>
    <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
    <meta itemprop="name" content="Элакор">
@@ -190,6 +213,7 @@ function fmtr_micro($n_mat=0) {
    <meta itemprop="lowPrice" content="'.$price.'">
    <meta itemprop="priceCurrency" content="RUB">
    <link itemprop="url" href="'.$pb_domain.$pb_full_url.'" >
+   <link itemprop="availability" href="http://schema.org/InStock">
    <div itemprop="seller" itemtype="http://schema.org/Organization" itemscope>
    <meta itemprop="name" content="ООО «ТэоХим»">
    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -249,7 +273,7 @@ function fmtr_price($n_mat=false, $nm1='', $nm2='') {
  $s_out='<div class="matf10">
    <div class="matf11">
    <table class="tmprice"><tbody>
-    <tr><th class="tdh1">10-39 кг</th><th>40-199 кг</th><th class="tdh3">200-499 кг</th></tr>
+    <tr><th class="tdh1">до 59 кг</th><th>60-199 кг</th><th class="tdh3">200-499 кг</th></tr>
     <tr><td class="tdh1">'.$m[3].'</td><td>'.$m[4].'</td><td class="tdh3">'.$m[5].'</td></tr>
    </tbody></table>
   </div>
@@ -259,8 +283,11 @@ function fmtr_price($n_mat=false, $nm1='', $nm2='') {
     <tr><td class="tdh4">'.$m[6].'</td><td>'.$m[7].'</td><td class="tdh6">'.$m[8].'</td></tr>
    </tbody></table>
   </div>
-  <div style="clear:both; margin:5px 0 0 0;">Цена с НДС, руб/кг, в зависимости от количества.'.($tara>0?'<br>Позиции * - для фасовки в бочки по 200кг цена дешевле на 5р/кг.':'').'</div>
-  </div>
+  <div style="clear:both; margin:5px 0 0 0; font-size:13px;">Цена с НДС, руб/кг, в зависимости от количества.'.($tara>0?'<br>Позиции * - для фасовки в бочки по 200кг цена дешевле на 5р/кг.':'').'</div>';
+
+  $s_out.=fmtr_guar($n_mat, 1);
+
+  $s_out.='</div>
 '; /* <p>'.trim($nm).'. &nbsp; Цена,&nbsp;руб/кг</p> */
  print($s_out);
 }
@@ -277,24 +304,27 @@ $s_out='<div>'.trim($m).'</div>';
  print($s_out);
 }
 
-function fmtr_h1($n_mat=0, $nm1='') {
+function fmtr_h1($n_mat=0, $nm1='', $name='') {
 // Вывод наименования на странице 
- global $a_mtr_dop; $m=$a_mtr_dop[$n_mat][14];
+ global $a_mtr_dop; $m=($name!='') ? $name : $a_mtr_dop[$n_mat][14];
  $nm=(($nm1=='') ? '' : ' - '.$nm1);
  $s_out='<h1 class="h11s">'.$m.$nm.'</h1>';
  print($s_out);
 }
 
-function fmtr_guar($n_mat=false) {
+function fmtr_guar($n_mat=false, $ret_str=0) {
 // Вывод гар. срок и темп. хранения
  global $a_mtr_dop; 
+ 
  if ($a_mtr_dop[$n_mat][4]=='C') {$srok=$a_mtr_dop[$n_mat][15];}
  else {$srok=$a_mtr_dop[$n_mat][4].'&nbsp;мес';}
- $s_out='<p>Гарантийный срок хранения в таре производителя – '.$srok.'.<br>Хранить и транспортировать при температуре от '.$a_mtr_dop[$n_mat][5].'°С до '.$a_mtr_dop[$n_mat][6].'°С.</p>';
+ $s_out='<p style="margin-top:7px;">Гарантийный срок хранения в таре производителя – '.$srok.'.<br>Хранить и транспортировать при температуре от '.$a_mtr_dop[$n_mat][5].'°С до '.$a_mtr_dop[$n_mat][6].'°С.</p>';
  if ((int)$a_mtr_dop[$n_mat][13]!=0) {
    $s_out.='<p>В случае крайней необходимости, можно хранить и транспортировать при отрицательных температурах без ограничений.<br>
 В этом случае перед применением необходимо материал <a href="https://teohim.ru/polymer/info/recover/">«ВОССТАНОВИТЬ»</a>.</p>';
  }
+ if ($ret_str) return $s_out;
+ $s_out='';
  print($s_out);
 }
 
@@ -329,28 +359,46 @@ function pack_compl($kol_comp=0) {
  return $str_pack;
 }
 
-function pack_set($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weight='', $o_weight=0) {
+function pack_set($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weight='', $o_weight=0, $no_tbl=0) {
 // строка Фасовок
  $str_pack='';
  foreach($arr_pack as $arow){
    if ($kol_comp<2) {
-     $str_pack.='<tr><td style="text-align:left;">'.$s_begin.(($s_begin=='') ? '' : ': ').$arow.'&nbsp;'.$s_weight;
-     if ((float)$o_weight !=0) { $str_pack.=' – цена <span class="fwn c27">'.fc50($n_mat,$o_weight,150).'&nbsp;р.</span>';}
-     $str_pack.='</td></tr>';
+     if ($no_tbl) {
+       $str_pack.=$s_begin.(($s_begin=='') ? '' : ': ').$arow.'&nbsp;'.$s_weight;
+       if ((float)$o_weight !=0) { $str_pack.=' – цена <span class="fwn c27">'.fc50($n_mat,$o_weight,150).'&nbsp;р.</span>';}
+     }
+     else {
+       $str_pack.='<tr><td style="text-align:left;">'.$s_begin.(($s_begin=='') ? '' : ': ').$arow.'&nbsp;'.$s_weight;
+       if ((float)$o_weight !=0) { $str_pack.=' – цена <span class="fwn c27">'.fc50($n_mat,$o_weight,150).'&nbsp;р.</span>';}
+       $str_pack.='</td></tr>';
+     }
    }
    else {
-    $str_pack.='<tr><td>'.$arow[0].'</td><td>+</td><td>'.$arow[1].'</td>';
-    if ($kol_comp>2) {$str_pack.='<td>+</td><td>'.$arow[2].'</td>';}
-    $str_pack.='<td>=</td><td>'.$arow[$kol_comp].'&nbsp;кг</td>';
-    $str_pack.='<td>';
-    if ((float)$o_weight !=0) { 
-       if ($dop==1) {$price=fc50($n_mat,$o_weight,150)*2-200;}
-       else {$price=fc50($n_mat,$o_weight,150);}
-       $str_pack.=' – цена <span class="fwn c27">'.$price.'&nbsp;р.</span>';
-       $dop=1;
+    if ($no_tbl) {
+      $str_pack.=$arow[0].' + '.$arow[1];
+      if ($kol_comp>2) {$str_pack.=' + '.$arow[2] ;}
+      $str_pack.=' = '.$arow[$kol_comp].'&nbsp;кг</td>';
+      if ((float)$o_weight !=0) { 
+         if ($dop==1) {$price=fc50($n_mat,$o_weight,150)*2-200;}
+         else {$price=fc50($n_mat,$o_weight,150);}
+         $str_pack.=' – цена <span class="fwn c27">'.$price.'&nbsp;р.</span>';
+         $dop=1;
+      }
     }
-
-    $str_pack.='</td></tr>';
+    else {
+      $str_pack.='<tr><td>'.$arow[0].'</td><td>+</td><td>'.$arow[1].'</td>';
+      if ($kol_comp>2) {$str_pack.='<td>+</td><td>'.$arow[2].'</td>';}
+      $str_pack.='<td>=</td><td>'.$arow[$kol_comp].'&nbsp;кг</td>';
+      $str_pack.='<td>';
+      if ((float)$o_weight !=0) { 
+         if ($dop==1) {$price=fc50($n_mat,$o_weight,150)*2-200;}
+         else {$price=fc50($n_mat,$o_weight,150);}
+         $str_pack.=' – цена <span class="fwn c27">'.$price.'&nbsp;р.</span>';
+         $dop=1;
+      }
+      $str_pack.='</td></tr>';
+    }
    }
  }
  return $str_pack;
@@ -360,7 +408,7 @@ function pack_set($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weight
 
 function fmtr_packing($n_mat=false) {
 // Вывод фасовки
- global $a_mtr_dop; 
+ global $a_mtr_dop, $pb_page; 
  $kol_comp=(int)$a_mtr_dop[$n_mat][7];
  $colspan='';
  if ($kol_comp>1) {$colspan=(($kol_comp==2) ? 'colspan="6"' : 'colspan="8"');}
@@ -381,11 +429,13 @@ $th_f='<tr><th class="fwb" style="padding-top:0;" '.$colspan.'>Фасовка:</
   $s_out.=$th_z;
   $s_out.=pack_set($n_mat, $arr_z, $kol_comp, '', $s_weight);
  }
- if ($arr_o) {
-  $s_out.=$th_o;
-  $s_out.=pack_set($n_mat, $arr_o, $kol_comp, '', $s_weight, $a_mtr_dop[$n_mat][10]);
- }
  $s_out.='</tbody></table>';
+ if ($arr_o) {
+  $s_out.='<div style="padding-top:5px;"><span>Образец-пробник: </span>';
+  $s_out.=pack_set($n_mat, $arr_o, $kol_comp, '', $s_weight, $a_mtr_dop[$n_mat][10], 1);
+  $s_out.='</div>';
+ }
+
  print($s_out);
 }
 
@@ -401,8 +451,10 @@ function fmtr_link($a=false) {
 
 function fmtr_ord($n_mat=false) {
 //кнопка заказа материалов 
- global $a_mtr, $a_mtr_dop;
- $s_out='  <div><a id="butrtel" href="tel:+74951180659">Консультация: +7 495 118 06 59</a><div class="px0"></div><div class="butr" onclick="ym(103495019,\'reachGoal\',\'ClickOrd\');f_zAdd('.$n_mat.',\''.$a_mtr_dop[$n_mat][0].'\')">Заказать</div><div class="butb" onclick="ym(103495019,\'reachGoal\',\'ClickCall\');f_callback(2)">Заказать звонок</div></div>
+ global $a_mtr, $a_mtr_dop, $pb_page;
+ $s_out='  <div><div class="butr" onclick="ym(88245655,\'reachGoal\',\'ClickOrd\');f_zAdd('.$n_mat.',\''.$a_mtr_dop[$n_mat][0].'\')">Купить</div><div class="butb" onclick="ym(88245655,\'reachGoal\',\'ClickCall\');f_callback(2)">Заказать звонок</div>';
+  $s_out.='<a class="butb" href="tel:+74951180659">Консультация: <span class="nomedia" style="white-space: nowrap;">+7 495 118 06 59</span></a>';
+  $s_out.='</div>
 <div class="pb_hidden" id="id_tara'.$n_mat.'">'.$a_mtr[$n_mat][11].'</div>
 ';
  print($s_out);
@@ -450,13 +502,13 @@ function ftech_set($atech=false) {
 
 function fcvr_get($n_mat=0) {
 //получить массив покрытий по индексу материала
- global $a_cvr_mtr, $a_catcvr;
+ global $a_cvr_mtr, $list_cvr;
  if ($n_mat==0) {return false;}
  $arr_ret = false;
  for ($i=0; $i<221; $i++) {
    $arr = $a_cvr_mtr[$i][0];
    if (in_array($n_mat, $arr)) {
-     if (in_array($i, $a_catcvr)) {
+     if (in_array($i, $list_cvr)) {
        $arr_ret[] = $i;   }
    }
  }
@@ -545,10 +597,10 @@ function fltout_gr($alist=false, $a_fs0=false, $ii=0) {
 }
 
 function fltout_pokr_test($alist=false,$inref=0){
-  global $pb_page, $a_flt, $a_fs, $pb_root, $i_pkr, $g_message_flt, $a_catcvr;
+  global $pb_page, $a_flt, $a_fs, $pb_root, $i_pkr, $g_message_flt, $list_cvr;
   $alist_out=false;
   foreach($alist as $n_cvr){
-   if (in_array($n_cvr, $a_catcvr)){
+   if (in_array($n_cvr, $list_cvr)){
       $alist_out[] = $n_cvr;
    }
   }

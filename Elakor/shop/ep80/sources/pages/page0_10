@@ -3,7 +3,21 @@ if ($pb_page!=1001 && $pb_page!=5001) {
 print '<nav><ul itemscope itemtype="https://schema.org/BreadcrumbList">';
 //print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l5 id="2"></l5>', 'О Компании', 2).f_navShema('', 'Текущая страница', 3);
 if ($pb_page>3000 && $pb_page<4000) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('', $a_cvr_dop[$pb_page_number][14], 3);
+if (in_array ($pb_page_number, $a_catcvr[1])) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('<l1 id="14"></l1>', 'Пропитки для бетона', 3).f_navShema('', $a_cvr_dop[$pb_page_number][0], 4);
+} elseif (in_array ($pb_page_number, $a_catcvr[2])) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('<l1 id="15"></l1>', 'Окрасочные покрытия', 3).f_navShema('', $a_cvr_dop[$pb_page_number][0], 4);
+} elseif (in_array ($pb_page_number, $a_catcvr[3])) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('<l1 id="16"></l1>', 'Наливные полы', 3).f_navShema('', $a_cvr_dop[$pb_page_number][0], 4);
+} elseif (in_array ($pb_page_number, $a_catcvr[4])) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('<l1 id="17"></l1>', 'Полиуретан-цементные полы', 3).f_navShema('', $a_cvr_dop[$pb_page_number][0], 4);
+} elseif (in_array ($pb_page_number, $a_catcvr[5])) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('<l1 id="18"></l1>', 'Кварцнаполненные полы', 3).f_navShema('', $a_cvr_dop[$pb_page_number][0], 4);
+} elseif (in_array ($pb_page_number, $a_catcvr[6])) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('<l1 id="13"></l1>', 'Антистатические полы', 3).f_navShema('', $a_cvr_dop[$pb_page_number][0], 4);
+} else {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('', $a_cvr_dop[$pb_page_number][0], 3);
+}
 }
 if ($pb_page==4002 || $pb_page==5017) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('', 'Прайс-лист материалов Элакор', 2);
@@ -15,41 +29,7 @@ if ($pb_page==4004) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('', 'Отзывы.', 2);
 }
 if ($pb_page>2003 && $pb_page<3000) {
-if (in_array ($pb_page_number, $a_catmat[1])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="31"></l1>', 'Грунты', 3).f_navShema('<l1 id="32"></l1>', 'Грунты Полиуретановые', 4).f_navShema('', $a_mtr_dop[$pb_page_number][0], 5);
-} elseif (in_array ($pb_page_number, $a_catmat[2])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="31"></l1>', 'Грунты', 3).f_navShema('<l1 id="33"></l1>', 'Грунты Эпоксидные', 4).f_navShema('', $a_mtr_dop[$pb_page_number][0], 5);
-} elseif (in_array ($pb_page_number, $a_catmat[3])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="34"></l1>', 'Эмали', 3).f_navShema('', $a_mtr_dop[$pb_page_number][0], 4);
-} elseif (in_array ($pb_page_number, $a_catmat[4])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="43"></l1>', 'Лаки', 3).f_navShema('<l1 id="44"></l1>', 'Лаки', 4).f_navShema('', $a_mtr_dop[$pb_page_number][0], 5);
-} elseif (in_array ($pb_page_number, $a_catmat[5])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="43"></l1>', 'Лаки', 3).f_navShema('<l1 id="45"></l1>', 'Лаки Светостойкие', 4).f_navShema('', $a_mtr_dop[$pb_page_number][0], 5);
-} elseif (in_array ($pb_page_number, $a_catmat[6])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="35"></l1>', 'Наливные полы', 3).f_navShema('<l1 id="36"></l1>', 'Наливные полы Полиуретановые', 4).f_navShema('', $a_mtr_dop[$pb_page_number][0], 5);
-} elseif (in_array ($pb_page_number, $a_catmat[7])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="35"></l1>', 'Наливные полы', 3).f_navShema('<l1 id="37"></l1>', 'Наливные полы Эпоксидные', 4).f_navShema('', $a_mtr_dop[$pb_page_number][0], 5);
-} elseif (in_array ($pb_page_number, $a_catmat[8])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="38"></l1>', 'Антистатические полы', 3).f_navShema('', $a_mtr_dop[$pb_page_number][0], 4);
-} elseif (in_array ($pb_page_number, $a_catmat[9])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="42"></l1>', 'ПЦ полы', 3).f_navShema('', $a_mtr_dop[$pb_page_number][0], 4);
-} elseif (in_array ($pb_page_number, $a_catmat[10])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="39"></l1>', 'Шпатлёвки, Герметики', 3).f_navShema('', $a_mtr_dop[$pb_page_number][0], 4);
-} elseif (in_array ($pb_page_number, $a_catmat[12])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="46"></l1>', 'Смолы для декора и заливки', 3).f_navShema('', $a_mtr_dop[$pb_page_number][0], 4);
-} elseif (in_array ($pb_page_number, $a_catmat[13])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="40"></l1>', 'Прочее', 3).f_navShema('<l1 id="41"></l1>', 'МБ (водные)', 4).f_navShema('', $a_mtr_dop[$pb_page_number][0], 5);
-} elseif (in_array ($pb_page_number, $a_catmat[17])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="40"></l1>', 'Прочее', 3).f_navShema('<l1 id="47"></l1>', 'Пищевые', 4).f_navShema('', $a_mtr_dop[$pb_page_number][0], 5);
-} elseif (in_array ($pb_page_number, $a_catmat[18])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="40"></l1>', 'Прочее', 3).f_navShema('<l1 id="48"></l1>', 'Добавки для бетона', 4).f_navShema('', $a_mtr_dop[$pb_page_number][0], 5);
-} elseif (in_array ($pb_page_number, $a_catmat[19])) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="40"></l1>', 'Прочее', 3).f_navShema('<l1 id="49"></l1>', 'Для металла', 4).f_navShema('', $a_mtr_dop[$pb_page_number][0], 5);
-}
-else { 
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('', $a_mtr_dop[$pb_page_number][0], 3); 
-}
-
+   f_navMat($pb_page_number);
 }
 if ($pb_page==1002) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('', 'Каталог покрытий', 2);
@@ -81,6 +61,21 @@ print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"
 if ($pb_page==1013) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('', 'Антистатические полы', 3);
 }
+if ($pb_page==1014) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('', 'Пропитки для бетона', 3);
+}
+if ($pb_page==1015) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('', 'Окрасочные покрытия', 3);
+}
+if ($pb_page==1016) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('', 'Наливные полы', 3);
+}
+if ($pb_page==1017) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('', 'Полиуретан-цементные полы', 3);
+}
+if ($pb_page==1018) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="2"></l1>', 'Каталог покрытий', 2).f_navShema('', 'Кварцнаполненные полы', 3);
+}
 
 if ($pb_page==1030) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('', 'Каталог материалов', 2);
@@ -97,6 +92,12 @@ print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30
 if ($pb_page==1034) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('', 'Эмали', 3);
 }
+if ($pb_page==1050) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="34"></l1>', 'Эмали', 3).f_navShema('', 'Эмали', 4);
+}
+if ($pb_page==1051) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="34"></l1>', 'Эмали', 3).f_navShema('', 'Эмали Светостойкие', 4);
+}
 if ($pb_page==1035) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('', 'Наливные полы', 3);
 }
@@ -109,6 +110,15 @@ print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30
 if ($pb_page==1038) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('', 'Антистатические полы', 3);
 }
+if ($pb_page==1052) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="38"></l1>', 'Антистатические полы', 3).f_navShema('', 'Антистатические грунты', 4);
+}
+if ($pb_page==1053) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="38"></l1>', 'Антистатические полы', 3).f_navShema('', 'Антистатические наливные полы', 4);
+}
+if ($pb_page==1054) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="38"></l1>', 'Антистатические полы', 3).f_navShema('', 'Антистатические эмали', 4);
+}
 if ($pb_page==1039) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('', 'Шпатлёвки, Герметики', 3);
 }
@@ -119,7 +129,7 @@ if ($pb_page==1041) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="40"></l1>', 'Прочее', 3).f_navShema('', 'МБ (водные)', 4);
 }
 if ($pb_page==1042) {
-print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('', 'ПЦ полы', 3);
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('', 'Полиуретан-цементные полы', 3);
 }
 if ($pb_page==1043) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('', 'Лаки', 3);
@@ -142,6 +152,12 @@ print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30
 if ($pb_page==1049) {
 print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="40"></l1>', 'Прочее', 3).f_navShema('', 'Для металла', 4);
 }
+if ($pb_page==1055) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="40"></l1>', 'Прочее', 3).f_navShema('', 'Силеры', 4);
+}
+if ($pb_page==1056) {
+print f_navShema('<l1 id="1"></l1>', 'Главная', 1).f_navShema('<l1 id="30"></l1>', 'Каталог материалов', 2).f_navShema('<l1 id="40"></l1>', 'Прочее', 3).f_navShema('', 'Колоранты, добавки', 4);
+}
 
 print '</ul></nav>';
 }
@@ -153,7 +169,34 @@ $a =  ' itemprop="item"';
 $s = '<span itemprop="name">';
 $p = '<meta itemprop="position" content="';
 $name = $s.$name.'</span>'; $p.=$level.'">';
-if ($link) $link = substr($link,0,strpos($link,'>')).$a.'>'.$name.'<'.'/a>';
+if ($link) {
+//$link = $pb_domain.substr($link, 9, strlen($link)-9);
+//$link = substr($link,0,strpos($link,'>')).$a.'>'.$name.'<'.'/a>';
+$href =  'href="'.$pb_domain.substr($link, 9, strlen($link)-15).'"';
+$link = '<a '.$href.$a.'>'.$name.'</a>';
+}
 return $li.( empty($link) ? $name : $link ).$p.'</li>'.( empty($link) ? '' : '<li class="navs">•</li>' );
+}
+
+function f_navMat($num=0) {
+   global $a_navmat, $a_catmat, $a_mtr_dop;
+   $ndx=0;
+   for ($i=11; $i<count($a_catmat); $i++) {
+      if (in_array($num, $a_catmat[$i])) {
+         $ndx = $i;
+         break;
+      }
+   }
+   if ($ndx==0) { return; }
+   $level=1;
+   $out='';
+   for ($i=0; $i<count($a_navmat[$ndx][0]); $i++) {
+      $url=$a_navmat[$ndx][0][$i];
+      $name=$a_navmat[$ndx][1][$i];
+      $out.=f_navShema($url, $name, $level);
+      $level++;
+   }
+   $out.= f_navShema('', $a_mtr_dop[$num][0], $level);
+   print($out);
 }
 ?>

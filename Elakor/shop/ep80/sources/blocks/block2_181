@@ -13,6 +13,7 @@
   <div class="matf14">
      <?php fmtr_packing($i_pkr); ?>
   </div>
+  <?php fmtr_link(array('<div>Паркетный лак</div>','<l2 id="185">Светостойкий лак</l2>')); ?>
   <div class="matf15">
     <?php fmtr_ord($i_pkr); ?>
   </div>

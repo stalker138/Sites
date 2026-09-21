@@ -83,11 +83,11 @@
 *end*8
 
 *number*9
-*options*		0000000000
+*options*		1100000000
 *file*			page5_9
-*name*			empty9
+*name*			Тестовое покрытие
 *link*			empty
-*title*			empty
+*title*			Тестовое покрытие0
 *keyw*			empty
 *desc*			empty
 *end*9

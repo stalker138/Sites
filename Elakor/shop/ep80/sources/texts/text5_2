@@ -221,13 +221,13 @@ h1,.h1main,.h1m,.h11s,.h12s,h2,.dh2,.h160,h3 { display:block; margin:0 auto; fon
 .tdpdf { float:left; line-height:20px; max-width:75%; } .tdpdf a { color:inherit; } .tdpdf a:hover { color:#fd5202; }
 
 /* Таблицы */
-.tmtrt,.tmtr,.tpkr,.tsrt,.tbl1,.tbl2 { width:100%; font-size:13px; font-weight:normal; text-align:center; border-collapse:collapse; border-spacing:0; }
+.tmtrt,.tmtr,.tpkr,.tsrt,.tcolor,.tbl1,.tbl2 { width:100%; font-size:13px; font-weight:normal; text-align:center; border-collapse:collapse; border-spacing:0; }
 .tmtrt { font-size:12px; }
-.tpkr { border:solid 1px #000000; background:#f8f8f8; } .tsrt,.tbl2  { margin:10px 0; box-shadow:none; } .tbl1 { text-align:center; box-shadow:none; } .tbl2 { text-align:left; }
+.tpkr { border:solid 1px #000000; background:#f8f8f8; } .tsrt,.tcolor,.tbl2  { margin:10px 0; box-shadow:none; } .tbl1 { text-align:center; box-shadow:none; } .tbl2 { text-align:left; }
 
-.tmtrt th,.tmtrt td,.tmtr th,.tmtr td,.tsrt th,.tsrt td { border:solid 1px #000000; border-collapse:collapse; } .tsrt,.tsrt th,.tsrt td { border:solid 1px #808080; }
-.tmtr th { width:50px; height:15px; font-size:11px; background:#f0f0f0; } .tsrt th { font-size:13px; font-weight:bold; text-align:center; }
-.tmtr td,.tpkr td { height:21px; line-height:21px; font-size:13px; } .tmtr td { font-size:13px; } .tsrt td { font-size:13px; }
+.tmtrt th,.tmtrt td,.tmtr th,.tmtr td,.tsrt th,.tsrt td,.tcolor th,.tcolor td { border:solid 1px #000000; border-collapse:collapse; } .tsrt,.tsrt th,.tsrt td,.tcolor,.tcolor th,.tcolor td { border:solid 1px #808080; }
+.tmtr th { width:50px; height:15px; font-size:11px; background:#f0f0f0; } .tsrt th,.tcolor th { font-size:13px; font-weight:bold; text-align:center; }
+.tmtr td,.tpkr td { height:21px; line-height:21px; font-size:13px; } .tmtr td { font-size:13px; } .tsrt td,.tcolor td { font-size:13px; }
 .tmtr td span,.tpkr td span { font-size:11px; font-weight:normal; } .tbl2 td { padding:1px; width:190px; }
 
 .tmtrt th { width:50px; height:21px; font-size:15px; line-height:15px; color:#272727; border:solid 1px #808080; background:#f0f0f0; }
@@ -235,8 +235,11 @@ h1,.h1main,.h1m,.h11s,.h12s,h2,.dh2,.h160,h3 { display:block; margin:0 auto; fon
 .tmtrt td:hover { color:#f00000; background:#eeeeee; font-weight:bold; } .tmtrt td:hover a, .tmtrt td:hover input { font-weight:normal; }
 
 .tdl,.tmtr .tdl,.tmdl,.tmtr .tmdl { padding:0 3px 0 5px; text-align:left; font-size:13px; }
-.tmtr td a, .tpkr td a, .tsrt td a, .tbl2 td a { font-size:13px; text-decoration:none; } .tmtr td a:hover,.tpkr td a:hover,.tsrt td a:hover,.tbl2 td a:hover { text-decoration:underline; }
+.tmtr td a, .tpkr td a, .tsrt td a, .tcolor td a, .tbl2 td a { font-size:13px; text-decoration:none; } .tmtr td a:hover,.tpkr td a:hover,.tsrt td a:hover,.tcolor td a:hover,.tbl2 td a:hover { text-decoration:underline; }
 .tmtr td a span,.tpkr td a span { font-size:13px; font-weight:bold; color:inherit; }
+
+.tsrt, .tsrt th, .tsrt td { font-size:15px; color:#444444; border:none 0px; } .tsrt th, .tsrt td { padding:10px; }
+.tsrt tr:nth-child(odd) { background:#eeeeee; }
 
 .thml { padding:0 0 0 20px; text-align:left; }
 .tmtl { padding:5px 5px 5px 10px; text-align:left; }
@@ -269,8 +272,8 @@ div floor cell - .dfc .dfcl (l - text-align:left)
 div floor row - .dfr (строки таблицы, а для менее 1000px это раскрывающиеся блоки)
 .dfh_ - завершающее подчёркивание означает скрытый блок display:none на разрешении более 1000px
 
-Для блоков с 2 и более строками, испльзовать: для первой строки 1, для остальных 2 (.dfco1 .dfco2 .dfco3 .dfco4, .dfcl1 .dfcl2 .dfcl3 .dfcl4, .dfc1 .dfc2 .dfc3)
-.bee - выделение блоков фоном (каждая строка в блоке отдельно: ".dfr bee", ".dfr1 bee", ".dfr2 bee", ".dfr3 bee", ".dfr4 bee")
+Для блоков с 2 и более строками, испльзовать: для первой строки 1, для остальных 2 (.dfco1 .dfco2 .dfco3 .dfco4 .dfco5 .dfco6, .dfcl1 .dfcl2 .dfcl3 .dfcl4 .dfcl5 .dfcl6, .dfc1 .dfc2 .dfc3)
+.bee - выделение блоков фоном (каждая строка в блоке отдельно: ".dfr bee", ".dfr1 bee", ".dfr2 bee", ".dfr3 bee", ".dfr4 bee", ".dfr5 bee", ".dfr6 bee")
  */
 .calc_block, .ot_head_block, .ot_block, .ot_hb_item, .ot_item, .svg_to_block, .dh_min_max, .dh_mm_head { position:relative; display:block; padding:10px; /* height:40px; */ border:solid 1px #c8c8c8; }
 .calc_block { /*max-width:1000px;*/ } .ot_head_block, .ot_block { /*max-width:1020px;*/ } .ot_head_block { float:none; padding:0; top:0; left:0; } .ot_block, .ot_item { padding:5px 0; color:#808080; border:none 0px; }
@@ -280,15 +283,15 @@ div floor row - .dfr (строки таблицы, а для менее 1000px �
 .dh_min_max { padding:0; height:40px; overflow:hidden; border:none 0px; } .dh_mm_head { cursor:pointer; padding:10px; height:20px; text-align:center; border:none 0px; } .dh_mm_head:hover { background:#eeeeee; }
 
 .calc_fmat, .calc_frab { display:table; width:100%; font-size:12px; line-height:15px; text-align:right; color:#272727; border:none 0px; border-collapse:collapse; }
-.dfr,.dfrh,.dfr1,.dfr2,.dfr3,.dfr4,.dfri,.dfh_,.dfh,.dfhl,.dfc,.dfc1,.dfc2,.dfc3,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfcl4,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfco4,.dfci { display:table-row; border:none 0px; border-collapse:collapse; }
-.dfh_,.dfh,.dfhl,.dfc,.dfc1,.dfc2,.dfc3,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfcl4,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfco4,.dfci { display:table-cell; padding:7px 10px 7px 0; } .dfci, .dfri .dfc { font-weight:600; }
-.dfco1,.dfco2,.dfco3,.dfco4 { border-right:solid 1px #eeeeee; } .bee .dfco1, .bee .dfco2, .bee .dfco3, .bee .dfco4 { border-right:solid 1px #ffffff; }
-.dfcl1, .dfcl2, .dfcl3, .dfcl4, .dfc1, .dfc2, .dfc3,.dfri { border-top:solid 1px #eeeeee; } .bee .dfcl1, .bee .dfcl2, .bee .dfcl3, .bee .dfcl4, .bee .dfc2, .bee .dfc3 { border-top:solid 1px #ffffff; }
-.dfh_,.dfh,.dfhl { color:#808080; } .dfhl,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfcl4,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfco4,.dfci { padding:7px 0 7px 10px; text-align:left; } .dfh_,.dfh,.dfhl { }
+.dfr,.dfrh,.dfr1,.dfr2,.dfr3,.dfr4,.dfr5,.dfr6,.dfri,.dfh_,.dfh,.dfhl,.dfc,.dfc1,.dfc2,.dfc3,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfcl4,.dfcl5,.dfcl6,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfco4,.dfco5,.dfco6,.dfci { display:table-row; border:none 0px; border-collapse:collapse; }
+.dfh_,.dfh,.dfhl,.dfc,.dfc1,.dfc2,.dfc3,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfcl4,.dfcl5,.dfcl6,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfco4,.dfco5,.dfco6,.dfci { display:table-cell; padding:7px 10px 7px 0; } .dfci, .dfri .dfc { font-weight:600; }
+.dfco1,.dfco2,.dfco3,.dfco4,.dfco5,.dfco6 { border-right:solid 1px #eeeeee; } .bee .dfco1, .bee .dfco2, .bee .dfco3, .bee .dfco4, .bee .dfco5, .bee .dfco6 { border-right:solid 1px #ffffff; }
+.dfcl1, .dfcl2, .dfcl3, .dfcl4, .dfcl5, .dfcl6, .dfc1, .dfc2, .dfc3,.dfri { border-top:solid 1px #eeeeee; } .bee .dfcl1, .bee .dfcl2, .bee .dfcl3, .bee .dfcl4, .bee .dfcl5, .bee .dfcl6, .bee .dfc2, .bee .dfc3 { border-top:solid 1px #ffffff; }
+.dfh_,.dfh,.dfhl { color:#808080; } .dfhl,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfcl4,.dfcl5,.dfcl6,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfco4,.dfco5,.dfco6,.dfci { padding:7px 0 7px 10px; text-align:left; } .dfh_,.dfh,.dfhl { }
 .dfhl div, .dfh div { display:inline-block; text-align:center; } .dfh_ { display:none; }
-.calc_frab *, .calc_frab .dfco1, .calc_frab .dfco2, .calc_frab .dfco3, .calc_frab .dfco4, .calc_frab .bee .dfco1, .calc_frab .bee .dfco2, .calc_frab .bee .dfco3, .calc_frab .bee .dfco4  { border:none 0px; border-top:none 0px; border-right:none 0px; }
-.calc_frab .bee .dfco1, .calc_frab .bee .dfco2, .calc_frab .bee .dfco3, .calc_frab .bee .dfco4 { background-color:#ffffff; }
-.calc_frab .dfco1, .calc_frab .dfco2, .calc_frab .dfco3, .calc_frab .dfco4 { display:none; }
+.calc_frab *, .calc_frab .dfco1, .calc_frab .dfco2, .calc_frab .dfco3, .calc_frab .dfco4, .calc_frab .dfco5, .calc_frab .dfco6, .calc_frab .bee .dfco1, .calc_frab .bee .dfco2, .calc_frab .bee .dfco3, .calc_frab .bee .dfco4, .calc_frab .bee .dfco5, .calc_frab .bee .dfco6  { border:none 0px; border-top:none 0px; border-right:none 0px; }
+.calc_frab .bee .dfco1, .calc_frab .bee .dfco2, .calc_frab .bee .dfco3, .calc_frab .bee .dfco4, .calc_frab .bee .dfco5, .calc_frab .bee .dfco6 { background-color:#ffffff; }
+.calc_frab .dfco1, .calc_frab .dfco2, .calc_frab .dfco3, .calc_frab .dfco4, .calc_frab .dfco5, .calc_frab .dfco6 { display:none; }
 
 .fc_block { position:relative; overflow:hidden; min-height:180px; height:180px; }
 .mat_block, .floor_block { cursor:pointer; position:relative; display:block; padding:10px 10px 20px 10px; /*max-width:1000px;*/ min-height:150px; color:#272727; background-color:#eeeeee; }
@@ -372,6 +375,7 @@ div floor row - .dfr (строки таблицы, а для менее 1000px �
 .divh3cena { position:relative; float:right; margin:0 0 0 0; padding:3px 0 0 20px; height:18px; font-size:12px; line-height:17px; font-weight:400; text-transform:uppercase; color:#333333; }
 .div_mc .divh3 { background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 9.932 9.932'%3E%3Cpath d='M5.023,0H0V5.023' transform='translate(4.966 8.518) rotate(-135)' fill='none' stroke='%23272727' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E") #eeeeee 98% center no-repeat; }
 .div_mo .divh3 { background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='svg_arrow_up' width='9' height='9' viewBox='0 0 9.932 9.932'%3E%3Cpath d='M5.023,0H0V5.023' transform='translate(4.966 4.966) rotate(45)' fill='none' stroke='%23272727' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E%0A") #c8c8c8 98% center no-repeat; }
+.divh2 a, .divh3 a { color:#333333; } .divh2 a:hover, .divh3 a:hover { color:#fd5202; }
 /*.divh3:hover { color:#f5530e; background-color:#e0e0e0; }*/
 
 .div_mo ul,.div_mc ul { margin:0; padding:0 0 0 25px; list-style:none; } .div_mo ul li,.div_mc ul li { font-size:13px; line-height:20px; }
@@ -538,9 +542,9 @@ menu li span { position:relative; font-weight:400; line-height:35px; /*color:#00
 .calc_iitem_help { margin:0 10px 0 0; } .calc_mat, .calc_rab { height:auto; border-top:solid 1px #c8c8c8; overflow:visible; }
 .calc_mf_header, .calc_mat .calc_mf_header_, .calc_rab .calc_mf_header_, .calc_mat .calc_mf_header_:hover, .calc_rab .calc_mf_header_:hover, .calc_mf_header:hover { cursor:default; padding:10px 0; background:transparent; }
 .calc_fmat, .calc_frab { position:relative; display:block; font-size:15px; line-height:18px; text-align:left; }
-.dfr,.dfr1,.dfr2,.dfr3,.dfr4,.dfri,.dfh_,.dfc,.dfc1,.dfc2,.dfc3,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfcl4,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfco4,.dfci { position:relative; display:block; float:right; padding:7px 0; border-top:none; border-right:none;}
-.dfci,.dfh_ { float:left; clear:both; } .dfr,.dfr1,.dfr2,.dfr3,.dfr4,.dfri,.dfco,.dfco1,.dfco2,.dfco3,.dfco4 { float:none; clear:both; } .dfrh,.dfh,.dfhl,.dfco2,.dfco3,.dfco4 { display:none; }
-.dfr,.dfr1,.dfr2,.dfr3,.dfr4 { padding:0; height:38px; overflow:hidden; } .dfr,.dfr1,.dfri { margin:10px 0 0 0; } .dfr2,.dfr3,.dfr4 { height:0; } .dfri { margin:20px 0 0 0; border-top:solid 1px #eeeeee; }
+.dfr,.dfr1,.dfr2,.dfr3,.dfr4,.dfr5,.dfr6,.dfri,.dfh_,.dfc,.dfc1,.dfc2,.dfc3,.dfcl,.dfcl1,.dfclr1,.dfcl2,.dfcl3,.dfcl4,.dfcl5,.dfcl6,.dfclr2,.dfco,.dfco1,.dfco2,.dfco3,.dfco4,.dfco5,.dfco6,.dfci { position:relative; display:block; float:right; padding:7px 0; border-top:none; border-right:none;}
+.dfci,.dfh_ { float:left; clear:both; } .dfr,.dfr1,.dfr2,.dfr3,.dfr4,.dfr5,.dfr6,.dfri,.dfco,.dfco1,.dfco2,.dfco3,.dfco4,.dfco5,.dfco6 { float:none; clear:both; } .dfrh,.dfh,.dfhl,.dfco2,.dfco3,.dfco4,.dfco5,.dfco6 { display:none; }
+.dfr,.dfr1,.dfr2,.dfr3,.dfr4,.dfr5,.dfr6 { padding:0; height:38px; overflow:hidden; } .dfr,.dfr1,.dfri { margin:10px 0 0 0; } .dfr2,.dfr3,.dfr4,.dfr5,.dfr6 { height:0; } .dfri { margin:20px 0 0 0; border-top:solid 1px #eeeeee; }
 .dfco,.dfco1 { cursor:pointer; padding:10px; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 9.932 9.932'%3E%3Cpath d='M5.023,0H0V5.023' transform='translate(4.966 8.518) rotate(-135)' fill='none' stroke='%23272727' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E") 98% center no-repeat #eeeeee; }
 .dfr .dfco_, .dfr1 .dfco1_ { background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='svg_arrow_up' width='9' height='9' viewBox='0 0 9.932 9.932'%3E%3Cpath d='M5.023,0H0V5.023' transform='translate(4.966 4.966) rotate(45)' fill='none' stroke='%23272727' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E%0A") 98% center no-repeat #eeeeee; }
 .dfr .dfco:hover, .dfr1 .dfco1:hover, .calc_frab .dfco1:hover, .calc_frab .bee .dfco1:hover { background-color:#c8c8c8; } .calc_frab .dfco1 { display:block; }
@@ -607,3 +611,29 @@ h2,.dh2 { font-size:20px; }
 @media screen and (max-width:320px) {
   .mainitem1, .mainblock1 #mainitem1 { width:100%; }
 }
+
+
+.pdf_tech { display:block; 
+background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBpZD0ic3ZnX2Fycm93ZG93biIgdmlld0JveD0iMCAwIDY0IDY0Ij4NCjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjMyIi8+DQo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMi4zNDYgNDEuODg4KSByb3RhdGUoLTEzNSkiPg0KIDxwYXRoIGQ9Ik0xNC41MDgsMTQuNTA4LDAsMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KIDxwYXRoIGQ9Ik0xNC41MDgsMEgwVjE0LjUwOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9nPg0KPC9zdmc+DQo=") center top no-repeat;
+width:40px; height:40px; background-size:contain;
+margin-right: 10px;
+ }
+
+.pdf_tech:hover {
+background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBpZD0ic3ZnX2Fycm93ZG93biIgdmlld0JveD0iMCAwIDY0IDY0Ij4NCjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjMyIiBmaWxsPSIjZmQ1MjAyIi8+DQo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMi4zNDYgNDEuODg4KSByb3RhdGUoLTEzNSkiPg0KIDxwYXRoIGQ9Ik0xNC41MDgsMTQuNTA4LDAsMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KIDxwYXRoIGQ9Ik0xNC41MDgsMEgwVjE0LjUwOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9nPg0KPC9zdmc+DQo=") center top no-repeat;
+background-size:contain;
+}
+
+.techflex, .techflex1 {display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+.techflex {padding:7px 0;}
+.techflex1, .techflex2 {width:55%; height:40px; padding: 0 10px;}
+.techflex2 {width:39%;}
+.techflex2 {display:flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end; align-items: center;}
+@media screen and (max-width:600px) {
+.techflex1, .techflex2 {width:100%}
+.techflex2 {justify-content: flex-start;}
+}
+
+.techflex1 a:hover, .techflex2 a:hover { color:black; }
+
+.blk_oc .techflex:nth-child(odd) {background: #eeeeee;}

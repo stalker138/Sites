@@ -1,44 +1,6 @@
 <?php
 {*text2_1*}
 
-
-//ПОКРЫТИЯ
-$plc=false;
-$plc[11]='<l3 id="11"';///></l3>
-$plc[13]='<l3 id="13"';///></l3>
-$plc[17]='<l3 id="17"';///></l3>
-$plc[23]='<l3 id="23"';///></l3>
-$plc[25]='<l3 id="25"';///></l3>
-$plc[25]='<l3 id="25"';///></l3>
-$plc[31]='<l3 id="31"';///></l3>
-$plc[33]='<l3 id="33"';///></l3>
-$plc[35]='<l3 id="35"';///></l3>
-$plc[37]='<l3 id="37"';///></l3>
-$plc[39]='<l3 id="39"';///></l3>
-$plc[40]='<l3 id="40"';///></l3>
-$plc[51]='<l3 id="51"';///></l3>
-$plc[52]='<l3 id="52"';///></l3>
-$plc[53]='<l3 id="53"';///></l3>
-$plc[54]='<l3 id="54"';///></l3>
-$plc[55]='<l3 id="55"';///></l3>
-$plc[63]='<l3 id="63"';///></l3>
-$plc[64]='<l3 id="64"';///></l3>
-$plc[65]='<l3 id="65"';///></l3>
-$plc[66]='<l3 id="66"';///></l3>
-$plc[67]='<l3 id="67"';///></l3>
-$plc[68]='<l3 id="68"';///></l3>
-$plc[69]='<l3 id="69"';///></l3>
-$plc[70]='<l3 id="70"';///></l3>
-$plc[71]='<l3 id="71"';///></l3>
-$plc[73]='<l3 id="73"';///></l3>
-$plc[81]='<l3 id="81"';///></l3>
-$plc[83]='<l3 id="83"';///></l3>
-$plc[85]='<l3 id="85"';///></l3>
-$plc[87]='<l3 id="87"';///></l3>
-$plc[89]='<l3 id="89"';///></l3>
-$plc[93]='<l3 id="93"';///></l3>
-$plc[97]='<l3 id="97"';///></l3>
-
 //СЕРТИФИКАТЫ
 $a_srt=false;
 //Серия «Элакор-ПУ» 
@@ -155,28 +117,38 @@ $a_descr[57]="https://elakors.ru/pdf/descr/elakor-ed-nalivnoj-pol-classic.pdf";
 $a_descr[58]="https://elakors.ru/pdf/descr/epoksid-nalivnoj-pol-promyshlennyj.pdf";
 $a_descr[60]="https://elakors.ru/pdf/descr/epoksid-nalivnoj-pol-dekor.pdf";  //  2.4.5. Эпоксидный наливной пол ДЕКОР
 $a_descr[62]="https://elakors.ru/pdf/descr/ed-naliv-pol-sk-prof.pdf";  //  2.4.7. Эпоксидный наливной пол СК ПРОФ
+$a_descr[65]="https://elakors.ru/pdf/descr/antistaticheskij-nalivnoj-pol.pdf";  // 
 $a_descr[66]="https://elakors.ru/pdf/descr/ast-propitka.pdf";  // АСТ Пропитка
 $a_descr[67]="https://elakors.ru/pdf/descr/ast-sk-prof-pol.pdf";  // 3.8. Антистатический наливной пол СК ПРОФ
 $a_descr[68]="https://elakors.ru/pdf/descr/elakor-ed-in-sostav.pdf";  
+$a_descr[69]="https://elakors.ru/pdf/descr/antistaticheskij-nalivnoj-pol.pdf";  // 
 $a_descr[73]="https://elakors.ru/pdf/descr/remontnyi-epoksidnyi-sostav.pdf";  // Ремонтный эпоксидный состав (ровнитель для пола)
 $a_descr[76]="https://elakors.ru/pdf/descr/elakor-ed-ankerovochnyi-sostav.pdf";  // 2.7.2. Анкеровочный состав
 $a_descr[79]="https://elakors.ru/pdf/descr/elakor-pu-grunt-p.pdf";
 $a_descr[81]="https://elakors.ru/pdf/descr/elakor-pu-grunt-25.pdf";
 $a_descr[83]="https://elakors.ru/pdf/descr/elakor-pu-grunt-2k-50.pdf";
 $a_descr[85]="https://elakors.ru/pdf/descr/elakor-pu-grunt-2k-40.pdf";
+$a_descr[90]="https://elakors.ru/pdf/descr/epoxide-emal2k80.pdf";  // Эмаль 2К-80
+$a_descr[91]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-emal-ast-7.pdf";  // 3.7. Антистатическая краска - Люкс АСТ-7, АСТ-6 (светостойкая)
+$a_descr[92]="https://elakors.ru/pdf/descr/ast-sk-prof-pol.pdf";  // 3.8. Антистатический наливной пол СК ПРОФ
 $a_descr[93]="https://elakors.ru/pdf/descr/lak-kamnja-kirpicha.pdf";
 $a_descr[95]="https://elakors.ru/pdf/descr/pu-1k-lak-polumatovyj.pdf";
 $a_descr[97]="https://elakors.ru/pdf/descr/pu-1k-lak-matovyj.pdf";
 $a_descr[105]="https://elakors.ru/pdf/descr/sealer.pdf";  // 
+$a_descr[106]="https://elakors.ru/pdf/descr/sealer-b.pdf";  // 
+$a_descr[122]="https://elakors.ru/pdf/descr/elakor-pz-t1b.pdf";  // 
 $a_descr[125]="https://elakors.ru/pdf/descr/elakor-pz-t1.pdf";  // 1.5.1. Полиуретан-цементный пол Т1
 $a_descr[126]="https://elakors.ru/pdf/descr/elakor-pz-t2.pdf";  // 1.5.2. Полиуретан-цементный пол Т2
 $a_descr[127]="https://elakors.ru/pdf/descr/elakor-pz-t3.pdf";  // 1.5.3. Полиуретан-цементный пол Т3
 $a_descr[128]="https://elakors.ru/pdf/descr/elakor-pz-kraska.pdf";  // 
 $a_descr[129]="https://elakors.ru/pdf/descr/elakor-pz-grunt.pdf";  // 1.5.8. Полиуретан-цементный грунт
+$a_descr[130]="https://elakors.ru/pdf/descr/antistaticheskij-grunt_pp.pdf";  
 $a_descr[131]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-grunt.pdf";  // 
+$a_descr[133]="https://elakors.ru/pdf/descr/elakor-pz-t1b-ast6.pdf";  // 
 $a_descr[135]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-emal.pdf";  // 
 $a_descr[136]="https://elakors.ru/pdf/descr/elakor-pu-ljuks-emal-polumat.pdf";   // 5.2. Люкс Эмаль - двухкомпонентная краска полуматовая
 $a_descr[137]="https://elakors.ru/pdf/descr/elakor-pu-luks-emal-svetostoikaya-matovaya.pdf";   // 5.2. Люкс Эмаль - двухкомпонентная краска полуматовая
+$a_descr[138]="https://elakors.ru/pdf/descr/elakor-pz-t4-sk-prof.pdf";   // 
 $a_descr[139]="https://elakors.ru/pdf/descr/poliuretanovyj-lak-lux.pdf";   // 
 $a_descr[143]="https://elakors.ru/pdf/descr/lyuks_lak-r-polumatovyi.pdf";   // 
 $a_descr[145]="https://elakors.ru/pdf/descr/lyuks_lak-r-matovyi.pdf";   // 

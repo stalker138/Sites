@@ -53,7 +53,7 @@
 *number*9
 *options*		0000000000
 *file*			block5_9
-*name*			empty9
+*name*			Тестовое покрытие
 *end*9
 
 *number*10
@@ -89,7 +89,7 @@
 *number*15
 *options*		1000000000
 *file*			block5_15
-*name*			Прайс печать v3
+*name*			ПРАЙС-ЛИСТ МАТЕРИАЛОВ «ЭЛАКОР» v3 утвержденная версия для PDF
 *end*15
 
 *number*16

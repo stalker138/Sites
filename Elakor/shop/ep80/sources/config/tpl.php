@@ -101,7 +101,7 @@
 *number*17
 *options*		1000000000
 *file*			tpl17
-*name*			- BODY - FOOTER include_once page0_17
+*name*			- BODY - FOOTER include_once
 *end*17
 
 *number*18

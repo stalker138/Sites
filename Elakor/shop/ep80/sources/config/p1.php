@@ -133,53 +133,53 @@
 *end*13
 
 *number*14
-*options*		0000000000
+*options*		1150000000
 *file*			page1_14
-*name*			empty14
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Пропитки для бетона
+*link*			/pokrytija/propitki/
+*title*			Пропитки для бетона
+*keyw*			пропитки для бетона, пропитки для бетонного пола
+*desc*			Пропитки для бетона Элакор
 *end*14
 
 *number*15
-*options*		0000000000
+*options*		1150000000
 *file*			page1_15
-*name*			empty15
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Окрасочные покрытия
+*link*			/pokrytija/okras/
+*title*			Окрасочные покрытия для бетонных полов
+*keyw*			покрытия для бетона, покрытия для бетонного пола
+*desc*			Окрасочные покрытия Элакор
 *end*15
 
 *number*16
-*options*		0000000000
+*options*		1150000000
 *file*			page1_16
-*name*			empty16
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Наливные полы
+*link*			/pokrytija/nalivnye/
+*title*			Полимерные наливные полы
+*keyw*			наливные полы для бетона, наливные полы для бетонного пола
+*desc*			Полимерные наливные полы для бетона Элакор
 *end*16
 
 *number*17
-*options*		0000000000
+*options*		1150000000
 *file*			page1_17
-*name*			empty17
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Полиуретан-цементные полы
+*link*			/pokrytija/poliuretan-cement/
+*title*			Полиуретан-цементные покрытия
+*keyw*			полиуретан-цементные покрытия для бетона, полиуретан-цементные покрытия для бетонного пола
+*desc*			Полиуретан-цементные покрытия Элакор
 *end*17
 
 *number*18
-*options*		0000000000
+*options*		1150000000
 *file*			page1_18
-*name*			empty18
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Кварцнаполненные полы
+*link*			/pokrytija/napoln/
+*title*			Кварцнаполненные наливные полы
+*keyw*			Кварцнаполненные наливные полы
+*desc*			Кварцнаполненные наливные полы Элакор
 *end*18
 
 *number*19
@@ -309,7 +309,7 @@
 *link*			/product/grunty/
 *title*			Грунты Элакор
 *keyw*			Грунты Элакор
-*desc*			Материалы Элакор
+*desc*			Грунты Элакор
 *end*31
 
 *number*32
@@ -319,7 +319,7 @@
 *link*			/product/grunty/polyuretan/
 *title*			Грунты полиуретановые
 *keyw*			Грунты полиуретановые
-*desc*			Материалы Элакор
+*desc*			Грунты полиуретановые
 *end*32
 
 *number*33
@@ -387,9 +387,9 @@
 *file*			page1_39
 *name*			Шпатлёвки, Герметики
 *link*			/product/shpatlevki/
-*title*			Шпатлёвки, Герметики
-*keyw*			Шпатлёвки, Герметики
-*desc*			Шпатлёвки, Герметики
+*title*			Шпатлёвки, Герметики, Рем. составы
+*keyw*			Шпатлёвки, Герметики, Рем. составы
+*desc*			Шпатлёвки, Герметики, Рем. составы
 *end*39
 
 *number*40
@@ -397,9 +397,9 @@
 *file*			page1_40
 *name*			Прочее
 *link*			/product/prochee/
-*title*			Прочее
-*keyw*			Прочее
-*desc*			Прочее
+*title*			Прочие материалы Элакор
+*keyw*			Прочие материалы Элакор
+*desc*			Прочие материалы Элакор
 *end*40
 
 *number*41
@@ -418,8 +418,8 @@
 *name*			ПЦ Полы
 *link*			/product/poliuretan-cement/
 *title*			Полиуретан-цементные Полы
-*keyw*			ПЦ Полы
-*desc*			ПЦ Полы
+*keyw*			Полиуретан-цементные Полы
+*desc*			Полиуретан-цементные Полы
 *end*42
 
 *number*43
@@ -435,11 +435,11 @@
 *number*44
 *options*		1150000000
 *file*			page1_44
-*name*			Лаки (подзаголовок)
-*link*			/product/laki/laki-beton/
-*title*			Лаки полимерные
-*keyw*			Лаки полимерные
-*desc*			Лаки полимерные
+*name*			Лаки полиуретановые
+*link*			/product/laki/laki/polyuretan/
+*title*			Лаки полиуретановые
+*keyw*			Лаки полиуретановые
+*desc*			Лаки полиуретановые
 *end*44
 
 *number*45
@@ -493,113 +493,113 @@
 *end*49
 
 *number*50
-*options*		0000000000
+*options*		1150000000
 *file*			page1_50
-*name*			empty50
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Эмали полиуретановые
+*link*			/product/emaly/polyuretan/
+*title*			Эмали полиуретановые
+*keyw*			Эмали полиуретановые
+*desc*			Эмали полиуретановые
 *end*50
 
 *number*51
-*options*		0000000000
+*options*		1150000000
 *file*			page1_51
-*name*			empty51
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Эмали светостойкие
+*link*			/product/emaly-lux/
+*title*			Эмали светостойкие Элакор
+*keyw*			Эмали светостойкие Элакор
+*desc*			Эмали светостойкие Элакор
 *end*51
 
 *number*52
-*options*		0000000000
+*options*		1150000000
 *file*			page1_52
-*name*			empty52
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Антистатические грунты
+*link*			/product/antistat-grunty/
+*title*			Антистатические грунты
+*keyw*			Антистатические грунты
+*desc*			Антистатические грунты
 *end*52
 
 *number*53
-*options*		0000000000
+*options*		1150000000
 *file*			page1_53
-*name*			empty53
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Антистатические наливные полы
+*link*			/product/antistat-poly/
+*title*			Антистатические наливные полы
+*keyw*			Антистатические наливные полы
+*desc*			Антистатические наливные полы
 *end*53
 
 *number*54
-*options*		0000000000
+*options*		1150000000
 *file*			page1_54
-*name*			empty54
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Антистатические эмали
+*link*			/product/antistat-emaly/
+*title*			Антистатические эмали
+*keyw*			Антистатические эмали
+*desc*			Антистатические эмали
 *end*54
 
 *number*55
-*options*		0000000000
+*options*		1150000000
 *file*			page1_55
-*name*			empty55
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Силеры
+*link*			/product/prochee/silers/
+*title*			Силер кюринг для бетона Элакор
+*keyw*			Силер кюринг для бетона Элакор
+*desc*			Силер кюринг для бетона Элакор
 *end*55
 
 *number*56
-*options*		0000000000
+*options*		1150000000
 *file*			page1_56
-*name*			empty56
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Колоранты, добавки
+*link*			/product/kolor-dobavki/
+*title*			Колоранты, добавки Элакор
+*keyw*			Колоранты, добавки Элакор
+*desc*			Колоранты, добавки Элакор
 *end*56
 
 *number*57
-*options*		0000000000
+*options*		1150000000
 *file*			page1_57
-*name*			empty57
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Покрытия для дерева
+*link*			/product/prochee/wood/
+*title*			Покрытия для дерева
+*keyw*			Покрытия для дерева
+*desc*			Покрытия для дерева
 *end*57
 
 *number*58
-*options*		0000000000
+*options*		1150000000
 *file*			page1_58
-*name*			empty58
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Эмали эпоксидные
+*link*			/product/emaly/epoxide/
+*title*			Эмали эпоксидные
+*keyw*			Эмали эпоксидные
+*desc*			Эмали эпоксидные
 *end*58
 
 *number*59
-*options*		0000000000
+*options*		1150000000
 *file*			page1_59
-*name*			empty59
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Лаки эпоксидные
+*link*			/product/laki/laki/epoxide/
+*title*			Лаки эпоксидные
+*keyw*			Лаки эпоксидные
+*desc*			Лаки эпоксидные
 *end*59
 
 *number*60
-*options*		0000000000
+*options*		1150000000
 *file*			page1_60
-*name*			empty60
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Составы ремонтные, анкеровочные
+*link*			/product/remsostav/
+*title*			Составы ремонтные, анкеровочные
+*keyw*			Составы ремонтные, анкеровочные
+*desc*			Составы ремонтные, анкеровочные
 *end*60
 
 *number*61

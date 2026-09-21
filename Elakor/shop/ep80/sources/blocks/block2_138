@@ -1,0 +1,72 @@
+<?php fmtr_h1($i_pkr,'универсальный полиуретан-цементный состав'); ?>
+<div class="px15"></div>
+<?php fmtr_micro($i_pkr); ?>
+
+<div class="cblock">
+
+<div class="matflex">
+<div class="matf1">
+  <?php fmtr_price($i_pkr); ?>
+  <div class="matf13">
+     <?php fmtr_guar($i_pkr); ?>
+  </div>
+  <div class="matf14">
+     <?php fmtr_packing($i_pkr); ?>
+  </div>
+  <div class="matf15">
+    <?php fmtr_ord($i_pkr); ?>
+  </div>
+</div>
+
+<div class="matf3">
+<img src="/img/product/noimage_light500.png" alt="">
+</div>
+<div class="matf4">
+</div>
+</div>
+</div>
+<div class="px20"></div>
+
+<div class="dzmt1"></div>
+<div class="ot_head_block">
+<div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="ot_hb_item" id="foth123_p">Свойства</div><div class="ot_hb_item" id="foth123_s">Сертификация</div>
+<div class="px0"></div>
+</div>
+<div class="px0"></div>
+<div class="ot_block">
+<div class="ot_item active" id="fot123_o">
+<?php fmtr_descr($i_pkr); ?>
+
+</div>
+
+<div class="ot_item" id="fot123_t">
+
+</div>
+
+<div class="ot_item" id="fot123_p">
+
+
+
+</div>
+
+<!--noindex-->
+<div class="ot_item" id="fot123_s">
+<?php fmtr_srt($a_srt_pz); ?>
+
+</div>
+<!--/noindex-->
+</div>
+<div class="px10b"></div>
+
+
+<?php fcvr_mat($i_pkr); ?>
+
+<div class="px20"></div>
+<div class="svg_to_block">
+<div class="dh2">Применяется на объектах</div>
+<div class="px20"></div>
+<?php f_SvgObj(array(8,6,9,5,7,4,3,2,1)); ?>
+<div class="px0"></div>
+</div>
+<div class="px20"></div>
+

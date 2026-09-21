@@ -38,4 +38,10 @@
 *name*			Таблица цветов RAL
 *end*6
 
+*number*7
+*options*		1000000000
+*file*			block4_7
+*name*			О компании
+*end*7
+
 [END LIST]

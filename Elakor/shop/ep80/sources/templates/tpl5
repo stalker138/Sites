@@ -1,4 +1,53 @@
 <?php
-// print '<link rel="stylesheet" href="/cssjs/test1.css" type="text/css"/>';
+ $url_css = 'cssjs/style.css';
+ $url_css_m = 'cssjs/style_m.css';
+ print '<link rel="stylesheet" href="/'.$url_css.'?'.filemtime($pb_root.$url_css).'">';
+if ($pb_page>2000 && $pb_page<3000) { print '<link rel="stylesheet" href="/'.$url_css_m.'?'.filemtime($pb_root.$url_css_m).'">'; }
 ?><style>
-<?php if ($pb_page==5005 || $pb_page==5010 || $pb_php21) { ?> {*text5_2*} <?php } else { ?> {*text5_2*} <?php } ?>
+
+.svg_to_block { visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0; }
+.matf3 { justify-content: center; }
+.matf3 img { width:80% }
+
+.matf13 { height:0; width:0; }
+
+.matf15 a.butb {
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:17px;
+}
+
+.matf15 .butr {
+ padding-left:0;
+ padding-right:0;
+}
+
+.matf15 .butr, .matf15 .butb {
+    margin-top: 10px;
+}
+#butrtel {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fd5202;
+}
+
+#butrtel:hover {
+    color: #272727;
+}
+
+#htel {
+width:130px;
+}
+.nomedia {display:block;}
+
+@media screen and (max-width: 700px) {
+
+.nomedia {display:inline;}
+.matf15 a.butb { padding: 14px 15px 16px 15px; }
+
+}

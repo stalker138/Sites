@@ -35,7 +35,7 @@
 *number*6
 *options*		0000000000
 *file*			text0_6
-*name*			empty6
+*name*			
 *end*6
 
 *number*7

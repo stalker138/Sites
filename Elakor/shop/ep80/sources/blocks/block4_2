@@ -1,6 +1,5 @@
 <?php 
 
-{*text2_1*}
 
 $txt=@file_get_contents($pb_root.'sys/materials');
 $a_mtr=false; $a_mtr[]=false; $s = explode(chr(10),$txt);
@@ -14,7 +13,7 @@ for ($i=0; $i<351; $i++) {
   $a_mtr_dop[] = ($s[$i]===' ') ? false : explode(chr(9),$s[$i]);
 }
 
-$list_mtr = array(11,13,15,17,18,19,20,21,22,23,26,27,28,29,30,31,32,33,34,35,37,39,40,41,42,43,45,46,48,49,51,52,53,54,57,58,60,61,62,63,64,65,66,67,71,72,73,75,76,79,81,83,85,93,95,97,101,105,111,115,118,119,125,126,127,128,129,131,134,135,136,139,143,145,147,153,154,155,157,158,161,163,164,165,166,167,168,169,181,185,189,193,195,201,205,206,209,221,223,227,231,235,241,243,247,251,257,261,262,329);
+
 $new_mtr =array();
 $pl =array();
 
@@ -36,7 +35,7 @@ $seq_mtr=array(0,0,0,0,0,0,0,0,0,0,0,
 241,243,247,257,      /* 9.1. - 9.7. (118-121) 9. Элакор «Эластобетон» */
 0,0,0,0,0,0,0,0,0);
 
-$th='<tr><th class="thleft">НАЗВАНИЕ МАТЕРИАЛА</th><th>10–39 кг</th><th>40–199 кг</th><th>200–499 кг</th><th>500–1 т</th><th>1–3 т</th><th class="thright">от 3 т</th></tr>';
+$th='<tr><th class="thleft">НАЗВАНИЕ МАТЕРИАЛА</th><th>до 59 кг</th><th>60–199 кг</th><th>200–499 кг</th><th>500–1 т</th><th>1–3 т</th><th class="thright">от 3 т</th></tr>';
 
 function fmtr1($n=false, $f=false, $nm='',$nm2='', $id=0) {
 global $a_mtr, $a_mtr_dop,$plm,$pl,$list_mtr,$new_mtr; $out='';if($id<11) $id=$n; $out=''; $m=$mtr; $new='';
@@ -64,86 +63,124 @@ if ($mtr[$n] && in_array($n, $list_mtr, true)) {
 <p class="fs13">Прайс-лист материалов<br><span class="fwn c80">PDF</span></p>
 </div>
 <div class="px10"></div>
-<div class="divh2">Грунты</div>
+<div class="divh2"><l1 id="31">Грунты</l1></div>
 <div class="px10"></div>
-<h3 class="divh3">Полиуретановые<div class="divh3cena">Цена рубль/кг</div></h3>
+<h3 class="divh3"><l1 id="32">Полиуретановые</l1><div class="divh3cena">Цена рубль/кг</div></h3>
 <div class="px0"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[1]); $i++) { print fmtr1($a_catmat[1][$i]); } ?></tbody></table>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[11]); $i++) { print fmtr1($a_catmat[11][$i]); } ?></tbody></table>
 <div class="px10"></div>
 
-<h3 class="divh3">Эпоксидные<div class="divh3cena">Цена рубль/кг</div></h3>
+<h3 class="divh3"><l1 id="33">Эпоксидные</l1><div class="divh3cena">Цена рубль/кг</div></h3>
 <div class="px0"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[2]); $i++) { print fmtr1($a_catmat[2][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-
-<h3 class="divh2">Эмали<div class="divh3cena">Цена рубль/кг</div></h3>
-<div class="px0"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[3]); $i++) { print fmtr1($a_catmat[3][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-
-<h3 class="divh2">Лаки<div class="divh3cena">Цена рубль/кг</div></h3>
-<div class="px0"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[4]); $i++) { print fmtr1($a_catmat[4][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-
-<div class="divh2">Лаки Светостойкие<div class="divh3cena">Цена рубль/кг</div></div>
-<div class="px10"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[5]); $i++) { print fmtr1($a_catmat[5][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-
-<div class="divh2">Наливные полы</div>
-<div class="px10"></div>
-<h3 class="divh3">Полиуретановые<div class="divh3cena">Цена рубль/кг</div></h3>
-<div class="px0"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[6]); $i++) { print fmtr1($a_catmat[6][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-<h3 class="divh3">Эпоксидные<div class="divh3cena">Цена рубль/кг</div></h3>
-<div class="px0"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[7]); $i++) { print fmtr1($a_catmat[7][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-
-<div class="divh2">Антистатические полы<div class="divh3cena">Цена рубль/кг</div></div>
-<div class="px10"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[8]); $i++) { print fmtr1($a_catmat[8][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-
-<div class="divh2">ПЦ полы<div class="divh3cena">Цена рубль/кг</div></div>
-<div class="px10"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[9]); $i++) { print fmtr1($a_catmat[9][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-
-<div class="divh2">Шпатлёвки, Герметики, Рем. составы<div class="divh3cena">Цена рубль/кг</div></div>
-<div class="px10"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[10]); $i++) { print fmtr1($a_catmat[10][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-
-<div class="divh2">Смолы для декора и заливки<div class="divh3cena">Цена рубль/кг</div></div>
-<div class="px10"></div>
 <table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[12]); $i++) { print fmtr1($a_catmat[12][$i]); }  ?></tbody></table>
 <div class="px10"></div>
 
-<div class="divh2">Прочее<div class="divh3cena">Цена рубль/кг</div></div>
+<h3 class="divh2"><l1 id="34">Эмали</l1><div class="divh3cena">Цена рубль/кг</div></h3>
 <div class="px10"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[15]); $i++) { print fmtr1($a_catmat[15][$i]);}for ($i=1; $i<count($a_catmat[16]); $i++) { print fmtr1($a_catmat[16][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-
-<div class="divh2">МБ (водные)<div class="divh3cena">Цена рубль/кг</div></div>
-<div class="px10"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[13]); $i++) { print fmtr1($a_catmat[13][$i]); }  ?></tbody></table>
+<h3 class="divh3"><l1 id="50">Полиуретановые</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[21]); $i++) { print fmtr1($a_catmat[21][$i]); }  ?></tbody></table>
 <div class="px10"></div>
 
-<div class="divh2">Пищевые<div class="divh3cena">Цена рубль/кг</div></div>
-<div class="px10"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[17]); $i++) { print fmtr1($a_catmat[17][$i]); }  ?></tbody></table>
-<div class="px10"></div>
-
-<div class="divh2">Добавки для бетона<div class="divh3cena">Цена рубль/кг</div></div>
-<div class="px10"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[18]); $i++) { print fmtr1($a_catmat[18][$i]); }  ?></tbody></table>
+<h3 class="divh3"><l1 id="33">Светостойкие</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[22]); $i++) { print fmtr1($a_catmat[22][$i]); }  ?></tbody></table>
 <div class="px10"></div>
 
-<div class="divh2">Для металла<div class="divh3cena">Цена рубль/кг</div></div>
+<h3 class="divh3"><l1 id="58">Эпоксидные</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[23]); $i++) { print fmtr1($a_catmat[23][$i]); }  ?></tbody></table>
 <div class="px10"></div>
-<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[19]); $i++) { print fmtr1($a_catmat[19][$i]); }  ?></tbody></table>
+
+<h3 class="divh2"><l1 id="43">Лаки</l1><div class="divh3cena">Цена рубль/кг</div></h3>
 <div class="px10"></div>
+<h3 class="divh3"><l1 id="44">Полиуретановые</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[31]); $i++) { print fmtr1($a_catmat[31][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<h3 class="divh3"><l1 id="45">Светостойкие</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[32]); $i++) { print fmtr1($a_catmat[32][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<h3 class="divh3"><l1 id="59">Эпоксидные</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[33]); $i++) { print fmtr1($a_catmat[33][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh2"><l1 id="35">Наливные полы</l1></div>
+<div class="px10"></div>
+<h3 class="divh3"><l1 id="36">Полиуретановые</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[41]); $i++) { print fmtr1($a_catmat[41][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+<h3 class="divh3"><l1 id="37">Эпоксидные</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[42]); $i++) { print fmtr1($a_catmat[42][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh2"><l1 id="38">Антистатические полы</l1></div>
+<div class="px10"></div>
+<h3 class="divh3"><l1 id="52">Грунты</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[51]); $i++) { print fmtr1($a_catmat[51][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+<h3 class="divh3"><l1 id="53">Наливные полы</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[52]); $i++) { print fmtr1($a_catmat[52][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+<h3 class="divh3"><l1 id="54">Эмали</l1><div class="divh3cena">Цена рубль/кг</div></h3>
+<div class="px0"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[53]); $i++) { print fmtr1($a_catmat[53][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh2"><l1 id="42">Полиуретан-цементные полы</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<div class="px10"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[60]); $i++) { print fmtr1($a_catmat[60][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh2"><l1 id="39">Шпатлёвки, Герметики, Клеи</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<div class="px10"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[70]); $i++) { print fmtr1($a_catmat[70][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh2"><l1 id="60">Составы ремонтные, анкеровочные</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<div class="px10"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[80]); $i++) { print fmtr1($a_catmat[80][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh2"><l1 id="46">Смолы для декора и заливки</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<div class="px10"></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[90]); $i++) { print fmtr1($a_catmat[90][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh2"><l1 id="40">Прочее</l1></div>
+<div class="px10"></div>
+<div class="divh3"><l1 id="41">МБ (водные)</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[101]); $i++) { print fmtr1($a_catmat[101][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh3"><l1 id="56">Колоранты, добавки</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[102]); $i++) { print fmtr1($a_catmat[102][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh3"><l1 id="55">Силер</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[103]); $i++) { print fmtr1($a_catmat[103][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh3"><l1 id="47">Пищевые</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[104]); $i++) { print fmtr1($a_catmat[104][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh3"><l1 id="48">Добавки для бетона</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[105]); $i++) { print fmtr1($a_catmat[105][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh3"><l1 id="49">Для металла</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[106]); $i++) { print fmtr1($a_catmat[106][$i]); }  ?></tbody></table>
+<div class="px10"></div>
+
+<div class="divh3"><l1 id="57">Для дерева</l1><div class="divh3cena">Цена рубль/кг</div></div>
+<table class="tprice"><tbody><?php print($th); for ($i=1; $i<count($a_catmat[107]); $i++) { print fmtr1($a_catmat[107][$i]); }  ?></tbody></table>
 

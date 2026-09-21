@@ -1,0 +1,8 @@
+<h1 class="h11s">Полимерные наливные полы «Элакор»</h1>
+<div class="px5"></div>
+<?php fcvr_cin(0,1); /* Выводить телефоны */?>
+<div class="px10b"></div>
+<?php
+$alist=$a_catcvr[3];
+fltout_pokr_test($alist,1); 
+?>

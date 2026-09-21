@@ -9,14 +9,14 @@ $ampages=array(0,1001,5001,5002); /* Список страниц без блок
 <main class="fcontent">
 <aside class="fside">
 <?php if($pb_page==4004) { ?>{*text1_21*}<?php } ?>
-<?php if(($pb_page>=1030 && $pb_page<=1050) || ($pb_page>2001 && $pb_page<3000) || $pb_page==4002 || $pb_page==5011 || $pb_page==5017) { ?>{*text1_4*}<div class="px20 bff"></div><?php } ?>
-<?php if($pb_page==5010 || $pb_page==5012 || $pb_page==1002 || ($pb_page>1002 && $pb_page<1009) || $pb_page==1013) print fltout_desc(); ?>
+<?php if(($pb_page>=1030 && $pb_page<=1060) || ($pb_page>2001 && $pb_page<3000) || $pb_page==4002 || $pb_page==5011 || $pb_page==5017) { ?>{*text1_4*}<div class="px20 bff"></div><?php } ?>
+<?php if($pb_page==5010 || $pb_page==5012 || $pb_page==1002 || ($pb_page>1002 && $pb_page<1009) || $pb_page==1013 || ($pb_page>=1014 && $pb_page<=1019)) print fltout_desc(); ?>
 <?php if($pb_page!=2001 && $pb_page!=5012) { ?>
 {*text1_3*}
 <?php } ?>
 </aside>
 <section>
-<?php if($pb_page==5010 || $pb_page==5012 || $pb_page==1002 || ($pb_page>1002 && $pb_page<1009) || $pb_page==1013 || $pb_page==4004) { ?><div id="bfilter"><div class="butr" onclick="f_filter(1)">Фильтр</div></div><?php } ?>
+<?php if($pb_page==5010 || $pb_page==5012 || $pb_page==1002 || ($pb_page>1002 && $pb_page<1009) || $pb_page==1013 || ($pb_page>1014 && $pb_page<1019) || $pb_page==4004) { ?><div id="bfilter"><div class="butr" onclick="f_filter(1)">Фильтр</div></div><?php } ?>
 <?php
 {*text0_3*}
 } ?>

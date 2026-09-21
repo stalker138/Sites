@@ -4,10 +4,12 @@
 <p class="dcnt01p1">Купить МАТЕРИАЛЫ:</p><div class="px0"></div><p class="dcnt01p2"><p class="dcnt01p2"><a href="tel:+74951180659">+7 495 118 06 59</a></p>
 </div>
 <div class="dcnt12">
-<p class="dcnt01p1">Заказать РАБОТЫ:</p><div class="px0"></div><p class="dcnt01p2"><p class="dcnt01p2"><a href="tel:+74955184378">+7-495-518-43-78</a></p>
+<p class="dcnt01p1">Заказать РАБОТЫ:</p><div class="px0"></div><p class="dcnt01p2"><p class="dcnt01p2"><a href="tel:+74955184378">+7 495 518 43 78</a></p>
 </div>
 <div class="dcnt13">
-<p class="dcnt01p1">КОНСУЛЬТАЦИЯ:</p><div class="px0"></div><p class="dcnt01p2"><p class="dcnt01p2"><a href="tel:+79067695507">+7 (906) 769-55-07</a></p>
+<!--p class="dcnt01p1">КОНСУЛЬТАЦИЯ:</p><div class="px0"></div><p class="dcnt01p2"><p class="dcnt01p2"><a href="tel:+79067695507">+7 906 769 55 07</a></p-->
+<p class="dcnt01p1">E-mail:</p><div class="px0"></div><p class="dcnt01p2"><p class="dcnt01p2"><a href="mailto:z@teohim.ru">z@teohim.ru</a></p>
+
 </div>
 </div>
 <div class="px0"></div>
@@ -17,8 +19,12 @@
 <div class="blk_oc" style="height:auto;">
 <div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>Офис г.Москва</span></div></div>
 <div class="px10"></div>
-<p class="fs14 c55"><span>Из Москвы:</span> <a href="tel:+74952212252">(495) 221-22-52</a> (многоканальный), <a href="tel:+74951180659" style=" white-space:nowrap">+7 495 118 06 59</a><br>
-<span>Из России:</span> <a class="consult" href="tel:88001005010">8-800-100-50-10</a> (звонок бесплатный)<br>
+<!--p class="fs14 c55"><span>Из Москвы:</span> <a href="tel:+74952212252">+7 495 221 22 52</a> (многоканальный), <a href="tel:+74951180659" style=" white-space:nowrap">+7 495 118 06 59</a><br>
+<span>Из России:</span> <a class="consult" href="tel:88001005010">8-800-100-50-10</a> (звонок бесплатный)
+<br>
+с 9-00 до 18-00 , кроме Сб и Вс.</p-->
+
+<p class="fs14 c55"><span>Из Москвы:</span> <a href="tel:+74952212252">+7 495 221 22 52</a> (многоканальный), <a href="tel:+74951180659" style=" white-space:nowrap">+7 495 118 06 59</a><br>
 с 9-00 до 18-00 , кроме Сб и Вс.</p>
 
 <p class="fleft fs14 c55"><span>ООО «ТэоХим - ПРОМ»:</span><br>
@@ -37,6 +43,31 @@
 </div>
 <div class="px0"></div>
 </div>
+
+<div class="px20"></div>
+<div class="blk_oc" style="height:60px;">
+<div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>Розничный магазин г. Москва</span></div></div>
+<div class="px10"></div>
+<p class="fleft"><span>Адрес: </span>Москва, Алтуфьевское шоссе, д.102-Б.(по предварительному звонку).</p>
+<div class="px0"></div>
+
+<div class="fleft">
+<p><span>Продажи:</span> <a class="consult" href="tel:+79175442517">+7-917-544-25-17</a>, &nbsp;&nbsp; <span>Консультация:</span> <a class="consult" href="tel:+79167784933">+7-916-811-32-48</a></p>
+</div>
+<p class="fright">&nbsp;<br><span>Время работы:</span> пн-пт с 9<sup>00</sup> до 20<sup>00</sup>, сб с 10<sup>00</sup> до 16<sup>00</sup></p>
+
+<div class="px10"></div>
+
+<div><div class="px10"></div><a class="mbutr ml10" style="color:#ffffff" href="https://yandex.ru/maps/-/CHRlf2p0" target="_blank">Как добраться</a><div class="px10"></div></div>
+<div class="px10"></div>
+<div style="position:relative;">
+<div id="ymaps-map-id_r" style="height:400px;"></div>
+<script type="text/javascript">function fid_r(ymaps) {var map = new ymaps.Map("ymaps-map-id_r", {center: [55.902902, 37.591322], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([55.902902, 37.591322], {balloonContent: "Розничный Магазин «ТэоХим»"}, {preset: "twirl#darkblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_r"></script>
+</div>
+<div class="px10"></div>
+</div>
+
 
 <div class="px20"></div>
 <div class="blk_oc" style="height:60px;">
@@ -89,8 +120,8 @@
 <div class="px40"></div>
 
 <div class="dcnt01">
-<div class="dcnt20">Бесплатный звонок по всей России:<br><a class="fs20 fwn" href="tel:88001005010">8-800-100-50-10</a></div>
-<div class="dcnt20">E-mail:<br><a class="fs20 fwn" href="mailto:teohim@teohim.ru">teohim@teohim.ru</a></div>
+<!--div class="dcnt20">Бесплатный звонок по всей России:<br><a class="fs20 fwn" href="tel:88001005010">8-800-100-50-10</a></div-->
+<!--div class="dcnt20">E-mail:<br><a class="fs20 fwn" href="mailto:teohim@teohim.ru">teohim@teohim.ru</a></div-->
 </div>
 <div class="px20"></div>
 <div class="dcnt02">

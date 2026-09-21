@@ -1,2 +1,5 @@
-<script src="/cssjs/vcorp_js_0003.js"></script>
+<?php
+ $url = 'cssjs/vcorp_js_0004.js';
+ print '<script src="/'.$url.'?'.filemtime($pb_root.$url).'"></script>';
+?>
 <script>

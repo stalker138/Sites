@@ -1,0 +1,9 @@
+<h1 class="h11s">Антистатические эмали «Элакор»</h1>
+<div class="px5"></div>
+<div class="cblock">
+<div class="px0"></div>
+</div>
+<div class="px10b"></div>
+<?php
+fmtr_set($a_catmat[53]);
+?>

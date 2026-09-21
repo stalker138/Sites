@@ -8,7 +8,7 @@
 <aside><?php if($pb_page!=5012) { ?>
 {*text1_1*}
 {*text1_2*}<?php } ?>
-<?php if($pb_page==5010 || $pb_page==5012 || ($pb_page>1001 && $pb_page<1009) || $pb_page==1013) print fltout_mob() ?>
+<?php if($pb_page==5010 || $pb_page==5012 || ($pb_page>1001 && $pb_page<1009) || $pb_page==1013 || ($pb_page>=1014 && $pb_page<=1019)) print fltout_mob() ?>
 <?php if($pb_page==4004) { ?>{*text1_22*}<?php } ?>
 </aside>
 <div class="pb_hidden" id="pb_page"><?php print ($pb_php20 || $pb_php21) ? '20' : $pb_page; ?></div>
@@ -20,7 +20,7 @@ for ($i=0; $i<351; $i++) {
   }
 } print '</div>';
 /* Для страниц с расчётами покрытий (калькулятор) - Значения по-умолчанию (стартовые) */
-if (($pb_page>3010 && $pb_page<3100) || ($pb_page>2001 && $pb_page<3000) || ($pb_page>1001 && $pb_page<1009) || $pb_page==1013 || $pb_page==5005 || $pb_page==5010 || $pb_page==5012) {
+if (($pb_page>3010 && $pb_page<4000) || ($pb_page>2001 && $pb_page<3000) || ($pb_page>1001 && $pb_page<1009) || $pb_page==1013 || ($pb_page>=1014 && $pb_page<=1019) || $pb_page==5005 || $pb_page==5010 || $pb_page==5012) {
  print '<div class="pb_hidden" id="i_hidden_so">'.$square.'</div>';
  print '<div class="pb_hidden" id="i_hidden_mb">М300</div>';
  print '<div class="pb_hidden" id="i_hidden_sh">0</div>';

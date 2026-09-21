@@ -81,33 +81,33 @@
 *end*13
 
 *number*14
-*options*		0000000000
+*options*		1000000000
 *file*			block1_14
-*name*			empty14
+*name*			Пропитки для бетона
 *end*14
 
 *number*15
-*options*		0000000000
+*options*		1000000000
 *file*			block1_15
-*name*			empty15
+*name*			Окрасочные покрытия
 *end*15
 
 *number*16
-*options*		0000000000
+*options*		1000000000
 *file*			block1_16
-*name*			empty16
+*name*			Наливные полы
 *end*16
 
 *number*17
-*options*		0000000000
+*options*		1000000000
 *file*			block1_17
-*name*			empty17
+*name*			Полиуретан-цементные полы
 *end*17
 
 *number*18
-*options*		0000000000
+*options*		1000000000
 *file*			block1_18
-*name*			empty18
+*name*			Кварцнаполненные полы
 *end*18
 
 *number*19
@@ -263,7 +263,7 @@
 *number*44
 *options*		1000000000
 *file*			block1_44
-*name*			Лаки (подзаголовок)
+*name*			Лаки полиуретановые
 *end*44
 
 *number*45
@@ -297,69 +297,69 @@
 *end*49
 
 *number*50
-*options*		0000000000
+*options*		1000000000
 *file*			block1_50
-*name*			empty50
+*name*			Эмали полиуретановые
 *end*50
 
 *number*51
-*options*		0000000000
+*options*		1000000000
 *file*			block1_51
-*name*			empty51
+*name*			Эмали светостойкие
 *end*51
 
 *number*52
-*options*		0000000000
+*options*		1000000000
 *file*			block1_52
-*name*			empty52
+*name*			Антистатические грунты
 *end*52
 
 *number*53
-*options*		0000000000
+*options*		1000000000
 *file*			block1_53
-*name*			empty53
+*name*			Антистатические наливные полы
 *end*53
 
 *number*54
-*options*		0000000000
+*options*		1000000000
 *file*			block1_54
-*name*			empty54
+*name*			Антистатические эмали
 *end*54
 
 *number*55
-*options*		0000000000
+*options*		1000000000
 *file*			block1_55
-*name*			empty55
+*name*			Силеры
 *end*55
 
 *number*56
-*options*		0000000000
+*options*		1000000000
 *file*			block1_56
-*name*			empty56
+*name*			Колоранты, добавки
 *end*56
 
 *number*57
-*options*		0000000000
+*options*		1000000000
 *file*			block1_57
-*name*			empty57
+*name*			Покрытия для дерева
 *end*57
 
 *number*58
-*options*		0000000000
+*options*		1000000000
 *file*			block1_58
-*name*			empty58
+*name*			Эмали эпоксидные
 *end*58
 
 *number*59
-*options*		0000000000
+*options*		1000000000
 *file*			block1_59
-*name*			empty59
+*name*			Лаки эпоксидные
 *end*59
 
 *number*60
-*options*		0000000000
+*options*		1000000000
 *file*			block1_60
-*name*			empty60
+*name*			Составы ремонтные, анкеровочные
 *end*60
 
 *number*61

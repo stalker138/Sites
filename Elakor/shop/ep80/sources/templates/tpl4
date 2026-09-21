@@ -1,8 +1,8 @@
-<meta name="robots" content="<?php if ($pb_page!=9999) print 'noindex, nofollow, '; ?>noarchive">
+<meta name="robots" content="<?php if (($pb_page>5000) || ($pb_page<1000)) print 'noindex, nofollow, '; else print 'index, follow, '; ?>noarchive">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="ООО ТэоХим"><meta name="copyright" lang="ru" content="ООО ТэоХим"><meta name="owner" content="ООО ТэоХим"><meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="author" content="ООО ТэоХим"><meta name="copyright" lang="ru" content="ООО ТэоХим"><meta name="owner" content="ООО ТэоХим">
 <?php
-print '<link rel="icon" type="image/ico" href="/favicon.ico">';
+print '<link rel="icon" type="image/x-icon" href="/favicon.ico">';
 print '<link rel="icon" type="image/png" href="/favicon.png">';
 print '<link rel="icon" type="image/svg+xml" href="/favicon.svg">';
 print '<link rel="canonical" href="'.$pb_domain.$pb_full_url.'">';

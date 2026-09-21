@@ -7,7 +7,9 @@
       <div class="pb_cb_option">НЕТ</div>
       <div class="pb_cb_option">матовый</div>
       <div class="pb_cb_option">полуматовый</div>
+<?php if ($i_pkr!=51 && $i_pkr!=52) { ?>
       <div class="pb_cb_option">глянцевый</div>
+<?php } ?>
    </div>
   </div><div class="px0"></div>
 </div>

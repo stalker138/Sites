@@ -13,8 +13,12 @@
   <div class="matf14">
      <?php fmtr_packing($i_pkr); ?>
   </div>
+
+  <?php fmtr_link(array('<l2 id="22">Глянцевая</l2>','<div>Полуглянцевая</div>','<l2 id="20">Полуматовая</l2>')); ?>
+
   <div class="matf15">
-    <?php fmtr_ord($i_pkr); ?>
+    <?php fmtr_ord($i_pkr); 
+?>
   </div>
 
 </div>
@@ -28,6 +32,25 @@
 </div>
 <div class="px20"></div>
 
+<div class="pb_gal"><div class="pb_gal_scroll">
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p1.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p2.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p3.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p4.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p5.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p6.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p7.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p8.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p9.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p10.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p11.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p12.jpg" alt=""/></div>
+</div>
+<div class="pb_gal_left"></div><div class="pb_gal_right"></div><div class="pb_gal_lft"></div><div class="pb_gal_rgt"></div>
+</div>
+
+<div class="px20"></div>
+
 <div class="dzmt1"></div>
 <div class="ot_head_block">
 <div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="ot_hb_item" id="foth123_p">Свойства</div><div class="ot_hb_item" id="foth123_s">Сертификация</div>
@@ -38,6 +61,8 @@
 <div class="ot_item active" id="fot123_o">
 <?php fmtr_descr($i_pkr); ?>
 <p><span>Элакор-ПУ Эмаль-60</span> – однокомпонентная влагоотверждаемая полиуретановая эмаль. Наносится на загрунтованную полиуретановыми грунтами поверхность. Полимеризуется за счет влаги воздуха. После полимеризации образует твердо-эластичный полимер с высокой прочностью и высокой химической стойкостью.</p>
+
+{*text1_10*}
 
 <p class="fwb">Назначение.</p>
  <ul>
@@ -285,24 +310,6 @@
 <!--/noindex-->
 </div>
 <div class="px10b"></div>
-
-<div class="pb_gal"><div class="pb_gal_scroll">
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p0.png" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p1.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p2.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p3.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p4.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p5.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p6.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p7.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p8.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p9.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p10.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p11.jpg" alt=""/></div>
-<div class="pb_gal_item"><img src="/img/product/emal-polyuretan/p12.jpg" alt=""/></div>
-</div>
-<div class="pb_gal_left"></div><div class="pb_gal_right"></div><div class="pb_gal_lft"></div><div class="pb_gal_rgt"></div>
-</div>
 
 <?php fcvr_mat($i_pkr); ?>
 

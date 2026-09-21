@@ -33,9 +33,9 @@
 *end*5
 
 *number*6
-*options*		0000000000
+*options*		1000000000
 *file*			text4_6
-*name*			empty6
+*name*			<div id="calc_iitem_comb_bi" class="calc_iitem"> Безыскровое покрытие
 *end*6
 
 *number*7
@@ -125,19 +125,19 @@
 *number*21
 *options*		1000000000
 *file*			text4_21
-*name*			div id="calc_iitem_comb_np97" class="calc_iitem" --- Толщина ПЦ пола, мм. (3,4,5,6,7,8,9,10,11,12)
+*name*			div id="calc_iitem_comb_np97" class="calc_iitem" --- Толщина ПЦ пола, мм. (3,4,5,6,7,8,9,10)
 *end*21
 
 *number*22
-*options*		0000000000
+*options*		1000000000
 *file*			text4_22
-*name*			empty22
+*name*			div id="calc_iitem_comb_np96" class="calc_iitem" --- Толщина ПЦ пола, мм. (8,9,10,11,12)
 *end*22
 
 *number*23
-*options*		0000000000
+*options*		1000000000
 *file*			text4_23
-*name*			empty23
+*name*			<div id="calc_iitem_comb_np98" class="calc_iitem"></div> Толщина ПЦ пола, мм. (3,4,5,6,7,8
 *end*23
 
 *number*24
@@ -145,5 +145,23 @@
 *file*			text4_24
 *name*			div id="calc_iitem_comb_se33" class="calc_iitem" --- Количество слоёв Эмали (1 / 2)
 *end*24
+
+*number*25
+*options*		1000000000
+*file*			text4_25
+*name*			<div id="calc_iitem_comb_np98" class="calc_iitem"></div> Толщина ПЦ пола, мм. (3,4,5 Модификация
+*end*25
+
+*number*26
+*options*		0000000000
+*file*			text4_26
+*name*			div id="calc_iitem_comb_np99" class="calc_iitem" --- Толщина покрытия, мм. (1,5 / 3,0 / 4,0)
+*end*26
+
+*number*27
+*options*		1000000000
+*file*			text4_27
+*name*			<div id="calc_iitem_comb_np98" class="calc_iitem"></div> Толщина ПЦ пола, мм. (3,4 Модификация
+*end*27
 
 [END LIST]

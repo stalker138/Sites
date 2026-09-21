@@ -27,9 +27,9 @@
 *end*4
 
 *number*5
-*options*		0000000000
+*options*		1000000000
 *file*			text1_5
-*name*			empty5
+*name*			JS Функции e-commerce
 *end*5
 
 *number*6
@@ -57,9 +57,9 @@
 *end*9
 
 *number*10
-*options*		0000000000
+*options*		1000000000
 *file*			text1_10
-*name*			empty10
+*name*			БЛОК неукрывистые цвета
 *end*10
 
 *number*11

@@ -24,7 +24,7 @@
 <div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>RAL 1xxx</span></div></div>
 <div class="divt1">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">1000</td><td class="td2" style="background-color:#CCC58F"></td><td>10р.</td></tr>
 <tr><td class="td1">1001</td><td class="td2" style="background-color:#D1BC8A"></td><td>15р.</td></tr>
@@ -38,7 +38,7 @@
 </div>
 <div class="divt2">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">1014</td><td class="td2" style="background-color:#DED09F"></td><td>15р.</td></tr>
 <tr><td class="td1">1015</td><td class="td2" style="background-color:#EADEBD"></td><td>15р.</td></tr>
@@ -51,7 +51,7 @@
 </div>
 <div class="divt3">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">1021</td><td class="td2" style="background-color:#EEC900"></td><td>15р.</td></tr>
 <tr><td class="td1">1023</td><td class="td2" style="background-color:#F0CA00"></td><td>15р.</td></tr>
@@ -69,7 +69,7 @@
 <div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>RAL 2xxx</span></div></div>
 <div class="divt1">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">2000</td><td class="td2" style="background-color:#DD7907"></td><td>50р.</td></tr>
 <tr><td class="td1">2001</td><td class="td2" style="background-color:#BE4E24"></td><td>20р.</td></tr>
@@ -78,7 +78,7 @@
 </div>
 <div class="divt2">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">2003</td><td class="td2" style="background-color:#FA842B"></td><td>45р.</td></tr>
 <tr><td class="td1">2004</td><td class="td2" style="background-color:#E75B12"></td><td>40р.</td></tr>
@@ -87,7 +87,7 @@
 </div>
 <div class="divt3">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">2009</td><td class="td2" style="background-color:#E15501"></td><td>40р.</td></tr>
 <tr><td class="td1">2010</td><td class="td2" style="background-color:#D4652F"></td><td>45р.</td></tr>
@@ -101,7 +101,7 @@
 <div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>RAL 3xxx</span></div></div>
 <div class="divt1">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">3000</td><td class="td2" style="background-color:#AB2524"></td><td>25р.</td></tr>
 <tr><td class="td1">3001</td><td class="td2" style="background-color:#A02128"></td><td>25р.</td></tr>
@@ -113,7 +113,7 @@
 </div>
 <div class="divt2">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">3007</td><td class="td2" style="background-color:#402225"></td><td>95р.</td></tr>
 <tr><td class="td1">3009</td><td class="td2" style="background-color:#703731"></td><td>60р.</td></tr>
@@ -128,7 +128,7 @@
 </div>
 <div class="divt3">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">3018</td><td class="td2" style="background-color:#D14152"></td><td>20р.</td></tr>
 <tr><td class="td1">3020</td><td class="td2" style="background-color:#C1121C"></td><td>35р.</td></tr>
@@ -144,21 +144,21 @@
 <div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>RAL 4xxx</span></div></div>
 <div class="divt1">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">4005</td><td class="td2" style="background-color:#83639D"></td><td>35р.</td></tr>
 </tbody></table>
 </div>
 <div class="divt2">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">4006</td><td class="td2" style="background-color:#992572"></td><td>55р.</td></tr>
 </tbody></table>
 </div>
 <div class="divt3">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">4009</td><td class="td2" style="background-color:#A38995"></td><td>35р.</td></tr>
 </tbody></table>
@@ -170,7 +170,7 @@
 <div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>RAL 5xxx</span></div></div>
 <div class="divt1">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">5002</td><td class="td2" style="background-color:#2B2C7C"></td><td>40р.</td></tr>
 <tr><td class="td1">5003</td><td class="td2" style="background-color:#2A3756"></td><td>60р.</td></tr>
@@ -181,7 +181,7 @@
 </div>
 <div class="divt2">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">5011</td><td class="td2" style="background-color:#232C3F"></td><td>20р.</td></tr>
 <tr><td class="td1">5012</td><td class="td2" style="background-color:#3481B8"></td><td>25р.</td></tr>
@@ -192,7 +192,7 @@
 </div>
 <div class="divt3">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">5019</td><td class="td2" style="background-color:#1A5784"></td><td>25р.</td></tr>
 <tr><td class="td1">5020</td><td class="td2" style="background-color:#0B4151"></td><td>55р.</td></tr>
@@ -209,7 +209,7 @@
 <div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>RAL 6xxx</span></div></div>
 <div class="divt1">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">6000</td><td class="td2" style="background-color:#327662"></td><td>20р.</td></tr>
 <tr><td class="td1">6001</td><td class="td2" style="background-color:#28713E"></td><td>25р.</td></tr>
@@ -223,7 +223,7 @@
 </div>
 <div class="divt2">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">6013</td><td class="td2" style="background-color:#797C5A"></td><td>25р.</td></tr>
 <tr><td class="td1">6016</td><td class="td2" style="background-color:#026A52"></td><td>15р.</td></tr>
@@ -237,7 +237,7 @@
 </div>
 <div class="divt3">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">6025</td><td class="td2" style="background-color:#53753C"></td><td>30р.</td></tr>
 <tr><td class="td1">6026</td><td class="td2" style="background-color:#005D52"></td><td>45р.</td></tr>
@@ -256,7 +256,7 @@
 <div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>RAL 7xxx</span></div></div>
 <div class="divt1">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">7000</td><td class="td2" style="background-color:#7E8B92"></td><td>15р.</td></tr>
 <tr><td class="td1">7002</td><td class="td2" style="background-color:#817F68"></td><td>20р.</td></tr>
@@ -265,7 +265,7 @@
 </div>
 <div class="divt2">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">7012</td><td class="td2" style="background-color:#596163"></td><td>15р.</td></tr>
 <tr><td class="td1">7016</td><td class="td2" style="background-color:#373F43"></td><td>15р.</td></tr>
@@ -274,7 +274,7 @@
 </div>
 <div class="divt3">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">7035</td><td class="td2" style="background-color:#CBD0CC"></td><td>Базовый, 0р.</td></tr>
 <tr><td class="td1">7040</td><td class="td2" style="background-color:#9DA3A6"></td><td>0р.</td></tr>
@@ -289,7 +289,7 @@
 <div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>RAL 8xxx</span></div></div>
 <div class="divt1">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">8000</td><td class="td2" style="background-color:#887142"></td><td>10р.</td></tr>
 <tr><td class="td1">8001</td><td class="td2" style="background-color:#9C6B30"></td><td>10р.</td></tr>
@@ -301,7 +301,7 @@
 </div>
 <div class="divt2">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">8011</td><td class="td2" style="background-color:#5A3A29"></td><td>10р.</td></tr>
 <tr><td class="td1">8012</td><td class="td2" style="background-color:#673831"></td><td>15р.</td></tr>
@@ -313,7 +313,7 @@
 </div>
 <div class="divt3">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">8022</td><td class="td2" style="background-color:#211F20"></td><td>10р.</td></tr>
 <tr><td class="td1">8023</td><td class="td2" style="background-color:#A65E2F"></td><td>10р.</td></tr>
@@ -330,21 +330,21 @@
 <div class="blk_oc_header" onclick="f_mfHeaderClick(this)"><div><span>RAL 9xxx</span></div></div>
 <div class="divt1">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">9001</td><td class="td2" style="background-color:#EFEBDC"></td><td>10р.</td></tr>
 </tbody></table>
 </div>
 <div class="divt2">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">9002</td><td class="td2" style="background-color:#DDDED4"></td><td>15р.</td></tr>
 </tbody></table>
 </div>
 <div class="divt3">
 <div class="px10"></div>
-<table class="tsrt"><tbody>
+<table class="tcolor"><tbody>
 <tr><th style="width:40px">RAL</th><th style="width:80px">Цвет</th><th style="width:80px">Удорожание</th></tr>
 <tr><td class="td1">9005</td><td class="td2" style="background-color:#0A0A0D"></td><td>30р.</td></tr>
 </tbody></table>

@@ -1,4 +1,4 @@
-<?php fmtr_h1($i_pkr,'эпоксидное связующее'); ?>
+<?php fmtr_h1($i_pkr,'', 'Элакор-ЭД  Клей для Каменного ковра (связующее)'); ?>
 <div class="px15"></div>
 <?php fmtr_micro($i_pkr); ?>
 
@@ -6,10 +6,12 @@
 
 <div class="matflex">
 <div class="matf1">
+<div>
   <?php fmtr_price($i_pkr); ?>
   <div class="matf13">
      <?php fmtr_guar($i_pkr); ?>
   </div>
+</div>
   <div class="matf14">
      <?php fmtr_packing($i_pkr); ?>
   </div>
@@ -27,6 +29,21 @@
 </div>
 <div class="px20"></div>
 
+
+<div class="pb_gal"><div class="pb_gal_scroll">
+<div class="pb_gal_item"><img src="/img/product/kompaund-epoxid/p1.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/kompaund-epoxid/p2.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/kompaund-epoxid/p3.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/kompaund-epoxid/p4.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/kompaund-epoxid/p5.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/kompaund-epoxid/p6.jpg" alt=""/></div>
+<div class="pb_gal_item"><img src="/img/product/kompaund-epoxid/p7.jpg" alt=""/></div>
+</div>
+<div class="pb_gal_left"></div><div class="pb_gal_right"></div><div class="pb_gal_lft"></div><div class="pb_gal_rgt"></div>
+</div>
+
+<div class="px20"></div>
+
 <div class="dzmt1"></div>
 <div class="ot_head_block">
 <div class="ot_hb_item active" id="foth123_o">Описание</div><div class="ot_hb_item" id="foth123_t">Технология</div><div class="ot_hb_item" id="foth123_p">Свойства</div><div class="ot_hb_item" id="foth123_s">Сертификация</div>
@@ -36,7 +53,7 @@
 <div class="ot_block">
 <div class="ot_item active" id="fot123_o">
 <?php fmtr_descr($i_pkr); ?>
-<p><span>Элакор-ЭД Эпоксидное связующее предназначено</span> для устройства каркасных* покрытий и изделий с использованием минеральных и других наполнителей:</p>
+<p><span>Элакор-ЭД Клей для Каменного ковра (эпоксидное тиксотропное связующее) предназначен</span> для устройства каркасных* покрытий и изделий с использованием минеральных и других наполнителей:</p>
 <ul>
 <li>естественный и окрашенный кварцевый песок, окатанный и не окатанный;
 <li>речной и морской галечник, гравий; 
@@ -44,7 +61,7 @@
 </ul>
 <p class="fs11">(* <span>Каркасное покрытие</span> – покрытие, в котором частички наполнителя «склеены» между собой связующим, но промежутки между частицами НЕ заполнены связующим.)</p>
 
-<p class="fwb">Покрытия, выполненные на основе эпоксидного компаунда, могут эксплуатироваться внутри помещений и на открытом воздухе.</p>
+<p class="fwb">Покрытия, выполненные на основе Клея для Каменного ковра, могут эксплуатироваться внутри помещений и на открытом воздухе.</p>
 
 <p><span class="fwb">Для нанесения по основаниям.</span><br>
 - Бетон или пескоцементная стяжка, марочная прочность не менее М200.<br>
@@ -54,7 +71,7 @@
  <div class="dh_min_max">
  <div class="dh_mm_head">↓ Показать больше... ↓</div>
 
-<p class="fwb">Свойства покрытий на основе эпоксидного Связующего Элакор-ЭД:</p>
+<p class="fwb">Свойства покрытий на основе эпоксидного Связующего Элакор-ЭД Клей для Каменного ковра:</p>
 <ul>
 <li>Стойкость к световому и ультрафиолетовому излучению.</li>
 <li>Стойкость к механическим и химическим воздействиям.</li>
@@ -70,14 +87,15 @@
 <li>Декоративные покрытия и изделия на основе цветных кварцевых песков, цветного галечника и т.п.</li>
 </ul>
 
-<p>Чтобы узнать цену эпоксидного Связующего для каменного ковра и купить эпоксидный компаунд, позвоните нам.</p>
+<p>Чтобы узнать цену Клея для для каменного ковра и купить эпоксидный компаунд, позвоните нам.</p>
 
 </div>
  <div class="px0"></div>
 </div>
 
 <div class="ot_item" id="fot123_t">
-<p class="fwb">Указания к применению - Эпоксидное Связующее-2К/Т «Элакор-ЭД».</p>
+<p><span>Указания к применению - «Элакор-ЭД» Клей для Каменного ковра</span><br>
+(эпоксидное тиксотропное связующее для камня, каменной крошки) .</p>
 <p class="fwb">1. Основные требования при нанесении.</p>
 <ul>
 <li>Поверхность огрунтована эпоксидным грунтом.</li>
@@ -110,7 +128,7 @@
 </div>
 
 <div class="ot_item" id="fot123_p">
- <h2>Эпоксидный компаунд - характеристики</h2>
+ <p class="fwb">Клей для Каменного ковра  - характеристики</p>
  <table class="tsrt"><tbody>
  <tr><td>Массовое отношение компонентов А : Б</td><td>100 : 45</td></tr>
  <tr><td>Плотность готового состава</td><td>1,06</td></tr>

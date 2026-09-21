@@ -117,9 +117,9 @@
 *end*19
 
 *number*20
-*options*		0000000000
+*options*		1000000000
 *file*			block2_20
-*name*			empty20
+*name*			ПУ Эмаль-60 Полуматовая
 *end*20
 
 *number*21
@@ -129,9 +129,9 @@
 *end*21
 
 *number*22
-*options*		0000000000
+*options*		1000000000
 *file*			block2_22
-*name*			empty22
+*name*			ПУ Эмаль-60 глянцевая
 *end*22
 
 *number*23
@@ -183,9 +183,9 @@
 *end*30
 
 *number*31
-*options*		0000000000
+*options*		1000000000
 *file*			block2_31
-*name*			empty31
+*name*			ПУ Наливной пол СК ПРОФ
 *end*31
 
 *number*32
@@ -405,15 +405,15 @@
 *end*67
 
 *number*68
-*options*		0000000000
+*options*		1000000000
 *file*			block2_68
-*name*			empty68
+*name*			Элакор-ЭД - Инъекционный состав
 *end*68
 
 *number*69
-*options*		0000000000
+*options*		1000000000
 *file*			block2_69
-*name*			empty69
+*name*			ЭД Наливной пол Антистатический АСТ-6
 *end*69
 
 *number*70
@@ -441,9 +441,9 @@
 *end*73
 
 *number*74
-*options*		0000000000
+*options*		1000000000
 *file*			block2_74
-*name*			empty74
+*name*			ЭД Смола для заливки
 *end*74
 
 *number*75
@@ -537,21 +537,21 @@
 *end*89
 
 *number*90
-*options*		0000000000
+*options*		1000000000
 *file*			block2_90
-*name*			empty90
+*name*			ЭД Эмаль-2К/80 Антистатическая эмаль АСТ-6
 *end*90
 
 *number*91
-*options*		0000000000
+*options*		1000000000
 *file*			block2_91
-*name*			empty91
+*name*			ПУ Эмаль Люкс Антистатическая светостойкая АСТ-6
 *end*91
 
 *number*92
-*options*		0000000000
+*options*		1000000000
 *file*			block2_92
-*name*			empty92
+*name*			ЭД Наливной пол СК ПРОФ АСТ-6
 *end*92
 
 *number*93
@@ -579,9 +579,9 @@
 *end*96
 
 *number*97
-*options*		0000000000
+*options*		1000000000
 *file*			block2_97
-*name*			empty97
+*name*			ПУ Лак Матовый
 *end*97
 
 *number*98
@@ -633,9 +633,9 @@
 *end*105
 
 *number*106
-*options*		0000000000
+*options*		1000000000
 *file*			block2_106
-*name*			empty106
+*name*			Силер-Б
 *end*106
 
 *number*107
@@ -711,9 +711,9 @@
 *end*118
 
 *number*119
-*options*		0000000000
+*options*		1000000000
 *file*			block2_119
-*name*			empty119
+*name*			Элакор-ДТ - тиксотропная и матирующая добавка
 *end*119
 
 *number*120
@@ -729,15 +729,15 @@
 *end*121
 
 *number*122
-*options*		0000000000
+*options*		1000000000
 *file*			block2_122
-*name*			empty122
+*name*			ПЦ Наливной пол Т1/Б
 *end*122
 
 *number*123
-*options*		0000000000
+*options*		1000000000
 *file*			block2_123
-*name*			empty123
+*name*			ПЦ Наливной пол Т1 АСТ-7
 *end*123
 
 *number*124
@@ -777,9 +777,9 @@
 *end*129
 
 *number*130
-*options*		0000000000
+*options*		1000000000
 *file*			block2_130
-*name*			empty130
+*name*			ПЦ Грунт Паропроницаемый Антистатический
 *end*130
 
 *number*131
@@ -789,15 +789,15 @@
 *end*131
 
 *number*132
-*options*		0000000000
+*options*		1000000000
 *file*			block2_132
-*name*			empty132
+*name*			ПЦ Наливной пол Т1/Б АСТ-7
 *end*132
 
 *number*133
-*options*		0000000000
+*options*		1000000000
 *file*			block2_133
-*name*			empty133
+*name*			ПЦ Наливной пол Т1/Б АСТ-6
 *end*133
 
 *number*134
@@ -819,15 +819,15 @@
 *end*136
 
 *number*137
-*options*		0000000000
+*options*		1000000000
 *file*			block2_137
-*name*			empty137
+*name*			Элакор-ПУ Эмаль Люкс Матовая
 *end*137
 
 *number*138
-*options*		0000000000
+*options*		1000000000
 *file*			block2_138
-*name*			empty138
+*name*			ПЦ Наливной пол Т4 СК ПРОФ
 *end*138
 
 *number*139
@@ -1107,9 +1107,9 @@
 *end*184
 
 *number*185
-*options*		0000000000
+*options*		1000000000
 *file*			block2_185
-*name*			empty185
+*name*			«Люкс» лак для дерева  (глянцевый, светостойкий)
 *end*185
 
 *number*186
@@ -1155,9 +1155,9 @@
 *end*192
 
 *number*193
-*options*		0000000000
+*options*		1000000000
 *file*			block2_193
-*name*			empty193
+*name*			Краска для дерева  (полиуретановая эмаль для дерева)
 *end*193
 
 *number*194
@@ -1167,9 +1167,9 @@
 *end*194
 
 *number*195
-*options*		0000000000
+*options*		1000000000
 *file*			block2_195
-*name*			empty195
+*name*			Элакор-ПУ «Люкс» Эмаль для дерева
 *end*195
 
 *number*196
@@ -1573,5 +1573,11 @@
 *file*			block2_262
 *name*			ПУ Клей для искусственной травы, газона
 *end*262
+
+*number*263
+*options*		0000000000
+*file*			block2_263
+*name*			Материал тест
+*end*263
 
 [END LIST]

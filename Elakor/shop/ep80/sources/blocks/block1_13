@@ -3,7 +3,7 @@
 <?php fcvr_cin(0,1); /* Выводить телефоны */?>
 <div class="px10b"></div>
 <?php
-$alist=array(63,64,67,68,65,66,69,70);
+$alist=$a_catcvr[6];
 fltout_pokr_test($alist,1); 
 ?>
 <div class="cblock">
