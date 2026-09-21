@@ -1,0 +1,11 @@
+User-agent: *
+
+Allow: /
+Disallow: /instr/
+Disallow: /serts/
+Disallow: /search
+Disallow: /colors/
+Disallow: /404/
+Sitemap: http://teohim.uz/sitemap.xml
+
+Host: teohim.uz

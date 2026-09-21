@@ -1,0 +1,325 @@
+var _a_gal=[], _a_fgal=[]; /* Массив для фотогалерей на странице - содержит подмассивы с характеристиками каждой галереи */
+var _v_galItem=-1; _a_galItems=[-1,0,0,0]; /* Активное изображение в full - режиме галереи; Массив значений активной галереи. */
+
+var a_gal=[], a_fgal=[]; /* Массив для фотогалерей на странице - содержит подмассивы с характеристиками каждой галереи */
+var v_galItem=-1; a_galItems=[-1,0,0,0]; /* Активное изображение в full - режиме галереи; Массив значений активной галереи. */
+
+$.ready(function () {
+    $.EH.add(window,'load',function(e){_photoGal(e);photoGal(e);});
+});
+
+/* ФОТОГАЛЕРЕЯ */
+function _photoGal(e) {
+  var i, j, k, ps, pi, pfi, pimg, wimg,himg, ws,hs, wi,hi, pg=$.qSA('._pb_gal'), l=pg.length||0; if (l<1) return false; console.log('desc');
+  for (i=0; i<l; i+=1) {
+    if (pg[i]) {
+      ws=0; ps=$.qS('._pb_gal_scroll',pg[i])||0; hs=ps?(parseInt($.gStyle(ps,'height'),10)||0):0; pi=ps?($.qSA('._pb_gal_item',ps)||0):0; pimg=ps?($.qSA('._pb_gal_item img',ps)||0):0;
+      if(!ps||!hs||!pi||!pimg) { f_mesErr('Ошибка HTML галереи','Ошибка HTML галереи<br>'+(ps?'':'._pb_gal_scroll ')+(pi?'':'._pb_gal_item ')+(pimg?'':'images ')+' not found',300,120); return false; }
+      k=pi.length; if (k!=pimg.length) { f_mesErr('Ошибка HTML галереи','Ошибка HTML галереи<br>Количество изображений не равно количеству ._pb_gal_item',300,120); return false; }
+      if(!ps||!hs||!pi||!pimg) { return false; }
+      k=pi.length; if (k!=pimg.length) { return false; }
+      pfi=$.qSA('._pb_gal_hidden img',pg[i])||0;  if(!pfi||pfi.length!=k) { return false; }
+      wi=new Array(k); hi=new Array(k); wimg=new Array(k); himg=new Array(k);
+      for (j=0; j<k; j+=1) {
+          if(j==k-1)pi[j].style.paddingRight=0;
+          wi[j]=pi[j].offsetWidth||0; hi[j]=pi[j].offsetHeight||0; wimg[j]=$.qS('img',pi[j]).width; himg[j]=$.qS('img',pi[j]).height; ws+=wi[j];
+      }
+      ps.style.width=(ws+1)+'px';
+      _a_gal[i]=[0,pg[i],ps,0,0,ws,hs,wi,hi,0,0,0,0,wimg,himg,0,0,-1,0];
+      $.EH.add($.qS('._pb_gal_left',pg[i]),'click',_photoGal_scroll,false); $.EH.add($.qS('._pb_gal_right',pg[i]),'click',_photoGal_scroll,false); $.EH.add(pg[i],'mouseout',_photoGal_scroll,false);
+      $.EH.add(ps,'click',_photoGal_full); $.EH.add($.W,'resize', function(e){if($.qS('._pb_fgal')) {setTimeout(function(e){_photoGal_full(e,1);},200)}});
+      /* _a_gal[item]:
+      0 - текущий скролл в пикселях; 1 - ссылка на галерею (._pb_gal); 2 - ссылка на DIV скролл ._pb_gal_scroll; 3 - резерв;
+      4 - X в пикселях при mousedown/touchstart; 5 - width of scroll DIV, 6 - height of scroll DIV; 7 - array of width of DIV(>image), 8 - array of height of DIV(>image);
+      9 - mousedown/touchstart, 10 - mousemove/touchmove; 11 и 12 - резерв; 13 - width images, 14 - height images (k - количество картинок);
+      15 - ссылка на DIV layer (слой для full-режима), 16 - ссылка на DIV ._pb_fgal; 17 - индекс текущего img для full-режима, 18 - desc animation _pb_gal_scroll */
+    }
+  }
+  _photoGal_lr();
+}
+function _photoGal_scroll(e) {
+  var i,t,p,g,s=0,wg=0,ws=0,f=1,k=-1,ls,rs,n=null,a=_a_gal;
+  e=e||window.event; i=_photoGal_gItem(e); k=i[0]; t=i[1]; p=i[2]; g=i[3]; if (!g) return;
+  s=0-a[k][0]; /* k - индекс активной галереи; s - Величина скролла в активной галерее; */
+  ws=$.qS('._pb_gal_scroll',g).offsetWidth; wg=748;
+  ls = s<=0 ? 0:758; rs = s>(ws-758) ? 0:758;
+  if (e.type=='click') {
+      f=0; // $._(24)(e);
+      if (t.className=='_pb_gal_left') {
+        $.aClear(a[k][18]); a[k][18]=$.animate(a[k][2],200,20,[0-s,n,n,n],[0-(s-ls),n,n,n]); a[k][0]=0-(s-ls);
+      }
+      if (t.className=='_pb_gal_right') {
+        $.aClear(a[k][18]); a[k][18]=$.animate(a[k][2],200,20,[0-s,n,n,n],[0-(s+rs),n,n,n]); a[k][0]=0-(s+rs);
+      }
+  }
+  if (f) {
+    if ((e.type=='touchstart'&&e.targetTouches.length==1) || e.type=='mousedown') {
+      a[k][4]=$.gMX(); a[k][9]=1; a[k][10]=0; if (e.type=='mousedown') $._(24)(e);
+    }
+    if ((e.type=='touchend'&&e.targetTouches.length==1) || e.type=='mouseup') {
+      a[k][4]=a[k][9]=0; // $._(24)(e);
+    }
+    if ((e.type=='touchmove'&&e.targetTouches.length==1) || e.type=='mousemove') {
+      if (a[k][4]!=0) {
+        l=$.gMX()-a[k][4]; if(l!=0) {
+          a[k][4]+=l; a[k][0]+=l; if (a[k][0]>0) a[k][0]=0; if (a[k][0]<wg-ws) a[k][0]=wg-ws;
+          a[k][2].style.left=a[k][0]+'px'; a[k][10]+=l<0?(0-l):l;
+          if (e.type=='touchmove') $._(24)(e);
+        }
+      }
+    }
+    if (e.type=='mouseout' || e.type=='touchout') {
+      a[k][4]=a[k][9]=0; a[k][10]=99; // $._(24)(e);
+    }
+    _photoGal_lr(k);
+  }
+}
+/* _photoGal_gItem(e) => return [k, target, target.parentNode, g]; где: k - индекс активной галереи (-1 - ошибка), g - ._pb_gal  */
+function _photoGal_gItem(e) {
+  var i,t,p,g,gs,k=-1,a=_a_gal,l=a.length;
+  e=e||window.event; t=e.target; p=t.parentNode;
+  if (t.className=='_pb_gal_left' || t.className=='_pb_gal_right') g=t.parentNode; /* p и g - .pg_gal */
+  if (t.className=='_pb_gal_item') { g=p.parentNode; } /* t - _pb_gal_item; p - ._pb_gal_scroll; g - .pg_gal */
+  if (p.className=='_pb_gal_item') { g=p.parentNode.parentNode; }  /* t - img; p - ._pb_gal_item; g - .pg_gal */
+  if (!g) { _a_galItems=[-1,0,0,0]; return _a_galItems; }
+  for (i=0; i<l; i+=1) { if (g==a[i][1]) {k=i; i=l;} }
+  _a_galItems=[k,t,p,g]; return _a_galItems;
+}
+/* _photoGal_lr() Управление видимостью элкментов прокрутки (слева и справа) для всех галерей и Full-режима */
+function _photoGal_lr(n) {
+  var i,j,k, a, w=0, aa=_a_gal, l=aa.length; n=n||0; if (l<1) return false;
+  k=$.qS('._pb_fgal'); if(k) {
+     $.qS('._pb_fgal_left',k).style.display = $.qS('._pb_fgal_lft',k).style.display = (_v_galItem==0)?'none':'block';
+     $.qS('._pb_fgal_right',k).style.display = $.qS('._pb_fgal_rgt',k).style.display = (_v_galItem==_a_fgal[13].length-1)?'none':'block';
+  } else {
+    if(n<0||n>l-1)return false;
+    for (j=0; j<l; j+=1) {
+      i=(n<0)?j:n; a=aa[i]; $.qS('._pb_gal_left',a[1]).style.display=(a[0]==0)?'none':'block';
+      for(k=a[7].length-1;k>=0;k-=1)w+=a[7][k]; $.qS('._pb_gal_right',a[1]).style.display=(a[0]<(0-w+a[1].offsetWidth))?'none':'block';
+      if(i==n)j=l;
+    }
+  }
+}
+/* _photoGal_full(e) переход в full-режим галереи (полнооконный/полноэкранный) */
+function _photoGal_full(e,f) {
+  var i,w,h,wi,hi,t,p,g,gs,k,pi,tx='',a=_a_gal,pfi,wimg,himg; f=f||0;
+  e=e||window.event; i=f?_a_galItems:_photoGal_gItem(e); _a_galItems=i; k=i[0]; t=i[1]; p=i[2]; g=i[3]; if (!g) return;
+  pfi=$.qSA('._pb_gal_hidden img',g);
+  if (t.className=='_pb_gal_item' || p.className=='_pb_gal_item') {
+    if(a[k][9]==0 && (a[k][10]<5||a[k][10]==99)) {
+      a[k][10]=0; $.uEnv(); w=$.gCW(); h=$.gCH(); if(!f) $._(24)(e);
+      pi = (t.className=='_pb_gal_item') ? t : (t.parentNode.className=='_pb_gal_item' ? t.parentNode : 0); if(!pi) return;
+      p = $.qSA('._pb_gal_item',a[k][2]); l=p.length; a[k][17]=f?_v_galItem:-1;
+      for (i=0; i<l; i+=1) {
+        tx+='<div class="_pb_fgal_item" style="width:'+w+'px;height:'+h+'px;background-image:url(\''+pfi[i].src+'\')"></div>';
+        if(!f && pi==p[i]) { a[k][17]=i; }
+      } if(a[k][17]<0) return; _v_galItem=a[k][17];
+      if (f) p=a[k][16]; else { a[k][15]=$.addLayer(0,'#000000',210,'hidden',1); p=$.D.createElement('div'); p.className='_pb_fgal'; p.style.zIndex=210; }
+      p.innerHTML = '<div class="_pb_fgal_scroll" style="width:'+(w*l)+'px;left:-'+parseInt((w*_v_galItem),10)+'px;">'+tx+'</div><div class="_pb_fgal_left""></div><div class="_pb_fgal_right"></div><div class="_pb_fgal_lft"></div><div class="_pb_fgal_rgt"></div><div class="_pb_fgal_close" onclick="_photoGal_rest('+k+')"></div>';
+      if (!f) { $.B.appendChild(p); a[k][16]=p; } gs=$.qS('._pb_fgal_scroll');
+      wimg = JSON.parse(JSON.stringify(a[k][13])); himg = JSON.parse(JSON.stringify(a[k][14]))
+      for (i=0;i<l;i+=1) { wimg[i]=pfi[i].width; himg[i]=pfi[i].height; }
+      _a_fgal=[0-parseInt((w*_v_galItem),10),g,gs,0,0,(w*l), 0,0,0, 0,0, 0,0, wimg, himg, a[k][15], _v_galItem, 0];
+      /* _a_fgal - КОПИЯ _a_gal[item], а не ссылка на _a_gal[item] :
+      0 - текущий скролл в пикселях; 1 - ссылка на галерею (._pb_gal); 2 - ссылка на DIV скролл ._pb_fgal_scroll; 3 - резерв;
+      4 - X в пикселях при mousedown/touchstart; 5 - width of scroll DIV _pb_fgal_scroll, 6 7 8 - резерв;
+      9 - mousedown/touchstart, 10 - сумма смещение при mousemove/touchmove от стартового; 11 и 12 - резерв; 13 - width images, 14 - height images;
+      15 - ссылка на DIV layer (слой для full-режима), 16 - ссылка на DIV ._pb_fgal; 17 - индекс текущего img для full-режима, 18 - desc animation pb_gfal_scroll */
+      $.EH.add($.qS('._pb_fgal_left'),'click',_photoGal_fScroll,false); $.EH.add($.qS('._pb_fgal_right'),'click',_photoGal_fScroll,false); if(!f) $.EH.add($.qS('._pb_fgal'),'mouseout',_photoGal_fScroll,false);
+      $.EH.add($.qS('._pb_fgal_lft'),'click',_photoGal_fScroll,false); $.EH.add($.qS('._pb_fgal_rgt'),'click',_photoGal_fScroll,false);
+      $.EH.add(gs,'mousedown',_photoGal_fScroll,false); $.EH.add(gs,'mouseup',_photoGal_fScroll,false); $.EH.add(gs,'mousemove',_photoGal_fScroll,false);
+      if ($.isTOUCH()) { $.EH.add(gs,'touchstart',_photoGal_fScroll,false); $.EH.add(gs,'touchend',_photoGal_fScroll,false); $.EH.add(gs,'touchmove',_photoGal_fScroll,false); }
+      _photoGal_lr();
+    }
+  }
+}
+function _photoGal_rest(k) { /* 0 - возврат из full-режима, -1 - прокрутка влевао, 1 - прокрутка вправо */
+    k=k||0; if(k<0||!_a_gal[k])return; $.removeLayer(_a_gal[k][15]); _a_gal[k][16].parentNode.removeChild(_a_gal[k][16]);
+}
+function _photoGal_fScroll(e) {
+  var i,s,w,ws=0,k,l,a=_a_fgal; e=e||window.event; ws=$.qS('._pb_fgal_scroll'); if(!ws)return false;
+  w=$.gCW(); h=$.gCH(); ws=ws.offsetWidth; s=a[0]; l=a[13].length-1; k=e.target.className; /* s - Величина скролла в активной галерее; l - количество картинок */
+  if (e.type=='click' && (k=='_pb_fgal_left' || k=='_pb_fgal_right' || k=='_pb_fgal_lft' || k=='_pb_fgal_rgt')) {
+    if (k=='_pb_fgal_left' && _v_galItem>0) { _v_galItem=a[17]=_v_galItem-1; }
+    if (k=='_pb_fgal_right' && _v_galItem<l) { _v_galItem=a[17]=_v_galItem+1; }
+    if (k=='_pb_fgal_lft' && _v_galItem>0) { _v_galItem=a[17]=0; }
+    if (k=='_pb_fgal_rgt' && _v_galItem<l) { _v_galItem=a[17]=l; }
+    _photoGal_fScroll_a(w,s,a);
+  }
+  if ((e.type=='touchstart'&&e.targetTouches.length==1) || e.type=='mousedown') {
+    a[4]=$.gMX(); a[10]=0; if (e.type=='mousedown') $._(24)(e);
+  }
+  if ((e.type=='touchmove'&&e.targetTouches.length==1) || e.type=='mousemove') {
+    if (a[4]!=0) {
+      k=$.gMX()-a[4]; if(k!=0) {
+        a[4]+=k; a[0]+=k; if (a[0]>0) a[0]=0; if (a[0]<w-ws) a[0]=w-ws;
+        a[2].style.left=a[0]+'px'; a[10]+=k;
+        if (e.type=='touchmove') $._(24)(e);
+      }
+    }
+  }
+  if (e.type=='touchend' || e.type=='mouseup' || e.type=='mouseout' || e.type=='touchout') {
+    a[4]=0; if(a[10]<-99)_v_galItem+=1; if(a[10]>99)_v_galItem-=1; if(_v_galItem<0)_v_galItem=0; if(_v_galItem>l)_v_galItem=l; a[17]=_v_galItem; a[10]=0;
+    _photoGal_fScroll_a(w,s,a);
+  }
+  _photoGal_lr(-1);
+}
+function _photoGal_fScroll_a(w,s,a) {
+    var n=null; a[0]=0-parseInt((w*_v_galItem),10); if(s!=a[0]) { $.aClear(a[18]); a[18]=$.animate(a[2],200,20,[s,n,n,n],[a[0],n,n,n]); }
+}
+
+/* ФОТОГАЛЕРЕЯ */
+function photoGal(e) {
+  var i, j, k, ps, pi, pimg, wimg,himg, ws,hs, wi,hi, pg=$.qSA('.pb_gal'), l=pg.length||0; if (l<1) return false;
+  for (i=0; i<l; i+=1) {
+    if (pg[i]) {
+      ws=0; ps=$.qS('.pb_gal_scroll',pg[i])||0; hs=ps?(parseInt($.gStyle(ps,'height'),10)||0):0; pi=ps?($.qSA('.pb_gal_item',ps)||0):0; pimg=ps?($.qSA('.pb_gal_item img',ps)||0):0;
+      if(!ps||!hs||!pi||!pimg) { f_mesErr('Ошибка HTML галереи','Ошибка HTML галереи<br>'+(ps?'':'.pb_gal_scroll ')+(pi?'':'.pb_gal_item ')+(pimg?'':'images ')+' not found',300,120); return false; }
+      k=pi.length; if (k!=pimg.length) { f_mesErr('Ошибка HTML галереи','Ошибка HTML галереи<br>Количество изображений не равно количеству .pb_gal_item',300,120); return false; }
+      wi=new Array(k); hi=new Array(k); wimg=new Array(k); himg=new Array(k);
+      for (j=0; j<k; j+=1) {
+          if(j==k-1)pi[j].style.paddingRight=0;
+          wi[j]=pi[j].offsetWidth||0; hi[j]=pi[j].offsetHeight||0; wimg[j]=$.qS('img',pi[j]).width; himg[j]=$.qS('img',pi[j]).height; ws+=wi[j];
+      }
+      ps.style.width=(ws+3)+'px';
+      a_gal[i]=[0,pg[i],ps,0,0,ws,hs,wi,hi,0,0,0,0,wimg,himg,0,0,-1,0];
+      $.EH.add($.qS('.pb_gal_left',pg[i]),'click',photoGal_scroll,false); $.EH.add($.qS('.pb_gal_right',pg[i]),'click',photoGal_scroll,false); $.EH.add(pg[i],'mouseout',photoGal_scroll,false);
+      $.EH.add(ps,'mousedown',photoGal_scroll,false); $.EH.add(ps,'mouseup',photoGal_scroll,false); $.EH.add(ps,'mousemove',photoGal_scroll,false);
+      if ($.isTOUCH()) { $.EH.add(ps,'touchstart',photoGal_scroll,false); $.EH.add(ps,'touchend',photoGal_scroll,false); $.EH.add(ps,'touchmove',photoGal_scroll,false); }
+      $.EH.add(ps,'click',photoGal_full); $.EH.add($.W,'resize', function(e){if($.qS('.pb_fgal')) {setTimeout(function(e){photoGal_full(e,1);},200)}});
+      /* a_gal[item]:
+      0 - текущий скролл в пикселях; 1 - ссылка на галерею (.pb_gal); 2 - ссылка на DIV скролл .pb_gal_scroll; 3 - резерв;
+      4 - X в пикселях при mousedown/touchstart; 5 - width of scroll DIV, 6 - height of scroll DIV; 7 - array of width of DIV(>image), 8 - array of height of DIV(>image);
+      9 - mousedown/touchstart, 10 - mousemove/touchmove; 11 и 12 - резерв; 13 - width images, 14 - height images (k - количество картинок);
+      15 - ссылка на DIV layer (слой для full-режима), 16 - ссылка на DIV .pb_fgal; 17 - индекс текущего img для full-режима, 18 - desc animation pb_gal_scroll */
+    }
+  }
+  for (i=0; i<l; i+=1) { photoGal_lr(i); }
+}
+function photoGal_scroll(e) {
+  var i,t,p,g,s=0,wg=0,ws=0,f=1,k=-1,ls,rs,n=null,a=a_gal;
+  e=e||window.event; i=photoGal_gItem(e); k=i[0]; t=i[1]; p=i[2]; g=i[3]; if (!g) return;
+  s=0-a[k][0]; /* k - индекс активной галереи; s - Величина скролла в активной галерее; */
+  ws=$.qS('.pb_gal_scroll',g).offsetWidth; wg=g.offsetWidth;
+  ls = s<=wg ? s : wg-50; rs = ((ws-wg-s)>=wg) ? wg-50 : (ws-wg-s);
+  if (e.type=='click') {
+      f=0; // $._(24)(e);
+      if (t.className=='pb_gal_left') {
+        $.aClear(a[k][18]); a[k][18]=$.animate(a[k][2],200,20,[0-s,n,n,n],[0-(s-ls),n,n,n]); a[k][0]=0-(s-ls);
+      }
+      if (t.className=='pb_gal_right') {
+        $.aClear(a[k][18]); a[k][18]=$.animate(a[k][2],200,20,[0-s,n,n,n],[0-(s+rs),n,n,n]); a[k][0]=0-(s+rs);
+      }
+  }
+  if (f) {
+    if ((e.type=='touchstart'&&e.targetTouches.length==1) || e.type=='mousedown') {
+      a[k][4]=$.gMX(); a[k][9]=1; a[k][10]=0; if (e.type=='mousedown') $._(24)(e);
+    }
+    if ((e.type=='touchend'&&e.targetTouches.length==1) || e.type=='mouseup') {
+      a[k][4]=a[k][9]=0; // $._(24)(e);
+    }
+    if ((e.type=='touchmove'&&e.targetTouches.length==1) || e.type=='mousemove') {
+      if (a[k][4]!=0) {
+        l=$.gMX()-a[k][4]; if(l!=0) {
+          a[k][4]+=l; a[k][0]+=l; if (a[k][0]>0) a[k][0]=0; if (a[k][0]<wg-ws) a[k][0]=wg-ws;
+          a[k][2].style.left=a[k][0]+'px'; a[k][10]+=l<0?(0-l):l;
+          if (e.type=='touchmove') $._(24)(e);
+        }
+      }
+    }
+    if (e.type=='mouseout' || e.type=='touchout') {
+      a[k][4]=a[k][9]=0; a[k][10]=99; // $._(24)(e);
+    }
+    photoGal_lr(k);
+  }
+}
+/* photoGal_gItem(e) => return [k, target, target.parentNode, g]; где: k - индекс активной галереи (-1 - ошибка), g - .pb_gal  */
+function photoGal_gItem(e) {
+  var i,t,p,g,gs,k=-1,a=a_gal,l=a.length;
+  e=e||window.event; t=e.target; p=t.parentNode;
+  if (t.className=='pb_gal_left' || t.className=='pb_gal_right') g=t.parentNode; /* p и g - .pg_gal */
+  if (t.className=='pb_gal_item') { g=p.parentNode; } /* t - pb_gal_item; p - .pb_gal_scroll; g - .pg_gal */
+  if (p.className=='pb_gal_item') { g=p.parentNode.parentNode; }  /* t - img; p - .pb_gal_item; g - .pg_gal */
+  if (!g) { a_galItems=[-1,0,0,0]; return a_galItems; }
+  for (i=0; i<l; i+=1) { if (g==a[i][1]) {k=i; i=l;} }
+  a_galItems=[k,t,p,g]; return a_galItems;
+}
+/* photoGal_lr() Управление видимостью элкментов прокрутки (слева и справа) для всех галерей и Full-режима */
+function photoGal_lr(n) {
+  var i,j,k, a, w=0, aa=a_gal, l=aa.length; n=n||0; if (l<1) return false;
+  k=$.qS('.pb_fgal'); if(k) {
+     $.qS('.pb_fgal_left',k).style.display = $.qS('.pb_fgal_lft',k).style.display = (v_galItem==0)?'none':'block';
+     $.qS('.pb_fgal_right',k).style.display = $.qS('.pb_fgal_rgt',k).style.display = (v_galItem==a_fgal[13].length-1)?'none':'block';
+  } else {
+    if(n<0||n>l-1)return false;
+    for (j=0; j<l; j+=1) {
+      i=(n<0)?j:n; a=aa[i]; $.qS('.pb_gal_left',a[1]).style.display=(a[0]==0)?'none':'block';
+      for(k=a[7].length-1;k>=0;k-=1)w+=a[7][k]; $.qS('.pb_gal_right',a[1]).style.display=(a[0]<(0-w+a[1].offsetWidth))?'none':'block';
+      if(i==n)j=l;
+    }
+  }
+}
+/* photoGal_full(e) переход в full-режим галереи (полнооконный/полноэкранный) */
+function photoGal_full(e,f) {
+  var i,w,h,wi,hi,t,p,g,gs,k,pi,tx='',a=a_gal; f=f||0;
+  e=e||window.event; i=f?a_galItems:photoGal_gItem(e); a_galItems=i; k=i[0]; t=i[1]; p=i[2]; g=i[3]; if (!g) return;
+  if (t.className=='pb_gal_item' || p.className=='pb_gal_item') {
+    if(a[k][9]==0 && (a[k][10]<5||a[k][10]==99)) {
+      a[k][10]=0; $.uEnv(); w=$.gCW(); h=$.gCH(); if(!f) $._(24)(e);
+      pi = (t.className=='pb_gal_item') ? t : (t.parentNode.className=='pb_gal_item' ? t.parentNode : 0); if(!pi) return;
+      p = $.qSA('.pb_gal_item',a[k][2]); l=p.length; a[k][17]=f?v_galItem:-1;
+      for (i=0; i<l; i+=1) {
+        tx+='<div class="pb_fgal_item" style="width:'+w+'px;height:'+h+'px;background-image:url(\''+$.qS('img',p[i]).src+'\')"></div>';
+        if(!f && pi==p[i]) { a[k][17]=i; }
+      } if(a[k][17]<0) return; v_galItem=a[k][17];
+      if (f) p=a[k][16]; else { a[k][15]=$.addLayer(0,'#000000',210,'hidden',1); p=$.D.createElement('div'); p.className='pb_fgal'; p.style.zIndex=210; }
+      p.innerHTML = '<div class="pb_fgal_scroll" style="width:'+(w*l)+'px;left:-'+parseInt((w*v_galItem),10)+'px;">'+tx+'</div><div class="pb_fgal_left""></div><div class="pb_fgal_right"></div><div class="pb_fgal_lft"></div><div class="pb_fgal_rgt"></div><div class="pb_fgal_close" onclick="photoGal_rest('+k+')"></div>';
+      if (!f) { $.B.appendChild(p); a[k][16]=p; } gs=$.qS('.pb_fgal_scroll');
+      a_fgal=[0-parseInt((w*v_galItem),10),g,gs,0,0,(w*l), 0,0,0, 0,0, 0,0, JSON.parse(JSON.stringify(a[k][13])), JSON.parse(JSON.stringify(a[k][14])), a[k][15], v_galItem, 0];
+      /* a_fgal - КОПИЯ a_gal[item], а не ссылка на a_gal[item] :
+      0 - текущий скролл в пикселях; 1 - ссылка на галерею (.pb_gal); 2 - ссылка на DIV скролл .pb_fgal_scroll; 3 - резерв;
+      4 - X в пикселях при mousedown/touchstart; 5 - width of scroll DIV pb_fgal_scroll, 6 7 8 - резерв;
+      9 - mousedown/touchstart, 10 - сумма смещение при mousemove/touchmove от стартового; 11 и 12 - резерв; 13 - width images, 14 - height images;
+      15 - ссылка на DIV layer (слой для full-режима), 16 - ссылка на DIV .pb_fgal; 17 - индекс текущего img для full-режима, 18 - desc animation pb_gfal_scroll */
+      $.EH.add($.qS('.pb_fgal_left'),'click',photoGal_fScroll,false); $.EH.add($.qS('.pb_fgal_right'),'click',photoGal_fScroll,false); if(!f) $.EH.add($.qS('.pb_fgal'),'mouseout',photoGal_fScroll,false);
+      $.EH.add($.qS('.pb_fgal_lft'),'click',photoGal_fScroll,false); $.EH.add($.qS('.pb_fgal_rgt'),'click',photoGal_fScroll,false);
+      $.EH.add(gs,'mousedown',photoGal_fScroll,false); $.EH.add(gs,'mouseup',photoGal_fScroll,false); $.EH.add(gs,'mousemove',photoGal_fScroll,false);
+      if ($.isTOUCH()) { $.EH.add(gs,'touchstart',photoGal_fScroll,false); $.EH.add(gs,'touchend',photoGal_fScroll,false); $.EH.add(gs,'touchmove',photoGal_fScroll,false); }
+      photoGal_lr(-1);
+    }
+  }
+}
+function photoGal_rest(k) { /* 0 - возврат из full-режима, -1 - прокрутка влевао, 1 - прокрутка вправо */
+    k=k||0; if(k<0||!a_gal[k])return; $.removeLayer(a_gal[k][15]); a_gal[k][16].parentNode.removeChild(a_gal[k][16]);
+}
+function photoGal_fScroll(e) {
+  var i,s,w,ws=0,k,l,a=a_fgal; e=e||window.event; ws=$.qS('.pb_fgal_scroll'); if(!ws)return false;
+  w=$.gCW(); h=$.gCH(); ws=ws.offsetWidth; s=a[0]; l=a[13].length-1; k=e.target.className; /* s - Величина скролла в активной галерее; l - количество картинок */
+  if (e.type=='click' && (k=='pb_fgal_left' || k=='pb_fgal_right' || k=='pb_fgal_lft' || k=='pb_fgal_rgt')) {
+    if (k=='pb_fgal_left' && v_galItem>0) { v_galItem=a[17]=v_galItem-1; }
+    if (k=='pb_fgal_right' && v_galItem<l) { v_galItem=a[17]=v_galItem+1; }
+    if (k=='pb_fgal_lft' && v_galItem>0) { v_galItem=a[17]=0; }
+    if (k=='pb_fgal_rgt' && v_galItem<l) { v_galItem=a[17]=l; }
+    photoGal_fScroll_a(w,s,a);
+  }
+  if ((e.type=='touchstart'&&e.targetTouches.length==1) || e.type=='mousedown') {
+    a[4]=$.gMX(); a[10]=0; if (e.type=='mousedown') $._(24)(e);
+  }
+  if ((e.type=='touchmove'&&e.targetTouches.length==1) || e.type=='mousemove') {
+    if (a[4]!=0) {
+      k=$.gMX()-a[4]; if(k!=0) {
+        a[4]+=k; a[0]+=k; if (a[0]>0) a[0]=0; if (a[0]<w-ws) a[0]=w-ws;
+        a[2].style.left=a[0]+'px'; a[10]+=k;
+        if (e.type=='touchmove') $._(24)(e);
+      }
+    }
+  }
+  if (e.type=='touchend' || e.type=='mouseup' || e.type=='mouseout' || e.type=='touchout') {
+    a[4]=0; if(a[10]<-99)v_galItem+=1; if(a[10]>99)v_galItem-=1; if(v_galItem<0)v_galItem=0; if(v_galItem>l)v_galItem=l; a[17]=v_galItem; a[10]=0;
+    photoGal_fScroll_a(w,s,a);
+  }
+  photoGal_lr(-1);
+}
+function photoGal_fScroll_a(w,s,a) {
+    var n=null; a[0]=0-parseInt((w*v_galItem),10); if(s!=a[0]) { $.aClear(a[18]); a[18]=$.animate(a[2],200,20,[s,n,n,n],[a[0],n,n,n]); }
+}

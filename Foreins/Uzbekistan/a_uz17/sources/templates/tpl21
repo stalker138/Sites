@@ -1,0 +1,3 @@
+<?php
+include_once $pb_root."auto/functions.php";
+?>

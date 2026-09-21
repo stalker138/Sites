@@ -1,0 +1,23 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим»: Ташкент и Республика Узбекистан.</span></p>
+
+<div itemscope itemtype="http://schema.org/Organization" >
+<h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+<table><tbody>
+<tr><td style="width:150px;"><span>Руководитель</span>:</td><td>Толибжонов Олимжон Саиджонович</td></tr>
+<tr><td><span>Адрес</span>:</td><td itemprop="address">г. Ташкент, Яккасарайский р-н, ул. Кичик Бешёгоч, 104-13Б</td></tr>
+<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+998881119998">+998 88 111 99 98</a></div><div itemprop="telephone"><a href="tel:+998981111213">+998 98 111 12 13</a></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div></td></tr>
+</tbody></table>
+</div>
+
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<img src="/img/css/pismo.png" alt="" onclick="f_swtch(4)" style="cursor:pointer"/>
+
+<div class="pb_hidden">
+ <span id="spIDmail1">im.ruuzbekistan@teoh</span>
+</div>
