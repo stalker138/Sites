@@ -1,0 +1,178 @@
+<div id="mobilmainpage">
+<div class="mymain">   
+
+<!--<center><h2 style="font-weight: bold">ТЕКУЩИЕ ОБЪЕКТЫ</h2><br></center>-->
+ 
+ </div>
+<div id="morebtn" class="note" style="height: 30px;  "> 
+<div  style="height: 100%; width: 100%; text-align: center; line-height: 30px; font-weight: bolder; cursor: pointer;">ЕЩЕ РАБОТЫ ...</div>
+</div>
+</div>
+  <script type="text/javascript" src="/admobj/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    function add_slick(){
+      $('.foto-class').slick(getSliderSettings());
+        //$('a.grouped_elements').fancybox();
+        $.each($('.fset'), function(index, value) { 
+                var aCl = $( this ).find('a[class^=\"group\"]').first();
+                //alert($(this).attr("class"));
+                var cl = aCl.attr("class");
+//                var des = aCl.next(".descr").html();
+                //alert(cl);
+                //$('.'+cl).fancybox();
+                $('.'+cl).fancybox({
+                    openEffect  : 'none',
+                    closeEffect : 'none',
+                    prevEffect : 'fade',
+                    nextEffect : 'fade',
+                    loop : false,
+                    closeBtn  : true,
+                    arrows: true,
+                    //title : des,
+                    helpers:  {
+                        title : {
+                            type : 'inside'
+                        },
+                        buttons : {
+                        }
+
+                    },
+                    beforeLoad: function() {
+                        var t = $(this.element).attr('caption');
+                        this.title = t;
+                       },                    
+                    afterShow: function() {
+                        $('.fancybox-wrap').swipe({
+                            swipe : function(event, direction) {
+                                if (direction === 'left' || direction === 'up') {
+                                    $.fancybox.prev( direction );
+                                } else {
+                                    $.fancybox.next( direction );
+                                }
+                            }
+                        });
+
+                    },
+
+                    afterLoad : function() {
+                    }
+                });
+            
+            
+            
+            //return false;
+            });
+    }
+  
+  function getSliderSettings(){
+  return {
+        dots: false,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 999,
+              settings: {
+                arrows: false,
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 370,
+              settings: {
+                arrows: false,
+                slidesToShow: 1
+              }
+            }
+          ]        
+  }
+}
+  
+    $(document).ready(function(){
+        
+       // var topelement;// = document.getElementsByClassName("fset");
+        // var els = document.getElementsByClassName('fset');
+        // for(var i in els){
+        // topelement = els[i].getBoundingClientRect().top;
+        // break;
+        // }      
+       //var leftelement = $("#leftblock").offset().left;
+        // $('#leftblock').offset({top:topelement, left:0});
+        $.ajax({
+             url: "getimg.php",
+            type: "post", 
+            data: {
+               "fst":   0,
+               "amt":    5
+            },
+            success: function(data){
+                $('.mymain').append(data);
+                add_slick();
+            }
+       });
+        
+   // var block = true;
+    var page = 5;
+   // $(window).scroll(function () {
+      // if ($(window).height() + $(window).scrollTop() >= $(document).height() && block) {
+         // block = false;
+         // $.ajax({
+                // type: 'post',
+                // url: 'getimg.php' ,
+                    // data: { // что отправляем
+                        // "fst":   page,
+                        // "amt":    3
+                    // },
+                // success: function (list) {
+            // if (list == '') {
+               // block = false;
+            // } else {
+               // $('.foto-class').slick('unslick');    
+               // $('.mymain').append(list);
+               // page = page + 4;
+
+               // setTimeout(function(){ $('.foto-class').slick(getSliderSettings()); }, 10);
+               
+               
+               // block = true;
+            // }
+                // }
+            // });
+        // }
+   // });         
+        
+       $('#morebtn').click(function(){
+        var fst = 6;
+         var block = false;
+         $.ajax({
+                type: 'post',
+                url: 'getimg.php' ,
+                    data: { 
+                        "fst":   page,
+                        "amt":    3
+                    },
+                success: function (list) {
+            if (list == '') {
+               block = false;
+            } else {
+               $('.foto-class').slick('unslick');    
+               $('.mymain').append(list);
+               page = page + 3;
+                add_slick();
+               //$('.foto-class').slick(getSliderSettings());
+               
+               
+               block = true;
+            }
+                }
+            });
+             
+        });     
+        
+        
+        
+        
+  });
+  </script>

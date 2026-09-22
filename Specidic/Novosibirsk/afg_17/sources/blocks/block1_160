@@ -1,0 +1,87 @@
+<?php
+include('/admobj/lock.php');
+?>
+<head>
+<link rel="stylesheet" type="text/css" href="/admobj/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="/admobj/themes/icon.css">
+<script type="text/javascript" src="/admobj/js/jquery.min.js"></script>
+<script type="text/javascript" src="/admobj/js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="http://www.jeasyui.com/easyui/datagrid-detailview.js"></script>
+<script type="text/javascript" src="/admobj/js/tab.js"></script>
+</head>
+<body>
+<table id="myobjects"></table>
+<div id="w" class="easyui-window" title="Данные объекта" data-options="modal:true,closed:true,iconCls:'icon-save'" style="width:550px;height:600px;padding:10px;">
+        <form id="ff" method="post">
+            <div style="margin-bottom:15px">
+                <input id="name" class="easyui-textbox" name="name" style="width:95%" data-options="label:'Название:',required:true">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="adres" class="easyui-textbox" name="adres" style="width:95%" data-options="label:'Адрес:',required:true">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="typeob" name="typeob" style="width:95%" data-options="label:'Тип помещения:',required:true">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="area" name="area" type="text" style="width:45%;" class="easyui-numberbox" value="" data-options="min:0,label:'Площадь:',required:true">
+                <input id="year" name="year"type="text" style="width:45%;" class="easyui-numberbox" value="" data-options="min:0,label:'Год:',required:true">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="typepokr1" name="typepokr1" style="width:95%" data-options="label:'Тип покрытия:',required:true">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="typepokr2" name="typepokr2" style="width:95%" data-options="label:'Тип покрытия:'">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="typepokr3" name="typepokr3" style="width:95%" data-options="label:'Тип покрытия:'">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="typepokr4" name="typepokr4" style="width:95%" data-options="label:'Тип покрытия:'">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="typepokr5" name="typepokr5" style="width:95%" data-options="label:'Тип покрытия:'">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="latitude" class="easyui-numberbox" name="latitude" style="width:45%" data-options="label:'Широта:',min:0,precision:6">
+                <input id="longitude" class="easyui-numberbox" name="longitude" style="width:45%" data-options="label:'Долгота:',min:0,precision:6">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="descr" class="easyui-textbox" name="descr" multiline="true" style="width:95%;height:60px;" data-options="label:'Описание:'">
+                <input id="edit" type="hidden">
+                <input id="objid" type="hidden">
+            </div>
+            <div style="margin-bottom:15px">
+                <input id="maincheck" name="maincheck" type="checkbox">Сохранить на главном сайте
+            </div>
+            <div style="margin-bottom:15px;text-align:center;padding:5px 0">
+                <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()" style="width:80px"> Сохранить </a>
+            </div>
+        </form>    
+</div>
+<div id="foto" class="easyui-window" title="Фото объекта" data-options="modal:true,closed:true,iconCls:'icon-save'" style="width:400px;height:300px;padding:10px;">
+        <form id="fffoto" action="add_foto.php" ENCTYPE="multipart/form-data"  method="post">
+            <div style="margin-bottom:20px">
+                <input name="myfoto" id="myfoto" class="easyui-filebox" label="Фото:" labelPosition="top" data-options="prompt:'Выберите фото...',required:true,buttonText: 'Выберите фото'" style="width:100%">
+            </div>
+            <div style="margin-bottom:20px">
+                <input id="fotodescr" name="fotodescr" class="easyui-textbox" style="width:100%" data-options="label:'Описание:',required:true">
+            </div>
+            <div style="margin-bottom:20px">
+                <input id="datepic" class="easyui-datebox" name="datepic" style="width:60%;" data-options="label:'Дата фото:',required:true,formatter:myformatter,parser:myparser">
+            </div>
+            <div style="margin-bottom:20px;text-align:center;padding:5px 0">
+                <input type="submit" value="Загрузить"></input>
+            </div>
+            <input id="editfoto" name="editfoto"  value="" type="hidden">
+            <input id="objidfoto" name="objidfoto" value="" type="hidden">
+            <input id="fotoid" name="fotoid"  value ="" type="hidden">
+            <input id="gridid" name="gridid" value="" type="hidden">
+        </form>    
+</div>
+
+<?
+
+
+
+?>
+</body>

@@ -1,0 +1,11 @@
+<?php
+//include_once $pb_root."auto/mtr.php";
+//include_once $pb_root."auto/cvr.php";
+//include_once $pb_root."auto/lmtr.php";
+include_once $pb_root."auto/functions.php";
+$calc=1; // Ссылки на калькулятор
+$is_price=1; // Наличие прайс-листа
+
+$is_basket=0; /* Заказ с тарой и корзина (0 - выключены) */
+$is_bcolor=0; /* Колеровки материалов в заказе (0 - выключены) */
+?>

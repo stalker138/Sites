@@ -1,0 +1,13 @@
+/* Заголовки вкладок */
+#mtr_tabs { position:relative; max-width:757px; background:#004f92; border-top:solid 1px #004f92; }
+#mtr_tabs div { cursor:pointer; position:relative; position:relative; float:left; padding:2px 0 1px 0; width:186px; height:20px; text-align:center; border-right:solid 1px #ffffff; border-bottom:solid 1px #ffffff; }
+#mtr_tabs p { position:relative; display:inline-block; margin:0 auto; font-weight:bold; font-size:14px; color:#ffffff; border-bottom:dotted 1px #ffffff; }
+#mtr_tabs div:hover p { color:#ffff00; border-bottom:none; } #mtr_tabs .active:hover p { color:#004f92; } #mtr_tabs .active { background:#ffffff; } #mtr_tabs .active p { color:#004f92; }
+#mtr_tabs #mtr_tabs_0 { clear:both; float:none; padding:0; height:0; border:none; } #mtr_tabs #mtr_tabs_4 { border-right:none; }
+
+/* Вкладки */
+#mtr_body_1,#mtr_body_2,#mtr_body_3,#mtr_body_4 { position:relative; display:none; } #mtr_body .active { display:block; }
+
+@media screen and (max-width:860px) {
+#mtr_tabs { padding:5px 5px 6px 5px; } #mtr_tabs div { margin:5px; padding:3px 0 0 0; width:150px; border:solid 1px #ffffff; } #mtr_tabs #mtr_tabs_4 { border-right:solid 1px #ffffff; }
+}

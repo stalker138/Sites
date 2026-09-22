@@ -1,0 +1,12 @@
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block3_23*}
+{*tpl8*}{*tpl4*}
+<script type="text/javascript">
+{*text0_31*}
+
+var pi = <?php print $pb_page_number ?>;
+{*text2_14*}
+
+{*text0_32*}
+</script>
+</body></html>

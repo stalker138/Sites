@@ -1,0 +1,92 @@
+<?php
+$countView = (int)$_POST['amt'];  // количество записей, получаемых за один раз
+$startIndex = (int)$_POST['fst'];
+    $db = new SQLite3($pb_root."admobj/objects.db");
+    $return=Array();
+    $sql="SELECT o.id as id, 
+                 o.name as name,
+                 o.type_id as type_id,
+                 o.num as num,
+                 o.area as area, 
+                 o.year as year, 
+                 o.adres as adres, 
+                 o.latitude as latitude, 
+                 o.longitude as longitude, 
+                 o.descr as descr, 
+                 MAX(j.id) as jid,
+                 t.name as typeob,
+                 p1.name as typepokr1, 
+                 p2.name as typepokr2, 
+                 p3.name as typepokr3, 
+                 p4.name as typepokr4, 
+                 p5.name as typepokr5,
+                 p1.hrf as href1, 
+                 p2.hrf as href2, 
+                 p3.hrf as href3, 
+                 p4.hrf as href4, 
+                 p5.hrf as href5 
+                 FROM myobjects as o 
+    Left Join jobs as j on j.obj=o.id             
+    Left Join typeobj as t on t.id=o.type_id 
+    Left Join typepokr as p1 on p1.id=o.type_pokr1 
+    Left Join typepokr as p2 on p2.id=o.type_pokr2 
+    Left Join typepokr as p3 on p3.id=o.type_pokr3 
+    Left Join typepokr as p4 on p4.id=o.type_pokr4 
+    Left Join typepokr as p5 on p5.id=o.type_pokr5     
+    GROUP BY o.id
+    ORDER BY MAX(j.id) Desc LIMIT ".$countView." OFFSET ".$startIndex;
+    $result = $db->query($sql);
+    if($result!=''){
+        while($row = $result->fetchArray(SQLITE3_ASSOC))
+        {
+            $return[]=$row;
+        }
+    }
+    //if($startIndex!=0) $startIndex--;
+   foreach($return as $row){
+        echo "
+          <fieldset class='fset' style=' min-width: calc(100% - 100px);'>
+          <legend style='text-align: center; font-weight: bolder;'> #".++$startIndex.". ".$row['name']." </legend>        
+        ";
+        echo "<div class='obj note'>";
+        echo "<div id='hdr' class='hdr'> Описание объекта: </div>";    
+        echo "<div>Площадь: ".$row['area']." м2<br>Адрес: ".$row['adres']."</div><div class='hdr'>Тип пола и покрытия:</div>";
+        if($row['typepokr1']==""){ echo "<br>"; }
+            else { echo "1. <a class='' href='".$row['href1']."'>".$row['typepokr1']."</a><br>"; }
+        if($row['typepokr2']==""){ echo "<br>"; }
+            else { echo "2. <a class='' href='".$row['href2']."'>".$row['typepokr2']."</a><br>"; }
+        if($row['typepokr3']==""){ echo "<br>"; }
+            else { echo "3. <a class='' href='".$row['href3']."'>".$row['typepokr3']."</a><br>"; }
+        if($row['typepokr4']==""){ echo "<br>"; }
+            else { echo "4. <a class='' href='".$row['href4']."'>".$row['typepokr4']."</a><br>"; }
+        if($row['typepokr5']==""){ echo "<br>"; }
+            else { echo "5. <a class='' href='".$row['href5']."'>".$row['typepokr5']."</a><br>"; }
+        echo "</div>";
+        echo "<div id='cor".$row['id']."' class='fot note foto-class'>";
+        $ret=Array();
+        $sql="SELECT o.id as id, 
+                     p.path as pict,
+                     o.descr as descr,
+                     o.num as num,
+                     o.dateofjob as datepic 
+                     FROM jobs as o 
+        LEFT JOIN pics as p on p.id=o.pict              
+        WHERE o.obj = ".$row['id']."
+        ORDER BY o.num Desc";
+        $res = $db->query($sql);
+        if($res!=''){
+            while($rowpic = $res->fetchArray(SQLITE3_ASSOC))
+            {
+                $ret[]=$rowpic;
+            }
+        }
+        foreach($ret as $rowp){
+            echo "<div><a class='group".$row['id']."' rel='group1' caption='<strong>".$rowp["datepic"]."</strong><br>".$rowp["descr"]."' href='".str_replace('..','/admobj',$rowp["pict"])."'><img src='".str_replace('..','/admobj',$rowp["pict"])."' width='120' height='120' 
+            /></a><div class='descr'><strong>".$rowp["datepic"]."</strong><br>".$rowp["descr"]."</div></div>
+            ";
+        }
+        echo "</div></fieldset>";
+        echo "<div class='clearBoth'></div>";
+    } 
+   
+?>

@@ -1,0 +1,18 @@
+<?php
+// include_once $pb_root."auto/inc_counters.php";
+?>
+<noscript><div>
+<img src="https://mc.yandex.ru/watch/22962496" style="position:absolute; left:-9999px;" alt="" />
+<img src="https://mc.yandex.ru/watch/53184919" style="position:absolute; left:-9999px;" alt="" />
+<img src="https://mc.yandex.ru/watch/100278843" style="position:absolute; left:-9999px;" alt="" />
+</div></noscript>
+<div id="support_block"><div id="swtch1" onclick="f_swtch(1)">Пожелания, замечания</div><div id="swtch2" onclick="f_swtch(4)">Задать вопрос</div></div>
+<?php
+if($pb_page!=1010 && ($pb_page<3000 || $pb_page>4000)) {
+  print '<script src="/cssjs/asw_pb_0071_.js"></script><script src="/cssjs/js_004.js"></script>';
+}
+?>
+<script>{*text0_08*}</script>
+<div id="pb_page" class="pb_hidden"><?php print (isset($pb_page) && $pb_page>50) ? $pb_page : $pb_special; ?></div>
+{*text0_12*}
+

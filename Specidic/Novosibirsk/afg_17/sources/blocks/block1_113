@@ -1,0 +1,22 @@
+<div  id="mobil_logo">
+<div  id="mobil_logo_inner" style="display:table;">
+<div style="display:table-cell;width:50%;">
+<img style="width:100%;" src="http://www.fg-partner.ru/img/css/elakor_logo.png">
+</div> 
+<div  style="display:none;width:50%;padding-right:5px;vertical-align: middle;background-color:#f2f2f2;">
+<a style="height:40px;margin-top: -15px;" href="tel:+73833474749" id="teohim" title="Финансовая группа ПАРТНЁР"><span class="first">Новосибирск</span><span class="second">8 (383) 347-47-49</span></a>
+</div>
+<a href="tel:+73833474749" id="popup__toggle">
+<div class="circlephone" style="transform-origin: center;"></div>
+<div class="circle-fill" style="transform-origin: center;"></div>
+<div class="img-circle" style="transform-origin: center;">
+<div class="img-circleblock" style="transform-origin: center;"></div>
+</div>
+</a>
+
+
+</div>
+<br>
+<div class="note" style="background-color: #ffba2b; padding:5px;vertical-align: middle; text-align: center"><span><strong>Производитель ПРОМЫШЛЕННЫХ полов с 1996 года.</strong></span></div>
+<br>
+</div>

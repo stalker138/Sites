@@ -1,0 +1,30 @@
+<h1>Наши объекты</h1>
+
+<h2>Пропитка глубокого проникновения</h2>
+
+<div>
+<div id="46" class="lobj">
+<p>Выполнена конструкция, тип пола:</p>
+<p>1. <l1 id="11">Бетонные полы</l1><br>
+2. <l1 id="46">Пропитка глубокого проникновения</l1><br>
+3. Покрытия с чипсами</p>
+</ol>
+<p style="float:left;"><span>Площадь:</span></p><p style="float:right;"><span>4730 м²</span></p>
+<div class="px0"></div>
+<p>Адрес:</p>
+<div class="px5"></div>
+</div>
+<img class="pb_ismall" style="float:left; margin:10px 10px 0 0; width:100px; height:100px" src="/img/obj/pgp1_s.jpg" onclick="fpb_zoomImg(this,'/img/obj/pgp1.jpg',200,25,449,800,'',-28);" title="" alt=""/>
+<img class="pb_ismall" style="float:left; margin:10px 10px 0 0; width:100px; height:100px" src="/img/obj/pgp2_s.jpg" onclick="fpb_zoomImg(this,'/img/obj/pgp2.jpg',200,25,449,800,'',-28);" title="" alt=""/>
+<img class="pb_ismall" style="float:left; margin:10px 10px 0 0; width:100px; height:100px" src="/img/obj/pgp3_s.jpg" onclick="fpb_zoomImg(this,'/img/obj/pgp3.jpg',200,25,450,800,'',-28);" title="" alt=""/>
+<img class="pb_ismall" style="float:left; margin:10px 10px 0 0; width:100px; height:100px" src="/img/obj/pgp4_s.jpg" onclick="fpb_zoomImg(this,'/img/obj/pgp4.jpg',200,25,450,800,'',-28);" title="" alt=""/>
+</div>
+
+<h2></h2>
+
+<div class="pb_hidden">
+<img src="/img/obj/pgp1.jpg" alt=""/>
+<img src="/img/obj/pgp2.jpg" alt=""/>
+<img src="/img/obj/pgp3.jpg" alt=""/>
+<img src="/img/obj/pgp4.jpg" alt=""/>
+</div>

@@ -1,0 +1,7 @@
+<?php
+$smb[0] = array("option"=>"200", "mb"=>"15");
+$smb[1] = array("option"=>"250", "mb"=>"20");
+$smb[2] = array("option"=>"300", "mb"=>"22.5", "sel"=>1);
+$smb[3] = array("option"=>"350", "mb"=>"25");
+?>
+<?php include $pb_root."inc/cin.php"; // page0_26 - Для РАСЧЁТОВ - общие блоки и переменные (HTML и входные PHP-параметры) ?>

@@ -1,0 +1,22 @@
+  <link rel="stylesheet" type="text/css" href="/admobj/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/admobj/slick/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="/admobj/fancybox/jquery.fancybox.css" media="screen" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.0.0.js"></script>
+    <script type="text/javascript" src="/admobj/fancybox/jquery.fancybox.pack.js"></script> 
+    <script type="text/javascript" src="/admobj/fancybox/jquery.touchSwipe.min.js"></script>
+
+<script>
+
+window.onscroll = function() {
+  var pageY = window.pageYOffset || document.documentElement.scrollTop;
+  var innerHeight = document.documentElement.clientHeight;
+if(pageY > 140) document.getElementById('leftblock').style="top:0px;";
+else document.getElementById('leftblock').style="top:"+(140-pageY).toString()+"px;";
+  console.log(pageY);
+//console.log(innerHeight);
+//console.log(document.getElementById('leftblock').style.top);
+return false;
+}
+
+</script>

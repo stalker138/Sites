@@ -1,0 +1,8 @@
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}
+<?php 
+$ndx_mtr=161;
+fmtr_og($ndx_mtr); 
+?>
+{*tpl3*}</head><body>{*tpl7*}
+{*block1_48*}
+{*tpl8*}{*tpl4*}</body></html>

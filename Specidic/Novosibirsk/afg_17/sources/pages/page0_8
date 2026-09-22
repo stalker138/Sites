@@ -1,0 +1,70 @@
+</div><div class="shiftfooter"></div>
+<div id="header">
+<header>
+<l1 id="1" class="elakor_logo" title="Промышленные полы Элакор® - применяются там, где необходимы покрытия особых свойств"></l1>
+<!--<div id="contacts"><div>Промышленные полы</div><div><p>Элакор<sup>®</sup></p></div><p>полы, которые применяются там,<br>где необходимы покрытия особых свойств.</p></div>-->
+<l1 id="1" id="teohim" style="top:128px;" title="Финансовая группа ПАРТНЁР"><span class="first">Новосибирск</span><span class="second">+7 (383) 347-47-49<br>+7 (800) 201-68-91</span></l1>
+<div id="hdr_teo">
+ <!-- <div id="tm_left">ТЭОХИМ</div>-->
+  <div id="tm_right">+7 (800) 201-68-91<br>Омск<!--br>+7 (381) 251-45-01--><br><a href="mailto:omsk@teohim.ru">omsk@teohim.ru</a></div>
+  <div id="tm_right">+7 (383) 347-47-49<br>Томск<!--br>+7 (382) 277-02-67--><br><a href="mailto:tomsk@teohim.ru">tomsk@teohim.ru</a></div>
+  <div id="tm_right"><br>Новосибирск<!--br>+7 (383) 347-47-49--><br><a href="mailto:nsk@teohim.ru">nsk@teohim.ru</a></div>
+</div>
+</header>
+</div>
+<div id="leftblock"><div class="px50"></div>
+<div id="ltmenu"><?php include_once $pb_root."auto/inc_menu_lt.php"; ?></div><div class="px0"></div>
+<a href="http://www.teohim.ru/objlist.php?pos=11" id="aobjlist" target="_blank" title="Объекты на карте с возможностью выбора региона, типа объекта и типа покрытия">Выполненные<br>объекты на карте</a>
+<div class="px0"></div>
+<div id="leftmenu"><aside>{*tpl9*}</aside></div><!--<div class="px10"></div><div class="callback" onclick="f_swtch(4);return false;">Обратный звонок</div><div class="px10"></div>-->
+<div id="ltblock" onclick="f_ltblock()"></div><l1 id="6" id="conts"></l1><l1 id="3" id="prs"></l1><l1 id="1" id="home"></l1><div class="px0"></div>
+</div>
+</div>
+<div id="footer"><footer><div id="fcontent"><div id="fmenu"></div>
+  <div id="fcount" style="text-align:right"></div>
+  <?php if ($pb_page>50) { ?><div style="position:absolute;right:5px;top:30px"><l0 id="30">Политика конфиденциальности</l0></div><?php } ?>
+
+<?php if (1==1) { ?>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(53184919, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+   ym(22962496, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+
+   ym(100278843, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<!-- /Yandex.Metrika counter -->
+
+<?php } ?>
+<?php
+$exlude_pages = array(1001,1012, 1121, 1011, 1012, 1013, 1015, 1016, 1019, 1030, 1031, 1032, 1035, 1036, 1039, 1096, 1081, 1041, 1047, 1046, 1051, 1054, 1061, 1064, 1123, 1111, 1062, 1091, 1094, 1068, 1042, 1105, 1070, 1024, 1017, 1103, 1104, 1112, 1108, 1021, 1040, 1085, 1077, 1076, 1014, 1025, 1106, 1027);
+if (!in_array($pb_page, $exlude_pages)) { ?>
+
+<div id="idnalivnoj">Все <a href="http://www.teohim.ru/nalivnye/">наливные полимерные полы</a></div>
+
+<?php } ?>
+  <?php if ($pb_page>1000) { ?><div style="position:absolute;right:5px;top:30px"><l0 id="30">Политика конфиденциальности</l0></div><?php } ?>
+
+</div></footer>
+</div>
+<div id="topline"></div>

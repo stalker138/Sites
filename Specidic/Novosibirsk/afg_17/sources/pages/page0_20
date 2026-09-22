@@ -1,0 +1,174 @@
+<?php
+// 2013 | asws | version 00.00 2013 for fg-partner.ru
+if (empty($_POST['mode']) || empty($_POST['login']) || empty($_POST['pass'])) { print 'error'; exit; }
+else { $Asw_mode=(int)$_POST['mode']; $Asw_login=(int)$_POST['login']; $Asw_pass=(int)$_POST['pass']; }
+
+if ($Asw_mode<1 || $Asw_mode>4 || $Asw_login<1 || $Asw_login>4 || $Asw_pass<1 || $Asw_pass>4) { print '0'; exit; }
+
+// используется служебный файл /pb_captcha.php для хранения даты-времени, IP клиента, капчи
+$pb_file_captcha=$pb_root.'auto/pb_captcha.php';
+if (file_exists($pb_file_captcha)) $pb_txt=@file_get_contents($pb_file_captcha); else $pb_txt='<?php'.chr(10).'print "hello"; exit; $t="'.chr(10).'"?>'.chr(10);
+
+if ($Asw_mode==1) $headtext='<span style="color:#000000; font-size:12px; font-style:italic; letter-spacing:1px;">Пожелания, замечания, сообщения об ошибке</span>';
+if ($Asw_mode==2 || $Asw_mode==3) $headtext='<span style="color:#000000; font-size:12px; font-style:italic; letter-spacing:1px;">Пожалуйста, добавьте к заказу информацию</span>';
+if ($Asw_mode==4) $headtext='<span style="color:#000000; font-size:12px; font-style:italic; letter-spacing:1px;">Задать вопрос</span>';
+$mess='Введите код на картинке'; $compl=0;
+$style_error='background-color:#ffeaea;';
+$text1=''; $text2=''; $text3=''; $text4=''; $texta=''; $mess1=''; $mess2=''; $mess3=''; $messa=''; $messk=''; $zlist=''; $zrlist=''; $text='';
+
+if (!empty($_POST['hcaptcha'])) {
+    if (!empty($_POST['text1'])) $text1=htmlspecialchars(stripslashes(trim($_POST['text1']))); else $mess1=$style_error;
+    if (!empty($_POST['text2'])) $text2=htmlspecialchars(stripslashes(trim($_POST['text2']))); else $mess2=$style_error;
+  if ($Asw_mode==1 || $Asw_mode==4) {
+    if (!empty($_POST['texta'])) $texta=htmlspecialchars(stripslashes(trim($_POST['texta']))); else $messa=$style_error;
+  } else {
+    if (!empty($_POST['text3'])) $text3=htmlspecialchars(stripslashes(trim($_POST['text3'])));
+    if (!empty($_POST['text4'])) $text4=htmlspecialchars(stripslashes(trim($_POST['text4'])));
+    if (!empty($_POST['texta'])) $texta=htmlspecialchars(stripslashes(trim($_POST['texta'])));
+    if (!empty($_POST['zlist'])) $zlist=stripslashes(trim($_POST['zlist']));
+    if (!empty($_POST['zrlist'])) $zrlist=stripslashes(trim($_POST['zrlist']));
+    if (!empty($text3)) {
+        $mess3 ='/^[a-z0-9!#$%&*+-=?^_`{|}~]+(\.[a-z0-9!#$%&*+-=?^_`{|}~]+)*';
+        $mess3.='@([-a-z0-9]+\.)+([a-z]{2,3}';
+        $mess3.='|info|arpa|aero|coop|name|museum|mobi)$/ix';
+        if (preg_match($mess3, $text3)) $mess3=''; else $mess3=$style_error; $text3=htmlspecialchars($text3);
+    }
+  }
+    $pb_captcha=trim(strtolower($_POST['captcha'])); if (empty($pb_captcha)) $pb_captcha='error';
+    $pb_seek=chr(10).$_POST['hcaptcha'].chr(9).$_SERVER['REMOTE_ADDR'].chr(9).$pb_captcha;
+    $messk=$style_error; $pb_pos=strpos($pb_txt,$pb_seek);
+    $postmail='nsk@teohim.ru';
+    $crlf=chr(13).chr(10);
+    if ($pb_pos>0) {
+      if ($Asw_mode==1 || $Asw_mode==4) {
+        if (!empty($text1) && !empty($texta)) {
+          $zlist=($Asw_mode==1)?' Сообщение об ошибке с fg-partner.ru:':' Вопрос с fg-partner.ru:';
+          $text=date("Y-m-d").' '.date("H:i:s").$zlist.$crlf;
+          if ($Asw_mode==1){
+            $text.='1. Автор сообщения : '.$text1.$crlf;
+            $text.='2. URL             : '.$text2.$crlf;
+            $text.='3. Сообщение       :'.$crlf;
+          } else {
+            $text.='1. Имя        : '.$text1.$crlf;
+            $text.='2. Телефон    : '.$text2.$crlf;
+            $text.='3. Вопрос :'.$crlf;
+          }
+            $texta=preg_replace('/\r/','',$texta);
+            $texta=preg_replace('/\n\n\n\n\n\n\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n/',chr(10),$texta);
+
+            $text.=wordwrap($texta,100,"\n",1).$crlf;
+            $text=preg_replace('/\t/','    ',$text);
+            $text=preg_replace('/\&quot\;/','"',$text);
+            mail($postmail,date("Y-m-d").' '.date("H:i:s").$zlist,$text,"From: message@fg-partner.ru\nContent-Type: text/plain; charset=UTF-8");
+            mail('prog1@bk.ru',date("Y-m-d").' '.date("H:i:s").$zlist,$text,"From: message@fg-partner.ru\nContent-Type: text/plain; charset=UTF-8");
+            $pb_pos1=strpos($pb_txt,chr(10),$pb_pos+1); $pb_txt=substr($pb_txt,0,$pb_pos).substr($pb_txt,$pb_pos1);
+            $headtext='<span style="font-weight:bold;color:#000080">'.(($Asw_mode==1) ? 'Сообщение отправлено' : 'Вопрос отправлен').'.<br><br>Спасибо.</span>';
+            $text1=''; $text2=''; $text3=''; $text4=''; $texta=''; $mess1=''; $mess2=''; $mess3=''; $mess4=''; $messa=''; $messk=''; $compl=1;
+        }
+      } else {
+        if (!empty($text1) && !empty($text2) && empty($mess1) && empty($mess2)) {
+            if ($zlist>' ' || $zrlist>' ') {
+            // Отправка e-mail
+            $text=date("Y-m-d").' '.date("H:i:s").' Новый заказ с fg-partner.ru:<br>'.$crlf;
+            $text.='1. Заказчик, контактное лицо         : '.$text1.'<br>'.$crlf;
+            $text.='2. Контактный телефон                : '.$text2.'<br>'.$crlf;
+            $text.='3. Почта (e-mail)                    : '.$text3.'<br>'.$crlf;
+            $text.='4. Заказчик, наименование, реквизиты : '.$text4.'<br>'.$crlf;
+            $text.='5. Примечание к заказу               :<br>'.$crlf;
+            $texta=preg_replace('/\r/','',$texta);
+            $texta=preg_replace('/\n\n\n\n\n\n\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n\n/',chr(10),$texta);
+            $texta=preg_replace('/\n\n\n/',chr(10),$texta);
+
+            $text.=wordwrap($texta,100,"\n",1).$crlf;
+            $text=preg_replace('/\t/','    ',$text);
+
+            if ($zlist>' ' && $Asw_mode==2) $text.='<br>Заказанные материалы:<br><div style="width:800px;text-align:left"><table style="border:solid 1px #808080; padding:1px; text-align:right; border-collapse:collapse;"><tbody><tr><th>Наименование</th><th style="width:70px">Количество</th><th style="width:50px">Цена</th><th style="width:100px">Сумма</th></tr>'.$zlist.'</tbody></table></div>';
+
+            if ($zrlist>' ' && $Asw_mode==3) {
+            $text.='<br>Заказанные работы:<br><table><tbody>'; $text2='';
+            $pb_pos1=strpos($zrlist,'¡'); if ($pb_pos1>0) $text.='<tr><td style="text-align:left">Площадь, м.кв.</td><td>'.substr($zrlist,0,$pb_pos1).'</td></tr>'; $zrlist=substr($zrlist,$pb_pos1+2);
+            $pb_pos1=strpos($zrlist,'¡'); if ($pb_pos1>0) {
+            $text2=substr($zrlist,0,$pb_pos1); $zrlist=substr($zrlist,$pb_pos1+2); if ($text2>' ') $text2='<tr><td style="text-align:left">Цвет</td><td>'.$text2.'</td></tr>';
+            $text3=array(' ','цех','склад','гараж','другое'); $text4=(int)substr($zrlist,0,1); if ($text4>0) $text.='<tr><td style="text-align:left">Назначение помещения</td><td>'.$text3[$text4].'</td></tr>';
+            $text3=array(' ','пешеходные','тележки-«роклы»','погрузчики','другое'); $text4=(int)substr($zrlist,1,1); if ($text4>0) $text.='<tr><td style="text-align:left">Нагрузки</td><td>'.$text3[$text4].'</td></tr>';
+            $text3=array(' ','бетонная стяжка','пескоцементная стяжка','другое'); $text4=(int)substr($zrlist,2,1); if ($text4>0) $text.='<tr><td style="text-align:left">Поверхность</td><td>'.$text3[$text4].'</td></tr>';
+            $text3=array(' ','М100 (В7,5)','М150 (В12,5)','М200 (В15)','М250 (В20)','М300 (В22,5)','М350 (В25)','М400 (В30)'); $text4=(int)substr($zrlist,3,1); if ($text4>0) $text.='<tr><td style="text-align:left">Марка М (Класс В)</td><td>'.$text3[$text4].'</td></tr>';
+            $text3=array(' ','пропитка','цветное покрытие','кварцнаполненное','наливной пол','другое'); $text4=(int)substr($zrlist,4,1); if ($text4>0) $text.='<tr><td style="text-align:left">Тип покрытия</td><td>'.$text3[$text4].'</td></tr>';
+            $text3=array(' ','пешеходные','тележки-«роклы»','погрузчики','другое'); $text4=(int)substr($zrlist,5,1); if ($text4>0) $text.='<tr><td style="text-align:left">Нагрузки</td><td>'.$text3[$text4].'</td></tr>'.$text2;
+            $text3=array(' ','глянцевый','полуглянцевый','полуматовый'); $text4=(int)substr($zrlist,6,1); if ($text4>0) $text.='<tr><td style="text-align:left">Блеск</td><td>'.$text3[$text4].'</td></tr>';
+            $text3=array(' ','да','нет'); $text4=(int)substr($zrlist,7,1); if ($text4>0) $text.='<tr><td style="text-align:left">Необходимость шпатлевания</td><td>'.$text3[$text4].'</td></tr>';
+            $pb_pos1=strpos($zrlist,'¡'); if ($pb_pos1>0) $text.='<tr><td style="text-align:left">Особенности</td><td>'.substr($zrlist,$pb_pos1+2).'</td></tr>';
+            }
+            $text.='</tbody></table>';
+            }
+
+//            mail($postmail,date("Y-m-d").' '.date("H:i:s").' Новый ЗАКАЗ с fg-partner.ru',$text,"From: zakaz@fg-partner.ru\nContent-Type: text/html; charset=UTF-8");
+//            mail('prog1@bk.ru',date("Y-m-d").' '.date("H:i:s").' Новый ЗАКАЗ с fg-partner.ru',$text,"From: zakaz@fg-partner.ru\nContent-Type: text/html; charset=UTF-8");
+            $pb_pos1=strpos($pb_txt,chr(10),$pb_pos+1); $pb_txt=substr($pb_txt,0,$pb_pos).substr($pb_txt,$pb_pos1);
+            $headtext='<span style="font-weight:bold;color:#000080">Заказ отправлен.<br><br>Не забудьте очистить заказ.<br><br>Спасибо.</span>';
+            $text1=''; $text2=''; $text3=''; $text4=''; $texta=''; $mess1=''; $mess2=''; $mess3=''; $mess4=''; $messa=''; $messk=''; $compl=1;
+          }
+        }
+      }
+    } else $mess = ($pb_captcha=='error') ? 'Код не был введен.' : 'Был введен неправильный код.';
+}
+?>
+<table style="width:100%; height:100%; font-family:arial; font-size:11px; font-weight:bold; color:#000000; text-align:left; border:none 0px;"><tbody>
+<tr><td colspan="3" style="text-align:center;"><div class="px5"></div><?php print ($compl==0) ? 'Используя данную форму, Вы соглашаетесь с <a href="/policies-privacy/" target="_blank">Политикой конфиденциальности</a>' : $headtext; ?><br><div class="px5"></div></td></tr>
+<?php if ($compl==0) { ?>
+<tr><td style="width:<?php print ($Asw_mode==4)?'150':'250'; ?>px;padding-left:10px;"><span style="color:#ff0000">*</span>&nbsp;1. <?php print (($Asw_mode==1) ? 'Ваше имя и телефон/e-mail' : ( ($Asw_mode==4) ? 'Контактное лицо' : 'Заказчик, контактное лицо')); ?> :</td>
+<td colspan="2"><input class="inpbox" type="text" id="Ftext1" maxlength="100" value="<?php print $text1; ?>" style="width:<?php print ($Asw_mode==4)?'400':'400'; ?>px; <?php print $mess1; ?>" onchange="f_ch_clb(1)" /></td></tr>
+<tr><td style="padding-left:10px;"><span style="color:#ff0000">*</span>&nbsp;2.  <?php print ($Asw_mode==1) ? 'URL страницы' : (($Asw_mode==4)?'e-mail / Телефон':'Телефон'); ?> :</td>
+<td colspan="2"><input class="inpbox" type="text" id="Ftext2" maxlength="100" value="<?php print $text2; ?>" style="width:<?php print ($Asw_mode==4)?'400':'400'; ?>px; <?php if ($Asw_mode!=1) print $mess2; ?>"<?php print ($Asw_mode==1) ? ' disabled' : ' onchange="f_ch_clb(2)"'; ?> /></td></tr>
+<?php if ($Asw_mode!=1 && $Asw_mode!=4) { ?>
+<tr><td style="padding-left:10px;">&nbsp;&nbsp;3. Почта (e-mail) :</td><td colspan="2"><input class="inpbox" type="text" id="Ftext3" maxlength="100" value="<?php print $text3; ?>" style="width:200px; <?php print $mess3; ?>" onchange="f_ch_clb(3)" />
+&nbsp;<?php print empty($mess3) ? '&nbsp;' : '<span style="color:#800000;">Неправильный e-mail</span>'; ?></td></tr>
+<tr><td style="padding-left:10px;">&nbsp;4. Заказчик, наименование, реквизиты :</td><td colspan="2"><input class="inpbox" type="text" id="Ftext4" maxlength="100" value="<?php print $text4; ?>" style="width:400px;" onchange="f_ch_clb(4)" /></td></tr>
+<tr><td style="padding-top:5px;padding-left:10px;vertical-align:top;">&nbsp;5. Примечание к заказу:<br></td>
+<td colspan="2"><textarea class="inparea" rows="10" cols="50" id="Ftexta" style="<?php print $messa; ?>" onchange="f_ch_clb(5)"><?php print $texta; ?></textarea></td></tr>
+<?php } else {
+if ($Asw_mode==4) { ?>
+<tr><td style="padding-top:5px; text-align:center" colspan="3">Пожалуйста, опишите, что Вас интересует,<br>тогда с Вами свяжется «нужный» специалист.</td></tr>
+<tr><td colspan="3" style="text-align:center;"><textarea class="inparea" rows="12" id="Ftexta" style="width:550px;<?php print $messa; ?>" onchange="f_ch_clb(5)"><?php print $texta; ?></textarea></td></tr>
+<?php } else { ?>
+<tr><td style="padding-top:5px;padding-left:10px;vertical-align:top;"><span style="color:#ff0000">*</span>&nbsp;3. Пожелания, замечания,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;сообщение об ошибке :<br></td>
+<td colspan="2"><textarea class="inparea" rows="<?php print (($Asw_mode==1)?'14':'10'); ?>" cols="50" id="Ftexta" style="<?php print $messa; ?>" onchange="f_ch_clb(5)"><?php print $texta; ?></textarea></td></tr>
+<?php }
+} ?>
+<tr><td style="padding-left:10px;padding-bottom:14px;">
+<?php
+$pb_width=100; $pb_height=25; // Ширина-высота рисунка капчи
+$pb_c1=0; $pb_c2=200;         // Диапазон для цветов R, G, B
+$pb_background='null';        // Фон (если null то прозрачный) иначе $pb_background='r,g,b'
+$pb_count=5;                  // Кол-во символов в капче
+
+$pb_handler=@fopen($pb_file_captcha,'w');
+if ($pb_handler) {
+    $pb_captcha=''; $pb_oldtime=date("Ymd").''.date("H"); $pb_pos=strpos($pb_txt,chr(10).$pb_oldtime,0);
+    if ($pb_pos) $pb_txt='<?php'.chr(10).'print "hello"; exit; $t="'.substr($pb_txt,$pb_pos);
+    else { $pb_oldtime=date("Ymd"); $pb_pos=strpos($pb_txt,chr(10).$pb_oldtime,0); if ($pb_pos) $pb_txt='<?php'.chr(10).'print "hello"; exit; $t="'.substr($pb_txt,$pb_pos); }
+    $pb_time=date("Ymd").''.date("His"); for ($i=1; $i<=$pb_count; $i++) { $s=array(chr(mt_rand(50,57)),chr(mt_rand(112,122)),chr(mt_rand(97,104)),chr(mt_rand(106,107)),chr(mt_rand(50,57)),chr(mt_rand(112,122)),chr(mt_rand(97,104)),chr(mt_rand(109,110))); $pb_captcha.=$s[mt_rand(1,8)-1]; }
+    $pb_txt=substr($pb_txt,0,strpos($pb_txt,chr(10).'"?>'.chr(10),0)).chr(10).$pb_time.chr(9).$_SERVER['REMOTE_ADDR'].chr(9).strtolower($pb_captcha).chr(10).'"?>'.chr(10);
+    @rewind($pb_handler);
+    if (-1==@fwrite($pb_handler,$pb_txt)) { @fflush($pb_handler); @fclose($pb_handler); }
+    else {
+        @ftruncate($pb_handler,ftell($pb_handler)); @fflush($pb_handler); @fclose($pb_handler);
+        print '<img src="'.$pb_start_site.'auto/pb_captcha_img.php?t='.$pb_time.'&w='.$pb_width.'&h='.$pb_height.'&c1='.$pb_c1.'&c2='.$pb_c2.'&b='.$pb_background.'" style="border-style:none; margin-bottom:1px; width:'.$pb_width.'px; height:'.$pb_height.'px;"/>';
+        print '<input id="Fhcaptcha" type="hidden" value="'.$pb_time.'" />';
+    }
+}
+else $mess='Сервис временно недоступен';
+?>
+<img src="/img/css/refresh.gif" title="обновить рисунок" alt="обновить рисунок" style="border-style:none; margin:3px;" onclick="fpb_ById('IDsubmit').click()" /></td>
+<td style="width:300px;padding-top:3px;vertical-align:top;"><input class="inpbox" type="text" id="Fcaptcha" maxlength="10" value="" style="width:100px;<?php print $messk; ?>" />&nbsp;<span style="color:#800000;"><?php print $mess; ?></span><br>
+<div style="width:100%; border:none 0px; font-size:10px; text-align:center;">( поля, отмеченные <span style="color:#ff0000;font-size:12px;font-weight:bold;"> * </span> - обязательны для заполнения )</span></td>
+<td style="text-align:right;padding-right:<?php print ($Asw_mode==2)?'10':'18'; ?>px;padding-bottom:14px;"><input type="button" class="abut" id='IDsubmit' value="Отправить" style="width:90px;" onclick="f_postmail(<?php print $Asw_mode; ?>)" /></td></tr>
+<?php } ?>
+</tbody></table>

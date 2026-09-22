@@ -1,0 +1,6 @@
+<style> type="text/css"/>
+a[href^="tel:"]:before {
+  content: "\260e";
+  margin-right: 0.5em;
+}
+</style>

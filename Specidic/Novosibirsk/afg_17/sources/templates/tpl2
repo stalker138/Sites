@@ -1,0 +1,60 @@
+<?php // tpl2 - Для раздела HEAD внешние css и js-файлы, стили и скрипты.
+{*text1_12*}
+if ($pb_page<3000 || $pb_page>4000) print '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+?>
+<link rel="icon" href="/favicon.ico" type="image/ico"/><link rel="icon" type="image/png" href="/favicon.png"/><link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="robots" content="noarchive"/>
+<?php print '<!--'.$pb_page.'-->'; ?>
+<link rel="canonical" href="https://www.fg-partner.ru<?php print $pb_full_url; ?>">
+<link rel="stylesheet" href="/cssjs/style_005_.css" type="text/css"/>
+{*text0_24*}
+<?php
+
+if ($pb_page==1010) { ?>
+<style type="text/css">
+#content { width:770px; max-width:770px; padding:10px 0; border:none 0px; }
+#id_calcHead { position:relative; float:left; width:320px; box-shadow:4px 4px 7px 0 #999999; }
+#id_calcHead table, #id_calcHead table th, #id_calcHead table td { text-align:left; border-collapse:collapse; border:solid 1px #000000; } #id_calcHead table .pad0 { padding:0; }
+.thead { padding:0 0 0 2px; height:23px; font-weight:bold; font-size:13px; text-align:left; background:yellow; }
+table .tdleft { width:195px; padding:0 0 0 2px; }
+.i_t, .i_t option { padding:0; margin:0; width:120px; height:22px; font-size:13px; text-align:left; line-height:22px; border:none 0px; font-weight:bold; background:#49ff79; }
+#dcalc { position:relative; float:left; margin:0 0 0 50px; width:200px; font-size:11px; line-height:13px; text-align:center; }
+#dcalc input { margin:0; width:180px; height:30px; font-weight:bold; font-size:13px; letter-spacing:1px; text-shadow:2px 2px 2px #ffffff; box-shadow:4px 4px 7px 0 #999999; }
+.tmtr td { height:22px; font-size:13px; line-height:22px; } .tmtr td a { font-size:13px; text-decoration:underline; } .tmtr td a:hover { text-decoration:none; }
+
+#id_oc_all { float:right; margin:0; text-align:center; }
+#id_open_all,#id_close_all { cursor:pointer; float:right; margin:5px 0 0 10px; font-size:11px; text-decoration:underline; color:#004f92; } #id_open_all:hover,#id_close_all:hover { color:#f00000; }
+</style>
+<?php }
+
+if ($pb_page>3000 && $pb_page<4000) { ?>
+<style>{*text0_50*}</style>
+<?php }
+
+if($pb_page==1010 || ($pb_page>3000 && $pb_page<4000)) {
+  print '<script src="/cssjs/asw_pb_0071_.js"></script><script src="/cssjs/js_004.js"></script>';
+}
+?>
+
+<?php if($pb_page==1003) { ?>
+<style type="text/css">
+@media screen and (min-width: 320px) and (max-width: 409px) {
+.tmtr {    
+    font: normal 7px arial;    
+}
+}
+</style>
+<?php } if($pb_page==1006) { ?>
+<style type="text/css">
+#content td { padding:2px 0; vertical-align:top; }
+#content td div { display:inline-block; margin-right:50px; }
+</style>
+<?php } // include_once $pb_root."auto/inc_css_js.php"; ?>
+
+<?php
+if (isset($postSMTP) && $postSMTP!=false && $pb_page>3000 && $pb_page<4000) { ?>
+  <link rel="stylesheet" href="/cssjs/css000_elakors.css" type="text/css"/>
+  <script src="/cssjs/vcorp_js_0003.js"></script>
+  <script src="/cssjs/js000_elakors.js"></script>
+<?php } ?>
+<style>{*text0_7*}</style>

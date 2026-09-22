@@ -1,0 +1,42 @@
+<?php $tlm=' style="text-shadow:#005093 1px 1px 2px; color:#ffffff; background:#f00000;"'; ?>
+<div class="lmdiv">
+<l1 id="3"<?php if ($pb_page==1003) print $tlm; ?>>Материалы, ЦЕНЫ</l1><div class="px5_"></div>
+<l1 id="10"<?php if ($pb_page==1010) print $tlm; ?>>Калькулятор</l1><div class="px5_"></div>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+<a href="http://www.teohim.ru/tech/" target="_blank"<?php if ($pb_page==1004) print $tlm; ?>>Инструкции</a><div class="px5_"></div>
+<a href="http://www.teohim.ru/sert/" target="_blank"<?php if ($pb_page==1005) print $tlm; ?>>Сертификаты</a><div class="px5_"></div>
+<l1 id="2"<?php if ($pb_page==1002) print $tlm; ?>>Таблица цветов</l1><div class="px5_"></div>
+<l1 id="9"<?php if ($pb_page==1009) print $tlm; ?>>Задачи и Решения</l1><div class="px5_"></div>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+<l1 id="7"<?php if ($pb_page==1007) print $tlm; ?>>Наши работы, Фото</l1><div class="px5_"></div>
+<l1 id="20"<?php if ($pb_page==1020) print $tlm; ?>>Наши Объекты</l1><div class="px5_"></div>
+<l1 id="8"<?php if ($pb_page==1008) print $tlm; ?>>О компании</l1><div class="px5_"></div>
+<l1 id="6"<?php if ($pb_page==1006) print $tlm; ?>>Контакты</l1><div class="px5_"></div>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+<a class="" href="http://www.fg-partner.ru/?/news/">НОВОСТИ</a>
+</div>
+<div class="px5b"></div><div class="px10"></div>
+<!--a href="http://www.teohim.ru/objlist.php?pos=11" id="aobjlist" target="_blank" title="Объекты на карте с возможностью выбора региона, типа объекта и типа покрытия">Выполненные<br>объекты на карте</a>
+<div class="px10"></div-->
+
+<?php if (1==1 && $pb_page!=1005) { ?><div>
+<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'http://www.fg-partner.ru/search/','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск по fg-partner.ru','suggest':false,'target':'_self','tld':'ru','type':3,'usebigdictionary':false,'searchid':2243887,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'поиск по сайту','input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}"><form action="https://yandex.ru/search/site/" method="get" target="_self"><input type="hidden" name="searchid" value="2243887"/><input type="hidden" name="l10n" value="ru"/><input type="hidden" name="reqenc" value=""/><input type="search" name="text" value=""/><input type="submit" value="Найти"/></form></div>
+<script type="text/javascript">(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+<div class="px5b"></div><div class="px5"></div>
+</div><?php } ?>
+
+<!--div style="margin-top:5px; width: 200px; height: 200px; margin-left: -2px; background: url(/img/css/200x200_sibbuild17.gif) 50% 50% no-repeat;"></div-->
+
+<div class="lmdiv" style="margin-top:5px;text-align:center">
+<p>Наши заказчики:</p>
+<p style="margin-top: 7px;"><img src="/img/partners/part_01.jpg" width="150" height="37" alt="Промышленно-строительный концерн «СИБИРЬ»" title="Промышленно-строительный концерн «СИБИРЬ»"></p>
+<p style="margin-top: 7px;"><img src="/img/partners/part_02.jpg" width="49" height="54" alt="Компания «Транссервис»" title="Компания «Транссервис»"><br><span>ТРАНССЕРВИС</span></p>
+<p style="margin-top: 7px;"><img src="/img/partners/part_03.jpg" width="150" height="43" alt="Бизнес-центры Новосибирска" title="Бизнес-центры Новосибирска"></p>
+<p style="margin-top: 7px;"><img src="/img/partners/part_04.gif" width="150" height="34" alt="ЗАО «Курганстальмост»" title="ЗАО «Курганстальмост»"></p>
+<p style="margin-top: 7px;"><img src="/img/partners/s7.png" width="150" height="54" alt="S7 (ОАО «Авиакомпания «Сибирь»)" title="S7 (ОАО «Авиакомпания «Сибирь»)"></p>
+<p style="margin-top: 7px;"><img src="/img/partners/sibakademstroy.jpg" width="150" height="86" alt="СИБАКАДЕМСТРОЙ" title="СИБАКАДЕМСТРОЙ"></p>
+<p style="margin-top: 7px;"><img src="/img/partners/kameya.jpg" width="150" height="150" alt="Камея" title="Камея"></p>
+<p style="margin-top: 7px;"><img src="/img/partners/perviy_stroitelniy_fond.jpg" width="150" height="150" alt="Первый Строительный Фонд" title="Первый Строительный Фонд"></p>
+<p><img src="/img/partners/brusnika.png" width="150" height="194" alt="Брусника" title="Брусника"></p>
+<p><img src="/img/partners/kfc.png" width="170" height="88" alt="KFC" title="KFC"></p>
+</div>
