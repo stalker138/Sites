@@ -1,0 +1,43 @@
+<h1>Инструмент</h1>
+<div class="px15b"></div>
+<?php if(1==2) { ?>
+<h2>Малярный инструмент</h2>
+<div class="px5"></div>
+<table class="bsh1 tbl1">
+<tbody>
+<tr><th>Малярный инструмент</th><th style="width:80px;">цена за<br>штуку/пару<br>тг.</th></tr>
+<tr><td class="tdl">Кисть флейцевая ВЯТКА 20мм</td><td>35</td></tr>
+<tr><td class="tdl">Кисть флейцевая ВЯТКА 50мм</td><td>77</td></tr>
+<tr><td class="tdl">Кисть флейцевая ВЯТКА 100мм</td><td>148</td></tr>
+<tr><td class="tdl">Ролик STAYER PROFI NILON ПОЛИАМИД молярный ворс 10 мм бюгель 8 мм, 48х240 мм</td><td>442</td></tr>
+<tr><td class="tdl">Валик STAYER PROFI VELOUR малярный в сборе, ворс 4 мм, бюгель 8 мм 48х250 мм</td><td>600</td></tr>
+<tr><td class="tdl">Мини ролик STAYER мастер  VELOUR малярный , ворс 4 мм, бюгель 8 мм 15х110 мм</td><td>60</td></tr>
+<tr><td class="tdl">Мини ролик STAYER мастер  NYLON полиамид малярный , ворс 10 мм, бюгель 6 мм 15х110 мм</td><td>62</td></tr>
+<tr><td class="tdl">Ручка STAYER мастер  для мини валиков, бюгель 6 мм, 87х280 мм</td><td>115</td></tr>
+<tr><td class="tdl">Миксер STAYER профи оцинкованный для красок, 100х600 мм.</td><td>690</td></tr>
+<tr><td class="tdl">Шпатель  STAYER профессионал фасадный нержавеющий, с пластмассовой ручкой, 60 мм</td><td>105</td></tr>
+<tr><td class="tdl">Шпатель  STAYER профессионал фасадный нержавеющий, с пластмассовой ручкой, 150 мм</td><td>183</td></tr>
+<tr><td class="tdl">Шпатель  STAYER профессионал фасадный нержавеющий, с пластмассовой ручкой, 200 мм</td><td>252</td></tr>
+<tr><td class="tdl">Шпатель  STAYER профессионал фасадный нержавеющий, с пластмассовой ручкой, 600 мм</td><td>770</td></tr>
+<tr><td class="tdl">Шпатель  STAYER профессионал нержавеющий,зубчатый с пластмассовой ручкой, 200 мм , зуб 4х4 мм</td><td>260</td></tr>
+<tr><td class="tdl">Очки ЗУБР эксперт защитные закрытого типа с непрямой вентиляцией, поликарбонатная линза</td><td>566</td></tr>
+<tr><td class="tdl">Подошвы  STAYER профи для наливных полов 25 мм</td><td>1460</td></tr>
+<tr><td class="tdl">Наколенники STAYER универсальные резиновые</td><td>630</td></tr>
+<tr><td class="tdl">ПерчаткиЗУБР мастер трикотажные, 10 класс, х/б</td><td>160</td></tr>
+<tr><td class="tdl">Ручка STAYER профи  для валиков двухкомпонентная, бюгель 8 мм,240 мм</td><td>250</td></tr>
+</tbody>
+</table>
+<div class="px20b"></div>
+<?php } ?>
+
+<h2>Инструмент для обработки бетона, камня, мозаики</h2>
+<div class="px20"></div>
+<div class="dobji" style="margin-left:0;"><l1 id="146"><img id="l1" src="/images/fres1_s.jpg" alt=""/><br>Фрезы шлифовальные для МШМ серии CO</l1></div>
+<div class="dobji" style="margin-left:10px;"><l1 id="143"><img id="l1" src="/images/fres2_s.jpg" alt=""/><br>Франкфурты шлифовальные для МШМ серии GM</l1></div>
+<div class="dobji" style="margin-left:10px;"><l1 id="144"><img id="l1" src="/images/fres3_s.jpg" alt=""/><br>Франкфурты шлифовальные Б.О.Р.Н. для МШМ серии GM</l1></div>
+<div class="dobji" style="margin-left:10px;"><l1 id="141"><img id="l1" src="/images/fres9_s.png" alt=""/><br>Фрезы шлифовальные для УШМ (Болгарка)</l1></div>
+<div class="px20"></div>
+<div class="dobji" style="margin-left:0;height:190px;"><l1 id="147"><img id="l1" src="/images/frez10s.jpg" alt=""/><br>Шлифовальные камни(абразивные сегменты) на бакелитовой связке</l1></div>
+<div class="dobji" style="margin-left:10px;"><l1 id="142"><img id="l1" src="/images/frez12s.jpg" alt=""/><br>Чашка коррундовая для УШМ(болгарки)</l1></div>
+<div class="dobji" style="margin-left:10px;"><l1 id="145"><img id="l1" src="/images/frez14s.jpg" alt=""/><br>Фрезы алмазные</l1></div>
+<div class="px20"></div>

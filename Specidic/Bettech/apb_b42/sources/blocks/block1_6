@@ -1,0 +1,145 @@
+<h1>Промышленные полы ТЕХНОЛОГИЯ</h1>
+<div class="px5"></div>
+<p class="fleft fwb">Технологии промышленных полов Элакор - инструкции нанесения.</p>
+<div id="id_oc_all">
+<div id="id_close_all" onclick="f_page1010(this,0)">Закрыть все</div>
+<div id="id_open_all" onclick="f_page1010(this,1)">Раскрыть все</div>
+</div>
+<div class="px5"></div>
+
+<div class="div_mc">
+<h3 class="divh3">1. ПРОПИТКИ для бетонных полов</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php 
+ftech_set($a_cattech[1]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">2. ОКРАСОЧНЫЕ полимерные покрытия</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php 
+ftech_set($a_cattech[2]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">3. НАЛИВНЫЕ полимерные покрытия <span>(наливные полы)</span></h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<p class="fwb c2">Полиуретановые</p>
+<?php 
+ftech_set($a_cattech[31]);
+?>
+<div class="px0"></div>
+<p class="fwb c2">Эпоксидные</p>
+<?php 
+ftech_set($a_cattech[32]);
+?>
+<div class="px10"></div>
+<?php 
+ftech_set($a_cattech[33]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">4. Полиуретан - Цементные полы</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php 
+ftech_set($a_cattech[4]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">5. НАПОЛНЕННЫЕ полимерные покрытия</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php 
+ftech_set($a_cattech[5]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">6. АНТИСТАТИЧЕСКИЕ полы</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<p class="fwb c2">НАЛИВНЫЕ полы Антистатические</p>
+<?php 
+ftech_set($a_cattech[61]);
+?>
+<div class="px0"></div>
+<p class="fwb c2">ОКРАСОЧНЫЕ покрытия Антистатические</p>
+<?php 
+ftech_set($a_cattech[62]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">7. ДОПОЛНИТЕЛЬНЫЕ операции для бетона</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php 
+ftech_set($a_cattech[7]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">8. ПРОЧИЕ покрытия, пропитки</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php 
+ftech_set($a_cattech[8]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">9. Промышленные БЕТОННЫЕ полы</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php 
+ftech_set($a_cattech[9]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">10. Покрытия для МЕТАЛЛА</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php 
+ftech_set($a_cattech[10]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">11. Покрытия для ДЕРЕВА</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php 
+ftech_set($a_cattech[11]);
+?>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>

@@ -1,0 +1,14 @@
+{*tpl11*}{*tpl1*}{*tpl9*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block1_212*}
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}
+<script type="text/javascript">
+{*text0_31*}
+
+var pirgr = [0.45, 0.4, 0.35, 0.3, 0.25, 0.2]; /* Расход Грунтовки по маркам бетона */
+var pirfs = new Function('se', 'return 0.4;'); /* Расход финишного покрытия */
+var pivfs = new Function('se', 'return [se*18, 0];'); /* Работы/материалы финишного покрытия */
+var vrm = 1; /* Влияние выбранной марки бетона (pi_mb) на стоимость доп.работ */
+
+{*text0_32*}
+</script>
+</body></html>{*tpl10*}

@@ -1,0 +1,37 @@
+{*tpl1*}{*tpl9*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block1_4*}
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}
+<script>
+function f_page0250(o,f) {
+  var a,p,i,h;
+  a=document.querySelectorAll('.divh4'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt(fpb_getStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==25) || (!f&&h!=25)) fpb_a_height(p,200,25,p.scrollHeight,25);
+    }
+  }
+}
+fpb_ready(function(e) {
+var i, a=document.querySelectorAll('.dral'); if(!a)return;
+for (i=0; i<a.length; i+=1) pb_event.add(a[i],'click',function(e){
+  f_message('<span>'+document.querySelector('span',this).innerHTML+'</span> &nbsp; &nbsp; (&lt;Esc&gt; - закрыть окно)','<div style="position:absolute; top:0; right:0; bottom:0; left:0; background:'+document.querySelector('div',this).style.background+'"></div>',700,500);
+});
+a=document.querySelectorAll('.td2,.td22'); if(!a)return;
+for (i=0; i<a.length; i+=1) pb_event.add(a[i],'click',function(e){
+   f_message('<span>'+(this.className=='td22'?'':'RAL ')+this.parentNode.querySelector('.td1').innerHTML+'</span> &nbsp; &nbsp; (&lt;Esc&gt; - закрыть окно)','<div style="position:absolute; top:0; right:0; bottom:0; left:0; background:'+this.style.backgroundColor+'"></div>',700,500);
+});
+/* Проверка на страницу с вкладками (материалы) - и установка обработчика смены активной вкладки */
+if (fpb_ById('mtr_tabs')) {
+    fpb_setEventHandlers('click', function(e) { /* Функция pb_event.add() - установки одного обработчика function(e) на несколько объектов */
+        var i, p, obj = e.target || e.srcElement; while (!obj.id) obj = obj.parentNode; /* Получение ссылки obj на <div id="mtr_tabs_N"> */
+        for (i=1; i<=4; i+=1) {
+            p=fpb_ById('mtr_tabs_'+i); if(p) p.className=''; /* Снятие класса active со всех заголовков вкладок */
+            p=fpb_ById('mtr_body_'+i); if(p) p.className=''; /* Снятие класса active со всех вкладок */
+        }
+        obj.className='active'; /* Установка класса active на заголовок выбранной вкладки */
+        p=fpb_ById('mtr_body_'+obj.id.substr(9,1)); if(p) p.className='active'; /* Установка класса active на выбранную вкладку */
+    },['mtr_tabs_1','mtr_tabs_2','mtr_tabs_3','mtr_tabs_4']); /* Массив с перечислением ID объектов */
+}
+
+});
+</script>
+</body></html>{*tpl10*}

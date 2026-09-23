@@ -1,0 +1,160 @@
+<div class="rlink">
+<a style="float:right;margin-top:7px;cursor:pointer; text-decoration:underline;color: #0000ff; font:bold 12px arial;" id="todownload_clc">Скачать расчет</a>
+<div class="px10"></div>
+</div>
+
+<div class="px10"></div>
+
+<div id="id_calcHead">
+<table class="table1">
+<tbody>
+<tr><td class="thead" colspan="2">1. Характеристики Вашего пола</td></tr>
+<tr>
+  <td class="tdleft">Площадь, м.кв.</td>
+  <td id="i_so_td" class="pad0"><input class="i_t" style="width:118px;text-align:right;padding-right:2px;" type="text" id="i_so" value="1000" maxlength="5" onchange="f_calc('i_so')"></td>
+</tr>
+
+<?php if ($smb) { ?>
+<tr><td class="tdleft">Марка бетона / пескобетона</td>
+<td id="i_mb_td" class="pad0">
+<select id="i_mb" class="i_t" onchange="f_calc('i_mb');">
+<?php
+$opt = '';
+foreach ($smb as $row)
+if ($row) {
+    $opt .= '<option value="'.$row["option"].'"';
+    if ($row["sel"]) $opt .= ' selected';
+    $opt .= '>&nbsp;&nbsp;М'.$row["option"].' (B'.$row["mb"].')</option>';
+}
+print $opt;
+?>
+</select>
+</td></tr>
+<?php } if ($pb_page==5063 || $pb_page==5067 || $pb_page==5068) { ?>
+<tr><td class="tdleft">СП 29.13330.2011, пункт</td>
+<td id="i_ant_td" class="pad0" style="background:#49ff79">
+<select id="i_ant" class="i_t" onchange="f_calc('i_ant');">
+<option value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.12</option>
+<option value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.13</option>
+<option value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.14</option>
+</select>
+
+<?php } if ($se) { ?>
+<tr><td class="tdleft">Количество слоёв Эмали</td>
+<td id="i_se_td" class="pad0">
+  <select id="i_se" class="i_t" onchange="f_i_t('i_se'); fpb_ById('id_sub').focus();">
+    <option value="1" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
+    <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
+    <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</option>
+  </select>
+</td></tr>
+<?php } if ($sp) {    // ЭД с кварцем, ПУ с песком,  безыскровое ?>
+<tr><td class="tdleft">Толщина покрытия</td>
+<td id="i_sep_td" class="pad0">
+  <select id="i_np" class="i_t" onchange="f_i_t('i_np'); fpb_ById('id_sub').focus();">
+    <option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,0-1,5</option>
+    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2,0-2,5</option>
+    <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3,0-3,5</option>
+    <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4,0-4,5</option>
+  </select>
+</td>
+</tr>
+<tr><td class="tdleft">Поверхность покрытия</td>
+<td id="i_shp_td" class="pad0">
+  <select id="i_se" class="i_t" onchange="f_i_t('i_se'); fpb_ById('id_sub').focus();">
+    <option value="0" selected>&nbsp;Шероховатая</option>
+    <option value="1">&nbsp;Фактурная</option>
+  </select>
+</td>
+</tr>
+<?php } if ($np && $snt && !$sp) {  // есть напонитель, нет поверности ?>
+<tr>
+<td class="tdleft">Толщина Наливного пола, мм</td>
+<td id="i_sen_td" class="pad0">
+<select id="i_np" class="i_t" onchange="f_i_t('i_np'); fpb_ById('id_sub').focus();">
+<?php
+for ($t=0, $opt=''; $t<count($snt); $t++) {
+    $opt .= '<option value="'.$t.'"';
+    if (!$t) $opt .= ' selected';
+    $opt .= '>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$snt[$t].'</option>';
+}
+print $opt;
+?>
+</select>
+</td>
+</tr>
+<?php } if ($fs && $snt && !$sp && !$np && ($pb_page==5097 || $pb_page==5074)) {  // есть основной слой ?>
+<tr>
+<td class="tdleft">Толщина ПЦ пола, мм.</td>
+<td id="i_sen_td" class="pad0" style="background:#49ff79">
+<select id="i_np" class="i_t" onchange="f_i_t('i_np'); fpb_ById('id_sub').focus();">
+<?php
+for ($t=0, $opt=''; $t<count($snt); $t++) {
+    $opt .= '<option value="'.$t.'"';
+    if (!$t) $opt .= ' selected';
+    $opt .= '>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'.$snt[$t].'</option>';
+}
+print $opt;
+?>
+</select>
+</td>
+</tr>
+<?php } if ($fl==-1 || $pb_page==5083) { ?>
+<tr><td class="tdleft">Финишный лак</td>
+<td id="i_fl_td" class="pad0">
+  <select id="i_fl" class="i_t" onchange="f_i_t('i_fl'); fpb_ById('id_sub').focus();">
+    <?php if ($pb_page!=5083) { ?><option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;НЕТ</option><?php } ?>
+    <option value="1">&nbsp;матовый</option>
+    <option value="2">&nbsp;полуматовый</option>
+    <option value="3">&nbsp;глянцевый</option>
+  </select>
+</td>
+</tr>
+<?php } if ($sh) { ?>
+<tr><td class="tdleft">Необходимо шпатлевание?</td>
+<td id="i_sh_td" class="pad0">
+  <select id="i_sh" class="i_t" onchange="f_i_t('i_sh'); fpb_ById('id_sub').focus();">
+    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ДА</option>
+    <option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;НЕТ</option>
+  </select>
+</td>
+</tr>
+<?php } ?>
+</tbody>
+</table>
+</div>
+<div id="dcalc">Введите данные<br>в зелёные ячейки.<div class="px5"></div><input type="submit" id="id_sub" value="Пересчитать" onclick="f_i_t('refresh')"/></div>
+
+<!--div id="dchng"><p>&nbsp;&nbsp;Выбрать другое покрытие:</p><div class="px5"></div>
+&nbsp;<select id="i_pkr" onchange="f_calc('i_pkr')">
+<?php
+//$o='<option value="'; $n='</option>';
+//print $o.'0">&nbsp; = Все покрытия ='.$n;
+//print $o.'11">&nbsp;Пропитка Полиуретановая'.$n;
+//print $o.'13">&nbsp;Пропитка глубокого проникновения'.$n;
+//print $o.'17">&nbsp;Пропитка эпоксидная'.$n;
+//print $o.'87">&nbsp;Пропитка антискользящая'.$n;
+//print $o.'23">&nbsp;Пропитка флюат'.$n;
+//print $o.'25">&nbsp;Пропитка акриловая'.$n;
+//print $o.'31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Покрытие полиуретановое'.$n;
+//print $o.'33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Покрытие эпоксидное'.$n;
+//print $o.'35">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Покрытие светостойкое'.$n;
+//print $o.'85">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Покрытие антискользящее'.$n;
+//print $o.'83">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Покрытие декоративное'.$n;
+//print $o.'81">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Покрытие для асфальта'.$n;
+//print $o.'51">&nbsp;Наливной пол эпоксидный'.$n;
+//print $o.'53">&nbsp;Наливной пол полиуретановый'.$n;
+//print $o.'71">&nbsp;Промышленный наливной пол Эпоксидный'.$n;
+//print $o.'73">&nbsp;Промышленный наливной пол Полиуретановый'.$n;
+//print $o.'55">&nbsp;Белое наливное покрытие'.$n;
+//print $o.'39">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Эпоксидное покрытие с песком'.$n;
+//print $o.'37">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Полиуретановое покрытие с песком'.$n;
+//print $o.'40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Полиуретановое покрытие с песком гладкое'.$n;
+//print $o.'63">&nbsp;Антистатическое наливное покрытие'.$n;
+//print $o.'65">&nbsp;Антистатический пол (без лент)'.$n;
+//print $o.'89">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Покрытие химстойкое'.$n;
+//print $o.'93">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Покрытие безыскровое'.$n;
+//print $o.'95">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Покрытие антистатическое'.$n;
+?>
+</select>
+</div-->

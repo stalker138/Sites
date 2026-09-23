@@ -1,0 +1,92 @@
+{*tpl11*}{*tpl1*}{*tpl9*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}
+<style>
+#clc,#clc2,#clz,#clz2,#dordEdit,#content #dlnkPR { cursor:pointer; position:relative; display:block; padding:5px; width:208px; height:20px; font-size:15px; font-weight:bold; letter-spacing:1px; text-align:center; box-shadow:4px 4px 7px 0 #999999; border-radius:5px; /*transition:background .5s ease;*/ }
+#dordEdit { margin:0 auto; color:#ffffff; width:250px; border:solid 1px #808080; background:#f5530e; } #dordEdit:hover { color:#800000; background:#ffcc6c; text-shadow:2px 2px 2px #ffffff; }
+#clc,#clc2,#content #dlnkPR { float:left; color:#000000; border:solid 1px #808080; background:#eeeeee; text-shadow:2px 2px 2px #ffffff; }
+#content #dlnkPR { float:right; margin:0 auto; width:190px; text-decoration:none; }
+#clc:hover,#clc2:hover,#content #dlnkPR:hover { background:#c8c8c8; } #clc { width:190px; }
+#clz,#clz2 { margin:0 auto; color:#ffffff; border:solid 1px #2878bb; background:#2878bb; } #clz:hover,#clz2:hover {color:#800000; background:#ffcc6c; text-shadow:2px 2px 2px #ffffff; }
+#idSumMatUp,#idSumMatDown { width:170px; } .tmtr { margin:5px 0 0 0; } .tmtr tr { height:22px; } .tmtr td { height:auto; line-height:17px; border:solid 1px #c8c8c8; } .tmtr .tar { padding-right:3px; }
+.tbl1 td { padding:1px 5px 2px 0; text-align:right; font-weight:bold; font-size:13px; border-collapse:collapse; border:solid 1px #000000; background:#ffff00; box-shadow:#999999 4px 4px 7px 0px; }
+.trt_none { display:none; } .trt_tr { display:table-row; } #clz,#clc,#content #dlnkPR,#idOrdert,#dordEdit { display:none; }
+.f_r { margin:3px 0 2px 2px; }
+.dordRal { cursor:pointer; display:inline-block; margin-left:5px; width:40px; height:20px; text-align:center; color:#000000; } .dordRal:hover { color:#ffffff; }
+#content table, #content table tr, #content table tr th, #content table tr td { border-collapse:collapse; }
+#content .tmtr { box-shadow: 4px 4px 7px 0px #999999; } #content .tmtr th { border:solid 1px #000000; }
+#content table .tdl, #content .tmtr .tdl, #content table .tmdl, #content .tmtr .tmdl { padding: 0 3px 0 5px; text-align: left; font-size:12px; }
+#content table tr, #content .tmtr tr, #content table tr td, #content .tmtr tr td { padding:0; height:22px; font-size:13px; }
+.pb_alert_body { font-weight:normal; }
+</style>
+{*tpl3*}</head><body>{*tpl7*}
+<?php if ($is_basket>0) { ?>
+
+<h1>Ваша Корзина</h1>
+<div class="px10"></div>
+<p>Уважаемый Заказчик.<BR>
+После оформления Заказа, Корзина не будет очищена автоматически.<br>
+Вы можете скорректировать и повторно отправить уже сформированный заказ.</p>
+<p>Сформированный Заказ будет отправлен в работу после согласования с менеджером.</p>
+<div class="px10b"></div>
+<div class="px15"></div>
+<div style="margin:0 auto;width:400px">
+<div id="dordEdit" onclick="f_ordEdit()">Редактировать</div>
+<div class="px0"></div>
+<div class="px10n"></div>
+<?php
+function ford226($i) {
+global $mtrt;
+$aRal=array(3000,17,18,19,20,21,22,89,134,135,136,137,165,166,167,193,195,205,206); // text0_20 - JS-копия массива
+$a=$mtrt[$i]; $cnt=0; $t='';
+if ($a!=false) {
+    $tara=explode('/',$a[17]); $cnt=count($tara); if($cnt>0) {
+    $tara[0]=explode(',',$tara[0]); $tara[1]=explode(',',$tara[1]); $tara[2]=explode(',',$tara[2]); $tara[3]=explode(',',$tara[3]);
+    $tar='['.$tara[0][0].','.$tara[0][1].','.$tara[1][0].','.$tara[1][1].','.$tara[2][0].','.$tara[2][1].','.$tara[3][0].','.$tara[3][1].',0,0,0,0]';
+    if ($tar=='[,,,,,,,,0,0,0,0]' || $tar=='[0,,,,,,,,0,0,0,0]') $tar='none';
+    for ($j=1; $j<=5; $j++) {
+    $t.='<tr id="trt'.$i.'_'.$j.'" class="trt_none" style="color:#808080"><td colspan="4" class="tmdl" style="font-size:12px;font-weight:bold;color:#004f92;">'.$a[0].' '.$a[1].(($a[2]==' ')?'':(' <span>'.$a[2].'</span>'));
+    if (in_array($i,$aRal,true)) {
+      $t.=' <div class="nw" style="display:inline;color:#000000"><span class="c0">Цвет:</span> <span class="c0" id="ordRal'.$i.'_'.$j.'">Базовый (RAL 7035, RAL 7040)</span>';
+      $t.=' <div class="dordRal" id="dordRal'.$i.'_'.$j.'" onclick="f_basketRal(event)" title="Выбор цвета...">...</div></div>';
+    }
+    $t.=' <div id="ordD'.$i.'_'.$j.'" style="float:right;" onclick="f_ordDel('.$i.','.$j.')"></td></tr>';
+     for($ii=0; $ii<$cnt; $ii++) {
+      $t.='<tr id="trt'.$i.'_'.$j.'_'.$ii.'" class="trt_none" style="color:#808080">';
+      $t.='<td id="ordF'.$i.'_'.$j.'_'.$ii.'" class="tac"><span style="font:bold 13px arial">0</span> по '.$tara[$ii][0].(($i==105||$i==227)?'л':'кг').'</td>';
+      $t.='<td id="ordK'.$i.'_'.$j.'_'.$ii.'" class="tar" style="white-space:nowrap"><div class="f_l">-</div><input type="text" style="width:55px; height:15px; text-align:right;" maxlength="5" value="нет"/><div class="f_r">+</div></td>';
+      $t.='<td id="ordC'.$i.'_'.$j.'_'.$ii.'" class="tar"></td><td id="ordS'.$i.'_'.$j.'_'.$ii.'" class="tar"></td></tr>';
+     }
+     if ($cnt>1) {
+      $t.='<tr id="trt'.$i.'_'.$j.'_I" class="trt_none"><td style="padding-left:3px;font:bold 11px arial">Итого</td><td id="ordKI'.$i.'_'.$j.'" class="tar" style="font:bold 11px arial">0</td><td colspan="2" id="ordCS'.$i.'_'.$j.'" class="tar" style="font:bold 11px arial">0</td></tr>';
+     }
+     if ($tar=='none') { } else print $t.'<tr id="trt'.$i.'_'.$j.'_ld" class="trt_none" style="height:10px"><td colspan="6" class="sepl"></td></tr>';
+    }
+    }
+ }
+}?>
+<div class="px0"></div>
+<div id="id_div_clear"><p class="fs15 tac">Перейдите в <l1 id="10">ПРАЙС-ЛИСТ материалов «Элакор»</l1> и выберите необходимый материал.</p></div>
+<div class="px10"></div>
+<div id="idOrdert" style="width:400px">
+<?php if (1==2) { ?>
+<p class="nds mt0" style="font-size:13px;text-align:right;color:#000000">Цены с НДС, руб</p><div class="px0"></div>
+<table class="tmtr"><tbody><?php print $tht; for ($j=11; $j<=351; $j++) { ford226($j); } ?>
+<tr style="background:#ffff00;"><td style="padding-left:3px;font-weight:bold;">ИТОГО:</td><td id="idSumKgTara" style="padding-right:3px;font-weight:bold;text-align:right">0</td><td colspan="2" id="idSumMatTara" style="padding-right:3px;font-weight:bold;text-align:right;">0</td></tr>
+<tr style="background:#ffff00;"><td colspan="4" style="padding-left:3px;font-weight:bold;">Наименований: <span id="idSumNmTara" style="padding-right:3px;font-weight:bold;font-size:13px">0</span></td></tr>
+</tbody></table>
+<div class="px0b"></div>
+<div class="px15"></div>
+<div class="px20"></div>
+<?php } ?>
+</div>
+</div>
+<div id="clc" onclick="f_ordClc()">Очистить Корзину</div>
+<l1 id="10" id="dlnkPR">Продолжить покупку</l1>
+<div class="px15"></div>
+<div id="clz" onclick="f_ordClz()">Оформить Заказ</div>
+<div class="px15"></div>
+
+<?php } ?>
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}
+<script>
+</script>
+</body></html>{*tpl10*}

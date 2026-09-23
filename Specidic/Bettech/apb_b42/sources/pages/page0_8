@@ -1,0 +1,403 @@
+<?php if ($pb_page == 1001) { ?>
+<div class="px10b"></div>
+<p style="text-align:right;">Разработчик - <a target="_blank" href="https://teohim.ru/nalivnye/" class="nlink" style="font-weight: 700;">www.teohim.ru</a> наливные полимерные полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 1083) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/besshovnye/" style="font-weight:normal;">www.teohim.ru</a> бесшовные полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 1125) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/info/nalivnoj-pol-chto-jeto-takoe/" style="font-weight:normal;">www.teohim.ru</a> виды наливных полов.</p>
+<?php } ?>
+
+<?php if ($pb_page == 1126) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/" style="font-weight:normal;">www.teohim.ru</a> полимерный пол Элакор.</p>
+<?php } ?>
+
+<?php if ($pb_page == 1128) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/dobavki-betona/" style="font-weight:normal;">www.teohim.ru</a> добавки для бетона.</p>
+<?php } ?>
+
+<?php if ($pb_page == 1129) { ?>
+<div class="px10b"></div>
+<p style="text-align:right;"><a class="nlink" target="_blank" href="https://teohim.ru/beton/info/shlifovka-polov/" style="font-weight:normal;">www.teohim.ru</a> шлифовка пола.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2001) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/" style="font-weight:bold;">www.teohim.ru</a> полимерный наливной пол.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2002) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/">www.teohim.ru</a> полимерные полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2003) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/">www.teohim.ru</a> промышленные полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2004) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/">www.teohim.ru</a> бетонные полы.</p>
+<?php } ?>
+
+<?php if (($pb_page == 2011) || ($pb_page == 4057)) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/epoksidnyj-nalivnoj-pol/">www.teohim.ru</a> эпоксидные наливные полы.</p>
+<?php } ?>
+
+<?php if (($pb_page == 2012) || ($pb_page == 4027)) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/poliuretanovyj-nalivnoj-pol/">www.teohim.ru</a> полиуретановые наливные полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2013) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/poly-3d/">www.teohim.ru</a> 3D полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2014) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/decorativnye-poly/">www.teohim.ru</a> декоративные полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2015) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/zalivnye-poly/">www.teohim.ru</a> заливные полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2016) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/zhidkie-poly/">www.teohim.ru</a> жидкий пол.</p>
+<?php } ?>
+
+<?php if (($pb_page == 2020) || ($pb_page == 4065)) { ?>
+<div class="px10b"></div>
+<p style="text-align:right;">"Элакор" - <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/antistaticheskij-nalivnoj-pol/" style="font-weight:normal;">наливной антистатический пол</a> - от производителя ООО "ТэоХим".</p>
+<?php } ?>
+
+<?php if ($pb_page == 2023) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/cena-nalivnye-poly/">www.teohim.ru</a> наливной полимерный пол цена.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2024) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/nalivnye/rashod/">www.teohim.ru</a> наливной пол расход.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2031) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/poliuretanovye-poly/">www.teohim.ru</a> полиуретановые полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2032) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/epoksidnye-poly/">www.teohim.ru</a> эпоксидные полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2033) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/poliuretanovaja-propitka/">www.teohim.ru</a> полиуретановая пропитка.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2034) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/poliuretanovoe-pokrytie/">www.teohim.ru</a> полиуретановое покрытие.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2035) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/kvarc-pokrytie/">www.teohim.ru</a> кварцевые полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2030) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/poliuretanovye-grunty/">www.teohim.ru</a> полиуретановая грунтовка.</p>
+<?php } ?>
+
+<?php if ($pb_page == 4041) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/mtr/epoksidnyj-grunt/">www.teohim.ru</a> эпоксидный грунт.</p>
+<?php } ?>
+
+<?php if ($pb_page == 4083) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/mtr/gruntovka-glubokogo-proniknovenija/">www.teohim.ru</a> грунтовка глубокого проникновения.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2039) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/poliuretanovye-laki/">www.teohim.ru</a> полиуретановый лак.</p>
+<?php } ?>
+
+<?php if ($pb_page == 4053) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/mtr/epoksidnyj-lak/">www.teohim.ru</a> эпоксидный лак.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2074) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/mtr/poliuretanovaja-kraska/">www.teohim.ru</a> полиуретановая краска.</p>
+<?php } ?>
+
+<?php if ($pb_page == 4049) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/mtr/epoksidnaja-kraska-emal/">www.teohim.ru</a> эпоксидная краска.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2081) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/vybor/poly-garazh/" style="font-weight:normal;">www.teohim.ru</a> пол в гараже.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2082) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/vybor/poly-sklad/" style="font-weight:normal;">www.teohim.ru</a> полы для склада.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2083) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/vybor/poly-ceh/" style="font-weight:normal;">www.teohim.ru</a> производственные полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2084) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/propitka-betona/" style="font-weight:normal;">www.teohim.ru</a> пропитка для бетона.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2085) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/kraska-betona/" style="font-weight:normal;">www.teohim.ru</a> краска по бетону.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2068) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/antiskolzjawee-pokrytie/" style="font-weight:normal;">www.teohim.ru</a> антискользящие покрытия.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2086) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/antistaticheskoe-pokrytie/" style="font-weight:normal;">www.teohim.ru</a> антистатический пол.</p>
+<?php } ?>
+
+<?php if ($pb_page == 4019) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/mtr/kraska-asfalta/" style="font-weight:normal;">www.teohim.ru</a> краска для асфальта.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2087) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/gruntovka-betona/" style="font-weight:normal;">www.teohim.ru</a> грунтовка для бетона.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2108) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/info/fljuatirovanie/" style="font-weight:normal;">www.teohim.ru</a> флюатирование.</p>
+<?php } ?>
+
+<?php if ($pb_page == 4071) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/mtr/shpaklevka-epoksidnaja/" style="font-weight:normal;">www.teohim.ru</a> эпоксидная шпаклевка.</p>
+<?php } ?>
+
+<?php if ($pb_page == 4033) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/polymer/mtr/shpaklevka-dlja-betona/" style="font-weight:normal;">www.teohim.ru</a> полиуретановая шпатлевка.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2101) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/dobavki-betona/" style="font-weight:normal;">www.teohim.ru</a> добавки в бетон.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2102) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/mozaichnyj-pol-terracco/" style="font-weight:normal;">www.teohim.ru</a> мозаичные полы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2103) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/polimercementnye-poly/" style="font-weight:normal;">www.teohim.ru</a> полимерцементный пол.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2104) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/polimerbeton/" style="font-weight:normal;">www.teohim.ru</a> полимербетон.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2105) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/info/shlifovka-polov/" style="font-weight:normal;">www.teohim.ru</a> шлифовка бетона.</p>
+<?php } ?>
+
+<?php if (($pb_page == 2106)||($pb_page == 4257)) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/mtr/betonokontakt/" style="font-weight:normal;">www.teohim.ru</a> бетоноконтакт.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2117) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/obespylivanie-betona/" style="font-weight:normal;">www.teohim.ru</a> обеспыливание бетона.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2118) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/info/zawita-betona/" style="font-weight:normal;">www.teohim.ru</a> защита бетона.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2119) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/vybor/uprochnenie-betona/" style="font-weight:normal;">www.teohim.ru</a> укрепление бетона.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2120) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/remont/" style="font-weight:normal;">www.teohim.ru</a> ремонт бетонного пола.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2121) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/styazhka-pola/" style="font-weight:normal;">www.teohim.ru</a> бетонная стяжка пола.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2122) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/betonnye-raboty/" style="font-weight:normal;">www.teohim.ru</a> бетонные работы.</p>
+<?php } ?>
+
+<?php if ($pb_page == 2123) { ?>
+<div class="px10b"></div>
+{*text1_4*} <a class="nlink" target="_blank" href="https://teohim.ru/beton/frezerovanie-betona/" style="font-weight:normal;">www.teohim.ru</a> фрезеровка бетонного пола.</p>
+<?php } ?>
+
+<?php if ($pb_page==51 || $pb_page==4001) { ?>{*text0_20*}<?php } ?>
+</section><div class="px0"></div></div><div class="sfooter"></div>
+<div id="header">
+<header>
+<a href="/" id="logo_kz"><div id="elakor">Элакор<div>™</div></div><span>наливные полы</span><div id="logo1">максимальная защита</div><div id="logo2">минимальные затраты</div></a>
+
+<div id="contacts">
+<div class="callback" onclick="f_post(2);return false;" style="position:absolute; top:100px; color:red; width:200px; text-align:center; font-size:14px; text-decoration:underline dashed;">Обратный звонок</div>
+</div>
+
+
+</header>
+</div>
+
+<div id="leftblock"><div class="px50"></div>
+<div id="ltmenu"><?php include_once $pb_root."inc/inc_menu_lt.php"; ?><div class="px5"></div></div><div class="px0"></div>
+<a href="https://teohim.ru/objlist.php?pos=3" id="aobjlist" target="_blank" title="Объекты на карте с возможностью выбора региона, типа объекта и типа покрытия" style="top:137px;">Выполненные<br>объекты на карте</a>
+<div id="leftmenu"><?php $tlm=' style="text-shadow:#005093 1px 1px 2px; color:#ffffff; background:#f00000;"'; ?>
+<div><div class="px5_"></div>
+<l1 id="2"<?php if ($pb_page==1002) print $tlm; ?>>Прайс-лист</l1><div class="px5_"></div>
+<l1 id="18"<?php if ($pb_page==1018) print $tlm; ?>>Калькулятор</l1><div class="px5_"></div>
+<l1 id="8"<?php if ($pb_page==1008) print $tlm; ?>>Контакты</l1><div class="px5_"></div>
+<?php if (1==2) { ?>
+<l1 id="3"<?php if ($pb_page==1003) print $tlm; ?>>Заявка</l1><div class="px5_"></div>
+<?php } ?>
+<l1 id="4"<?php if ($pb_page==1004) print $tlm; ?>>Таблица цветов</l1><div class="px5_"></div>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+<l2 id="5"<?php if ($pb_page==2005) print $tlm; ?>>Покрытия для Бетона</l2><div class="px5_"></div>
+<l2 id="6"<?php if ($pb_page==2006) print $tlm; ?>>Покрытия для Металла</l2><div class="px5_"></div>
+<l2 id="7"<?php if ($pb_page==2007) print $tlm; ?>>Покрытия для Дерева</l2><div class="px5_"></div>
+<l1 id="5"<?php if ($pb_page==1005) print $tlm; ?>>Инструмент</l1><div class="px5_"></div>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+<l1 id="6"<?php if ($pb_page==1006) print $tlm; ?>>Все инструкции</l1><div class="px5_"></div>
+<l1 id="12"<?php if ($pb_page==1012) print $tlm; ?>>Сертификаты</l1><div class="px5_"></div>
+<!--a href="https://teohim.ru/sert/" target="_blank"<?php if ($pb_page==1012) print $tlm; ?>>Сертификаты</a><div class="px5_"></div-->
+<l1 id="14"<?php if ($pb_page==1014) print $tlm; ?>>Вопросы и ответы</l1><div class="px5_"></div>
+<l1 id="15"<?php if ($pb_page==1015) print $tlm; ?>>Полезная информация</l1><div class="px5_"></div>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+<l1 id="10"<?php if ($pb_page==1010) print $tlm; ?>>Наши работы - Фото</l1><div class="px5_"></div>
+<l1 id="11"<?php if ($pb_page==1011) print $tlm; ?>>Наши работы - Отзывы</l1><div class="px5_"></div>
+<l1 id="7"<?php if ($pb_page==1007) print $tlm; ?>>О компании</l1><div class="px5_"></div>
+</div>
+<div class="px10"></div>
+
+<div id="search">
+<p style="margin-top:0; text-align:center; color:#005093; font:italic bold 14px arial;">Поиск по сайту</p>
+<?php if (1==1) { ?>
+<div class="ya-site-form ya-site-form_inited_no" onclick="return {'bg': 'transparent', 'target': '_self', 'language': 'ru', 'suggest': false, 'tld': 'ru', 'site_suggest': true, 'action': 'http://www.bettech.kz/search/', 'webopt': false, 'fontsize': 12, 'arrow': false, 'fg': '#000000', 'searchid': '2131254', 'logo': 'rb', 'websearch': false, 'type': 3}">
+<form action="https://yandex.ru/sitesearch" method="get" target="_self">
+<input type="hidden" name="searchid" value="2131254"/>
+<input type="hidden" name="l10n" value="ru"/>
+<input type="hidden" name="reqenc" value=""/>
+<input type="text" name="text" value=""/>
+<input type="submit" value="Найти"/>
+</form>
+</div>
+<script>(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+<?php } ?>
+</div>
+<div class="px10"></div>
+
+<div id="counters">
+<?php if (1==1) { ?>
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=5708410&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/5708410/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="5708410" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(5708410, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/5708410" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<?php } if (1==2) { ?>
+<!--LiveInternet counter--><script>document.write("<"+"a href='http://www.liveinternet.ru/click' target=_blank><img src='//counter.yadro.ru/hit?t44.3;r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";h"+escape(document.title.substring(0,80))+";"+Math.random()+"' alt='' title='LiveInternet' style='width:31px;height:31px;border:none'><\/a>")</script><!--/LiveInternet-->
+<?php } ?>
+</div>
+</div>
+
+</div>
+<div id="mtblock">
+  <l1 id="1" id="mtlogo"></l1>
+  <div id="mtpanel"><table class="mtlink"><tbody><tr>
+    <th onclick="location.href='/materials/'" style="border-right:solid 1px #000000;">ЦЕНЫ<br>материалы</th><th onclick="location.href='/calc-kz/'" style="border-right:solid 1px #000000;">РАСЧЁТ<br> покрытий</th>
+  </tr></tbody></table></div>
+</div>
+<div id="ltblock" onclick="f_ltblock()"></div>
+
+</div>
+
+<div id="footer">
+<footer>
+
+<?php 
+if ($pb_page == 1002) {
+echo '<div class="vcard"><span class="category">ТОО</span> <span class="fn org">«ТэоХим Казахстан»</span></div>';
+}
+else {
+echo '<div class="vcard"><span class="category">ТОО</span> <span class="fn org">«ТэоХим Казахстан»</span></div>';
+}
+
+?>
+
+<?php if ( ($pb_page == 1001) || ($pb_page == 1001) || ($pb_page == 2001) || ($pb_page == 2002) || ($pb_page == 2003) || ($pb_page == 2004) || ($pb_page == 2011) || ($pb_page == 2012) || ($pb_page == 2013) || ($pb_page == 2014) || ($pb_page == 2015) || ($pb_page == 2016) || ($pb_page == 2020) || ($pb_page == 2031) || ($pb_page == 2032) || ($pb_page == 2033) || ($pb_page == 2034) || ($pb_page == 2035) || ($pb_page == 2030) || ($pb_page == 4041) || ($pb_page == 2039) || ($pb_page == 4053) || ($pb_page == 2074) || ($pb_page == 4049) || ($pb_page == 2081) || ($pb_page == 2082) || ($pb_page == 2083) || ($pb_page == 2084) || ($pb_page == 2085) || ($pb_page == 2068) || ($pb_page == 2086) || ($pb_page == 4019) || ($pb_page == 2087) || ($pb_page == 2108) || ($pb_page == 4071) || ($pb_page == 4033) || ($pb_page == 2101) || ($pb_page == 2102) || ($pb_page == 2103) || ($pb_page == 2104) || ($pb_page == 2105) || ($pb_page == 2106) || ($pb_page == 2117) || ($pb_page == 2118) || ($pb_page == 2119) || ($pb_page == 2120) || ($pb_page == 2121) || ($pb_page == 2122) || ($pb_page == 1083) || ($pb_page == 1129) || ($pb_page == 4083) || ($pb_page == 4027) || ($pb_page == 4057) || ($pb_page == 4065) || ($pb_page == 4257) ) { ?>
+
+<?php } else { ?>
+<div class="fright" style="">Все <a target="_blank" href="https://teohim.ru/nalivnye/">наливные полимерные полы</a></div>
+<?php } ?>
+
+</footer>
+</div>

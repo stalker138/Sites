@@ -1,0 +1,5 @@
+<h1>Заявка на покупку материалов и устройство промышленных полов «Элакор»</h1>
+<div class="px10"></div>
+<div class="dpr" onclick="f_zakaz()"><div class="dh2">Купить материал</div><p style="text-align:center;font-weight:bold">Заявка<br>на покупку материалов<br>«Элакор»</p><div class="px10"></div></div>
+<div class="dpr" onclick="f_zakaz()" style="float:right"><div class="dh2">Заказать выполнение работ</div><p style="text-align:center;font-weight:bold">Заявка<br>на устройство промышленных полов<br>«Элакор»</p><div class="px10"></div></div>
+<div class="pb_hidden" id="idzakaz"></div>

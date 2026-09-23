@@ -1,0 +1,25 @@
+{*text1_16*}
+<h1>Контакты</h1>
+
+<?php if(1==2) { ?>
+<p><strong>ТОО «Бетонные технологии»</strong> <span style="color:#800000">производит работы по всему Казахстану</span>.</p>
+<p><strong>ТОО «ТэоХим Казахстан»</strong> <span style="color:#800000">производит поставку материалов Элакор по всему Казахстану</span>.</p>
+<?php } ?>
+<p><strong>ТОО «ТэоХим Казахстан»</strong> производит работы и поставку материалов Элакор по всему Казахстану.</p>
+
+
+<div class="px10"></div>
+<p><span style="color:#800000">Адрес:</span> Республика Казахстан, г.Астана, ул. Акжол 2/1</p>
+<p><span style="color:#800000">Адрес:</span> Республика Казахстан, г.Алматы, ул.Ауэзова, 1Б</p>
+<p><span style="color:#800000">Адрес:</span> Республика Казахстан, г. Актобе, проспект Санкибай батыра 14«В», офис 316</p>
+<p><span style="color:#800000">Адрес:</span> Республика Казахстан, г. Шымкент, Ул. Дулати 173/1  <a href="tel:+77019892399" style="padding-left:5px;">+7 701 989 23 99</a></p>
+<!--<p><span style="color:#800000">Сот.:</span> +7 701 544-35-39</p>-->
+
+<div class="px10"></div>
+
+<p><span style="color:#800000">E-mail:</span> <span ID="dpIDmail1"></span>&nbsp; &nbsp;<span ID="dpIDmail2"></span></p>
+<p><span style="color:#800000">Единый номер по Казахстану:</span> <a href="tel:+77015443539">+7 701 544 35 39</a> &nbsp;<a href="https://api.whatsapp.com/send?phone=77015443539"><img src="/img/css/whatsapp.png" style="position:relative; top:3px; width:16px;"></a></p>
+ 
+<br>
+<div id="swtch0" style="width:140px" onclick="f_post(2)">Обратная связь</div>
+<div class="pb_hidden"><span ID="spIDmail1">im.rukazakhstan@teoh</span><span ID="spIDmail2">ox.rubt_esp@inb</span></div>

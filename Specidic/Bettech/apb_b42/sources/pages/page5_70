@@ -1,0 +1,12 @@
+{*tpl11*}{*tpl1*}<!DOCTYPE html><html lang="ru"><head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block5_70*}
+{*tpl8*}{*tpl4*}
+<script type="text/javascript">
+{*text0_31*}
+
+var pi = 70;
+{*text2_14*}
+
+{*text0_32*}
+</script>
+</body></html>

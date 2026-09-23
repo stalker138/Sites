@@ -1,0 +1,182 @@
+<h1>Сертификаты, протоколы испытаний</h1>
+<div class="px5"></div>
+
+<div class="h16i">Сертификаты</div>
+<div class="px5"></div>
+
+<menu id="menuSert0">
+ <li class="pb_mc" id="pbm0" onclick="sm_click(this)"><span>1. Сертификаты соответствия РК</span>
+   <menu>
+    <li><span>1.1.</span> &nbsp;&nbsp;<l1 id="61">Сертификат соответствия полимерной композиции "Элакор-ПУ"</l1>.</li>
+    <li><span>1.2.</span> &nbsp;&nbsp;<l1 id="62">Сертификат соответствия полимерной композиции "Элакор-ЭД"</l1>.</li>
+    <li><span>1.3.</span> &nbsp;&nbsp;<l1 id="63">Сертификат соответствия комплексной добавки для бетонов "Элакор-Эластобетон" мод. А</l1>.</li>
+    <li><span>1.4.</span> &nbsp;&nbsp;<l1 id="64">Не требует сертификации в РК (Эластобетон)</l1>.</li>
+    <li><span>1.5.</span> &nbsp;&nbsp;<l1 id="67">Не требует сертификации в РК (Элакор-МБ)</l1>.</li>
+   </menu>
+ </li>
+</menu>
+
+<div class="px0"></div>
+<div class="h16i">Сертификаты РФ</div>
+<div class="px5"></div>
+
+<menu id="menuSert1">
+ <li class="pb_mc" id="pbm1" onclick="sm_click(this)"><span>1. Полимерные композиции «Элакор-ПУ»</span>
+   <menu>
+    <li><span>1.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/news/984/">Сертификат Гигиенический (СЭЗ) «Элакор-ПУ»</a></li>
+    <li><span>1.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sgr-elakor-pu/">Свидетельство о государственной регистрации «Элакор-ПУ». Таможенный союз</a></li>
+    <li><span>1.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/phz-elakor-pu/">Сертификат пожарной безопасности «Элакор-ПУ»</a></li>
+    <li><span>1.4.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sertifikat_sootvetstvija_jelakor-pu/">Сертификат соответствия «Элакор-ПУ»</a></li>
+    <li><span>1.5.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-pu/">Письмо РОСТЕСТ «Элакор-ПУ»</a></li>
+    <li><span>1.6.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/deti-elakor-pu/">Заключение на применение «Элакор-ПУ» в детских и лечебно-профилактичеких учреждениях</a></li>
+    <li><span>1.7.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/radiation-elakor-pu/">Заключение НИКИМТ «Дезактивируемость и радстойкость»</a>.<br><span class="p11">Разрешение на применение на объектах Росатома.</span></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm2" onclick="sm_click(this)"><span>2. Двухкомпонентные композиции «Элакор-ПУ 2К»</span>
+   <menu>
+    <li><span>2.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sez-elakor-pu-2k/">Сертификат Гигиенический (СЭЗ) «Элакор-ПУ 2К»</a></li>
+    <li><span>2.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sgr-elakor-pu-2k/">Свидетельство о государственной регистрации «Элакор-ПУ 2К». Таможенный союз</a></li>
+    <li><span>2.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/phz-elakor-pu-2k/">Сертификат пожарной безопасности «Элакор-ПУ 2К»</a></li>
+    <li><span>2.4.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-pu-2k/">Письмо РОСТЕСТ «Элакор-ПУ 2К»</a></li>
+    <li><span>2.5.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/jelakor-pu-2k-primenenie-v-parkingah/">Письмо МОСГОСЭКСПЕРТИЗА о применении «Элакор-ПУ 2К» на объектах гаражного назначения</a>.<br><span class="p11">Согласование применения покрытия «Элакор» для защиты полов из асфальтобетонной смеси.</span></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm3" onclick="sm_click(this)"><span>3. Полимерные композиции «Элакор-ПУ Эко»</span>
+   <menu>
+    <li><span>3.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sez-elakor-pu-eko/">Сертификат Гигиенический (СЭЗ) «Элакор-ПУ Эко»</a>.<br><span class="p11">Контакт с пищевыми продуктами, питьевой водой.</span></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm4" onclick="sm_click(this)"><span>4. Полимерные композиции «Элакор-ЭД»</span>
+   <menu>
+    <li><span>4.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sez-elakor-ed/">Свидетельство о государственной регистрации «Элакор-ЭД». Таможенный союз</a></li>
+    <li><span>4.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/phz-elakor-ed/">Сертификат пожарной безопасности «Элакор-ЭД»</a></li>
+    <li><span>4.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-ed/">Письмо РОСТЕСТ «Элакор-ЭД»</a></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm5" onclick="sm_click(this)"><span>5. Составы для пропитки бетона «Элакор-МБ»</span>
+   <menu>
+    <li><span>5.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sez-elakor-mb/">Сертификат Гигиенический (СЭЗ) «Элакор-МБ»</a></li>
+    <li><span>5.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/phz-elakor-mb/">Сертификат пожарной безопасности «Элакор-МБ»</a></li>
+    <li><span>5.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-mb/">Письмо РОСТЕСТ «Элакор-МБ»</a></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm6" onclick="sm_click(this)"><span>6. Добавки для бетонов «Элакор-Эластобетон»</span>
+   <menu>
+    <li><span>6.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sez-elakor-elastobeton/">Сертификат Гигиенический (СЭЗ) «Элакор-Эластобетон»</a></li>
+    <li><span>6.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/jelakor-jelastobeton/">Свидетельство о государственной регистрации «Элакор-Эластобетон». Таможенный союз</a></li>
+    <li><span>6.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/phz-elakor-elastobeton/">Сертификат пожарной безопасности «Элакор-Эластобетон»</a></li>
+    <li><span>6.4.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/elb-a-mosstroy/">Добавки для бетона «Эластобетон-А» - сертификат «НИИМосстрой»</a></li>
+    <li><span>6.5.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sertifikat_sootvetstvija_jelakor-jelastobeton/">Сертификат соответствия «Элакор-Эластобетон»</a></li>
+    <li><span>6.6.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-elastobeton/">Письмо РОСТЕСТ «Элакор-Эластобетон»</a></li>
+   </menu>
+ </li>
+</menu>
+
+<div class="px0"></div>
+<div class="h16i">Протоколы испытаний</div>
+<div class="px5"></div>
+
+<menu id="menuSert2">
+ <li class="pb_mc" id="pbm21" onclick="sm_click(this)"><span>1. Полиуретановые покрытия «Элакор-ПУ»</span>
+   <menu>
+    <li><span>1.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/tehnicheskie-harakteristiki-elakor-pu/">Технические характеристики</a>.<br><span class="p11">Свойства полиуретановых материалов Элакор-ПУ (до отверждения) и покрытий (после отверждения).</span></li>
+    <li><span>1.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/tablica-himstojkosti/">Таблица химстойкости</a>.<br><span class="p11">Стойкость полиуретановых покрытий Элакор-ПУк агрессивным средам.</span></li>
+    <li><span>1.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/rezervuary-dlja-nefti-vnutrennie-poverhnosti/">Нефтестойкость покрытия</a>.<br><span class="p11">Исследования полимерного покрытия Элакор-ПУ на нефтепоглащение, нефтепроницаемость, защитных свойств до и после контакта с нефтью.</span></li>
+    <li><span>1.4.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/stojkost-uksusnoj-kislote/">Стойкость к 70% уксусной кислоте</a>.<br><span class="p11">Важный параметр химстойкихпокрытий Элакор-ПУ, используемых в пищевой промышленности.</span></li>
+    <li><span>1.5.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/atmosferostojkost/">Атмосферостойкость</a>.<br><span class="p11">Влагостойкость, термостойкость, морозостойкость покрытий, в среде минеральных удобрений. Физико-механические свойства полиуретановых покрытий Элакор-ПУ до и после испытаний.</span></li>
+    <li><span>1.6.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/klimaticheskie-ispytanija-agressivnyh-vewestv/">Атмосферостойкость, сравнительные испытания Элакор-ПУ и металлического цинка</a>.<br><span class="p11">Ужесточение режимов климатических испытаний с целью моделирования воздействия антиобледенительных реагентов, щелочных и кислотных осадков.</span></li>
+    <li><span>1.7.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/dolgovechnost-cinkovyh-pokrytij/">Долговечность цинковых покрытий</a></li>
+    <li><span>1.8.</span> &nbsp;&nbsp;Износостойкость покрытий <a target="_blank" href="http://www.teohim.ru/sert/iznosostojkost-po-gost28011/">по ГОСТ28011, метод А</a>, <a target="_blank" href="http://www.teohim.ru/sert/iznosostojkost-po-gost28011-b/">по ГОСТ28011, метод Б</a>.<br><span class="p11">Прочность покрытий Элакор-ПУ к истиранию. Испытания по ГОСТ28011 метод А и метод Б.</span></li>
+    <li><span>1.9.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/zakljuchenie-po-ispytaniju-adgezionnoj-prochnosti/">Адгезия к металлам</a>.<br><span class="p11">Адгезионная прочность покрытия Элакор-ПУ к стали, алюминию, оцинкованной поверхности, ржавому металлу.</span></li>
+    <li><span>1.10.</span> <a target="_blank" href="http://www.teohim.ru/sert/opredelenie-adgezii-pri-otryve-lkm/">Адгезия к металлам</a>.<br><span class="p11">Сравнительные испытания «Элакор-ПУ» и других  покрытий по определение адгезии методом нормального отрыва в соответствии с ИСО 462498.</span></li>
+    <li><span>1.11.</span> <a target="_blank" href="http://www.teohim.ru/sert/adgezija-k-magnezialnomu-betonu/">Адгезия к магнезиальному бетону</a>.<br><span class="p11">Определение предела прочности на отрыв (усилие сцепления) покрытия Элакор-ПУ к магнезиальному бетону  «АльфаПол МБ» по ГОСТ 22690-88.</span></li>
+    <li><span>1.12.</span> <a target="_blank" href="http://www.teohim.ru/sert/tverdost-po-buhgolcu/">Твердость покрытия по Бухгольцу</a>.<br><span class="p11">Испытание полимерного покрытия «Элакор-ПУ» по определению прочности при вдавливании по Бухгольцу, определению блеска по ГОСТ 896-69, определению адгезии по ГОСТ 15140-78.</span></li>
+    <li><span>1.13.</span> <a target="_blank" href="http://www.teohim.ru/sert/uroven-naprjazhennosti-elektrostaticheskogo-polja/">Антистатическое покрытие</a>.<br><span class="p11">Определение уровня напряженности электростатического поля на поверхности покрытия «Элакор-ПУ».</span></li>
+    <li><span>1.14.</span> <a target="_blank" href="http://www.teohim.ru/sert/elakor-pu-ocenka-zawitnyh-svojstv/">Антикоррозионная защита</a>.<br><span class="p11">Испытания физико-механических и защитных свойств полимерного покрытия «Элакор»-ПУ для противокоррозионной защиты вагонов-минералозов.</span></li>
+    <li><span>1.15.</span> <a target="_blank" href="http://www.teohim.ru/sert/ispytanie-po-opredeleniju-iskrobezopasnosti-elakor-pu/">Искробезопасность</a>.<br><span class="p11">Испытание по определению искробезопасности полимерного покрытия «Элакор-ПУ».</span></li>
+    <li><span>1.16.</span> <a target="_blank" href="http://www.teohim.ru/sert/jelakor-pu-kompleksnye-ispytanija/">Комплексные испытания «Элакор-ПУ»</a>.<br><span class="p11">Истираемость, твердость, химстойкость, светостойкость.</span></li>
+    <li><span>1.17.</span> <a target="_blank" href="http://www.teohim.ru/sert/jelakor-pu-ljuks-kompleksnye-ispytanija/">Комплексные испытания «Элакор-ПУ» Люкс</a>.<br><span class="p11">Истираемость, твердость, светостойкость.</span></li>
+    <li><span>1.18.</span> <a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-elastobeton/">Атмосферостойкость</a></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm22" onclick="sm_click(this)"><span>2. Эпоксидные покрытия «Элакор-ЭД»</span>
+   <menu>
+    <li><span>2.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/harakteristiki-elakor-ed/">Эпоксидная композиция Элакор-ЭД – Технические характеристики</a>.<br><span class="p11">Свойства эпоксидной композиции до отверждения, после отверждения. Химическая стойкость эпоксидной композиции.</span></li>
+    <li><span>2.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/jelakor-jed-kompleksnye-ispytanija-pokrytij/">Комплексные испытания покрытий «Элакор-ЭД»</a>.<br><span class="p11">Истирание, химстойкость, твердость, адгезия, прочность при ударе, эластичность.</span></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm23" onclick="sm_click(this)"><span>3. Бетоны с добавками «Элакор-Эластобетон»</span>
+   <menu>
+    <li><span>3.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/stojkost-elakor-elastobeton-k-udarnym-vozdejstvijam/">Стойкость к удару</a>.<br><span class="p11">Испытания опытных участков бетонных полов, выполненных с добавкой Эластобетон на стойкость к ударным воздействиям.</span></li>
+    <li><span>3.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/opredelenie-prochnosti-na-szhatie-elakor-elastobeton/">Прочность на сжатие</a>.<br><span class="p11">Испытания по определению прочности на сжатиебетона с добавкой Эластобетон на 7-е сутки.</span></li>
+    <li><span>3.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/jelastobeton-prochnost-vodonepronicaemost/">Прочность на сжатие и водонепроницаемость</a>.<br><span class="p11">Испытания по определению прочности на сжатие и водонепроницаемость бетона с добавкой  Эластобетон А2.</span></li>
+    <li><span>3.4.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/opredelenie-marochnoj-prochnosti-betona/">Марочная прочность</a>.<br><span class="p11">Испытания по определению марочной прочности бетона с добавкой Эластобетон А1.</span></li>
+    <li><span>3.5.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/opredelenie-soprotivlenij-elakor-elastobeton/">Антистатика. Электропроводимость</a>.<br><span class="p11">Определение удельного объемного и удельного поверхностного электрических сопротивлений бетонов с добавками Эластобетон.</span></li>
+    <li><span>3.6.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/iskrobezopasnost_jelastobeton_a/">Искробезопасность «Эластобетон-А»</a>.<br><span class="p11">Испытание по определению искробезопасности «Элакор-Эластобетон-А».</span></li>
+    <li><span>3.7.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/iskrobezopasnost_jelastobeton_b/">Искробезопасность «Эластобетон-Б»</a>.<br><span class="p11">Испытание по определению искробезопасности «Элакор-Эластобетон-Б».</span></li>
+    <li><span>3.8.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/opredelenie-iskrobezopasnosti-elakor-elastobeton/">Искробезопасность «Эластобетон-В»</a>.<br><span class="p11">Испытание по определению искробезопасности «Элакор-Эластобетон-В».</span></li>
+    <li><span>3.9.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/jelastobeton-vlijanie-na-svojstva-betona/">Исследование влияния «Эластобетона-А» на свойства бетона</a>.<br><span class="p11">Определение прочности на сжатие, прочности на растяжение при изгибе, водонепроницаемости.</span></li>
+    <li><span>3.10.</span> <a target="_blank" href="http://www.teohim.ru/sert/jelastobeton-a-vlijanie-na-fiziko-mehanicheskie-svojstva-betonov/">Влияние «Эластобетона-А» на физико-механические свойства бетонов</a>.<br><span class="p11">Испытания НИИ Московского строительства «НИИМосстрой».</span></li>
+    <li><span>3.11.</span> <a target="_blank" href="http://www.teohim.ru/sert/opredelenie-morozostojkosti-betona-jelastobeton-a2/">Определение морозостойкости бетона с добавкой «Эластобетон-А2»</a>.<br><span class="p11">Испытания НИИ Московского строительства «НИИМосстрой».</span></li>
+   </menu>
+ </li>
+</menu>
+
+<div class="px0"></div>
+<div class="h16i">Письма-согласования</div>
+
+<p style="font-size:11px;">К нам часто обращаются с просьбой согласовать - подтвердить определенные свойства наших покрытий «Элакор»; объяснить и обосновать необходимость отдельных операций технологии нанесения покрытий.<br>
+Ниже мы приводим направленные нами письма по наиболее важным (часто задаваемым) вопросам.<br>
+<span style="font:bold italic 11px arial">Внимание!</span> Если Вам необходимо получить дополнительные согласования по материалам «Элакор» - звоните <span style="font:bold 11px arial">(499) 703-40-37</span>.</p>
+<div class="px10b"></div>
+<div class="px5"></div>
+<div class="px5"></div>
+
+<menu id="menuSert3">
+ <li class="pb_mc" id="pbm31" onclick="sm_click(this)"><span>1. Письма-согласования по материалам серии Элакор-ПУ</span>
+   <menu>
+    <li><span>1.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo01/">Изменение названий полимерных (полиуретановых) композиций «Элакор-ПУ»</a>.<br><span class="p11">Модификация «Стандарт-Плюс» с 14.11.2008 выпускается под наименованием: модификация «Эко».</span></li>
+    <li><span>1.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo02/">Серия «Элакор-ПУ» - полиуретановые композиции без добавок других полимеров</a>.<br><span class="p11">Полимерные полиуретановые композиции «Элакор-ПУ» производятся без использования других полимеров.</span></li>
+    <li><span>1.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo03/">Полимерные полы «Элакор» - эксплуатация при отрицательных температурах</a>.<br><span class="p11">Необходимость выполнения антискользящих вариантов покрытий и пропиток.</span></li>
+    <li><span>1.4.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo04/">Химическая стойкость покрытия Элакор-ПУ</a>.<br><span class="p11">в контакте с 10% водным раствором азотной кислоты (HNO3) и каустической содой (NaOH).</span></li>
+    <li><span>1.5.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo05/">Нанесение покрытий Элакор при отрицательных температурах</a>.<br><span class="p11">Модификации полимерных композиций «Элакор-ПУ», которые могут применяться (наноситься) при отрицательных температурах.</span></li>
+    <li><span>1.6.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo06/">Покрытия «Элакор-ПУ Металл» - антикоррозионные покрытия для металла</a>.<br><span class="p11">Изменение характеристик покрытий «Элакор» для металлических поверхностей под воздействием светового и ультрафиолетового излучения.</span></li>
+    <li><span>1.7.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo07/">Покрытия «Элакор-ПУ Металл» - химическая стойкость</a>.<br><span class="p11">Покрытия Элакор для металлических поверхностей в контакте с водными растворами метанола</span></li>
+    <li><span>1.8.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo13/">Применение пропиток Элакор для магнезиальных бетонов</a>.<br><span class="p11 tmp">Применение грунта глубокого проникновения «Элакор-ПУ Грунт-2К/40» - ЭФФЕКТИВНО и прошли соответствующие испытания.<br>Применение Флюат пропитка Элакор-МБ1 для магнезиальных бетонов НЕ эффективно.</span></li>
+    <li><span>1.9.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo-a/">Антискользящие покрытия Элакор-ПУ</a>.<br><span class="p11">Схема устройства антискользящего покрытия. Можно изготавливать покрытия разной степени шероховатости.</span></li>
+    <li><span>1.10.</span> <a target="_blank" href="http://www.teohim.ru/pisma/pismo-b/">Требования к бетону для устройства полимерных покрытий Элакор-ПУ</a>.<br><span class="p11">Относительная прочность бетона на сжатие при различных температурах твердения. Допустимая влажность бетонного основания.</span></li>
+    <li><span>1.11.</span> <a target="_blank" href="http://www.teohim.ru/pisma/pismo-v/">Идентичность Элакор-БС и Элакор-ПУ</a>.<br><span class="p11">Изменение названия модификации БС на ПУ.</span></li>
+    <li><span>1.12.</span> <a target="_blank" href="http://www.teohim.ru/pisma/pismo-g/">Изменение ТУ Элакор ПУ 2001</a>.<br><span class="p11">2009г прошла перерегистрация технических условий полимерных композиций Элакор-ПУ</span></li>
+    <li><span>1.13.</span> <a target="_blank" href="http://www.teohim.ru/pisma/pismo-d/">Изменение ТУ Элакор ПУ 2003</a>.<br><span class="p11">2009г прошла перерегистрация технических условий полимерных композиций Элакор-ПУ</span></li>
+    <li><span>1.14.</span> <a target="_blank" href="http://www.teohim.ru/pisma/pismo-e/">Антикоррозионное покрытие Элакор-ПУ Металл</a>.<br><span class="p11">Возможность замены финишного слоя лака на слой эмали при устройстве противокоррозионного покрытия Элакор-ПУ.</span></li>
+    <li><span>1.15.</span> <a target="_blank" href="http://www.teohim.ru/pisma/pismo-zh/">Модификации полимерных композиций Элакор-ПУ</a>.<br><span class="p11">Номенклатура материалов, выпускаемых под торговой маркой Элакор-ПУ.</span></li>
+    <li><span>1.16.</span> <a target="_blank" href="http://www.teohim.ru/pisma/pismo-z/">Состав Элакор -ПУ</a>.<br><span class="p11">Сырьевые характеристики.</span></li>
+    <li><span>1.17.</span> <a target="_blank" href="http://www.teohim.ru/pisma/pismo-i/">Состав Элакор-ПУ. Грунт, Эмаль</a>.<br><span class="p11">Сырьевые характеристики.</span></li>
+    <li><span>1.18.</span> <a target="_blank" href="http://www.teohim.ru/pisma/pismo-k/">Сравнение покрытий Элакор-ПУ и ЭП-773</a>.<br><span class="p11">Свойства покрытий полиуретанового покрытия Элакор-ПУ и эпоксидного ЭП773.</span></li>
+    <li><span>1.19.</span> <a target="_blank" href="http://www.teohim.ru/pisma/pismo-l/">Удельное давление на бетон и покрытие Элакор-ПУ</a>.<br><span class="p11">Покрытие выдерживает удельное давление в 100 и более раз больше, чем бетонный пол.</span></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm32" onclick="sm_click(this)"><span>2. Письма-согласования по материалам серии Элакор-МБ</span>
+   <menu>
+    <li><span>2.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo08/">Флюат пропитки Элакор-МБ - химическая стойкость</a>.<br><span class="p11">Химическая стойкость Элакор-МБ к воздействию алифатических и ароматических углеводородов - горюче-смазочным материалам (ГСМ).</span></li>
+    <li><span>2.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo09/">Флюат пропитка Элакор-МБ – условия нанесения</a>.<br><span class="p11">Сроки выдержки бетона после укладки, температурные и влажностные условия созревания бетона для нанесения Флюат пропитки.</span></li>
+    <li><span>2.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo10/">Флюат пропитка Элакор-МБ – некоторые эксплуатационные свойства</a>.<br><span class="p11">Обеспыливание бетона, гермеизация бетонной поверхности, возможность применения при отрицательных температурах.</span></li>
+    <li><span>2.4.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo11/">Сравнение Элакор-МБ1 и Литурин 1</a><br><span class="p11">Полная аналогия составов и технологии нанесения при разнице в цене материала в 3-4раза !!!???</span></li>
+    <li><span>2.5.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo12/">Элакор-МБ2 – к вопросу срока годности</a>.<br><span class="p11">Состав Элакор-МБ2 может применяться после истечения срока годности, при определённых условиях...</span></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm33" onclick="sm_click(this)"><span>3. Письма-согласования по материалам серии Элакор-Эластобетон</span>
+   <menu>
+    <li><span>3.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo14/">Добавка для бетона Эластобетон-А. Конкретные вопросы – конкретные ответы.</a><br><span class="p11">Может ли добавка Эластобетон-А снизить прочность бетона.<br>Видимые доказательства применения добавки Эластобетон-А.<br>Можно ли лабораторно установить факт применения добавки Эластобетон-А.</span></li>
+    <li><span>3.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo15/">Добавка для бетона «Эластобетон-А2». Изменения в расходе.</a><br><span class="p11">- Изменение расхода добавки для бетона с 2.0кг на 3.8кг на 100кг цемента.<br>- Новая возможность – поставка «Эластобетон-А2» в виде концентрата</span></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm34" onclick="sm_click(this)"><span>4. Письма-согласования по технологическим операциям</span>
+   <menu>
+    <li><span>4.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo16/">Необходимость шлифования – зачистки бетона при устройстве полимерных покрытий «Элакор»</a></li>
+    <li><span>4.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo17/">Необходимость шлифования – зачистки асфальтобетона при устройстве полимерных покрытий «Элакор-ПУ 2К»</a></li>
+   </menu>
+ </li>
+</menu>
+
+<div class="px10"></div>

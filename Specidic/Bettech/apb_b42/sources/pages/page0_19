@@ -1,0 +1,32 @@
+<?php
+// 2013 | asws | version 00.00 2014
+
+if (empty($_POST['c_new']) || empty($_POST['c_n'])) { header("HTTP/1.1 204 No Content"); exit; } else { $sessionID=(int)($_POST['c_new']); $n=(int)($_POST['c_n']); }
+if ($n<10 || $n>99) $n=0; // Часть имени файла капчи
+$pb_file_captcha=$pb_root.'inc/pb_captcha'; $pb_file_captcha.=$n.'.php'; // Текстовые файлы капчи
+$out='error'; $cr=chr(10); // Перенос строки (linux-формат)
+$w=90; $h=25;  // Ширина-высота рисунка капчи
+$c1=0; $c2=200; // Диапазон для цветов R, G, B
+$b=0; // Фон (если 0 то прозрачный) иначе $pb_background='r,g,b'
+$cnt=5; // Кол-во символов в капче
+if (file_exists($pb_file_captcha)) $pb_txt=@file_get_contents($pb_file_captcha); else $pb_txt='<?php'.$cr.'print "hello"; exit; $t="'.$cr.'";'.$cr.'?>'.$cr;
+if ($pb_txt==false) { print 'error'; exit; } // Если существующий файл не удалось прочитать
+
+$vcap=date("i"); $vcap = ($vcap<'10') ? date("YmdH",time()-3600) : date("YmdH");
+$cap=strpos($pb_txt,$cr.$vcap,0);
+if ($cap) $pb_txt='<?php'.$cr.'print "hello"; exit; $t="'.substr($pb_txt,$cap);
+else { $vcap=date("Ymd",time()-86400); $cap=strpos($pb_txt,$cr.$vcap,0); if ($cap) $pb_txt='<?php'.$cr.'print "hello"; exit; $t="'.substr($pb_txt,$cap); }
+
+$cap=''; $vcap=date("YmdHis").$sessionID;
+for ($i=1; $i<=$cnt; $i++) { $s=array(chr(mt_rand(50,57)),chr(mt_rand(112,122)),chr(mt_rand(97,104)),chr(mt_rand(106,107)),chr(mt_rand(50,57)),chr(mt_rand(112,122)),chr(mt_rand(97,104)),chr(mt_rand(109,110))); $cap.=$s[mt_rand(1,8)-1]; }
+$pb_txt=substr($pb_txt,0,strpos($pb_txt,$cr.'";'.$cr.'?>'.$cr,0)).$cr.$vcap.chr(9).$_SERVER['REMOTE_ADDR'].chr(9).$cap.$cr.'";'.$cr.'?>'.$cr;
+$pb_handler=@fopen($pb_file_captcha,'w');
+if ($pb_handler) {
+    @rewind($pb_handler);
+    if (-1!=@fwrite($pb_handler,$pb_txt)) {
+        @ftruncate($pb_handler,ftell($pb_handler));
+        $out='/inc/get_cimg.php?t='.$vcap.'&w='.$w.'&h='.$h.'&c1='.$c1.'&c2='.$c2.'&b='.$b.'&n='.$n;
+    } @fflush($pb_handler); @fclose($pb_handler);
+}
+print $out;
+?>

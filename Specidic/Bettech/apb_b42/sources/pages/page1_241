@@ -1,0 +1,18 @@
+{*tpl11*}{*tpl1*}{*tpl9*}<!DOCTYPE html><html lang="ru"><head>{*tpl0*}{*tpl2*}{*tpl3*}
+</head><body>{*tpl7*}
+{*block1_241*}
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}
+<script>
+function f_page1010(o,f) {
+  var a,p,i,h,ls=f?[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,f_gdhm()]:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,f_gdhm()];
+  a=document.querySelectorAll('.divh3'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt(fpb_getStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==40) || (!f&&h!=40)) fpb_a_height(p,200,25,p.scrollHeight,40);
+    }
+  }
+  fpb_setLS("page1023items",JSON.stringify(ls));
+}
+function f_gdhm() { var d=new Date(), y='000'+d.getFullYear(),l=y.length,m=(d.getMonth()+1),h=d.getHours(),dt=d.getDate(),t=d.getMinutes(); if(l>4)y=y.substr(l-4,4); if(m<10)m='0'+m; if(h<10)h='0'+h; if(dt<10)dt='0'+dt; if(t<10)t='0'+t; return parseInt(y.substr(2,2)+m+dt+h+t); } /* Возврат строки yymmddhhtt из объекта даты */
+
+</script>
+</body></html>{*tpl10*}

@@ -1,0 +1,15 @@
+{*tpl11*}{*tpl1*}{*tpl9*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block1_231*}
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}
+<script type="text/javascript">
+{*text0_31*}
+
+pirsh=0.35; /* Расход Элакор-ПУ Шпатлевка-2К */
+pirsk=0.35; /* Расход Кварц окат.0,1-0,4 */
+for (var p=0; p<pivrs.length; p++) pivrs[p]/=2;
+var pirfs = new Function('se', 'return 0.6;'); /* Расход финишного покрытия */
+var vrm = 0; /* Влияние выбранной марки бетона (pi_mb) на стоимость доп.работ */
+
+{*text0_32*}
+</script>
+</body></html>{*tpl10*}

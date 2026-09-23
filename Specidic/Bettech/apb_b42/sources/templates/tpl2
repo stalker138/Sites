@@ -1,0 +1,97 @@
+<?php // tpl2 - Для раздела HEAD внешние css и js-файлы, стили и скрипты.
+{*text1_12*}
+?>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" type="image/ico"/><link rel="icon" type="image/png" href="/favicon.png"/>
+<link rel="stylesheet" href="/cssjs/css001_.css" type="text/css"/>
+<link rel="canonical" href="<?php print 'https://www.bettech.kz'.$pb_full_url; ?>">
+
+<?php
+//if ($pb_page>4000 && $pb_page<5000) print '<link rel="stylesheet" href="/cssjs/css001_b.css" type="text/css"/>';
+
+if ($pb_page==1004) { ?><style>{*text0_51*}
+.cl_oc_all { float:right;margin:-19px 0 0 0; }
+.cl_open_all,.cl_close_all { cursor:pointer; float:right; margin:0 0 0 10px; font-size:11px; text-decoration:underline; color:#004f92; } .cl_open_all:hover,.cl_close_all:hover { color:#f00000; }
+.dral { cursor:pointer; position:relative; display:inline-block; margin:5px 1px 0 0; width:90px; height:53px; text-align:center; border:solid 1px transparent; }
+.dral span { font:bold 12px arial; line-height:20px; }
+.dral div { position:relative; width:100%; height:33px; }
+.dral:hover { border:solid 1px #004f92; transition:border 0.3s ease-out 0s; }
+.div_mo,.div_mc { height:25px; } .divh4 { padding:4px 0 6px 25px; } .div_mc .divh4:before, .div_mo .divh4:before { left:5px; }
+.tsrt { margin:0; width:auto; text-align:center; border:solid 1px #808080; } .tsrt th { padding:3px 5px; height:20px; border:solid 1px #808080; background:#eeeeee; } .tsrt td { height:30px; border:solid 1px #c8c8c8; border-collapse:separate; }
+.tsrt .tal { padding:0 0 0 5px; text-align:left; }
+.tsrt .td1 { font-weight:bold; } .tsrt .td4 { padding-left:20px; text-align:left; }
+.tsrt .td2, .tsrt .td22, .td7035 { cursor:pointer; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAIAAAC0tAIdAAAAB3RJTUUH4wkWDRgjDMLTxgAAAhFJREFUeJxVkr1r6mAUxl/fJDqUdPFjchYEu2gRHPQ/cClSROnglkEEKYKTQovi6OToJgi6uNnBwWIpOAixIPgBOgiVaCSoSEzy5tzhvbfXPtMznfP8znksAID+abVajcfj0+lkt9v9fr/T6US/hQ3DQAh9fX0lk8l2u+10Ou/u7jiOq1argiDs93uE0P+JpmmKohiNRkVRhN/qdDqxWExRFEKIaZoAgM7ncyKRmE6nAKBp2na7LZVKuq6rqgoArVYrn88DgGEYAIALhcL9/b3H4yGEcByHMV6v1yzL2mw20zRjsdh2u12v1wzDAACu1+uRSMQ0TUVRZFne7XaEEGoOhwMA+Hy+0WhEM7OKovA8jzGu1WqSJKmqOhwOX15eCCF+vz+VSvE8fzwe/1K63e6Pjw9CCCXb7/fZbJZ6SlapVLrdLo2Oc7nc29sbxvhyuVBQGoAQQo87m80CgQBCCGOMM5nM9/d3r9ejWFarNRQK0VUcx5XLZZfL5XA4NE2zWCxI1/XNZvPw8NBut6+PTQipVCpPT0+CIHx+fgKArusWwzAYhlEU5fX19Xw+e73em5sbWZYXi8Xt7a2qqul0ulgsPj8/B4NB9EMDAMvlstPpNBqNbrcrSRIA9Pv9eDw+n88fHx8HgwH6waffuhblHgwG8Xh8MpkIgmD5aQwhhGGY68ZpmoYxZln2/f292WyGw+E/u4qiMqJ5G4sAAAAASUVORK5CYII=') no-repeat right bottom; }
+.divt1,.divt2,.divt3,.divt4 { float:left; margin:0 15px 0 0;} .divt4 { margin-right:0; }
+@media screen and (max-width:999px) { .divt2 {  } }
+
+.td7035 { display:block; float:left; margin:5px 0 0 10px; width:90px; height:30px; background-color:#CBD0CC; border:solid 1px #CBD0CC; } 
+</style>
+<?php }
+
+if (($pb_page==1018)||($pb_page==1006)) { ?>
+<style>
+#content { width:770px; min-width:770px; max-width:770px; padding:10px 0; border:none 0px; }
+h2 { font-size:14px; line-height:20px; color:#ffffff; background:#004f92; }
+.divPriceD { display:block; } .divPriceM { display:none; }
+#id_calcHead { position:relative; float:left; width:320px; box-shadow:4px 4px 7px 0 #999999; }
+#id_calcHead table, #id_calcHead table th, #id_calcHead table td { text-align:left; border-collapse:collapse; border:solid 1px #000000; } #id_calcHead table .pad0 { padding:0; }
+.thead { padding:0 0 0 2px; height:23px; font-weight:bold; font-size:13px; text-align:left; background:yellow; }
+table .tdleft { width:195px; padding:0 0 0 2px; }
+.i_t, .i_t option { padding:0; margin:0; width:120px; height:22px; font-size:13px; text-align:left; line-height:22px; border:none 0px; font-weight:bold; background:#49ff79; }
+#dcalc { position:relative; float:left; margin:0 0 0 50px; width:200px; font-size:11px; line-height:13px; text-align:center; }
+#dcalc input { margin:0; width:180px; height:30px; font-weight:bold; font-size:13px; letter-spacing:1px; text-shadow:2px 2px 2px #ffffff; box-shadow:4px 4px 7px 0 #999999; }
+.tmtr, .tmtr th, .tmtr td { border-collapse:collapse; border-spacing:0; border:solid 1px #000000; }
+#content .tmtr th { font-weight:normal; font-size:11px; background:#f0f0f0; } #content .tmtr th span { font-size:11px; }
+.tmtr td { height:22px; font-size:13px; line-height:22px; } .tmtr td a { font-size:13px; text-decoration:underline; } .tmtr td a:hover { text-decoration:none; }
+.tmtr .tmdl { padding-left:5px; text-align:left; font-weight:bold; } #content .tmdl a { font-weight:bold; }
+
+#id_oc_all { float:right; margin:5px 0 0 0; text-align:center; }
+#id_open_all,#id_close_all { cursor:pointer; float:right; margin:5px 0 0 10px; font-size:11px; text-decoration:underline; color:#004f92; } #id_open_all:hover,#id_close_all:hover { color:#f00000; }
+@media screen and (max-width:999px){ #main,#footer { width:auto; min-width:auto; max-width:auto; } #content { margin:0 3px 0 7px; padding:50px 0 10px 0; top:0; width:960px; min-width:960px; max-width:960px; } }
+@media screen and (max-width:799px) { #content { width:auto; min-width:320px; max-width:799px; } .divPriceD { display:none; } .divPriceM { display:block; } }
+@media screen and (max-width:630px) { .divh3 { font-size:13px; } }
+@media screen and (max-width:499px) { .divh3_5 { padding:5px 0 15px 25px; width:93%; line-height:15px; } }
+</style>
+<?php }
+if ($pb_page>5000 && $pb_page<5300) { ?>
+<style>{*text0_50*}</style>
+<?php }
+
+print '<style>.vcard div.item {margin-right:40px;}</style>';
+
+if($pb_page==1018 ||($pb_page==1006) || ($pb_page>5000 && $pb_page<6000)) {
+  print '<script src="/cssjs/asw_pb_0071.js"></script><script src="/cssjs/js001_.js"></script>';
+}
+?>
+<?php
+// include_once $pb_root."inc/tpl2.php"; // Для объемных php - дополнений к Шаблону 2 - подключается дополнительный php-файл (page0_2)
+?>
+<?php if (1==1) { ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127986693-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127986693-2');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM8MVP38FC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SM8MVP38FC');
+</script>
+<?php } ?>
+
+<?php if ($pb_page>5000 && $pb_page<6000 && isset($postSMTP) && $postSMTP!=false) { ?>
+<link rel="stylesheet" href="/cssjs/css000_z.css" type="text/css"/>
+<script src="/cssjs/vcorp_js_0003.js"></script>
+<script src="/cssjs/js000_z.js"></script>
+<?php } ?>
+<style>{*text0_7*}</style>
+
+<?php if (isset($is_basket) && $is_basket>0 && isset($is_bcolor) && ($pb_page==51 || ($pb_page==4001 && $pb_page==4001))) { ?><style>{*text0_16*}</style><?php } ?>

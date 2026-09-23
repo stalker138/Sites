@@ -1,0 +1,60 @@
+User-agent: Yandex
+
+Clean-param: etext
+Clean-param: utm
+Clean-param: gad_source
+Clean-param: gad_campaignid
+Clean-param: gbraid
+Clean-param: calltouch_tm
+Clean-param: yclid
+
+
+Allow: /
+Disallow: /search
+Disallow: /colors/
+Disallow: /404/
+Disallow: /test/
+Disallow: /test19/
+Disallow: /test30/
+Disallow: /primer/
+Disallow: /primer2/
+Disallow: /inst/
+Disallow: /instr/
+Disallow: /pub/
+Disallow: /doc/
+Disallow: /faq/21/
+Disallow: /faq/22/
+Disallow: /faq/23/
+Disallow: /faq/24/
+Disallow: /faq/25/
+Disallow: /faq/26/
+Disallow: /faq/27/
+Disallow: /faq/28/
+Disallow: /faq/29/
+
+User-agent: *
+Allow: /
+Disallow: /search
+Disallow: /colors/
+Disallow: /404/
+Disallow: /test/
+Disallow: /test19/
+Disallow: /test30/
+Disallow: /primer/
+Disallow: /primer2/
+Disallow: /inst/
+Disallow: /instr/
+Disallow: /pub/
+Disallow: /doc/
+Disallow: /faq/21/
+Disallow: /faq/22/
+Disallow: /faq/23/
+Disallow: /faq/24/
+Disallow: /faq/25/
+Disallow: /faq/26/
+Disallow: /faq/27/
+Disallow: /faq/28/
+Disallow: /faq/29/
+
+Sitemap: https://www.bettech.kz/sitemap.xml
+

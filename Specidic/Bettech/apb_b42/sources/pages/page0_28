@@ -1,0 +1,230 @@
+<?php
+include $pb_root.'inc/fns.php';
+$out='<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><style>
+* { margin:0; padding:0; font:normal 12px arial; outline:none; }
+
+html,body { width:100%; height:100%; } body { background:url(/img/css/bg.png); } html { overflow-y:scroll; }
+
+span { font:inherit; font-weight:bold; } p strong { font:bold 13px arial; color:#000000; } p em { font:italic bold 13px arial; } input:disabled { color:#808080; } sub, sup { font:inherit; color:inherit; }
+#IDmail { font:inherit; color:inherit; } #IDmail2 { font:inherit; font-weight:bold; color:inherit; }
+
+#main,.sheader,.sfooter,#content,#footer { position:relative; width:100%; } #main { margin:0 auto; width:1000px; min-height:100%; } .sheader { height:250px; } .sfooter { clear:both; height:50px; }
+#topmenu,#topmenub,#header,#elakor,#logo,#leftmenu,#counters,#search,#asws,#w3c1,#w3c2,.vcard { position:absolute; display:block; top:0; left:0; }
+
+#header { top:0; width:1000px; height:157px; }
+#elakor,#logo { cursor:pointer; top:10px; width:200px; text-align:right; text-decoration:none; }
+#elakor { font:italic bold 52px arial; color:#f00000; top:15px; padding-top:20px; text-align:left; text-shadow:#005093 1px 2px 2px; }
+#elakor div { position:absolute; } #elakor p { position:absolute; top:85px; left:0; width:200px; font:italic bold 26px arial; text-align:center; color:#005093; text-shadow:#c8c8c8 1px 1px 1px; }
+#eltm { right:0; top:25px; font:bold 18px arial; color:#005093; } #eltxt { top:0; width:200px; font:bold 16px arial; text-align:center; color:#005093; text-shadow:#ffffff 1px 1px 1px; }
+#logo { top:145px; height:200px; font:bold 12px arial; color:#005093; background:url(/img/css/logo.png) top left no-repeat; }
+.vcard  { top:0px; left:83px; width:120px; font:bold 12px arial; text-align:right; color:#005093; text-shadow:#ffffff 1px 1px 1px; } .vcard  span { color:#005093; }
+.fright { position:absolute; right:0; top:12px; height:15px; color:#005093; } .fright  a { color:#005093; }
+
+#footer { clear:both; margin:-40px auto 0 auto; height:40px; width:1000px; text-align:center; font:bold 13px arial; text-shadow:#ffffff 1px 1px 1px; }
+#asws { cursor:pointer; display:block; left:220px; width:140px; padding-top:6px; height:24px; text-align:center; background-color:#fcfcfc; border:solid 1px #c8c8c8; line-height:10px; text-decoration:none; font-family:arial; color:#005093; }
+#asws span { font:normal 11px arial; line-height:12px; } #asws,#w3c1,#w3c2 { top:9px; border-radius:5px; box-shadow:1px 3px 5px rgba(255,255,255,0.5); }
+#w3c1,#w3c2 { left:10px; width:88px; height:31px; border:none; /*background:url(/img/css/wcss-blue.gif);*/ } #w3c2 { left:110px; /*background:url(/img/css/wtml5-blue.jpg);*/ }
+
+#topmenu { top:10px; left:220px; width:784px; height:225px; overflow:visible; z-index:1; background:#e8e8e8; } #topmenub { width:634px; height:145px; }
+#topmenu img { float:left; width:195px; height:110px; }
+#topmenu .mndiv { position:relative; float:left; padding:3px; width:188px; height:105px; text-align:left; border-left:dashed 1px #005093; overflow:hidden; background:url(/img/css/bg.png); }
+#topmenu .mndiv a { font:bold 13px arial; color:#005093; } #topmenu .mndiv a:hover { color:#f00000; } #topmenu .mndiv ul { margin-top:5px; }
+#topmenu .mndiv ul li { text-align:left; margin:5px 0 0 2px; list-style-type:none; } #topmenu .mndiv ul li a { font:normal 11px arial; color:#005093; } #topmenu .mndiv ul li a:hover { color:#f00000; }
+#topmenu .mnbdiv { cursor:pointer; position:absolute; bottom:0; left:0; right:0; height:22px; font:14px arial; line-height:18px; text-align:center; background:url(/img/css/bg25.png); }
+#topmenu .mnbdiv:hover { background:url(/img/css/bg25h.png); }
+
+
+#leftmenu,#search { top:250px; padding:10px 5px 5px 5px; width:190px; font:bold 14px arial; border:dashed 1px #005093; border-radius:5px; }
+#leftmenu div { width:180px; } #counters { top:780px; width:325px; } #search { top:710px; padding:5px; width:190px; height:40px; }
+#leftmenu div a { display:block; margin:0 0 4px 0; padding:2px 4px; width:180px; font:bold 14px arial; text-shadow:#000000 1px 1px 1px; text-align:left; text-decoration:none; color:#ffffff; box-shadow:1px 3px 3px rgba(128,128,128,1); background:#2878bb; border:solid 1px #2878bb; border-radius:4px; }
+#leftmenu div a:hover { text-shadow:#ffffff 1px 1px 2px; color:#005093; background:none; }
+
+#content { margin-left:220px; width:740px; min-height:400px; padding:20px; color:#000040; border:dashed 1px #005093; border-radius:5px; text-align:left; background:#ffffff; }
+#content ul,#content ol { margin:5px 0 0 0; } #content ul li,#content ol li { margin:0 0 0 20px; } #content p { margin:7px 0 0 0; text-align:justify; font:inherit; }
+.ti { text-indent:20px; } #content .uln,#content .uln ul,#content .uln li { list-style-type:none; }
+#content a { color:inherit; font:inherit; text-decoration:underline; }
+#content a:hover { color:#f00000; text-decoration:underline; }
+#content a { font:bold 12px arial; color:#0000ff; text-decoration:underline; }
+#content a:hover { color:#c5300f; }
+
+.px0,.px0b,.px3,.px3b,.px5,.px5b,.px6,.px7,.px8,.px10,.px10b,.px12,.px15,.px15b,.px20,.px20b,.px25,.px25b,.px30,.px30b { position:relative; clear:both; width:100%; }
+.px0,.px0b { height:0px; } .px3,.px3b { height:3px; } .px5,.px5b { height:5px; } .px6 { height:6px; } .px7 { height:7px; } .px8 { height:8px; } .px12 { height:12px; }
+.px10,.px10b { height:10px; } .px15,.px15b { height:15px; } .px20,.px20b { height:20px; } .px25,.px25b { height:25px; } .px30,.px30b { height:30px; }
+.px0b,.px3b,.px5b,.px10b,.px15b,.px20b,.px25b,.px30b { border-bottom:dashed 1px #005093; }
+
+h1,.dh1,.h16i,.h18i { font:italic bold 17px arial; text-align:center; width:100%; color:#005093; } h1 span { font:normal 14px arial; }
+.dh1 { margin:10px 0 0 0; font:bold 18px arial; } .h16i { margin:10px 0 0 0; font:italic bold 16px arial; text-align:left; color:#000000; } .h18i { font:italic bold 18px arial; }
+h2,h3,h4,h5,h6,.dh1s,.dh2, .h14 { text-align:center; font:italic bold 14px arial; margin:10px 0 0 0; color:#005093; } .dh1s { margin:0; font:normal 14px arial; }
+.dh2 { font:normal bold 14px arial; }
+
+.dpr { cursor:pointer; position:relative; float:left; margin:10px 5px 0 5px; padding:10px; width:330px; text-align:left; color:#000000; font:normal 12px arial; border:solid 1px #c8c8c8; border-radius:10px;box-shadow:3px 3px 7px rgba(0,0,0,0.6);  }
+.dpr:hover { border:solid 1px #f00000; }
+
+.m2 { clear:both; margin:10px 0 0 0; font:italic bold 12px arial; color:#005093; text-align:center; } .m2 sup { font:bold 11px arial; }
+
+.bsh1 { box-shadow:3px 3px 7px rgba(0,0,0,0.6); }
+.tbl1 { border-right:solid 2px #808080; border-bottom:solid 2px #808080; } .tbl1,.tbl1 th,.tbl1 td  { border:solid 1px #808080; border-collapse:collapse; }
+#content table { margin:5px 0 0 0; padding:0px; width:100%; text-align:center; color:#020340; }
+#content table th,#content table td { padding:3px; font-family: Tahoma, Verdana, arial; font-size:11px;}
+#content table th { font-weight:bold; text-align:center; } #content table td { font-weight:normal; }
+.tdl,.tdlb { text-align:left; }
+.td80 { width:80px; } .td80b { width:80px; font-weight:bold; }
+#content table td span { font-size:11px; font-weight:normal; }
+#content table td div { float:right; }
+/* #content table td a { color:#020340; text-decoration:none; } */
+#content table .tdl a,#content table .tdlb a,#content table .td80 a,#content table .td80b a { font-weight:bold; text-decoration:none; }
+#content table .tdl a:hover,#content table .tdlb a:hover,#content table .td80 a:hover,#content table .td80b a:hover { text-decoration:underline; }
+#content table .tdl a,#content table .tdlb a,#content table .td80 a { font-weight:normal; }
+
+.dheadt { margin:5px 0 0 0; color:#005093; font:bold 14px arial; } .dheadt span { font:bold 13px arial; color:#020340;} .dheadt div { float:right; margin-right:10px; font:bold 13px arial; color:#000000; }
+.dobjl,.dobjr,.dobji { position:relative; width:182px; height:140px; text-align:center; font:bold 13px arial; color:#000000; } .dobji { width:177px; height:170px; } .dobjl,.dobji { float:left; } .dobjr { float:right; }
+#content .dobjl a,#content .dobjr a,#content .dobji a { display:block; width:100%; text-decoration:none; font:bold 13px arial; } .dobjl a:hover,.dobjr a:hover,.dobji a:hover { text-decoration:underline; }
+#content .dobji a { font:normal 12px arial; } .dobji:hover { background: #e3e3e3; }
+.dobjl a img,.dobjr a img { width:182px; height:100px; border:none; } .dobji a img { margin: 20px 14px 4px; width:100px; height:100px; border:none; }
+
+#content .link { font:bold 12px arial; color: #0000ff; } #content .nlink { font:normal 12px arial; color: #0000ff; } #content .link:hover,#content .nlink:hover { color:#c5300f; }
+#content .cb005093 { font-weight:bold; color:#005093; } #content .c005093 { color:#005093; }
+
+.imgsert { position:relative; border:solid 2px #d2cdc7; margin:20px 0 0 70px; }
+.imginstr { cursor:pointer; width:180px; height:135px; border:solid 2px #d2cdc7; }
+.dimgobj { position:relative; float:left; width:190px; min-height:150px; margin:10px 0 0 15px; text-align:center; }
+
+.dfl { position:relative; float:left; }
+.dfl img { width:100%; margin:0; padding:0; border:none 0px; }
+
+#content  .right { text-align:right; } 
+#content  .bold { font-weight:700; } 
+#content  .center { text-align:center; }
+
+</style></head>
+<body><div id="content" style="padding-left:50px; width:740px;">
+<div class="dh1s">Материалы «Элакор», описания, цены<br>едины по всей Республике Казахстан</div>
+<div class="px10"></div>
+<h1>Прайс-лист материалов «Элакор», описания</h1>
+<div class="px5"></div>
+<p class="bold">Цены на условиях самовывоза со складов ТэоХим Казахстан в г.Актобе, Нур-Султан и Алматы.<br>Цены указаны с учётом НДС и тары, на условиях предоплаты 100%.<br>Цены зависят от общего количества покупаемых материалов.</p>
+<div class="px5"></div>
+<p class="bold" id="IDdatePrice" style="float: left; width: 50%; color: red; font-size: 16px;">'.date("d.m.Y").'</p>
+
+<div class="px10"></div><div class="dheadt">1. Полиуретановые материалы (серия Элакор-ПУ).</div>
+<div class="px0"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">1.1. Грунты<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[11]); $i++) { if (in_array($catmat[11][$i], $catmat[41])) continue; $out.=fmtr1($catmat[11][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px5"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">1.2. Эмали<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[12]); $i++) { if (in_array($catmat[12][$i], $catmat[42])) continue; $out.=fmtr1($catmat[12][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px5"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">1.3. Лаки<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[13]); $i++) { $out.=fmtr1($catmat[13][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px5"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">1.4. Полиуретановые наливные полы<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[14]); $i++) { $out.=fmtr1($catmat[14][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px5"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">1.5. Полиуретан-цементные покрытия<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[15]); $i++) { $out.=fmtr1($catmat[15][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px5"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">1.6. Шпатлевки.   1.7. Герметики<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[16]); $i++) { $out.=fmtr1($catmat[16][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px5"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">1.8. Колоранты.   1.9. Добавки<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[18]); $i++) { $out.=fmtr1($catmat[18][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px20"></div><div class="dheadt">2. Эпоксидные материалы (серия Элакор-ЭД).<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">2.1. Грунты, Пропитки<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[21]); $i++) { $out.=fmtr1($catmat[21][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px5"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">2.2. Эмали, Краски.   2.3. Лаки<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[22]); $i++) { $out.=fmtr1($catmat[22][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px5"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">2.4. Эпоксидные наливные полы<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[24]); $i++) { $out.=fmtr1($catmat[24][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px5"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">2.5. Шпатлёвки, Рем.составы.<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[25]); $i++) { $out.=fmtr1($catmat[25][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px5"></div>
+<div class="dheadt" style="font-size:12px; background:#c8c8c8; padding:5px;">2.7. Компаунды, Составы для заливки.<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[27]); $i++) { $out.=fmtr1($catmat[27][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px20"></div><div class="dheadt">3. Антистатические полы и покрытия.<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[3]); $i++) { $out.=fmtr1($catmat[3][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px20"></div><div class="dheadt">4. Материалы стойкие к ультрафиолету (полиуретановые, серия Элакор-ПУ «Люкс»).<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[4]); $i++) { $out.=fmtr1($catmat[4][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px20"></div><div class="dheadt">5. Покрытия для Металла.<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[5]); $i++) { $out.=fmtr1($catmat[5][$i],false,true); }
+$out.='</tbody></table></div><p class="bold">Так же для металлических поверхностей могут применяться материалы из группы «для бетона»: наливные полы, шпатлевки, герметики и пр.</p>
+
+<div class="px20"></div><div class="dheadt">6. Материалы для Дерева, Паркета (серия Элакор-ПУ).<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[6]); $i++) { $out.=fmtr1($catmat[6][$i],false,true); }
+$out.='</tbody></table></div><p class="bold">Так же для деревянных поверхностей могут применяться материалы из группы «для бетона»: наливные полы, шпатлевки, герметики и т.д.</p>
+
+<div class="px20"></div><div class="dheadt">7. Для прямого контакта с питьевой водой и продуктами.<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[7]); $i++) { $out.=fmtr1($catmat[7][$i],false,true); }
+$out.='</tbody></table></div>
+
+<div class="px20"></div><div class="dheadt">8. Акриловые материалы, составы для обработки бетона (серия Элакор-МБ).<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[8]); $i++) { $out.=fmtr1($catmat[8][$i],false,true); }
+$out.='</tbody></table></div><p class="bold">Элакор -МБ1, МБ2, МБ3  поставляются в виде КОНЦЕНТРАТОВ, разводятся водой.</p>
+
+<div class="px10" id="id10"></div><div class="dheadt">9. Добавки для бетона, грунтовка Бетоноконтакт (серия Эластобетон).<div>Цена, тг/кг.</div></div>
+<div class="px0"></div>
+<div class="dsh"><table class="bsh1 tbl1"><tbody>'.$tmh; for ($i=1; $i<count($catmat[9]); $i++) { $out.=fmtr1($catmat[9][$i],false,true); }
+$out.='</tbody></table></div><p class="bold">*) – Добавки для бетона Эластобетон-А2 могут поставляться в виде КОНЦЕНТРАТА (разводится водой 1:1).</p>
+
+</div></body></html>';
+
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
+header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache"); // HTTP/1.0
+header('Content-Disposition: attachment; filename=price_teohim_'.date("d-m-Y").'.html');
+header('Content-Length: '.strlen($out));
+header('Content-Type: text/html; name="price_teohim_'.date("d-m-Y").'.html"; charset="UTF-8"');
+print $out;
+
+?>

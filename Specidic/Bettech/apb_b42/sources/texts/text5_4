@@ -1,0 +1,7 @@
+<div class="macb2w"><div style="display:flex; align-items:center; justify-content: space-around;">
+<div class="fleft fs13 fi tac" style="padding:5px 2px 5px 5px;">
+<span class="fwb c4">Консультация</span>
+<a class="fwb fi fs13" style="text-decoration: none; color: inherit;" href="tel:77015443539">+7 701 544 35 39</a>
+</div>
+<div class="callback macb2r fs13 fi c2 tac" onclick="f_post(2);return false;">ОБРАТНЫЙ<div class="px3"></div>звонок</div>
+</div></div>

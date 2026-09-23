@@ -1,0 +1,239 @@
+<?php
+// 2025 | callback form CALC
+
+$o_IP=$_SERVER['REMOTE_ADDR'];
+$o_UA=$_SERVER['HTTP_USER_AGENT'];
+$o_DOMAIN = 'bettech.kz';
+$crlf=chr(13).chr(10);
+$o_mode=0;         // Код операции
+
+if (empty($_POST['mode']) || empty($_POST['cap']) || empty($_POST['url']) || empty($_POST['hcap']) || empty($_POST['ncap']) || empty($_POST['idText0']) || empty($_POST['idText1']) || empty($_POST['idText2']) || empty($_POST['idText3']) || empty($_POST['idText4']) || empty($_POST['idText5']) || empty($_POST['idText6']) || empty($_POST['idArea1']) || empty($_POST['mlist'])) { header("HTTP/1.1 204 No Content"); exit; }
+$mode=(int)$_POST['mode']; if ($mode<3 || $mode>6) { header("HTTP/1.1 204 No Content"); exit; }
+$tara=(int)$_POST['tara'];  if ($tara<0 || $tara>1) { header("HTTP/1.1 204 No Content"); exit; }
+{*text1_12*}
+
+// проверка капчи
+$o_cap=strtolower(Fo_post('cap')); $o_hcap=Fo_post('hcap'); $o_ncap=(int)$_POST['ncap']; if ($o_ncap<1 || $o_ncap>9) { print '1'; exit; } // Неверная капча
+$pb_file_captcha=$pb_root.'auto/pb_captcha'.$o_ncap.'.php'; if (file_exists($pb_file_captcha)) $tcap=@file_get_contents($pb_file_captcha); else { print '1'; exit; } // Неверная капча
+// $seek=chr(10).$o_hcap.chr(9).$o_IP.chr(9).$o_cap.chr(10); $pos=strpos($tcap,$seek); if($pos==false) { print '1'; exit; } // Неверная капча
+$seek=chr(10).$o_hcap.chr(9).$o_cap.chr(10); $pos=strpos($tcap,$seek); if($pos==false) { print '1'; exit; } // Неверная капча
+
+$idText0 = Fo_post('idText0'); $idText1 = Fo_post('idText1'); $idText2 = Fo_post('idText2'); $idText3 = Fo_post('idText3'); $idText4 = Fo_post('idText4');
+$idText5 = Fo_post('idText5'); $idText6 = Fo_post('idText6'); $idArea1 = Fo_post('idArea1'); $mlist = Fo_post('mlist',1); $url = Fo_post('url');
+
+$idText0=Fo_tab($idText0); $idText1=Fo_tab($idText1); $idText2=Fo_tab($idText2); $idText3=Fo_tab($idText3); $idText4=Fo_tab($idText4);
+$idText5=Fo_tab($idText5); $idText6=Fo_tab($idText6); $mlist=Fo_tab($mlist); $url=Fo_tab($url);
+
+$testEMail='/^[^\W][a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+ )*\.[a-zA-Z]{2,12}$/';
+if ($idText3!=='empty' && !preg_match($testEMail, $idText3)) { print '2'; exit; } // Неверный E-mail
+
+$out=''; $theme=date("Y-m-d").' '.date("H:i");
+$mess='Кто-то, возможно Вы, воспользовались формой обратной связи сайта {*text1_7*}<br>Если это письмо пришло к Вам случайно (и-за неправильно указанного E-mail) - не обращайте на него никакого внимания.<br><br>';
+
+$idArea1=preg_replace('/\r/','',$idArea1);
+$idArea1=preg_replace('/\t/','    ',$idArea1);
+$idArea1=wordwrap($idArea1,160,chr(10),1);
+$idArea1=preg_replace('/\n/',$crlf,$idArea1);
+$idArea1=preg_replace('/\r\n/','<br>',$idArea1);
+if($mode>2) {
+    if ($idText1=='empty' || $idText2=='empty' || $idText3=='empty') { header("HTTP/1.1 204 No Content"); exit; }
+    if (($mode==5 || $mode==6) && $mlist=='empty') { header("HTTP/1.1 204 No Content"); exit; }
+    $pb_file_number=$pb_root.'sys/znumber';
+    if (file_exists($pb_file_number)) $pb_number=@file_get_contents($pb_file_number); else $pb_number='';
+    $pb_number.='0'; $number=strlen($pb_number)+100;
+    $pb_handler=@fopen($pb_file_number,'w');
+    if ($pb_handler) {
+        @rewind($pb_handler);
+        if (-1!=@fwrite($pb_handler,$pb_number)) { @ftruncate($pb_handler,ftell($pb_handler)); @fflush($pb_handler); }
+        @fclose($pb_handler);
+    }
+    $htm='<!doctype html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>ЗАКАЗ</title><style type="text/css">';
+    $htm.='* { margin:0; padding:0; font:inherit; font-family:inherit; color:inherit; outline:none 0px; } * sup, * sub { font-size:10px; } span, strong, em { font-weight:bold; } strong { font-size:13px; } em { font-style:italic; }';
+    $htm.='#dcontent { padding:10px; width:770px; min-width:770px; max-width:770px; font:normal 12px arial; }';
+    $htm.='html,body { background:#ffffff; } body { font:normal 12px arial; color:#000000; } h1 { font:bold 14px arial; color:#004f92; }';
+    $htm.='table, table th, table td { width:100%; font:normal 12px arial; border-collapse:collapse; border-spacing:0; border:solid 1px #000000; }';
+    $htm.='table th, table td { width:auto; height:23px; padding:0 2px; } table th { text-align:center; background:#f0f0f0; }';
+    if($mode==5 || $mode==6) {
+$htm.='.px0,.px0b,.px5,.px5b,.px10,.px10b,.px15,.px15b,.px20,.px20b { position:relative; clear:both; width:100%; }
+.px0,.px0b { height:0; } .px5,.px5b { height:5px; } .px10,.px10b { height:10px; } .px15,.px15b { height:15px; } .px20,.px20b { height:20px; }
+.px0b,.px5b,.px10b,.px15b,.px20b { border-bottom:solid 1px #c8c8c8; }
+
+#id_calcHead { position:relative; width:350px; box-shadow:4px 4px 7px 0 #999999; }
+#id_calcHead table { text-align:left; } #id_calcHead table .pad0, #id_calcHead table td .pad0 { text-align:center; }
+
+.thead { font:bold 13px arial; text-align:left; background:yellow; }
+
+#id_calcBody { position:relative; box-shadow:4px 4px 7px 0 #999999; }
+#id_calcBody table { text-align:left; } #id_calcBody table th, #table2 table th { font-weight:normal; } #table2 p { margin-top:5px; font:normal 12px arial; }
+
+table .tdleft { width:195px; padding:0 0 0 2px; } table .tdmat { padding:0 0 0 2px; } table .tdleft div { width:194px; }
+
+.o_t, .o_tr, .o_ti, .o_tb13 { width:68px; text-align:right; padding:0 2px 0 0; }.o_tr { width:58px; }
+.o_tb13, #id_calcBody table .o_tb13, #table2 table .o_tb13, #id_calcBody table th .o_tb13, #table2 table th .o_tb13 { font:bold 13px arial; font-weight:bold; font-size:13px; }';
+    }
+    if($mode==3 && $tara==1) {
+    $htm.='table tr { height:23px; } table td { height:auto; line-height:22px; border:solid 1px #c8c8c8; } .tmdl { padding:0 1px 0 2px; text-align:left; } .tmdl span { font-weight:normal; }
+.tac { text-align:center; } .tar { padding:0 3px 0 0; text-align:right; } .sepl { height:10px; min-height:10px; background:#f0f0f0; } .nds { font-size:13px; font-weight:bold; }
+.tbl1 td { padding:1px 5px 2px 0; text-align:right; font-weight:bold; font-size:13px; border-collapse:collapse; border:solid 1px #000000; background:#ffff00; box-shadow:#999999 4px 4px 7px 0px; }';
+    }
+    $htm.='.dordRal { display:none; visibility:hidden; width:0px; height:0px; color:#000000; overflow:hidden; }';
+    $htm.='</style></head><body><div id="dcontent">';
+} else {
+    $htm='<!doctype html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>';
+}
+
+/* Подключение класса работы с SMTP */
+require_once $pb_root.'inc/phpmailer/class.phpmailer.php';
+require_once $pb_root.'inc/phpmailer/class.smtp.php';
+
+if ($mode==3) { // Новый ЗАКАЗ материалов - произвольное описание РЕКВИЗИТОВ заказа (со страницы /ordertc/ «Заказ»).
+    $theme='ЗАКАЗ Материалы '.$theme.' Заказ ('.$number.')';
+    $out0=$theme.'<br><br>';
+    $out.='Заказу присвоен номер: '.$number.'<br><br>';
+    $out.='<pre>1. Город                      : '.$idText0.'<br>';
+    $out.='2. Заказчик, контактное лицо  : '.$idText1.'<br>';
+    $out.='3. Контактный телефон         : '.$idText2.'<br>';
+    $out.='4. Почта (e-mail)             : '.$idText3.'<br>';
+    $out.='5. Реквизиты, примечания :</pre><br>';
+    $out.=$idArea1.'<br><br>----------------------------------------------------<br>Заказанные материалы:<br><br>';
+    if ($tara==0) {
+      $out.='<table style="border:solid 1px #808080; padding:1px; text-align:right; border-collapse:collapse;"><tbody><tr><th>Наименование</th><th style="width:70px">Количество</th><th style="width:50px">Цена</th><th style="width:100px">Сумма</th></tr>'.$mlist.'</tbody></table>';
+    } else {
+      $out.=$mlist;
+    }
+    if ($idText3!=='empty') { /* @mail($idText3, $theme, ($htm.$out0.$mess.$out.'</div></body></html>'), "From: zakaz@teohim.ru\nContent-Type: text/html; charset=UTF-8"); */
+        $cm = new PHPMailer;
+        $cm->isSMTP();
+        $cm->SMTPAuth = true;
+        $cm->Host       = 'smtp.timeweb.ru';
+        $cm->SMTPSecure = 'ssl';
+        $cm->Port       = 465;
+        $cm->CharSet    = 'utf-8';
+        $cm->Username   = $postSMTP;
+        $cm->Password   = $passSMTP;
+        $cm->setFrom($postSMTP,$postSMTP); // Адрес самой почты и имя отправителя
+        $cm->addAddress($idText3);
+        $cm->isHTML(true);
+        $cm->Subject = $theme;
+        $cm->Body = $htm.$out0.$mess.$out.'</div></body></html>';
+        if (!$cm->send()) { /* print $cm->ErrorInfo;*/ header("HTTP/1.1 204 No Content"); exit; }
+    }
+    $htm.=$out0.$out.'</div></body></html>';
+      $cm = new PHPMailer;
+      $cm->isSMTP();
+      $cm->SMTPAuth = true;
+      $cm->Host       = 'smtp.timeweb.ru';
+      $cm->SMTPSecure = 'ssl';
+      $cm->Port       = 465;
+      $cm->CharSet    = 'utf-8';
+      $cm->Username   = $postSMTP;
+      $cm->Password   = $passSMTP;
+      $cm->setFrom($postSMTP,$postSMTP); // Адрес самой почты и имя отправителя
+//      $cm->addAddress($postSMTP);
+//      $cm->addAddress($postMainSMTP);
+      $cm->addAddress('prog1@bk.ru');
+//      $cm->addAddress('nn@teohim.ru');
+      $cm->isHTML(true);
+      $cm->Subject = $theme;
+      $cm->Body = $htm;
+      if (!$cm->send()) { /* print $cm->ErrorInfo; */ header("HTTP/1.1 204 No Content"); exit; }
+}
+
+if ($mode==5 || $mode==6) {
+    if ($mode==5) { // Новый ЗАКАЗ расчитанных материалов - расчитанное покрытие.
+        $theme='{*text1_7*} КАЛЬКУЛЯТОР заказ МАТЕРИАЛЫ '.$theme.' Заказ ('.$number.')';
+    } else { // Новый ЗАКАЗ выполнения работ «под ключ» - расчитанное покрытие со стоимостью работ.
+        $idText0=''; $theme='{*text1_7*} КАЛЬКУЛЯТОР заказ РАБОТ '.$theme.' Заказ ('.$number.')';
+    }
+    $pos1 = strpos($mlist,'</tbody></table><div id="dscr"');
+    if($pos1!=false) {
+        $pos2 = strpos($mlist,'<tbody>',$pos1);
+        $mlist = substr($mlist,0,$pos1).substr($mlist,$pos2+7);
+        $pos2 = strpos($mlist,'</div><div class="pb_hidden"></div>',0);
+        $mlist = substr($mlist,0,$pos2).substr($mlist,$pos2+35);
+    }
+    $out0=$theme.'<br><br>';
+    $out.='Заказу присвоен номер: '.$number.'<br><br><pre>';
+    if ($mode==5 && $idText0>'') $out.='Город          : '.$idText1.'<br>';
+    $out.='Имя            : '.$idText1.'<br>';
+    $out.='Телефон        : '.$idText2.'<br>';
+    $out.='Почта (e-mail) : '.$idText3.'<br>';
+    $out.='Информация :</pre><br>';
+    $out.=$idArea1.'<br>'.$mlist;
+    // Fo_test_file($htm.$out0.$mess.$out.'</body></html>');
+    if ($idText3!=='empty') { /* @mail($idText3, $theme, ($htm.$out0.$mess.$out.'</div></body></html>'), "From: zakaz@teohim.ru\nContent-Type: text/html; charset=UTF-8"); */
+        $cm = new PHPMailer;
+        $cm->isSMTP();
+        $cm->SMTPAuth = true;
+        $cm->Host       = 'smtp.timeweb.ru';
+        $cm->SMTPSecure = 'ssl';
+        $cm->Port       = 465;
+        $cm->CharSet    = 'utf-8';
+        $cm->Username   = $postSMTP;
+        $cm->Password   = $passSMTP;
+        $cm->setFrom($postSMTP,$postSMTP); // Адрес самой почты и имя отправителя
+        $cm->addAddress($idText3);
+        $cm->isHTML(true);
+        $cm->Subject = $theme;
+        $cm->Body = $htm.$out0.$mess.$out.'</div></body></html>';
+        if (!$cm->send()) { /* print $cm->ErrorInfo;*/ header("HTTP/1.1 204 No Content"); exit; }
+    }
+    $htm.=$out0.$out.'</div></body></html>';
+      $cm = new PHPMailer;
+      $cm->isSMTP();
+      $cm->SMTPAuth = true;
+      $cm->Host       = 'smtp.timeweb.ru';
+      $cm->SMTPSecure = 'ssl';
+      $cm->Port       = 465;
+      $cm->CharSet    = 'utf-8';
+      $cm->Username   = $postSMTP;
+      $cm->Password   = $passSMTP;
+      $cm->setFrom($postSMTP,$postSMTP); // Адрес самой почты и имя отправителя
+      $cm->addAddress($postSMTP);
+//      $cm->addAddress($postMainSMTP);
+//      $cm->addAddress('prog1@bk.ru');
+//      $cm->addAddress('nn@teohim.ru');
+      $cm->isHTML(true);
+      $cm->Subject = $theme;
+      $cm->Body = $htm;
+      if (!$cm->send()) { /* print $cm->ErrorInfo; */ header("HTTP/1.1 204 No Content"); exit; }
+}
+
+// Удаление капчи из файла
+$pos1=strpos($tcap,chr(10),$pos+1); $tcap=substr($tcap,0,$pos).substr($tcap,$pos1);
+$pb_handler=@fopen($pb_file_captcha,'w');
+if ($pb_handler) {
+    @rewind($pb_handler);
+    if (-1!=@fwrite($pb_handler,$tcap)) { @ftruncate($pb_handler,ftell($pb_handler)); }
+    @fflush($pb_handler); @fclose($pb_handler);
+}
+
+print 'ok';
+
+/* ********************************************************************************************************* */
+/*
+    Функция для удаления экранирующих символов "\" из содержимого POST-параметра
+    Параметры: $name - имя принимаемого POST-параметра
+    Возвращает содержимое без экранирующих слешей или false, если такого POST-параметра нет
+*/
+function Fo_post($name,$f=0) {
+    $ret=$_POST[$name]; if ($ret==false) return false;
+    $ret =  get_magic_quotes_gpc() ? stripslashes($ret) : $ret;
+    return ($f==0 ? htmlspecialchars($ret) : $ret);
+}
+function Fo_tab($txt) {
+    $ret=preg_replace('/\t/','    ',$txt);
+    $ret=preg_replace('/\r/','',$ret);
+    $ret=preg_replace('/\n/','',$ret);
+    return $ret;
+}
+function Fo_test_file($htm) {
+global $pb_root;
+$pb_handler=@fopen($pb_root.'auto/test_file.htm','w');
+if ($pb_handler) {
+    @rewind($pb_handler);
+    if (-1!=@fwrite($pb_handler,$htm)) { @ftruncate($pb_handler,ftell($pb_handler)); }
+    @fflush($pb_handler); @fclose($pb_handler);
+}
+}
+?>

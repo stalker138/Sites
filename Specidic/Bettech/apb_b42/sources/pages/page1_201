@@ -1,0 +1,12 @@
+{*tpl11*}{*tpl1*}{*tpl9*}<!DOCTYPE html><html><head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block1_201*}
+{*tpl8*}{*tpl4*}{*tpl5*}{*tpl6*}
+<script type="text/javascript">
+{*text0_31*}
+
+var pirgr = [0.8, 0.7, 0.6, 0.55, 0.5, 0.35]; /* Расход Грунтовки по маркам бетона */
+var vrm = 1; /* Влияние выбранной марки бетона (pi_mb) на стоимость доп.работ */
+
+{*text0_32*}
+</script>
+</body></html>{*tpl10*}

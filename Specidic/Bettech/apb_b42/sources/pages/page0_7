@@ -1,0 +1,121 @@
+<div id="main">
+<div class="sheader">
+<div id="topmenu">
+<div id="topmenub">
+<div class="header_slogan" style="top:5px; left:45px;"><span style="font-size:21px; letter-spacing:2px;">Производитель</span> <span class="upper" style="font-size:17px; letter-spacing:2px;">промышленных полов с 1996г</span></div>
+
+
+<div  class="vcard" style="text-align:center; width:502px; top:33px; left:45px;">
+<div style="font-size:15px;">Офисы: АСТАНА, АЛМАТЫ, АКТОБЕ</div>
+<div style="color:red; font-size:15px;">Единый номер по Казахстану<span> +7 701 544 35 39</span></div>
+<div>WhatsApp:<span> +7 701 544 35 39</span><br>
+Viber:<span> +7 701 544 35 39</span><br>
+E-mail:<span> kazakhstan@teohim.ru</span></div>
+</div>
+
+
+<?php if(1==2) { ?>
+
+<div class="vcard">
+<div class="item">
+<span class="city">Актобе</span><br><span class="tel">+7 (7132) 55-81-13</span><br>с 09:00 до 18:00
+<br> <!--a href="mailto:bt_esp@inbox.ru">bt_es<span>p@</span>inbo<span>x.</span>ru</a-->
+</div>
+
+<div class="item">
+<span class="city">Астана</span><br><span class="tel">+7 (7172) 72-70-46</span><br>с 10:00 до 19:00
+<br><!--a href="mailto:bt-elakor@inbox.ru">bt-el<span>akor@</span>inbo<span>x.</span>ru</a-->
+</div>
+
+<div class="item">
+<span class="city">Алматы</span><br><span class="tel">+7 (7273) 49-30-68</span><br>с 10:00 до 19:00
+<br>
+</div>
+
+<div class="item">
+<br>
+<div class="callback" onclick="f_post(2);">Обратный звонок</div>
+</div>
+</div>
+<?php } ?>
+
+
+</div>
+<div class="px3"></div>
+<?php if(1==1) { ?>
+<img src="/img/css/1.jpg" alt=""/>
+<img src="/img/css/2.jpg" alt=""/>
+<img src="/img/css/3.jpg" alt=""/>
+<img src="/img/css/4.jpg" alt=""/>
+<div class="px0"></div>
+<?php } ?>
+<div class="mndiv" id="mndiv1"><l2 id="1">Наливные полы</l2>
+<ul>
+  <li><l2 id="11">Эпоксидные наливные полы</l2></li>
+  <li><l2 id="12">Полиуретановые наливные полы</l2></li>
+  <li><l2 id="20">Антистатический наливной пол</l2></li>
+  <li><l2 id="13">3D полы</l2></li>
+  <li><l2 id="14">Декоративные полы</l2></li>
+  <li><l2 id="15">Заливные полы</l2></li>
+  <li><l2 id="16">Жидкий пол</l2></li>
+</ul>
+<div class="mnbdiv">&#8595; &#8595; &#8595;</div>
+</div>
+<div class="mndiv" id="mndiv2"><l2 id="2">Полимерные полы</l2>
+<ul>
+  <li><l2 id="31">Полиуретановые полы</l2></li>
+  <li><l2 id="32">Эпоксидные полы</l2></li>
+  <li><l2 id="33">Полиуретановая пропитка</l2></li>
+  <li><l2 id="34">Полиуретановое покрытие</l2></li>
+  <li><l2 id="35">Кварцевые полы</l2></li>
+  <li><l2 id="30">Полиуретановый грунт</l2></li>
+  <li><l4 id="41">Эпоксидный грунт</l4></li>
+  <li><l4 id="83">Грунтовка глубокого проникновения</l4></li>
+  <li><l2 id="39">Полиуретановый лак</l2></li>
+  <li><l4 id="53">Эпоксидный лак</l4></li>
+  <li><l2 id="74">Полиуретановая краска</l2></li>
+  <li><l4 id="49">Эпоксидная краска</l4></li>
+</ul>
+<div class="mnbdiv">&#8595; &#8595; &#8595;</div>
+</div>
+<div class="mndiv" id="mndiv3"><l2 id="3">Промышленные полы</l2>
+<ul>
+  <li><l2 id="81">Пол в гараже</l2></li>
+  <li><l2 id="82">Полы для склада</l2></li>
+  <li><l2 id="83">Производственные полы</l2></li>
+  <li><l2 id="84">Пропитка для бетона</l2></li>
+  <li><l2 id="85">Краска по бетону</l2></li>
+  <li><l2 id="68">Антискользящие покрытия</l2></li>
+  <li><l2 id="86">Антистатические полы</l2></li>
+  <li><l4 id="19">Краска для асфальта</l4></li>
+  <li><l2 id="87">Грунтовка для бетона</l2></li>
+  <li><l2 id="108">Флюатирование (флюаты) </l2></li>
+  <li><l4 id="71">Эпоксидная шпатлевка</l4></li>
+  <li><l4 id="33">Полиуретановая шпатлевка</l4></li>
+</ul>
+<div class="mnbdiv">&#8595; &#8595; &#8595;</div>
+</div>
+<div class="mndiv" id="mndiv4" style="border-right:dashed 1px #005093;"><l2 id="4">Бетонные полы</l2>
+<ul>
+  <li><l2 id="101">Добавки для бетона</l2></li>
+  <li><l2 id="102">Мозаичные полы</l2></li>
+  <li><l2 id="103">Полимерцементные полы</l2></li>
+  <li><l2 id="104">Полимербетон</l2></li>
+  <li><l2 id="105">Шлифовка бетона</l2></li>
+  <li><l2 id="123">Фрезеровка бетона</l2></li>
+  <li><l4 id="257">Бетоноконтакт</l4></li>
+  <li><l2 id="117">Обеспыливание бетона</l2></li>
+  <li><l2 id="118">Защита бетона</l2></li>
+  <li><l2 id="119">Укрепление бетона</l2></li>
+  <li><l2 id="120">Ремонт бетона</l2></li>
+  <li><l2 id="121">Бетонная стяжка</l2></li>
+  <li><l2 id="122">Бетонные работы</l2></li>
+</ul>
+<div class="mnbdiv">&#8595; &#8595; &#8595;</div>
+</div>
+</div>
+<l1 id="8" id="logo" style="top:11px; height:92px;">Казахстан</l1>
+</div><div id="left"></div>
+<div id="content">
+<section>
+{*text0_18*}

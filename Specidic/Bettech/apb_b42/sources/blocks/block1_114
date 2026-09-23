@@ -1,0 +1,26 @@
+<h1>Соответствие класса бетона (В) и марки бетона (М)</h1>
+<br>
+<table class="tbl1 bsh1" style="width:720px;"> 
+<tbody>
+<tr><th style="width:150px;">Класс бетона по прочности<br> на сжатие</th><th style="width:140px;">Средняя прочность<br>бетона данного класса, кгс/см<sup>2</sup></th><th style="width:170px;">Ближайшая марка бетона<br>по прочности на сжатие</th><th>Отклонения ближайшей марки бетона<br>от средней прочности бетона этого<br>класса, %</th></tr>
+<tr><td>B3,5</td><td>45,84</td><td>М50</td><td>+9,1</td></tr>
+<tr><td>В5</td><td>65,48</td><td>М75</td><td>+14,5</td></tr>
+<tr><td>В7,5</td><td>98,23</td><td>М100</td><td>+1,8</td></tr>
+<tr><td>В10</td><td>130,97</td><td>М150</td><td>+14,5</td></tr>
+<tr><td>В12,5</td><td>163,71</td><td>М150</td><td>-8,4</td></tr>
+<tr><td>В15</td><td>196,45</td><td>М200</td><td>+1,8</td></tr>
+<tr><td>В20</td><td>261,94</td><td>М250</td><td>-4,6</td></tr>
+<tr><td>В22,5</td><td>294,68</td><td>М300</td><td>+1,8</td></tr>
+<tr><td>В25</td><td>327,42</td><td>М350</td><td>+6,9</td></tr>
+<tr><td>В27,5</td><td>360,16</td><td>М350</td><td>-2,8</td></tr>
+<tr><td>В30</td><td>392,90</td><td>М400</td><td>+1,8</td></tr>
+<tr><td>В35</td><td>458,39</td><td>М450</td><td>-1,8</td></tr>
+<tr><td>В40</td><td>523,87</td><td>М500</td><td>-4,6</td></tr>
+</tbody>
+</table>
+
+<p><l2 id="4">Бетонные полы</l2> на сайте bettech.kz</p>
+
+<div style="text-align:right;">
+<l1 id="14" title="Часто задаваемые нам вопросы и ответы на них." style="font-weight:bold">Перейти к списку вопросов и ответов</l1></div>    
+ 

@@ -1,0 +1,22 @@
+<h1>Наши работы Фото</h1>
+<div class="px5"></div>
+<h2>Полимерные покрытия</h2>
+<div class="px20"></div>
+<div class="dobjl" style="margin-left:120px;background:url(/img/obj/garaz2.png) top no-repeat"><l1 id="31" onmouseover="f_over('l1')" onmouseout="f_out('l1')"><img id="l1" src="/img/obj/garaz1.png" alt=""/><br>СТО, Гаражи, Паркинги</l1></div>
+<div class="dobjl" style="margin-left:120px;background:url(/img/obj/piwev2.png) top no-repeat"><l1 id="32" onmouseover="f_over('l2')" onmouseout="f_out('l2')"><img id="l2" src="/img/obj/piwev1.png" alt=""/><br>Пищевые производства, Фармацевтика</l1></div>
+<div class="px10"></div>
+<div class="dobjl" style="margin-left:120px;background:url(/img/obj/sklad2.png) top no-repeat"><l1 id="33" onmouseover="f_over('l3')" onmouseout="f_out('l3')"><img id="l3" src="/img/obj/sklad1.png" alt=""/><br>Склады, Производственные объекты</l1></div>
+<div class="dobjl" style="margin-left:120px;background:url(/img/obj/magazin2.png) top no-repeat"><l1 id="34" onmouseover="f_over('l4')" onmouseout="f_out('l4')"><img id="l4" src="/img/obj/magazin1.png" alt=""/><br>Офисы,<br>Магазины,<br>Торговые залы</l1></div>
+
+<div class="px10"></div>
+<br><br><br>
+<div class="dobjl" style="margin-left:120px;"><l1 id="35">Полимерцементные полы</l1></div>
+
+<div class="px5"></div>
+
+<div class="pb_hidden">
+<img src="/img/obj/garaz1.png" alt=""/>
+<img src="/img/obj/piwev1.png" alt=""/>
+<img src="/img/obj/sklad1.png" alt=""/>
+<img src="/img/obj/magazin1.png" alt=""/>
+</div>

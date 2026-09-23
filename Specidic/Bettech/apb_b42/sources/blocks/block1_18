@@ -1,0 +1,244 @@
+<h1>Полимерные полы цена</h1>
+<div class="px5"></div>
+
+<p><strong>Цена полимерных полов</strong> - калькулятор расчета цены материалов и стоимости работ.</p>
+
+<p style="text-align:center; font:bold italic 13px arial">У нас Вы можете купить материалы или заказать устройство покрытий «под ключ».</p>
+<div class="px10b"></div><div class="px5"></div>
+
+<div class="fleft">
+<div class="px10"></div>
+<div id="id_calcHead">
+<table class="table1"><tbody>
+<tr><td class="thead" colspan="2">Характеристики Вашего пола</td></tr>
+<tr>
+  <td class="tdleft">Площадь, м.кв.</td>
+  <td id="i_so_td" class="pad0"><input class="i_t" style="width:118px;text-align:right;padding-right:2px;" type="text" id="i_so" value="1000" maxlength="5" onchange="f_refresh()"></td>
+</tr>
+<tr><td class="tdleft">Марка бетона / пескобетона</td>
+<td class="pad0">
+<select id="i_mb" class="i_t" onchange="f_refresh()">
+<option value="200">&nbsp;&nbsp;М200 (B15)</option><option value="250">&nbsp;&nbsp;М250 (B20)</option><option value="300" selected>&nbsp;&nbsp;М300 (B22.5)</option><option value="350">&nbsp;&nbsp;М350 (B25)</option></select>
+</td></tr></tbody></table>
+</div>
+<div id="dcalc">Введите данные в зелёные ячейки<br>- нажмите «Пересчитать».<div class="px5"></div><input type="submit" id="id_sub" value="Пересчитать" onclick="f_refresh()"/></div>
+</div>
+<div class="px10"></div>
+
+<h2>Расчет цены полимерных полов всех типов</h2>
+<p class="mt10" style="float:left">В стоимость работ ВКЛЮЧЕНА стоимость расходных материалов и инструмента.<br>Цена полимерного пола НЕ включает транспортные и командировочные расходы.</p>
+<div id="id_oc_all">
+<div class="tac"><span>Цены с учётом НДС</span></div>
+<div id="id_close_all" onclick="f_page1010(this,0)">Закрыть все</div>
+<div id="id_open_all" onclick="f_page1010(this,1)">Раскрыть все</div>
+</div>
+
+<div class="px10b"></div>
+
+
+<div class="divPriceD">
+
+<div class="div_mc">
+<h3 class="divh3">1. ПРОПИТКИ для бетонных полов.</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tbl1.fcvr3(11).fcvr3(13).fcvr3(17).fcvr3(87).fcvr3(23).fcvr3(25).$tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">2. ОКРАСОЧНЫЕ полимерные покрытия.</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tbl1.fcvr3(31).fcvr3(33).fcvr3(35).fcvr3(85).fcvr3(89).fcvr3(83).fcvr3(81).$tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">3. НАЛИВНЫЕ полимерные полы <span>(гладкие)</span></h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<p class="fwb c2">Полиуретановые наливные полы</p>
+<?php print $tbl1.fcvr3(53).fcvr3(54).fcvr3(73).$tbl2; ?>
+<div class="px0"></div>
+<p class="fwb c2">Эпоксидные наливные полы</p>
+<?php print $tbl1.fcvr3(51).fcvr3(52).fcvr3(55).$tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">4. Полиуретан - Цементные полы.</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tbl1.fcvr3(97,'4.1.').fcvr3(74,'4.5.').$tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">5. Покрытия с Кварцем <span>(шероховатые и фактурные)</span></h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tbl1.fcvr3(39,'5.1.').fcvr3(37,'5.2.').fcvr3(43,'5.3.').fcvr3(93,'').$tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">6. АНТИСТАТИЧЕСКИЕ полы <span>(токопроводящие и электрорассеивающие).</span></h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<p class="fwb c2">НАЛИВНЫЕ полы Антистатические</p>
+<?php print $tbl1;
+print fcvr3(63,'6.1.','','(с лентами)');
+print fcvr3(64,'6.2.','','(с лентами)');
+print fcvr3(65,'6.3.','','(без лент)');
+print fcvr3(66,'6.4.','','(без лент)');
+print $tbl2; ?>
+<div class="px0"></div>
+<p class="fwb c2">ОКРАСОЧНЫЕ покрытия Антистатические</p>
+<?php print $tbl1;
+print fcvr3(67,'6.11','','(с лентами)');
+print fcvr3(68,'6.12','','(с лентами)');
+print fcvr3(69,'6.13','','(без лент)');
+print fcvr3(70,'6.14','','(без лент)');
+print $tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+</div>
+
+<div class="divPriceM">
+
+<div class="div_mc">
+<h3 class="divh3">1. ПРОПИТКИ для бетонных полов.</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tbl1p.fcvr6(11,'','','','m_').fcvr6(13,'','','','m_').fcvr6(17,'','','','m_').fcvr6(87,'','','','m_').fcvr6(23,'','','','m_').fcvr6(25,'','','','m_').$tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">2. ОКРАСОЧНЫЕ полимерные покрытия.</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tbl1p.fcvr6(31,'','','','m_').fcvr6(33,'','','','m_').fcvr6(35,'','','','m_').fcvr6(85,'','','','m_').fcvr6(89,'','','','m_').fcvr6(83,'','','','m_').fcvr6(81,'','','','m_').$tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">3. НАЛИВНЫЕ полимерные полы.</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<p class="fwb c2">Полиуретановые наливные полы</p>
+<?php print $tbl1.fcvr6(54,'','','','m_').fcvr6(53,'','','','m_').fcvr6(73,'','','','m_').fcvr6(40,'','','','m_').$tbl2; ?>
+<div class="px0"></div>
+<p class="fwb c2">Эпоксидные наливные полы</p>
+<?php print $tbl1.fcvr6(52,'','','','m_').fcvr6(51,'','','','m_').fcvr6(71,'','','','m_').fcvr6(55,'','','','m_').$tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">4. Полиуретан - Цементные полы.</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tbl1p.fcvr6(97,'4.1.','','','m_').fcvr6(74,'4.5.','','','m_').$tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">5. НАПОЛНЕННЫЕ полимерные покрытия.</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<?php print $tbl1p.fcvr6(39,'5.1.','','','m_').fcvr6(37,'5.2.','','','m_').fcvr6(43,'5.3.','','','m_').fcvr6(93,'','','','m_').$tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc">
+<h3 class="divh3">6. АНТИСТАТИЧЕСКИЕ полы <span>(токопроводящие и электрорассеивающие).</h3><div class="px0"></div>
+<p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
+<div class="px0"></div>
+<p class="fwb c2">НАЛИВНЫЕ полы Антистатические</p>
+<?php print $tbl1p;
+print fcvr6(63,'6.1.','',' (с лентами)','m_');
+print fcvr6(64,'6.2.','',' (с лентами)','m_');
+print fcvr6(65,'6.3.','',' (без лент)','m_');
+print fcvr6(66,'6.4.','',' (без лент)','m_');
+print $tbl2; ?>
+<div class="px0"></div>
+<p class="fwb c2">ОКРАСОЧНЫЕ покрытия Антистатические</p>
+<?php print $tbl1p;
+print fcvr6(67,'6.11.','',' (с лентами)','m_');
+print fcvr6(68,'6.12.','',' (с лентами)','m_');
+print fcvr6(69,'6.13.','',' (без лент)','m_');
+print fcvr6(70,'6.14.','',' (без лент)','m_');
+print $tbl2; ?>
+<div class="px10" style="margin-top:-5px;background:#ffffff"></div>
+</div>
+<div class="px0b"></div>
+
+</div>
+
+<div class="px5"></div>
+
+<p><strong>Полимерные полы цена</strong> <span>работ включает</span>:<br>шлифование-зачистку поверхности, уборку, обеспыливание, грунтование, нанесение покрытия.</p>
+<p>Любые из приведенных выше полимерных покрытий и наливных полов полностью герметизируют и обеспыливают поверхность.</p>
+<div class="px10b"></div>
+
+<p>Если на поверхности присутствуют дефекты или неровности поверхности, необходимо производить дополнительные работы:</p>
+
+<ul>
+<li><span>Шпатлевание</span>. Производится для заделки раковин, мелких трещин и других дефектов бетонного пола.</li>
+<li><span>Фрезерование</span>. Производится для удаления неровностей бетонного пола до 20мм и более (наплывы, перепады, «рябь» и т.п.).<br>
+<span style="padding-left:38px;">Стоимость</span> зависит от прочности и неровности бетона.</li>
+</ul>
+
+<p><span>Очень важно!</span> В большинстве случаев фрезерование позволяет получить необходимую ровность поверхности без устройства дополнительной выравнивающей стяжки, что значительно дешевле и быстрее. В результате цена полимерного пола будет меньше.</p>
+<p>Шпатлеванием и Фрезерованием НЕВОЗМОЖНО устранить плавные волновые перепады поверхности бетонного пола!</p>
+<p><span>Дополнительные работы</span>: нанесение цветной износостойкой разметки, нумерации, логотипов и т.п.</p>
+
+<div class="px10b"></div>
+
+<p>Материалы Элакор для устройства полимерных полов по типу полимера разделяются на два вида - полиуретановые и эпоксидные. Цена полимерных полов ненамного отличается в зависимости от вида. Оба вида покрытий обеспечивают:</p>
+<ul>
+<li>полную герметизацию и обеспыливание бетонной поверхности;</li>
+<li>стойкость к износу, ударопрочность;</li>
+<li>химическую стойкость;</li>
+<li>хорошие декоративные свойства;</li>
+<li>простоту уборки.</li>
+</ul>
+
+<p>Однако существуют и некоторые различия при проведении работ по устройству полиуретановых и эпоксидных наливных полов.</p>
+<p><span>Эпоксидные материалы.</span></p>
+<ul>
+<li>Всегда двухкомпонентные, соответственно ограничено время жизни материала после смешивания.</li>
+<li>Не имеют запаха.</li>
+<li>Возможность проведения работ только при положительных температурах.</li>
+</ul>
+
+<p><span>Полиуретановые материалы.</span></p>
+<ul>
+<li>Могут быть двухкомпонентными и однокомпонентными, однокомпонентные можно наносить при температуре от минус 30&deg;С.</li>
+<li>Имеют более высокую проникающую способность, и поэтому можно упрочнять бетонные и пескоцементные стяжки даже марок М100 и менее. При этом прочность стяжек увеличивается в несколько раз. Расход материала зависит от марочной прочности бетона, его пористости и необходимой глубины пропитки.</li>
+<li>Обеспечивают глубину пропитки бетона на 2-3мм и более, если есть такая необходимость.</li>
+</ul>
+
+<p>На этой странице приведены примерные цены полимерных полов на работы по устройству пропиток, покрытий, <la id="337">цена наливных полов</la>, точные цены на покрытие для конкретного объекта мы можем предоставить после осмотра объекта и нанесения образцов покрытий. </p>
+
+<div class="px10b"></div>
+
+<p style="font-weight:700;">Смотрите также:<br>
+Все варианты <l2 id="2">полимерных полов</l2><br>
+Все варианты <l2 id="1">наливных полов</l2><br>
+Устройство <l2 id="4">бетонного пола</l2> – все варианты</p>
+
+<div id="pb_page" class="pb_hidden"><?php print $pb_page; ?></div>

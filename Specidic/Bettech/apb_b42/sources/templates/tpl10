@@ -1,0 +1,9 @@
+<?php
+$t=ob_get_contents();
+//$t=preg_replace('/\n/',' ',ob_get_contents()); $t=preg_replace('/\r/',' ',$t); $t=preg_replace('/\t/',' ',$t); $t=preg_replace('/ +/',' ',$t); $t=preg_replace('/\> +\</','> <',$t);
+// if (!file_exists('index.html')) {
+// $fh=@fopen('index.html','w'); @rewind($fh); if (-1!=@fwrite($fh,$t)) @ftruncate($fh,ftell($fh)); @fflush($fh); @fclose($fh); ob_end_flush();
+// } else {
+    ob_end_clean(); print $t; flush();
+// }
+?>

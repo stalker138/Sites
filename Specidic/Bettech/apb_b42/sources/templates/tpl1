@@ -1,0 +1,5 @@
+<?php print '<!--page'.$pb_page.'-->'; ?>
+<?php
+$calc = 1;
+// include_once $pb_root."inc/tpl1.php"; // Для объемных php - дополнений к Шаблону 1 - подключается дополнительный php-файл (page0_1)
+?>

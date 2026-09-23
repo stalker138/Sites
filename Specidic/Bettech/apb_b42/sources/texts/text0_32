@@ -1,0 +1,59 @@
+fpb_ready(f_set);
+
+function f_dwnld_clc() {
+    /** Скачать расчет */
+var s='';
+var vb_interval=null;
+      s = '<div class="px10"></div>' + '<div id="id_calcHead">' + $.id('id_calcHead').innerHTML + '</div>' + vb_px10 + '<div id="id_calcBody">' + $.id('id_calcBody').innerHTML + '</div>' + '<div class="px10"></div>';
+    s += '<div id="table2">' + $.id('table2').innerHTML + '</div>' + '<div class="px10"></div>';
+    i=s.indexOf('i_so_td'); if (i>0) { i=s.indexOf('>',i)+1; j=s.indexOf('</td>',i); s = s.substr(0,i) + $.id('i_so').value + s.substr(j); }
+    i=s.indexOf('i_mb_td'); if (i>0) { v=$.id('i_mb').value; if (v=='100')v='М100 (В7,5)'; if (v=='150')v='М150 (В12,5)'; if (v=='200')v='М200 (В15)'; if (v=='250')v='М250 (В20)'; if (v=='300')v='М300 (В22,5)'; if (v=='350')v='М350 (В25)'; i=s.indexOf('>',i)+1; j=s.indexOf('</td>',i); s=s.substr(0,i)+v+s.substr(j); }
+    i=s.indexOf('i_se_td'); if (i>0) { i=s.indexOf('>',i)+1; j=s.indexOf('</td>',i); s = s.substr(0,i) + $.id('i_se').value + s.substr(j); }
+    i=s.indexOf('i_sep_td'); if (i>0) { v=$.id('i_np').value; if(v=='0')v='1,0 - 1,5'; if(v=='1')v='2,0 - 2,5'; if(v=='2')v='3,0 - 3,5'; if(v=='3')v='4,0 - 4,5'; i=s.indexOf('>',i)+1; j=s.indexOf('</td>',i); s = s.substr(0,i) + v + s.substr(j); }
+    i=s.indexOf('i_sen_td'); if (i>0) {
+        v=$.id('i_np').value;
+        if(vb_page==2223) { if(v=='0')v='1,1 - 1,2'; if(v=='1')v='1,6 - 1,7'; if(v=='2')v='2,0 - 2,2'; }
+        if(vb_page==2224) { if(v=='0')v='1,2 - 1,3'; if(v=='1')v='1,6 - 1,7'; if(v=='2')v='2,0 - 2,2'; }
+        if(v=='0')v='2,0 - 2,5'; if(v=='1')v='3,0 - 3,5'; if(v=='2')v='4,0 - 4,5'; if(v=='3')v='5,0 - 5,5';
+        i=s.indexOf('>',i)+1; j=s.indexOf('</td>',i); s = s.substr(0,i) + v + s.substr(j);
+    }
+    i=s.indexOf('i_sh_td'); if (i>0) { i=s.indexOf('>',i)+1; j=s.indexOf('</td>',i); s = s.substr(0,i) + ($.id('i_sh').value=='1'?'Да':'Нет') + s.substr(j); }
+    i=s.indexOf('i_shp_td'); if (i>0) { i=s.indexOf('>',i)+1; j=s.indexOf('</td>',i); s = s.substr(0,i) + ($.id('i_se').value=='1'?'Фактурная':'Шероховатая') + s.substr(j); }
+    i=s.indexOf('i_fl_td'); if (i>0) { v=$.id('i_fl').value; i=s.indexOf('>',i)+1; j=s.indexOf('</td>',i); s = s.substr(0,i) + (v=='1'?'матовый':(v=='2'?'полуматовый':(v=='3'?'глянцевый':'НЕТ'))) + s.substr(j); }
+    htm=vb_px10+'<h1>'+document.querySelector('#content h1').innerHTML+'</h1>'+s;
+    i=$.id('dscr'); if(i && (!i.style.height || i.style.height=='0px')) {
+        i=htm.indexOf('<div id="dscr"'); j=htm.indexOf('</div><div class="pb_hidden"></div>',i)+35; if(i>0 && j>0) { htm = htm.substr(0,i) + htm.substr(j); }
+    }
+    htm='<!doctype html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>ЗАКАЗ</title><style type="text/css">'+
+'* { margin:0; padding:0; font:inherit; font-family:inherit; color:inherit; outline:none 0px; } * sup, * sub { font-size:10px; } span, strong, em { font-weight:bold; } strong { font-size:13px; } em { font-style:italic; }'+
+'#dcontent { padding:10px; width:770px; min-width:770px; max-width:770px; font:normal 12px arial; }'+
+'html,body { background:#ffffff; } body { font:normal 12px arial; color:#000000; } h1 { font:bold 14px arial; color:#004f92; }'+
+'table, table th, table td { width:100%; font:normal 12px arial; border-collapse:collapse; border-spacing:0; border:solid 1px #000000; }'+
+'table th, table td { width:auto; height:23px; padding:0 2px; } table th { text-align:center; background:#f0f0f0; }'+
+'.px0,.px0b,.px5,.px5b,.px10,.px10b,.px15,.px15b,.px20,.px20b { position:relative; clear:both; width:100%; }'+
+'.px0,.px0b { height:0; } .px5,.px5b { height:5px; } .px10,.px10b { height:10px; } .px15,.px15b { height:15px; } .px20,.px20b { height:20px; }'+
+'.px0b,.px5b,.px10b,.px15b,.px20b { border-bottom:solid 1px #c8c8c8; }'+
+
+'#id_calcHead { position:relative; width:350px; box-shadow:4px 4px 7px 0 #999999; }'+
+'#id_calcHead table { text-align:left; } #id_calcHead table .pad0, #id_calcHead table td .pad0 { text-align:center; }'+
+
+'.thead { font:bold 13px arial; text-align:left; background:yellow; }'+
+
+'#id_calcBody { position:relative; box-shadow:4px 4px 7px 0 #999999; }'+
+'#id_calcBody table { text-align:left; } #id_calcBody table th, #table2 table th { font-weight:normal; } #table2 p { margin-top:5px; font:normal 12px arial; }'+
+
+'table .tdleft { width:195px; padding:0 0 0 2px; } table .tdmat { padding:0 0 0 2px; } table .tdleft div { width:194px; }'+
+
+'.o_t, .o_tr, .o_ti, .o_tb13 { width:68px; text-align:right; padding:0 2px 0 0; }.o_tr { width:58px; }'+
+'.o_tb13, #id_calcBody table .o_tb13, #table2 table .o_tb13, #id_calcBody table th .o_tb13, #table2 table th .o_tb13 { font:bold 13px arial; font-weight:bold; font-size:13px; }' + 
+'</style></head><body><div id="dcontent">'+
+htm + 
+'</div></body></html>';
+
+    let myData = 'data:text/plain;charset=utf-8,' + encodeURIComponent(htm);
+    let date = new Date();
+    let nm_file='calc'+date.getFullYear()+'_'+date.getMonth()+'_'+date.getDate()+'_'+date.getHours()+'_'+date.getMinutes()+'_'+date.getSeconds()+'.html';
+    this.href = myData;
+    this.download = nm_file;
+}
+$.id('todownload_clc').addEventListener('click', f_dwnld_clc);
