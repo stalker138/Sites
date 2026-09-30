@@ -145,6 +145,7 @@ $a_srt_mb2=array(72,74,75);
 
 //ОПИСАНИЯ
 $a_descr=false;
+$a_descr[3]="https://elakors.ru/pdf/descr/elakor-ed-grunt-2k-pr-n.pdf";
 $a_descr[4]="https://elakors.ru/pdf/descr/shpaklevka-dlja-betona.pdf";
 $a_descr[5]="https://elakors.ru/pdf/descr/elakor-pu-grunt-p.pdf";
 $a_descr[7]="https://elakors.ru/pdf/descr/elakor-pu-emal-60.pdf";

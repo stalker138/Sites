@@ -8,19 +8,19 @@ var vrm, pirgr, pirfs, pivfs, nkif, pirnp, pirnk, pivrn, pivrm, ifl, pirfl, pivf
          /* [ pi, gr, ml, sh,pirsh, sk,pirsk, fs, fl, np, nk, ne, se, sp, vrm, pirgr, pirfs, pivfs, nkif, pirnp, pirnk, 0 ] */
  a_mtr[1] = a_cvr_main[11];
  a_mtr[9] = a_cvr_main[13];
-a_mtr[17] = a_cvr_main[17];
-a_mtr[23] = a_cvr_main[87];
-a_mtr[28] = a_cvr_main[23];
-a_mtr[30] = a_cvr_main[25];
+/*a_mtr[17] = a_cvr_main[17];*/
+a_mtr[17] = a_cvr_main[87];
+a_mtr[26] = a_cvr_main[23];
+a_mtr[28] = a_cvr_main[25];
 
 /*2.*/
  a_mtr[2] = a_cvr_main[31];
 a_mtr[10] = a_cvr_main[33];
 a_mtr[18] = a_cvr_main[35];
-a_mtr[24] = a_cvr_main[85];
-a_mtr[29] = a_cvr_main[89];
-a_mtr[31] = a_cvr_main[83];
-a_mtr[32] = a_cvr_main[81];
+a_mtr[22] = a_cvr_main[85];
+a_mtr[27] = a_cvr_main[89];
+a_mtr[29] = a_cvr_main[83];
+a_mtr[30] = a_cvr_main[81];
 
 /*3.1.*/
  a_mtr[0] = a_cvr_main[53];
@@ -28,9 +28,9 @@ a_mtr[32] = a_cvr_main[81];
 a_mtr[16] = a_cvr_main[73];
 
 /*3.2.*/
- a_mtr[3] = a_cvr_main[51];
-a_mtr[11] = a_cvr_main[52];
-a_mtr[19] = a_cvr_main[55];
+/* a_mtr[3] = a_cvr_main[51];*/
+a_mtr[3] = a_cvr_main[52];
+a_mtr[11] = a_cvr_main[55];
 
 /*4.*/
  a_mtr[4] = a_cvr_main[97];
@@ -39,20 +39,20 @@ a_mtr[12] = a_cvr_main[74];
 /*5.*/
  a_mtr[5] = a_cvr_main[39];
 a_mtr[13] = a_cvr_main[37];
-a_mtr[20] = a_cvr_main[43];
-a_mtr[25] = a_cvr_main[93];
+a_mtr[19] = a_cvr_main[43];
+a_mtr[23] = a_cvr_main[93];
 
 /*6.1.*/
  a_mtr[6] = a_cvr_main[63];
 a_mtr[14] = a_cvr_main[64];
-a_mtr[21] = a_cvr_main[65];
-a_mtr[26] = a_cvr_main[66];
+a_mtr[20] = a_cvr_main[65];
+a_mtr[24] = a_cvr_main[66];
 
 /*6.2.*/
  a_mtr[7] = a_cvr_main[67];
 a_mtr[15] = a_cvr_main[68];
-a_mtr[22] = a_cvr_main[69];
-a_mtr[27] = a_cvr_main[70];
+a_mtr[21] = a_cvr_main[69];
+a_mtr[25] = a_cvr_main[70];
  
 
 function f_refresh() {

@@ -21,8 +21,6 @@ fmtr_links(array(1107));
 fmtr_name($ndx_mtr, "", "грунт для бетона");
 print('<p class="fwb">Фасовка 200 кг</p>');
 print fmtr2(8); 
-print('<p class="fwb">Фасовка 50 кг</p>');
-print fmtr2(9); 
 print('<p class="fwb">Фасовка 20 кг</p>');
 print fmtr2(10); 
 print('<p class="fwb">Фасовка 10 кг</p>');

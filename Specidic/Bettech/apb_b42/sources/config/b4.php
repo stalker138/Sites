@@ -15,9 +15,9 @@
 *end*2
 
 *number*3
-*options*		0000000000
+*options*		1000000000
 *file*			block4_3
-*name*			empty3
+*name*			ПОЛИМЕРНЫЕ - Грунт-2К/ПР-Н - грунт порозаполняющий
 *end*3
 
 *number*4

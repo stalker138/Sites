@@ -458,6 +458,32 @@
 </div>
 <div class="px5"></div>
 
+<h2>Склад, «Адал сут». Площадь - 1000м&sup2;</h2>
+<div style="margin-left:50px;">
+<div class="dimgobj" style="height:150px;"><img class="imginstr" src="/images/o/sklad/img_163_s.jpg" onclick="fpb_zoomImg(this,'/images/o/sklad/img_163.jpg',200,20,600,800,'Склад',-30)" alt="Склад"/></div>
+<div class="dimgobj" style="height:150px;"><img class="imginstr" src="/images/o/sklad/img_164_s.jpg" onclick="fpb_zoomImg(this,'/images/o/sklad/img_164.jpg',200,20,600,800,'Склад',-30)" alt="Склад"/></div>
+<div class="dimgobj" style="height:150px;"><img class="imginstr" src="/images/o/sklad/img_165_s.jpg" onclick="fpb_zoomImg(this,'/images/o/sklad/img_165.jpg',200,20,600,800,'Склад',-30)" alt="Склад"/></div>
+
+</div>
+<div class="px5"></div>
+
+<h2>Овощехранилище, Алтын Орда. Площадь - 700м&sup2;</h2>
+<div style="margin-left:50px;">
+<div class="dimgobj" style="height:150px;"><img class="imginstr" src="/images/o/sklad/img_166_s.jpg" onclick="fpb_zoomImg(this,'/images/o/sklad/img_166.jpg',200,20,600,800,'Овощехранилище',-30)" alt="Овощехранилище"/></div>
+<div class="dimgobj" style="height:150px;"><img class="imginstr" src="/images/o/sklad/img_167_s.jpg" onclick="fpb_zoomImg(this,'/images/o/sklad/img_167.jpg',200,20,600,800,'Овощехранилище',-30)" alt="Овощехранилище"/></div>
+
+</div>
+<div class="px5"></div>
+
+<h2>Склад, г.Кызылорда. Полиуретановая пропитка. Площадь - 3600м&sup2;</h2>
+<div style="margin-left:50px;">
+<div class="dimgobj" style="height:150px;"><img class="imginstr" src="/images/o/sklad/img_168_s.jpg" onclick="fpb_zoomImg(this,'/images/o/sklad/img_168.jpg',200,20,600,800,'Склад',-30)" alt="Склад"/></div>
+<div class="dimgobj" style="height:150px;"><img class="imginstr" src="/images/o/sklad/img_169_s.jpg" onclick="fpb_zoomImg(this,'/images/o/sklad/img_169.jpg',200,20,600,800,'Склад',-30)" alt="Склад"/></div>
+<div class="dimgobj" style="height:150px;"><img class="imginstr" src="/images/o/sklad/img_170_s.jpg" onclick="fpb_zoomImg(this,'/images/o/sklad/img_170.jpg',200,20,600,800,'Склад',-30)" alt="Склад"/></div>
+<div class="dimgobj" style="height:150px;"><img class="imginstr" src="/images/o/sklad/img_171_s.jpg" onclick="fpb_zoomImg(this,'/images/o/sklad/img_171.jpg',200,20,600,800,'Склад',-30)" alt="Склад"/></div>
+
+</div>
+<div class="px5"></div>
 
 <div class="pb_hidden">
 <img src="/images/o/img020.jpg" alt="Бетонный пол для склада + антискользящая пропитка.  Железнодорожные рампы."/>
@@ -676,5 +702,14 @@
 <img src="/images/o/sklad/img_160.jpg" alt=""/>
 <img src="/images/o/sklad/img_161.jpg" alt=""/>
 <img src="/images/o/sklad/img_162.jpg" alt=""/>
+<img src="/images/o/sklad/img_163.jpg" alt=""/>
+<img src="/images/o/sklad/img_164.jpg" alt=""/>
+<img src="/images/o/sklad/img_165.jpg" alt=""/>
+<img src="/images/o/sklad/img_166.jpg" alt=""/>
+<img src="/images/o/sklad/img_167.jpg" alt=""/>
+<img src="/images/o/sklad/img_168.jpg" alt=""/>
+<img src="/images/o/sklad/img_169.jpg" alt=""/>
+<img src="/images/o/sklad/img_170.jpg" alt=""/>
+<img src="/images/o/sklad/img_171.jpg" alt=""/>
 
 </div>

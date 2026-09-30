@@ -7,6 +7,7 @@
 /* Ссылки на страницы описаний материалов */
 
 $pl=false; for ($i=0; $i<=350; $i++) { $pl[]=''; }
+$pl[3]='<l4 id="3">';  // </l4> 
 $pl[4]='<l4 id="33">';  // </l4> 1.8. Шпатлёвка-2К - полиуретановая шпатлевка для бетона
 $pl[5]='<l4 id="79">';  // </l4> Грунт-П - порозаполняющий грунт полиуретановый
 $pl[6]='<l4 id="17">';  // </l4> 1.2.1. Эмаль-60 - полиуретановая краска для бетона (55кг)
@@ -284,7 +285,7 @@ $dwnl[261]="https://elakors.ru/pdf/descr/elakor-pu-kley2k.pdf";  // 1.7.5. Кл�
 // МАТЕРИАЛЫ. Вариант 1. Возвращает отформатированную строку с Наименованием материала (основная часть + дополнение) и Ценами.
 function fmtr1($n=false,$f=false,$d=false) {
 global $mtr,$pl,$dwnl,$list_mtr,$new_mtr, $a_descr; $out=''; $new='';
-if ($mtr[$n] && in_array($n, $list_mtr, true)) {
+if ($mtr[$n] && in_array($n, $list_mtr, true) && ($mtr[$n][3] != '0')) {
 if (in_array($n, $new_mtr, true)) $new='<div style="float:right;padding:0 2px;font:bold 12px arial;color:#f00000">new!</div>';
     if ($f==false) $f=$mtr[$n][0];
     $out='<tr><td class="tdl">'.$new.(($a_descr[$n])?('<div><a target="_blank" href="'.$a_descr[$n].'">скачать</a></div>'):'').$f.' '.($pl[$n]?$pl[$n]:'').$mtr[$n][1].($pl[$n]?('</'.'a>'):'').'</td><td>'.$mtr[$n][3].'</td><td>'.$mtr[$n][4].'</td><td>'.$mtr[$n][5].'</td></tr>';

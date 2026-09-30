@@ -42,7 +42,7 @@
 <h3 class="divh3">1. ПРОПИТКИ для бетонных полов.</h3><div class="px0"></div>
 <p class="fright tar fwb" style="margin:-25px 5px 0 0;"></p>
 <div class="px0"></div>
-<?php print $tbl1.fcvr3(11).fcvr3(13).fcvr3(17).fcvr3(87).fcvr3(23).fcvr3(25).$tbl2; ?>
+<?php print $tbl1.fcvr3(11).fcvr3(13).fcvr3(87).fcvr3(23).fcvr3(25).$tbl2; ?>
 <div class="px10" style="margin-top:-5px;background:#ffffff"></div>
 </div>
 <div class="px0b"></div>
@@ -64,7 +64,7 @@
 <?php print $tbl1.fcvr3(53).fcvr3(54).fcvr3(73).$tbl2; ?>
 <div class="px0"></div>
 <p class="fwb c2">Эпоксидные наливные полы</p>
-<?php print $tbl1.fcvr3(51).fcvr3(52).fcvr3(55).$tbl2; ?>
+<?php print $tbl1.fcvr3(52).fcvr3(55).$tbl2; ?>
 <div class="px10" style="margin-top:-5px;background:#ffffff"></div>
 </div>
 <div class="px0b"></div>

@@ -23,51 +23,84 @@
 <menu id="menuSert1">
  <li class="pb_mc" id="pbm1" onclick="sm_click(this)"><span>1. Полимерные композиции «Элакор-ПУ»</span>
    <menu>
-    <li><span>1.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/news/984/">Сертификат Гигиенический (СЭЗ) «Элакор-ПУ»</a></li>
-    <li><span>1.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sgr-elakor-pu/">Свидетельство о государственной регистрации «Элакор-ПУ». Таможенный союз</a></li>
-    <li><span>1.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/phz-elakor-pu/">Сертификат пожарной безопасности «Элакор-ПУ»</a></li>
-    <li><span>1.4.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sertifikat_sootvetstvija_jelakor-pu/">Сертификат соответствия «Элакор-ПУ»</a></li>
-    <li><span>1.5.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-pu/">Письмо РОСТЕСТ «Элакор-ПУ»</a></li>
-    <li><span>1.6.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/deti-elakor-pu/">Заключение на применение «Элакор-ПУ» в детских и лечебно-профилактичеких учреждениях</a></li>
-    <li><span>1.7.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/radiation-elakor-pu/">Заключение НИКИМТ «Дезактивируемость и радстойкость»</a>.<br><span class="p11">Разрешение на применение на объектах Росатома.</span></li>
+    <li><span>1.1.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sgr-elakor-pu/">Свидетельство о государственной регистрации «Элакор-ПУ». Таможенный союз (гигиенический сертификат)</a>.</li>
+    <li><span>1.2.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/phz-elakor-pu/">Сертификат соответствия (пожарной безопасности) «Элакор-ПУ» Класс КМ 1</a>.</li>
+    <li><span>1.4.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sertifikat_sootvetstvija_jelakor-pu/">Сертификат соответствия «Элакор-ПУ»</a>.</li>
+    <li><span>1.6.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/deti-elakor-pu/">Заключение на применение «Элакор-ПУ» в детских и лечебно-профилактических учреждениях</a>.</li>
+    <li><span>1.7.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/radiation-elakor-pu/">Заключение НИКИМТ «Дезактивируемость и радстойкость»</a>.<br><span class="p11">Разрешение на применение на объектах Росатома.</span></li>
+    <li><span>1.8.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sgr-elakor-pu-lux/">Свидетельство о государственной регистрации "Элакор-ПУ" Люкс. Таможенный союз (гигиенический сертификат)</a>.<br><span class="p11">Применение в чистых помещениях, в том числе в Лечебно-профилактических учреждениях.</span></li>
+    <li><span>1.9.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/iskrobezopasnost-elakor-pu/">Искробезопасность Элакор-ПУ окрасочное покрытие толщина 0,25мм</a>.<br><span class="p11">Испытание по определению искробезопасности полимерного покрытия «Элакор-ПУ».</span></li>
+    <li><span>1.10.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/iskrobezopasnost-elakor-pu-lux/">Искробезопасность Элакор-ПУ Люкс окрасочное покрытие толщина 0,25мм</a>.<br><span class="p11">Испытание по определению искробезопасности полимерного покрытия «Элакор-ПУ Люкс».</span></li>
    </menu>
  </li>
  <li class="pb_mc" id="pbm2" onclick="sm_click(this)"><span>2. Двухкомпонентные композиции «Элакор-ПУ 2К»</span>
    <menu>
-    <li><span>2.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sez-elakor-pu-2k/">Сертификат Гигиенический (СЭЗ) «Элакор-ПУ 2К»</a></li>
-    <li><span>2.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sgr-elakor-pu-2k/">Свидетельство о государственной регистрации «Элакор-ПУ 2К». Таможенный союз</a></li>
-    <li><span>2.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/phz-elakor-pu-2k/">Сертификат пожарной безопасности «Элакор-ПУ 2К»</a></li>
-    <li><span>2.4.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-pu-2k/">Письмо РОСТЕСТ «Элакор-ПУ 2К»</a></li>
-    <li><span>2.5.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/jelakor-pu-2k-primenenie-v-parkingah/">Письмо МОСГОСЭКСПЕРТИЗА о применении «Элакор-ПУ 2К» на объектах гаражного назначения</a>.<br><span class="p11">Согласование применения покрытия «Элакор» для защиты полов из асфальтобетонной смеси.</span></li>
+    <li><span>2.1.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sgr-elakor-pu-2k/">Свидетельство о государственной регистрации «Элакор-ПУ 2К». Таможенный союз (гигиенический сертификат)</a>.</li>
+    <li><span>2.2.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/phz-elakor-pu-2k/">Сертификат соответствия (пожарной безопасности) «Элакор-ПУ 2К» Класс КМ2</a>.</li>
+    <li><span>2.3.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/antistat-pol-pu/">Испытания антистатических свойств – Антистатический Полиуретановый Наливной пол</a>.</li>
+    <li><span>2.4.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/antistat-grunt-pu/">Испытания антистатических свойств – Антистатический Полиуретановый грунт</a>.</li>
+    <li><span>2.5.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sootvetstvija-elakor-pu-2k/">Сертификат соответствия «Элакор-ПУ 2К»</a>.</li>
+    <li><span>2.6.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/jelakor-pu-2k-primenenie-v-parkingah/">Письмо МОСГОСЭКСПЕРТИЗА о применении «Элакор-ПУ 2К» на объектах гаражного назначения</a>.<br><span class="p11">Согласование применения покрытия «Элакор» для защиты полов из асфальтобетонной смеси.</span></li>
+    <li><span>2.7.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/iskrobezopasnost-elakor-pu_np1/">Искробезопасность Элакор-ПУ наливной пол толщина 1мм, 2мм</a>.<br><span class="p11">Испытание по определению искробезопасности полимерного покрытия «Элакор-ПУ 2К».</span></li>
+    <li><span>2.8.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/iskrobezopasnost-elakor-pu-antistat/">Искробезопасность Антистатического Наливного пола «Элакор-ПУ» толщина 2мм</a>.<br><span class="p11">Испытание по определению искробезопасности полимерного покрытия «Элакор-ПУ» Антистатического.</span></li>
    </menu>
  </li>
  <li class="pb_mc" id="pbm3" onclick="sm_click(this)"><span>3. Полимерные композиции «Элакор-ПУ Эко»</span>
    <menu>
-    <li><span>3.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sez-elakor-pu-eko/">Сертификат Гигиенический (СЭЗ) «Элакор-ПУ Эко»</a>.<br><span class="p11">Контакт с пищевыми продуктами, питьевой водой.</span></li>
+    <li><span>3.1.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sez-elakor-pu-eko/">Свидетельство о государственной регистрации «Элакор-ПУ Эко» эмаль пищевая. Таможенный союз (гигиенический сертификат)</a>.<br><span class="p11">Контакт с пищевыми продуктами, питьевой водой.</span></li>
+    <li><span>3.2.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sez-elakor-pu-eko-2/">Свидетельство о государственной регистрации «Элакор-ПУ Эко» лак пищевой. Таможенный союз (гигиенический сертификат)</a>.<br><span class="p11">Контакт с пищевыми продуктами, питьевой водой.</span></li>
    </menu>
  </li>
- <li class="pb_mc" id="pbm4" onclick="sm_click(this)"><span>4. Полимерные композиции «Элакор-ЭД»</span>
+ <li class="pb_mc" id="pbm4" onclick="sm_click(this)"><span>4. Полимерные композиции «Элакор-ПЦ»</span>
    <menu>
-    <li><span>4.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sez-elakor-ed/">Свидетельство о государственной регистрации «Элакор-ЭД». Таможенный союз</a></li>
-    <li><span>4.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/phz-elakor-ed/">Сертификат пожарной безопасности «Элакор-ЭД»</a></li>
-    <li><span>4.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-ed/">Письмо РОСТЕСТ «Элакор-ЭД»</a></li>
+    <li><span>4.1.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/elakor-pz/">Свидетельство о государственной регистрации «Элакор-ЭД». Таможенный союз (гигиенический сертификат)</a>.</li>
+    <li><span>4.2.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/phz-elakor-pz/">Сертификат соответствия (пожарной безопасности) «Элакор-ПЦ», класс КМ2</a>.</li>
+    <li><span>4.3.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/stv-elakor-pz/">Сертификат соответствия «Элакор-ПЦ»</a>.</li>
+    <li><span>4.4.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/iskrobezopasnost-elakor-pz/">Искробезопасность Полиуретан-цементного Наливного пола «Элакор-ПЦ»</a>.<br><span class="p11">Испытание по определению искробезопасности полиуретан-цементного покрытия «Элакор-ПЦ».</span></li>
+    <li><span>4.5.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/iskrobezopasnost-elakor-pz-antistat/">Искробезопасность Антистатического Полиуретан-цементного Наливного пола «Элакор-ПЦ»</a>.<br><span class="p11">Испытание по определению искробезопасности полиуретан-цементного покрытия «Элакор-ПЦ» Антистатического.</span></li>
    </menu>
  </li>
- <li class="pb_mc" id="pbm5" onclick="sm_click(this)"><span>5. Составы для пропитки бетона «Элакор-МБ»</span>
+
+ <li class="pb_mc" id="pbm5" onclick="sm_click(this)"><span>5. Полимерные композиции «Элакор-ЭД»</span>
    <menu>
-    <li><span>5.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sez-elakor-mb/">Сертификат Гигиенический (СЭЗ) «Элакор-МБ»</a></li>
-    <li><span>5.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/phz-elakor-mb/">Сертификат пожарной безопасности «Элакор-МБ»</a></li>
-    <li><span>5.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-mb/">Письмо РОСТЕСТ «Элакор-МБ»</a></li>
+    <li><span>5.1.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sez-elakor-ed/">Свидетельство о государственной регистрации «Элакор-ЭД». Таможенный союз</a></li>
+    <li><span>5.2.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/phz-elakor-ed/">Сертификат соответствия (пожарной безопасности) «Элакор-ЭД» Класс КМ2</a>.</li>
+    <li><span>5.3.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/phz-elakor-ed-antistat/">Сертификат соответствия (пожарной безопасности) «Элакор-ЭД» Антистатический Наливной пол Класс КМ2</a>.</li>
+    <li><span>5.4.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/antistat-svojstva/">Испытания антистатических свойств – Антистатический Эпоксидный Наливной пол</a>.</li>
+    <li><span>5.5.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/phz-ast-propitka/">Сертификат соответствия (пожарной безопасности) Антистатическая пропитка «Элакор-ЭД» Класс КМ1</a>.</li>
+    <li><span>5.6.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/radiation-elakor-ed/">Заключение НИКИМТ на дезактивируемость и радстойкость «Элакор ЭД»</a>.</li>
+    <li><span>5.7.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sertifikat_sootvetstviya_elakor-ed/">Сертификат соответствия «Элакор-ЭД»</a>.</li>
+    <li><span>5.8.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/isb-elakor-ed/">Искробезопасность - эпоксидный наливной пол «Элакор-ЭД»</a>.</li>
+    <li><span>5.9.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/iskrobezopasnost-elakor-ed-2mm/">Искробезопасность Эпоксидного наливного пола Антистатического толщина 2мм</a>.<br><span class="p11">Протокол испытаний искробезопасности Антистатического эпоксидного наливного пола «Элакор-ЭД», толщина 2мм.</span></li>
+    <li><span>5.10.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/iskrobezopasnost-elakor-ed-025mm/">Искробезопасность Антистатического Наливного пола «Элакор-ЭД» толщина 0,25мм</a>.<br><span class="p11">Испытание по определению искробезопасности Антистатического Наливного пола «Элакор-ЭД» толщина 0,25мм.</span></li>
    </menu>
  </li>
- <li class="pb_mc" id="pbm6" onclick="sm_click(this)"><span>6. Добавки для бетонов «Элакор-Эластобетон»</span>
+ <li class="pb_mc" id="pbm6" onclick="sm_click(this)"><span>6. Полимерные композиции «Элакор-ЭДВ»</span>
    <menu>
-    <li><span>6.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sez-elakor-elastobeton/">Сертификат Гигиенический (СЭЗ) «Элакор-Эластобетон»</a></li>
-    <li><span>6.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/jelakor-jelastobeton/">Свидетельство о государственной регистрации «Элакор-Эластобетон». Таможенный союз</a></li>
-    <li><span>6.3.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/phz-elakor-elastobeton/">Сертификат пожарной безопасности «Элакор-Эластобетон»</a></li>
-    <li><span>6.4.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/elb-a-mosstroy/">Добавки для бетона «Эластобетон-А» - сертификат «НИИМосстрой»</a></li>
-    <li><span>6.5.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/sertifikat_sootvetstvija_jelakor-jelastobeton/">Сертификат соответствия «Элакор-Эластобетон»</a></li>
-    <li><span>6.6.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/sert/pismo-elakor-elastobeton/">Письмо РОСТЕСТ «Элакор-Эластобетон»</a></li>
+    <li><span>6.1.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sgr-elakor-edv/">Свидетельство о государственной регистрации «Элакор-ЭДВ». Таможенный союз (гигиенический сертификат)</a>.</li>
+    <li><span>6.2.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sertifikat_sootvetstvija_jelakor-edv/">Сертификат соответствия «Элакор-ЭДВ»</a></li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm7" onclick="sm_click(this)"><span>7. Составы для пропитки бетона «Элакор-МБ»</span>
+   <menu>
+    <li><span>7.1.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sgr-elakor-mb1/">Свидетельство о государственной регистрации «Элакор-МБ1». Таможенный союз (гигиенический сертификат)</a>.</li>
+    <li><span>7.2.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sgr-elakor-mb2/">Свидетельство о гос. регистрации «Элакор-МБ2», «Элакор-МБ5». Таможенный союз (гигиенический сертификат)</a>.<br></li>
+    <li><span>7.3.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/phz-elakor-mb/">Сертификат соответствия (пожарной безопасности) «Элакор-МБ1» Класс КМ0</a>.</li>
+    <li><span>7.4.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/phz-elakor-mb2/">Сертификат соответствия (пожарной безопасности) «Элакор-МБ2» Класс КМ1</a>.</li>
+    <li><span>7.5.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sertifikat_sootvetstvija_jelakor-mb/">Сертификат соответствия «Элакор-МБ»</a>.</li>
+    <li><span>7.6.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/pismo-elakor-mb4/">Информационное письмо «Элакор-МБ4» (отказное)</a>.</li>
+   </menu>
+ </li>
+ <li class="pb_mc" id="pbm8" onclick="sm_click(this)"><span>8. Добавки для бетонов «Элакор-Эластобетон»</span>
+   <menu>
+    <li><span>8.1.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/jelakor-jelastobeton/"> Свидетельство о гос. регистрации «Элакор-Эластобетон». Таможенный союз (гигиенический сертификат)</a>.</li>
+    <li><span>8.2.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/phz-elakor-elastobeton/">Сертификат соответствия (пожарной безопасности) «Элакор-Эластобетон А1, А2, Б» Класс КМ0</a>.</li>
+    <li><span>8.3.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/phz-elakor-elastobeton-v/">Сертификат соответствия (пожарной безопасности) «Элакор-Эластобетон В» Класс КМ0</a>.</li>
+    <li><span>8.4.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/elb-a-mosstroy/">Добавки для бетона «Эластобетон-А» - сертификат «НИИМосстрой»</a>.</li>
+    <li><span>8.5.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/sertifikat_sootvetstvija_jelakor-jelastobeton/">Сертификат соответствия «Элакор-Эластобетон»</a>.</li>
+    <li><span>8.6.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/iskrobezopasnost_jelastobeton_a/">Искробезопасность «Эластобетон-А»</a>.<br><span class="p11">Испытание по определению искробезопасности «Элакор-Эластобетон-А».</span></li>
+    <li><span>8.7.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/iskrobezopasnost_jelastobeton_b/">Искробезопасность «Эластобетон-Б»</a>.<br><span class="p11">Испытание по определению искробезопасности «Элакор-Эластобетон-Б».</span></li>
+    <li><span>8.8.</span> &nbsp;&nbsp;<a target="_blank" href="https://teohim.ru/sert/opredelenie-iskrobezopasnosti-elakor-elastobeton/">Искробезопасность «Эластобетон-В»</a>.<br><span class="p11">Испытание по определению искробезопасности «Элакор-Эластобетон-В».</span></li>
    </menu>
  </li>
 </menu>
@@ -167,8 +200,8 @@
  </li>
  <li class="pb_mc" id="pbm33" onclick="sm_click(this)"><span>3. Письма-согласования по материалам серии Элакор-Эластобетон</span>
    <menu>
-    <li><span>3.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo14/">Добавка для бетона Эластобетон-А. Конкретные вопросы – конкретные ответы.</a><br><span class="p11">Может ли добавка Эластобетон-А снизить прочность бетона.<br>Видимые доказательства применения добавки Эластобетон-А.<br>Можно ли лабораторно установить факт применения добавки Эластобетон-А.</span></li>
-    <li><span>3.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo15/">Добавка для бетона «Эластобетон-А2». Изменения в расходе.</a><br><span class="p11">- Изменение расхода добавки для бетона с 2.0кг на 3.8кг на 100кг цемента.<br>- Новая возможность – поставка «Эластобетон-А2» в виде концентрата</span></li>
+    <li><span>3.1.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo14/">Добавка для бетона Эластобетон-А. Конкретные вопросы – конкретные ответы</a>.<br><span class="p11">Может ли добавка Эластобетон-А снизить прочность бетона.<br>Видимые доказательства применения добавки Эластобетон-А.<br>Можно ли лабораторно установить факт применения добавки Эластобетон-А.</span></li>
+    <li><span>3.2.</span> &nbsp;&nbsp;<a target="_blank" href="http://www.teohim.ru/pisma/pismo15/">Добавка для бетона «Эластобетон-А2». Изменения в расходе</a>.<br><span class="p11">- Изменение расхода добавки для бетона с 2.0кг на 3.8кг на 100кг цемента.<br>- Новая возможность – поставка «Эластобетон-А2» в виде концентрата</span></li>
    </menu>
  </li>
  <li class="pb_mc" id="pbm34" onclick="sm_click(this)"><span>4. Письма-согласования по технологическим операциям</span>

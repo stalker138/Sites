@@ -147,9 +147,9 @@
 *end*24
 
 *number*25
-*options*		0000000000
+*options*		1000000000
 *file*			block2_25
-*name*			empty25
+*name*			НАЛИВНЫЕ - Полиуретан цементные полы
 *end*25
 
 *number*26

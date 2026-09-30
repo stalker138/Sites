@@ -69,7 +69,7 @@
 *end*11
 
 *number*12
-*options*		1150000000
+*options*		1000000000
 *file*			block1_12
 *name*			СЕРТИФИКАТЫ
 *end*12
