@@ -3,12 +3,12 @@
 <header>
 <l1 id="1" class="elakor_logo" title="Промышленные полы Элакор® - применяются там, где необходимы покрытия особых свойств"></l1>
 <!--<div id="contacts"><div>Промышленные полы</div><div><p>Элакор<sup>®</sup></p></div><p>полы, которые применяются там,<br>где необходимы покрытия особых свойств.</p></div>-->
-<l1 id="1" id="teohim" style="top:128px;" title="Финансовая группа ПАРТНЁР"><span class="first">Новосибирск</span><span class="second">+7 (383) 347-47-49<br>+7 (800) 201-68-91</span></l1>
+<l1 id="1" id="teohim" style="top:128px;" title="Финансовая группа ПАРТНЁР"><span class="first">Новосибирск</span><span class="second">+7 (383) 347-47-49<br>+7 (923) 101-24-44</span></l1>
 <div id="hdr_teo">
  <!-- <div id="tm_left">ТЭОХИМ</div>-->
-  <div id="tm_right">+7 (800) 201-68-91<br>Омск<!--br>+7 (381) 251-45-01--><br><a href="mailto:omsk@teohim.ru">omsk@teohim.ru</a></div>
-  <div id="tm_right">+7 (383) 347-47-49<br>Томск<!--br>+7 (382) 277-02-67--><br><a href="mailto:tomsk@teohim.ru">tomsk@teohim.ru</a></div>
-  <div id="tm_right"><br>Новосибирск<!--br>+7 (383) 347-47-49--><br><a href="mailto:nsk@teohim.ru">nsk@teohim.ru</a></div>
+  <div id="tm_right">+7 (383) 347-47-49<br>Омск<br><a href="mailto:s.teohim@mail.ru">s.teohim@mail.ru</a></div>
+  <div id="tm_right">+7 (923) 101-24-44<br>Томск<!--br><a href="mailto:tomsk@teohim.ru">tomsk@teohim.ru</a></div--></div>
+  <div id="tm_right"><br>Новосибирск<!--br><a href="mailto:nsk@teohim.ru">nsk@teohim.ru</a></div--></div>
 </div>
 </header>
 </div>
@@ -24,7 +24,22 @@
   <div id="fcount" style="text-align:right"></div>
   <?php if ($pb_page>50) { ?><div style="position:absolute;right:5px;top:30px"><l0 id="30">Политика конфиденциальности</l0></div><?php } ?>
 
-<?php if (1==1) { ?>
+<?php 
+
+
+//Проверка ботов. Проверяется прямой заход на главную страницу от пользователя, который не помечен как бот.
+function chk_remote_user() {
+  global $no_metrix;
+  $r=$_SERVER['HTTP_REFERER']; $ret=1; $p=strpos($_SERVER['HTTP_USER_AGENT'],'bot');
+  if (isset($no_metrix) && ($no_metrix==1)) $ret=0;
+  if (!$p || $p<1) {
+     $uri = $_SERVER['REQUEST_URI'];
+     if (!$r && ($uri == "/")) { $ret=0; }
+  }
+  return $ret;
+}
+
+ if (chk_remote_user()==1) { ?>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >

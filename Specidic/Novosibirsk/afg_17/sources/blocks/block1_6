@@ -5,12 +5,12 @@
 <table><tbody>
 <tr><td style="width: 120px;">Контактное лицо:</td><td colspan="3">Ясаков Андрей Николаевич</td></tr>
 <tr><td>Адрес:</td><td colspan="3">630032  г.Новосибирск ул. Микрорайон Горский 75 оф 4</td></tr>
-<tr><td><span>Телефон:</span></td><td colspan="3"><div><a href="tel:+73833474749">+7 (383) 347-47-49</a></div><div><a href="tel:+78002016891">+7 (800) 201-68-91</a></div></td></tr>
-<tr><td><span>WhatsApp:</span></td><td colspan="3"><a href="https://api.whatsapp.com/send?phone=79231156344">+7 923 115-63-44</a><?php f_print_wa('79231156344', 1, 0, 1) ?></td></tr>
+<tr><td><span>Телефон:</span></td><td colspan="3"><div><a href="tel:+73833474749">+7 (383) 347-47-49</a></div><div><a href="tel:+79231012444">+7 (923) 101-24-44</a></div></td></tr>
+<tr><td><span>Telegram:</span></td><td colspan="3"><a href="https://t.me/+79231156344">+7 923 115-63-44</a><?php f_print_wa('79231156344', 0, 1, 1) ?></td></tr>
 <tr><td><span>E-mail</span>:</td>
-<td><div>Новосибирск<br><a href="mailto:nsk@teohim.ru">nsk@teohim.ru</a></div></td>
-<td><div>Томск<br><a href="mailto:tomsk@teohim.ru">tomsk@teohim.ru</a></div></td>
-<td><div>Омск<br><a href="mailto:omsk@teohim.ru">omsk@teohim.ru</a></div></td>
+<td><!--div>Новосибирск<br--><a href="mailto:s.teohim@mail.ru">s.teohim@mail.ru</a></div></td>
+<!--td><div>Томск<br><a href="mailto:tomsk@teohim.ru">tomsk@teohim.ru</a></div></td>
+<td><div>Омск<br><a href="mailto:omsk@teohim.ru">omsk@teohim.ru</a></div></td-->
 </tr>
 
 <tr><td><span>Режим работы:</span></td><td colspan="3"><div>пн-пт 8:00-17:00</div><div>обед  12.00-13.00</div><div>сб-вс выходной</div></td></tr>
