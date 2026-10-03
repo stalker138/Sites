@@ -1,0 +1,39 @@
+var gr = a_cvr_main[pi][1];
+var np = a_cvr_main[pi][9];   // Индекс наполнителя
+var nk = a_cvr_main[pi][10];  // Индекс кварца наполнителя
+var fs = a_cvr_main[pi][7];   // Индекс финишного слоя
+var fl = a_cvr_main[pi][8];  // Индекс финишного лака
+var ne = a_cvr_main[pi][11];   // Толщина
+var nz = a_cvr_main[pi][26];  // Индекс материала Запаковка
+var nk2 = a_cvr_main[pi][28];  // Индекс кварца наполнителя 2
+var gk = a_cvr_main[pi][30];  // Разбавитель К
+
+var pirgr = a_cvr_main[pi][15]; /* Коэфф-ты расхода грунтовки по маркам бетона */
+var pirnp = a_cvr_main[pi][19];    /* Расход подстилки от толщины */
+var pizp = a_cvr_main[pi][27];    /* Расход запаковки от толщины */
+var pirnk = a_cvr_main[pi][20];    /* Расход кварца 0.1-0.4 от толщины */
+var pirnk2 = a_cvr_main[pi][29];    /* Расход кварца 0.3-0.6 от толщины */
+var pirsk = a_cvr_main[pi][6];
+var pirgk = a_cvr_main[pi][31];  // Расход Разбавитель К
+var pipfs = a_cvr_main[pi][32];  // Массив индексов ПЦ - покрытий 
+var pirnk14 = a_cvr_main[pi][33];  /* Расход кварца 0.1-0.4 от толщины */
+
+var vrm = a_cvr_main[pi][14];     /* Влияние выбранной марки бетона (pi_mb) на стоимость доп.работ */
+var nkif = a_cvr_main[pi][18];    /* Индекс кварца */
+var pirfs = a_cvr_main[pi][16];   /* Расход финишного покрытия */
+
+var pirfl = a_cvr_main[pi][25];    /* Расход финишного лака */
+var pivfl = a_cvr_w[pi][4];      /* Работы финишного лака (+) */
+var pimfl = a_cvr_w[pi][5];   /* Доп. материалы финишного лака (+) */
+var ifl = a_cvr_main[pi][24];  /* Индекс финишного лака */
+var fl6 = a_cvr_main[pi][34];  
+var nfl = a_cvr_main[pi][35];  
+var nfl6 = a_cvr_main[pi][36];
+var nfl2  = a_cvr_main[pi][37];
+
+var fl2  = a_cvr_main[pi][22];
+var pirfl2  = a_cvr_main[pi][23];
+
+var pivrn = a_cvr_w[pi][0];     /* Работы от толщины (+) */
+var pivrm = a_cvr_w[pi][1];    /* Доп. материалы от толщины (+) */
+var pivfs = a_cvr_w[pi][2];    /* Доп. материалы от толщины (+) */

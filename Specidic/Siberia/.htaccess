@@ -1,0 +1,43 @@
+<Files ~ "^(recip.txt|config.inc|footer.inc|form.inc|header.inc)$">
+  deny from all
+</Files>
+DirectoryIndex index.html index.htm index.php
+AddDefaultCharset utf-8
+RewriteEngine On
+RewriteRule ^.htaccess$ -[F]
+
+RewriteCond %{HTTP_HOST} ^www.teohim-siberia.ru$ [NC]
+RewriteRule ^(.*)$ https://teohim-siberia.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-HTTPS} !1
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|htm|html)\ HTTP/ 
+RewriteRule ^index\.(php|htm|html)$ https://teohim-siberia.ru/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^(.*)\/index\.(php|htm|html)\ HTTP/ 
+RewriteRule ^(.*)\/index\.(php|htm|html)$ https://teohim-siberia.ru/$1/ [R=301,L]
+
+#RewriteCond %{THE_REQUEST} ^(.*)\.(htm|html)\ HTTP/ 
+#RewriteRule ^(.*)\.(htm|html)$ https://teohim-siberia.ru/$1/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/obrazcy-betona-vypolnennye-s-ispolzovaniem-dobavok-elastobeton\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/betonnye-poly/obrazcy/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/nashi-raboti\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nashi-raboti-foto/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pubs\/elakor_na_zaschite_betonnyh_polov\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/pubs/zaschita_betona/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pokrytija-prochie\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pubs/zalivnye-poly\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye-poly/zalivnye-poly/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/pubs/zhidkij-pol\/?$
+RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye-poly/zhidkij-pol/ [R=301,L]
+
+ErrorDocument 404 /
+ErrorDocument 403 /

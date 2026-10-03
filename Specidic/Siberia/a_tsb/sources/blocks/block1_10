@@ -1,0 +1,31 @@
+<div class="item">
+           <h1>Контактные телефоны</h1>
+<table style="margin:0 auto; font-size:14px;">
+<tr><td style="width:180px;"><strong>Красноярск </strong></td><td> <a href="tel:+79029245015">+7 (902) 924-5015</a></td></tr>
+<tr><td><strong>Кузбаcс</strong></td><td><a href="tel:+79030777737">+7 (903) 077-7737</a></td></tr>
+<tr><td><strong>Иркутск</strong></td><td><a href="tel:+79641119166">+7 (964) 111-9166</a></td></tr>
+<tr><td><strong>Улан-Удэ</strong></td><td><a href="tel:+79641119166">+7 (964) 11-19166</a></td></tr>
+<tr><td><strong>Тыва</strong></td><td><a href="tel:+79024673214">+7 (902) 467-3214</a></td></tr>
+<tr><td><strong>Горно-Алтайск</strong></td><td><a href="tel:+79030777737">+7 (903) 077-7737</a></td></tr>
+<tr><td><strong>Чита</strong></td><td><a href="tel:+79641119166">+7 (964) 111-9166</a></td></tr>
+<tr><td><strong>Абакан</strong></td><td><a href="tel:+73902352131">+7 (3902) 35-21-31</a></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td><strong>WhatsApp/Telegram</strong></td><td><div><a href="https://api.whatsapp.com/send?phone=79024673214">+7 (902) 467-3214</a><?php f_print_wa('79024673214', 1, 1, 1) ?></div></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td><strong>Электронная почта</strong></td><td><a href="mailto:teohim1@yandex.ru">&#116;&#101;&#111;&#104;&#105;&#109;1&#64;yandex.ru</a></td></tr>
+</table>
+</div>
+<div class="px10"></div>
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<div class="item">
+           <h2>Карта проезда в городе Красноярск</h2>
+      <div style="width:100%; text-align:center;">
+<p style="margin:0 0 5px 0;"><strong><span style="margin:0 auto; font-size:14px;">г.Красноярск.ул. Вавилова 1 стр. 39 офис 223</span></strong></p>
+<div id="ymaps-map-id_134734754906575783139" style="width: 600px; height: 443px; margin:0 auto;"></div>
+<script type="text/javascript">function fid_134734754906575783139(ymaps) {var map = new ymaps.Map("ymaps-map-id_134734754906575783139", {center: [92.91025249999988, 55.991802184833816], zoom: 13, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([92.910253, 55.991727], {balloonContent: "ООО «ТэоХим-Сибирь»"}, {preset: "twirl#lightblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_134734754906575783139"></script>
+<!--img src="img/last-map.jpg" alt="Карта проезда в городе Красноярске" width="359" height="386" /--></div>
+         </div>

@@ -1,0 +1,5 @@
+    if (pi_so>=2000) return 4;
+    if (pi_so>=600 && pi_so<2000) return 3;
+    if (pi_so>=400 && pi_so<600)  return 2;
+    if (pi_so>=200 && pi_so<400)  return 1;
+    return 0;

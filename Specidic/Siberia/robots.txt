@@ -1,0 +1,44 @@
+User-agent: Yandex
+
+Clean-param: etext
+
+Allow: /
+Disallow: /scripts/
+Disallow: /cms/
+Disallow: /style/
+Disallow: /test/
+Disallow: /test2/
+Disallow: /pubs/nalivnie_poli_test.htm
+Disallow: /promyshlennye_poly_test.htm
+Disallow: /polimernye_poly_test.htm
+Disallow: /polimercementnye_poly_test.htm
+Disallow: /betonnye_poly_test.htm
+Disallow: /pokrytija_dlja_betona_test.htm
+Disallow: /pokrytija_dlja_metalla_test.htm
+Disallow: /pokrytija_dlja_dereva_test.htm
+Disallow: /pokrytija_dlja_asfalta_test.htm
+Disallow: /pokrytija_na_ulice_test.htm
+Disallow: /poly_dlja_morozilnyh_kamer_test.htm
+Disallow: /pokrytija_v_gorjachem_cehe_test.htm
+Sitemap: https://teohim-siberia.ru/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow: /scripts/
+Disallow: /cms/
+Disallow: /style/
+Disallow: /test/
+Disallow: /test2/
+Disallow: /pubs/nalivnie_poli_test.htm
+Disallow: /promyshlennye_poly_test.htm
+Disallow: /polimernye_poly_test.htm
+Disallow: /polimercementnye_poly_test.htm
+Disallow: /betonnye_poly_test.htm
+Disallow: /pokrytija_dlja_betona_test.htm
+Disallow: /pokrytija_dlja_metalla_test.htm
+Disallow: /pokrytija_dlja_dereva_test.htm
+Disallow: /pokrytija_dlja_asfalta_test.htm
+Disallow: /pokrytija_na_ulice_test.htm
+Disallow: /poly_dlja_morozilnyh_kamer_test.htm
+Disallow: /pokrytija_v_gorjachem_cehe_test.htm
+Sitemap: https://teohim-siberia.ru/sitemap.xml

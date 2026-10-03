@@ -1,0 +1,183 @@
+<h1>Полуглянцевый лак</h1>
+<div class="px5"></div>
+
+<div itemscope itemtype="https://schema.org/Product">
+<meta itemprop="name" content="Элакор-ПУ Люкс Лак-Р ПолуГлянцевый">
+<div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+<meta itemprop="name" content="Элакор"></div>
+<div itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+<meta itemprop="lowPrice" content="<?php print $mtr[141][8]; ?>">
+<meta itemprop="priceCurrency" content="RUB"></div>
+
+<p itemprop="description"><strong>Элакор-ПУ Люкс Лак-Р Полуглянцевый</strong>  – полиуретановый двухкомпонентный лак, светостойкий, УФ-стойкий.</p>
+
+<div class="px5b"></div>
+<div class="dmtrl"><span style="font-weight:bold">«Люкс» Лак-Р Полуглянцевый лак цена</span><br>
+<!--noindex--><?php print fmtr2(141); ?>
+<div class="px5"></div>
+{*text4_2*}
+<p>Хранить и транспортировать при температуре от <nobr>-30°С</nobr> до +25°С.</p>
+<!--/noindex--></div>
+<div class="dmtrr">
+<div style="position:relative;float:right">
+<a href="https://elakors.ru/img/product/pu_lak_2k_lux_r_polugl.jpg" class="zoom" rel="/polymer-sib/r-lak-polugljancevyj/"><img class="pb_ismall" src="https://elakors.ru/img/product/pu_lak_2k_lux_r_polugl_s.jpg" title="Люкс Лак-Р ПолуГлянцевый" alt="Люкс Лак-Р ПолуГлянцевый" class="promo"></a>
+</div>
+</div>
+
+<div class="dmtrr">
+<div style="position:relative;float:left;width:210px">
+<table style="padding:2px 0 0 1px;font:normal 11px arial;border:solid 1px #555555;color:#555555"><tbody>
+<tr><td colspan="3" class=" fwb">Фасовка:</td></tr>
+<tr><td>Комп. «А» &nbsp; &nbsp;</td><td>Комп. «Б» &nbsp; &nbsp;</td><td>= <span>Комплект</span></td></tr>
+<tr><td class="">8кг</td><td class="">+ 1кг</td><td class="">= <span>9кг</span></td></tr>
+<tr><td class="">16кг</td><td class="">+ 2кг</td><td class="">= <span>18кг</span></td></tr>
+</tbody></table>
+</div>
+</div>
+
+</div>
+<div class="px5"></div>
+{*text4_12*}
+<div class="px7"></div>
+
+<div id="mtr_body">
+
+<div id="mtr_body_1" class="active">
+{*text1_1*}
+</div>
+
+<div id="mtr_body_2">
+</div>
+
+<div id="mtr_body_3">
+<p class="fwb fs13 c2">Технические характеристики – Полиуретановый Полуглянцевый лак Элакор-ПУ Люкс Лак-Р.</p>
+<p>До отверждения.</p>
+<div style="padding-left:16px; margin-bottom:10px;">
+<table class="tsrt">
+<tbody>
+ <tr>
+ <th style="width:357px;">Показатель</th><th>Значение</th><th style="width:205px;">Метод испытаний</th></tr>
+ <tr>
+ <td class="tdl">Внешний вид компонентов А и Б</td>
+ <td>Прозрачные бесцветные жидкости</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Соотношение компонентов  А : Б</td>
+ <td>8 : 1</td>
+ <td>ГОСТ 8420</td>
+ </tr>
+ <tr>
+ <td class="tdl">Вязкость смеси А+Б, ВЗ-4 при +20°С</td>
+ <td>10-12сек</td>
+ <td>ГОСТ 8420</td>
+ </tr>
+ <tr>
+ <td class="tdl">Массовая доля нелетучих (сухой остаток), не менее</td>
+ <td>32</td>
+ <td>ГОСТ 17537</td>
+ </tr>
+ <tr>
+ <td class="tdl">Плотность смеси А+Б при +20°С, кг/л</td>
+ <td>0,92</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Время высыхания до степени 3 при +20°С</td>
+ <td>не более 10 час</td>
+ <td>ГОСТ 19007</td>
+ </tr>
+</tbody>
+</table>
+</div>
+<p>После отверждения.</p>
+<div style="padding-left:16px; margin-bottom:10px;">
+<table class="tsrt">
+<tbody>
+ <tr>
+ <th style="width:357px;">Показатель</th>
+ <th>Значение</th>
+ <th style="width:205px;">Метод испытаний</th>
+ </tr>
+ <tr>
+ <td class="tdl">Внешний вид</td>
+ <td>Прозрачная бесцветная пленка</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Интервал рабочих температур в воздушной среде, °С</td>
+ <td>от -60°С до +100°С
+<br>(до 30мин – до +150°С)</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Водопоглощение пленки лака, %</td>
+ <td>не более 0,1</td>
+ <td></td>
+ </tr>
+ <tr>
+ <td class="tdl">Предел прочности пленки при разрыве при +20°С</td>
+ <td>не менее 40МПа</td>
+ <td>ГОСТ 21751</td>
+ </tr>
+ <tr>
+ <td class="tdl">Относительное удлинение пленки лака при +20°С</td>
+ <td>не менее 8%</td>
+ <td>ГОСТ 21751</td>
+ </tr>
+ <tr>
+ <td class="tdl">Прочность пленки лака при ударе, см</td>
+ <td>не менее 100</td>
+ <td>ГОСТ 4765</td>
+ </tr>
+ <tr>
+ <td class="tdl">Твердость пленки по Шору, тип D, на 28 сутки </td>
+ <td>70-74</td>
+ <td>ГОСТ 24621 (ISO 868)</td>
+ </tr>
+ <tr>
+ <td class="tdl">Эластичность пленки</td>
+ <td>не более 1мм</td>
+ <td>ГОСТ 6806</td>
+ </tr>
+ <tr class="fwb">
+ <td class="tdl">Истираемость пленки лака, Табер, CS-10, масса грузов 1кг</td>
+ <td>5мг</td>
+ <td>ISO 3537(DIN 52347, ASTM D1044)</td>
+ </tr>
+</tbody>
+</table>
+</div>
+<p class="fwb fs13 c2">Химическая стойкость.</p>
+<p>Отвержденный двухкомпонентный полиуретановый лак Элакор-ПУ Люкс Лак-Р Полуглянцевый стоек к постоянному и переменному контакту к следующим химическим средам:</p>
+<ul>
+ <li>вода; водные растворы солей и щелочей вплоть до концентрированных;</li>
+ <li>водные растворы кислот с концентрацией до 10-20%;</li>
+ <li>масла и жиры всех видов - минеральные, синтетические, органические;</li>
+ <li>органические растворители, бензин, дизтопливо и т.п.</li>
+</ul>
+</div>
+
+<div id="mtr_body_4">
+<!--noindex-->
+<ul>
+ <li><a class="fwb" href="https://elakors.ru/pdf/sert/sgr-elakor-pu.pdf" rel="nofollow">Свидетельство о государственной регистрации, Таможенный союз</a> (гигиенический сертификат)</li>
+ <li style="margin-top:10px;"><a class="fwb" href="https://elakors.ru/pdf/sert/phz-elakor-pu-km1.pdf" rel="nofollow">Сертификат соответствия (пожарной безопасности)</a></li>
+ <li style="margin-top:10px;"><a class="fwb" href="https://elakors.ru/pdf/sert/phz-elakor-pu-g1.pdf" rel="nofollow">Сертификат соответствия (пожарной безопасности), Группа горючести Г1</a></li>
+ <li style="margin-top:10px;"><a class="fwb" href="https://elakors.ru/pdf/sert/sertifikat_sootvetstvija_jelakor-pu.pdf" rel="nofollow">Сертификат соответствия</a></li>
+ <li style="margin-top:10px;"><a class="fwb" href="https://elakors.ru/pdf/sert/pismo-elakor-pu.pdf" rel="nofollow">Письмо РОСТЕСТ</a></li>
+ <li style="margin-top:10px;"><a class="fwb" href="https://elakors.ru/pdf/sert/deti-elakor-pu.pdf" rel="nofollow">Заключение на применение в детских и лечебно-профилактических учреждениях</a></li>
+</ul>
+<div class="px5"></div>
+<!--/noindex-->
+</div>
+
+</div>
+
+<div class="px10b"></div>
+<div class="px10"></div>
+
+
+<div class="pb_hidden">
+<img src="https://elakors.ru/img/product/pu_lak_2k_lux_r_polugl.jpg" alt="">
+</div>

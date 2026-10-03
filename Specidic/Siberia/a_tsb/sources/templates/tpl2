@@ -1,0 +1,202 @@
+<?php // tpl2 - Для раздела HEAD внешние css и js-файлы, стили и скрипты.
+{*text1_12*}
+?>
+<?php print '<!--'.$pb_page.'-->'; ?>
+<link rel="icon" href="/favicon.ico" type="image/ico"/><link rel="icon" type="image/png" href="/favicon.png"/><link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<?php 
+/*
+if ($pb_page>2010 && $pb_page<2999) print '<meta name="robots" content="noindex, nofollow, noarchive"/>';
+else print '<meta name="robots" content="index, follow, noarchive"/>';
+*/
+print '<meta name="robots" content="index, follow, noarchive"/>';
+?>
+
+
+<?php if ($pb_page==38 || ($pb_page>4000 && $pb_page<5000)) { ?>
+<link rel="stylesheet" href="https://elakors.ru/cssjs/css001.css" type="text/css"/>
+<?php } else { ?>
+
+<link rel="stylesheet" type="text/css" href="/style/default_v4.css"/>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<script src="/scripts/jquery-1.10.1.min.js" type="text/javascript"></script>
+<!-- <script src="/scripts/jquery-min.js" type="text/javascript"></script> -->
+<script src="/scripts/main.js" type="text/javascript"></script>
+<script src="/scripts/jquery-ui-1.7.2.custom.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/scripts/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="/scripts/fancybox/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet" type="text/css" href="/scripts/fancybox/jquery.fancybox.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="/scripts/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/scripts/slick/slick-theme.css"/>
+
+<script type="text/javascript" src="/js/coin-slider.min.js"></script>
+<link rel="stylesheet" href="/js/coin-slider-styles.css" type="text/css" />
+
+{*text0_24*}
+
+
+
+<script type="text/javascript">$(document).ready(function(){
+$('a.zoom').fancybox({
+        openEffect    : 'none',
+        closeEffect    : 'none'
+    });
+
+$('.fmedia')
+                .attr('rel', 'media-gallery')
+                .fancybox({
+                    openEffect : 'none',
+                    closeEffect : 'none',
+                    prevEffect : 'none',
+                    nextEffect : 'none',
+
+                    arrows : false,
+                    helpers : {
+                        media : {},
+                        buttons : {}
+                    }
+                });
+
+$('.close, #overlay').click(function(){
+    $('.error').removeClass('error');
+    $('#callback').fadeOut('fast');
+    $('#overlay').fadeOut('fast');
+    $('#yes').fadeOut();
+    
+});
+
+$('#callback-link span').click(function(){
+    $('#callback').fadeIn('fast');
+    $('#overlay').fadeIn('fast');
+    return false;
+});
+
+    $("#call").submit(function(){ // перехватываем все при событии отправки
+        var form = $(this); // запишем форму, чтобы потом не было проблем с this
+        var error = false; // предварительно ошибок нет
+        form.find('.required').each( function(){ // пробежим по каждому полю в форме
+            $(this).removeClass('error');
+            if ($(this).val() == '') { // если находим пустое
+                $(this).addClass('error'); // говорим заполняй!
+                error = true; // ошибка
+            }
+        });
+        if (!error) { // если ошибки нет
+            var data = form.serialize(); // подготавливаем данные
+            $.ajax({ // инициализируем ajax запрос
+               type: 'POST', // отправляем в POST формате, можно GET
+               url: 'callback.php', // путь до обработчика, у нас он лежит в той же папке
+               dataType: 'json', // ответ ждем в json формате
+               data: data, // данные для отправки
+               beforeSend: function(data) { // событие до отправки
+                    form.find('input[type="submit"]').attr('disabled', 'disabled'); // например, отключим кнопку, чтобы не жали по 100 раз
+                  },
+               success: function(data){ // событие после удачного обращения к серверу и получения ответа
+                    if (data['error']) { // если обработчик вернул ошибку
+                        alert(data['error']); // покажем её текст
+                    } else { // если все прошло ок
+                        form.trigger( 'reset' );
+                        alert('Заявка отвравлена!'); // пишем что все ок
+                    }
+                 },
+               error: function (xhr, ajaxOptions, thrownError) { // в случае неудачного завершения запроса к серверу
+                    alert(xhr.status); // покажем ответ сервера
+                    alert(thrownError); // и текст ошибки
+                 },
+               complete: function(data) { // событие после любого исхода
+                    form.find('input[type="submit"]').prop('disabled', false); // в любом случае включим кнопку обратно
+                 }
+                          
+                 });
+        }
+        return false; // вырубаем стандартную отправку формы
+    });
+
+})</script>
+
+<?php } ?>
+
+<?php if (1==2) { ?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-09JFD690WW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-09JFD690WW');
+</script>
+<?php } ?>
+
+<?php
+if ($pb_page==1141) { ?>
+<style>
+#content { width:770px; min-width:770px; max-width:770px; padding:10px 0; border:none 0px; }
+h2 { font-size:14px; line-height:20px; color:#ffffff; background:#004f92; }
+.divPriceD { display:block; } .divPriceM { display:none; }
+#id_calcHead { position:relative; float:left; width:320px; box-shadow:4px 4px 7px 0 #999999; }
+#id_calcHead table, #id_calcHead table th, #id_calcHead table td { text-align:left; border-collapse:collapse; border:solid 1px #000000; } #id_calcHead table .pad0 { padding:0; }
+.thead { padding:0 0 0 2px; height:23px; font-weight:bold; font-size:13px; text-align:left; background:yellow; }
+table .tdleft { width:195px; padding:0 0 0 2px; }
+.i_t, .i_t option { padding:0; margin:0; width:120px; height:22px; font-size:13px; text-align:left; line-height:22px; border:none 0px; font-weight:bold; background:#49ff79; }
+#dcalc { position:relative; float:left; margin:0 0 0 50px; width:200px; font-size:11px; line-height:13px; text-align:center; }
+#dcalc input { margin:0; width:180px; height:30px; font-weight:bold; font-size:13px; letter-spacing:1px; text-shadow:2px 2px 2px #ffffff; box-shadow:4px 4px 7px 0 #999999; }
+.tmtr td { height:22px; font-size:13px; line-height:22px; } .tmtr td a { font-size:13px; text-decoration:underline; } .tmtr td a:hover { text-decoration:none; }
+.tmtr .tmdl { padding-left:5px; text-align:left; font-weight:bold; } #content .tmdl a { font-weight:bold; }
+
+#id_oc_all { float:right; margin:0; text-align:center; }
+#id_open_all,#id_close_all { cursor:pointer; float:right; margin:5px 0 0 10px; font-size:11px; text-decoration:underline; color:#004f92; } #id_open_all:hover,#id_close_all:hover { color:#f00000; }
+@media screen and (max-width:999px){ #main,#footer { width:auto; min-width:auto; max-width:999px; } #content { margin:0 3px 0 7px; padding:50px 0 10px 0; top:0; width:960px; min-width:960px; max-width:960px; } }
+@media screen and (max-width:799px) { #content { width:auto; min-width:320px; max-width:799px; } .divPriceD { display:none; } .divPriceM { display:block; } }
+@media screen and (max-width:630px) { .divh3 { font-size:13px; } }
+@media screen and (max-width:499px) { .divh3_5 { padding:5px 0 15px 25px; width:93%; line-height:15px; } }
+</style>
+<?php }
+
+if ($pb_page>3000 && $pb_page<4000) { ?>
+<style>{*text0_50*}</style>
+<?php } ?>
+
+<?php if ($pb_page==2001 || $pb_page==1141) { ?>
+<style>
+.div_mo,.div_mc { position:relative; height:40px; overflow:hidden; } .div_mo p,.div_mc p { position:relative; }
+.divh3 { cursor:pointer; float:left; margin:0; padding:14px 0 9px 25px; width:100%; height:20px; font-size:16px; font-weight:bold; text-align:left; color:#004f92; background:#eeeeee; }
+.div_mo .divh3 { background:#c8c8c8; } .divh3:before { position:absolute; left:5px; top:10px; width:20px; height:20px; font-size:24px; font-weight:normal; color:#000000; }
+.div_mc .divh3:before { content: '+'; line-height: 20px; } .div_mo .divh3:before { content: '–'; line-height: 16px; }
+
+.divh3 .divh3span, .divh3pd{font-size:12px;font-weight:normal;color:#000000;}
+.divh3pd { float:right; font-size:11px; margin:-27px 10px 0 0; }
+.divh3p,.divh3pb{display:none;margin:7px 0 0 0;font-size:12px;font-weight:normal;}
+.divh3p { float:right; margin:7px 0 0 10px; font-size:11px; }
+
+.divh4 { cursor:pointer; float:left; margin:0; padding:6px 0 6px 45px; width:100%; height:15px; font-size:13px; font-weight:bold; text-align:left; color:#004f92; background:#eeeeee; }
+.div_mo .divh4 { background:#c8c8c8; } .divh4:before { position:absolute; left:5px; top:10px; width:20px; height:18px; font-size:22px; font-weight:normal; color:#000000; }
+.div_mc .divh4:before { content: '+'; left:25px; line-height:5px; } .div_mo .divh4:before { content: '–'; left:25px; line-height:2px; }
+.divh4 .divh4span, .divh4pd { font-size:12px; font-weight:normal; color:#000000; }
+.divh4pd { float:right; margin:-20px 10px 0 0; font-size:11px; }
+.divh4p,.divh4pb { display:none; margin:7px 0 0 0; font-size:12px; font-weight:normal; }
+.divh4p { float:right; margin:7px 0 0 10px; font-size:11px; color:#000000; }
+#content .divh3span, #content .divh4span { font-weight:normal; }
+.divh3:hover, .divh4:hover { background:#e0e0e0; }
+#id_open_all { cursor:pointer; float:right; text-decoration:underline; color:#004f92; } #id_open_all:hover { color:#f00000; }
+#main { min-width:600px; }
+@media screen and (max-width:600px) { .px0 { margin-top:5px; } }
+</style>
+<?php } ?>
+
+<?php if($pb_page==1141 || ($pb_page>3000 && $pb_page<4000)) {
+  print '<script src="/cssjs/lib0071.js"></script><script src="/cssjs/js002.js"></script>';
+}
+?>
+<?php if ($pb_page==38 || ($pb_page>4000 && $pb_page<5000)) { ?>
+<script src="/cssjs/lib0071.js"></script><script src="https://elakors.ru/cssjs/js001.js"></script>
+<?php } ?>
+
+<?php
+if (isset($postSMTP) && $postSMTP!=false && $pb_page>3000 && $pb_page<4000) { ?>
+<link rel="stylesheet" href="/cssjs/css000_elakors.css" type="text/css"/>
+<script src="/cssjs/vcorp_js_0003.js"></script>
+<script src="/cssjs/js000_elakors.js"></script>
+<?php } ?>
+<style>{*text0_7*}</style>

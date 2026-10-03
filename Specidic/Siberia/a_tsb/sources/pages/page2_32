@@ -1,0 +1,28 @@
+{*tpl21*}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>{*tpl0*}
+<style>
+.fwb {font-weight:bold;}
+.tsrt {border: solid 1px #c8c8c8;border-collapse: collapse; width:100%;}
+.tsrt th, .tsrt td {border: solid 1px #c8c8c8;border-collapse: collapse;text-align:center;}
+.tsrt td {padding-left:5px;}
+.tsrt .tdl {text-align:left;}
+.p11 {font-size:11px;}
+.px5b {margin: 0 20px 5px 16px; height:1px;}
+#Content span {font-weight:bold;}
+#Content .dmtrl {float:left; width:330px; margin-left:16px;}
+#Content .dmtrr {float:right;}
+#Content .dmtrl span,#Content .dmtrl p {margin-left:0px; padding-left:0px;}
+#Content .dmtrl p {margin-bottom:7px;}
+.pb_ismall {box-shadow:4px 4px 7px 0 #999999; border:solid 1px #c8c8c8;margin-right:25px;}
+</style>
+{*tpl2*}
+<?php 
+$ndx_mtr=32;
+fmtr_og($ndx_mtr); 
+?>
+{*tpl3*}
+</head>
+<body>{*tpl7*}
+{*block2_32*}
+{*tpl8*}{*tpl4*}</body></html>

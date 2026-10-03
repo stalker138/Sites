@@ -1,0 +1,9 @@
+{*tpl21*}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>{*tpl0*}{*tpl2*}{*tpl3*}
+    <link rel="stylesheet" href="/style/news-style.css">
+</head><body>{*tpl7*}
+{*block5_3*}
+{*tpl8*}{*tpl4*}
+<!-- 17.06.2014 17:10, EM -->
+</body></html>

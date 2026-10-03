@@ -1,0 +1,241 @@
+</div>
+<div id="sidebar">
+<div id="leftmenu">
+<ul class="mmenu">
+    <li><l2 id="1"><span>Цены</span></l2></li>
+</ul>
+<div class="px10"></div>
+<ul class="mmenu">
+    <li><l1 id="141"><span>Калькулятор</span></l1></li>
+    <li><l1 id="140"><span>Помощник выбора</span></l1></li>
+</ul>
+<div class="px10"></div>
+<ul class="mmenu">
+    <li><l1 id="97"><span>Фундаменты</span></l1></li>
+</ul>
+<div class="px10"></div>
+<ul class="mmenu">
+    <li><l1 id="14"><span>Бетонные полы</span></l1></li>
+    <li><l1 id="15"><span>Полимерные полы</span></l1></li>
+    <li><l1 id="99"><span>Антистатические полы</span></l1></li>
+    <li><l1 id="16"><span>Наливные полы</span></l1></li>
+    <li><l1 id="17"><span>Наливные полы 3Д</span></l1></li>
+    <li><l1 id="18"><span>Полимерцементые полы</span></l1></li>
+</ul>
+<div class="px10"></div>
+<ul class="mmenu">
+    <li><l1 id="23"><span>Покрытия для бетона</span></l1></li>
+    <li><l1 id="24"><span>Покрытия для металла</span></l1></li>
+    <li><l1 id="25"><span>Покрытия для дерева</span></l1></li>
+    <li><l1 id="26"><span>Покрытия для асфальта</span></l1></li>
+</ul>
+<div class="px10"></div>
+<ul class="mmenu">
+    <li><a href="https://teohim.ru/colors/" target="_blank"><span>Таблица цветов</span></a></li>
+</ul>
+<div class="px10"></div>
+<a href="https://teohim.ru/objlist.php?pos=18" id="aobjlist" target="_blank" title="Объекты на карте с возможностью выбора региона, типа объекта и типа покрытия">Выполненные<br>объекты на карте</a>
+<div class="px10"></div>
+<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'https://teohim-siberia.ru/search/','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск по teohim-siberia.ru','suggest':true,'target':'_self','tld':'ru','type':3,'usebigdictionary':false,'searchid':2135580,'webopt':false,'websearch':false,'input_fg':'#2C2C2C','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'Поиск','input_placeholderColor':'#000000','input_borderColor':'#1F73B8'}"><form action="https://yandex.ru/sitesearch" method="get" target="_self"><input type="hidden" name="searchid" value="2135580"/><input type="hidden" name="l10n" value="ru"/><input type="hidden" name="reqenc" value="utf-8"/><input type="text" name="text" value=""/><input type="submit" value="Найти"/></form></div><style type="text/css">.ya-page_js_yes .ya-site-form_inited_no { display: none; }</style><script type="text/javascript">(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+<div class="px10"></div>
+</div>
+
+<div class="articles">
+ <div class="header">Новости</div>
+
+<div class="item">
+ <p><l1 id="33">Компания ТэоХим-Сибирь на выставке «Строительство и архитектура-2015»</l1></p>
+</div>
+
+<div class="item">
+ <p><l1 id="32">Богучанский алюминиевый завод</l1></p>
+</div>
+
+<div class="item">
+ <p><l1 id="31">В Красноярском крае запущена в эксплуатацию Богучанская гидроэлектростанция</l1></p>
+</div>
+
+<div class="item">
+ <p><l1 id="2">2 апреля  2014 года, состоялся вечер в честь 10-летнего юбилея компании</l1></p>
+</div>
+
+<div class="item">
+ <p><l1 id="30">Компания ТэоХим-Сибирь на «ХАКСТРОЙЭКСПО-2013»</l1></p>
+</div>
+</div>
+
+<div class="px10"></div>
+
+<div class="articles">
+<div class="header"><l3 id="201">Статьи</l3></div>
+
+<div class="item">
+<p><l3 id="203">Полимерные покрытия — универсальный рецепт защиты</l3></p>
+</div>
+
+<div class="item">
+<p><l3 id="219">Новинка в линейке «ТэоХим» — Промышленные полы</l3></p>
+</div>
+
+<div class="item">
+<p><l3 id="220">Разработаны рекомендации по укладке бетона под полимерные покрытия «Элакор»</l3></p>
+</div>
+
+<div class="item">
+<p><l3 id="221">Тэохим разрабатывает покрытия для сельского хозяйства</l3></p>
+</div>
+
+<div class="arch"><l3 id="201">все статьи</l3></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="header">
+<div class="out">
+
+<l1 id="1" id="logo" title="Промышленные, бетонные, полимерные, наливные полы Элакор &reg;"></l1>
+
+<div id="slogan">Промышленные, бетонные, полимерные, наливные полы <span>Элакор</span><span style="color:#2878bb;font-style:italic;">™</span></div>
+<div id="callback-link"><span id="swtch2" onclick="f_swtch1(4)">Заказать обратный звонок</span></div>
+<div id="phones">
+                       <div class="item first">
+                        Красноярск&nbsp;<span style="float:right;"> <a href="tel:+79029245015">+7 (902) 924-5015</a></span><br/>
+                        <a href="https://teohim-kemerovo.ru/">Кузбасс</a>&nbsp;<span style="float:right;"> <a href="tel:+79030777737">+7 (903) 077-7737</a></span><br/>
+                        <a href="https://teohim-kemerovo.ru/">Кузбасс</a>&nbsp;<span style="float:right;"> <a href="tel:+79913758747">+7 (991) 375-8747</a></span><br/>
+                        <a href="https://teohim-irkutsk.ru/">Иркутск</a>&nbsp;<span style="float:right;"> <a href="tel:+79641119166">+7 (964) 111-9166</a></span><br/>
+                        <a href="https://teohim-buryatija.ru">Улан-Удэ</a>&nbsp;<span style="float:right;"> <a href="tel:+79641119166">+7 (964) 111-9166</a></span>
+                        </div>
+<div class="item second">
+<a href="https://teohim-tyva.ru">Тыва</a>&nbsp;<span style="float:right;">+7 (902) 467-3214</span><br/>
+                        <a href="https://teohim-gornyaltay.ru/">Горно-Алтайск</a>&nbsp;<span style="float:right;"><a href="tel:+79030777737">+7 (903) 077-7737</a></span><br/>
+                        <a href="https://teohim-chita.ru/">Чита</a> <span style="float:right;">&nbsp;<a href="tel:+79641119166">+7 (964) 111-9166</a></span><br/>
+                        <a href="https://teohim-abakan.ru">Абакан</a>&nbsp;<span style="float:right;"><a href="tel:+73902352131">+7 (3902) 35-21-31</a></span>
+</div>
+                        <div class="item third">
+<div class="wrn">Если Вы не дозвонились до представителя или получили не полную консультацию, пожалуйста, позвоните по телефону:<br><a href="tel:+79029245015" style="color:red">8 (902) 924-50-15</a><br>(Евгений Владимирович).</div>
+                        </div>
+                    </div>
+
+<div id="topmenu">
+<ul class="tmenu">
+    <li><l1 id="1"><span>Главная</span></l1></li>
+    <li><l1 id="2"><span>О компании</span></l1></li>
+<li><l2 id="1"><span>Цены</span></l2></li>
+    <li><l1 id="7"><span>Наши работы</span></l1></li>
+    <li><l1 id="8"><span>Отзывы</span></l1></li>
+    <li><l1 id="6"><span>Сертификаты</span></l1></li>
+    <li><l1 id="5"><span>Технологии</span></l1></li>
+    <li><l1 id="9"><span>Инструкции</span></l1></li>
+    <li><l1 id="10"><span>Контакты</span></l1></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="empty"></div>
+</div>
+
+<div id="footer">
+<div class="out">
+<div id="txt"><?php print (mt_rand(1,2)==1) ? 'На сегодняшний день Элакор эксплуатируется на площадях уже свыше 22 млн. кв.м' : 'Максимальная защита при минимальных затратах'; ?></div>
+<div id="copyright">&copy; 2004&mdash;2025 ООО «ТэоХим-Сибирь»</div>
+
+<?php $npl='<li style="float:right;color:#ffffff">Все <a href="https://teohim.ru/nalivnye/">наливные полимерные полы</a></li>' ?>
+<ul class="menu">
+    <li><l1 id="1"><span>Главная</span></l1></li>
+    <li><l1 id="5"><span>Технологии</span></l1></li>
+    <li><l1 id="6"><span>Сертификаты</span></l1></li>
+    <li><l1 id="7"><span>Наши работы</span></l1></li>
+    <li><l1 id="8"><span>Отзывы</span></l1></li>
+    <li><l1 id="9"><span>Инструкции</span></l1></li>
+    <li><l1 id="10"><span>Контакты</span></l1></li>
+<?php if(1==1) {
+$exlude_pages = array(1016, 1029, 3024, 3025, 1019, 1020, 1021, 1022, 1104, 3031,3032, 3033, 3034, 3035, 3036, 3037, 3038, 3039, 3040, 3041);
+if (!in_array($pb_page, $exlude_pages)) print $npl;
+} else {
+if ($pb_page!=1016 && $pb_page!=1029 && $pb_page!=3024 && $pb_page!=3025 && $pb_page!=1019 && $pb_page!=1020 && $pb_page!=1021 && $pb_page!=1022 && $pb_page!=1104) print $npl;
+} ?>
+</ul>
+
+  <?php if ($pb_page>1000) { ?><div style="position:absolute;right:5px;top:80px"><l0 id="30">Политика конфиденциальности</l0></div><?php } ?>
+<div id="developer">
+</div>
+
+<div id="counters"><?php if (1==2) { ?><!--noindex-->
+<!--begin of Rambler's Top100 code --><a href="http://top100.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?1055192" alt="" width="1" height="1" border="0" /></a><!--end of Top100 code-->
+<!--Rating@Mail.ru COUNTER-->
+<a href="http://top.mail.ru/jump?from=1190482"><img src="http://da.c2.b2.a1.top.list.ru/counter?id=1190482;t=216" height="31" width="88" alt="Рейтинг@Mail.ru"/></a>
+<!--/COUNTER-->
+<!--begin of Top100 logo--><a href="http://top100.rambler.ru/top100/"><img src="http://top100-images.rambler.ru/top100/banner-88x31-rambler-gray2.gif" alt="Rambler's Top100" width="88" height="31" border="0" /></a><!--end of Top100 logo -->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write('<'+'a href="http://www.liveinternet.ru/click" target="_blank"><img src="//counter.yadro.ru/hit?t16.2;r'+escape(document.referrer)+((typeof(screen)=='undefined')?'':';s'+
+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+';h'+escape(document.title.substring(0,80))+';'+Math.random()+
+'" alt="" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" style="border:0;width:88px;height:31px"><\/a>');
+//--></script><!--/LiveInternet-->
+<!--/noindex--><?php } ?>
+</div>
+
+</div>
+</div><?php if (1==1) { ?>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(9981220, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+
+   ym(98551533, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+
+   ym(99977500, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+
+</script>
+<noscript><div>
+<img src="https://mc.yandex.ru/watch/9981220" style="position:absolute; left:-9999px;" alt="" />
+<img src="https://mc.yandex.ru/watch/98551533" style="position:absolute; left:-9999px;" alt="" />
+<img src="https://mc.yandex.ru/watch/99977500" style="position:absolute; left:-9999px;" alt="" />
+</div></noscript>
+<!-- /Yandex.Metrika counter -->
+<?php } ?>
+
+        <div id="callback">
+            <form id="call" action="" method="post" >
+                <div class="close">x</div>
+<table style="width:100%; height:100%; font-family:arial; font-size:11px; font-weight:bold; color:#000000; text-align:left; border:none 0px;"><tbody>
+<tr><td style="width:150px; color:#000000;"><span style="font:bold 13px arial">Контактное лицо</span>:</td>
+<td colspan="2"><input class="inpbox required" type="text" id="form_name" name="name" maxlength="100" value="" style="width:400px;"></td></tr>
+<tr><td style="color:#000000;"><span style="font:bold 13px arial">Телефон</span>:</td>
+<td colspan="2"><input class="inpbox required" type="text" id="form_phone" name="phone" maxlength="100" value="" style="width:400px; "></td></tr>
+<tr><td style="color:#000000;" class=""><span style="font:bold 13px arial">Почта (e-mail)</span>:</td><td colspan="2"><input class="inpbox" type="text" id="form_email" name="email" maxlength="100" value="" style="width:400px;"></td></tr>
+<tr><td style="vertical-align:top;text-align:center" colspan="3"><span style="font:bold 12px arial">Мы перезвоним максимально быстро!<br>
+<span style="font-weight:700;">Если хотите, кратко опишите  Ваш «вопрос»,<br>тогда с Вами свяжется «нужный» специалист.</span></span></td></tr>
+<tr><td colspan="3" style="text-align:center;"><textarea class="inparea" rows="10" id="form_comment" name="comment" style="width:560px;"></textarea></td></tr>
+<tr><td></td>
+<td style="padding-top:3px; vertical-align:top;"></td>
+<td style="text-align:right;"><input type="submit" value="Отправить" style="cursor:pointer;"></td></tr>
+</tbody></table>
+            </form>
+        </div>
+        <div id="yes">
+            <p>Ваша заявка принята, мы свяжемся с вами.</p>
+            <button class="ok">Ок</button>
+        </div>
+        <div id="overlay"></div>

@@ -1,0 +1,1 @@
+<?php include $pb_root."inc/cout.php"; // page0_27 - Для РАСЧЁТОВ - общие блоки и переменные (выходной HTML и PHP) ?>

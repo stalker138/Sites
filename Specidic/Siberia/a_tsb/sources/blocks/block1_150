@@ -1,0 +1,60 @@
+<h1>Огнезащитные покрытия Тетракор</h1>
+<div class="item">
+   <table width="100%" class="info">
+    <tbody>
+        <tr class="selc">
+            <td width="75"><p><strong>Марка</strong></p></td>
+            <td><p><strong>Краткое описание</strong></p></td>
+            <td><p><strong>Максимал. предел огнестойкости</strong></p></td>
+       <td><p><strong> <!--    Стоимость  --></strong></p></td>
+            </tr>
+        <tr>
+            <td><p><strong><a href="https://teohim-siberia.ru/tetrakor/vo/">ВО</a></strong></p></td>
+            <td><p>1-комп. огнезащитный терморасширяющийся материал на акриловой основе, воднодисперсионный. <br /> Для эксплуатации в помещениях.</p></td>
+            <td style="text-align:center;"><p>50 мин</p></td>
+            <td style="text-align:center;"><p><strong></strong></p></td>
+        </tr>
+        <tr   class="selc">
+            <td><p><strong><a href="https://teohim-siberia.ru/tetrakor/vr/">ВР</a></strong></p></td>
+            <td><p>1-комп. огнезащитный терморасширяющийся материал на акриловой основе, содержит растворитель. <br /> Для эксплуатации в помещениях.</p></td>
+            <td style="text-align:center;"><p>90 мин</p></td>
+            <td style="text-align:center;"><p><strong></strong></p></td>
+        </tr>
+        <tr>
+            <td><p><strong><a href="https://teohim-siberia.ru/tetrakor/nr/">НР</a></strong></p></td>
+            <td><p>1-комп. огнезащитный терморасширяющийся материал, содержит растворитель.<br /> Для условий открытой промышленной атмосферы.</p></td>
+            <td style="text-align:center;"><p>90 мин</p></td>
+            <td style="text-align:center;"><p><strong></strong></p></td>
+        </tr>
+        <tr  class="selc">
+            <td><p><strong><a href="https://teohim-siberia.ru/tetrakor/ep/">ЭП</a></strong></p></td>
+            <td><p>2-комп. огнезащитный терморасширяющийся материал на эпоксидной основе.<br /> Для условий открытой промышленной атмосферы.</p>        </td>
+            <td style="text-align:center;"><p>150 мин</p></td>
+            <td style="text-align:center;"><p><strong></strong></p></td>
+        </tr>
+        <tr>
+            <td><p><strong>ТИС</strong></p></td>
+            <td><p>1-комп. теплоизолирующий материал, содержит растворитель.</p></td>
+            <td style="text-align:center;"><p>-</p></td>
+            <td style="text-align:center;"><p><strong></strong></p></td>
+        </tr>
+        <tr  class="selc">
+            <td><p><strong>ТИС-Э</strong></p></td>
+            <td><p>2-комп. теплоизолирующий материал на эпоксидной основе.</p></td>
+            <td style="text-align:center;"><p>-</p></td>
+            <td style="text-align:center;"><p><strong></strong></p></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+<div class="px5"></div>
+<div class="item">
+<div class="bold">Параметры, необходимые для расчета цены за м<sup>2</sup></div>
+<ol>
+    <li>Тип конструкции (приведенная толщина металла).</li>
+    <li>Площадь покрываемой поверхности (м<sup>2</sup> или м.пог.).</li>
+    <li>Требуемый предел огнестойкости.</li>
+</ol>
+</div>
+
+

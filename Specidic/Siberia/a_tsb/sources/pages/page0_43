@@ -1,0 +1,39 @@
+<?php
+$sep = '<div class="navs"></div>'; // Стрелочка - разделитель (сепаратор).
+$snav = $pb_page==1001 ? 'Главная' : ('<l1 id="1">Главная</l1>'.$sep);
+if ($pb_page==38) $snav.='<l4 id="1">ОБОРУДОВАНИЕ</l4> '.$sep.'ЗАКАЗ';
+
+if ($pb_page>4000 && $pb_page<4051) {
+  $a=array('','','','','');
+  $id_par=$eq_cats[$id_tss][2];
+  $href='href="';
+  $a_tss_nav=false;
+  while ($id_par){
+    $a_tss_nav[]='<a '.$href.$eq_cats[$id_par][0].'">'.$eq_cats[$id_par][3].'</a>';
+    $id_par=$eq_cats[$id_par][2];
+  }
+  $a_tss_nav=array_reverse($a_tss_nav);
+  foreach($a_tss_nav as $tss_nav){
+    $snav.=$tss_nav.$sep;
+  }
+  $snav.=$eq_cats[$id_tss][3];
+}
+if ($pb_page>4050) {
+  $a=array('','','','','');
+  $id_par=$equips[$id_tss][2];
+  $href='href="';
+  $a_tss_nav=false;
+  while ($id_par){
+    $a_tss_nav[]='<a '.$href.$eq_cats[$id_par][0].'">'.$eq_cats[$id_par][3].'</a>';
+    $id_par=$eq_cats[$id_par][2];
+  }
+  $a_tss_nav=array_reverse($a_tss_nav);
+  foreach($a_tss_nav as $tss_nav){
+    $snav.=$tss_nav.$sep;
+  }
+  $snav.='<br>'.$equips[$id_tss][4];
+}
+
+/* ************************************************************************************* */
+$a=array();
+?>

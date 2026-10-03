@@ -1,0 +1,19 @@
+{*tpl21*}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+{*block2_1*}
+{*tpl8*}{*tpl4*}<script>
+var v_page2001=0;
+function f_page2001(o) {
+  var a,p,i,f1=v_page2001?'div_mo':'div_mc',f2=v_page2001?'div_mc':'div_mo'; v_page2001=v_page2001?0:1; o.innerHTML=v_page2001?'Закрыть все':'Раскрыть все';
+  a=document.querySelectorAll('.divh3'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; if (p.className==f1) { p.className=f2; fpb_a_height(p,200,25,p.scrollHeight,40); }
+    }
+  }
+  a=document.querySelectorAll('.divh4'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; if (p.className==f1) { p.className=f2; fpb_a_height(p,200,25,p.scrollHeight,25); }
+    }
+  }
+}</script></body></html>

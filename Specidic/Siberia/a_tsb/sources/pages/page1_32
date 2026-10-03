@@ -1,0 +1,13 @@
+{*tpl21*}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>{*tpl0*}{*tpl2*}{*tpl3*}
+<style type="text/css">
+.zoom {
+margin-left:14px;
+}
+</style>
+</head><body>{*tpl7*}
+{*block1_32*}
+{*tpl8*}{*tpl4*}
+<!-- 19.07.2014 21:53, PM -->
+</body></html>

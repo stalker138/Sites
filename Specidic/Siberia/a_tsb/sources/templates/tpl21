@@ -1,0 +1,7 @@
+<?php
+include_once $pb_root."auto/mtr.php";
+include_once $pb_root."auto/cvr.php";
+include_once $pb_root."auto/lmtr.php";
+include_once $pb_root."auto/lcvr.php";
+include_once $pb_root."auto/functions.php";
+?>

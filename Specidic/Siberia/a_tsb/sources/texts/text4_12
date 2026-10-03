@@ -1,0 +1,7 @@
+<div id="mtr_tabs">
+ <div id="mtr_tabs_1" class="active"><p>Описание</p></div>
+ <div id="mtr_tabs_2"><p>Технология</p></div>
+ <div id="mtr_tabs_3"><p>Свойства</p></div>
+ <div id="mtr_tabs_4"><p>Сертификация</p></div>
+ <div id="mtr_tabs_0"></div>
+</div>

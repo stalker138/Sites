@@ -1,0 +1,25 @@
+{*text1_22*}
+<div id="wrapper">
+<div id="main">
+<?php
+   echo '<!-- '.$pb_page.' -->';
+?>
+
+<?php if($pb_page==1001) { ?>
+<div id="splash">
+<div id="coin-slider">
+       <img src="/img/header/slider-02.jpg">
+       <img src="/img/header/slider-03.jpg">
+       <img src="/img/header/slider-04.jpg">
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#coin-slider').coinslider({ width: 990, height:240, navigation: false, delay: 3000 });
+    });
+</script>
+</div>
+<div class="px10" style="height:0;"></div>
+<?php } ?>
+
+<div class="shiftContent"></div>
+<div id="Content">

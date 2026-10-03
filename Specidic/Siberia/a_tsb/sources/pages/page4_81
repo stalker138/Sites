@@ -1,0 +1,8 @@
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}
+{*text0_10*}
+{*tpl3*}</head>
+<body onload="if (document.querySelector('.pb_gal_item img')) fTssImgFull({target:{src:(document.querySelector('.pb_gal_item img').src)}})">
+{*tpl39*}
+{*tpl44*}
+{*block4_81*}
+{*tpl40*}{*tpl4*}</body></html>

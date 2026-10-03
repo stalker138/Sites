@@ -1,0 +1,92 @@
+ <div class="newsblock">
+        <div class="item newsitem">
+            <div class="news-header">
+                <h2><a href="/company/nagrazdeniemmi/">Представление к награде Маковниковой М.И. &raquo;</a></h2>
+            </div>
+            <div class="newsitem-body">
+                <div class="news-thumbnail">
+                    <a class="zoom" href="/company/nagrazdeniemmi/"><img src="/img/news/2024ng/nagr.jpg" alt="Представление к награде Маковниковой М.И."></a>
+                </div>
+                <div class="news-excerpt">
+                    <p>Нагрудные знаки «Народный фронт. Всё для Победы!» - награда, учреждённая по поручению Президента. Сегодня её получили жители края, волонтеры, предприниматели, общественные организации за личный вклад в поддержку участников специальной военной операции и их семей. </p>
+                </div>
+            </div>
+</div>
+
+        <div class="item newsitem">
+            <div class="news-header">
+                <h2>Юбилей компании — 20 лет</h2>
+            </div>
+            <div class="newsitem-body">
+                <div class="news-thumbnail">
+                    <a class="zoom" href="/img/news/2024/20years_short.jpg"><img src="/img/news/2024/20years_short.jpg" alt="Юбилей компании — 20 лет"></a>
+                </div>
+                <div class="news-thumbnail">
+                    <a class="zoom" href="/img/news/2024/20years_full.jpg"><img src="/img/news/2024/20years_full.jpg" alt="Юбилей компании — 20 лет"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item newsitem">
+            <div class="news-header">
+                <h2><a href="/company/premiapravrh/">Премия Правительства Республики Хакасия &raquo;</a></h2>
+            </div>
+            <div class="newsitem-body excerpt">
+                <div class="news-thumbnail">
+                    <a href="/company/premiapravrh/"><img src="/img/news/2020-08/DS1.jpg" alt="Премия Правительства Республики Хакасия"></a>
+                </div>
+                <div class="news-excerpt">
+                    <p>В номинации «За разработку и внедрение оригинальных конструктивных решений в строительстве и (или) внедрение новых технологий по производству строительных материалов» за работу «Внедрение новых прогрессивных технологий в области «Промышленных полимерных наливных полов в Республике Хакасия», представленную обществом с ограниченной ответственностью «ТэоХим – Сибирь», Маковникову Евгению Владимировичу.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item newsitem">
+            <div class="news-header">
+                <h2>Компания ТэоХим Сибирь</h2>
+            </div>
+            <div class="newsitem-body">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/Q0NjshxB1d8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="item newsitem">
+            <div class="news-header">
+                <h2><a href="/company/xxviii/">XXVIII Cпециализированная выставка &laquo;Строительство Архитектура&raquo; (21.01-24.01.2020) &raquo;</a></h2>
+            </div>
+            <div class="newsitem-body">
+                <div class="news-thumbnail">
+                    <a href="/company/xxviii/"><img src="/img/news/SA20jan2020_1.jpg" alt="Премия Правительства Республики Хакасия"></a>
+                </div>
+                <div class="news-thumbnail">
+                    <a href="/company/xxviii/"><img src="/img/news/SA20jan2020_7.jpg" alt="Премия Правительства Республики Хакасия"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item newsitem">
+            <div class="news-header">
+                <h2>Коллективный выезд "ТэоХим" на корпоратив 29.12.2015 г.</h2>
+            </div>
+            <div class="newsitem-body">
+                <div class="news-thumbnail news-thumbnail-100">
+                    <a class="zoom" href="/img/news/teohim_copr29-12-2015.jpg"><img src="/img/news/teohim_copr29-12-2015.jpg" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item newsitem">
+            <div class="news-header">
+                <h2><a href="/company/10let/">2 апреля  2014 года, состоялся вечер в честь 10-летнего юбилея компании &raquo;</a></h2>
+            </div>
+            <div class="newsitem-body excerpt">
+                <div class="news-thumbnail">
+                    <a href="/company/10let/"><img src="/img/news/teohim-10_let_094.jpg" alt="«ТэоХим-Сибирь» 10 лет"></a>
+                </div>
+                <div class="news-excerpt">
+                    <p>Искренне поздравляем  всех сотрудников  компании "ТэоХим-Сибирь" со знаменательным Юбилеем! </p>
+                    <p>В торжественной обстановке, ряду сотрудников были вручены почетные грамоты  и ценные призы.</p>
+                </div>
+            </div>
+        </div>
+    </div>

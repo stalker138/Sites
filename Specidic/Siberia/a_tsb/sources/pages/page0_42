@@ -1,0 +1,12 @@
+<?php
+$stb=' style="font-weight:bold;"'; $stbm=' style="margin-top:10px;font-size:13px;font-weight:bold;"'; $stbf=' style="font-size:13px;font-weight:bold;"';
+?>
+<!--<menu id="lt_menu">
+<li<?php print ($pb_page==1001)?$stb:''; ?>><?php if ($pb_page!=1001) print '<l1 id="1">'; ?>Главная страница<?php if ($pb_page!=1001) print '</l1>'; ?></li>
+<li<?php print ($pb_page==1015)?$stb:''; ?>><?php if ($pb_page!=1015) print '<l1 id="15">'; ?>Полимерные полы<?php if ($pb_page!=1015) print '</l1>'; ?></li>
+<li<?php print ($pb_page==1014)?$stb:''; ?>><?php if ($pb_page!=1014) print '<l1 id="14">'; ?>Бетонные полы<?php if ($pb_page!=1014) print '</l1>'; ?></li>
+<li<?php print ($pb_page==2001)?$stb:''; ?>><?php if ($pb_page!=2001) print '<l2 id="1">'; ?>ЦЕНЫ материалов<?php if ($pb_page!=2001) print '</l2>'; ?></li>
+<li<?php print ($pb_page==1141)?$stb:''; ?>><?php if ($pb_page!=1141) print '<l1 id="141">'; ?>КАЛЬКУЛЯТОР покрытий<?php if ($pb_page!=1141) print '</l1>'; ?></li>
+<li<?php print ($pb_page==1010)?$stb:''; ?>><?php if ($pb_page!=1010) print '<l1 id="10">'; ?>КОНТАКТЫ<?php if ($pb_page!=1010) print '</l1>'; ?></li>
+<li<?php print ($pb_page==38)?$stb:''; ?>><?php if ($pb_page!=38) print '<l0 id="38">'; ?><span id="mabasket">ЗАКАЗ оборудования</span><?php if ($pb_page!=38) print '</l0>'; ?></li>
+</menu>-->
