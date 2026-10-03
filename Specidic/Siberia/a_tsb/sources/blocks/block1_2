@@ -1,4 +1,13 @@
  <div class="newsblock">
+
+        <div class="item newsitem">
+            <div class="news-header">
+                <h2><a href="/company/video/">Компания ТэоХим Сибирь</a></h2>
+            </div>
+            <div class="newsitem-body"><video width="100%" height="400" controls="" poster="/video/TeoHIM_about.jpg"> <source src="/video/TeoHIM_about.mp4" type="video/mp4">Ваш браузер не поддерживает тег video. </video>                
+            </div>
+        </div>
+
         <div class="item newsitem">
             <div class="news-header">
                 <h2><a href="/company/nagrazdeniemmi/">Представление к награде Маковниковой М.И. &raquo;</a></h2>
@@ -38,15 +47,6 @@
                 <div class="news-excerpt">
                     <p>В номинации «За разработку и внедрение оригинальных конструктивных решений в строительстве и (или) внедрение новых технологий по производству строительных материалов» за работу «Внедрение новых прогрессивных технологий в области «Промышленных полимерных наливных полов в Республике Хакасия», представленную обществом с ограниченной ответственностью «ТэоХим – Сибирь», Маковникову Евгению Владимировичу.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="item newsitem">
-            <div class="news-header">
-                <h2>Компания ТэоХим Сибирь</h2>
-            </div>
-            <div class="newsitem-body">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/Q0NjshxB1d8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 

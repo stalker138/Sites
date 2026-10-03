@@ -179,7 +179,21 @@ screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.p
 </div>
 
 </div>
-</div><?php if (1==1) { ?>
+</div><?php
+
+//Проверка ботов. Проверяется прямой заход на главную страницу от пользователя, который не помечен как бот.
+function chk_remote_user() {
+  global $no_metrix;
+  $r=$_SERVER['HTTP_REFERER']; $ret=1; $p=strpos($_SERVER['HTTP_USER_AGENT'],'bot');
+  if (isset($no_metrix) && ($no_metrix==1)) $ret=0;
+  if (!$p || $p<1) {
+     $uri = $_SERVER['REQUEST_URI'];
+     if (!$r && ($uri == "/")) { $ret=0; }
+  }
+  return $ret;
+}
+
+ if (chk_remote_user()==1) { ?>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

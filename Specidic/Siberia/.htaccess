@@ -39,5 +39,5 @@ RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye-poly/zalivnye-poly/ [R=301,L]
 RewriteCond %{REQUEST_URI} ^\/pubs/zhidkij-pol\/?$
 RewriteRule ^.*$ https://%{HTTP_HOST}/nalivnye-poly/zhidkij-pol/ [R=301,L]
 
-ErrorDocument 404 /
-ErrorDocument 403 /
+ErrorDocument 404 /404/
+ErrorDocument 403 /404/

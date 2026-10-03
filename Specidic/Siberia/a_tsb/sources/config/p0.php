@@ -462,4 +462,14 @@
 *desc*			empty
 *end*46
 
+*number*47
+*options*		1100000000
+*file*			page0_47
+*name*			404 not found page Страница не найдена
+*link*			/404/
+*title*			Not found. Страница не найдена.
+*keyw*			Not found. Страница не найдена.
+*desc*			Not found. Страница не найдена.
+*end*47
+
 [END LIST]

@@ -1,6 +1,10 @@
 User-agent: Yandex
 
 Clean-param: etext
+Clean-param: utm
+Clean-param: gbraid
+Clean-param: calltouch_tm
+Clean-param: yclid
 
 Allow: /
 Disallow: /scripts/
@@ -20,7 +24,6 @@ Disallow: /pokrytija_dlja_asfalta_test.htm
 Disallow: /pokrytija_na_ulice_test.htm
 Disallow: /poly_dlja_morozilnyh_kamer_test.htm
 Disallow: /pokrytija_v_gorjachem_cehe_test.htm
-Sitemap: https://teohim-siberia.ru/sitemap.xml
 
 User-agent: *
 Allow: /
@@ -41,4 +44,5 @@ Disallow: /pokrytija_dlja_asfalta_test.htm
 Disallow: /pokrytija_na_ulice_test.htm
 Disallow: /poly_dlja_morozilnyh_kamer_test.htm
 Disallow: /pokrytija_v_gorjachem_cehe_test.htm
+
 Sitemap: https://teohim-siberia.ru/sitemap.xml

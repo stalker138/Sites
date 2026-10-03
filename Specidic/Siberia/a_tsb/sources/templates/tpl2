@@ -13,6 +13,9 @@ else print '<meta name="robots" content="index, follow, noarchive"/>';
 print '<meta name="robots" content="index, follow, noarchive"/>';
 ?>
 
+<?php
+$no_metrix=0;
+?>
 
 <?php if ($pb_page==38 || ($pb_page>4000 && $pb_page<5000)) { ?>
 <link rel="stylesheet" href="https://elakors.ru/cssjs/css001.css" type="text/css"/>
@@ -186,7 +189,7 @@ if ($pb_page>3000 && $pb_page<4000) { ?>
 <?php } ?>
 
 <?php if($pb_page==1141 || ($pb_page>3000 && $pb_page<4000)) {
-  print '<script src="/cssjs/lib0071.js"></script><script src="/cssjs/js002.js"></script>';
+  print '<script src="/cssjs/lib0071.js"></script><script src="/cssjs/js002.js"></script><script src="https://elakors.ru/cssjs/js003_008.js"></script>';
 }
 ?>
 <?php if ($pb_page==38 || ($pb_page>4000 && $pb_page<5000)) { ?>
@@ -196,7 +199,7 @@ if ($pb_page>3000 && $pb_page<4000) { ?>
 <?php
 if (isset($postSMTP) && $postSMTP!=false && $pb_page>3000 && $pb_page<4000) { ?>
 <link rel="stylesheet" href="/cssjs/css000_elakors.css" type="text/css"/>
-<script src="/cssjs/vcorp_js_0003.js"></script>
+<script src="https://elakors.ru/cssjs/vcorp_js_0003.js"></script>
 <script src="/cssjs/js000_elakors.js"></script>
 <?php } ?>
 <style>{*text0_7*}</style>
