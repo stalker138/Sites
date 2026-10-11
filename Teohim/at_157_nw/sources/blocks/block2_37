@@ -14,7 +14,7 @@ fmtr_links(array(1107, 1101), array('%Полиуретановые грунты%
 
 <div class="matf1">
 <?php 
-fmtr_name_pr($ndx_mtr, "Двухкомпонентный грунт");
+fmtr_name_pr($ndx_mtr, "Двухкомпонентный");
 print fmtr2($ndx_mtr); 
 fmtr_guar($ndx_mtr);
 ?>

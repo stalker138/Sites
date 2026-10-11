@@ -14,7 +14,7 @@ fmtr_micro($ndx_mtr); ?>
 </div>
 
 <?php 
-fmtr_links(array(1108), array('%все Краски Светостойкие эмали%'));
+fmtr_links(array(1108), array('%все Полиуретановые краски%'));
 ?>
 <div class="px10b"></div>
 <div class="px10"></div>

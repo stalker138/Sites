@@ -1,41 +1,49 @@
 <h1>Полиуретановая порозаполняющая грунтовка</h1>
 <div class="px5"></div>
-<p class="fleft"><strong>Порозаполняющая грунтовка (грунт) полиуретановая</strong><br>
-- <span>Элакор-ПУ Грунт-П</span> - однокомпонентная влагоотверждаемая.</p>
-<div class="px10bn700"></div>
-<div class="dblinkr">
-  <p class="fwb fs13"><l1 id="107">Все полиуретановые грунты</l1></p>
-  <p class="fwb fs13"><l1 id="104">Все грунтовки по бетону</l1></p>
+<div itemscope itemtype="http://schema.org/Product">
+<?php 
+fmtr_micro($ndx_mtr); ?>
+<p class="fleft" itemprop="description"><strong>Порозаполняющая грунтовка (грунт) полиуретановая</strong><br>
+- <span class="c2 fs13">Элакор-ПУ Грунт-П</span> - однокомпонентная влагоотверждаемая.</p>
 </div>
+
+<?php 
+fmtr_links($a_lnk_pu_gr);
+?>
+
 <div class="px10b"></div>
 <div class="px10"></div>
-<div class="dmatl">
-<p class="mt0 fwb"><span class="c2"><?php print $mtr[79][0] ?></span> Элакор-ПУ Грунт-П - порозаполняющий грунт цена</p>
-<?php print fmtr2(79); ?>
-<div class="px3"></div>
-<p class="mt0 tal">Хранить и транспортировать при t-ре от <span class="fwn nw">–40°С до +25°С.</span></p>
-{*text4_10*}
-<div class="px0"></div>
+<div class="matflex">
+
+<div class="matf1">
+<?php 
+fmtr_name_pr($ndx_mtr, "Порозаполняющий грунт");
+print fmtr2($ndx_mtr); 
+fmtr_guar($ndx_mtr);
+?>
 </div>
-<div class="dmatr">
-<div class="dfas">
-<table class="tfas" style="padding:3px 5px;"><tbody>
-<tr><td class="fs11 fwb">Фасовка:</td></tr>
-<tr><td class="fs11"><div class="px5"></div>Металл.ведро: 22кг<div class="px5"></div><span class="fs10 fwn c50p">Под заказ (+18р/кг) :<br>Металл.ведро: 11кг</span>
-<div class="px5"></div>
-<span>Образец-пробник:</span><br>1,1кг – цена <?php print fc50(79,1,150); ?>р.</td></tr>
-</tbody></table>
+
+<div class="matf2">
+<?php 
+fmtr_packing_new($ndx_mtr);
+fmtr_img($ndx_mtr, 'Элакор-ПУ Грунт-П - порозаполняющий грунт полиуретановый', 'Элакор-ПУ Грунт-П - порозаполняющий грунт полиуретановый', 916, 916);
+?>
 </div>
-<div style="position:relative;float:right">
-<img class="pb_ismall" src="/img/mtr/p79.webp" style="width:103px;height:103px;" onclick="$.zoomImg(this,'/img/mtr/p79.webp',200,25,1000,1000,'Элакор-ПУ Грунт-П - порозаполняющий грунт полиуретановый',-25);" title="Элакор-ПУ Грунт-П - порозаполняющий грунт полиуретановый" alt="Элакор-ПУ Грунт-П - порозаполняющий грунт полиуретановый"/>
-<div class="plus01"></div>
+
 </div>
-<div class="px0"></div>
+
+<div class="mat_repair">
+<?php
+fmtr_repair($ndx_mtr);
+?>
 </div>
 <div class="px10b"></div>
+
 <div class="dbutzp">
-<div class="bzakmat" onclick="f_b(79,'<?php print str_replace('%','',$mtr[79][1]); ?>')" title="Купить порозаполняющий грунт полиуретановый">Купить</div>
-<?php print '<a class="pdfzp" href="https://teohim.ru/downloads/elakor-pu-grunt-p.pdf?'.filemtime($pb_root.'downloads/elakor-pu-grunt-p.pdf').'" title="Элакор-ПУ Грунт-П - порозаполняющий грунт полиуретановый. Техническое описание" target="_blank" rel="nofollow">Описание</a>'; ?>
+<?php
+fmtr_ord($ndx_mtr, 'Купить порозаполняющий грунт полиуретановый');
+fmtr_descr($ndx_mtr, ' - порозаполняющий грунт полиуретановый');
+?>
 </div>
 {*text5_4*}
 <div class="px12"></div>
@@ -235,13 +243,7 @@
 
 <div id="mtr_body_4">
 <!--noindex-->
-<ul>
- <li><l3 id="201" class="fwb" rel="nofollow">Свидетельство о государственной регистрации, Таможенный союз</l3> (гигиенический сертификат)</li>
- <li class="mt10"><l3 id="202" class="fwb" rel="nofollow">Сертификат соответствия (пожарной безопасности)</l3></li>
- <li class="mt10"><l3 id="204" class="fwb" rel="nofollow">Сертификат соответствия</l3></li>
- <li class="mt10"><l3 id="206" class="fwb" rel="nofollow">Заключение на применение в детских и лечебно-профилактических учреждениях</l3></li>
- <li class="mt10"><l3 id="207" class="fwb" rel="nofollow">Заключение НИКИМТ «Дезактивируемость и радстойкость»</l3>. Разрешение на применение на объектах Росатома.</li>
-</ul>
+<?php fmtr_srt($a_srt_pu); ?>
 <div class="px5"></div>
 <!--/noindex-->
 </div>
@@ -250,4 +252,7 @@
 
 <div class="px10b"></div>
 <div class="px10"></div>
-<div id="dateDoc">23янв25</div>
+<div id="dateDoc">02фев25</div>
+<?php 
+fmtr_img_hidden($ndx_mtr, 'Элакор-ПУ Грунт-П - порозаполняющий грунт полиуретановый', 'Элакор-ПУ Грунт-П - порозаполняющий грунт полиуретановый');
+?>

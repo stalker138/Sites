@@ -115,7 +115,9 @@ $a_srt_mb2=array(72,74,75);
 //ОПИСАНИЯ
 $a_descr=false;
 $a_descr[11]="downloads/elakor-pu-grunt.pdf";
+$a_descr[12]="downloads/elakor-pu-grunt-sk-prof.pdf";
 $a_descr[13]="downloads/elakor-pu-grunt-2k100.pdf";
+$a_descr[14]="downloads/elakor-pu-grunt-t.pdf";
 $a_descr[15]="downloads/antistaticheskij-grunt.pdf";
 $a_descr[17]="downloads/elakor-pu-emal-60.pdf";
 $a_descr[18]="downloads/poliuretan-emal-fakturnaja.pdf";
@@ -123,6 +125,7 @@ $a_descr[19]="downloads/kraska-asfalta.pdf";
 $a_descr[20]="downloads/elakor-pu-emal-60-polumat.pdf";
 $a_descr[22]="downloads/elakor-pu-emal-60-gl.pdf";
 $a_descr[23]="downloads/poliuretanovyi-lak.pdf";
+$a_descr[24]="downloads/elakor-pu-emal-60-sk-prof.pdf";
 $a_descr[25]="downloads/elakor-pu-emal-60-t.pdf";
 $a_descr[26]="downloads/poliuretan-nalivnoj-pol-napolnennyi.pdf";  //  Полиуретановый наливной пол Наполненный
 $a_descr[27]="downloads/poliuretan-naliv-pol-classic.pdf";
@@ -193,6 +196,11 @@ $a_descr[138]="downloads/elakor-pz-t4-sk-prof.pdf";   //
 $a_descr[139]="downloads/poliuretanovyj-lak-lux.pdf";   // 
 $a_descr[143]="downloads/lyuks_lak-r-polumatovyi.pdf";   // 
 $a_descr[145]="downloads/lyuks_lak-r-matovyi.pdf";   // 
+
+$a_descr[149]="downloads/elakor-pu-ljuks-grunt-v.pdf";   // 
+$a_descr[150]="downloads/elakor-pu-ljuks-emal-v-pol.pdf";   // 
+$a_descr[151]="downloads/elakor-pu-ljuks-emal-v-fasad.pdf";   // 
+
 $a_descr[153]="downloads/elakor-pu-ljuks-lak-v-mat.pdf";   // Люкс Лак-В матовый (водный)
 $a_descr[154]="downloads/elakor-pu-ljuks-lak-v-polumat.pdf";   // 4.6.3. Люкс Лак-В Полуматовый (водный)
 $a_descr[157]="downloads/elakor-pu-ljuks-lak-r-elast-gl.pdf";   // 4.9.1. Люкс Лак-Р Эластичный Глянцевый
@@ -322,16 +330,28 @@ function fmtr_micro($n_mat=0, $name="") {
  $s_out='';
    if ($name=='') { $name=$mtr_dop[$n_mat][14];}
    $price=preg_replace('/[^0-9]+/', '', $mtr[$n_mat][8]);
+   $pricemax=preg_replace('/[^0-9]+/', '', $mtr[$n_mat][3]);
    $s_out.='
    <meta itemprop="name" content="'.$name.'">
    <img class="pb_hidden" itemprop="image" src="'.$pb_domain.'/img/mtr/p'.$n_mat.'.png" alt="'.$name.'">
+   <link itemprop="url" href="'.$pb_domain.$pb_full_url.'">
    <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
    <meta itemprop="name" content="Элакор">
    </div>';
+   $arr_f=pack_explode_new($mtr_dop[$n_mat][21]);
+   $arr_z=pack_explode_new($mtr_dop[$n_mat][22]);
+   $cnt_pack = 0;
+   if ($arr_f)
+     $cnt_pack = count($arr_f);
+   if ($arr_z)
+     $cnt_pack = $cnt_pack + count($arr_z);
+   if ($cnt_pack==0) $cnt_pack = 1;
    $s_out.='
    <div itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
    <meta itemprop="lowPrice" content="'.$price.'">
+   <meta itemprop="highPrice" content="'.$pricemax.'">
    <meta itemprop="priceCurrency" content="RUB">
+   <meta itemprop="offerCount" content="'.$cnt_pack.'">
    <link itemprop="url" href="'.$pb_domain.$pb_full_url.'">
    <link itemprop="availability" href="http://schema.org/InStock">
    </div>';
@@ -342,14 +362,12 @@ function fmtr_name_pr($n_mat=0, $descr = '', $pst='') {
 //вывод наименования материала производителя с описанием
  global $mtr,$mtr_dop;
    $name_pr='';
-   $name_pr = ' <span class="c2 fs13">'.$mtr_dop[$n_mat][14].'</span><br>';
+   $s_br = ' ';
+   if (strlen($descr)>60) { $s_br = '<br>'; }
+   $name_pr = ' <span class="c2 fs13">'.$mtr_dop[$n_mat][14].'</span>';
     $s_out='<p class="mt0 fwb"><span class="c3 fs13">Код: '.$mtr[$n_mat][0].'</span>'.$name_pr;
     if (!empty($descr)) {
-      $s_out.='<strong style="font-size:12px">'.$descr;
-    }
-    $s_out.=' - цена';
-    if (!empty($descr)) {
-      $s_out.='</strong>';
+      $s_out.= $s_br.'<span style="font-size:13px">'.$descr.'</span>';
     }
      $s_out.= ' '.$pst;
      $s_out.='</p>';
@@ -358,16 +376,12 @@ function fmtr_name_pr($n_mat=0, $descr = '', $pst='') {
 }
 
 
-
 function fmtr_name($n_mat=0, $name='', $pst='', $no_price=0) {
 //вывод наименования материала
  global $mtr,$mtr_dop;
  if ($name=='') { $name = '<span class="c2 fs13">'.$mtr_dop[$n_mat][14].'</span>'; }
- $s_out='<p class="mt0 fwb"><span class="c3 fs13">Код: '.$mtr[$n_mat][0].'</span> <strong style="font-size:13px">'.$name;
- if ($no_price==0) {
-     $s_out.=' - цена';
- }
- $s_out.='</strong>';
+ $s_out='<p class="mt0 fwb"><span class="c3 fs13">Код: '.$mtr[$n_mat][0].'</span> <span style="font-size:13px">'.$name;
+ $s_out.='</span>';
  if (!empty($pst))
      $s_out.=' - <span class="fwn">'.$pst.'</span>';
  $s_out.='</p>';
@@ -480,6 +494,12 @@ function fmtr_packing($n_mat=0, $dop_nm='', $mw=0, $no_flex=0, $dop_nm_z='') {
  global $mtr_dop; 
  $type_pack = 0;
  $minw='';
+ $new_form = $mtr_dop[$n_mat][24];
+ if ($new_form=='1') {
+   $s_out = fmtr_packing_new($n_mat, $no_flex);
+   print($s_out);
+   return;
+ }
  if ($mw > 0) { $minw=' min-width:'.$mw.'px;'; }
  $kol_comp=(int)$mtr_dop[$n_mat][7];
  $colspan='';
@@ -574,13 +594,140 @@ function fmtr_packing($n_mat=0, $dop_nm='', $mw=0, $no_flex=0, $dop_nm_z='') {
  print($s_out);
 }
 
+function pack_explode_new($str_pack='') {
+/*Возвращается массив типа Тара, фасовка, наценка*/
+ $str_pack=trim($str_pack);
+ if ($str_pack=='') {return false;}
+ $arr_rows = explode('/',$str_pack);
+ $arr_pack = false;
+ foreach($arr_rows as $row){
+   $arr_tmp = explode("'",$row);
+   $s_pack = $arr_tmp[0];
+   $arow = false;
+   if (strpos($s_pack, '=')){ //комплект
+     $acompl=explode('=',$s_pack);
+     $compl = $acompl[1];
+     $arow = explode('+',$acompl[0]);
+     $arow[]=$compl;
+   }
+   else {$arow[] = $s_pack;}
+   $arr_pack[] = array($arr_tmp[1], $arow, $arr_tmp[2]);
+ }
+ return $arr_pack;
+}
+
+function pack_set_new($arr_pack=false, $kol_comp=0, $n_mat=0, $on_z = 0) {
+ global $mtr_dop; 
+ $s_out='';
+ $colspan = "";
+ if ($kol_comp==2) $colspan = ' colspan="3"';
+ if ($kol_comp==3) $colspan = ' colspan="4"';
+ $s_weight=(($n_mat==105 || $n_mat==227) ? 'л' : 'кг');
+ if ($n_mat==39) {$s_weight='мл';} 
+ $style_z = '';
+ if ($on_z==1) {
+   $style_z = ' class="fs11 fwn c50p"';
+   $s_tar = 'под заказ: ';
+ }
+ 
+ if ($kol_comp > 1 && $on_z==0) {
+   $s_out.='<tr><td>"А"</td><td>+ "Б"</td>';
+   if (kol_comp==3)
+     $s_out.='<td>+ "В"</td>';
+   $s_out.='<td>= <span>Комплект</span></td>';
+   $s_out.='</tr>';
+ }
+ if ($on_z==2) {
+   $s_out.='<tr><td style="height:1px;"'.$colspan.'></td></tr>
+            <tr><td class="fs11"'.$colspan.'><span>Образец-пробник:</span></td></tr>';
+ }
+ foreach ($arr_pack as $row){
+   $tar = $s_tar.$row[0];
+   $tar.=($tar=='') ? '' : ' ';
+   $fas = $row[1];
+   $nac = $row[2];
+   if ($nac!='' && $nac!='0') {
+     $s_nac = ' (';
+     if ($nac[0]=='-')
+        $s_nac .= 'минус ';
+     else
+        $s_nac .= '+';
+     $s_nac .= str_replace('-', '', $nac).'р/'.$s_weight; 
+     $s_nac .= ')';
+     if (count($arr_pack)>1 && $on_z==1) {
+       $nac_str = $s_nac;
+       $s_nac = '';
+     }
+   }
+
+   if ($kol_comp>1) {
+     if ($on_z==2)
+     {
+       $s_out.='<tr><td'.$colspan.'>'.$fas[0].' + '.$fas[1];
+       if (kol_comp==3)
+         $s_out.=' + '.$fas[2].' = '.$fas[3].$s_weight;
+       else
+         $s_out.=' = '.$fas[2].$s_weight;
+       $s_out.= ' - цена '.fc50($n_mat,$mtr_dop[$n_mat][10],150).'р.</td>';
+     }
+     else
+     {
+       if ($tar!='') 
+         $s_out.='<tr><td'.$style_z.$colspan.'>'.$tar.$s_nac.'</td></tr>';
+       $s_out.='<tr'.$style_z.'><td>'.$fas[0].$s_weight.'</td><td>+ '.$fas[1].$s_weight.'</td>';
+       if (kol_comp==3)
+         $s_out.='<td>+ '.$fas[2].$s_weight.'</td><td>= <span>'.$fas[3].$s_weight.'</span>'.$nac_str.'</td>';
+       else
+         $s_out.='<td>= <span>'.$fas[2].$s_weight.'</span>'.$nac_str.'</td>';
+       $s_out.='</tr>';
+       $s_tar = '';
+     }
+   }
+   else {
+     $s_out.='<tr><td'.$style_z.$colspan.'>';
+     $s_out.=$tar.$fas[0].$s_weight.$s_nac;
+     if ($on_z==2)
+       $s_out.= ' - цена '.fc50($n_mat,$mtr_dop[$n_mat][10],150).'р.';
+     $s_out.='</td></tr>';
+//print($s_out);
+   }
+ }
+ return $s_out;
+}
+
+function fmtr_packing_new($n_mat=0, $no_flex=0) {
+ global $mtr_dop; 
+ $dop_nm = $mtr_dop[$n_mat][20];
+ $s_out='';
+ $kol_comp=(int)$mtr_dop[$n_mat][7];
+ $arr_f=pack_explode_new($mtr_dop[$n_mat][21]);
+ $arr_z=pack_explode_new($mtr_dop[$n_mat][22]);
+ $arr_o=pack_explode_new($mtr_dop[$n_mat][23]);
+ $colspan = "";
+ if ($kol_comp==2) $colspan = ' colspan="3"';
+ if ($kol_comp==3) $colspan = ' colspan="4"';
+ if ($no_flex==0) {
+   $s_out.='<div style="display:flex; align-items:flex-start;">'; }
+ $s_out.='<table class="tfas" style="padding:3px 5px; max-width:190px;"><tbody>
+ <tr><td class="fs11"'.$colspan.'><span>Фасовка:</span> '.$dop_nm.'</td></tr>
+ <tr><td style="height:1px;"></td></tr>';
+ $s_out.= pack_set_new($arr_f, $kol_comp, $n_mat);
+ $s_out.= pack_set_new($arr_z, $kol_comp, $n_mat, 1);
+ $s_out.= pack_set_new($arr_o, $kol_comp, $n_mat, 2);
+ $s_out.='</tbody></table>';
+
+ if ($no_flex==0) {
+   $s_out.='</div>'; }
+ print($s_out);
+}
+
 function fmtr_img($n_mat=0, $title, $alt, $width=0, $height=0, $img='', $pos='') {
 //Вывод фото
   global $pb_root;
   if ($img=='') { $img='/img/mtr/p'.$n_mat.'.webp'; }
   if ($pos=='') { $pos='center'; }
  //$arr_size=wp_getimagesize('/img/mtr/p'.$n_mat);
-  $s_out='<div class="pb_ismall" style="max-width:145px;min-width:100px;height:100%; max-height:120px; width:max-content;position:relative;aspect-ratio:'.$width.'/'.$height.'; background-image:url(\''.$img.'\'); background-repeat:no-repeat;background-size:contain;background-position:'.$pos.';" onclick="$.zoomImg(this,'.chr(39).$img.chr(39).',200,25,'.$width.','.$height.','.chr(39).$title.chr(39).',-25);" title="'.$title.'">
+  $s_out='<div class="pb_ismall" style="max-width:150px;min-width:100px;height:100%; max-height:130px; width:max-content;position:relative;aspect-ratio:'.$width.'/'.$height.'; background-image:url(\''.$img.'\'); background-repeat:no-repeat;background-size:contain;background-position:'.$pos.';" onclick="$.zoomImg(this,'.chr(39).$img.chr(39).',200,25,'.$width.','.$height.','.chr(39).$title.chr(39).',-25);" title="'.$title.'">
   <div class="plus01" style="bottom:0px;"></div>
 </div>';
   print($s_out);

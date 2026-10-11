@@ -7,7 +7,8 @@ fmtr_micro($ndx_mtr); ?>
 <div class="fleft" style="max-width:520px" itemprop="description">
 <p><strong>Эпоксидный грунт</strong> без растворителей, без запаха при нанесении.<br>
 Эпоксидный состав без наполнителей. Плотность 1,05 кг/л.<br>
-<span>Обеспечивает минимальный расход</span> при грунтовании бетонных поверхностей (М350-М200): 0,1-0,25кг/м<sup>2</sup>.</p>
+<span>Обеспечивает минимальный расход</span> при грунтовании бетонных поверхностей
+<br>(М350-М200): 0,1-0,25кг/м<sup>2</sup>.</p>
 </div>
 </div>
 
@@ -20,7 +21,7 @@ fmtr_micro($ndx_mtr); ?>
 <div class="matflex">
 <div class="matf1">
 <?php 
-fmtr_name_pr($ndx_mtr,"Эпоксидный грунт");
+fmtr_name_pr($ndx_mtr,"эпоксидный");
 print fmtr2($ndx_mtr); 
 fmtr_guar($ndx_mtr);
 ?>

@@ -22,7 +22,7 @@ fmtr_micro($ndx_mtr); ?>
 <div class="matflex">
 <div class="matf1">
 <?php 
-fmtr_name_pr($ndx_mtr,"Эпоксидная шпаклевка");
+fmtr_name_pr($ndx_mtr,"эпоксидная");
 print fmtr2($ndx_mtr); 
 fmtr_guar($ndx_mtr);
 ?>

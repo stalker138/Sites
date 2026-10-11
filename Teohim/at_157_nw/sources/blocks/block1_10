@@ -196,7 +196,7 @@ print fmtr7(135,'','%Люкс Эмаль Светостойкая Глянцев
 <div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Полиуретановые, на растворителях</div>
 <div class="px5"></div>
 <!--span class="cf00" style="font-weight:bold">Внимание! Теперь "Люкс Лаки-Р" можно приобрести в "мелкой" фасовке - 0,8кг и 2кг</span-->
-<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[401]); $i++) { if($catmat[401][$i]==135) print fmtr7(135,'','Люкс Эмаль Полуглянцевая',' '); else if($catmat[401][$i]==136) print fmtr7(136,'','Люкс Эмаль Полуматовая',' '); else if($catmat[401][$i]==137) print fmtr7(137,'','Люкс Эмаль Матовая',' '); else print fmtr7($catmat[401][$i]); } ?></tbody></table>
+<table class="tmtr mtrls"><tbody><?php print $th7; for ($i=1; $i<count($catmat[401]); $i++) { if($catmat[401][$i]==135) print fmtr7(135,'','Люкс Эмаль Глянцевая',' '); else if($catmat[401][$i]==136) print fmtr7(136,'','Люкс Эмаль Полуматовая',' '); else if($catmat[401][$i]==137) print fmtr7(137,'','Люкс Эмаль Матовая',' '); else print fmtr7($catmat[401][$i]); } ?></tbody></table>
 <div class="px10"></div>
 <div class="bg3 fwb fs13 c3 fi ti10" style="padding-left:40px">Защитные Лаки, блокирующие УФ-излучение <span class="dh3span"style="font-size: 11px;   font-weight: normal;color: #000000; white-space: pre-wrap;">(на растворителях)</span></div>
 <div class="px5"></div>

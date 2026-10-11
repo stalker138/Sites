@@ -18,7 +18,7 @@ fmtr_links(array(1005, 2067), array('%Все Антистатические по
 
 <div class="matflex">
 <div class="matf1">
-<p class="mt0 fwb"><span class="c2 fs13">Элакор-ПУ Антистатический полиуретановый наливной пол</span> цена</p>
+<p class="mt0 fwb"><span class="c2 fs13">Элакор-ПУ Антистатический полиуретановый наливной пол.</span></p>
 <div class="px5"></div>
 <?php 
 fmtr_name($ndx_mtr, "Модификация: <span>АСТ-7</span> - для покрытий<br>согласно СП 29.13330.2011. п.5.11; п.5.12; п.5.14.", "", "", 1);

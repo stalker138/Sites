@@ -23,7 +23,7 @@ fmtr_guar($ndx_mtr);
 
 <div class="matf2">
 <?php 
-fmtr_packing($ndx_mtr);
+fmtr_packing_new($ndx_mtr);
 fmtr_img($ndx_mtr, 'Полиуретановая грунтовка', 'Полиуретановая грунтовка', 873, 873);
 ?>
 </div>

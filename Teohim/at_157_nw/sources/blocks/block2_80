@@ -26,7 +26,7 @@ fmtr_links($a_lnk_pz);
 
 <div class="matflex">
 <div class="matf1">
-<p class="mt0 fwb" style="text-align:left;"><span class="c2 fs13">Элакор-ПЦ Т1/Б АСТ</span> <span class="c2 fs13">Полиуретан-цементные<br>Антистатические наливные полы</span> цена.</p>
+<p class="mt0 fwb" style="text-align:left;"><span class="c2 fs13">Элакор-ПЦ Т1/Б АСТ</span> <span class="c2 fs13">Полиуретан-цементные<br>Антистатические наливные полы.</span></p>
 <div class="px12"></div>
 
 <?php 

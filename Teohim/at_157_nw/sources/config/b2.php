@@ -663,15 +663,15 @@
 *end*110
 
 *number*111
-*options*		0000000000
+*options*		1000000000
 *file*			block2_111
-*name*			empty111
+*name*			ПОЛИМЕРНЫЕ - Грунт тиксотропный Элакор-ПУ
 *end*111
 
 *number*112
-*options*		0000000000
+*options*		1000000000
 *file*			block2_112
-*name*			empty112
+*name*			ПОЛИМЕРНЫЕ - Эмаль-60/Т - полиуретановая краска для бетона
 *end*112
 
 *number*113
@@ -783,27 +783,27 @@
 *end*130
 
 *number*131
-*options*		0000000000
+*options*		1000000000
 *file*			block2_131
-*name*			empty131
+*name*			ПОЛИМЕРНЫЕ - Люкс Грунт-В - двухкомпонентный грунт
 *end*131
 
 *number*132
-*options*		0000000000
+*options*		1000000000
 *file*			block2_132
-*name*			empty132
+*name*			ПОЛИМЕРНЫЕ - Люкс Эмаль-В Полы - водная полиуретановая эмаль
 *end*132
 
 *number*133
-*options*		0000000000
+*options*		1000000000
 *file*			block2_133
-*name*			empty133
+*name*			ПОЛИМЕРНЫЕ - Люкс Лэмаль-В Фасадная - водная полиуретановая эмаль
 *end*133
 
 *number*134
-*options*		0000000000
+*options*		1000000000
 *file*			block2_134
-*name*			empty134
+*name*			ПОЛИМЕРНЫЕ - Клей для каменного ковра
 *end*134
 
 *number*135

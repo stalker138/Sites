@@ -19,7 +19,7 @@ fmtr_links(array(1005,2062), array('%Все Антистатические по�
 
 <div class="matflex">
 <div class="matf1">
-<p class="mt0 fwb"><span class="c2 fs13">Элакор-ЭД</span> <strong><span class="c2 fs13">Антистатический наливной пол</span> цена</strong>.</p>
+<p class="mt0 fwb"><span class="c2 fs13">Элакор-ЭД</span> <strong><span class="c2 fs13">Антистатический наливной пол</span>.</strong></p>
 <div class="px12"></div>
 
 <?php 

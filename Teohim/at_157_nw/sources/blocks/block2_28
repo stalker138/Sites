@@ -15,7 +15,7 @@ fmtr_links(array(1109), array('%Все полиуретановые лаки% Э
 <div class="matflex">
 <div class="matf1">
 <?php 
-fmtr_name_pr($ndx_mtr,"Лак для пола");
+fmtr_name_pr($ndx_mtr,"для пола");
 print fmtr2($ndx_mtr); 
 fmtr_guar($ndx_mtr);
 ?>

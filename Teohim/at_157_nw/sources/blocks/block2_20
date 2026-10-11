@@ -2,7 +2,6 @@
 <div class="px5"></div>
 <div itemscope itemtype="http://schema.org/Product">
 <?php 
-$ndx_mtr=79;
 fmtr_micro($ndx_mtr); ?>
 <p class="fleft" itemprop="description"><strong>Порозаполняющая грунтовка (грунт) полиуретановая</strong><br>
 - <span class="c2 fs13">Элакор-ПУ Грунт-П</span> - однокомпонентная влагоотверждаемая.</p>
@@ -26,7 +25,7 @@ fmtr_guar($ndx_mtr);
 
 <div class="matf2">
 <?php 
-fmtr_packing($ndx_mtr);
+fmtr_packing_new($ndx_mtr);
 fmtr_img($ndx_mtr, 'Элакор-ПУ Грунт-П - порозаполняющий грунт полиуретановый', 'Элакор-ПУ Грунт-П - порозаполняющий грунт полиуретановый', 916, 916);
 ?>
 </div>

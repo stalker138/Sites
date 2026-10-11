@@ -1,8 +1,27 @@
 <h1>Полиуретан цементные полы</h1>
-<div class="px5"></div>
+<div class="px3"></div>
 <p><strong>Полиуретан цементные полы</strong> – трехкомпонентные наливные покрытия на основе связующих из полиуретана и цемента.</p>
-<p class="mt15 fwb">ЦЕНЫ материалов Элакор-ПЦ, производства ТЭОХИМ, для устройства Полиуретан Цементных покрытий полов.</p>
-<div class="px0"></div>
+<p class="fs13 tal" style="margin-top:15px;line-height: 18px;margin-bottom:5px;"><span class="fs13 fwb" style="color:#004f92;">Полиуретан цементные полы Элакор  </span> – производство и  поставка материалов, выполнение работ. <span style="white-space:nowrap">Опыт {*text5_6*}.</span><br>
+{*text5_14*} Покрытия Элакор выполнены на площадях <span style="white-space:nowrap">свыше {*text5_5*} м². </span>
+
+{*text5_12*}
+
+<h2 class="h2_orange">Варианты Полиуретан-цементных покрытий</h2>
+<div class="px10"></div>
+
+<?php print '<div class="px0"></div>';
+print $tblt1;
+print ftech18(171,'');
+print ftech18(172,'');
+print ftech18(173,'');
+print ftech18(174,'');
+print ftech18(175,'');
+print ftech18(176,'');
+print $tblt2; ?>
+
+<div class="px10"></div>
+<h2 class="h2_orange">МАТЕРИАЛЫ для полиуретан-цементных покрытий</h2>
+<div class="px5"></div>
 <div class="divPriceD">
 <p class="fright mt5 fs11">Цена за кг, с учётом НДС.</p>
 <div class="px3"></div>
@@ -20,22 +39,6 @@ for ($i=1; $i<count($catmat[15]); $i++) { print fmtr8($catmat[15][$i]); }
 ?></tbody></table>
 <div class="px5"></div>
 </div>
-
-
-<div class="px10"></div>
-
-<h2 class="h2_orange">Варианты Полиуретан-цементных покрытий</h2>
-<div class="px10"></div>
-
-<?php print '<div class="px0"></div>';
-print $tblt1;
-print ftech18(171,'');
-print ftech18(172,'');
-print ftech18(173,'');
-print ftech18(174,'');
-print ftech18(175,'');
-print ftech18(176,'');
-print $tblt2; ?>
 
 
 <div class="px10b"></div>

@@ -12,7 +12,7 @@ fmtr_micro($ndx_mtr); ?>
 <div class="matflex">
 <div class="matf1">
 <?php 
-fmtr_name_pr($ndx_mtr,"Клей полиуретановый");
+fmtr_name_pr($ndx_mtr);
 print fmtr2($ndx_mtr); 
 fmtr_guar($ndx_mtr);
 ?>

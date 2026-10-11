@@ -23,7 +23,7 @@ fmtr_links(array(1005), array('%все Антистатические полы%'
 
 <div class="matflex">
 <div class="matf1">
-<p class="mt0 fwb"><span class="fs13 c2">Элакор ЭД Эмаль-2К/80 АСТ-6, АСТ-7</span> цена.</p>
+<p class="mt0 fwb"><span class="fs13 c2">Элакор ЭД Эмаль-2К/80 АСТ-6, АСТ-7.</span></p>
 <div class="px5"></div>
 <?php 
 fmtr_name($ndx_mtr, "Модификация: АСТ-7", "", "", 1);

@@ -6,7 +6,7 @@ $ndx_mtr=60;
 fmtr_micro($ndx_mtr); ?>
 <div class="fleft" style="max-width:500px" itemprop="description">
 <p><strong>Эпоксидный Самовыравнивающийся наливной пол</strong><br>
-<span class="c2 fs13">Элакор-ЭД Премиум</span> - цветной двухкомпонентный состав с идеальной растекаемостью.</p>
+<span class="c2 fs13">Элакор-ЭД Премиум</span> - цветной состав с идеальной растекаемостью.</p>
 <p>После отверждения образует покрытие с высокими декоративными свойствами,<br>
 высокой прочностью и износостойкостью, химической стойкостью.<br>
 В момент нанесения отсутствует запах.</p>
@@ -22,7 +22,7 @@ fmtr_links(array(2063), array('%Все Эпоксидные наливные п�
 <div class="matflex">
 <div class="matf1">
 <?php 
-fmtr_name_pr($ndx_mtr, "Эпоксидный наливной пол Премиум", "");
+fmtr_name_pr($ndx_mtr);
 print fmtr2($ndx_mtr); 
 fmtr_guar($ndx_mtr);
 ?>

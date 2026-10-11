@@ -23,7 +23,7 @@ fmtr_links(array(1005), array('%все Антистатические полы%'
 
 <div class="matflex">
 <div class="matf1">
-<p class="mt0 fwb"><span class="fs13 c2">Элакор ПУ Люкс Антистатическая краска СК ПРОФ</span> цена.</p>
+<p class="mt0 fwb"><span class="fs13 c2">Элакор ПУ Люкс Антистатическая краска СК ПРОФ.</span></p>
 <div class="px5"></div>
 <?php 
 fmtr_name($ndx_mtr, "Модификация: АСТ-7");

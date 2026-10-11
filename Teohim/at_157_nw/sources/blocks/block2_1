@@ -2,7 +2,6 @@
 <div class="px5"></div>
 <div itemscope itemtype="http://schema.org/Product">
 <?php 
-$ndx_mtr=11;
 fmtr_micro($ndx_mtr); ?>
 <div class="fleft" style="max-width:520px" itemprop="description">
 <p class="tal"><strong class="c2 fs13">Грунт по бетону</strong>  <span class="c2 fs13">Элакор-ПУ</span> - однокомпонентный влагоотверждаемый полиуретановый грунт. Обладает высокой текучестью и эффективно проникает в поры бетона (2-4мм для бетона М300).</p>
@@ -18,14 +17,14 @@ fmtr_links(array(1107));
 <div class="matflex">
 <div class="matf1">
 <?php 
-fmtr_name_pr($ndx_mtr, "Грунт для бетона");
+fmtr_name_pr($ndx_mtr, "для бетона");
 print fmtr2($ndx_mtr); 
 fmtr_guar($ndx_mtr);
 ?>
 </div>
 <div class="matf2">
 <?php 
-fmtr_packing($ndx_mtr);
+fmtr_packing_new($ndx_mtr);
 fmtr_img($ndx_mtr, 'Элакор-ПУ Грунт по бетону', 'Элакор-ПУ Грунт по бетону', 872, 872);
 ?>
 </div>

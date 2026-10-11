@@ -184,6 +184,11 @@ function f_i_t() {
         else { $.id('instr75_1').style.display='block'; $.id('instr75_2').style.display='none'; }
 
     }
+    if (pg_pi==63) {
+        if (ast6) { $.id('instr63_1').style.display='none'; $.id('instr63_2').style.display='block'; }
+        else { $.id('instr63_1').style.display='block'; $.id('instr63_2').style.display='none'; }
+
+    }
 
     /* ir = get_kat(pi_so); */       /* категория работ */
     pi_kvrc = get_kvrc(pi_so);  /* категория работ */

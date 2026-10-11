@@ -19,7 +19,7 @@ fmtr_links(array(1005,2062), array('%Все Антистатические по�
 
 <div class="matflex">
 <div class="matf1">
-<p class="mt0 fwb"><span class="fs13 c2">Элакор-ЭД</span><strong> <span class="fs13 c2">Антистатический наливной пол СК ПРОФ</span> цена</strong>.</p>
+<p class="mt0 fwb"><span class="fs13 c2">Элакор-ЭД</span><strong> <span class="fs13 c2">Антистатический наливной пол СК ПРОФ.</span></strong></p>
 <div class="px12"></div>
 <?php 
 fmtr_name($ndx_mtr, "Модификация:АСТ-7", "для покрытий<br>согласно СП 29.13330.2011. п.5.11; п.5.12; п.5.14.", 1);

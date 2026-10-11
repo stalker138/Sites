@@ -23,7 +23,7 @@ fmtr_guar($ndx_mtr);
 
 <div class="matf2" style="width:350px;">
 <?php 
-fmtr_packing($ndx_mtr);
+fmtr_packing_new($ndx_mtr);
 fmtr_img($ndx_mtr, 'Глубокая грунтовка', 'Глубокая грунтовка', 917, 709);
 ?>
 </div>

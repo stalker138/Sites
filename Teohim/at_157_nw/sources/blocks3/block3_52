@@ -6,7 +6,7 @@
 <table class="tbl2">
 <tbody>
 <tr><td class="tdpred"><span>Руководитель</span>:</td><td>Маковников Дмитрий Владимирович</td></tr>
-<tr><td style="padding:3px 0"><span>Телефон:</span></td><td style="padding:0"><div><a href="tel:+79913758747">+7 991 375-87-47</a></div><div><a href="tel:+79030777737">+7 903 077-77-37</a><?php f_print_wa('79030777737', 1, 1) ?></div></td></tr>
+<tr><td style="padding:3px 0"><span>Телефон:</span></td><td style="padding:0"></div><div><a href="tel:+79030777737">+7 903 077-77-37</a><?php f_print_wa('79030777737', 1, 1) ?></div></td></tr>
 <tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail"></span></div><div><span id="dpIDmail2"></span></div></td></tr>
 <tr><td><span>Сайт:</span></td><td id="dpIDsite"><a href="https://teohim-kemerovo.ru/" target="_blank">Полимерные наливные полы Кемерово</a></td></tr>
 </tbody>

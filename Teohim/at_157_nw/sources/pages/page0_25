@@ -8,7 +8,7 @@ $pl=false; for ($i=0; $i<=350; $i++) { $pl[]=''; }
 $pl[11]='<l2 id="1">';  // </l2> 1.1.2. Элакор-ПУ Грунт - грунт для бетона
 $pl[12]='<l2 id="126">';  // </l2> 1.1.6. Элакор-ПУ Грунт СК ПРОФ
 $pl[13]='<l2 id="2">';  // </l2> 1.1.7. ПУ Грунт-2К/100 - полиуретановый грунт без растворителя
-$pl[14]='<a href="https://teohim.ru/downloads/elakor-pu-grunt-t.pdf?'.filemtime($pb_root.'downloads/elakor-pu-grunt-t.pdf').'" target="_blank">';  // </a> 1.2.7. Эмаль-2К/100 - гладкая, без растворителей
+$pl[14]='<l2 id="111">';  // </l2>
 $pl[15]='<l2 id="14">';  // </l2> Антистатический грунт
 $pl[17]='<l2 id="3">';  // </l2> Эмаль-60 - полиуретановая краска для бетона
 $pl[18]='<l2 id="7">';  // </l2> 1.2.6. Эмаль-2К/100 - фактурная, без растворителей
@@ -18,7 +18,7 @@ $pl[21]='<a href="https://teohim.ru/downloads/poliuretan-emal-gladkaya.pdf?'.fil
 $pl[22]='<l2 id="24">';  // </l2> Эмаль-60 Глянцевая полиуретановая
 $pl[23]='<l2 id="5">';  // </l2> Лак-60 - полиуретановый лак
 $pl[24]='<l2 id="123">';  // </l2> Эмаль-60 СК ПРОФ - полиуретановая краска для бетона
-$pl[25]='<a href="https://teohim.ru/downloads/elakor-pu-emal-60-t.pdf?'.filemtime($pb_root.'downloads/elakor-pu-emal-60-t.pdf').'" target="_blank">';  // </a> 
+$pl[25]='<l2 id="112">';  // </l2>
 $pl[26]='<l2 id="71">';  // </l2> 1.4.3. Полиуретановый наливной пол Наполненный
 //$pl[26]='<a href="https://teohim.ru/downloads/poliuretan-nalivnoj-pol-napolnennyi.pdf?'.filemtime($pb_root.'downloads/poliuretan-nalivnoj-pol-napolnennyi.pdf').'" target="_blank">';  // </a> 1.4.3. Полиуретановый наливной пол Наполненный
 $pl[27]='<l2 id="60">'; // </l2> 1.4.1. Полиуретановый наливной пол Классик
@@ -73,8 +73,9 @@ $pl[73]='<l2 id="30">';  // </l2> 2.5.3. Ремонтный эпоксидный
 $pl[74]='<l2 id="122">';  // </l2> Смол для заливки
 
 //$pl[73]='<a href="https://teohim.ru/downloads/remontnyi-epoksidnyi-sostav.pdf?'.filemtime($pb_root.'downloads/remontnyi-epoksidnyi-sostav.pdf').'" target="_blank">';  // </a> 2.5.3. Ремонтный эпоксидный состав (ровнитель для пола)
-$pl[75]='<l2 id="19">';  // </l2> Эпоксидный компаунд тиксотропный
+$pl[75]='<l2 id="134">';  // </l2> Эпоксидный компаунд тиксотропный
 $pl[76]='<l2 id="33">';  // </l2> 2.7.2. Анкеровочный состав
+$pl[78]='<l2 id="19">';  // </l2> Эпоксидный компаунд тиксотропный
 //$pl[76]='<a href="https://teohim.ru/downloads/elakor-ed-ankerovochnyi-sostav.pdf?'.filemtime($pb_root.'downloads/elakor-ed-ankerovochnyi-sostav.pdf').'" target="_blank">';  // </a> 2.7.2. Анкеровочный состав
 $pl[79]='<l2 id="20">';  // </l2> 1.1.1. Грунт-П - порозаполняющий грунт полиуретановый
 
@@ -100,6 +101,8 @@ $pl[106]='<l2 id="75">';  // </l2> 1.1.9. Силер-Б - силер без за
 $pl[111]='<l2 id="31">';  // </l2> Колор-Паста для полиуретанов
 $pl[115]='<l2 id="32">';  // </l2> Тонер для цветных лаков
 $pl[119]='<l2 id="34">';  // </l2> Элакор-ДТ - тиксотропная и матирующая добавка
+
+$pl[120]='<a href="https://teohim.ru/downloads/elakor-pz-t4.pdf?'.filemtime($pb_root.'downloads/elakor-pz-t4.pdf').'" target="_blank">';  // </a> 
 // $pl[121]='<l2 id="35">';  // </l2> Элакор-ДА (антистатическая добавка)
 
 $pl[122]='<l2 id="121">';  // </l2> 1.5.4. Безыскровый Полиуретан-цементный пол Т1/Б, 3-7мм
@@ -131,9 +134,16 @@ $pl[139]='<l2 id="39">';  // </l2> Люкс Лак-Р Глянцевый , бл�
 $pl[140]='<a href="https://teohim.ru/downloads/elakor-pz-plintus.pdf?'.filemtime($pb_root.'downloads/elakor-pz-plintus.pdf').'" target="_blank">';  // </a> 
 
 // $pl[141]='<l2 id="40">';  // </l2> Люкс Лак-Р ПолуГлянцевый , блеск 35-40% (с растворителем)
+$pl[142]='<a href="https://teohim.ru/downloads/poliuretanovyj-lak-lux-ufb-gl.pdf?'.filemtime($pb_root.'downloads/poliuretanovyj-lak-lux-ufb-gl.pdf').'" target="_blank">';  // </a> 
 $pl[143]='<l2 id="41">';  // </l2> Люкс Лак-Р ПолуМатовый , блеск 20-25% (с растворителем)
+$pl[144]='<a href="https://teohim.ru/downloads/poliuretanovyj-lak-lux-ufb-polumat.pdf?'.filemtime($pb_root.'downloads/poliuretanovyj-lak-lux-ufb-polumat.pdf').'" target="_blank">';  // </a> 
 $pl[145]='<l2 id="42">';  // </l2> Люкс Лак-Р Матовый , блеск 7-9% (с растворителем)
+$pl[146]='<a href="https://teohim.ru/downloads/poliuretanovyj-lak-lux-ufb-mat.pdf?'.filemtime($pb_root.'downloads/poliuretanovyj-lak-lux-ufb-mat.pdf').'" target="_blank">';  // </a> 
 $pl[147]='<l2 id="43">';  // </l2> Люкс Лак-Р Глубоко Матовый , блеск 2-4% (с растворителем)
+$pl[148]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-emal-sk-prof.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-emal-sk-prof.pdf').'" target="_blank">';  // </a> 
+$pl[149]='<l2 id="131">';  // </l2>
+$pl[150]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-emal-v-pol.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-emal-v-pol.pdf').'" target="_blank">';  // </a> 
+$pl[151]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-emal-v-fasad.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-emal-v-fasad.pdf').'" target="_blank">';  // </a> 
 $pl[153]='<l2 id="44">';  // </l2> Люкс Лак-В Матовый , блеск 7-10% (водный)
 // $pl[155]='<l1 id="1" style="color:#f00000">'; // </l1>
 $pl[154]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-lak-v-polumat.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-lak-v-polumat.pdf').'" target="_blank">';  // </a> 4.6.3. Люкс Лак-В Полуматовый (водный)
@@ -576,7 +586,7 @@ $pdwnl[52]=array('<'.'a href="/instructions/epoksidnyj-nalivnoj-pol-promyshlenny
 $pdwnl[53]=array('<'.'a href="/instructions/poliuretanovyj-nalivnoj-pol-classic-tech.pdf?'.filemtime($pb_root.'instructions/poliuretanovyj-nalivnoj-pol-classic-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Полиуретановый толщина 2мм технология', '<'.'a href="/instructions/poliuretanovyj-nalivnoj-pol-classic-3mm-tech.pdf?'.filemtime($pb_root.'instructions/poliuretanovyj-nalivnoj-pol-classic-3mm-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Полиуретановый толщина 3мм технология', '<'.'a href="/instructions/poliuretanovyj-nalivnoj-pol-classic-4mm-tech.pdf?'.filemtime($pb_root.'instructions/poliuretanovyj-nalivnoj-pol-classic-4mm-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Полиуретановый толщина 4мм технология');
 $pdwnl[54]=array('<'.'a href="/instructions/poliuretan-nalivnoj-pol-promyshlennyj-tech.pdf?'.filemtime($pb_root.'instructions/poliuretan-nalivnoj-pol-promyshlennyj-tech.pdf').'" class="tpdf" target="_blank" title="Промышленный Наливной пол Полиуретановый толщина 2мм технология', '<'.'a href="/instructions/poliuretan-nalivnoj-pol-promyshlennyj-3mm-tech.pdf?'.filemtime($pb_root.'instructions/poliuretan-nalivnoj-pol-promyshlennyj-3mm-tech.pdf').'" class="tpdf" target="_blank" title="Промышленный Наливной пол Полиуретановый толщина 3мм технология', '<'.'a href="/instructions/poliuretan-nalivnoj-pol-promyshlennyj-4mm-tech.pdf?'.filemtime($pb_root.'instructions/poliuretan-nalivnoj-pol-promyshlennyj-4mm-tech.pdf').'" class="tpdf" target="_blank" title="Промышленный Наливной пол Полиуретановый толщина 4мм технология');
 $pdwnl[55]='<'.'a href="/instructions/beloe-pokrytie.pdf?'.filemtime($pb_root.'instructions/beloe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Белое наливное покрытие ТЕХНОЛОГИЯ';
-$pdwnl[63]='<'.'a href="/instructions/antistat-tp-ed-pol.pdf?'.filemtime($pb_root.'instructions/antistat-tp-ed-pol.pdf').'" class="tpdf" target="_blank" title="Антистатический наливной пол Эпоксидный ТЕХНОЛОГИЯ';
+$pdwnl[63]=array('<'.'a href="/instructions/antistat-tp-ed-pol.pdf?'.filemtime($pb_root.'instructions/antistat-tp-ed-pol.pdf').'" class="tpdf" target="_blank" title="Антистатический наливной пол Эпоксидный АСТ7 ТЕХНОЛОГИЯ', '<'.'a href="/instructions/antistat-tp-ed-pol_ast6.pdf?'.filemtime($pb_root.'instructions/antistat-tp-ed-pol_ast6.pdf').'" class="tpdf" target="_blank" title="Антистатический наливной пол Эпоксидный АСТ6 ТЕХНОЛОГИЯ');
 $pdwnl[64]='<'.'a href="/instructions/antistat-tp-pu-pol.pdf?'.filemtime($pb_root.'instructions/antistat-tp-pu-pol.pdf').'" class="tpdf" target="_blank" title="Антистатический наливной пол Полиуретановый ТЕХНОЛОГИЯ';
 $pdwnl[65]='<'.'a href="/instructions/antistat-er-ed-pol.pdf?'.filemtime($pb_root.'instructions/antistat-er-ed-pol.pdf').'" class="tpdf" target="_blank" title="Электрорассеивающий наливной пол Эпоксидный ТЕХНОЛОГИЯ';
 $pdwnl[66]='<'.'a href="/instructions/antistat-er-pu-pol.pdf?'.filemtime($pb_root.'instructions/antistat-er-pu-pol.pdf').'" class="tpdf" target="_blank" title="Электрорассеивающий наливной пол Полиуретановый ТЕХНОЛОГИЯ';
@@ -633,7 +643,7 @@ $pdwnl[171]='<'.'a href="/instructions/pz-pt1-nalivnoe-pokrytie.pdf?'.filemtime(
 $pdwnl[172]='<'.'a href="/instructions/pz-pt2-nalivnoj-pol.pdf?'.filemtime($pb_root.'instructions/pz-pt2-nalivnoj-pol.pdf').'" class="tpdf" target="_blank" title="Полиуретан цементный пол наливной Элакор-ПЦ Т2 - ТЕХНОЛОГИЯ';
 $pdwnl[173]='<'.'a href="/instructions/pz-pt3-nalivnoj-sostav.pdf?'.filemtime($pb_root.'instructions/pz-pt3-nalivnoj-sostav.pdf').'" class="tpdf" target="_blank" title="Полиуретан цементный наливной состав Элакор-ПЦ Т3 - ТЕХНОЛОГИЯ';
 $pdwnl[174]='<'.'a href="/instructions/pz-pt1-ast-nalivnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/pz-pt1-ast-nalivnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Антистатическое Полиуретан цементное покрытие наливное Элакор-ПЦ Т1 - ТЕХНОЛОГИЯ';
-$pdwnl[175]='<'.'a href="/instructions/pz-ast7-nalivnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/pz-ast7-nalivnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Антистатический Проводящий полиуретан-цементный пол АСТ-7 - ТЕХНОЛОГИЯ';
+$pdwnl[175]=array('<'.'a href="/instructions/pz-ast7-nalivnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/pz-ast7-nalivnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Антистатический Проводящий полиуретан-цементный пол АСТ-7 - ТЕХНОЛОГИЯ', '<'.'a href="/instructions/pz-ast6-nalivnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/pz-ast6-nalivnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Антистатический Проводящий полиуретан-цементный пол АСТ-6 - ТЕХНОЛОГИЯ');
 $pdwnl[176]='<'.'a href="/instructions/pz-ast6-nalivnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/pz-ast7-nalivnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Антистатический Проводящий полиуретан-цементный пол АСТ-6 - ТЕХНОЛОГИЯ';
 
 $pdwnl[181]='<'.'a href="/instructions/himicheskaja-ochistka-metalla.pdf?'.filemtime($pb_root.'instructions/himicheskaja-ochistka-metalla.pdf').'" class="tpdf" target="_blank" title="Химическая очистка металла (Элакор-МБ3) ТЕХНОЛОГИЯ';
@@ -727,20 +737,21 @@ return $out;
 function fmtr2($n=0, $f=false) {
 global $pb_page,$mtr;
 $out='';
+  if ($f==false) $out.='<p class="fs11 mt5"><span>Цена руб/'.($n==39?'шт':(($n==227||$n==105||$n==106)?'литр':'кг')).'</span>, с НДС, в зависимости от количества.</p>';
+  else { $f=''.$f; if (strlen($f)>10) $out.='<p class="fs11 mt0">'.$f.'</p>'; }
+
 if ($n!=59 && $n!=121 && $mtr[$n]!=false) { // 59 - Г1, 121 - Элакор-ДА
  if ($n==39) {
-    $out='<div class="px5"></div><table class="tmtr"><tbody><tr><th>до 59кг</th><th>60-199кг</th><th>200-499кг</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th></tr>';
+    $out.='<div class="px5"></div><table class="tmtr"><tbody><tr><th>до 59кг</th><th>60-199кг</th><th>200-499кг</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th></tr>';
     // $out='<div class="px5"></div><table class="tmtr"><tbody><tr><th>13-50шт</th><th>51-256шт/th><th>257-640шт</th><th>641-1281шт</th><th>1282-3845кг</th><th>от 3000л</th></tr>';
  } else {
   if ($n==227||$n==105||$n==106) {
-    $out='<div class="px5"></div><table class="tmtr"><tbody><tr><th>до 59л</th><th>60-199л</th><th>200-499л</th><th>500-1000л</th><th>1000-3000л</th><th>от 3000л</th></tr>';
+    $out.='<div class="px5"></div><table class="tmtr"><tbody><tr><th>до 59л</th><th>60-199л</th><th>200-499л</th><th>500-1000л</th><th>1000-3000л</th><th>от 3000л</th></tr>';
   } else {
-    $out='<div class="px5"></div><table class="tmtr"><tbody><tr><th>до 59кг</th><th>60-199кг</th><th>200-499кг</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th></tr>';
+    $out.='<div class="px5"></div><table class="tmtr"><tbody><tr><th>до 59кг</th><th>60-199кг</th><th>200-499кг</th><th>500-1тн</th><th>1-3тн</th><th>от 3тн</th></tr>';
   }
  }
   $out.='<tr'.((($pb_page>2000 && $pb_page<3000) || ($pb_page>5005 && $pb_page<5009) || ($pb_page>5021 && $pb_page<5025))?' style="height:28px;font-weight:bold"':'').'><td>'.$mtr[$n][3].'</td><td>'.$mtr[$n][4].'</td><td>'.$mtr[$n][5].'</td><td>'.$mtr[$n][6].'</td><td>'.$mtr[$n][7].'</td><td>'.$mtr[$n][8].'</td></tr></tbody></table>';
-  if ($f==false) $out.='<p class="fs11 mt5">Цена с НДС, руб/'.($n==39?'шт':(($n==227||$n==105||$n==106)?'литр':'кг')).', в зависимости от количества.</p>';
-  else { $f=''.$f; if (strlen($f)>10) $out.='<p class="fs11 mt0">'.$f.'</p>'; }
   $out.='<div class="px7"></div>';
 }
 return $out;
@@ -1071,7 +1082,7 @@ return $out;
 function ftech18($n=0, $f=0, $np1='', $np2='', $dtext='') {
 global $pb_page, $pkr, $plf, $plc, $plt, $pdwnl; $out='';
 $dright = '';
-if (($n==51) || ($n==52) || ($n==53) || ($n==54))
+if (($n==51) || ($n==52) || ($n==53) || ($n==54) || ($n==63) || ($n==75))
     $dright = ' <div class="dright" style="float: right;width: 70px;text-align: right;padding-right: 5px;font-weight: normal;font-size: 11px;">инструкции</div>';
 $tdt1='<tr style="border-bottom:solid 1px #c8c8c8;"><td class="tmtl"><div class="d18text">'; $tdt2='</div><div class="d18ic"><div class="d18i">'; $tdt3='</div><div class="d18c">'; $tdt4='</div><div class="px0"></div></div>'.$dright.'<div class="px0"></div>'.($dtext ? ('<div class="d18dtext">'.$dtext.'</div>') : '').'</td></tr>';
 if ($n>9 && $pkr[$n]) {
@@ -1087,10 +1098,16 @@ if ($n>9 && $pkr[$n]) {
       $out.= $arr53[2].'" style="margin-left:5px;width:33px;font-family:arial;font-weight:bold;font-size:12px;letter-spacing:0.5px;float:left; padding-left:0; background:rgba(0, 230, 0, 1);">4мм</'.'a>';
       
     } else {
-      if ($pdwnl[$n]) {
-        if (strpos($pdwnl[$n],'class="tpdf"')>0) $out.=$pdwnl[$n].'" style="font-family:arial;font-weight:bold;font-size:12px;letter-spacing:0.5px;">Инструкция</'.'a>';
-        else $out.=$pdwnl[$n].'Скачать инструкцию - '.str_replace('%','',$pkr[$n][1]).'">Инструкция</'.'a>';
-      } //else $out.='<div style="height:22px;"></div>';
+      if (($n==63) || ($n==75)) {
+        $arr53=$pdwnl[$n];
+        $out.= $arr53[0].'" style="width:52px;font-family:arial;font-weight:bold;font-size:12px;letter-spacing:0.5px;float:left; padding-left:0; background:rgba(0, 230, 0, 1);">АСТ7</'.'a>';
+        $out.= $arr53[1].'" style="margin-left:6px;width:52px;font-family:arial;font-weight:bold;font-size:12px;letter-spacing:0.5px;float:left; padding-left:0; background:rgba(0, 230, 0, 1);">АСТ6</'.'a>';
+      } else {
+        if ($pdwnl[$n]) {
+          if (strpos($pdwnl[$n],'class="tpdf"')>0) $out.=$pdwnl[$n].'" style="font-family:arial;font-weight:bold;font-size:12px;letter-spacing:0.5px;">Инструкция</'.'a>';
+          else $out.=$pdwnl[$n].'Скачать инструкцию - '.str_replace('%','',$pkr[$n][1]).'">Инструкция</'.'a>';
+        } //else $out.='<div style="height:22px;"></div>';
+      }
     }
     $out.=$tdt3;
     $out.= ($plc[$n] && $n!=27 && $n!=57 && $n!=59 && $n!=61 && ($n<100 || $n==171 || $n==172 || $n==173 || $n==174 || $n==251 || $n==255)) ? ('<!--noindex-->'.$plc[$n].'ЦЕНА - расчет</'.'a><!--/noindex-->') : '';
@@ -1172,14 +1189,19 @@ global $pb_page, $pkr, $plc, $plt, $pdwnl; $out='';
 $tdt1='<tr><td class="tmtl" colspan="3">';
 $tdt2='</td></tr><tr><td class="tmtl1">'; $tdt3='</td><td style="width:110px">'; $tdt4='</td></tr>';
 if ($n>9 && $pkr[$n]) {
-    if ($n==97 || $n==75) {
+    if ($n==97 || $n==75 || $n==63) {
       $arr53=$pdwnl[$n];
       if ($n==97) {
           $out.= str_replace('class="tpdf"','id="instr97_1" class="pdf1"',$arr53[0]).'">Инструкция</'.'a>';
           $out.= str_replace('class="tpdf"','id="instr97_2" class="pdf1"',$arr53[1]).'">Инструкция</'.'a>';
       } else {
+      if ($n==63) {
+          $out.= str_replace('class="tpdf"','id="instr63_1" class="pdf1"',$arr53[0]).'">Инструкция</'.'a>';
+          $out.= str_replace('class="tpdf"','id="instr63_2" class="pdf1"',$arr53[1]).'">Инструкция</'.'a>';
+      } else {
           $out.= str_replace('class="tpdf"','id="instr75_1" class="pdf1"',$arr53[0]).'">Инструкция</'.'a>';
           $out.= str_replace('class="tpdf"','id="instr75_2" class="pdf1"',$arr53[1]).'">Инструкция</'.'a>';
+      }
       }
       
     } else {

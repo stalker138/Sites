@@ -67,8 +67,7 @@ print ftech18(98,'');
 print ftech18(99,'');
 print ftech18(94,'');
 print ftech18(174,'');
-print ftech18(175,'');
-print ftech18(176,'');
+print ftech18(75,'');
 print ftech18(90,'');
 print ftech18(92,'');
 print $tblt2; ?><div class="px10"></div>
@@ -104,8 +103,7 @@ print ftech18(64,'');
 print ftech18(65,'');
 print ftech18(66,'');
 print ftech18(174,'');
-print ftech18(175,'');
-print ftech18(176,'');
+print ftech18(75,'');
 print ftech18(77,'');
 print $tblt2; ?>
 <div class="px15"></div>
