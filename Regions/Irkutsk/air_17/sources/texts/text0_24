@@ -1,0 +1,41 @@
+<style>
+.o_tr50, .o_tr, .o_t100 { text-align:right; }
+.table2 th span { font-size: 11px; }
+#id_calcBody .table2 td, #table2 table td { font-size: 12px;}
+
+#idsal {cursor: pointer; float: right; font-weight: bold; font-size: 13px; color: #f00000; text-decoration: underline;}
+.fs10 { font-size:10px; }
+#content .tfas .fwn { font-weight: normal; }
+#content .tfas .fs10 { font-size: 10px; }
+#content .tfas span { font-size: 11px; }
+.c50p { color:#808080 }
+
+.bzakmat { cursor:pointer; position:relative; display:block; float:right; margin:0; padding:12px 12px 13px 12px;; min-width:90px; height:18px; font:bold 14px arial; line-height:18px; text-align:center; color:#ff0000; background:#eeeeee; border:solid 1px #ff0000; border-radius:5px; box-shadow: 4px 4px 7px 0 #999999; }
+.bzakmat:hover { background:#d8d8d8; }
+
+
+#content .pdfzp { position:relative; display:block; float:left; padding:14px 10px 13px 0; width:110px; font:bold 13px arial; text-align:left; text-indent:40px; text-decoration:none; line-height:16px; border:solid 1px #ff0000; border-radius:5px; color:#000000; box-shadow: 4px 4px 7px 0 #999999; }
+#content .pdfzp { background:url(/img/css/pdf1.svg) no-repeat 5px 2px rgba(0, 230, 0, 1); }
+#content .pdfzp { background-size:25px; background-position:5px 8px; } .pdfzp:hover { background-color:rgba(0, 210, 0, 1); }
+#content .pdfzp:hover,.bzakmat:hover { box-shadow:0 0 15px 0 #272727; }
+
+
+.tfas { background:#f0f0f0; font:normal 11px arial; border:solid 1px #555555; color:#000000; margin:0; text-align:justify; border-collapse: separate; margin-top:5px;}
+.tfas td { padding:0; margin:0; font-size:11px; }
+.tfas th {text-align:justify; font-size:11px; }
+
+.matf10 { display:flex; flex-direction:column; justify-content:flex-start; align-items:flex-start; float:none; } .matf10 .tmtr {width:350px;}
+.matf20 { display:flex; flex-wrap:nowrap; flex-direction:row; justify-content:space-between; align-items:stretch; float:none; width:278px; }
+
+.dbutzp, .dconsult { position:relative; display:block; float:left; margin:10px 0 0 0; width:340px; height:47px; }
+.dbutzp { width:336px; }
+.dconsult { float:right; width:auto; margin-top:10px; }
+
+@media screen and (max-width:700px) { .dbutzp, .dconsult { width:100%; }  .dbutzp, .macb2w, .dconsult { float:none; clear:both; margin:10px auto 0 auto;} #content .dconsult .consult { width:max-content; float:none; clear:none; margin:10px auto 0 auto;} .mat_repair { max-width:350px; clear:both; margin: 10px auto 0 auto; } .mat_m_hidden { visibility: hidden; } .matflex { justify-content: center; } #content .pdfzp {float:right;}}
+
+@media screen and (max-width:799px) {
+.matf10 { margin-top:5px; width:auto; } .matf20 { margin-top:5px; } .mat_single { justify-content:center; }
+}
+
+
+</style>

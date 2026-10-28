@@ -1,0 +1,14 @@
+<?php
+// include_once $pb_root."auto/inc_appends.php";
+?>
+<?php if (1==2) { ?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J3L7873M8C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J3L7873M8C');
+</script>
+<?php } ?>

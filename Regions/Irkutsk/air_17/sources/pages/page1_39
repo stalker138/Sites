@@ -1,0 +1,26 @@
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}{*tpl3*}
+<script type="text/javascript">
+function f_vb(n){if(!fpb_ById('banner_video')||fpb_ById('id_div_banner_video'))return;fpb_win_show(fpb_win_new('<div id="id_div_banner_video" style="height:4px;"></div><span style="font:italic bold 14px arial;color:#1868ab">Деморолик-презентация</span> <span style="font:italic bold 14px arial;color:#1868ab">(новый обучающий видеокурс 3D полы)</span>','<div class="px5"></div><iframe src="http://www.youtube.com/embed/k49q3mfZdFg" style="width:600px;height:335px;border:none;" allowfullscreen></iframe>',null,null,600,370,1))}
+</script>
+<style type="text/css">
+#banner_video { position:relative;float:right;margin-left:10px;width:380px;height:155px;border:1px solid #c8c8c8;border-radius:5px;background:#f0f0f0;box-shadow:4px 4px 7px 0 #999999;overflow:visible; }
+#banner_video img { cursor:pointer;position:absolute;border:none;background:none; }
+#banner_video div { position:absolute;top:10px;left:103px;width:270px;height:80px; font:bold 26px arial; color:#1868ab;text-shadow:#ffffff 1px 2px 2px;text-align:center; }
+#banner_video div a { font:bold 26px arial; color:#1868ab; text-shadow:#ffffff 1px 2px 2px; text-align:center; text-decoration:none; }
+#banner_video div a:hover { text-decoration:underline; }
+.d_text1 {
+    font: italic 13px arial;
+    float: left;
+    width: 334px;
+    color: #1868AB;
+    padding: 10px;
+    border: 1px solid #C8C8C8;
+    border-radius: 5px;
+    text-align: left;
+}
+</style>
+</head><body>{*tpl7*}
+{*block1_39*}
+{*tpl8*}{*tpl4*}
+<!-- 01.08.2014 13:39, EM -->
+</body></html>

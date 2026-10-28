@@ -1,0 +1,30 @@
+#content { width:770px; max-width:770px; padding:10px 0; border:none 0px; }
+.h14 { position:relative; clear:both; margin:10px 0px 0px 0px; padding:0; text-align:center; font-size:14px; font-weight:bold; line-height:18px; color:#004f92; background:#eeeeee; }
+table, table th, table td { margin:0; padding:0; width:100%; font-size:13px; font-weight:normal; border-collapse:collapse; border-spacing:0; border:solid 1px #000000; }
+table th, table td { width:auto; padding:0 2px; } table th { background:#f0f0f0; }
+
+#id_calcHead { position:relative; float:left; width:320px; box-shadow:4px 4px 7px 0 #999999; }
+#id_calcHead table { text-align:left; } #id_calcHead table .pad0 { padding:0; }
+
+#dcalc { position:relative; float:left; margin:0; width:160px; font-size:11px; line-height:13px; text-align:center; }
+#dcalc input { margin:0; width:140px; height:30px; font-weight:bold; font-size:13px; letter-spacing:1px; text-shadow:2px 2px 2px #ffffff; box-shadow:4px 4px 7px 0 #999999; }
+
+#dchng { position:relative; float:right; padding:7px 0; width:285px; font-weight:bold; font-size:12px; border:solid 1px #c8c8c8; box-shadow:4px 4px 7px 0 #999999; }
+#dchng p { margin:0; font-weight:bold; font-size:13px; color:#ff0000; }
+#dchng select { width:280px; height:25px; line-height:25px; font-weight:normal; font-size:11px; border:solid 1px #2878bb; background:#f0f0f0; }
+
+.thead { height:23px; font-weight:bold; font-size:13px; text-align:left; background:yellow; }
+
+.i_t, .i_t option { padding:0; margin:0; width:120px; height:22px; font-size:13px; text-align:left; line-height:22px; border:none 0px; font-weight:bold; background:#49ff79; }
+
+#id_calcBody { position:relative; box-shadow:4px 4px 7px 0 #999999; }
+#id_calcBody table { text-align:left; } #id_calcBody table th, #table2 table th { font-weight:normal; font-size:12px; text-align:center; }
+
+table .tdleft { width:195px; padding:0 0 0 2px; } table .tdmat { padding:0 0 0 2px; }
+
+#id_calcBody table .o_t, #id_calcBody table .o_ti, #id_calcBody table .o_tb13, #table2 table .o_t, #table2 table .o_tb13  { width:68px; height:23px; text-align:right; padding:0 2px 0 0; }
+#id_calcBody table .o_tb13, #table2 table .o_tb13 { font-weight:bold; font-size:13px; }
+
+#dscr { position:relative; top:0px; left:0px; height:0px; margin-top:-1px; border:none 0px; overflow:hidden; }
+#dl_menu table, #dl_menu table td, #leftmenu table, #leftmenu table th, #leftmenu table td { border:none; }
+@media screen and (max-width:999px){ #main,#footer { width:auto; min-width:auto; max-width:auto; } #main { padding-left:5px; } #content { margin:0 0 0 10px; padding:50px 0 10px 0; top:0; width:960px; min-width:960px; max-width:960px; } }

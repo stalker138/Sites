@@ -1,0 +1,35 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим»: Иркутск и область.</span></p>
+
+<div itemscope itemtype="http://schema.org/Organization" >
+<h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+<table><tbody>
+<tr><td style="width:150px"><span>Руководитель:</span>:</td><td>Маковников Станислав Евгеньевич</td></tr>
+<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+<tr><td><span>Адрес</span>:</td><td itemprop="streetAddress">г. Иркутск ул. Горная 24 офис 5. Бизнес центр "Зеркальный"</td></tr>
+</div>
+<tr><td><span>Телефоны</span>:</td><td><div itemprop="telephone"><a href="tel:+79024673214">+7 (902) 467-32-14</a><?php f_print_wa('79024673214', 1, 1, 1) ?></div></td></tr>
+<tr><td><span>&nbsp;</span></td><td><div><a href="tel:+79641119166">+7 (964) 111-91-66</a></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div></td></tr>
+</tbody></table>
+</div>
+<p>График работы с 9 до 18. Без обеда.<br>
+Суббота воскресенье выходной.<br>
+Для встречи в офисе желателен предварительный созвон.</p>
+<p><em>Для удобства наших клиентов в регионе разработана четкая схема доставки материалов транспортными компаниями до их терминалов (КИТ, Деловые линии)</em></p>
+
+<p style="float:right;">Если Вы не дозвонились до представителя или получили не полную консультацию,<br>пожалуйста, позвоните по телефону: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79029245015\'>+7-90'+'2-9'+'24-5'+'0-1'+'5</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-902-...</span><br>
+(Евгений Владимирович) &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<img src="/img/css/pismo.png" alt="" onclick="f_swtch(4)" style="cursor:pointer"/>
+<div id="hmap">
+<div class="px10"></div>
+
+<div id="ymaps-map-id_7c790bad271642d692c73366b25c3e8c" style="width:100%; height:400px; max-width:750px;"></div>
+<script type="text/javascript">function fid_7c790bad271642d692c73366b25c3e8c(ymaps) {var map = new ymaps.Map("ymaps-map-id_7c790bad271642d692c73366b25c3e8c", {center: [52.281528, 104.305067], zoom: 13, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([52.281528, 104.305067], {balloonContent: "ООО «ТэоХим-Сибирь»"}, {preset: "twirl#lightblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_7c790bad271642d692c73366b25c3e8c"></script>
+</div>
+
+<div class="pb_hidden"><span id="spIDmail1">im.ruirkutsk@teoh</span></div>
