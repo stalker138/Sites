@@ -63,8 +63,7 @@ if (!empty($_POST['hcaptcha'])) {
             $text.=wordwrap($texta,100,"\n",1).$crlf;
             $text=preg_replace('/\t/','    ',$text);
             mail($postmail,date("Y-m-d").' '.date("H:i:s").$zlist,$text,"From: message@{*text1_7*}\nContent-Type: text/plain; charset=UTF-8");
-            mail('prog1@bk.ru',date("Y-m-d").' '.date("H:i:s").$zlist,$text,"From: message@{*text1_7*}\nContent-Type: text/plain; charset=UTF-8");
-            //mail('administrator@teohim.ru',date("Y-m-d").' '.date("H:i:s").$zlist,$text,"From: message@{*text1_7*}\nContent-Type: text/plain; charset=UTF-8");
+            mail('administrator@teohim.ru',date("Y-m-d").' '.date("H:i:s").$zlist,$text,"From: message@{*text1_7*}\nContent-Type: text/plain; charset=UTF-8");
             $pb_pos1=strpos($pb_txt,chr(10),$pb_pos+1); $pb_txt=substr($pb_txt,0,$pb_pos).substr($pb_txt,$pb_pos1);
             $headtext='<span style="font-weight:bold;color:#000080">'.(($Asw_mode==1) ? 'Сообщение отправлено' : 'Запрос отправлен').'.<br><br>Спасибо.</span>';
             $text1=''; $text2=''; $text3=''; $text4=''; $texta=''; $mess1=''; $mess2=''; $mess3=''; $mess4=''; $messa=''; $messk=''; $compl=1;

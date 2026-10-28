@@ -4,21 +4,30 @@
 
 <div itemscope itemtype="http://schema.org/Organization" >
 <h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+
 <table><tbody>
+<tr><td class="tdpred"><span>Руководитель:</span></td><td>Непряхин Василий Васильевич</td></tr>
+<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+79102453094">+7-910-245-30-94</a><?php f_print_wa('79102453094', 1, 1) ?></div></td></tr>
+<tr><td><span>Менеджер по продажам:</span></td><td><div><a href="tel:+79050524145">+7 905 052-41-45</a></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div><div><span id="dpIDmail2"></span></div></td></tr>
+</tbody></table>
+</div>
+
+<!--table><tbody>
 <tr><td style="width:150px"><span>Контактное лицо:</span>:</td><td>Непряхина Илона</td></tr>
-<!--tr><td style="width:150px"><span>Контактное лицо</span>:</td><td>Непряхина Илона</td></tr>
-<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+74732324495">8-473-232-44-95</a></div><div itemprop="telephone"><a href="tel:89009290139">8-900-929-01-39</a></div></td></tr>
-<tr><td><span>Сотовый</span>:</td><td><div itemprop="telephone"><a href="tel:+79601101017">8-960-110-10-17</a></div></td></tr-->
 <tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+74732324495">8-473-232-44-95</a></div></td></tr>
-<tr><td><span>Сотовый</span>:</td><td><div itemprop="telephone"><a href="tel:+79601101017">8-960-110-10-17</a></div><div itemprop="telephone"><a href="tel:89009290139">8-900-929-01-39</a></div></td></tr>
-<tr><td><span>WhatsApp/Telegram</span>:</td><td><div><a href="https://api.whatsapp.com/send?phone=79107324495">+7-910-732-44-95</a><?php f_print_wa('79107324495', 1, 1, 1) ?></div></td></tr>
+<tr><td><span>Сотовый</span>:</td><td><div itemprop="telephone"><a href="tel:+79601101017">8-960-110-10-17</a><?php f_print_wa('79107324495', 0, 0, 1, 0, 1, 'https://max.ru/u/f9LHodD0cOL1u90wLY22cksEbFX_goPRca2g82W3iNiKiR26BtWvSqeJIZw') ?></div><div itemprop="telephone"><a href="tel:89009290139">8-900-929-01-39</a></div></td></tr>
+<tr><td><span>MAX/Telegram</span>:</td><td><div><a href="https://max.ru/u/f9LHodD0cOIi3gjDCXicIvsidHM66s8yHWkuQC8y7E2PQ0qpwzXObGR_A5Q">+7-910-732-44-95</a><?php f_print_wa('79107324495', 0, 1, 1, 0, 1, 'https://max.ru/u/f9LHodD0cOIi3gjDCXicIvsidHM66s8yHWkuQC8y7E2PQ0qpwzXObGR_A5Q') ?></div></td></tr>
+
+<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+79102453094">+7-910-245-30-94</a><?php f_print_wa('79102453094', 1, 1) ?></div></td></tr>
 
 <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-<tr><td><span>Адрес</span>:</td><td itemprop="streetAddress">394033, Воронежская область, город Воронеж, Ленинский проспект, дом 174Е, офис 308, помещение 1</td></tr>
+<tr><td><span>Адрес</span>:</td><td itemprop="streetAddress">394014, Воронежская область, г Воронеж, ул. Лебедева, д. 4, помещение 3, комната 26</td></tr>
+<tr><td><span>Адрес склада</span>:</td><td itemprop="streetAddress">394010, г. Воронеж, ул. Богдана Хмельницкого 77а/3, боксы 6,7</td></tr>
 </div>
 <tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div></td></tr>
 </tbody></table>
-</div>
+</div-->
 
 <p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
 (Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
@@ -27,13 +36,21 @@
 <div class="px10"></div>
 <div style="cursor:pointer;margin-top:10px;width:200px;height:74px;background:url(/img/css/pismo.png)" onclick="f_swtch(4,1,1)"></div>
 
-<div id="hmap">
+<!--div id="hmap">
+<p class="fwb">Офис:</p>
 <div class="px10"></div>
-
 <div id="ymaps-map-id_7c790bad271642d692c73366b25c3e8c" style="width:100%; height:400px; max-width:750px;"></div>
-<script type="text/javascript">function fid_7c790bad271642d692c73366b25c3e8c(ymaps) {var map = new ymaps.Map("ymaps-map-id_7c790bad271642d692c73366b25c3e8c", {center: [51.700385, 39.274874], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([51.700385, 39.274874], {balloonContent: "ООО «ОПТИМААГРОСТРОЙ»"}, {preset: "twirl#lightblueDotIcon"}));};</script>
+<script type="text/javascript">function fid_7c790bad271642d692c73366b25c3e8c(ymaps) {var map = new ymaps.Map("ymaps-map-id_7c790bad271642d692c73366b25c3e8c", {center: [51.625754, 39.231243], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([51.625754, 39.231243], {balloonContent: "ООО «ОПТИМААГРОСТРОЙ»"}, {preset: "twirl#lightblueDotIcon"}));};</script>
 <script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_7c790bad271642d692c73366b25c3e8c"></script>
 </div>
 
+<div id="hmap2">
+<p class="fwb">Склад:</p>
+<div class="px10"></div>
+<div id="ymaps-map-id_7c790bad271642d692c73366b25c3e8c_2" style="width:100%; height:400px; max-width:750px;"></div>
+<script type="text/javascript">function fid_7c790bad271642d692c73366b25c3e8c_2(ymaps) {var map = new ymaps.Map("ymaps-map-id_7c790bad271642d692c73366b25c3e8c_2", {center: [51.713199, 39.276356], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([51.713199, 39.276356], {balloonContent: "ООО «ОПТИМААГРОСТРОЙ»"}, {preset: "twirl#lightblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_7c790bad271642d692c73366b25c3e8c_2"></script>
+</div-->
 
-<div class="pb_hidden"><span id="spIDmail1">im.ruchernozemye@teoh</span></div>
+
+<div class="pb_hidden"><span id="spIDmail1">l.comctmcompany36@gmai</span></div>

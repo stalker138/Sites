@@ -28,9 +28,8 @@ for ($icat=1; $icat<10; $icat++) {
   if ($mtr[$i] && in_array($i, $list_mtr, true)) {
     $out.='<div id="d'.$i.'" class="pstring">';
     $out.='<div id="d'.$i.'_0" style="width:40px;">'.$mtr[$i][0].'</div><div id="d'.$i.'_1" style="width:580px;padding:0 10px 0 0;">'.preg_replace("/\%/i",'',$mtr[$i][1]).' '.preg_replace("/\%/i",'',$mtr[$i][2]).'</div>';
-    foreach($pl_col as $n_col){
-      $out.='<div><input id="i'.$i.'_'.$n_col.'" type="text" value="'.$mtr[$i][$n_col].$on.'/></div>';
-    }
+    $out.='<div><input id="i'.$i.'_3" type="text" value="'.$mtr[$i][3].$on.'/></div><div><input id="i'.$i.'_4" type="text" value="'.$mtr[$i][4].$on.'/></div><div><input id="i'.$i.'_5" type="text" value="'.$mtr[$i][5].$on.'/></div>';
+    $out.='<div><input id="i'.$i.'_6" type="text" value="'.$mtr[$i][6].$on.'/></div><div><input id="i'.$i.'_7" type="text" value="'.$mtr[$i][7].$on.'/></div><div><input id="i'.$i.'_8" type="text" value="'.$mtr[$i][8].$on.'/></div>';
     $out.='</div>'.$dlmn;
   }
   }
@@ -52,9 +51,7 @@ for ($i=1; $i<351; $i++) {
     if ($str!=' ' && $mtr[$i] && in_array($i, $list_mtr, true)) {
         $arr=explode(chr(9),$str);
         if ($tara==0) { /* Если $tara==1, значит вызов по кнопке "Только обновление Тары" в групповом пересчёте, тогда цены перезаписывать нельзя, только тару (ниже) */
-          foreach($pl_save as $arr_col){  
-            $mtr[$i][$arr_col[0]]=$arr[$arr_col[1]];
-          }
+            $mtr[$i][$pl_save[0][0]]=$arr[$pl_save[0][1]]; $mtr[$i][$pl_save[1][0]]=$arr[$pl_save[1][1]]; $mtr[$i][$pl_save[2][0]]=$arr[$pl_save[2][1]]; $mtr[$i][$pl_save[3][0]]=$arr[$pl_save[3][1]]; $mtr[$i][$pl_save[4][0]]=$arr[$pl_save[4][1]]; $mtr[$i][$pl_save[5][0]]=$arr[$pl_save[5][1]];
         }
         if (count($arr)>10) {
             $mtr[$i][9]=$arr[6]; $mtr[$i][10]=$arr[7]; $mtr[$i][11]=$arr[8]; $mtr[$i][12]=$arr[9]; $mtr[$i][13]=$arr[10]; $mtr[$i][14]=$arr[11]; $mtr[$i][15]=$arr[12];

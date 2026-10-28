@@ -237,7 +237,15 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-vr.ru/polymer-vr/poliuretanovyj-grunt-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-vr.ru/polymer-vr/poliuretanovyj-grunt-dvuhkomponentnyj/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-vr.ru/polymer-vr/tiksotropnyj-grunt/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -266,6 +274,14 @@
 </url>
 <url>
   <loc>https://teohim-vr.ru/polymer-vr/poliuretanovyj-lak/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-vr.ru/polymer-vr/poliuretanovaja-kraska-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-vr.ru/polymer-vr/tiksotropnaya-kraska/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -373,7 +389,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-vr.ru/polymer-vr/smola-art/</loc>
+  <loc>https://teohim-vr.ru/polymer-vr/smola-art-2/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -401,11 +417,19 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-vr.ru/polymer-vr/epoksidnyj-kompaund/</loc>
+  <loc>https://teohim-vr.ru/polymer-vr/smola-art/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-vr.ru/polymer-vr/klej-kamnya/</loc>
     <priority>0.5</priority>
 </url>
 <url>
   <loc>https://teohim-vr.ru/polymer-vr/ed-anker-sostav/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-vr.ru/polymer-vr/epoksidnyj-kompaund/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -429,7 +453,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-vr.ru/polymer-vr/poliuretanovyi-lak-polumatovyj/</loc>
+  <loc>https://teohim-vr.ru/polymer-vr/pu-ljuks-emal-ast-sk-prof/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -493,6 +517,10 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-vr.ru/nalivnye-vr/pz-t1b-ast/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-vr.ru/polymer-vr/dvuhkomponentnaja-emal/</loc>
     <priority>0.5</priority>
 </url>
@@ -505,6 +533,10 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-vr.ru/nalivnye-vr/pz-t4-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-vr.ru/polymer-vr/dvuhkomponentnyj-lak/</loc>
     <priority>0.5</priority>
 </url>
@@ -514,6 +546,10 @@
 </url>
 <url>
   <loc>https://teohim-vr.ru/polymer-vr/r-lak-matovyj/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-vr.ru/polymer-vr/vodnyj-grunt/</loc>
     <priority>0.5</priority>
 </url>
 <url>

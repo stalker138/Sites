@@ -1,15 +1,15 @@
-{*text0_20*}
+<?php if ($is_basket) { ?>{*text0_20*}<?php } ?>
 </section>
 <div class="px0"></div></div>
 <div class="shiftfooter"></div>
 <div id="header">
 <header>
 <div id="contacts">
-<!--div><a href="tel:+79102453094">8-910-245-30-94</a></div><div class="px3"></div>
-<div><a href="tel:+74732324495">8-473-232-44-95</a></div><div class="px3"></div-->
+<div><a href="tel:+79050524145">+7 905 052-41-45 </a></div><div class="px3"></div>
+<div><a href="tel:+79102453094" style="padding:0;">+7 910 245-30-94</a><?php f_print_wa('79102453094', 1, 1) ?></div><div class="px3"></div>
 
-<div><a href="tel:+74732324495">8-473-232-44-95</a></div><div class="px0"></div>
-<div><a href="tel:+79009290139">8-900-929-01-39</a></div><div class="px0"></div>
+<!--div><a href="tel:+74732324495">8-473-232-44-95</a></div><div class="px0"></div>
+<div><a href="tel:+79009290139">8-900-929-01-39</a></div><div class="px0"></div-->
 <!--div id="dpIDmail">&nbsp;</div-->
 <div class="callback" onclick="f_swtch(4,1,1);return false;">Обратный звонок</div>
 </div>
@@ -25,7 +25,7 @@
   <div id="mtblock">
     <l1 id="1" id="mtlogo"></l1>
     <div id="mtpanel"><table class="mtlink"><tbody><tr>
-      <th onclick="location.href='/price-vr/'" style="border-right:solid 1px #000000;">ЦЕНЫ<br>материалы</th><th onclick="location.href='/calc-vr/'" style="border-right:solid 1px #000000;">РАСЧЕТ<br>покрытий</th>
+      <th onclick="location.href='/price/'" style="border-right:solid 1px #000000;">ЦЕНЫ<br>материалы</th><th onclick="location.href='/calc-vr/'" style="border-right:solid 1px #000000;">РАСЧЕТ<br>покрытий</th>
     </tr></tbody></table></div>
   </div>
   <div id="ltblock" onclick="f_ltblock()"></div>
