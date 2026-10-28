@@ -6,7 +6,7 @@
 {*text0_22*}
 {*text0_23*}
 // МАТЕРИАЛЫ
-$txt=@file_get_contents($pb_root.'sys/materials'); $mtr=false; $mtr[]=false; for ($i=1; $i<351; $i++) {
+$txt=@file_get_contents('https://teohim-siberia.ru/sys/materials'); $mtr=false; $mtr[]=false; for ($i=1; $i<351; $i++) {
     $pos=strpos($txt,chr(10)); if ($pos==false) break; $str=substr($txt,0,$pos); $txt=substr($txt,$pos+1);
     if ($str!=' ') $mtr[]=explode(chr(9),$str); // $mtr[$i][1]=preg_replace('/\%/','',$mtr[$i][1]);
     else $mtr[]=false;

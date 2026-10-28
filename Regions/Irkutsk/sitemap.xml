@@ -229,7 +229,15 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-irkutsk.ru/polymer-pol/poliuretanovyj-grunt-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-irkutsk.ru/polymer-pol/poliuretanovyj-grunt-dvuhkomponentnyj/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-irkutsk.ru/polymer-pol/tiksotropnyj-grunt/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -258,6 +266,14 @@
 </url>
 <url>
   <loc>https://teohim-irkutsk.ru/polymer-pol/poliuretanovyj-lak/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-irkutsk.ru/polymer-pol/poliuretanovaja-kraska-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-irkutsk.ru/polymer-pol/tiksotropnaya-kraska/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -365,7 +381,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-irkutsk.ru/polymer-pol/smola-art/</loc>
+  <loc>https://teohim-irkutsk.ru/polymer-pol/smola-art-2/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -393,11 +409,19 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-irkutsk.ru/polymer-pol/epoksidnyj-kompaund/</loc>
+  <loc>https://teohim-irkutsk.ru/polymer-pol/smola-art/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-irkutsk.ru/polymer-pol/klej-kamnya/</loc>
     <priority>0.5</priority>
 </url>
 <url>
   <loc>https://teohim-irkutsk.ru/polymer-pol/ed-anker-sostav/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-irkutsk.ru/polymer-pol/epoksidnyj-kompaund/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -421,7 +445,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-irkutsk.ru/polymer-pol/poliuretanovyi-lak-polumatovyj/</loc>
+  <loc>https://teohim-irkutsk.ru/polymer-pol/pu-ljuks-emal-ast-sk-prof/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -485,6 +509,10 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-irkutsk.ru/nalivnoj-pol/pz-t1b-ast/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-irkutsk.ru/polymer-pol/dvuhkomponentnaja-emal/</loc>
     <priority>0.5</priority>
 </url>
@@ -497,6 +525,10 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-irkutsk.ru/nalivnoj-pol/pz-t4-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-irkutsk.ru/polymer-pol/dvuhkomponentnyj-lak/</loc>
     <priority>0.5</priority>
 </url>
@@ -506,6 +538,10 @@
 </url>
 <url>
   <loc>https://teohim-irkutsk.ru/polymer-pol/r-lak-matovyj/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-irkutsk.ru/polymer-pol/vodnyj-grunt/</loc>
     <priority>0.5</priority>
 </url>
 <url>

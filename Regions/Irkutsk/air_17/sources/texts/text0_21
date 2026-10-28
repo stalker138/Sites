@@ -14,6 +14,7 @@ else {
 Позиции * - для фасовки в бочки по 200кг цена <span>дешевле на 5р/кг</span>.</div>
 ';
 }
+$s_out.='{*text1_13*}';
 print $s_out;
 }
 
@@ -192,6 +193,12 @@ function pack_set($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weight
 function fmtr_packing($n_mat=0) {
 // Вывод фасовки
  global $mtr_dop; 
+ $new_form = $mtr_dop[$n_mat][24];
+ if ($new_form=='1') {
+   $s_out = fmtr_packing_new($n_mat, $no_flex);
+   print($s_out);
+   return;
+ }
  $kol_comp=(int)$mtr_dop[$n_mat][7];
  $colspan='';
  if ($kol_comp>1) {$colspan=(($kol_comp==2) ? 'colspan="6"' : 'colspan="8"');}
@@ -258,6 +265,12 @@ function pack_set2($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weigh
 function fmtr_packing2($n_mat=0) {
 // Вывод фасовки
  global $mtr_dop; 
+ $new_form = $mtr_dop[$n_mat][24];
+ if ($new_form=='1') {
+   $s_out = fmtr_packing_new($n_mat, $no_flex);
+   print($s_out);
+   return;
+ }
  $type_pack = 0;
  $kol_comp=(int)$mtr_dop[$n_mat][7];
  $colspan='';
@@ -316,6 +329,136 @@ function fmtr_packing2($n_mat=0) {
     }
  }
  $s_out.='</tbody></table></div>';
+ print($s_out);
+}
+
+
+function pack_explode_new($str_pack='') {
+/*Возвращается массив типа Тара, фасовка, наценка*/
+ $str_pack=trim($str_pack);
+ if ($str_pack=='') {return false;}
+ $arr_rows = explode('/',$str_pack);
+ $arr_pack = false;
+ foreach($arr_rows as $row){
+   $arr_tmp = explode("'",$row);
+   $s_pack = $arr_tmp[0];
+   $arow = false;
+   if (strpos($s_pack, '=')){ //комплект
+     $acompl=explode('=',$s_pack);
+     $compl = $acompl[1];
+     $arow = explode('+',$acompl[0]);
+     $arow[]=$compl;
+   }
+   else {$arow[] = $s_pack;}
+   $arr_pack[] = array($arr_tmp[1], $arow, $arr_tmp[2]);
+ }
+ return $arr_pack;
+}
+
+function pack_set_new($arr_pack=false, $kol_comp=0, $n_mat=0, $on_z = 0) {
+ global $mtr_dop; 
+ $s_out='';
+ $colspan = "";
+ if ($kol_comp==2) $colspan = ' colspan="3"';
+ if ($kol_comp==3) $colspan = ' colspan="4"';
+ $s_weight=(($n_mat==105 || $n_mat==227) ? 'л' : 'кг');
+ if ($n_mat==39) {$s_weight='мл';} 
+ $style_z = '';
+ if ($on_z==1) {
+   $style_z = ' class="fs11 fwn c50p"';
+   $s_tar = 'под заказ: ';
+ }
+ 
+ if ($kol_comp > 1 && $on_z==0) {
+   $s_out.='<tr><td>"А"</td><td>+ "Б"</td>';
+   if (kol_comp==3)
+     $s_out.='<td>+ "В"</td>';
+   $s_out.='<td>= <span>Комплект</span></td>';
+   $s_out.='</tr>';
+ }
+ if ($on_z==2) {
+   $s_out.='<tr><td style="height:1px;"'.$colspan.'></td></tr>
+            <tr><td class="fs11"'.$colspan.'><span>Образец-пробник:</span></td></tr>';
+ }
+ foreach ($arr_pack as $row){
+   $tar = $s_tar.$row[0];
+   $tar.=($tar=='') ? '' : ' ';
+   $fas = $row[1];
+   $nac = $row[2];
+   $nac = '';
+   if ($nac!='' && $nac!='0') {
+     $s_nac = ' (';
+     if ($nac[0]=='-')
+        $s_nac .= 'минус ';
+     else
+        $s_nac .= '+';
+     $s_nac .= str_replace('-', '', $nac).'р/'.$s_weight; 
+     $s_nac .= ')';
+     if (count($arr_pack)>1 && $on_z==1) {
+       $nac_str = $s_nac;
+       $s_nac = '';
+     }
+   }
+
+   if ($kol_comp>1) {
+     if ($on_z==2)
+     {
+       $s_out.='<tr><td'.$colspan.'>'.$fas[0].' + '.$fas[1];
+       if (kol_comp==3)
+         $s_out.=' + '.$fas[2].' = '.$fas[3].$s_weight;
+       else
+         $s_out.=' = '.$fas[2].$s_weight;
+       $s_out.= ' - цена р.</td>';
+     }
+     else
+     {
+       if ($tar!='') 
+         $s_out.='<tr><td'.$style_z.$colspan.'>'.$tar.$s_nac.'</td></tr>';
+       $s_out.='<tr'.$style_z.'><td>'.$fas[0].$s_weight.'</td><td>+ '.$fas[1].$s_weight.'</td>';
+       if (kol_comp==3)
+         $s_out.='<td>+ '.$fas[2].$s_weight.'</td><td>= <span>'.$fas[3].$s_weight.'</span>'.$nac_str.'</td>';
+       else
+         $s_out.='<td>= <span>'.$fas[2].$s_weight.'</span>'.$nac_str.'</td>';
+       $s_out.='</tr>';
+       $s_tar = '';
+     }
+   }
+   else {
+     $s_out.='<tr><td'.$style_z.$colspan.'>';
+     $s_out.=$tar.$fas[0].$s_weight.$s_nac;
+     if ($on_z==2)
+       $s_out.= ' - цена р.';
+     $s_out.='</td></tr>';
+//print($s_out);
+   }
+ }
+ return $s_out;
+}
+
+function fmtr_packing_new($n_mat=0, $no_flex=0) {
+ global $mtr_dop; 
+ $dop_nm = $mtr_dop[$n_mat][20];
+ $s_out='';
+ $kol_comp=(int)$mtr_dop[$n_mat][7];
+ $arr_f=pack_explode_new($mtr_dop[$n_mat][21]);
+ $arr_z=pack_explode_new($mtr_dop[$n_mat][22]);
+ $arr_o=pack_explode_new($mtr_dop[$n_mat][23]);
+ $arr_o = array();
+ $colspan = "";
+ if ($kol_comp==2) $colspan = ' colspan="3"';
+ if ($kol_comp==3) $colspan = ' colspan="4"';
+ if ($no_flex==0) {
+   $s_out.='<div style="display:flex; align-items:flex-start;">'; }
+ $s_out.='<table class="tfas" style="padding:3px 5px; max-width:190px;"><tbody>
+ <tr><td class="fs11"'.$colspan.'><span>Фасовка:</span> '.$dop_nm.'</td></tr>
+ <tr><td style="height:1px;"></td></tr>';
+ $s_out.= pack_set_new($arr_f, $kol_comp, $n_mat);
+ $s_out.= pack_set_new($arr_z, $kol_comp, $n_mat, 1);
+ //$s_out.= pack_set_new($arr_o, $kol_comp, $n_mat, 2);
+ $s_out.='</tbody></table>';
+
+ if ($no_flex==0) {
+   $s_out.='</div>'; }
  print($s_out);
 }
 

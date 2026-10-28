@@ -2,6 +2,18 @@
 <h2 class="latestw">ТЕКУЩИЕ РАБОТЫ</h2>
   <div class="latestworks">
 <div>
+     <a class="zoom" href="img/works/2026/20261.jpg"><img src="img/works/2026/20261_t.webp" alt="г. Братск  ул. Коммунальная 11, База &laquo;Русь&raquo;" /></a>
+     <p><b>г. Братск  ул. Коммунальная 11, База &laquo;Русь&raquo;</b>, 2 700 м<sup>2</sup></p>
+     <p>Эпоксидное покрытие с чипсами</p>
+</div>
+<div>
+     <a class="zoom" href="img/works/2026/20262.jpg"><img src="img/works/2026/20262_t.webp" alt="г. Братск  ул. Коммунальная 11, База &laquo;Русь&raquo;" /></a>
+     <p><b>г. Братск  ул. Коммунальная 11, База &laquo;Русь&raquo;</b>, 2 700 м<sup>2</sup></p>
+     <p>Эпоксидное покрытие с чипсами</p>
+</div>
+
+
+<div>
      <a class="zoom" href="img/works/2025/1000132324.jpg"><img src="img/works/2025/1000132324.jpg" alt="г. Иркутск, ООО &laquo;Шакман-РУС&raquo;" /></a>
      <p><b>г. Иркутск, ООО &laquo;Шакман-РУС&raquo;</b>, 670 м<sup>2</sup></p>
      <p>Полиуретановое покрытие Элакор-ПУ.</p>
@@ -171,7 +183,7 @@
 <link rel="stylesheet" type="text/css" href="/cssjs/slick.css">
 <script type="text/javascript" src="/scripts/slick/slick.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function(){
+    jQuery(document).ready(function($) {
       $('.latestworks').slick({
           dots: true,
           infinite: true,
