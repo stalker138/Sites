@@ -45,9 +45,9 @@
 *end*7
 
 *number*8
-*options*		0000000000
+*options*		1000000000
 *file*			text0_8
-*name*			empty8
+*name*			МАКРОС - шапка вкладок для материалов
 *end*8
 
 *number*9

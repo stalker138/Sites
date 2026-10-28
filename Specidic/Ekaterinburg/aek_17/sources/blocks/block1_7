@@ -18,7 +18,7 @@
 <h3 class="divh4">1.1. Грунты</h3><div class="px0"></div>
 <div class="divh4p">Цена, руб/кг.</div>
 <div class="px0"></div>
-<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[11]); $i++) { if ($catmat[11][$i]==131) print fmtr1($catmat[11][$i],'1.1.6.','%Люкс Грунт% - полиуретановый, светостойкий'); else print fmtr1($catmat[11][$i]); } ?></tbody></table>
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[11]); $i++) { if ($catmat[11][$i]==131) print fmtr1(131,'','%Люкс Грунт% - полиуретановый',' светостойкий'); else print fmtr1($catmat[11][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -27,7 +27,7 @@
 <h3 class="divh4">1.2. Эмали</h3><div class="px0"></div>
 <div class="divh4p">Цена, руб/кг.</div>
 <div class="px0"></div>
-<table class="tblbc mtrls"><tbody<?php print $tmh; for ($i=1; $i<count($catmat[12]); $i++) { if ($catmat[12][$i]==134) print fmtr1($catmat[12][$i],'4.3.1.','%Люкс Эмаль Эластичная Светостойкая%'); else if ($catmat[12][$i]==135) print fmtr1($catmat[12][$i],'4.2.1.','%Люкс Эмаль Светостойкая Глянцевая%'); else if ($catmat[12][$i]==136) print fmtr1($catmat[12][$i],'4.2.2.','%Люкс Эмаль Светостойкая Полуматовая%'); else if ($catmat[12][$i]==137) print fmtr1($catmat[12][$i],'4.2.3.','%Люкс Эмаль Светостойкая Матовая%'); else print fmtr1($catmat[12][$i]); } ?></tbody></table>
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[12]); $i++) { if ($catmat[12][$i]==134) print fmtr1($catmat[12][$i],'','%Люкс Эмаль Эластичная Светостойкая%'); else if ($catmat[12][$i]==135) print fmtr1($catmat[12][$i],'','%Люкс Эмаль Светостойкая Глянцевая%', ' '); else if ($catmat[12][$i]==136) print fmtr1($catmat[12][$i],'','%Люкс Эмаль Светостойкая Полуматовая%'); else if ($catmat[12][$i]==137) print fmtr1($catmat[12][$i],'','%Люкс Эмаль Светостойкая Матовая%'); else print fmtr1($catmat[12][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -41,8 +41,14 @@
 <p style="padding-left:40px;font-weight:bold;color:#004f92;">Лаки полиуретановые светостойкие, УФ-стойкие</p>
 <table class="tblbc mtrls"><?php print $tmh; for ($i=1; $i<count($catmat[43]); $i++) { print fmtr1($catmat[43][$i]); } ?></tbody></table>
 <div class="px3"></div>
-<p style="padding-left:40px;font-weight:bold;color:#004f92;">Лаки Эластичные</p>
+<p style="padding-left:40px;font-weight:bold;color:#004f92;">Защитные Лаки, блокирующие УФ-излучение <span class="dh3span"style="font-size: 11px;   font-weight: normal;color: #000000; white-space: pre-wrap;">(на растворителях)</span></p>
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[404]); $i++) { print fmtr1($catmat[404][$i]); } ?></tbody></table>
+<div class="px3"></div>
+<p style="padding-left:40px;font-weight:bold;color:#004f92;">Лаки Водные</p>
 <table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[44]); $i++) { print fmtr1($catmat[44][$i]); } ?></tbody></table>
+<div class="px3"></div>
+<p style="padding-left:40px;font-weight:bold;color:#004f92;">Лаки Эластичные</p>
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[45]); $i++) { print fmtr1($catmat[45][$i]); } ?></tbody></table>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>
@@ -141,12 +147,55 @@
 </div>
 <div class="px0b"></div>
 
+<p style="font-weight:bold;font-size:16px;color:#004f92;">&nbsp; <span style="color:#000000;">–</span>&nbsp; 3. Антистатические полы и покрытия</p><div class="px3"></div>
+
+<div class="div_mc" style="height:25px">
+<h3 class="divh4">Антистатические Грунты, Пропитки</h3><div class="px0"></div>
+<div class="divh4p">Цена, руб/кг.</div>
+<div class="px0"></div>
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[31]); $i++) { print fmtr1($catmat[31][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<h3 class="divh4">Антистатические Наливные полы</h3><div class="px0"></div>
+<div class="divh4p">Цена, руб/кг.</div>
+<div class="px0"></div>
+
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[32]); $i++) { print fmtr1($catmat[32][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+<div class="div_mc" style="height:25px">
+<h3 class="divh4">Антистатические Краски, Эмали</h3><div class="px0"></div>
+<div class="divh4p">Цена, руб/кг.</div>
+<div class="px0"></div>
+
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[33]); $i++) { print fmtr1($catmat[33][$i]); } ?></tbody></table>
+<div class="px10"></div>
+</div>
+<div class="px0b"></div>
+
+
 <div class="div_mc">
 <div class="divh3">4. Материалы стойкие к ультрафиолету <span class="divh3span">(полиуретановые, серия Элакор-ПУ «Люкс»)</span></div><div class="px0"></div>
 <div class="divh3pd">Цена, руб/кг.</div><p class="divh3p">Цена, руб/кг.</p>
 <p class="divh3pb">(полиуретановые, серия Элакор-ПУ «Люкс»)</p>
 <div class="px0"></div>
-<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[4]); $i++) { print fmtr1($catmat[4][$i]); } ?></tbody></table>
+<p style="padding-left:40px;font-weight:bold;color:#004f92;">Полиуретановые, на растворителях</p>
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[401]); $i++) { print fmtr1($catmat[401][$i]); } ?></tbody></table>
+<div class="px3"></div>
+<p style="padding-left:40px;font-weight:bold;color:#004f92;">Защитные Лаки, блокирующие УФ-излучение <span class="dh3span"style="font-size: 11px;   font-weight: normal;color: #000000; white-space: pre-wrap;">(на растворителях)</span></p>
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[404]); $i++) { print fmtr1($catmat[404][$i]); } ?></tbody></table>
+<div class="px3"></div>
+<p style="padding-left:40px;font-weight:bold;color:#004f92;">Водные, полиуретановые, паропроницаемые</p>
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[402]); $i++) { print fmtr1($catmat[402][$i]); } ?></tbody></table>
+<div class="px3"></div>
+<p style="padding-left:40px;font-weight:bold;color:#004f92;">Эластичные, полиуретановые <span class="dh3span"style="font-size: 11px;   font-weight: normal;color: #000000; white-space: pre-wrap;">(на растворителях)</p>
+<table class="tblbc mtrls"><tbody><?php print $tmh; for ($i=1; $i<count($catmat[403]); $i++) { print fmtr1($catmat[403][$i]); } ?></tbody></table>
+<div class="px10"></div>
 <div class="px10"></div>
 </div>
 <div class="px0b"></div>

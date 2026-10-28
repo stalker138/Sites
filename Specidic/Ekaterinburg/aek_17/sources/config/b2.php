@@ -69,9 +69,9 @@
 *end*11
 
 *number*12
-*options*		0000000000
+*options*		1000000000
 *file*			block2_12
-*name*			empty12
+*name*			Элакор-ПУ Грунт СК ПРОФ 12
 *end*12
 
 *number*13
@@ -81,9 +81,9 @@
 *end*13
 
 *number*14
-*options*		0000000000
+*options*		1000000000
 *file*			block2_14
-*name*			empty14
+*name*			Грунт тиксотропный Элакор-ПУ
 *end*14
 
 *number*15
@@ -141,15 +141,15 @@
 *end*23
 
 *number*24
-*options*		0000000000
+*options*		1000000000
 *file*			block2_24
-*name*			empty24
+*name*			Эмаль-60 СК ПРОФ - полиуретановая краска для бетона
 *end*24
 
 *number*25
-*options*		0000000000
+*options*		1000000000
 *file*			block2_25
-*name*			empty25
+*name*			Эмаль-60/Т - полиуретановая краска для бетона
 *end*25
 
 *number*26
@@ -441,15 +441,15 @@
 *end*73
 
 *number*74
-*options*		0000000000
+*options*		1000000000
 *file*			block2_74
-*name*			empty74
+*name*			Эпоксидная смола для заливки
 *end*74
 
 *number*75
 *options*		1000000000
 *file*			block2_75
-*name*			Эпоксидный компаунд тиксотропный
+*name*			Клей для каменного ковра
 *end*75
 
 *number*76
@@ -465,9 +465,9 @@
 *end*77
 
 *number*78
-*options*		0000000000
+*options*		1000000000
 *file*			block2_78
-*name*			empty78
+*name*			Эпоксидный компаунд тиксотропный
 *end*78
 
 *number*79
@@ -561,9 +561,9 @@
 *end*93
 
 *number*94
-*options*		0000000000
+*options*		1000000000
 *file*			block2_94
-*name*			empty94
+*name*			Антистатическая краска Люкс АСТ-7, АСТ-6 (светостойкая)
 *end*94
 
 *number*95
@@ -789,9 +789,9 @@
 *end*131
 
 *number*132
-*options*		0000000000
+*options*		1000000000
 *file*			block2_132
-*name*			empty132
+*name*			Антистатический Полиуретан-цементный пол Т1/Б АСТ,-7 3-7мм
 *end*132
 
 *number*133
@@ -825,9 +825,9 @@
 *end*137
 
 *number*138
-*options*		0000000000
+*options*		1000000000
 *file*			block2_138
-*name*			empty138
+*name*			Полиуретан-цементный пол Т4 СК ПРОФ
 *end*138
 
 *number*139
@@ -891,9 +891,9 @@
 *end*148
 
 *number*149
-*options*		0000000000
+*options*		1000000000
 *file*			block2_149
-*name*			empty149
+*name*			Люкс Грунт-В - двухкомпонентный грунт
 *end*149
 
 *number*150
