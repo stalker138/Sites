@@ -1,0 +1,48 @@
+<h1>Наши работы</h1>
+<table style="margin-top:10px;margin-left:50px;width:610px;"><tbody>
+<tr>
+  <td><img class="pb_ismall" src="/img/obj/img1prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img1.jpg',200,25,800,600,'Полы в цехе',-28)" alt="Полы в цехе" title="Полы в цехе"/></td>
+  <td><img class="pb_ismall" src="/img/obj/img2prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img2.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+  <td><img class="pb_ismall" src="/img/obj/img3prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img3.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+</tr>
+<tr style="height:10px;"><td colspan="3"></td></tr>
+<tr>
+  <td><img class="pb_ismall" src="/img/obj/img4prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img4.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+  <td><img class="pb_ismall" src="/img/obj/img5prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img5.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+  <td><img class="pb_ismall" src="/img/obj/img6prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img6.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+</tr>
+<tr style="height:10px;"><td colspan="3"></td></tr>
+<tr>
+  <td><img class="pb_ismall" src="/img/obj/img7prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img7.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+  <td><img class="pb_ismall" src="/img/obj/img8prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img8.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+  <td><img class="pb_ismall" src="/img/obj/img9prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img9.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+</tr>
+<tr style="height:10px;"><td colspan="3"></td></tr>
+<tr>
+  <td><img class="pb_ismall" src="/img/obj/img10prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img10.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+  <td><img class="pb_ismall" src="/img/obj/img11prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img11.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+  <td><img class="pb_ismall" src="/img/obj/img12prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img12.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+</tr>
+<tr style="height:10px;"><td colspan="3"></td></tr>
+<tr>
+  <td><img class="pb_ismall" src="/img/obj/img13prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img13.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+  <td><img class="pb_ismall" src="/img/obj/img14prev.jpg" onclick="fpb_zoomImg(this,'/img/obj/img14.jpg',200,25,800,600,'',-28)" alt="" title=""/></td>
+  <td>&nbsp;</td>
+</tr>
+</tbody></table>
+<div class="pb_hidden">
+<img src="/img/obj/img1.jpg" alt="" />
+<img src="/img/obj/img2.jpg" alt="" />
+<img src="/img/obj/img3.jpg" alt="" />
+<img src="/img/obj/img4.jpg" alt="" />
+<img src="/img/obj/img5.jpg" alt="" />
+<img src="/img/obj/img6.jpg" alt="" />
+<img src="/img/obj/img7.jpg" alt="" />
+<img src="/img/obj/img8.jpg" alt="" />
+<img src="/img/obj/img9.jpg" alt="" />
+<img src="/img/obj/img10.jpg" alt="" />
+<img src="/img/obj/img11.jpg" alt="" />
+<img src="/img/obj/img12.jpg" alt="" />
+<img src="/img/obj/img13.jpg" alt="" />
+<img src="/img/obj/img14.jpg" alt="" />
+</div>

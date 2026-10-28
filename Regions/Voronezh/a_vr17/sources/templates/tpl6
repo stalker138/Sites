@@ -1,0 +1,4 @@
+<?php
+// Подключение IE6NO - баннера
+if (strpos($HTTP_USER_AGENT,'MSIE 6')) include_once $pb_root."auto/inc_ie6no.php";
+?>

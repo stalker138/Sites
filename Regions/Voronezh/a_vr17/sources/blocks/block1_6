@@ -1,0 +1,39 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим»: Воронеж, Воронежская область.</span></p>
+
+<div itemscope itemtype="http://schema.org/Organization" >
+<h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+<table><tbody>
+<tr><td style="width:150px"><span>Контактное лицо:</span>:</td><td>Непряхина Илона</td></tr>
+<!--tr><td style="width:150px"><span>Контактное лицо</span>:</td><td>Непряхина Илона</td></tr>
+<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+74732324495">8-473-232-44-95</a></div><div itemprop="telephone"><a href="tel:89009290139">8-900-929-01-39</a></div></td></tr>
+<tr><td><span>Сотовый</span>:</td><td><div itemprop="telephone"><a href="tel:+79601101017">8-960-110-10-17</a></div></td></tr-->
+<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+74732324495">8-473-232-44-95</a></div></td></tr>
+<tr><td><span>Сотовый</span>:</td><td><div itemprop="telephone"><a href="tel:+79601101017">8-960-110-10-17</a></div><div itemprop="telephone"><a href="tel:89009290139">8-900-929-01-39</a></div></td></tr>
+<tr><td><span>WhatsApp/Telegram</span>:</td><td><div><a href="https://api.whatsapp.com/send?phone=79107324495">+7-910-732-44-95</a><?php f_print_wa('79107324495', 1, 1, 1) ?></div></td></tr>
+
+<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+<tr><td><span>Адрес</span>:</td><td itemprop="streetAddress">394033, Воронежская область, город Воронеж, Ленинский проспект, дом 174Е, офис 308, помещение 1</td></tr>
+</div>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div></td></tr>
+</tbody></table>
+</div>
+
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<div class="px10"></div>
+<div style="cursor:pointer;margin-top:10px;width:200px;height:74px;background:url(/img/css/pismo.png)" onclick="f_swtch(4,1,1)"></div>
+
+<div id="hmap">
+<div class="px10"></div>
+
+<div id="ymaps-map-id_7c790bad271642d692c73366b25c3e8c" style="width:100%; height:400px; max-width:750px;"></div>
+<script type="text/javascript">function fid_7c790bad271642d692c73366b25c3e8c(ymaps) {var map = new ymaps.Map("ymaps-map-id_7c790bad271642d692c73366b25c3e8c", {center: [51.700385, 39.274874], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([51.700385, 39.274874], {balloonContent: "ООО «ОПТИМААГРОСТРОЙ»"}, {preset: "twirl#lightblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_7c790bad271642d692c73366b25c3e8c"></script>
+</div>
+
+
+<div class="pb_hidden"><span id="spIDmail1">im.ruchernozemye@teoh</span></div>
