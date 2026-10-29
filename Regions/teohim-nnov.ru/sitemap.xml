@@ -229,7 +229,15 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-nnov.ru/polymer/poliuretanovyj-grunt-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-nnov.ru/polymer/poliuretanovyj-grunt-dvuhkomponentnyj/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-nnov.ru/polymer/tiksotropnyj-grunt/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -261,11 +269,19 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-nnov.ru/polymer/poliuretanovaja-kraska-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-nnov.ru/polymer/tiksotropnaya-kraska/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-nnov.ru/nalivnye/poliuretan-naliv-pol-napoln/</loc>
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-nnov.ru/nalivnye/poliuretanovye-nalivnye-poly/</loc>
+  <loc>https://teohim-nnov.ru/nalivnye/poliuretanovyj-nalivnoj-pol/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -289,7 +305,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-nnov.ru/polymer/poliuretanovaja-shpaklevka/</loc>
+  <loc>https://teohim-nnov.ru/polymer/poliuretanovaja-shpatlevka/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -341,7 +357,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-nnov.ru/nalivnye/epoksidnye-nalivnye-poly/</loc>
+  <loc>https://teohim-nnov.ru/nalivnye/epoksidnyj-nalivnoj-pol/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -365,7 +381,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-nnov.ru/polymer/smola-art/</loc>
+  <loc>https://teohim-nnov.ru/polymer/smola-art-2/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -381,7 +397,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-nnov.ru/polymer/epoksidnaja-shpakevka/</loc>
+  <loc>https://teohim-nnov.ru/polymer/epoksidnaja-shpatlevka/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -393,11 +409,19 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-nnov.ru/polymer/epoksidnyj-kompaund/</loc>
+  <loc>https://teohim-nnov.ru/polymer/smola-art/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-nnov.ru/polymer/klej-kamnya/</loc>
     <priority>0.5</priority>
 </url>
 <url>
   <loc>https://teohim-nnov.ru/polymer/ed-anker-sostav/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-nnov.ru/polymer/epoksidnyj-kompaund/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -421,7 +445,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-nnov.ru/polymer/poliuretanovyi-lak-polumatovyj/</loc>
+  <loc>https://teohim-nnov.ru/polymer/pu-ljuks-emal-ast-sk-prof/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -485,6 +509,10 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-nnov.ru/nalivnye/pz-t1b-ast/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-nnov.ru/polymer/dvuhkomponentnaja-emal/</loc>
     <priority>0.5</priority>
 </url>
@@ -497,6 +525,10 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-nnov.ru/nalivnye/pz-t4-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-nnov.ru/polymer/dvuhkomponentnyj-lak/</loc>
     <priority>0.5</priority>
 </url>
@@ -506,6 +538,10 @@
 </url>
 <url>
   <loc>https://teohim-nnov.ru/polymer/r-lak-matovyj/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-nnov.ru/polymer/vodnyj-grunt/</loc>
     <priority>0.5</priority>
 </url>
 <url>
