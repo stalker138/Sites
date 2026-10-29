@@ -1,0 +1,42 @@
+</section>
+</div><div class="shiftfooter"></div>
+<div id="header">
+<header>
+<div id="contacts">
+<div><a href="tel:88007077757">8-800-707-77-57</a></div>
+<div><a href="tel:84951077757">8-495-107-77-57</a></div>
+<div id="dpIDmail1">&nbsp;</div>
+<div class="callback" onclick="f_swtch(4);return false;">Обратный звонок</div>
+</div>
+<a href="https://teohim.ru/objlist.php?pos=9" id="aobjlist" target="_blank" title="Объекты на карте с возможностью выбора региона, типа объекта и типа покрытия">Выполненные<br>объекты на карте</a>
+</header>
+</div>
+<div id="leftblock"><div class="px50"></div>
+<div id="ltmenu"><?php include_once $pb_root."auto/inc_menu_lt.php"; ?></div><div class="px0"></div>
+<div id="leftmenu"><aside>{*tpl9*}</aside><div class="px10"></div><div class="callback" onclick="f_swtch(4);return false;">Обратный звонок</div>
+</div><div class="px0"></div>
+</div>
+  <div id="mtblock">
+    <l1 id="1" id="mtlogo"></l1>
+    <div id="mtpanel"><table class="mtlink"><tbody><tr>
+      <th onclick="location.href='/price/'" style="border-right:solid 1px #000000;">ЦЕНЫ<br>материалы</th><th onclick="location.href='/calc-nn/'" style="border-right:solid 1px #000000;">РАСЧЕТ<br>покрытий</th>
+    </tr></tbody></table></div>
+  </div>
+  <div id="ltblock" onclick="f_ltblock()"></div>
+</div>
+<div id="footer"><footer><div id="fcontent"><div id="fmenu"></div>
+  <div id="fcount" style="text-align:right"></div>
+  <?php if ($pb_page>50) { ?><div style="position:absolute;right:5px;top:30px"><l0 id="30">Политика конфиденциальности</l0></div><?php } ?>
+</div>
+<?php
+$exlude_pages = array(1001, 1121, 1011, 1012, 1013, 1015, 1016, 1019, 1030, 1031, 1032, 
+1035, 1036, 1039, 1096, 1081, 1041, 1047, 1046, 1051, 1054, 1061, 1064, 1123, 1111, 1062, 1091, 1094, 1068, 1042, 1105, 1070, 1024, 1017, 1103, 1104, 1112, 1108, 1021, 1040, 1085, 1077, 1076, 1014, 1025, 1106, 1027);
+if (!in_array($pb_page, $exlude_pages)) { ?>
+
+<div id="idnalivnoj">Все о наливных полимерных полах <a href="https://teohim.ru/nalivnye/">здесь</a> - сайт производителя</div>
+
+<?php } ?>
+</div></footer>
+</div>
+<div id="topline"></div>
+<div class="pb_hidden"><span id="spIDmail1">im.ruteohim-nnov@teoh</span></div>

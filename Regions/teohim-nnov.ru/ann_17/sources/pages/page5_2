@@ -1,0 +1,8 @@
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}{*tpl3*}</head><body>{*tpl7*}
+<style>
+#id_mgl1,#id_mgl2,#id_mgl3,#id_mgl4 { margin-left:20px; }
+
+@media screen and (max-width:499px) { #id_mgl1,#id_mgl2,#id_mgl3,#id_mgl4 { margin-left:0; } }
+</style>
+{*block5_2*}
+{*tpl8*}{*tpl4*}</body></html>

@@ -1,0 +1,55 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим» в Нижнем Новгороде и Нижегородской области.</span></p>
+
+<div itemscope itemtype="http://schema.org/Organization" >
+<h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+<table><tbody>
+<tr><td colspan="2"><span>Купить материал / заказать работу</span>:</td><td></td></tr>
+<tr><td style="width:175px;"><span>E-mail для заявок</span>:</td><td><div><span id="dpIDmail3"></span></div></td></tr>
+<tr><td><span>Телефон для консультаций</span>:</td><td><div><a href="tel:88007077757">8-800-707-77-57</a></div><div><div><a href="tel:84951077757">8-495-107-77-57</a></div></td></tr>
+<tr><td><span>WhatsApp</span>:</td><td><div><a href="https://api.whatsapp.com/send?phone=79100077710">+7 (910) 007-77-10</a><?php f_print_wa('79100077710', 1, 0, 1) ?></div></tr>
+<tr><td><span>Склад</span>:</td><td itemprop="address">г. Нижний Новгород, ул. Белинского, д. 97Б</td></tr>
+<?php if (1==2) { ?><tr><td><span>Instagram</span>:</td><td><span><a href="https://instagram.com/teohimnnov" target="_blank">teohimnnov</a></span></td></tr><?php } ?>
+<!--tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail2"></span></div></td></tr-->
+<tr><td></td></tr>
+<tr><td></td></tr>
+</tbody></table>
+</div>
+<div class="px10"></div>
+<table><tbody>
+<span>Реквизиты ООО «ТэоХим Нижний Новгород»</span>:</tr>
+<tr><td style="width:150px;"><span>ИНН/КПП</span>:</td><td>5260457341/526001001</td></tr>
+<tr><td><span>ОКПО</span>:</td><td>32671724</td></tr>
+<tr><td><span>БИК</span>:</td><td>044525593</td></tr>
+<tr><td><span>Банк получателя</span>:</td><td>АО «АЛЬФА-БАНК»</td></tr>
+<tr><td><span>Кор. счет</span>:</td><td>30101810200000000593</td></tr>
+<tr><td><span>Номер счета рублевый</span>:</td><td>40702810402780003920</td></tr>
+<tr><td style="width:150px;"><span>Генеральный директор</span>:</td><td colspan="3">Сафонов Игорь Владимирович</td></tr>
+<tr><td><span>Идентификатор ЭДО</span>:</td><td>2BEcaf5fc4bf60447bf9cc02ad9794696d5 Компания "Тензор"</td></tr>
+</tbody></table>
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<img src="/img/css/pismo.png" alt="" onclick="f_swtch(4)" />
+
+<!--div id="hmap">
+<div class="px10"></div>
+
+<iframe src="https://yandex.ru/map-widget/v1/-/CCQxMJHFWD" width="100%" height="400" max-width="750" frameborder="0"></iframe>
+
+</div-->
+
+<div id="hmap">
+<div class="px10"></div>
+
+<div id="ymaps-map-id_7c790bad271642d692c73366b25c3e8c" style="width:100%; height:400px; max-width:750px;"></div>
+<script type="text/javascript">function fid_7c790bad271642d692c73366b25c3e8c(ymaps) {var map = new ymaps.Map("ymaps-map-id_7c790bad271642d692c73366b25c3e8c", {center: [56.319424, 44.031840], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([56.319424, 44.031840], {balloonContent: "ООО «ТэоХим Нижний Новгород»"}, {preset: "twirl#lightblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_7c790bad271642d692c73366b25c3e8c"></script>
+</div>
+
+
+<div class="pb_hidden"><span id="spIDmail1">im.ruteohim-nnov@teoh</span></div>
+<div class="pb_hidden"><span id="spIDmail2">im.ruis@teoh</span></div>
+<div class="pb_hidden"><span id="spIDmail3">im.ruteohim-nnov@teoh</span></div>

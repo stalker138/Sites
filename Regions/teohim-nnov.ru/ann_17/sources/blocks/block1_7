@@ -1,0 +1,33 @@
+<h1>Промышленные полы фото</h1>
+<table style="width: 100%;">
+  <tr>
+    <td>
+      <p style="text-align: center; margin-top: 14px;"><img src="/img/obj/razrusheno.jpg.jpg" alt="Разрушено"></p>
+      <p style="text-align: center; margin-top: 0;">Разрушено</p>
+    </td>
+    <td>
+      <p style="text-align: center; margin-top: 14px;"><img src="/img/obj/vosstanovleno.jpg" alt="Восстановлено"></p>
+      <p style="text-align: center; margin-top: 0;">Восстановлено</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p style="text-align: center; margin-top: 14px;"><img src="/img/obj/armirovanie.jpg.jpg" alt="Армирование"></p>
+      <p style="text-align: center; margin-top: 0;">Армирование</p>
+    </td>
+    <td>
+      <p style="text-align: center; margin-top: 14px;"><img src="/img/obj/ustroystvo_betonnogo_osnovaniya.jpg.jpg" alt="Устройство бетонного основания"></p>
+      <p style="text-align: center; margin-top: 0;">Устройство бетонного основания</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p style="text-align: center; margin-top: 14px;"><img src="/img/obj/topping.jpg.jpg" alt="Топпинг"></p>
+      <p style="text-align: center; margin-top: 0;">Топпинг</p>
+    </td>
+    <td>
+      <p style="text-align: center; margin-top: 14px;"><img src="/img/obj/polimernoe_epoksidnoe_pokrytie.jpg.jpg" alt="Полимерное, эпоксидное покрытие"></p>
+      <p style="text-align: center; margin-top: 0;">Полимерное, эпоксидное покрытие</p>
+    </td>
+  </tr>
+</table>
