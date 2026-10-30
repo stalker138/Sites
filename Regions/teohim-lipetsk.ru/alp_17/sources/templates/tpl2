@@ -1,0 +1,67 @@
+<?php // tpl2 - Для раздела HEAD внешние css и js-файлы, стили и скрипты.
+{*text1_12*}
+if ($pb_page<3000 || $pb_page>3300) print '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+?>
+<?php print '<!--'.$pb_page.'-->'; ?>
+<link rel="icon" href="/favicon.ico" type="image/ico"/><link rel="icon" type="image/png" href="/favicon.png"/><link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<?php // tpl2 - Для раздела HEAD внешние css и js-файлы, стили и скрипты.
+if ($pb_page>2000 && $pb_page<2004) print '<meta name="robots" content="noindex, nofollow, noarchive"/>';
+else print '<meta name="robots" content="noarchive"/>';
+?>
+
+<link rel="canonical" href="<?php print $pb_domain.$pb_full_url; ?>">
+{*text0_1*}{*text0_3*}{*text0_24*}
+<?php
+
+if ($pb_page=={*text2_1*}) { ?>
+<style>
+#content { width:770px; min-width:770px; max-width:770px; padding:10px 0; border:none 0px; }
+h2 { font-size:14px; line-height:20px; color:#ffffff; background:#004f92; }
+.divPriceD { display:block; } .divPriceM { display:none; }
+#id_calcHead { position:relative; float:left; width:320px; box-shadow:4px 4px 7px 0 #999999; }
+#id_calcHead table, #id_calcHead table th, #id_calcHead table td { text-align:left; border-collapse:collapse; border:solid 1px #000000; } #id_calcHead table .pad0 { padding:0; }
+.thead { padding:0 0 0 2px; height:23px; font-weight:bold; font-size:13px; text-align:left; background:yellow; }
+table .tdleft { width:195px; padding:0 0 0 2px; }
+.i_t, .i_t option { padding:0; margin:0; width:120px; height:22px; font-size:13px; text-align:left; line-height:22px; border:none 0px; font-weight:bold; background:#49ff79; }
+#dcalc { position:relative; float:left; margin:0 0 0 50px; width:200px; font-size:11px; line-height:13px; text-align:center; }
+#dcalc input { margin:0; width:180px; height:30px; font-weight:bold; font-size:13px; letter-spacing:1px; text-shadow:2px 2px 2px #ffffff; box-shadow:4px 4px 7px 0 #999999; }
+.tmtr td { height:22px; font-size:13px; line-height:22px; } .tmtr td a { font-size:13px; text-decoration:underline; } .tmtr td a:hover { text-decoration:none; }
+.tmtr .tmdl { padding-left:5px; text-align:left; font-weight:bold; } #content .tmdl a { font-weight:bold; }
+
+#id_oc_all { float:right; margin:0; text-align:center; }
+#id_open_all,#id_close_all { cursor:pointer; float:right; margin:5px 0 0 10px; font-size:11px; text-decoration:underline; color:#004f92; } #id_open_all:hover,#id_close_all:hover { color:#f00000; }
+@media screen and (max-width:999px){ #main,#footer { width:auto; min-width:auto; max-width:999px; } #content { margin:0 3px 0 7px; padding:50px 0 10px 0; top:0; width:960px; min-width:960px; max-width:960px; } }
+@media screen and (max-width:799px) { #content { width:auto; min-width:320px; max-width:799px; } .divPriceD { display:none; } .divPriceM { display:block; } }
+@media screen and (max-width:630px) { .divh3 { font-size:13px; } }
+@media screen and (max-width:499px) { .divh3_5 { padding:5px 0 15px 25px; width:93%; line-height:15px; } }
+</style>
+<?php }
+
+if ($pb_page>3000 && $pb_page<3300) { ?>
+<style>{*text0_50*}</style>
+<?php }
+
+if($pb_page=={*text2_1*} || ($pb_page>3000 && $pb_page<3300)) {
+  print '{*text0_2*}';
+}
+?>
+
+<?php
+if (isset($postSMTP) && $postSMTP!=false) {
+  if ($pb_page>3000 && $pb_page<4000) { ?>
+<script src="https://elakors.ru/cssjs/vcorp_js_0003.js"></script>
+<script src="https://elakors.ru/cssjs/js000_elakors3_.js"></script>
+<?php }
+}
+?>
+
+<?php if($pb_page==1006) { ?>
+<style>
+#content td { padding:2px 0; vertical-align:top; }
+#content td div { display:inline-block; margin-right:50px;}
+#content td div a { white-space:nowrap; }
+</style>
+<?php } ?>
+
+<style>{*text0_16*}</style>

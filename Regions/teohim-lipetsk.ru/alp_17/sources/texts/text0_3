@@ -1,0 +1,12 @@
+<style>
+#teohim p { top:-10px; }
+#phblock { top:10px; left:570px; width:450px; height:105px; }
+#topmenu { background:#f0f0f0; } #topmenub { width:634px; height:145px; }
+ul li { font:normal 12px tahoma;}
+h1 { background:transparent; text-align:justify; }
+#eltxt { font-size:15px; letter-spacing:1.4px; font-weight:normal; color:#ff5506; top:2px; left:17px; }
+#elakor { top:150px; }
+#contacts { top:77px; }
+#contacts div.callback { top:5px; }
+
+</style>
