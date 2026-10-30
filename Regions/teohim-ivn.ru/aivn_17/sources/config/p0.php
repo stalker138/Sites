@@ -105,7 +105,7 @@
 *number*11
 *options*		0000000000
 *file*			page0_11
-*name*			empty11
+*name*			NAVIGATOR
 *link*			empty
 *title*			empty
 *keyw*			empty

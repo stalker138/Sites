@@ -1,20 +1,4 @@
-<?php
-// Запись в файл информации об открытии страниц
-$t=$_SERVER['REMOTE_ADDR']; $r=$_SERVER['HTTP_REFERER']; $f='open'; $p=strpos($_SERVER['HTTP_USER_AGENT'],'bot');
-$ip6=array('2a05:544:','2a09:6281:','2a09:e2c0:','2a09:e2c1:','2a09:e2c2:','2a09:e2c3:','2a0a:981:','2a0d:8340:','2a0e:e5c','2a0f:9e0','2a10:4107:','2a10:cbc0:','2a11:2083:','2a11:68c1:','2a11:830','2a11:8447:','2a11:91c','2a11:af0','2a11:cd0','2a12:1e8','2a12:c30','2a13:858','2a14:2dc','2a14:7b8');
-if ($t!='{*text5_1*}') {
-if (!$p || $p<1) {
- if (!$r && substr($t,0,11)>='178.176.64.' && substr($t,0,11)<'178.176.96.') { $f='ban'; }
- if (!$r && substr($t,0,10)>='31.173.80.' && substr($t,0,10)<'31.173.88.') { $f='ban'; }
- if (!$r && substr($t,0,10)>='94.25.168.' && substr($t,0,10)<'94.25.176.') { $f='ban'; }
- $cnt=count($ip6); for ($i=0; $i<$cnt; $i++) { if (!$r && substr($t,0,strlen($ip6[$i]))==$ip6[$i]) { $f='ban'; $i=$cnt; } }
-}
- $h=@fopen($_SERVER["DOCUMENT_ROOT"].'/_open/'.$f,'a+'); if ($h) {
-   $t=''.date("d-m-Y - H:i:s").chr(9).$t.chr(9).chr(9).$_SERVER['REQUEST_URI'].chr(9).chr(9).$_SERVER['HTTP_USER_AGENT'].chr(9).$_SERVER['HTTP_REFERER'];
-   $t=str_replace(chr(10),'',$t); $t=str_replace(chr(13),'',$t); $t.=chr(10);
-   @fwrite($h,$t); @fclose($h);
- }
-if ($f=='ban') { header("HTTP/1.1 204 No Content"); exit; }
-}
-?>
 <!DOCTYPE html><html lang="ru" prefix="og: https://ogp.me/ns#"><head>
+<?php
+$no_metrix=0;
+?>

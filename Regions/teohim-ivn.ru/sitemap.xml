@@ -233,7 +233,15 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-ivn.ru/polymer-ivn/poliuretanovyj-grunt-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-ivn.ru/polymer-ivn/poliuretanovyj-grunt-dvuhkomponentnyj/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-ivn.ru/polymer-ivn/tiksotropnyj-grunt/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -262,6 +270,14 @@
 </url>
 <url>
   <loc>https://teohim-ivn.ru/polymer-ivn/poliuretanovyj-lak/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-ivn.ru/polymer-ivn/poliuretanovaja-kraska-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-ivn.ru/polymer-ivn/tiksotropnaya-kraska/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -369,7 +385,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-ivn.ru/polymer-ivn/smola-art/</loc>
+  <loc>https://teohim-ivn.ru/polymer-ivn/smola-art-2/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -397,11 +413,19 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-ivn.ru/polymer-ivn/epoksidnyj-kompaund/</loc>
+  <loc>https://teohim-ivn.ru/polymer-ivn/smola-art/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-ivn.ru/polymer-ivn/klej-kamnya/</loc>
     <priority>0.5</priority>
 </url>
 <url>
   <loc>https://teohim-ivn.ru/polymer-ivn/ed-anker-sostav/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-ivn.ru/polymer-ivn/epoksidnyj-kompaund/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -425,7 +449,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-  <loc>https://teohim-ivn.ru/polymer-ivn/poliuretanovyi-lak-polumatovyj/</loc>
+  <loc>https://teohim-ivn.ru/polymer-ivn/pu-ljuks-emal-ast-sk-prof/</loc>
     <priority>0.5</priority>
 </url>
 <url>
@@ -489,6 +513,10 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-ivn.ru/nalivnye-ivn/pz-t1b-ast/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-ivn.ru/polymer-ivn/dvuhkomponentnaja-emal/</loc>
     <priority>0.5</priority>
 </url>
@@ -501,6 +529,10 @@
     <priority>0.5</priority>
 </url>
 <url>
+  <loc>https://teohim-ivn.ru/nalivnye-ivn/pz-t4-sk-prof/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
   <loc>https://teohim-ivn.ru/polymer-ivn/dvuhkomponentnyj-lak/</loc>
     <priority>0.5</priority>
 </url>
@@ -510,6 +542,10 @@
 </url>
 <url>
   <loc>https://teohim-ivn.ru/polymer-ivn/r-lak-matovyj/</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://teohim-ivn.ru/polymer-ivn/vodnyj-grunt/</loc>
     <priority>0.5</priority>
 </url>
 <url>
