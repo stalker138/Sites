@@ -1,0 +1,40 @@
+<?php $tlm=' style="text-shadow:#005093 1px 1px 2px; color:#ffffff; background:#f00000;"'; ?>
+<div class="lmdiv">
+<l1 id="3"<?php if ($pb_page==1003) print $tlm; ?>>Материалы, ЦЕНЫ</l1><div class="px5_"></div>
+<l1 id="10"<?php if ($pb_page==1010) print $tlm; ?>>Калькулятор</l1>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+
+<l1 id="7"<?php if ($pb_page==1007) print $tlm; ?>>Наши работы, Фото</l1><div class="px5_"></div>
+<l1 id="9"<?php if ($pb_page==1009) print $tlm; ?>>Задачи и решения</l1>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+
+<a href="https://teohim.ru/tech/" target="_blank"<?php if ($pb_page==1004) print $tlm; ?>>Инструкции</a><div class="px5_"></div>
+<a href="https://teohim.ru/sert/" target="_blank"<?php if ($pb_page==1005) print $tlm; ?>>Сертификаты</a><div class="px5_"></div>
+<l1 id="2"<?php if ($pb_page==1002) print $tlm; ?>>Таблица цветов</l1><div class="px5_"></div>
+<div class="px5b"></div><div class="px5"></div><div class="px5_"></div>
+<l1 id="8"<?php if ($pb_page==1008) print $tlm; ?>>О Компании</l1><div class="px5_"></div>
+<l1 id="6"<?php if ($pb_page==1006) print $tlm; ?>>Контакты</l1>
+</div>
+
+<div class="px10"></div>
+
+<?php if ($pb_page!=1020) { ?>
+<div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'http://www.teohim-yr.ru/search/','arrow':false,'bg':'transparent','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'Поиск по teohim-yr.ru','suggest':false,'target':'_self','tld':'ru','type':3,'usebigdictionary':false,'searchid':2243898,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'поиск по сайту','input_placeholderColor':'#000000','input_borderColor':'#7f9db9'}"><form action="https://yandex.ru/search/site/" method="get" target="_self"><input type="hidden" name="searchid" value="2243898"/><input type="hidden" name="l10n" value="ru"/><input type="hidden" name="reqenc" value=""/><input type="search" name="text" value=""/><input type="submit" value="Найти"/></form></div>
+<script>(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+<div class="px5b"></div><div class="px5"></div>
+<?php } ?>
+
+<div class="lmdiv">
+<!--noindex-->
+<script src="//vk.com/js/api/openapi.js?108"></script>
+<!-- VK Widget -->
+<div id="vk_groups"></div>
+<script>
+VK.Widgets.Group("vk_groups", {mode: 1, wide:0, width: "195", height: "300", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 66445388);
+</script>
+
+<?php if(1==1001) { ?>
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/pages/%D0%9E%D0%9E%D0%9E-%D0%A2%D1%8D%D0%BE%D1%85%D0%B8%D0%BC-%D0%AF%D1%80/776583369053170&amp;width=195&amp;height=88&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=true&amp;show_border=true" style="border:none; overflow:hidden; width:195px; height:88px; background:transparent;"></iframe>
+<?php } ?>
+<!--/noindex-->
+</div>
