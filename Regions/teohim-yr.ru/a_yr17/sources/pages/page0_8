@@ -1,4 +1,4 @@
-<?php if ($pb_page==51 || $pb_page==2001) { ?>{*text0_20*}<?php } ?>
+<?php if ($is_basket) { ?>{*text0_20*}<?php } ?>
 </section>
 </div><div class="shiftfooter"></div>
 <div id="header">
