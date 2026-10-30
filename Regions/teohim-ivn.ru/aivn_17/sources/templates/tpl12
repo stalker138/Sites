@@ -1,0 +1,42 @@
+<style type="text/css">
+.d_text1 {
+    font: italic 13px arial;
+    float: left;
+    width: 343px;
+    color: rgb(24, 104, 171);
+    padding: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    text-align: left;
+}
+#banner_video {
+    position: relative;
+    float: right;
+    margin-left: 5px;
+    width: 372px;
+    height: 150px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    background: none repeat scroll 0% 0% rgb(240, 240, 240);
+    box-shadow: 4px 4px 7px 0px rgb(153, 153, 153);
+    overflow: visible;
+}
+#banner_video div {
+    position: absolute;
+    top: 10px;
+    left: 103px;
+    width: 270px;
+    height: 80px;
+    font: bold 26px arial;
+    color: rgb(24, 104, 171);
+    text-shadow: 1px 2px 2px rgb(255, 255, 255);
+    text-align: center;
+}
+#banner_video img {
+    cursor: pointer;
+    position: absolute;
+    border: medium none;
+    background: none repeat scroll 0% 0% transparent;
+}
+</style>
+

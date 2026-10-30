@@ -1,0 +1,37 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим»: Иваново, Ивановская область.</span></p>
+
+<div itemscope itemtype="http://schema.org/Organization" >
+<h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+<table><tbody>
+<tr><td style="width:150px;"><span>Контактное лицо</span>:</td><td>Шаталов Андрей Александрович</td></tr>
+<tr><td><span>Адрес</span>:</td><td itemprop="address">г. Иваново, Фабричный проезд, д.6.<br>Для проезда на склад заезд к грузовым воротам через Фабрику Балашова (см. <a href="#sxema" style="font-weight:bold;">схему</a>).</td></tr>
+<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+79303303640">+7 (930) 330-36-40</a></div><div itemprop="telephone"><a href="tel:+79203443491">+7 (920) 344-34-91</a><?php f_print_wa('79203443491', 1, 1, 1) ?></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div></td></tr>
+</tbody></table>
+</div>
+
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<img src="/img/css/pismo.png" alt="" onclick="f_swtch(4)" style="cursor:pointer"/>
+<!--div id="hmap">
+<div class="px10"></div>
+<iframe src="https://yandex.ru/map-widget/v1/-/CGw6ePLl" width="100%" height="400" max-width="750" frameborder="0"></iframe>
+
+</div-->
+<div id="hmap">
+<div class="px10"></div>
+
+<div id="ymaps-map-id_7c790bad271642d692c73366b25c3e8c" style="width:100%; height:400px; max-width:750px;"></div>
+<script type="text/javascript">function fid_7c790bad271642d692c73366b25c3e8c(ymaps) {var map = new ymaps.Map("ymaps-map-id_7c790bad271642d692c73366b25c3e8c", {center: [57.011275, 40.953649], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([57.011275, 40.953649], {balloonContent: "ООО «ТЭОХИМ-ИВАНОВО»"}, {preset: "twirl#lightblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_7c790bad271642d692c73366b25c3e8c"></script>
+</div>
+
+<div class="px10"></div>
+<p id="sxema"><span>Схема проезда</span><p>
+<img src="/img/sxema_ivn.png" alt="" style="width:100%;max-width:750px;">
+
+<div class="pb_hidden"><span id="spIDmail1">im.ruivanovo@teoh</span></div>

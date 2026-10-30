@@ -1,0 +1,36 @@
+<style>
+html,body { background:#ffffff; } html { overflow-y:scroll; }
+
+#eltxt { font-size:15px; letter-spacing:1.4px; font-weight:normal; color:#ff5506; top:2px; left:17px; }
+#elakor { top:150px; }
+#contacts { top:80px; }
+#contacts div.callback { top:5px; }
+
+#content { padding:26px 15px 10px 15px; font:normal 13px arial; }
+#content p strong, #content p em, #content p span { font:bold 13px arial; color:#000000; } #content p .i { font:italic normal 13px arial; }
+
+#nav { position:absolute; left:220px; top:225px; z-index: 1; width:758px; max-width:758px; height:16px; padding-left:20px; background:url(/img/css/nav_i.png) left center no-repeat #ffffff; border:solid 1px #c8c8c8; }
+#nav div { font:normal 11px arial; height:15px; padding-top:1px; } #nav div div { float:left; height:15px; padding-top:0; } #nav div div a { font:normal 11px arial; color:#000000; }
+#nav .navs { margin-left:5px; width:15px; height:16px; background:url(/img/css/navsep.png) left center no-repeat; }
+
+#mainnav { top:250px; left:220px; width:780px; height:35px; background:url(/img/css/mainnav-bg.png) repeat-x; } #mainnav ul,#mainnav li { float:left; margin:0; padding:0; display:inline; }
+#mainnav ul { background:url(/img/css/mainnav-li.png) 100% 0 no-repeat; } #mainnav li { background:url(/img/css/mainnav-li.png) no-repeat; }
+#mainnav a { color:#004795; display:block; font:bold 15px tahoma; height:17px; outline:medium none; padding:0 21px 10px 20px; }
+#mainnav a:hover { text-decoration:none;    border-bottom:8px solid #004795; background:url(/img/css/arrow2.gif) no-repeat center bottom; color:#e44500; }
+
+#nav { left:220px; top:225px; z-index: 1; width:758px; max-width:758px; height:16px; padding-left:20px; background:url(/img/css/nav_i.png) left center no-repeat #ffffff; border:solid 1px #c8c8c8; }
+#nav div { font:normal 11px arial; height:15px; padding-top:1px; } #nav div div { float:left; height:15px; padding-top:0; } #nav div div a { font:normal 11px arial; color:#000000; }
+#nav .navs { margin-left:5px; width:15px; height:16px; background:url(/img/css/navsep.png) left center no-repeat; }
+
+#phblock { top:10px; left:570px; width:450px; height:105px; }
+#topmenu { z-index:2; background:#f0f0f0; } #topmenub { width:634px; height:145px; }
+#sub_block { height:120px; }
+#teohim p {font-size:12px; top:-8px;}
+h2 { text-align:justify; }
+ul li { font:normal 12px tahoma;}
+.tmtr { margin:5px 0 0 0; }
+.tmtr th span { color:#000000; } #content .tmtr td a { text-decoration:underline; } .tmtr td span { color:#000000; }
+.tml,.tdl { text-align:left; padding-left:5px } .tdr { text-align:right; }
+
+@media screen and (max-width:600px) { #content { float:none; min-width:294px; } }
+</style>

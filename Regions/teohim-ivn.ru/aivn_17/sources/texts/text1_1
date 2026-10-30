@@ -1,0 +1,1 @@
+<div class="px3"></div><div class="consult"><a href="tel:+79203443491" style="display:inline-block; padding-right:10px; vertical-align:middle;"><span>Нужна консультация?</span><br>Звоните: +7 (920) 344-34-91</a><?php f_print_wa('79203443491', 1, 1, 0, 1) ?></div><div class="px5"></div>
