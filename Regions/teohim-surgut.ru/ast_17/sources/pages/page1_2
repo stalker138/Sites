@@ -1,0 +1,57 @@
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}
+<style>
+.cl_oc_all { float:right;margin:-19px 0 0 0; }
+.cl_open_all,.cl_close_all { cursor:pointer; float:right; margin:0 0 0 10px; font-size:11px; text-decoration:underline; color:#004f92; } .cl_open_all:hover,.cl_close_all:hover { color:#f00000; }
+.dral { cursor:pointer; position:relative; display:inline-block; margin:5px 1px 0 0; width:90px; height:53px; text-align:center; border:solid 1px transparent; }
+.dral span { font:bold 12px arial; line-height:20px; }
+.dral div { position:relative; width:100%; height:33px; }
+.dral:hover { border:solid 1px #004f92; transition:border 0.3s ease-out 0s; }
+.div_mo,.div_mc { height:25px; } .divh4 { padding:4px 0 6px 25px; } .div_mc .divh4:before, .div_mo .divh4:before { left:5px; }
+.tsrt { margin:0; width:auto; border:solid 1px #808080; } .tsrt th { padding:3px 5px; height:20px; border:solid 1px #808080; background:#eeeeee; } .tsrt td { height:30px; border:solid 1px #c8c8c8; border-collapse:separate; }
+.tsrt .tal { padding:0 0 0 5px; text-align:left; }
+.tsrt .td1 { font-weight:bold; } .tsrt .td4 { padding-left:20px; text-align:left; }
+.tsrt .td2, .tsrt .td22, .td7035 { cursor:pointer; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAIAAAC0tAIdAAAAB3RJTUUH4wkWDRgjDMLTxgAAAhFJREFUeJxVkr1r6mAUxl/fJDqUdPFjchYEu2gRHPQ/cClSROnglkEEKYKTQovi6OToJgi6uNnBwWIpOAixIPgBOgiVaCSoSEzy5tzhvbfXPtMznfP8znksAID+abVajcfj0+lkt9v9fr/T6US/hQ3DQAh9fX0lk8l2u+10Ou/u7jiOq1argiDs93uE0P+JpmmKohiNRkVRhN/qdDqxWExRFEKIaZoAgM7ncyKRmE6nAKBp2na7LZVKuq6rqgoArVYrn88DgGEYAIALhcL9/b3H4yGEcByHMV6v1yzL2mw20zRjsdh2u12v1wzDAACu1+uRSMQ0TUVRZFne7XaEEGoOhwMA+Hy+0WhEM7OKovA8jzGu1WqSJKmqOhwOX15eCCF+vz+VSvE8fzwe/1K63e6Pjw9CCCXb7/fZbJZ6SlapVLrdLo2Oc7nc29sbxvhyuVBQGoAQQo87m80CgQBCCGOMM5nM9/d3r9ejWFarNRQK0VUcx5XLZZfL5XA4NE2zWCxI1/XNZvPw8NBut6+PTQipVCpPT0+CIHx+fgKArusWwzAYhlEU5fX19Xw+e73em5sbWZYXi8Xt7a2qqul0ulgsPj8/B4NB9EMDAMvlstPpNBqNbrcrSRIA9Pv9eDw+n88fHx8HgwH6waffuhblHgwG8Xh8MpkIgmD5aQwhhGGY68ZpmoYxZln2/f292WyGw+E/u4qiMqJ5G4sAAAAASUVORK5CYII=') no-repeat right bottom; }
+.td7035 { display:block; float:left; margin:5px 0 0 10px; width:90px; height:30px; background-color:#CBD0CC; border:solid 1px #CBD0CC; } .d7035m { display:none; float:none; margin:1px 0; }
+.divt1,.divt2,.divt3 { float:left; margin:0 20px 0 0;} .divt3 { margin:0; }
+@media screen and (max-width:999px) { .divt2 {  } .cl_oc_all { margin:0; } }
+@media screen and (max-width:610px) { .d7035d { display:none; } .d7035m { display:block; } }
+
+</style>
+{*tpl3*}</head><body>{*tpl7*}
+{*block1_2*}
+{*tpl8*}{*tpl4*}
+<script>
+function f_page0250(o,f) {
+  var a,p,i,h;
+  a=document.querySelectorAll('.divh4'); if (a) {
+    for (i=0; i<a.length; i+=1) {
+        p=a[i].parentNode; h=parseInt(fpb_getStyle(p,'height'),10); p.className=f?'div_mo':'div_mc'; if ((f&&h==25) || (!f&&h!=25)) fpb_a_height(p,200,25,p.scrollHeight,25);
+    }
+  }
+}
+fpb_ready(function(e) {
+var i, a=document.querySelectorAll('.dral'); if(!a)return;
+for (i=0; i<a.length; i+=1) pb_event.add(a[i],'click',function(e){
+  f_message('<span>'+this.querySelector('span').innerHTML+'</span> &nbsp; &nbsp; (&lt;Esc&gt; - закрыть окно)','<div style="position:absolute; top:0; right:0; bottom:0; left:0; background:'+this.querySelector('div').style.background+'"></div>',700,500);
+});
+a=document.querySelectorAll('.td2,.td22,.td7035'); if(!a)return;
+for (i=0; i<a.length; i+=1) pb_event.add(a[i],'click',function(e){
+  var f=this.className=='td2'?'.td1':'.td4'; f = (this.className=='td7035') ? '7035 Базовый цвет' : this.parentNode.querySelector(f).innerHTML;
+  f_message('<span>RAL '+f+'</span> &nbsp; &nbsp; (&lt;Esc&gt; - закрыть окно)','<div style="position:absolute; top:0; right:0; bottom:0; left:0; background:'+((this.className=='td7035') ? '#CBD0CC':this.style.backgroundColor)+'"></div>',700,500);
+});
+/* Проверка на страницу с вкладками (материалы) - и установка обработчика смены активной вкладки */
+if (fpb_ById('mtr_tabs')) {
+    fpb_setEventHandlers('click', function(e) { /* Функция pb_event.add() - установки одного обработчика function(e) на несколько объектов */
+        var i, p, obj = e.target || e.srcElement; while (!obj.id) obj = obj.parentNode; /* Получение ссылки obj на <div id="mtr_tabs_N"> */
+        for (i=1; i<=4; i+=1) {
+            p=fpb_ById('mtr_tabs_'+i); if(p) p.className=''; /* Снятие класса active со всех заголовков вкладок */
+            p=fpb_ById('mtr_body_'+i); if(p) p.className=''; /* Снятие класса active со всех вкладок */
+        }
+        obj.className='active'; /* Установка класса active на заголовок выбранной вкладки */
+        p=fpb_ById('mtr_body_'+obj.id.substr(9,1)); if(p) p.className='active'; /* Установка класса active на выбранную вкладку */
+    },['mtr_tabs_1','mtr_tabs_2','mtr_tabs_3','mtr_tabs_4']); /* Массив с перечислением ID объектов */
+}
+
+});
+</script>
+</body></html>

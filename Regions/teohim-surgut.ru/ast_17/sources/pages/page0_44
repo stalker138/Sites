@@ -1,0 +1,415 @@
+<?php
+ {*text0_44*}
+$txt=@file_get_contents('https://elakors.ru/sys/equips');
+$a_ids=false;
+$a_id=false;
+$equips=false;
+$strs=explode(chr(10),$txt);
+foreach($strs as $str) {
+  $equip=explode(chr(9),$str);
+  $equip[0]=$tss_head.$equip[0];
+  $equips[$equip[1]]=$equip;
+  $a_id=$a_ids[$equip[2]];
+  $a_id[]=$equip[1];
+  $a_ids[$equip[2]]=$a_id;
+}
+$txt=@file_get_contents('https://elakors.ru/sys/cats');
+$eq_cats=false;
+$strs=explode(chr(10),$txt);
+foreach($strs as $str) {
+  $cat=explode(chr(9),$str);
+  $cat[0]=$tss_head.$cat[0];
+  $cat[4]=$tss_head.$cat[4];
+  $s_gal=$cat[8];
+  if ($s_gal!=''){
+    $agals=explode(';',$s_gal);
+    $s_gal='';
+    foreach($agals as $sgal){
+      $s_gal.=$tss_head.$sgal.';';
+    }
+    $s_gal = substr($s_gal,0,-1);
+    $cat[8]=$s_gal;
+  }
+  $eq_cats[$cat[1]]=$cat;
+}
+$a_exc[]=2260430;
+$a_exc[]=2189386;
+$a_exc[]=2189387;
+$a_exc[]=2225676;
+$a_exc[]=2189382;
+$a_exc[]=2189383;
+$a_exc[]=1850234;
+$a_exc[]=2254735;
+$a_exc[]=2189380;
+$a_exc[]=2265997;
+$a_exc[]=2213822;
+$a_exc[]=2244576;
+$a_exc[]=100371;
+$a_exc[]=100351;
+$a_exc[]=100353;
+$a_exc[]=100354;
+$a_exc[]=100355;
+$a_exc[]=100356;
+$a_exc[]=100357;
+$a_exc[]=100358;
+
+
+//Для категорий
+
+function f_cat_menu_dop($id_menu=0) {//Вывод подменю
+global $eq_cats;
+  $out='';
+  $s_gal='';
+  if($id_menu==0){return '';}
+
+  $s_gal=$eq_cats[$id_menu][8];
+
+  if($s_gal!=''){
+    $agals=explode(';',$s_gal);
+    $a_gals=false;
+    foreach($agals as $sgal){
+      $a_gal=explode(':',$sgal);
+      $a_gals[]=$a_gal;
+    }
+    $href='href="';
+    $out='<ul>';
+    foreach($a_gals as $a_gal){
+      $out.='<li><a class=""  '.$href.$a_gal[0].'">'.$a_gal[2].'</a></li>';
+    }
+    $out.='</ul>';
+  }
+  return $out;
+}
+
+function f_cat_goods($id=0, $ends=false) {//Вывод списка товаров в категории
+global $eq_cats,$equips,$a_exc, $a_ids;
+
+  $out='';
+  $ends[]=$id;
+  $href='href="';
+  $photo=''; 
+ foreach($ends as $end){
+  $a_id=$a_ids[$end];
+  if (!$a_id){continue;}
+  foreach($a_id as $id){
+   $a_equip=$equips[$id];
+   if (!in_array($a_equip[1],$a_exc)){
+    $s_photos=$a_equip[7];
+    $photo=$a_equip[14];
+    $a_photos=explode(';',$s_photos);
+    if($photo==''){
+      $photo=$a_photos[0];
+    }
+    $id_gr=$a_equip[2];
+    $s_chr=$eq_cats[$id_gr][9];
+    $a_chr=explode(';',$s_chr);
+    $s_charts=$a_equip[10];
+    $a_scharts=explode('&&',$s_charts);
+    $a_charts=false;
+    $a_chnm=false;
+    foreach($a_scharts as $s_chart){
+      $a_chart=explode('##',$s_chart);
+      $a_charts[]=$a_chart;
+      $a_chnm[]=$a_chart[0];
+    }
+    $s_charts='';
+    foreach($a_chr as $schr){
+      $i_chr=array_search($schr,$a_chnm);
+      if($i_chr){
+        $s_charts.=$schr.': '.$a_charts[$i_chr][1].'<br>';
+      }
+    }
+    $out.='<div class="tssblock">';
+    $out.='<a '.$href.$a_equip[0].'"><img src="https://elakors.ru/img/oborudovanie/small/'.$photo.'" alt=""><br>'.$a_equip[4].'</a>';
+    $out.='<div class="tssshortmess">'.$s_charts;
+    $out.='</div>';
+    $out.='<div class="tssbcena">'.$a_equip[5].' руб.</div>';
+    $out.='<div class="tssborder" onclick="fTssOrder('.chr(39).$a_equip[3].chr(39).','.$a_equip[5].','.chr(39).$a_equip[4].chr(39).')">ЗАКАЗАТЬ</div>';
+    $out.='</div>';
+   }
+  }
+ }
+  print($out);
+}
+
+function f_cat_load($id=0, $id_dop=0) {
+global $eq_cats,$equips,$a_exc;
+  
+  $id_main=156241;
+  $s_h1=$eq_cats[$id][3];
+  $id_par=$eq_cats[$id][2];
+  $s_descr=$eq_cats[$id][5];//Краткое описание
+
+  $s_photo=$eq_cats[$id][6];
+  if ($eq_cats[$id][8]){
+    $s_gal=$eq_cats[$id][8];
+    $s_name=$eq_cats[$id][10];
+  }
+  else{
+    $for_ref=1;
+    $s_gal=$eq_cats[$id_par][8];
+    $s_name=$eq_cats[$id_par][10];
+  }
+  $agals=explode(';',$s_gal);
+  $a_gals=false;
+  foreach($agals as $sgal){
+    $a_gal=explode(':',$sgal);
+    $a_gals[]=$a_gal;
+  }
+  $sref='href';
+  $href='href="';
+
+  $out='<h1 class="tssh1">'.$s_h1.'</h1>';
+  print($out);
+  $out='<div class="tsslmenu" style="min-height:170px;">';
+  if($for_ref==1){
+    if($id_par!=$id_main&&$id_par){
+      $out.='<a class="mt0 fwb tac" style="text-align: center; text-decoration-line: underline; width: 225px;"'.$href.$eq_cats[$id_main][0].'">'.$eq_cats[$id_main][10].'</a>';
+      $out.='<div class="px10b"></div>';
+      $out.='<div class="px10"></div>';
+    }
+    $out.='<a class="mt0 fwb tac" style="text-align: center; text-decoration-line: underline; width: 225px;"'.$href.$eq_cats[$id_par][0].'">'.$s_name.'</a>';
+  }
+  else{
+  if($id_par){
+    $out.='<a class="mt0 fwb tac" style="text-align: center; text-decoration-line: underline; width: 225px;"'.$href.$eq_cats[$id_main][0].'">'.$eq_cats[$id_main][10].'</a>';
+  $out.='<div class="px10b"></div>';
+  $out.='<div class="px10"></div>';
+  }
+    $out.='<p class="mt0 fwb tac">'.$s_name.'</p>';
+  }
+  $out.='<div class="px10b"></div>';
+  foreach($a_gals as $a_gal){
+    $s_height =' style="';
+    if(strlen($a_gal[2])>53){
+      $s_height=' style="height:30px;';
+    }
+    if(strlen($a_gal[2])>90){
+      $s_height=' style="height:45px;';
+    }
+    $s_bg = '';
+    if($a_gal[0]==$eq_cats[$id][0]){
+      $s_bg=' bg3';
+      $s_height.='color:#ffffff; background-color:#004f92;';
+    }
+    $s_height.='"';
+    $out.='<div class="px0"></div>';
+    $out.='<ul>';
+    if($a_gal[0]==$eq_cats[$id][0]){
+      $out.='<li class="tssulli"'.$s_height.'><div class="tssli1">►</div><a class="" style="color:#ffffff;"'.$href.$a_gal[0].'">'.$a_gal[2].'</a>';  
+    }else{
+      $out.='<li class="tssulli'.$s_bg.'"'.$s_height.'><div class="tssli1">►</div><a class="" '.$href.$a_gal[0].'">'.$a_gal[2].'</a>';  
+    }
+    $out.=f_cat_menu_dop($a_gal[3]);
+    $out.='</li>';
+    $out.='</ul>';
+  }  
+  if($id_dop){
+    $s_height ='';
+    if(strlen($eq_cats[$id_dop][3])>55){
+      $s_height=' style="height:30px;"';
+    }
+    if(strlen($eq_cats[$id_dop][3])>90){
+      $s_height=' style="height:45px;"';
+    }
+    $out.='<div class="px0"></div>';
+    $out.='<ul>';
+    $out.='<li class="tssulli"'.$s_height.'><div class="tssli1">►</div><a class="" '.$href.$eq_cats[$id_dop][0].'">'.$eq_cats[$id_dop][3].'</a>';  
+    $out.='</li>';
+    $out.='</ul>';
+  }
+
+  $out.='</div>';
+  print($out);
+  $out='<div class="tsscatblocks">';
+  print($out);
+  $out='<div class="fs13 lh18">'.$s_descr.'</div>';
+  print($out);
+  $out='';
+  if($id_par==0){
+  }
+  else{
+    $out.='</div>';//tsscatblocks
+    $out.='<div class="px10b"></div>';
+  }
+  print($out);
+  $out='';
+  if($id_par==0){
+    foreach($a_gals as $a_gal){
+      $out.='<div class="tsscat">';
+      $out.='<a class="" '.$href.$a_gal[0].'"><img src="https://elakors.ru/img/oborudovanie/cats/'.$a_gal[1].'" alt="">'.$a_gal[2].'</a>';  
+      $out.='</div>';
+    }  
+    $out.='</div>';
+    print($out);
+  }
+  else
+  {
+    $ends=false;
+    $childs=false;
+//    $s_gal=$eq_cats[$id][8];
+    foreach($eq_cats as $eq_cat){
+      if ($eq_cat[2]==$id){
+        $childs[]=$eq_cat[1];
+        if (!$eq_cat[8]){
+          $ends[]=$eq_cat[1];
+        }
+      }
+      if ($childs&&in_array($eq_cat[2],$childs)){
+        if (!$eq_cat[8]){
+         $ends[]=$eq_cat[1];
+        }
+      }
+    }
+    f_cat_goods($id,$ends);
+    if($id_dop){
+      f_cat_goods($id_dop);
+    }
+  }
+
+}
+
+//Для конечных страниц
+
+function f_tss_h1($nm='') {
+  $out='<h1>'.$nm.'</h1>';
+  $out.='<div class="px10"></div>';
+  print($out);
+}
+
+function f_tss_gallery($a_gal=false) {
+  $out='<div class="pb_gal_preview">';
+  $out.='<div class="px25"></div><div class="px3"></div>';
+  foreach($a_gal as $gal) {
+    $out.='<div class="pb_gal_item"><img alt="" src="https://elakors.ru/img/oborudovanie/'.$gal.'"/></div>';
+    if (next($a_gal)) {
+        $out.='<div class="px15"></div>';
+    }
+  }
+  $out.='<div class="px25"></div><div class="px3"></div><div class="pb_gal_vmt">▲</div><div class="pb_gal_vmb">▼</div>';
+  $out.='</div>';
+  print($out);
+  print('<div class="pb_gal_photo"><img alt="" src="https://elakors.ru/img/oborudovanie/'.$a_gal[0].'"/></div>');
+}
+
+function f_tss_brief($a_brief=false) {
+global $pb_root;
+  $out='<div itemscope itemtype="https://schema.org/Product" style="display: none">';//микроразметка
+  $out.='<meta itemprop="name" content="'.$a_brief[5].'" />';
+  $out.='<meta itemprop="description" content="'.$a_brief[4].'" />';
+  $out.='<meta itemprop="image" content="https://elakors.ru/img/oborudovanie/'.$a_brief[6].'" />';
+  $out.='<div itemscope itemprop="offers" itemtype="https://schema.org/Offer">';
+  $out.='<meta itemprop="price" content="'.$a_brief[0].'" />';
+  $out.='<meta itemprop="priceCurrency" content="RUB" />';
+  $out.='<link itemprop="availability" href="https://schema.org/OutOfStock"/>';
+  $out.='</div>';
+  $out.='</div>';
+
+  print($out);
+  $out='<div class="tssdr">';
+  $out.='<p class="tssp2"><span class="tssprice">'.$a_brief[0].' руб.</span><br>&nbsp;<br>&nbsp;<br><span class="tssbord" onclick="fTssOrder('.chr(39).$a_brief[1].chr(39).','.$a_brief[0].','.chr(39).$a_brief[5].chr(39).')">ЗАКАЗАТЬ</span></p>';
+  $out.='<p class="tssp1"><span>Артикул</span> <span class="tssart">'.$a_brief[1].'</span></p>';
+  $out.='<p class="tssp1"><span>Состояние</span> <span class="tssst">'.$a_brief[2].'</span></p>';
+  if($a_brief[3]){
+    $out.='<p class="tssp1"><span>Гарантия</span> <span class="tssst">'.$a_brief[3].' месяцев</span></p>';
+  }
+  else{
+    $out.='<p class="tssp1"></p>';
+  }
+  $out.='<div class="px10b"></div>';
+  $out.='<p>'.$a_brief[4].'</p>';
+//$filename='https://elakors.ru/pdf/'.$a_brief[1].'.pdf';
+//if(file_exists($filename)){
+//    $out.='<div class="tssdwnl">Коммерческое предложение (краткое) <a class="tssdownload" href="/inc/tss/download.php? //tss='.$a_brief[1].'">СКАЧАТЬ</a></div>'; 
+//  }
+  $out.='</div>';
+  $out.='<div class="px10b"></div>';
+  print($out);
+}
+
+function f_tss_charts($a_charts=false) {
+  $out='<div class="h2">Характеристики</div>';
+  $out.='<table class="tsst1"><tbody>';
+  foreach($a_charts as $charts) {
+    $out.='<tr><td>'.$charts[0].'</td><td>'.$charts[1].'</td></tr>';
+  }
+  $out.='</tbody></table>';
+  $out.='<div class="px10b"></div>';
+  print($out);
+}
+
+function f_tss_descr($nm='') {
+  $out='<div class="h2">Описание</div>';
+  $out.=$nm;
+  $out.='<div class="px10b"></div>';
+  print($out);
+}
+
+function f_tss_dop($a_dop=false) {
+global $equips,$eq_cats,$a_exc;  
+  if($a_dop[0]<=0){return;}
+  $href='href="';
+  $out='<div class="h2">Дополнительное оборудование</div>';
+  $dop=0;
+  foreach($a_dop as $dop) {
+    if(!in_array($dop,$a_exc)){
+    $sname=$equips[$dop][4];
+    $sref=$equips[$dop][0];
+    $scat=$eq_cats[$equips[$dop][2]][3];
+    $srefcat=$eq_cats[$equips[$dop][2]][0];
+    $s_photos=$equips[$dop][7];
+    $a_photos=explode(';',$s_photos);
+
+    $out.='<div class="tssadd">';
+    $out.='<div class="h14b"><a '.$href.$srefcat.'">'.$scat.'</a> / Модель <a '.$href.$sref.'">'.$sname.'</a></div>';
+    $out.='<div class="tssdl">';
+    $out.='<p class="tssp1"><span>Артикул</span> <span class="tssart">'.$equips[$dop][3].'</span></p><div class="px0"></div>';
+    $out.='<p class="tssp1"><span>Цена</span> <span class="tssprice">'.$equips[$dop][5].' руб.</span></p><div class="px0"></div>';
+    $out.='<p class="tssp1"><span> </span> <span class="tssbord" onclick="fTssOrder('.chr(39).$equips[$dop][3].chr(39).','.$equips[$dop][5].','.chr(39).$sname.chr(39).')">ЗАКАЗАТЬ</span></p>';
+    $out.='</div>';
+    $out.='<div class="fright">';
+    $out.='<img class="pb_ismall" src="https://elakors.ru/img/oborudovanie/small/'.$a_photos[0].'" onclick="$.zoomImg(this,'.chr(39).'https://elakors.ru/img/oborudovanie/'.$a_photos[0].chr(39).',200,25,1198,800,'.chr(39).$sname.chr(39).',-25,1);" title="'.$sname.'" alt="'.$sname.'" />';
+    $out.='</div>';
+    $out.='<div class="px0"></div>';
+    $out.='</div>';
+    }
+  }
+  print($out);
+}
+function f_tss_load($id=0) {
+global $equips,$a_exc;
+  $s_h1=$equips[$id][4];
+  $s_photos=$equips[$id][7];
+  $a_photos=explode(';',$s_photos);
+
+  $a_brief=false;
+  $a_brief[0]=$equips[$id][5];//Цена
+  $a_brief[1]=$equips[$id][3];//Артикул
+  $a_brief[2]='Новый товар';
+  $a_brief[3]=$equips[$id][6];//Гарантия
+  $a_brief[4]=$equips[$id][8];//Краткое описание
+  $a_brief[5]=$s_h1;
+  $a_brief[6]=$a_photos[0];
+
+  $s_charts=$equips[$id][10];
+  $a_scharts=explode('&&',$s_charts);
+  $a_charts=false;
+  foreach($a_scharts as $s_chart){
+    $a_chart=explode('##',$s_chart);
+    $a_charts[]=$a_chart;
+  }
+
+  $s_descr=$equips[$id][9];//описание
+  
+  $s_dop=$equips[$id][12];
+  $a_dop=explode(';',$s_dop);
+  f_tss_h1($s_h1);
+  f_tss_gallery($a_photos);
+  f_tss_brief($a_brief);
+  f_tss_charts($a_charts);
+  f_tss_descr($s_descr);
+  f_tss_dop($a_dop);
+  print('<div class="pb_gal_mag"><img alt="" src="https://elakors.ru/img/oborudovanie/'.$a_photos[0].'"/></div>');
+
+}
+?>

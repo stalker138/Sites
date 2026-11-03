@@ -1,0 +1,411 @@
+function fmtr_price_h1() {
+//вывод H1 на странице прайс-листа
+global $is_price;
+if ($is_price==0) {
+ $s_out='<h1>Продукция «Элакор»</h1>'.'{*text1_6*}';
+}
+else {
+ $s_out='<h1>Материалы «Элакор». Цены.</h1>'.'{*text1_6*}';
+ $s_out.='
+<div class="px5"></div>
+<div>
+Цены указаны с учётом НДС и тары, на условиях предоплаты 100%.<br>
+Цены зависят от общего количества покупаемых материалов.<br>
+Позиции * - для фасовки в бочки по 200кг цена <span>дешевле на 5р/кг</span>.</div>
+';
+}
+$s_out.='{*text1_13*}';
+print $s_out;
+}
+
+function fmtr_srt($asrt=false) {
+//вывод списка сертификатов по массиву индексов сертификатов 
+ global $a_srt;
+ $s_out='';
+ $href='href="';
+ if ($a_srt[$asrt[0]]=="") {return;}
+ $s_out="<ul> ";
+
+ foreach($asrt as $n_srt){
+   $s_out.='
+   <li class="mt10"><a '.$href.$a_srt[$n_srt][0].'" rel="nofollow" target="_blank" title="Открыть/Скачать PDF '.$a_srt[$n_srt][1].'">'.$a_srt[$n_srt][1].'</a></li>
+  ';
+ }
+ $s_out.="</ul> ";
+
+ print($s_out);
+}
+
+function fmtr_descr0($n_mat=0, $title='', $tech = 0) {
+//Кнопка описания
+  global $a_descr, $mtr_dop, $pb_root, $a_tech, $is_basket;
+  $s_style = '';
+  if ($tech==0) {
+      if (!isset($a_descr[$n_mat])||$a_descr[$n_mat]=="") {return;}
+      else { 
+       $url= $a_descr[$n_mat];
+       $nm = $mtr_dop[$n_mat][14].$title.'. Техническое описание';
+       $nm_butt='Описание';
+      }
+  }
+  else {
+      if (!isset($a_tech[$n_mat])||$a_tech[$n_mat]=="") {return;}
+      else { 
+       $url= $a_tech[$n_mat];
+       $nm = $title.' ТЕХНОЛОГИЯ';
+       $nm_butt='Инструкция';
+       $s_style='width:120px;';
+      }
+  }
+  if ($is_basket==1) {$s_style.='float:right;';}
+  if ($s_style) {$s_style = 'style="'.$s_style.'"';}
+  if ($url=='') {return;}
+  $s_out='<a class="pdfzp" '.$s_style.' href="'.$url.'" title="'.$nm.'" target="_blank" rel="nofollow">'.$nm_butt.'</a>';
+  print($s_out);
+
+}
+function fmtr_descr($n_mat=0) {
+//вывод ссылки на описание из массива 
+ global $a_descr, $mtr;
+ if (!isset($a_descr[$n_mat])||$a_descr[$n_mat]=="") {return;}
+
+ $name=preg_replace('/\%/','',$mtr[$n_mat][1]);
+
+ $s_out='
+   <a class="pdf1" style="margin-left:20px;" href="'.$a_descr[$n_mat].'" target="_blank" title="PDF '.$name.'. Техническое описание" rel="nofollow">Описание</a>
+  ';
+ print($s_out);
+}
+
+function fmtr_instr($n_instr=0, $name="") {
+//вывод ссылки на описание из массива 
+ global $a_tech;
+ if ($a_tech[$n_instr]=="") {return;}
+
+ $s_out='
+   <a class="pdf1" style="margin-left:20px;" href="'.$a_tech[$n_instr].'" target="_blank" title="PDF '.$name.' ТЕХНОЛОГИЯ" rel="nofollow">Инструкция</a>
+  ';
+ print($s_out);
+}
+
+function fmtr_tech_c($n_tech=0, $name="") {
+//вывод ссылки страницы покрытий и инструкции со страницы калькулятора 
+ global $a_tech, $a_tech_cvr, $pkr_dop;
+if ($a_tech[$n_tech]=="" && $a_tech_cvr[$n_tech]=="") {return;}
+
+ $s_out='
+    <div class="rlink" style="margin-top:7px;">';
+ if ($a_tech_cvr[$n_tech]!="") {
+   $s_out.=$a_tech_cvr[$n_tech].$pkr_dop[$n_tech][0].'Описание</a>
+      <div class="px10"></div>';
+ }
+ if ($a_tech[$n_tech]!="") {
+ $s_out.='<a class="pdf1" href="'.$a_tech[$n_tech].'" target="_blank" title="'.$pkr_dop[$n_tech][0].' инструкция" target="_blank">Инструкция</a>
+    </div>
+    <div class="px10"></div>
+  ';
+  }
+ print($s_out);
+}
+
+
+function fmtr_guar($n_mat=0) {
+// Вывод гар. срок и темп. хранения
+ global $mtr_dop; 
+ if ($mtr_dop[$n_mat][4]=='C') {$srok='<br>'.$mtr_dop[$n_mat][15];}
+ else {$srok=$mtr_dop[$n_mat][4].'&nbsp;мес';}
+ $s_out='<p style="margin-top:7px;">Хранить и транспортировать при t-ре от '.$mtr_dop[$n_mat][5].'°С до '.$mtr_dop[$n_mat][6].'°С.<br>Гарантийный срок хранения в таре производителя – '.$srok.'.</p>';
+ print($s_out);
+}
+
+function fmtr_repair($n_mat=0) {
+// Вывод информации о восстановлении
+ global $mtr_dop; 
+ $s_out = '';
+ if ((int)$mtr_dop[$n_mat][13]!=0) {
+   $s_out.='<p class="mt0 fs11">В случае крайней необходимости, можно хранить и транспортировать при отрицательных температурах без ограничений.<br>
+В этом случае перед применением необходимо материал &nbsp; <a href="https://teohim.ru/polymer/info/recover/" rel="nofollow">«ВОССТАНОВИТЬ»</a>.</p>';
+  }
+ print($s_out);
+}
+
+
+function pack_explode($str_pack) {
+// преобразование строки фасовок в массив
+ $arr_pack=false;
+ $str_pack=trim($str_pack);
+ if ($str_pack=='') {return false;}
+ $arr_rows = explode('/',$str_pack);
+ foreach($arr_rows as $row){
+  if (strpos($row, '=')){ //комплект
+    $acompl=explode('=',$row);
+    $compl = $acompl[1];
+    $arow = explode('+',$acompl[0]);
+    $arow[]=$compl;
+    $arr_pack[]=$arow;
+  }
+  else {$arr_pack[] = $row;}
+ }
+ return $arr_pack;
+}
+
+function pack_compl($kol_comp=0) {
+// строка комплекта
+ $str_pack='';
+ if ($kol_comp<2) {return '';}
+ $str_pack='<tr><td style="min-width:30px; text-align:center;">Комп. «А»</td><td style="min-width:30px; text-align:center;">+</td><td style="min-width:30px; text-align:center;">Комп. «Б»</td>';
+ if ($kol_comp==3) {
+  $str_pack.='<td style="min-width:30px; text-align:center;">+</td><td style="min-width:30px; text-align:center;">Комп. «В»</td>';
+ }
+ $str_pack.='<td style="min-width:30px; text-align:center;">=</td><td>Комплект</td><td></td></tr>';
+ return $str_pack;
+}
+
+function pack_set($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weight='', $o_weight=0) {
+// строка Фасовок
+ $str_pack='';
+ foreach($arr_pack as $arow){
+   if ($kol_comp<2) {
+     $str_pack.='<tr><td style="text-align:left;">'.$s_begin.(($s_begin=='') ? '' : ': ').$arow.'&nbsp;'.$s_weight;
+     if ((float)$o_weight !=0) { $str_pack.=' – цена <span class="fwn c27">'.fc50($n_mat,$o_weight,150).'&nbsp;р.</span>';}
+     $str_pack.='</td></tr>';
+   }
+   else {
+    $str_pack.='<tr><td style="min-width:30px; text-align:center;">'.$arow[0].'</td><td style="min-width:30px; text-align:center;">+</td><td style="min-width:30px; text-align:center;">'.$arow[1].'</td>';
+    if ($kol_comp>2) {$str_pack.='<td style="min-width:30px; text-align:center;">+</td><td style="min-width:30px; text-align:center;">'.$arow[2].'</td>';}
+    $str_pack.='<td style="min-width:30px; text-align:center;">=</td><td>'.$arow[$kol_comp].'&nbsp;кг</td>';
+    $str_pack.='<td>';
+    if ((float)$o_weight !=0) { 
+       if ($dop==1) {$price=fc50($n_mat,$o_weight,150)*2-200;}
+       else {$price=fc50($n_mat,$o_weight,150);}
+       //$str_pack.=' – цена <span class="fwn c27">'.$price.'&nbsp;р.</span>';
+       $dop=1;
+    }
+
+    $str_pack.='</td></tr>';
+   }
+ }
+ return $str_pack;
+}
+
+
+
+function fmtr_packing($n_mat=0) {
+// Вывод фасовки
+ global $mtr_dop; 
+ $kol_comp=(int)$mtr_dop[$n_mat][7];
+ $colspan='';
+ if ($kol_comp>1) {$colspan=(($kol_comp==2) ? 'colspan="6"' : 'colspan="8"');}
+ $s_weight=(($n_mat==105 || $n_mat==227) ? 'л' : 'кг');
+ $th_f='<tr><th class="fwb" style="padding-top:5px;" '.$colspan.'>Фасовка:</th></tr>';
+ $th_z='<tr><th class="fwb" '.$colspan.'>Фасовка под заказ:</th></tr>';
+ $th_o='<tr><th class="fwb" '.$colspan.'>Образец-пробник:</th></tr>';
+ $arr_f=pack_explode($mtr_dop[$n_mat][8]);
+ $arr_z=pack_explode($mtr_dop[$n_mat][11]);
+ $arr_o=pack_explode($mtr_dop[$n_mat][9]);
+ $s_out='<table style="width:auto;"><tbody>';
+
+ $s_out.=$th_f;
+ $s_out.=pack_compl($kol_comp);
+ $s_out.=pack_set($n_mat, $arr_f, $kol_comp, $mtr_dop[$n_mat][12], $s_weight);
+ if ($arr_z) {
+  $s_out.=$th_z;
+  $s_out.=pack_set($n_mat, $arr_z, $kol_comp, '', $s_weight);
+ }
+/*
+ if ($arr_o) {
+  $s_out.=$th_o;
+  $s_out.=pack_set($n_mat, $arr_o, $kol_comp, '', $s_weight, $mtr_dop[$n_mat][10]);
+ }
+*/
+ $s_out.='</tbody></table>';
+ print($s_out);
+
+}
+
+
+function pack_compl2($kol_comp=0) {
+// строка комплекта
+ $str_pack='';
+ if ($kol_comp<2) {return '';}
+ $str_pack='<tr><td>Комп.«А» &nbsp;</td><td>Комп.«Б» &nbsp;</td>';
+ if ($kol_comp==3) {
+  $str_pack.='<td>+Комп.«В» &nbsp;</td>';
+ }
+ $str_pack.='<td>= <span>Комплект</span></td></tr>';
+ return $str_pack;
+}
+
+function pack_set2($n_mat=0, $arr_pack=false, $kol_comp=0, $s_begin='', $s_weight='', $o_weight=0) {
+// строка Фасовок
+ $str_pack='';
+ foreach($arr_pack as $arow){
+   if ($kol_comp<2) {
+     $str_pack.='<tr><td style="height:5px"></td></tr>
+                 <tr><td>'.$s_begin.(($s_begin=='') ? '' : ': ').$arow.'&nbsp;'.$s_weight;
+     if ((float)$o_weight !=0) { $str_pack.=' – цена <span class="fwn c27">'.fc50($n_mat,$o_weight,150).'&nbsp;р.</span>';}
+     $str_pack.='</td></tr>';
+   }
+   else {
+    $str_pack.='<tr><td>'.$arow[0].'кг</td><td>+ '.$arow[1].'кг</td>';
+    if ($kol_comp>2) {$str_pack.='<td>+ '.$arow[2].'</td>';}
+    $str_pack.='<td>= <span>'.$arow[$kol_comp].'кг</span></td>';
+   }
+ }
+ return $str_pack;
+}
+
+
+function fmtr_packing2($n_mat=0) {
+// Вывод фасовки
+ global $mtr_dop; 
+ $type_pack = 0;
+ $kol_comp=(int)$mtr_dop[$n_mat][7];
+ $colspan='';
+ if ($kol_comp>1) {$colspan=(($kol_comp==2) ? 'colspan="3"' : 'colspan="5"');}
+ $s_weight=(($n_mat==105 || $n_mat==227) ? 'л' : 'кг');
+ if ($n_mat==39) {$s_weight='мл';} 
+ $th_f='<tr><th class="fwb" style="padding-top:0;" '.$colspan.'>Фасовка:</th></tr>';
+ $th_z='<tr><th class="fwb" '.$colspan.'>Фасовка под заказ:</th></tr>';
+ $th_o='<tr><td '.$colspan.' style="height:1px"></td></tr>
+        <tr><th class="fwb" '.$colspan.'>Образец-пробник:</th></tr>';
+ $arr_f=pack_explode($mtr_dop[$n_mat][8]);
+ $arr_z=pack_explode($mtr_dop[$n_mat][11]);
+ $arr_o=false;
+ if ($kol_comp==1) {$type_pack=1;}//однокомпонентный - таблица в одну строку
+ else
+   if ((count($arr_f)==1) and !($arr_z)) {$type_pack=2;}//2-3 компонента - 1 строка на каждый компонент
+ $s_out='<div style="display:flex; align-items:flex-start;">';
+ if ($type_pack==0){
+ $s_out.='<table class="tfas" style="padding:2px;"><tbody>';
+
+ $s_out.=$th_f;
+ $s_out.=pack_compl2($kol_comp);
+ $s_out.=pack_set2($n_mat, $arr_f, $kol_comp, trim($mtr_dop[$n_mat][12]), $s_weight);
+ if ($arr_z) {
+  $s_out.=$th_z;
+  $s_out.=pack_set2($n_mat, $arr_z, $kol_comp, trim($mtr_dop[$n_mat][12]), $s_weight);
+ }
+ if ($arr_o) {
+  $s_out.=$th_o;
+  $s_out.=pack_set2($n_mat, $arr_o, $kol_comp, '', $s_weight, $mtr_dop[$n_mat][10]);
+ }
+ }
+ if ($type_pack==1) {
+    $s_out.='<table class="tfas" style="padding:3px 5px; max-width:130px;"><tbody>
+    <tr><td class="fs11 fwb">Фасовка:</td></tr>
+    <tr><td class="fs11" style="text-align: left;"><div class="px5"></div>'.trim($mtr_dop[$n_mat][12]).': <span class="fs11 fwn nw">'.$arr_f[0].$s_weight.'</span>';
+    if ($arr_z) {
+    $s_out.='<div class="px5"></div><span class="fs10 fwn c50p">Под заказ :<br>'.trim($mtr_dop[$n_mat][12]).': <span class="fs11 fwn nw">'.$arr_z[0].$s_weight.'</span></span>';
+    }
+    if ($arr_o) {
+    $s_out.='<div class="px5"></div>
+    <span>Образец-пробник:</span><br>'.$arr_o[0].$s_weight.' – цена '.fc50($n_mat,$mtr_dop[$n_mat][10],150).'р.</td></tr>';
+    }
+ }
+ if ($type_pack==2) {
+    $s_out.='<table class="tfas" style="padding:5px;"><tbody>
+    <tr><td colspan="2" class="fwb">Фасовка:</td></tr>
+    <tr><td>Компонент «А»</td><td class="tar">'.$arr_f[0][0].$s_weight.'</td></tr>
+    <tr><td>Компонент «Б»</td><td class="tar">'.$arr_f[0][1].$s_weight.'</td></tr>';
+    if ($kol_comp > 2) {
+      $s_out.='<tr><td>Компонент «В»</td><td class="tar">'.$arr_f[0][2].$s_weight.'</td></tr>';}
+    $s_out.='<tr><td class="fwb">Итого Комплект</td><td class="tar fwb">'.$arr_f[0][$kol_comp].$s_weight.'</td></tr>';
+    if ($arr_o) {
+     $s_out.=$th_o;
+     $s_out.=pack_set2($n_mat, $arr_o, $kol_comp, '', $s_weight, $mtr_dop[$n_mat][10]);
+    }
+ }
+ $s_out.='</tbody></table></div>';
+ print($s_out);
+}
+
+
+function fmtr_img($n_mat=0, $title='', $img='') {
+//вывод микроразметки og страницы по массиву индексов материалов 
+ global $mtr_dop,$pb_domain,$pb_full_url;
+if (empty($img)) {$img='p'.$n_mat.'.webp';}
+$s_out='<div class="foto_mtr" style="min-width:100px; width: max-content; background-image:url(\'https://elakors.ru/img/mtr/'.$img.'\');" title="'.$title.'"  onclick="fpb_zoomImg(this,\'https://elakors.ru/img/mtr/'.$img.'\',200,25,500,500,\''.$title.'\',-25);"></div>
+
+';
+ print($s_out);
+}
+
+function fmtr_og($n_mat=0) {
+//вывод микроразметки og страницы по массиву индексов материалов 
+ global $mtr_dop,$pb_domain,$pb_full_url;
+ $img=preg_replace('/webp/', 'png', $mtr_dop[$n_mat][1]); 
+$s_out='
+ <meta property="og:title" content="'.$mtr_dop[$n_mat][0].'" />
+ <meta property="og:type" content="article" />
+ <meta property="og:url" content="'.$pb_domain.$pb_full_url.'" />
+ <meta property="og:image" content="https://elakors.ru/img/mtr/p'.$n_mat.'.png" />
+';
+ print($s_out);
+}
+
+function fmtr_micro($n_mat=0) {
+//вывод микроразметки страницы по массиву индексов материалов 
+ global $mtr, $is_price, $mtr_dop,$pb_domain,$pb_full_url;
+ $s_out='';
+   $price=preg_replace('/[^0-9]+/', '', $mtr[$n_mat][8]);
+   $s_out.='
+   <meta itemprop="name" content="'.$mtr_dop[$n_mat][0].'">
+   <link itemprop="image" href="https://elakors.ru/img/mtr/p'.$n_mat.'.png" />
+   <div itemprop="brand" itemscope itemtype="https://schema.org/Brand">
+   <meta itemprop="name" content="Элакор">
+   </div>';
+if ($is_price==1) {
+   $s_out.='
+   <div itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+   <meta itemprop="lowPrice" content="'.$price.'">
+   <meta itemprop="priceCurrency" content="RUB">
+   <link itemprop="url" href="'.$pb_domain.$pb_full_url.'" />
+   </div>';
+
+}
+ print($s_out);
+}
+
+function fmtr_name($n_mat=0, $name="", $descr = "") {
+//вывод микроразметки страницы по массиву индексов материалов 
+ global $mtr,$mtr_dop;
+   if ($name=='') { $name=$mtr_dop[$n_mat][14];}
+   $s_out='<p class="mt0 fwb"><span class="c2">'.$mtr[$n_mat][0].'</span> '.$name.' - ';
+   if (!empty($descr)) {
+     $s_out.='<strong style="font-size:12px">'.$descr;
+   }
+   $s_out.=' цена';
+   if (!empty($descr)) {
+     $s_out.='</strong>';
+   }
+
+   $s_out.='</p>';
+
+ print($s_out);
+}
+
+function fmtr_ord($n_mat=0, $title, $dop='') {
+//Кнопка заказа
+  global $mtr, $mtrt, $is_basket;
+  if (!$mtrt[$n_mat] || !$mtrt[$n_mat][17]) return;
+  $nm=str_replace('%','',$mtr[$n_mat][1]);
+  $s_out='';
+  if ($is_basket) {
+  $s_out='<div class="bzakmat" style="float:left;" onclick="f_b('.$n_mat.','.chr(39).$nm.$dop.chr(39).')" title="'.$title.'">Купить</div>';
+  }
+  print($s_out);
+
+}
+
+function fmtr_ord_link($n_mat=0, $title, $dop='') {
+//Кнопка заказа
+  global $mtr, $is_basket;
+  $nm=str_replace('%','',$mtr[$n_mat][1]);
+  $s_out='';
+  if ($is_basket) {
+  $s_out='<div id="idsal" style="float:none; margin-bottom:5px;" onclick="f_b('.$n_mat.','.chr(39).$nm.$dop.chr(39).')">'.$title.'</div>';
+  }
+  print($s_out);
+
+}
