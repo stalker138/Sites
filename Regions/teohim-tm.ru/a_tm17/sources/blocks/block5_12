@@ -1,0 +1,33 @@
+<h1>Полы в кафе, столовых</h1>
+<div class="px10"></div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>
+Бургерная г. Тюмень
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/cafe/img_001_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/cafe/img_001.jpg',200,25,747,750,'Бургерная г. Тюмень',-28);" title="Бургерная г. Тюмень" alt="Бургерная г. Тюмень"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>
+Евростоловая Береза г. Сургут
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/cafe/img_002_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/cafe/img_002.jpg',200,25,600,800,'Евростоловая Береза г. Сургут',-28);" title="Евростоловая Береза г. Сургут" alt="Евростоловая Береза г. Сургут"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>
+Евростоловая Береза г. Сургут
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/cafe/img_003_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/cafe/img_003.jpg',200,25,600,800,'Евростоловая Береза г. Сургут',-28);" title="Евростоловая Береза г. Сургут" alt="Евростоловая Береза г. Сургут"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>
+Кафе Горчица г. Тюмень
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/cafe/img_004_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/cafe/img_004.jpg',200,25,800,600,'Кафе Горчица г. Тюмень',-28);" title="Кафе Горчица г. Тюмень" alt="Кафе Горчица г. Тюмень"/>
+</div>
+
+<div class="pb_hidden">
+  <img src="/portfolio/cafe/img_001.jpg" alt="">
+  <img src="/portfolio/cafe/img_002.jpg" alt="">
+  <img src="/portfolio/cafe/img_003.jpg" alt="">
+  <img src="/portfolio/cafe/img_004.jpg" alt="">
+</div>

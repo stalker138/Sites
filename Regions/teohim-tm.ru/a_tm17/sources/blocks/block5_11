@@ -1,0 +1,36 @@
+<h1>Полы на сельскохозяйственных предприятиях</h1>
+<div class="px10"></div>
+<p style="font-size:14px;">DANONE Тюмень. Доильная карусель. Площадь 500 м&sup2;</p>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/selhoz/img_001_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/selhoz/img_001.jpg',200,25,800,600,'DANONE Тюмень. Доильная карусель',-28);" title="DANONE Тюмень. Доильная карусель" alt="DANONE Тюмень. Доильная карусель"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/selhoz/img_002_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/selhoz/img_002.jpg',200,25,900,600,'DANONE Тюмень. Доильная карусель',-28);" title="DANONE Тюмень. Доильная карусель" alt="DANONE Тюмень. Доильная карусель"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/selhoz/img_003_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/selhoz/img_003.jpg',200,25,800,600,'DANONE Тюмень. Доильная карусель',-28);" title="DANONE Тюмень. Доильная карусель" alt="DANONE Тюмень. Доильная карусель"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/selhoz/img_004_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/selhoz/img_004.jpg',200,25,600,800,'DANONE Тюмень. Доильная карусель',-28);" title="DANONE Тюмень. Доильная карусель" alt="DANONE Тюмень. Доильная карусель"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/selhoz/img_005_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/selhoz/img_005.jpg',200,25,600,800,'DANONE Тюмень. Доильная карусель',-28);" title="DANONE Тюмень. Доильная карусель" alt="DANONE Тюмень. Доильная карусель"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/selhoz/img_006_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/selhoz/img_006.jpg',200,25,600,800,'DANONE Тюмень. Доильная карусель',-28);" title="DANONE Тюмень. Доильная карусель" alt="DANONE Тюмень. Доильная карусель"/>
+</div>
+
+<div class="pb_hidden">
+  <img src="/portfolio/selhoz/img_001.jpg" alt="">
+  <img src="/portfolio/selhoz/img_002.jpg" alt="">
+  <img src="/portfolio/selhoz/img_003.jpg" alt="">
+  <img src="/portfolio/selhoz/img_004.jpg" alt="">
+  <img src="/portfolio/selhoz/img_005.jpg" alt="">
+  <img src="/portfolio/selhoz/img_006.jpg" alt="">
+</div>

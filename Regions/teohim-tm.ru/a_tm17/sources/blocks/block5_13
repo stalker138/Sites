@@ -1,0 +1,64 @@
+<h1>Фото прочих работ</h1>
+<div class="px10"></div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>
+Отель Роял плаза<br>
+г. Нефтеюганск
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/prochee/img_001_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/prochee/img_001.jpg',200,25,840,460,'Отель Роял плаза г. Нефтеюганск',-28);" title="Отель Роял плаза г. Нефтеюганск" alt="Отель Роял плаза г. Нефтеюганск"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>
+Сцена Отель Роял плаза<br>
+г. Нефтеюганск
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/prochee/img_002_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/prochee/img_002.jpg',200,25,825,400,'Сцена Отель Роял плаза г. Нефтеюганск',-28);" title="Сцена Отель Роял плаза г. Нефтеюганск" alt="Сцена Отель Роял плаза г. Нефтеюганск"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>
+Сцена Отель Роял плаза<br>
+г. Нефтеюганск
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/prochee/img_003_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/prochee/img_003.jpg',200,25,600,399,'Сцена Отель Роял плаза г. Нефтеюганск',-28);" title="Сцена Отель Роял плаза г. Нефтеюганск" alt="Сцена Отель Роял плаза г. Нефтеюганск"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>&nbsp;<br>
+Медицинский центр
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/prochee/img_004_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/prochee/img_004.jpg',200,25,800,600,'Медицинский центр',-28);" title="Медицинский центр" alt="Медицинский центр"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>
+Пивоварня Ермолаевъ<br>г. Тюмень
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/prochee/img_005_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/prochee/img_005.jpg',200,25,800,600,'Пивоварня Ермолаевъ г. Тюмень',-28);" title="Пивоварня Ермолаевъ г. Тюмень" alt="Пивоварня Ермолаевъ г. Тюмень"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>&nbsp;<br>
+Безвоздушная покраска
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/prochee/img_006_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/prochee/img_006.jpg',200,25,800,710,'Безвоздушная покраска',-28);" title="Безвоздушная покраска" alt="Безвоздушная покраска"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>
+Покраска стен, потолков<br>краской Элакор МБ
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/prochee/img_007_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/prochee/img_007.jpg',200,25,800,600,'Покраска стен, потолков краской Элакор МБ',-28);" title="Покраска стен, потолков краской Элакор МБ" alt="Покраска стен, потолков краской Элакор МБ"/>
+</div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<br>&nbsp;<br>
+Промышленная покраска
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/prochee/img_008_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/prochee/img_008.jpg',200,25,800,600,'Промышленная покраска',-28);" title="Промышленная покраска" alt="Промышленная покраска"/>
+</div>
+
+<div class="pb_hidden">
+  <img src="/portfolio/prochee/img_001.jpg" alt="">
+  <img src="/portfolio/prochee/img_002.jpg" alt="">
+  <img src="/portfolio/prochee/img_003.jpg" alt="">
+  <img src="/portfolio/prochee/img_004.jpg" alt="">
+  <img src="/portfolio/prochee/img_005.jpg" alt="">
+  <img src="/portfolio/prochee/img_006.jpg" alt="">
+  <img src="/portfolio/prochee/img_007.jpg" alt="">
+  <img src="/portfolio/prochee/img_008.jpg" alt="">
+</div>

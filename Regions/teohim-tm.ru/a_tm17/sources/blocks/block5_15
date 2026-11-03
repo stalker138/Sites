@@ -1,0 +1,23 @@
+<h1>Полы в медицинских учреждениях</h1>
+<div class="px10"></div>
+
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/medicine/img_001_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/medicine/img_001.jpg',200,25,900,600,'Полы в медицинском учреждении',-28);" title="Полы в медицинском учреждении" alt="Полы в медицинском учреждении"/>
+</div>
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/medicine/img_002_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/medicine/img_002.jpg',200,25,900,600,'Полы в медицинском учреждении',-28);" title="Полы в медицинском учреждении" alt="Полы в медицинском учреждении"/>
+</div>
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/medicine/img_003_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/medicine/img_003.jpg',200,25,900,600,'Полы в медицинском учреждении',-28);" title="Полы в медицинском учреждении" alt="Полы в медицинском учреждении"/>
+</div>
+<div style="float:left; margin-left:10px; width:172px; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px; margin-top:5px;" src="/portfolio/medicine/img_004_s.jpg" onclick="fpb_zoomImg(this,'/portfolio/medicine/img_004.jpg',200,25,900,600,'Полы в медицинском учреждении',-28);" title="Полы в медицинском учреждении" alt="Полы в медицинском учреждении"/>
+</div>
+
+
+<div class="pb_hidden">
+  <img src="/portfolio/medicine/img_001.jpg" alt="">
+  <img src="/portfolio/medicine/img_002.jpg" alt="">
+  <img src="/portfolio/medicine/img_003.jpg" alt="">
+  <img src="/portfolio/medicine/img_004.jpg" alt="">
+</div>

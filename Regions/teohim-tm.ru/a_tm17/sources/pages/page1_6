@@ -1,0 +1,5 @@
+{*tpl21*}{*tpl1*}{*tpl0*}{*tpl2*}
+<style>@media screen and (max-width:999px) { #content table td {padding:3px 0; font-size:14px;} table td div {padding:0 0 10px 0; font-size:14px;} #content table td div a {font-size:14px;} table td span {font-size:12px;} }</style>
+{*tpl3*}</head><body>{*tpl7*}
+{*block1_6*}
+{*tpl8*}{*tpl4*}</body></html>

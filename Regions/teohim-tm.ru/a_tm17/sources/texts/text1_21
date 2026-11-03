@@ -1,0 +1,1 @@
+<div style="width:100%; margin-top:5px;"><div class="consult"><a href="tel:+73452216952" style="display:inline-block; padding-right:10px; vertical-align:middle;"><span>Нужна консультация?</span><br>Звоните: 8 (3452) 21-69-52</a><?php f_print_wa('79090444440', 1, 1, 0, 1) ?></div></div>

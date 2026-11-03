@@ -1,0 +1,4 @@
+$postSMTP='tyumen@teohim.ru';
+$passSMTP='bJ3xVbY4';
+$postMainSMTP='zakaz_reg@teohim.ru';
+$passMainSMTP='ZxNPfGH9';
