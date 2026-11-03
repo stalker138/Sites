@@ -1,12 +1,7 @@
 <h1>Акриловый лак</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=189;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+<div class="fleft">
 <p><strong>Акриловый лак</strong> для дерева, камня, бетона.</p>
-</div>
 </div>
 
 <?php 

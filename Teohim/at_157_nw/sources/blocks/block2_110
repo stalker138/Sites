@@ -1,14 +1,8 @@
 <h1>Антистатическая эмаль</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=51;
-$ndx_mtr2=90;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+<div class="fleft" style="max-width:500px">
 <p><span>Эпоксидная Антистатическая Эмаль-2К/80</span><br>
 Цветной электропроводящий эпоксидный двухкомпонентный состав.</p>
-</div>
 </div>
 
 <?php 

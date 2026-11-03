@@ -24,7 +24,7 @@
 if($pb_page==222) print '<script src="/cssjs/js_03_5__.js"></script>';
 if($pb_page==226) print '<script src="/cssjs/js_04_25.js"></script>';
 if($pb_page==5001) print '<script src="/cssjs/js_04_25.js"></script>';
-if ($pb_page!=222 && $pb_page!=226 && $pb_page!=5001) print '<script src="/cssjs/js_04_12.js"></script>';
+if ($pb_page!=222 && $pb_page!=226 && $pb_page!=5001) print '<script src="/cssjs/js_04_14.js"></script>';
 }
 ?>
 <script>{*text0_50*}

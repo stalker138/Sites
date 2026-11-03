@@ -1,14 +1,10 @@
 <h1>Белый наливной пол</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=61;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+
+<div class="fleft" style="max-width:500px">
 <p><strong class="c2 fs13">Белый наливной пол</strong> - двухкомпонентный эпоксидный состав без растворителей.</p>
 <p>Предназначен для устройства высокодекоративных защитных покрытий бетонных полов.<br>
 Готовое покрытие отличается чистым белым цветом, высокой прочностью, износостойкостью, стойкостью к химическим воздействиям.</p>
-</div>
 </div>
 
 <?php 

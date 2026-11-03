@@ -1,13 +1,9 @@
 <h1>Полиуретановая эмаль Глянцевая</h1>
 <div class="px5"></div>
 
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=22;
-fmtr_micro($ndx_mtr); ?>
-<p itemprop="description"><strong>Глянцевая полиуретановая эмаль</strong> <span class="c2 fs13">Элакор-ПУ Эмаль-60</span> – цветная, однокомпонентная, влагоотверждаемая.<br>
+<p class="fleft tal" style="max-width:500px;"><strong>Глянцевая полиуретановая эмаль</strong> <span class="c2 fs13">Элакор-ПУ Эмаль-60</span> – цветная, однокомпонентная, влагоотверждаемая.<br>
 После твердения образует прочный полимер с высокой ударной вязкостью, высокой износостойкостью.</p>
-</div>
+
 <?php 
 fmtr_links(array(1108), array('Все %полиуретановые эмали% Элакор-ПУ'));
 ?>

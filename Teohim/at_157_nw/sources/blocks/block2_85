@@ -1,14 +1,10 @@
 <h1>Бетоноконтакт</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=257;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:550px" itemprop="description">
+
+<div class="fleft" style="max-width:550px">
 <p><span><strong>Бетоноконтакт Элакор-МБ5</strong> (<strong>бетон контакт</strong>)</span> – адгезионная и гидроизолирующая грунтовка (грунт) для подготовки поверхностей перед нанесением бетонных, цементных, известково-цементных, гипсовых, гипсово-известковых и т.п. покрытий.</p>
 </div>
-</div>
- 
+
 <?php 
 fmtr_links(array(4777));
 ?>

@@ -1,14 +1,10 @@
 <h1>Цинковый грунт эпоксидный</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=163;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p><strong>Цинковый грунт эпоксидный</strong> <span class="c2 fs13">Элакор-ЭД Грунт-Цинк</span><br>
 Антикоррозионная цинковая грунтовка с высоким содержанием цинка.</p>
 <p>Цвет - серый. Блеск - матовый</p>
-</div>
 </div>
 
 <?php 

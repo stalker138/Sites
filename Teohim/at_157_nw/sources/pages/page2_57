@@ -9,7 +9,8 @@ h2 { padding:0; font-size:13px; color:#004f92; background:none; } .tsrt { margin
 {*tpl10*}
 <?php 
 $ndx_mtr=67;
-fmtr_og($ndx_mtr); 
+$ndx_mtr2=92;
+fmtr_og($ndx_mtr, '2025-04-04'); 
 ?>
 </head><body>
 <?php /* Большие экраны (от 1000px) */ ?>

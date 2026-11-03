@@ -1,10 +1,5 @@
 <h1>Краска для дерева</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=193;
-fmtr_micro($ndx_mtr); ?>
-</div>
 
 <?php 
 fmtr_links(array(1009, 1108), array('', 'Все %полиуретановые краски%'));

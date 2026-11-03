@@ -141,7 +141,7 @@
 <td class="o_t" id="o_mnpz" style="width:55px;"></td>
 <td class="o_t100" id="o_snpz" style="width:100px"></td>
 </tr>
-<?php } else if ($pb_page==2227 || $pb_page==2242 || $pg_pi_set==63 || $pg_pi_set==64 || $pg_pi_set==65 || $pg_pi_set==66) { ?>
+<?php } else if ($pb_page==2227 || $pb_page==2242 || $pg_pi_set==48 || $pg_pi_set==49 || $pg_pi_set==63 || $pg_pi_set==64 || $pg_pi_set==65 || $pg_pi_set==66) { ?>
 <tr>
 <td class="tdleft" style="max-width:155px;" rowspan="3"><div><?php print $snp[0]; ?></div></td>
 <td class="tdmat"><?php print $snp[1] ?></td>
@@ -235,7 +235,7 @@ if ($ml) { ?>
 <?php if ($sh && $pb_page!=2235 && $pb_page!=2238) { ?><table class="table2"><tbody><?php } ?>
 <?php if ($fs) { ?>
 <tr>
-<td class="tdleft" style="max-width:155px;"<?php if (count($sfs)==3 && ($pg_pi_set==51 || $pg_pi_set==52 || $pg_pi_set==53 || $pg_pi_set==54 || $pg_pi_set==65 || $pg_pi_set==66 || $pb_page==2227 || $pb_page==2242 || $pb_page==5004 || $pb_page==5005)) print ' rowspan="2"'; ?>><div><?php print $sfs[0] ?></div></td>
+<td class="tdleft" style="max-width:155px;"<?php if (count($sfs)==3 && ($pg_pi_set==48 || $pg_pi_set==49 || $pg_pi_set==51 || $pg_pi_set==52 || $pg_pi_set==53 || $pg_pi_set==54 || $pg_pi_set==65 || $pg_pi_set==66 || $pb_page==2227 || $pb_page==2242 || $pb_page==5004 || $pb_page==5005)) print ' rowspan="2"'; ?>><div><?php print $sfs[0] ?></div></td>
 <td class="tdmat" id="o_pfs"><?php print $sfs[1] ?></td>
 <td class="o_tr50" id="o_rfs">0,35</td>
 <td class="o_tr" id="o_cfs">202,00</td>
@@ -243,7 +243,7 @@ if ($ml) { ?>
 <td  class="o_t" id="o_mfs" style="width:55px;">70,70</td>
 <td class="o_t100" id="o_sfs" style="width:100px;">70700,00</td>
 </tr>
-<?php if (count($sfs)==3 && ($pg_pi_set==51 || $pg_pi_set==52 || $pg_pi_set==53 || $pg_pi_set==54 || $pg_pi_set==65 || $pg_pi_set==66 || $pb_page==2227 || $pb_page==2242 || $pb_page==5004 || $pb_page==5005)) { ?>
+<?php if (count($sfs)==3 && ($pg_pi_set==48 || $pg_pi_set==49 || $pg_pi_set==51 || $pg_pi_set==52 || $pg_pi_set==53 || $pg_pi_set==54 || $pg_pi_set==65 || $pg_pi_set==66 || $pb_page==2227 || $pb_page==2242 || $pb_page==5004 || $pb_page==5005)) { ?>
 <tr>
 <td class="tdmat"><?php print $sfs[2] ?></td>
 <td class="o_tr50" id="o_rsk">0,00</td>

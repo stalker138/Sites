@@ -1,11 +1,6 @@
 <h1>Колеровочная паста</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=111;
-fmtr_micro($ndx_mtr); ?>
-<p itemprop="description"><strong>Колеровочная паста</strong> - пигментная паста для окрашивания растворных и безрастворных полиуретановых материалов.</p>
-</div>
+<p><strong>Колеровочная паста</strong> - пигментная паста для окрашивания растворных и безрастворных полиуретановых материалов.</p>
 <div class="px10b"></div>
 <div class="px10"></div>
 

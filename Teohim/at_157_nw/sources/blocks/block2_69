@@ -1,14 +1,9 @@
 <h1>Наливной резиновый пол</h1>
 <div class="px5"></div>
 
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=30;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+<div class="fleft" style="max-width:500px">
 <p class="fleft fwb fs13"><strong class="c2 fs13">Резиновый наливной пол</strong> – цветной полиуретановый состав для<br>
 устройства спортивных и других высокоэластичных покрытий.</p>
-</div>
 </div>
 
 <?php 

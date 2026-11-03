@@ -1,13 +1,9 @@
 <h1>Средство для химической очистки</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=231;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p class="fwb fs13"><span class="c2 fs13">Элакор-МБ3</span> – Средство для очистки бетона и металла – химическая очистка поверхности.</p>
 <p>Поставляется в виде концентрата, перед применением разводится водой (по объему: 1 часть Концентрат + 3 части воды).</p>
-</div>
 </div>
 
 <?php 

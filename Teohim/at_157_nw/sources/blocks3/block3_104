@@ -2,40 +2,10 @@
 {*text0_62*}
 <p class="fwb">Официальный представитель ООО «ТэоХим»: Санкт-Петербург, Ленинградская область.</p>
 <div class="px10"></div>
-<!--
-<div class="dtmp1">
-<p class="h14p" style="text-align:left; margin-top:0;">Продажа материалов<br>&nbsp;</p>
-<h2 class="h14p" style="text-align:left; margin-top:5px;">ООО «ТЭОХИМ СЕВЕРО-ЗАПАД»</h2>
-<table class="tbl2">
-<tbody>
-<tr><td class="tdpred" style="width:97px; max_width:97px;"><span>Руководитель:</span></td><td>Андриевский Андрей Викторович</td></tr>
-<tr><td><span>Телефоны:</span></td><td><div itemprop="telephone"><a href="tel:+78129441556">+7 812 944-15-56</a></div><div itemprop="telephone"><a href="tel:+79313315111">+7 931 331-51-11</a><?php f_print_wa('79313315111', 1, 1) ?></div><br>&nbsp;<br>&nbsp;<br>&nbsp;</td></tr>
-<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail0"></span></div><br><div><span id="dpIDmail2"></span></div></td></tr>
-<tr><td><span>Сайт:</span></td><td id="dpIDsite"><a href="https://teohim-spb.ru/" target="_blank">Наливные полимерные полы Санкт-Петербург</a></td></tr>
-</tbody>
-</table>
-</div>
-
-<div class="dtmp2">
-
-<p class="h14p" style="text-align:left; margin-top:0;">Продажа материалов<br>
-Лицензированный производитель работ</p>
-<h2 class="h14p" style="text-align:left; margin-top:5px;">ООО «ТЭОХИМ Нева»</h2>
-<table class="tbl2">
-<tbody>
-<tr><td class="tdpred" style="width:97px; max_width:97px;"><span>Руководитель:</span></td><td>Глазов Илья Николаевич</td></tr>
-<tr><td><span>Телефоны:</span></td><td><div itemprop="telephone"><a href="tel:+78129827800">+7 812 982-78-00</a></div><br><div itemprop="telephone"><a href="tel:+79692004880">+7 969 200-48-80</a><?php f_print_wa('79692004880', 1, 1) ?></div><br><br><div itemprop="telephone"><a href="tel:+78127027444">+7 812 702-74-44</a></div><br><div itemprop="telephone"><a href="tel:+78129827805">+7 812 982-78-05</a></div></td></tr>
-<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div><br><div><span id="dpIDmail"></span></div></td></tr>
-<tr><td><span>Сайт:</span></td><td id="dpIDsite"><a href="https://teohimneva.ru/" target="_blank">Устройство наливных полов Санкт-Петербург</a></td></tr>
-</tbody>
-</table>
-
-</div>
--->
 <table class="tbl2">
 <tbody>
 <tr><td class="tdpred" style="width:97px; max_width:97px;"><span>Руководитель:</span></td><td>Морозов Сергей Анатольевич</td></tr>
-<tr><td><span>Телефоны:</span></td><td><div itemprop="telephone"><a href="tel:+78129441556">+7 812 944-15-56</a></div><br><div itemprop="telephone"><a href="tel:+79313315111">+7 931 331-51-11</a><?php f_print_wa('79313315111', 1, 1) ?></div><br><div itemprop="telephone"><a href="tel:+78129827800">+7 812 982-78-00</a></div><br><div itemprop="telephone"><a href="tel:+79692004880">+7 969 200-48-80</a><?php f_print_wa('79692004880', 1, 1) ?></div><br><div itemprop="telephone"><a href="tel:+78127027444">+7 812 702-74-44</a></div><br><div itemprop="telephone"><a href="tel:+78129827805">+7 812 982-78-05</a></div></td></tr>
+<tr><td><span>Телефоны:</span></td><td><div itemprop="telephone"><a href="tel:+78129441556">+7 812 944-15-56</a></div><br><div itemprop="telephone"><a href="tel:+79313315111">+7 931 331-51-11</a><?php f_print_wa('79313315111', 1, 1) ?></div><br><div itemprop="telephone"><a href="tel:+78129827800">+7 812 982-78-00</a></div><br><div itemprop="telephone"><a href="tel:+78129827805">+7 812 982-78-05</a></div></td></tr>
 <tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail2"></span></div><br><div><span id="dpIDmail"></span></div></td></tr>
 <tr><td><span>Сайт:</span></td><td id="dpIDsite"><a href="https://teohim-spb.ru/" target="_blank">Наливные полимерные полы Санкт-Петербург</a></td></tr>
 <tr><td><span>&nbsp;</span></td><td id="dpIDsite"><a href="https://teohimneva.ru/" target="_blank">Устройство наливных полов Санкт-Петербург</a></td></tr>

@@ -201,6 +201,33 @@ $.createDialog('<div class="pb_ah0">Оформление заказа на об�
 </script>{*text0_13*}{*text0_16*}
 {*text5_16*}
 <script>{*text0_61*}</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ТэоХим",
+  "alternateName": "TeoHim",
+  "url": "https://teohim.ru",
+  "logo": "https://teohim.ru/img/css/teohim2023.png",
+  "description": "Производитель промышленных полов марки Элакор.",
+  "vatID": "1037739543126",
+  "legalName": "ООО «ТэоХим»",
+  "brand": "Элакор",
+  "telephone": "+74952212252",
+  "email": "teohim@teohim.ru",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Суворовская 10, офис 15",
+    "addressLocality": "Москва",
+    "postalCode": "620014",
+    "addressCountry": "RU",
+    "addressRegion": "Москва"
+  },
+  "foundingLocation": "Москва, Россия"
+}
+</script>
+
 <!-- calltouch -->
 <?php if (1==1) { ?>
 <script>

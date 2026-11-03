@@ -306,27 +306,158 @@ function fmtr_links($a_lnk=false, $a_lnk_nm=false) {
  print($s_out);
 }
 
-function fmtr_og($n_mat=0) {
+function add_micro_prop($name="", $val = '', $delim='') {
+  if ($val=='' || $val=='0') return '';
+  $s_out = '        
+        {
+            "@type": "PropertyValue",
+            "name": "'.$name.'",
+            "value": "'.$val.'"
+        }'.$delim;
+  return $s_out;
+}
+
+function fmtr_og($n_mat=0, $pubdt='') {
 //вывод микроразметки og страницы по массиву индексов материалов 
- global $mtr,$mtr_dop,$pb_domain,$pb_full_url;
+ global $mtr,$mtr_dop,$pb_root,$pb_domain,$pb_full_url;
+ $is_micro = $mtr_dop[$n_mat][25];
+ if ($is_micro !='1') return;
+
  $img=preg_replace('/webp/', 'png', $mtr_dop[$n_mat][1]); 
  $price=preg_replace('/[^0-9]+/', '', $mtr[$n_mat][8]);
-$s_out='
- <meta property="og:title" content="'.$mtr_dop[$n_mat][0].'" />
- <meta property="og:type" content="article" />
- <meta property="og:url" content="'.$pb_domain.$pb_full_url.'" />
- <meta property="og:image" content="https://teohim.ru//img/mtr/p'.$n_mat.'.png" />
- <meta property="og:product:availability" content="in stock" />
- <meta property="og:product:price:amount" content="'.$price.'" />
- <meta property="og:product:price:currency" content="RUB" />
+ $pricemax=preg_replace('/[^0-9]+/', '', $mtr[$n_mat][3]);
+ $arr_f=pack_explode_new($mtr_dop[$n_mat][21]);
+ $arr_z=pack_explode_new($mtr_dop[$n_mat][22]);
+ $cnt_pack = 0;
+ if ($arr_f)
+   $cnt_pack = count($arr_f);
+ if ($arr_z)
+   $cnt_pack = $cnt_pack + count($arr_z);
+ if ($cnt_pack==0) $cnt_pack = 1;
+ $arr_ras = explode(' ', $mtr_dop[$n_mat][28]);
+ $arr_ras = explode('-', $arr_ras[0]);
+ $ras = (float)str_replace(',', '.', $arr_ras[0]);
+ $ras = $ras * (float)$price;
+ $s_weight=(($n_mat==105 || $n_mat==227) ? 'л' : 'кг');
+ $kol_comp=(int)$mtr_dop[$n_mat][7];
+ $s_fas = '';
+ if ($kol_comp>1)  $s_fas = 'Комплект: ';
+ $delim = 0;
+ if ($arr_z) {
+  foreach($arr_z as $arr) {
+    if ($delim) $s_fas .= ', ';
+    if ($kol_comp > 1) $s_pack = $arr[1][$kol_comp];
+    else $s_pack = $arr[1][0];
+    $s_fas.= $s_pack.' '.$s_weight;
+    $delim = 1;
+  }
+ }
+ if ($arr_f) {
+  foreach($arr_f as $arr) {
+    if ($delim) $s_fas .= ', ';
+    if ($kol_comp > 1) $s_pack = $arr[1][$kol_comp];
+    else $s_pack = $arr[1][0];
+    $s_fas.= $s_pack.' '.$s_weight;
+    $delim = 1;
+  }
+ }
+ $s_out='
+ <meta property="og:locale" content="ru_RU">
+ <meta property="og:type" content="product">
+ <meta property="og:title" content="'.$mtr_dop[$n_mat][14].'">
+ <meta property="og:description" content="'.$mtr_dop[$n_mat][26].'">
+ <meta property="og:url" content="'.$pb_domain.$pb_full_url.'">
+ <meta property="og:image" content="https://teohim.ru//img/mtr/p'.$n_mat.'.png">
+ <meta property="og:product:availability" content="in stock">
+ <meta property="og:product:price:amount" content="'.$price.'">
+ <meta property="og:product:price:currency" content="RUB">
  ';
 
+ print($s_out);
+ $s_out = '<script type="application/ld+json">{
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "url": "'.$pb_domain.$pb_full_url.'",
+    "mainEntityOfPage": {
+         "@type": "ItemPage",
+         "name": "'.$mtr_dop[$n_mat][14].'",
+         "url": "'.$pb_domain.$pb_full_url.'",';
+    if ($pubdt!='') {
+      $s_out .= '
+         "datePublished": "'.$pubdt.'",';
+      $d1 = date("Y-m-d", filemtime($pb_root.$pb_full_url.'index.php'));
+      $d2 = date("Y-m-d", filemtime($pb_root.'/sys/materials'));
+      $d3 = date("Y-m-d", filemtime($pb_root.'/sys/materials_dop'));
+      $moddt = max($d1, $d2, $d3);
+      $s_out .= '
+         "dateModified ": "'.$moddt.'",';
+      }
+      $s_out .= '
+         "publisher": {
+             "@type": "Organization",
+             "name": "ТэоХим"
+         },
+         "author": {
+             "@type": "Organization",
+             "name": "ТэоХим"
+         },
+         "inLanguage":"ru-RU"
+    },';
+ $s_out .= '
+    "name": "'.$mtr_dop[$n_mat][14].'",
+    "description": "'.$mtr_dop[$n_mat][26].'",
+    "image": "https://teohim.ru//img/mtr/p'.$n_mat.'.png",';
+ $s_out .= '
+    "brand": {
+        "@type": "Brand",
+        "name": "Элакор"
+    },
+    "manufacturer": {
+        "@type": "Organization",
+        "name": "ТэоХим"
+    },
+    "category": "'.$mtr_dop[$n_mat][27].'",
+    "additionalProperty": ['
+         .add_micro_prop('Фасовка', $s_fas, ',')
+         .add_micro_prop('Расход', $mtr_dop[$n_mat][28], ',')
+         .add_micro_prop('Цена за 1м2', $ras, ',')
+         .add_micro_prop('Температура нанесения', $mtr_dop[$n_mat][29], ',')
+         .add_micro_prop('Способ нанесения', $mtr_dop[$n_mat][30], ',')
+         .add_micro_prop('Разбавитель', $mtr_dop[$n_mat][31], ',')
+         .add_micro_prop('Содержание растворителей', $mtr_dop[$n_mat][32], ',')
+         .add_micro_prop('Поверхность обработки', $mtr_dop[$n_mat][33], ',')
+         .add_micro_prop('Свойства', $mtr_dop[$n_mat][34], ',')
+         .add_micro_prop('Специальные свойства', $mtr_dop[$n_mat][35], ',')
+         .add_micro_prop('Область применения, условия эксплуатации', $mtr_dop[$n_mat][36], ',')
+         .add_micro_prop('Назначение', $mtr_dop[$n_mat][37], ',')
+         .add_micro_prop('Форма выпуска', $mtr_dop[$n_mat][38], ',')
+         .add_micro_prop('Тип ЛКМ', $mtr_dop[$n_mat][39], ',')
+         .add_micro_prop('Особенности', $mtr_dop[$n_mat][40], ',')
+         .add_micro_prop('Степень глянца, Блеск', $mtr_dop[$n_mat][41], ',')
+         .add_micro_prop('Светостойкость, УФ-стойкость', $mtr_dop[$n_mat][42], '')
+         .'],
+    "sku": "'.$mtr_dop[$n_mat][17].'",
+    "offers": {
+        "@type": "AggregateOffer",
+        "offerCount": '.$cnt_pack.',
+        "lowPrice": '.$price.',
+        "highPrice": '.$pricemax.',
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "url": "'.$pb_domain.$pb_full_url.'",
+        "seller": {
+            "@type": "Organization",
+            "name": "ТэоХим"
+        }
+    }
+   }</script>';
  print($s_out);
 }
 
 function fmtr_micro($n_mat=0, $name="") {
 //вывод микроразметки страницы по массиву индексов материалов 
  global $mtr,$mtr_dop,$pb_domain,$pb_full_url;
+ return;
  $s_out='';
    if ($name=='') { $name=$mtr_dop[$n_mat][14];}
    $price=preg_replace('/[^0-9]+/', '', $mtr[$n_mat][8]);
@@ -710,7 +841,7 @@ function fmtr_packing_new($n_mat=0, $no_flex=0) {
    $s_out.='<div style="display:flex; align-items:flex-start;">'; }
  $s_out.='<table class="tfas" style="padding:3px 5px; max-width:190px;"><tbody>
  <tr><td class="fs11"'.$colspan.'><span>Фасовка:</span> '.$dop_nm.'</td></tr>
- <tr><td style="height:1px;"></td></tr>';
+ <tr><td style="height:1px;"'.$colspan.'></td></tr>';
  $s_out.= pack_set_new($arr_f, $kol_comp, $n_mat);
  $s_out.= pack_set_new($arr_z, $kol_comp, $n_mat, 1);
  $s_out.= pack_set_new($arr_o, $kol_comp, $n_mat, 2);

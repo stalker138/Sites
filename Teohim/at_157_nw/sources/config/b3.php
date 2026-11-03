@@ -2871,9 +2871,9 @@
 *end*478
 
 *number*479
-*options*		0000000000
+*options*		1000000000
 *file*			block3_479
-*name*			empty
+*name*			Отзыв ООО ТД "ЛКМФЛОТ"
 *end*479
 
 *number*480

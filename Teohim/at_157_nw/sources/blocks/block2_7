@@ -1,13 +1,8 @@
 <h1>Полиуретановая эмаль Фактурная</h1>
 <div class="px5"></div>
 
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=18;
-fmtr_micro($ndx_mtr); ?>
-<p itemprop="description"><strong>Полиуретановая фактурная краска</strong> - <span class="c2 fs13">Элакор-ПУ Эмаль-2К/100 -</span><br>
+<p><strong>Полиуретановая фактурная краска</strong> - <span class="c2 fs13">Элакор-ПУ Эмаль-2К/100 -</span><br>
 Двухкомпонентная полиуретановая краска без запаха ( не содержит растворителей).</p>
-</div>
 
 <div class="px10b"></div>
 <div class="px10"></div>

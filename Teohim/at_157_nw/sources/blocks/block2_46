@@ -1,14 +1,9 @@
 <h1>Полиуретановая светостойкая эмаль Матовая</h1>
 <div class="px5"></div>
 
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=137;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:520px" itemprop="description">
+<div class="fleft" style="max-width:520px">
 <p class="fleft"><strong class="c2 fs13">Элакор-ПУ Эмаль Люкс Матовая</strong> - краска двухкомпонентная полиуретановая светостойкая, атмосферостойкая.<br>
 Выпускается любых цветов, колеруется по таблицам «Элакор» или «RAL». Блеск матовый.</p>
-</div>
 </div>
 
 <?php 

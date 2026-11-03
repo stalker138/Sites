@@ -1,14 +1,11 @@
 <h1>
 Тиксотропный грунт</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:520px" itemprop="description">
+
+<div class="fleft" style="max-width:520px">
 <p class="tal"><strong class="c2 fs13">Грунт тиксотропный</strong>  <span class="c2 fs13">Элакор-ПУ Грунт-50/Т</span> - однокомпонентная<br> влагоотверждаемая полиуретановая грунтовка для бетона.</p>
 <p class="tal">Полимеризуется за счет влаги воздуха. После полимеризации образует<br>
 твердо-эластичный полимер с высокой прочностью и химической стойкостью.</p>
-</div>
 </div>
 
 <?php 

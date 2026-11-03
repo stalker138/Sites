@@ -1,11 +1,5 @@
 <h1>Полиуретановый лак для бетона</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=23;
-fmtr_micro($ndx_mtr); ?>
-
-</div>
 
 <?php 
 fmtr_links($a_lnk_pu_lak, array('Все %полиуретановые лаки%', 'Все %лаки для бетона%'));

@@ -1,11 +1,7 @@
 <h1>Универсальный полиуретановый клей</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=261;
-fmtr_micro($ndx_mtr); ?>
-<p itemprop="description"><strong>Универсальный полиуретановый клей </strong> <span class="c2 fs13">   Элакор-ПУ</span> - двухкомпонентный состав для приклеивания различных типов рулонных, формованных и штучных покрытий.</p>
-</div>
+
+<p><strong>Универсальный полиуретановый клей </strong> <span class="c2 fs13">   Элакор-ПУ</span> - двухкомпонентный состав для приклеивания различных типов рулонных, формованных и штучных покрытий.</p>
 <div class="px10b"></div>
 <div class="px10"></div>
 

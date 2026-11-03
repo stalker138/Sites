@@ -27,10 +27,6 @@
 <div class="px10"></div>
 </div>
 <div class="dfbcl2_209">
-<!--div style="float:left; width:124px;">
-<p class="fwb" style="margin-left:20px; text-align:center;">Сторона 1</p>
-<img class="pb_ismall" style="margin-top:5px;" src="/img/ando1_s.jpg" onclick="$.zoomImg(this,'/img/ando1.jpg',200,25,1020,1280,'Антитепловизионное одеяло, сторона 1',-25);" title="Антитепловизионное одеяло, сторона 1" alt="Антитепловизионное одеяло, сторона 1" />
-</div-->
 <div style="float:left; width:124px;">
 <p class="fwb" style="margin-right:20px; text-align:center;">Окраска – «Мох»</p>
 <img class="pb_ismall" src="/img/ando2_1_s.jpg" style="float:right;margin:5px 20px 0 0;" onclick="$.zoomImg(this,'/img/ando2_1.jpg',200,25,981,1280,'Антитепловизионное одеяло',-25);" title="Антитепловизионное одеяло" alt="Антитепловизионное одеяло" />
@@ -105,6 +101,5 @@
 <div id="dateDoc">04апр25</div><div class="px0"></div>
 
 <div class="pb_hidden">
- <img src="/img/ando1.jpg" alt="">
- <img src="/img/ando2.jpg" alt="">
+ <img src="/img/ando2_1.jpg" alt="">
 </div>

@@ -1,14 +1,10 @@
 <h1>Эпоксидный антикоррозионный грунт</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=164;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:520px" itemprop="description">
+
+<div class="fleft" style="max-width:520px">
 <p><strong>Антикоррозионная грунт-эмаль</strong> <span class="c2 fs13">Элакор-ЭД Грунт-АКЗ</span><br>
 Двухкомпонентная эпоксидная антикоррозионная грунтовка<br>
 с высокой атмосферной, антикоррозионной и химической стойкостью.</p>
-</div>
 </div>
 
 <?php 
@@ -35,7 +31,7 @@ fmtr_guar($ndx_mtr);
 <div class="matf2" style="width:340px;">
 <?php 
 fmtr_packing($ndx_mtr);
-fmtr_img($ndx_mtr, 'Элакор-ПУ Люкс Эмаль-Т', 'Элакор-ПУ Люкс Эмаль-Т', 516, 464);
+fmtr_img($ndx_mtr, 'Элакор-ПУ Грунт АКЗ', 'Элакор-ПУ Грунт АКЗ', 516, 464);
 ?>
 </div>
 </div>
@@ -287,6 +283,6 @@ fmtr_descr($ndx_mtr, ' - Антикоррозионная Грунт-Эмаль'
 
 <div id="dateDoc">17фев25</div><div class="px0"></div>
 
-<div class="pb_hidden">
-<img src="/img/bottles/ed_gr_2k_akz.jpg" alt=""/>
-</div>
+<?php 
+fmtr_img_hidden($ndx_mtr, 'Элакор-ПУ Грунт АКЗ', 'Элакор-ПУ Грунт АКЗ');
+?>

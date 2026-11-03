@@ -1,10 +1,7 @@
 <h1>Лак для дерева</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=185;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:520px" itemprop="description">
+
+<div class="fleft" style="max-width:520px">
 <p><strong>Лак для дерева</strong> – защитное и декоративное покрытие для деревянных поверхностей: полы, стены, конструкции.</p>
 <p><strong>Лак по дереву</strong> обеспечивает:</p>
 
@@ -13,7 +10,6 @@ fmtr_micro($ndx_mtr); ?>
  <li>защиту от механических воздействий и истирающих нагрузок;</li>
  <li>улучшение декоративных свойств: проявляет фактуру дерева, придает поверхности нужный блеск (от глянцевого до матового).</li>
 </ul>
-</div>
 </div>
 
 <?php 

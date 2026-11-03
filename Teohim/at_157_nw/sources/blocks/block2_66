@@ -1,12 +1,8 @@
 <h1>Прозрачный наливной пол</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=63;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
-<p class="fwb"><strong class="c2 fs13">Прозрачный наливной пол</strong> <span class="c2 fs13">Элакор-ЭД</span> – двухкомпонентный полностью прозрачный эпоксидный компаунд светостойкий.</p>
-</div>
+
+<div class="fleft" style="max-width:500px">
+<p class="fwb"><strong class="c2 fs13">Прозрачный наливной пол</strong> <span class="c2 fs13">Элакор-ЭД</span> – двухкомпонентный полностью прозрачный эпоксидный компаунд повышенной светостойкости.</p>
 </div>
 
 <?php 
@@ -213,6 +209,9 @@ fmtr_descr($ndx_mtr, '');
 <tr class="fwb">
  <td class="tdl">Истираемость поверхности на 28 день - Табер, CS-10, груз 1000г, мг, не более</td>
  <td>22</td>
+</tr>
+<tr>
+ <td class="tdl" colspan="2">Светостойкость, ISO 9370-2017: значение по шкале – 6, оценка – «очень хорошая».</td>
 </tr>
 <tr>
  <td class="tdl">Стойкость пленки к статическому воздействию воды при температуре 20,0±2,0 °С, час, не менее</td>

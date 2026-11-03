@@ -1,14 +1,10 @@
 <h1>Полиуретан-цементный наливной состав</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=127;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+
+<div class="fleft" style="max-width:500px">
 <p><strong>Полиуретан-цементный наливной состав</strong><br>
 <span class="c2 fs13">Элакор-ПЦ Т3</span> - трехкомпонентный состав<br>
 для устройства покрытий толщиной 8-12мм.</p>
-</div>
 </div>
 
 <?php 

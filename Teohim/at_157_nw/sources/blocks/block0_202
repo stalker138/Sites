@@ -47,7 +47,7 @@
 
 <div class="dflex_contain" style="border:none;">
 <div class="fwb dflex_item_left">КОНСУЛЬТАЦИИ:</div>
-<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74997034037">+7 (499) 703-4037</a>, <a class="consult" href="tel:+79035640656">+7-903-564-0656</a> <a class="consult" href="tel:+79066576350">+7-906-657-6350</a></div><div class="dflex_item"> &nbsp; <a class="consult" href="https://max.ru/u/f9LHodD0cOL0rk1LG9QzXrCz4bPZtDBTgSrBpaG2OhPtSShdMAMlIzoAJgI"><img src="/img/css/max-logo.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/ossir68"><img src="/img/css/telegram.png" style="width:16px;"></a></div></div>
+<div class="dflex_item_contain"><div class="dflex_item"><a class="consult" href="tel:+74997034037">+7 (499) 703-4037</a>, <a class="consult" href="tel:+79035640656">+7-903-564-0656</a> <!--a class="consult" href="tel:+79066576350">+7-906-657-6350</a--></div><!--div class="dflex_item"> &nbsp; <a class="consult" href="https://max.ru/u/f9LHodD0cOL0rk1LG9QzXrCz4bPZtDBTgSrBpaG2OhPtSShdMAMlIzoAJgI"><img src="/img/css/max-logo.png" style="width:16px;"></a> &nbsp;<a class="consult" href="https://t.me/ossir68"><img src="/img/css/telegram.png" style="width:16px;"></a></div--></div>
 </div>
 </div>
 

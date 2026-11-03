@@ -1,10 +1,5 @@
 <h1>Лак для металла, Антикоррозионный лак</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=169;
-fmtr_micro($ndx_mtr); ?>
-</div>
 
 <?php 
 fmtr_links(array(1109), array('Другие %полиуретановые Лаки% Элакор'));

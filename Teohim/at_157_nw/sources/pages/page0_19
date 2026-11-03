@@ -682,4 +682,19 @@ if($pb_page>4500 && $pb_page<5000) {
 $a=array();
 
 print $snav;
+
+$pattern = '/' . preg_quote($sep, '/') . '/';
+
+$arr_nav = preg_split($pattern, $snav, -1, PREG_SPLIT_NO_EMPTY);
+$snav = '<div class="pb_hidden"><ul itemscope itemtype="https://schema.org/BreadcrumbList">';
+for ($i=0; $i<count($arr_nav); $i++) {
+  $s_ref = $arr_nav[$i];
+  $s_ref = preg_replace('/">/', '" itemprop="item"><span itemprop="name">', $arr_nav[$i]);
+  $s_ref = preg_replace('/<\//', '</span></', $s_ref);
+  if ($i == count($arr_nav)-1) $s_ref = '<span itemprop="name">'.$s_ref.'</span>';
+  //if ($pb_page==2056) print('sref '.$s_ref);
+  $snav .= '<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">'.$s_ref.'<meta itemprop="position" content="'.($i+1).'"></li>';
+ }
+$snav .= '</ul></div>';
+print $snav;
 ?>

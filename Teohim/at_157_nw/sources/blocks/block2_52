@@ -1,12 +1,7 @@
 <h1>Акриловая краска</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=223;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+<div class="fleft">
 <p><strong>Акриловая краска</strong> для бетона, кирпича, камня; дерева, фанеры, ЦСП, ДСП и т.п.</p>
-</div>
 </div>
 
 <?php 

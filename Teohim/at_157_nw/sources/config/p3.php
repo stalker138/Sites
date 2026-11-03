@@ -4783,13 +4783,13 @@
 *end*478
 
 *number*479
-*options*		000000000
+*options*		1150000000
 *file*			page3_479
-*name*			empty479
-*link*			empty
-*title*			empty
-*keyw*			empty
-*desc*			empty
+*name*			Отзыв ООО ТД "ЛКМФЛОТ"
+*link*			/otz/129/
+*title*			Отзыв ООО ТД "ЛКМФЛОТ"
+*keyw*			Отзыв ООО ТД "ЛКМФЛОТ"
+*desc*			Отзыв ООО ТД "ЛКМФЛОТ"
 *end*479
 
 *number*480

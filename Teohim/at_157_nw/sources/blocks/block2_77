@@ -1,12 +1,8 @@
 <h1>Флюаты</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=227;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p class="fwb"><strong>Флюаты</strong> – флюатирующий состав для защиты бетонных поверхностей и других кальцийсодержащих минералов.</p>
-</div>
 </div>
 
 <?php 

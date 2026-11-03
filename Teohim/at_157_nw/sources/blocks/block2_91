@@ -1,13 +1,9 @@
 <h1>Грунтовка по металлу</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=161;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p><span class="c2 fs13">Элакор-ПУ Грунт для Металла</span> – антикоррозионная <strong>грунтовка по металлу</strong> - полиуретановая однокомпонентная.<br>
 Отверждается за счет влаги воздуха. Можно наносить при отрицательных температурах.</p>
-</div>
 </div>
  
 <?php 

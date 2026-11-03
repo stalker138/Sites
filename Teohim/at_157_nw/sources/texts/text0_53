@@ -22,6 +22,8 @@ a_mtr[38] = [81];
  a_mtr[1] = [53];
 a_mtr[10] = [54];
 a_mtr[18] = [73];
+a_mtr[40] = [48];
+a_mtr[41] = [49];
 
 a_mtr[2] = [51];
 a_mtr[11] = [52];
@@ -55,6 +57,7 @@ a_mtr[31] = [70];
 function f_setVars053() { if (a_mtr[v_pi][0]==40 || a_mtr[v_pi][0]==71) return;
   pi = a_mtr[v_pi][0]; /* Покрытие */
   console.log(pi);
+  console.log(se);
   vrm = a_cvr_main[pi][1];     /* Влияние выбранной марки бетона (pi_mb) на стоимость доп.работ */
 
 /* *****Группа для грунтования***** */

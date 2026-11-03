@@ -1,16 +1,11 @@
 <h1>Самовыравнивающийся полиуретановый наливной пол</h1>
 <div class="px5"></div>
 
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=27;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+<div class="fleft" style="max-width:500px">
 <p><strong>Полиуретановый Самовыравнивающийся наливной пол</strong><br>
 <span class="c2 fs13">Элакор-ПУ Классик</span> - цветной двухкомпонентный компаунд.</p>
 <p>После полимеризации образует твердо-эластичную ударопрочную<br>
 поверхность с высокой износостойкостью и химической стойкостью.</p>
-</div>
 </div>
 
 <?php 

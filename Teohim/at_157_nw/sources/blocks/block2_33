@@ -1,12 +1,8 @@
 <h1>Анкеровочный подливочный состав</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=76;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p><strong class="c2 fs13">Анкеровочный состав</strong><span class="c2 fs13"> Элакор-ЭД </span> - трехкомпонентная эпоксидная подливочная смесь для высокоточного монтажа оборудования, подливки под опорные части колонн и установки анкеров.</p>
-</div>
 </div>
 
 <?php 

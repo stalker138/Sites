@@ -1,13 +1,9 @@
 <h1>Светостойкая тиксотропная эмаль</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=166;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p><strong>Светостойкая тиксотропная краска</strong> <span class="c2 fs13">Элакор-ПУ Люкс Эмаль-Т</span><br>
 полиакрилат-уретановая двухкомпонентная атмосферостойкая.</p>
-</div>
 </div>
 
 <?php 

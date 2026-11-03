@@ -1,14 +1,9 @@
 <h1>Антистатический наливной пол СК ПРОФ</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=67;
-$ndx_mtr2=92;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+
+<div class="fleft" style="max-width:500px">
 <p class="tal"><strong>Эпоксидные Антистатические наливные полы</strong> <span class="fs13 c2">Элакор-ЭД<br>СК ПРОФ</span> – цветной электропроводящий эпоксидный состав.</p>
 <p><span>Применяется для всех типов антистатических покрытий</span><br>с требованиями, согласно «СП 29.13330.2011. Полы».</p>
-</div>
 </div>
 
 <?php 

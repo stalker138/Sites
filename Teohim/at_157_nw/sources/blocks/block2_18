@@ -1,15 +1,10 @@
 <h1>Эпоксидная шпаклевка</h1>
 <div class="px5"></div>
 
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=71;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+<div class="fleft">
 <p><span>Эпоксидная шпаклевка</span> - <span class="c2 fs13">«Элакор-ЭД» Шпатлевка-2К</span> - эпоксидная двухкомпонентная шпаклевка заданного цвета.<br>
 Безусадочная. Не содержит растворителей, не имеет запаха при нанесении.<br>
 После твердения образует высокопрочный химстойкий полимер.</p>
-</div>
 </div>
 
 <?php 
@@ -182,6 +177,6 @@ fmtr_descr($ndx_mtr, ' - эпоксидная шпаклевка для бето
 
 <div id="dateDoc">18сен23</div>
 
-<div class="pb_hidden">
- <img src="/img/bottles/shpaklevka-epoksidnaja.jpg" alt="">
-</div>
+<?php 
+fmtr_img_hidden($ndx_mtr, 'Эпоксидная шпатлевка', 'Эпоксидная шпатлевка');
+?>

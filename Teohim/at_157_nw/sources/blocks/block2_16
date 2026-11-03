@@ -1,10 +1,5 @@
 <h1>Эпоксидный лак</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=53;
-fmtr_micro($ndx_mtr); ?>
-</div>
 
 <?php 
 //fmtr_links();

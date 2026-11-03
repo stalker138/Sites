@@ -1,14 +1,10 @@
 <h1>Полимерные добавки в бетон</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=247;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:550px" itemprop="description">
+
+<div class="fleft" style="max-width:550px">
 <p><strong>Полимерная добавка в бетон</strong> <span class="c2 fs13">Эластобетон-Б</span> поставляется в жидком виде.<br>
 Вводится при изготовлении бетона, из расчета 20кг добавки на 100кг цемента.</p>
 </div> 
-</div>
 
 <?php 
 fmtr_links(array(1152));

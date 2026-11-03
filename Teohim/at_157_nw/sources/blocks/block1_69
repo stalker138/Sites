@@ -14,9 +14,13 @@ print $tblt1;
 print ftech18(171,'');
 print ftech18(172,'');
 print ftech18(173,'');
+print ftech18(98,'');
+print ftech18(99,'');
+print ftech18(94,'');
 print ftech18(174,'');
-print ftech18(175,'');
-print ftech18(176,'');
+print ftech18(75,'');
+print ftech18(90,'');
+print ftech18(92,'');
 print $tblt2; ?>
 
 <div class="px10"></div>

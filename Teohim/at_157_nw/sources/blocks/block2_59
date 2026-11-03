@@ -1,17 +1,12 @@
 <h1>Самовыравнивающийся эпоксидный наливной пол</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=57;
-//$ndx_mtr2=70;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+
+<div class="fleft" style="max-width:500px">
 <p><strong>Эпоксидный Самовыравнивающийся наливной пол</strong><br>
 <span class="c2 fs13">Элакор-ЭД Классик</span> - цветной двухкомпонентный состав.</p>
 <p>После отверждения образует покрытие с высокими декоративными свойствами,<br>
 высокой прочностью и износостойкостью, химической стойкостью.<br>
 В момент нанесения отсутствует запах.</p>
-</div>
 </div>
 
 <?php 

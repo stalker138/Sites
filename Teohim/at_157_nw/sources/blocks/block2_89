@@ -1,14 +1,10 @@
 <h1>Полиуретан-цементный грунт грунтовка</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=129;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+
+<div class="fleft" style="max-width:500px">
 <p><span class="c2 fs13">Элакор-ПЦ Грунт</span> – <strong>полиуретан цементная грунтовка </strong><br>
 Трехкомпонентный грунтовочный состав для применения<br>
 в системах покрытий «Элакор-ПЦ».</p>
-</div>
 </div>
  
 <?php 
@@ -30,7 +26,7 @@ print fmtr2($ndx_mtr);
 fmtr_guar($ndx_mtr);
 ?>
 </div>
-<div class="matf2"style="width: 360px;">
+<div class="matf2" style="width: 360px;">
 <?php 
 fmtr_packing($ndx_mtr,'',0, '', '18');
 fmtr_img($ndx_mtr, 'Элакор-ПЦ Грунт - Полиуретан-цементная грунтовка', 'Элакор-ПЦ Грунт - Полиуретан-цементная грунтовка', 561, 320);

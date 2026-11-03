@@ -1,14 +1,11 @@
 <h1>Силер для бетона</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=105;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p class="tal"><strong>Силер</strong> – полимерная влагоудерживающая пропитка для бетона, бетонных полов, топпинга.</p>
 <p class="mt3 tal">Другие названия: кюринг топпинга, пропитка кюринг для бетона, мембранообразующая пропитка, <span class="fwn nw">пропитка – мембранообразователь.</span></p>
 </div>
-</div>
+
 <div class="px10b"></div>
 <div class="px10"></div>
 <div class="matflex">

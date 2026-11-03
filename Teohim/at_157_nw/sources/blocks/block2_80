@@ -1,16 +1,10 @@
 <h1>Антистатический Полиуретан-цементный наливной пол</h1>
 <div class="px5"></div>
 
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=132;
-$ndx_mtr2=133;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+<div class="fleft" style="max-width:500px">
 <p><strong>Полиуретан-цементный антистатический наливной пол</strong><br><span class="c2 fs13">Элакор-ПЦ Т1/Б АСТ</span> - 
 трехкомпонентный самонивелирующийся<br>
 состав для устройства покрытий толщиной 3-5мм.</p>
-</div>
 </div>
 
 <?php 

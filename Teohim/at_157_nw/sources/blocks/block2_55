@@ -1,14 +1,9 @@
 <h1>Антистатическая краска</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=52;
-$ndx_mtr2=91;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+
+<div class="fleft" style="max-width:500px">
 <p><span class="c2 fs13">Полиуретановая Люкс Антистатическая краска Элакор-ПУ</span><br>
 Цветной электропроводящий полиуретановый двухкомпонентный состав.</p>
-</div>
 </div>
 
 <?php 

@@ -62,7 +62,7 @@
 <div class="px0"></div><p class="divh3span">Цена с НДС</p><div class="px0"></div>
 <p class="fwb fi c3 ls1">Полиуретановые наливные полы</p>
 <div class="px5"></div>
-<?php print $tbl1.fcvr3(53).fcvr3(54).fcvr3(73).$tbl2; /* .fcvr3(40) */?>
+<?php print $tbl1.fcvr3(53).fcvr3(54).fcvr3(73).fcvr3(48).fcvr3(49).$tbl2; /* .fcvr3(40) */?>
 <p class="mt0 fwb fi c3 ls1">Эпоксидные наливные полы</p>
 <div class="px5"></div>
 <?php print $tbl1.fcvr3(51).fcvr3(52).fcvr3(55).$tbl2; /* .fcvr3(71) */ ?>
@@ -136,7 +136,7 @@ print $tbl2; ?>
 <div class="px0"></div><div class="px0"></div>
 <p class="fwb fi c3 ls1">Полиуретановые наливные полы</p>
 <div class="px5"></div>
-<?php print $tblt23.ftbl23(53).ftbl23(54).ftbl23(73).fcvr3(93).$tblt23end; /* .ftbl23(40) */ ?>
+<?php print $tblt23.ftbl23(53).ftbl23(54).ftbl23(73).fcvr3(93).ftbl23(48).ftbl23(49).$tblt23end; /* .ftbl23(40) */ ?>
 <div class="px10"></div>
 <p class="mt0 fwb fi c3 ls1">Эпоксидные наливные полы</p>
 <div class="px5"></div>

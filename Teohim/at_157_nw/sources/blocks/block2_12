@@ -1,15 +1,10 @@
 <h1>Эпоксидный грунт</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=41;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:520px" itemprop="description">
+<div class="fleft" style="max-width:520px">
 <p><strong>Эпоксидный грунт</strong> без растворителей, без запаха при нанесении.<br>
 Эпоксидный состав без наполнителей. Плотность 1,05 кг/л.<br>
 <span>Обеспечивает минимальный расход</span> при грунтовании бетонных поверхностей
 <br>(М350-М200): 0,1-0,25кг/м<sup>2</sup>.</p>
-</div>
 </div>
 
 <?php 

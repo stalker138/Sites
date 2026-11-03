@@ -1,15 +1,10 @@
 <h1>Полиуретан-цементный наливной пол</h1>
 <div class="px5"></div>
 
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=126;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+<div class="fleft" style="max-width:500px">
 <p><strong>Полиуретан-цементный наливной пол</strong> <span class="c2 fs13">Элакор-ПЦ Т2</span><br>
 Трехкомпонентный самонивелирующийся состав<br>
 для устройства покрытий толщиной 5-10мм.</p>
-</div>
 </div>
 
 <?php 

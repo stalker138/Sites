@@ -10,7 +10,7 @@ h2 { padding:0; font-size:13px; color:#004f92; background:none; }
 {*tpl10*}
 <?php 
 $ndx_mtr=97;
-fmtr_og($ndx_mtr); 
+fmtr_og($ndx_mtr, '2024-12-11'); 
 ?>
 </head><body>
 <?php /* Большие экраны (от 1000px) */ ?>

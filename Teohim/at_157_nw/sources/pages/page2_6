@@ -8,7 +8,7 @@
 {*tpl10*}
 <?php 
 $ndx_mtr=20;
-fmtr_og($ndx_mtr); 
+fmtr_og($ndx_mtr, '2024-12-11'); 
 ?>
 </head><body>
 <?php /* Большие экраны (от 1000px) */ ?>

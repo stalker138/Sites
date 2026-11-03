@@ -1,12 +1,7 @@
 <h1>Полиуретановая шпатлевка</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=34;
-fmtr_micro($ndx_mtr); ?>
-<p itemprop="description"><span class="c2 fs13">Элакор-ПУ Шпатлевка-2К БП</span> <span>– двухкомпонентная полиуретановая шпаклевка без пигментов.</span><br>
+<p><span class="c2 fs13">Элакор-ПУ Шпатлевка-2К БП</span> <span>– двухкомпонентная полиуретановая шпаклевка без пигментов.</span><br>
 Естественный цвет – темно-серый, примерно RAL7003, RAL7013.</p>
-</div>
 <div class="px10b"></div>
 <div class="px10"></div>
 <p class="fwb mt0">Если требуется выполнить шпатлевание заданным цветом – смотрите: <l2 id="8" class="fs13">Цветная полиуретановая шпатлевка</l2></p>

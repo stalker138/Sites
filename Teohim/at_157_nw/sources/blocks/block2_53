@@ -1,12 +1,8 @@
 <h1>Эпоксидная смола для заливки прозрачная</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=64;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p><span class="c2 fs13">Смола АРТ - </span><strong>эпоксидная смола для заливки прозрачная</strong> – двухкомпонентный светостойкий полностью прозрачный компаунд.</p>
-</div>
 </div>
 
 <?php 

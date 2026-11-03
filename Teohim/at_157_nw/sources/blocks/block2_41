@@ -1,12 +1,7 @@
 <h1>Полуматовый лак</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=143;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:520px" itemprop="description">
+<div class="fleft" style="max-width:520px">
 <p><span class="c2 fs13">Элакор-ПУ Люкс Лак-Р Полуматовый</span> – полиуретановый двухкомпонентный лак, светостойкий, УФ-стойкий.</p>
-</div>
 </div>
 
 <?php 

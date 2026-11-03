@@ -1,15 +1,10 @@
 <h1>Полуматовая эмаль</h1>
 <div class="px5"></div>
 
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=20;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:520px" itemprop="description">
+<div class="fleft" style="max-width:520px">
 <p><strong>Полиуретановая полуматовая краска</strong>  <span class="c2 fs13">Элакор-ПУ Эмаль-60 -</span><br>
 однокомпонентная влагоотверждаемая.</p>
 <p>Преимущество: полиуретановая полуматовая краска Элакор-ПУ может наноситься при отрицательных температурах (от минус 30°С).</p>
-</div>
 </div>
 
 <?php 

@@ -1,14 +1,9 @@
 <h1>Антистатическая краска</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=94;
-$ndx_mtr2=95;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+
+<div class="fleft" style="max-width:500px">
 <p><span class="c2 fs13">Полиуретановая Люкс Антистатическая краска Элакор-ПУ СК ПРОФ</span><br>
 Цветной электропроводящий полиуретановый двухкомпонентный состав.</p>
-</div>
 </div>
 
 <?php 
@@ -210,6 +205,7 @@ fmtr_repair($ndx_mtr2);
  <td>от -60°С до +100°С</td>
  <td></td>
  </tr>
+ <tr>
  <td class="tdl">Интервал рабочих температур при ОВВ более 80%, °С</td>
  <td>от -40°С до +80°С</td>
  <td></td>

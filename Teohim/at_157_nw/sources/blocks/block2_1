@@ -1,12 +1,8 @@
 <h1>Грунт для бетона</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:520px" itemprop="description">
+<div class="fleft" style="max-width:520px">
 <p class="tal"><strong class="c2 fs13">Грунт по бетону</strong>  <span class="c2 fs13">Элакор-ПУ</span> - однокомпонентный влагоотверждаемый полиуретановый грунт. Обладает высокой текучестью и эффективно проникает в поры бетона (2-4мм для бетона М300).</p>
 <p class="tal"><strong>Грунт для бетона</strong> полимеризуется за счет влаги воздуха. После полимеризации образует твердо-эластичный полимер с высокой прочностью и высокой химической стойкостью.</p>
-</div>
 </div>
 
 <?php 

@@ -1,13 +1,9 @@
 <h1>Эпоксидный ремонтный состав</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=73;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p><strong class="c2 fs13">Ремонтный эпоксидный состав</strong><span class="c2 fs13"> Элакор-ЭД </span> - двухкомпонентный эпоксидный компаунд.</p>
 <p><span>Цвет:</span> около RAL7013 (цвет мокрого бетона).</p>
-</div>
 </div>
 
 <?php 
@@ -59,14 +55,14 @@ fmtr_descr($ndx_mtr, '');
 <div id="tmpv1">
 <p class="fwb fs13 c2">До нанесения</p>
 <div class="px10"></div>
-<iframe width="auto" height="auto" style="min-width:160px;min-height:288px" src="/video/remontnyi-epoksidnyi-sostav-before.mp4" frameborder="0" allowfullscreen></iframe>
+<iframe style="min-width:160px;min-height:288px" src="/video/remontnyi-epoksidnyi-sostav-before.mp4" allowfullscreen></iframe>
 <div class="px20"></div>
 <div class="tmpvdel" onclick="$.id('tmpv1').style.display='none';f_close()"></div>
 </div>
 <div id="tmpv2">
 <p class="fwb fs13 c2">После нанесения</p>
 <div class="px10"></div>
-<iframe width="auto" height="auto" style="min-width:160px;min-height:288px" src="/video/remontnyi-epoksidnyi-sostav-after.mp4" frameborder="0" allowfullscreen></iframe>
+<iframe style="min-width:160px;min-height:288px" src="/video/remontnyi-epoksidnyi-sostav-after.mp4" allowfullscreen></iframe>
 <div class="px20"></div>
 <div class="tmpvdel" onclick="$.id('tmpv2').style.display='none';f_close()"></div>
 </div>
@@ -81,10 +77,10 @@ fmtr_descr($ndx_mtr, '');
 <div class="photoblock">
 <div class="px10"></div>
 <p class="fwb mt0 tac c2">До ремонта + <span class="tmp_spab" onclick="$.id('tmpv1').style.display='block';$.id('tmp1').style.clear='both';">Видео</span></p>
-<img class="pb_ismall pb_gal_itm" src="/img/ed_rems1-2k_s.jpg" onclick="$.zoomImg(this,'/img/ed_rems1_2k.jpg',200,25,594,1053,'Поверхность до нанесения ремонтного состава и полимерного покрытия',-25,1,0,1);" title="Поверхность до нанесения ремонтного состава и полимерного покрытия" alt="Поверхность до нанесения ремонтного состава и полимерного покрытия"/>
+<img class="pb_ismall pb_gal_itm" src="/img/ed_rems1-2k_s.jpg" onclick="$.zoomImg(this,'/img/ed_rems1_2k.jpg',200,25,594,1053,'Поверхность до нанесения ремонтного состава и полимерного покрытия',-25,1,0,1);" title="Поверхность до нанесения ремонтного состава и полимерного покрытия" alt="Поверхность до нанесения ремонтного состава и полимерного покрытия">
 <div class="px10"></div>
 <p class="fwb mt0 tac c2">После ремонта + <span class="tmp_spab" onclick="$.id('tmpv2').style.display='block';$.id('tmp1').style.clear='both';">Видео</span></p>
-<img class="pb_ismall pb_gal_itm" src="/img/ed_rems2-2k_s.jpg" onclick="$.zoomImg(this,'/img/ed_rems2_2k.jpg',200,25,554,1053,'Поверхность после нанесения ремонтного состава и полимерного покрытия',-25,1,0,1);" title="Поверхность после нанесения ремонтного состава и полимерного покрытия" alt="Поверхность после нанесения ремонтного состава и полимерного покрытия"/>
+<img class="pb_ismall pb_gal_itm" src="/img/ed_rems2-2k_s.jpg" onclick="$.zoomImg(this,'/img/ed_rems2_2k.jpg',200,25,554,1053,'Поверхность после нанесения ремонтного состава и полимерного покрытия',-25,1,0,1);" title="Поверхность после нанесения ремонтного состава и полимерного покрытия" alt="Поверхность после нанесения ремонтного состава и полимерного покрытия">
 <div class="px10"></div>
 </div>
 </div>

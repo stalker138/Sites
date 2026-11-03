@@ -1,12 +1,8 @@
 <h1>Эпоксидная смола для заливки </h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=74;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p><strong>Эпоксидная смола для заливки</strong> – двухкомпонентный светостойкий полностью прозрачный компаунд.</p>
-</div>
 </div>
 
 <?php 
@@ -56,13 +52,13 @@ fmtr_descr($ndx_mtr, '');
 
 
 <div class="dph1">
-<img class="pb_ismall" src="/img/smola-art/smola1_s.jpg" onclick="$.zoomImg(this,'/img/smola-art/smola1_s.jpg',200,25,800,600,'Смола для заливки',-25,1,0,1);" title="Смола для заливки" alt="Смола для заливки"/>
+<img class="pb_ismall" src="/img/smola-art/smola1_s.jpg" onclick="$.zoomImg(this,'/img/smola-art/smola1_s.jpg',200,25,800,600,'Смола для заливки',-25,1,0,1);" title="Смола для заливки" alt="Смола для заливки">
 </div>
 <div class="dph1">
-<img class="pb_ismall" src="/img/smola-art/smola2_s.jpg" onclick="$.zoomImg(this,'/img/smola-art/smola2_s.jpg',200,25,800,600,'Эпоксидная Смола для заливки',-25,1,0,1);" title="Эпоксидная Смола для заливки" alt="Эпоксидная Смола для заливки"/>
+<img class="pb_ismall" src="/img/smola-art/smola2_s.jpg" onclick="$.zoomImg(this,'/img/smola-art/smola2_s.jpg',200,25,800,600,'Эпоксидная Смола для заливки',-25,1,0,1);" title="Эпоксидная Смола для заливки" alt="Эпоксидная Смола для заливки">
 </div>
 <div class="dph1r0">
-<img class="pb_ismall" src="/img/smola-art/smola3_s.jpg" onclick="$.zoomImg(this,'/img/smola-art/smola3_s.jpg',200,25,800,600,'Смола для заливки',-25,1,0,1);" title="Смола для заливки" alt="Смола для заливки"/>
+<img class="pb_ismall" src="/img/smola-art/smola3_s.jpg" onclick="$.zoomImg(this,'/img/smola-art/smola3_s.jpg',200,25,800,600,'Смола для заливки',-25,1,0,1);" title="Смола для заливки" alt="Смола для заливки">
 </div>
 
 <div class="px12"></div>

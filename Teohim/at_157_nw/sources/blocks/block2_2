@@ -1,11 +1,6 @@
 <h1>Полиуретановый грунт двухкомпонентный</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=13;
-fmtr_micro($ndx_mtr); ?>
-<p itemprop="description" class="fleft tal" style="max-width:520px"><span class="c2 fs13">Элакор-ПУ Грунт-2К/100</span> – полиуретановый грунт двухкомпонентный, <span class="fwn nw">без растворителей, без запаха,</span> сухой остаток – 100%.</p>
-</div>
+<p class="fleft tal" style="max-width:520px"><span class="c2 fs13">Элакор-ПУ Грунт-2К/100</span> – полиуретановый грунт двухкомпонентный, <span class="fwn nw">без растворителей, без запаха,</span> сухой остаток – 100%.</p>
 <div class="px10b"></div>
 <div class="px10"></div>
 

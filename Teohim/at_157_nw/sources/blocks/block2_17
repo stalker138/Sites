@@ -1,13 +1,9 @@
 <h1>Эпоксидная шпатлевка</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=72;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p><span>Эпоксидная шпатлевка</span> - <span class="c2 fs13">«Элакор-ЭД» Шпатлевка-2К БП</span> - двухкомпонентный эпоксидный состав, не пигментированный.</p>
 <p>Естественный цвет – около RAL 1013. Без растворителей, без запаха при нанесении.</p>
-</div>
 </div>
 
 <?php 

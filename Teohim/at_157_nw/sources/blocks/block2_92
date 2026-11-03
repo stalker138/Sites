@@ -1,10 +1,5 @@
 <h1>Эмаль для металла, Краска по металлу</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=165;
-fmtr_micro($ndx_mtr); ?>
-</div>
 
 <?php 
 fmtr_links(array(1108), array('Все %полиуретановые эмали% Элакор'));

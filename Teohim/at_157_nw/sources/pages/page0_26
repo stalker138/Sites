@@ -92,8 +92,8 @@ print $opt;
 <tr><td class="tdleft">Количество слоёв Эмали</td>
 <td id="i_se_td" class="pad0" style="background:#49ff79">
   <select id="i_se" class="i_t" onchange="f_i_t('i_se'); $.id('id_sub').focus();">
-    <option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
-    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</option>
+    <option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</option>
+    <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</option>
   </select>
 </td></tr>
 <?php } if ($sp) {    // ЭД с кварцем, ПУ с песком,  безыскровое ?>
@@ -151,7 +151,9 @@ print $opt;
   <select id="i_fl" class="i_t" onchange="f_i_t('i_fl'); $.id('id_sub').focus();">
     <?php if ($pg_pi_set!=83) { ?><option value="0" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;НЕТ</option><?php } ?>
     <option value="1">&nbsp;матовый</option>
+<?php if ($pg_pi_set!=48  && $pg_pi_set!=49) { ?>
     <option value="2">&nbsp;полуматовый</option>
+<?php } ?>
 <?php if ($pg_pi_set!=51 && $pg_pi_set!=52) { ?>
     <option value="3">&nbsp;глянцевый</option>
 <?php } ?>

@@ -1,12 +1,8 @@
 <h1 class="lh18">Паркетный лак</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=181;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:520px" itemprop="description">
+
+<div class="fleft" style="max-width:520px">
 <p><strong class="c2 fs13">Паркетный лак</strong> <span class="c2 fs13">Элакор-ПУ</span> – однокомпонентный полиуретановый <strong>лак для паркета</strong> и других деревянных поверхностей.</p>
-</div>
 </div>
 
 <?php 

@@ -142,8 +142,8 @@ $pl[146]='<a href="https://teohim.ru/downloads/poliuretanovyj-lak-lux-ufb-mat.pd
 $pl[147]='<l2 id="43">';  // </l2> Люкс Лак-Р Глубоко Матовый , блеск 2-4% (с растворителем)
 $pl[148]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-emal-sk-prof.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-emal-sk-prof.pdf').'" target="_blank">';  // </a> 
 $pl[149]='<l2 id="131">';  // </l2>
-$pl[150]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-emal-v-pol.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-emal-v-pol.pdf').'" target="_blank">';  // </a> 
-$pl[151]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-emal-v-fasad.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-emal-v-fasad.pdf').'" target="_blank">';  // </a> 
+$pl[150]='<l2 id="132">';  // </l2>
+$pl[151]='<l2 id="132">';  // </l2>
 $pl[153]='<l2 id="44">';  // </l2> Люкс Лак-В Матовый , блеск 7-10% (водный)
 // $pl[155]='<l1 id="1" style="color:#f00000">'; // </l1>
 $pl[154]='<a href="https://teohim.ru/downloads/elakor-pu-ljuks-lak-v-polumat.pdf?'.filemtime($pb_root.'downloads/elakor-pu-ljuks-lak-v-polumat.pdf').'" target="_blank">';  // </a> 4.6.3. Люкс Лак-В Полуматовый (водный)
@@ -389,7 +389,12 @@ $plc[]='<l2 id="231" class="blk_cover_calc" title="Расчет количест
 $plc[]='<l2 id="233" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    40
 $plc[]=''; $plc[]='';
 $plc[]='<l2 id="230" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    43
-$plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';    //    41 42 43 44 45 46 47 48 49 50
+$plc[]=''; $plc[]=''; $plc[]=''; $plc[]='';    //44 45 46 47
+
+$plc[]='<l2 id="217" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    48
+$plc[]='<l2 id="218" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    49
+
+$plc[]='';    //   50
 
 $plc[]='<l2 id="221" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    51
 $plc[]='<l2 id="229" class="blk_cover_calc" title="Расчет количества и цены материалов, стоимости работ">';    // </l2>    52
@@ -578,6 +583,8 @@ $pdwnl[40]='<'.'a href="/instructions/pu-pokrytie-peskom-gladkoe.pdf?'.filemtime
 $pdwnl[41]='<'.'a href="/instructions/akrilovje-pokrytie.pdf?'.filemtime($pb_root.'instructions/akrilovje-pokrytie.pdf').'" class="tpdf" target="_blank" title="Акриловое покрытие (МБ2) инструкция';
 $pdwnl[43]='<'.'a href="/instructions/svetoskoikoe-kvartz-pokrytie.pdf?'.filemtime($pb_root.'instructions/svetoskoikoe-kvartz-pokrytie.pdf').'" class="tpdf" target="_blank" title="Светостойкое покрытие с кварцем (для трибун стадионов)';
 $pdwnl[45]='<'.'a href="/instructions/fakturnoe-pokrytie.pdf?'.filemtime($pb_root.'instructions/fakturnoe-pokrytie.pdf').'" class="tpdf" target="_blank" title="Фактурное покрытие инструкция';
+$pdwnl[48]='<'.'a href="/instructions/elastichnyj-nalivnoj-pol-tech.pdf?'.filemtime($pb_root.'instructions/elastichnyj-nalivnoj-pol-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Эластичный технология';
+$pdwnl[49]='<'.'a href="/instructions/rezinovyj-nalivnoj-pol-tech.pdf?'.filemtime($pb_root.'instructions/rezinovyj-nalivnoj-pol-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Резиновый технология';
 
 //$pdwnl[51]='<'.'a href="/instructions/epoksidnyj-nalivnoj-pol-tech.pdf?'.filemtime($pb_root.'instructions/epoksidnyj-nalivnoj-pol-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Эпоксидный Классик технология';
 $pdwnl[51]=array('<'.'a href="/instructions/epoksidnyj-nalivnoj-pol-tech.pdf?'.filemtime($pb_root.'instructions/epoksidnyj-nalivnoj-pol-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Эпоксидный Классик толщина 2мм технология', '<'.'a href="/instructions/epoksidnyj-nalivnoj-pol-3mm-tech.pdf?'.filemtime($pb_root.'instructions/epoksidnyj-nalivnoj-pol-3mm-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Эпоксидный Классик толщина 3мм технология', '<'.'a href="/instructions/epoksidnyj-nalivnoj-pol-4mm-tech.pdf?'.filemtime($pb_root.'instructions/epoksidnyj-nalivnoj-pol-4mm-tech.pdf').'" class="tpdf" target="_blank" title="Наливной пол Эпоксидный Классик толщина 4мм технология');

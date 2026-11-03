@@ -16,14 +16,13 @@
 <div class="px5"></div>
 <div class="div_itstr_tmp">
 <?php print $tblt1;
-print ftech18(63);
-print ftech18(64);
-print ftech18(65);
-print ftech18(66);
-print ftech18(174);
-print ftech18(175);
-print ftech18(176);
-print ftech18(77);
+print ftech18(63,'');
+print ftech18(64,'');
+print ftech18(65,'');
+print ftech18(66,'');
+print ftech18(174,'');
+print ftech18(75,'');
+print ftech18(77,'');
 print $tblt2; ?>
 <div class="px10"></div>
 </div></div>

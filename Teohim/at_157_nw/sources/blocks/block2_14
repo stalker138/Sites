@@ -1,12 +1,7 @@
 <h1>Антистатический грунт</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=15;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+<div class="fleft" style="max-width:500px">
 <p class="fwb"><strong>Антистатический грунт</strong> (грунтовка) для устройства токопроводящих покрытий полов.</p>
-</div>
 </div>
 
 <?php 

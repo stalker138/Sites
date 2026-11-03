@@ -1,13 +1,9 @@
 <h1>Промышленные эпоксидные наливные полы</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=58;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+
+<div class="fleft" style="max-width:500px">
 <p><strong class="c2 fs13">Эпоксидный Промышленный наливной пол</strong> <span class="c2 fs13">Элакор-ЭД</span><br>
 Самовыравнивающийся двухкомпонентный компаунд.</p>
-</div>
 </div>
 
 <?php 

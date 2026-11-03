@@ -1,11 +1,7 @@
 <h1>Полиуретановая порозаполняющая грунтовка</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-fmtr_micro($ndx_mtr); ?>
-<p class="fleft" itemprop="description"><strong>Порозаполняющая грунтовка (грунт) полиуретановая</strong><br>
+<p class="fleft"><strong>Порозаполняющая грунтовка (грунт) полиуретановая</strong><br>
 - <span class="c2 fs13">Элакор-ПУ Грунт-П</span> - однокомпонентная влагоотверждаемая.</p>
-</div>
 
 <?php 
 fmtr_links($a_lnk_pu_gr);

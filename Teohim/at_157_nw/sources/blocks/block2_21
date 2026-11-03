@@ -1,10 +1,6 @@
 <h1>Полиуретановая грунтовка</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=81;
-fmtr_micro($ndx_mtr); ?>
-</div>
+
 <?php 
 fmtr_links(array(1107), array('Все %полиуретановые грунтовки%'));
 ?>

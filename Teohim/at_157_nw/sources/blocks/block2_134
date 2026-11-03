@@ -1,12 +1,8 @@
 <h1>Клей для каменного ковра</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=75;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" itemprop="description">
+
+<div class="fleft">
 <p><span class="c2 fs13">Элакор-ЭД</span> <strong class="c2 fs13">Клей для Каменного ковра</strong> -  эпоксидное тиксотропное связующее для устройства покрытий из камня (гальки), каменной крошки, песка и т.п. За счет тиксотропных свойств «обволакивает» поверхность наполнителя и не стекает с неё, что обеспечивает минимальный расход клея.</p>
-</div>
 </div>
 
 <?php 

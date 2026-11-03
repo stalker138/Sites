@@ -1,16 +1,12 @@
 <h1>Самовыравнивающийся эпоксидный наливной пол Премиум</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=60;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+
+<div class="fleft" style="max-width:500px">
 <p><strong>Эпоксидный Самовыравнивающийся наливной пол</strong><br>
 <span class="c2 fs13">Элакор-ЭД Премиум</span> - цветной состав с идеальной растекаемостью.</p>
 <p>После отверждения образует покрытие с высокими декоративными свойствами,<br>
 высокой прочностью и износостойкостью, химической стойкостью.<br>
 В момент нанесения отсутствует запах.</p>
-</div>
 </div>
 
 <?php 

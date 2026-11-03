@@ -1,12 +1,9 @@
 <h1>Однокомпонентный полиуретановый герметик</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=39;
-fmtr_micro($ndx_mtr); ?>
-<p itemprop="description"><span class="c2 fs13">PU-40</span> – <strong>однокомпонентный полиуретановый герметик</strong>  – тиксотропный водостойкий влагоотверждаемый.<br>
+
+<p><span class="c2 fs13">PU-40</span> – <strong>однокомпонентный полиуретановый герметик</strong>  – тиксотропный водостойкий влагоотверждаемый.<br>
 Цвет – серый, около RAL7040. Объем – 600 мл. Вес – 780 гр.</p>
-</div>
+
 <div class="px10b"></div>
 <div class="px10"></div>
 

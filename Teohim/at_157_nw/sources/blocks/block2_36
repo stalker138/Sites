@@ -1,14 +1,9 @@
 <h1>Антистатическая пропитка</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=66;
-fmtr_micro($ndx_mtr); ?>
-<div class="fleft" style="max-width:500px" itemprop="description">
+<div class="fleft" style="max-width:500px">
 <p><strong class="c2 fs13">Пропитка Антистатическая</strong> <span class="c2 fs13">для бетона - Элакор-ЭД</span><br>
 Электропроводящий эпоксидный двухкомпонентный состав.</p>
 <p class="fwb">Самый экономичный вариант антистатического пола!</p>
-</div>
 </div>
 
 <?php 
@@ -268,4 +263,3 @@ fmtr_descr($ndx_mtr, '');
 fmtr_img_hidden($ndx_mtr, 'Пропитка Антистатическая', 'Пропитка Антистатическая');
 ?>
 
-https://teohim.ru/polymer/mtr/ed-ast-propitka/

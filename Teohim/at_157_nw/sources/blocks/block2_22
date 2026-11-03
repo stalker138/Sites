@@ -1,12 +1,8 @@
 <h1>Грунтовка глубокого проникновения</h1>
 <div class="px5"></div>
-<div itemscope itemtype="http://schema.org/Product">
-<?php 
-$ndx_mtr=83;
-fmtr_micro($ndx_mtr); ?>
-<p itemprop="description" class="fleft tal" style="max-width:520px"><strong>Грунтовка глубокого проникновения</strong> – <span class="c2 fs13">Элакор-ПУ Грунт-2К/50</span> <span class="fwn nw">- двухкомпонентный полиуретановый грунт.</span><br>
+<p class="fleft tal" style="max-width:520px"><strong>Грунтовка глубокого проникновения</strong> – <span class="c2 fs13">Элакор-ПУ Грунт-2К/50</span> <span class="fwn nw">- двухкомпонентный полиуретановый грунт.</span><br>
 После твердения образует прочный твердо-эластичный полимер <span class="fwn nw">с высокой ударной вязкостью.</span></p>
-</div>
+
 <?php 
 fmtr_links(array(1107), array('Все %полиуретановые грунты% Элакор'));
 ?>
