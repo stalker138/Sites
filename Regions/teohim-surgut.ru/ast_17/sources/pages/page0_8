@@ -1,3 +1,4 @@
+<?php if ($is_basket) { ?>{*text0_20*}<?php } ?>
 </section>
 </div><div class="shiftfooter"></div>
 <div id="header">
