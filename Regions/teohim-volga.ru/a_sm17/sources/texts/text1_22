@@ -1,0 +1,23 @@
+<?php
+function f_print_wa($n_tel='', $wa=0, $tg=0, $contacts=0, $consult=0) {//вывод значков WhatsApp/Telegram
+  $out='';
+  $top="5";
+  $width='';
+  $padd_r='';
+ if ($contacts!=0) { $out.='<div style="margin:0; padding:0;">'; $top="3"; }
+ if ($consult!=0) { $top="3"; $padd_r=' padding-right:5px;'; }
+ else { $width=' style="width:16px;"';}
+  if ($n_tel == "") return;
+  if ($wa==0 && $tg==0) return;
+   if ($wa!=0) {
+  $out.='&nbsp; <a style="vertical-align:middle; margin:0; padding:0;'.$padd_r.'" href="https://api.whatsapp.com/send?phone='.$n_tel.'"><img src="/img/css/whatsapp.svg" alt="Связаться WhatsApp" title="Связаться WhatsApp" '.$width.'></a>';
+  }
+  if ($tg!=0) {
+  $out.='&nbsp; <a style="vertical-align:middle; margin:0; padding:0;" href="https://t.me/+'.$n_tel.'"><img src="/img/css/telegram.svg" alt="Связаться Telegram" title="Связаться Telegram" '.$width.'></a>';
+  }
+  $out.='';
+  if ($contacts!=0) {$out.='</div>';}
+  print $out;
+}
+
+?>

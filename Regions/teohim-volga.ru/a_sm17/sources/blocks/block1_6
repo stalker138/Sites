@@ -1,0 +1,27 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим»: Самара и Самарская область.</span></p>
+
+<div itemscope itemtype="http://schema.org/Organization" >
+<h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+<table><tbody>
+<tr><td style="width:150px"><span>Директор</span>:</td><td>Кривов Дмитрий Александрович</td></tr>
+<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+<tr><td><span>Адрес</span>:</td><td itemprop="streetAddress">443022, г. Самара, Заводское шоссе, 11, оф. 418</td></tr>
+</div>
+<tr><td><span>Телефон:</span>:</td><td><div itemprop="telephone"><a href="tel:+78462217747">8 (846) 221-77-47</a></div></td></tr>
+<tr><td><span>Мобильный:</span>:</td><td><div itemprop="telephone"><a href="tel:+79033012747">+7 (903) 301-27-47</a></div></td></tr>
+<tr><td><span>WhatsApp/Telegram:</span>:</td><td><div itemprop="telephone"><a href="https://api.whatsapp.com/send?phone=79278933688">+7 927 893-36-88</a><?php f_print_wa('79278933688', 1, 1, 1) ?></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div></td></tr>
+</tbody></table>
+</div>
+
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<img src="/img/css/pismo.png" alt="" onclick="f_swtch(4)" />
+
+<div class="pb_hidden">
+ <span id="spIDmail1">im.rusamara@teoh</span>
+</div>
