@@ -3,6 +3,7 @@
 {*text1_8*} $t_salt='defaultSalt';
 
 {*text0_5*}
+{*text0_15*}
 
 // МАТЕРИАЛЫ из CSV-файла materials в массив $mtr
 $file=$pb_root.'sys/materials'; $txt=@file_get_contents($file); $mtr=false; $mtr[]=false;
@@ -50,7 +51,7 @@ for ($i=1; $i<351; $i++) {
     if ($str!=' ' && $mtr[$i] && in_array($i, $list_mtr, true)) {
         $arr=explode(chr(9),$str);
         if ($tara==0) { /* Если $tara==1, значит вызов по кнопке "Только обновление Тары" в групповом пересчёте, тогда цены перезаписывать нельзя, только тару (ниже) */
-            $mtr[$i][3]=$arr[0]; $mtr[$i][4]=$arr[1]; $mtr[$i][5]=$arr[2]; $mtr[$i][6]=$arr[3]; $mtr[$i][7]=$arr[4]; $mtr[$i][8]=$arr[5];
+            $mtr[$i][$pl_save[0][0]]=$arr[$pl_save[0][1]]; $mtr[$i][$pl_save[1][0]]=$arr[$pl_save[1][1]]; $mtr[$i][$pl_save[2][0]]=$arr[$pl_save[2][1]]; $mtr[$i][$pl_save[3][0]]=$arr[$pl_save[3][1]]; $mtr[$i][$pl_save[4][0]]=$arr[$pl_save[4][1]]; $mtr[$i][$pl_save[5][0]]=$arr[$pl_save[5][1]];
         }
         if (count($arr)>10) {
             $mtr[$i][9]=$arr[6]; $mtr[$i][10]=$arr[7]; $mtr[$i][11]=$arr[8]; $mtr[$i][12]=$arr[9]; $mtr[$i][13]=$arr[10]; $mtr[$i][14]=$arr[11]; $mtr[$i][15]=$arr[12];

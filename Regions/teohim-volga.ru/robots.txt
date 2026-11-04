@@ -20,4 +20,4 @@ Disallow: /search
 Disallow: /colors/
 Disallow: /404/
 
-Sitemap: http://teohim-volga.ru/sitemap.xml
+Sitemap: https://teohim-volga.ru/sitemap.xml
