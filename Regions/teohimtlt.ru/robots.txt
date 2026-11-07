@@ -20,4 +20,4 @@ Disallow: /search
 Disallow: /colors/
 Disallow: /404/
 
-Sitemap: http://teohimtlt.ru/sitemap.xml
+Sitemap: https://teohimtlt.ru/sitemap.xml
