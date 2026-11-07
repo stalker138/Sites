@@ -1,0 +1,33 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим»: Тольятти и Самарская область.</span></p>
+
+<div itemscope itemtype="http://schema.org/Organization" >
+<h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+<table><tbody>
+<tr><td style="width:150px"><span>Директор:</span>:</td><td>Кривов Дмитрий Александрович</td></tr>
+<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+<tr><td><span>Адрес</span>:</td><td itemprop="streetAddress">445028, г. Тольятти, пр-д. Оптимистов, 7</td></tr>
+</div>
+<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:+78482633688">+7 (8482) 633-688</a></div></td></tr>
+<tr><td><span>WhatsApp/Telegram:</span>:</td><td><div itemprop="telephone"><a href="https://api.whatsapp.com/send?phone=79278933688">+7 927 893-36-88</a><?php f_print_wa('79278933688', 1, 1, 1) ?></div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div></td></tr>
+</tbody></table>
+</div>
+
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<img src="/img/css/pismo.png" alt="" onclick="f_swtch(4)" />
+<div id="hmap">
+<div class="px10"></div>
+
+<iframe src="https://yandex.ru/map-widget/v1/-/CGwZYIot" width="100%" height="400" max-width="750" frameborder="0"></iframe>
+
+</div>
+
+
+<div class="pb_hidden">
+ <span id="spIDmail1">im.rutlt@teoh</span>
+</div>

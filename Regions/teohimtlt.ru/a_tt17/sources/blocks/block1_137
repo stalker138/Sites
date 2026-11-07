@@ -1,0 +1,30 @@
+<h1>Склады фото</h1>
+<div class="px10"></div>
+
+<p>Склад по адресу г. Петрозаводск, Пряжинское шоссе, 2-ой километр строение 10.<br>
+Площадь 150 м&sup2;<br>
+Устройство бесцветного полиуретанового покрытия, с частичным шпатлеванием.<br>Ноябрь 2019 г.</p>
+<div class="px0"></div>
+
+<div style="float:left; width:172px; margin:14px 14px 0 0; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px" src="/img/photos/10_01_s.jpg" onclick="fpb_zoomImg(this,'/img/photos/10_01.jpg',200,25,800,450,'',-28);" title="" alt=""/></div>
+
+<div style="float:left; width:172px; margin:14px 14px 0 0; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px" src="/img/photos/10_02_s.jpg" onclick="fpb_zoomImg(this,'/img/photos/10_02.jpg',200,25,800,450,'',-28);" title="" alt=""/></div>
+
+<div style="float:left; width:172px; margin:14px 14px 0 0; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px" src="/img/photos/10_03_s.jpg" onclick="fpb_zoomImg(this,'/img/photos/10_03.jpg',200,25,800,450,'',-28);" title="" alt=""/></div>
+
+<div style="float:left; width:172px; margin:14px 14px 0 0; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px" src="/img/photos/10_04_s.jpg" onclick="fpb_zoomImg(this,'/img/photos/10_04.jpg',200,25,800,450,'',-28);" title="" alt=""/></div>
+
+<div style="float:left; width:172px; margin:14px 14px 0 0; font-size:12px; text-align:center; line-height:12px;">
+<img class="pb_ismall" style="width:172px; height:128px" src="/img/photos/10_05_s.jpg" onclick="fpb_zoomImg(this,'/img/photos/10_05.jpg',200,25,800,450,'',-28);" title="" alt=""/></div>
+
+<div class="pb_hidden">
+  <img src="/img/photos/10_01_s.jpg" alt="">
+  <img src="/img/photos/10_02_s.jpg" alt="">
+  <img src="/img/photos/10_03_s.jpg" alt="">
+  <img src="/img/photos/10_04_s.jpg" alt="">
+  <img src="/img/photos/10_05_s.jpg" alt="">
+</div>

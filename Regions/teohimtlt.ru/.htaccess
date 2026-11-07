@@ -1,0 +1,18 @@
+<Files ~ "^(recip.txt|config.inc|footer.inc|form.inc|header.inc)$">
+  deny from all
+</Files>
+DirectoryIndex index.html index.htm index.php
+AddDefaultCharset utf-8
+php_value allow_url_fopen On
+
+RewriteEngine On
+RewriteRule ^.htaccess$ -[F]
+RewriteCond %{HTTP_HOST} ^www.teohimtlt.ru$ [NC]
+RewriteRule ^(.*)$ http://teohimtlt.ru/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|htm|html)\ HTTP/ 
+RewriteRule ^index\.(php|htm|html)$ http://teohimtlt.ru/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^(.*)\/index\.(php|htm|html)\ HTTP/ 
+RewriteRule ^(.*)\/index\.(php|htm|html)$ http://teohimtlt.ru/$1/ [R=301,L]
+
+ErrorDocument 404 /404/
+ErrorDocument 403 /404/
