@@ -1,0 +1,26 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим»: Курск, Курская область</span></p>
+
+<div itemscope itemtype="http://schema.org/Organization" >
+<h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+<table><tbody>
+<tr><td style="width:150px"><span>Контактное лицо:</span>:</td><td>Непряхина Илона</td></tr>
+<tr><td><span>Телефон</span>:</td><td><DIV itemprop="telephone"><a href="tel:+74732324495">8-473-232-44-95</a></div></td></tr>
+<tr><td><span>Сотовый</span>:</td><td><div itemprop="telephone"><a href="tel:+79601101017">8-960-110-10-17</a></div><div itemprop="telephone"><a href="tel:+79009290139">+7-900-929-01-39</a></div></td></tr>
+<tr><td><span>WhatsApp/Telegram</span>:</td><td><div><a href="https://api.whatsapp.com/send?phone=79107324495">+7-910-732-44-95</a><?php f_print_wa('79107324495', 1, 1, 1) ?></div></td></tr>
+
+<!--tr><td style="width:150px"><span>Контактное лицо</span>:</td><td>Непряхина Илона</td></tr>
+<tr><td><span>Телефон</span>:</td><td><div itemprop="telephone"><a href="tel:89009290139">8-900-929-01-39</a></div></td></tr>
+<tr><td><span>Сотовый</span>:</td><td><div itemprop="telephone"><a href="tel:89601101017">8-960-110-10-17</a></div></td></tr-->
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div></td></tr>
+</tbody></table>
+</div>
+
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px0"></div>
+
+<img src="/img/css/pismo.png" alt="" onclick="f_swtch(4,1,1)" style="cursor:pointer"/>
+
+<div class="pb_hidden"><span id="spIDmail1">im.rukursk@teoh</span></div>
