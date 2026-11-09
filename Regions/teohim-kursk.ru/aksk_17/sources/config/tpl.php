@@ -65,7 +65,7 @@
 *number*11
 *options*		1150000000
 *file*			tpl11
-*name*			Отзывы
+*name*			NAVIGATOR
 *end*11
 
 *number*12

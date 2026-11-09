@@ -1,13 +1,16 @@
-{*text0_20*}
+<?php if ($is_basket) { ?>{*text0_20*}<?php } ?>
 </section>
 </div><div class="shiftfooter"></div>
 <div id="header">
 <header>
 
 <div id="contacts">
-<!--div><a href="tel:+74732324495">8-473-232-44-95</a></div><div class="px3"></div-->
-<div><a href="tel:+79009290139">8-900-929-01-39</a></div>
-<div><a href="tel:+79601101017">8-960-110-10-17</a></div>
+
+<div><a href="tel:+79050524145">+7 905 052-41-45 </a></div><div class="px3"></div>
+<div><a href="tel:+79102453094" style="padding:0;">+7 910 245-30-94</a><?php f_print_wa('79102453094', 1, 1) ?></div><div class="px3"></div>
+
+<!--div><a href="tel:+79009290139">8-900-929-01-39</a></div>
+<div><a href="tel:+79601101017">8-960-110-10-17</a></div-->
 
 <!--div id="dpIDmail">&nbsp;</div-->
 <div class="callback" onclick="f_swtch(4,1,1);return false;">Обратный звонок</div>
