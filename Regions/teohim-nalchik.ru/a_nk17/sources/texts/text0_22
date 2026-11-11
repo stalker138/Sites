@@ -1,0 +1,64 @@
+// МАТЕРИАЛЫ. Вариант 1. Возвращает отформатированную строку с Наименованием материала (основная часть + дополнение) и Ценами.
+function fmtr1($n=false, $f=false, $nm='',$nm2='', $id=0) {
+global $mtr,$mtrt,$pl,$list_mtr,$new_mtr,$is_price,$pl_col,$is_basket; $out='';if($id<11) $id=$n; $out=''; $m=$mtr; $new='';
+
+if ($mtr[$n] && in_array($n, $list_mtr, true) && (($is_price==0) || (($is_price!=0) && ($mtr[$n][$pl_col[0]]!=0)))) {
+    if (in_array($n, $new_mtr, true)) $new='<div style="float:right;padding:2px;font:bold 12px arial;color:#f00000">new!</div>';
+    if (!$f) $f=$mtr[$n][0]; // Номер пункта
+    $name = $nm ? $nm : $mtr[$n][1];
+    $name2 = $nm2 ? $nm2 : $mtr[$n][2];
+    $ndx = strpos($name2 ,'^');
+    $nm0 = '';
+    if ($ndx > 0) {
+      $arr_nm = explode('^', $name2);
+      $nm_dop = $arr_nm[0];
+      $name2 = $arr_nm[1];
+      $nm0 = ' <span style="color:#004f92; font-size:12px; font-weight:bold;">'.$nm_dop.'</span>';
+    }
+    if ($name2 != '') {
+       $name0 = $name2;
+       $name2 = '<span style="font-weight:normal; font-size:11px;"> '.$name2.'</span>';
+    }
+    $out='<tr><td class="tml" style="height:21px;"><div style="float:left;padding-right:5px;min-width:30px;font-weight:normal;font-size:12px;">'.$f.'</div>'.$new.' '.($pl[$n]?($pl[$n].$name):$name).($pl[$n]?('</'.'a>'):'').$nm0.$name2.'</td>';
+
+    if ($is_price!=0) {
+    foreach($pl_col as $n_col){
+   $out.='
+   <td style="font-size:13px;">'.$mtr[$n][$n_col].'</td>
+  ';
+   }
+   }
+
+    $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).'<span'.($pl[$n]?'':' style="font-size:12px;font-weight:bold;color:#555555"').'>'.substr($out,$f+1);
+    $f=strpos($out,'%'); if ($f>0) $out=substr($out,0,$f).'</span>'.substr($out,$f+1);
+  if ($is_basket==1) {
+    if (!$mtrt[$n] || !$mtrt[$n][17]) $out.='<td></td></tr>';
+    else $out.='<td class="fbuy" onclick="f_newRal('.$n.',\''.str_replace('%','',$name).'\',\''.$name0.'\')"><div>'.$n.'</div></td></tr>';
+  }
+}return $out;
+}
+
+// МАТЕРИАЛЫ. Вариант 2. Возвращает отформатированную таблицу с ценами материала (основная часть + дополнение). Цены.
+function fmtr2($n=false,$f=false,$w=false) {
+global $mtr,$list_mtr,$is_price,$pl_col,$tmh_vol,$tmh_w; $out='';
+if (($is_price==0) || (($is_price!=0) && ($mtr[$n][$pl_col[0]]==0))) return;
+if ($mtr[$n] && in_array($n, $list_mtr, true)) {
+ if (count($pl_col)==1) {
+    $out='<div'.($w?'':' style="width:350px;"').'><p><span style="color:#ff5506; font-size:25px;">'.$mtr[$n][3].'&nbsp;';
+    if ($f==false) $out.='руб/'.($n==39?'шт':(($n==227||$n==105)?'литр':'кг')); $out.='</span><br>
+     Скидка предоставляется в зависимости от общего количества приобретаемых материалов.</p></div>';
+ }
+else
+ {
+   $out='<table class="tmtr"'.($w?'':' style="width:336px;"').'><tbody>';
+   if ($n==227||$n==105) { $out.=$tmh_vol; } 
+   else { $out.=$tmh_w; }
+   $out.='<tr>';
+   foreach($pl_col as $n_col){
+    $out.='<td style="font-size:13px; font-weight:bold; height:26px; line-height:26px;">'.$mtr[$n][$n_col].'</td>';
+   }
+   $out.='</tr></tbody></table>';
+   if ($f==false) $out.='<p class="p11" style="margin-left:0; margin-top:5px;">Цена руб/'.($n==39?'шт':(($n==227||$n==105)?'литр':'кг')).' в зависимости от количества. С учетом НДС и тары.</p>';
+ }
+}return $out;
+}

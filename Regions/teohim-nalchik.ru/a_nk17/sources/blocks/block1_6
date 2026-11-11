@@ -1,0 +1,40 @@
+{*text1_16*}
+<h1>Контакты</h1>
+<p><span>Официальный представитель ООО «ТэоХим»: Нальчик.</span></p>
+
+<div itemscope itemtype="http://schema.org/Organization" >
+<h2 itemprop="name">{*text1_4*}</h2><div class="px20"></div>
+<table><tbody>
+<tr><td style="width:150px"><span>Директор</span>:</td><td>Берсиров Руслан Давидович</td></tr>
+<tr><td><span>Зам.директора</span>:</td><td>Берсирова Виктория Борисовна</td></tr>
+<tr><td><span>Телефон/факс</span>:</td><td><div itemprop="telephone"><a href="tel:+78662740002">+7 (8662) 74-00-02</a></div></td></tr>
+<tr><td><span>Сотовые</span>:</td><td><div itemprop="telephone"><a href="tel:+79280818869">+7 (928) 081-88-69</a></div><div itemprop="telephone"><a href="tel:+79094909666">+7 (909) 4 909 666</a><?php f_print_wa('79094909666', 1, 1) ?></div></td></tr>
+<tr><td><div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span>Адрес</span>:</td><td itemprop="streetAddress">г.Нальчик, ул.Байсултанова,33 (приём по предварительному звонку)</div></td></tr>
+<tr><td><span>E-mail</span>:</td><td><div><span id="dpIDmail1"></span></div></td></tr>
+</tbody></table>
+</div>
+
+<p style="float:right;">Если Вы не дозвонились, наберите: <span onclick="this.innerHTML='<a class=\'\' href=\'tel:+79165479793\'>+7-91'+'6-5'+'47-9'+'7-9'+'3</a>'" style="cursor:pointer;font-weight:normal;text-decoration:underline;">+7-916-...</span><br>
+(Центральная служба поддержки ООО «ТэоХим») &nbsp; &nbsp; &nbsp;</p>
+<div class="px20"></div>
+<img src="/img/css/pismo.png" alt="" onclick="f_swtch(4)" style="cursor:pointer;"/>
+
+<img class="pb_ismall" src="/img/photos/36_gazel2_s.jpg" onclick="fpb_zoomImg(this,'/img/photos/36_gazel2.jpg',200,25,800,600,'',-25);" title="" alt="" style="float:right;"/>
+<img class="pb_ismall" src="/img/photos/36_gazel1_s.jpg" onclick="fpb_zoomImg(this,'/img/photos/36_gazel1.jpg',200,25,800,600,'',-25);" title="" alt="" style="float:right;margin-right:10px;"/>
+<div class="px10"></div>
+<div class="pb_hidden">
+    <img alt="" title="" src="/img/photos/36_gazel1.jpg"/>
+    <img alt="" title="" src="/img/photos/36_gazel2.jpg"/>
+</div>
+
+<div id="hmap">
+<div class="px10"></div>
+
+<div id="ymaps-map-id_7c790bad271642d692c73366b25c3e8c" style="width:100%; height:400px; max-width:750px;"></div>
+<script type="text/javascript">function fid_7c790bad271642d692c73366b25c3e8c(ymaps) {var map = new ymaps.Map("ymaps-map-id_7c790bad271642d692c73366b25c3e8c", {center: [43.484637, 43.578379], zoom: 16, type: "yandex#map"});map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));map.geoObjects.add(new ymaps.Placemark([43.484637, 43.578379], {balloonContent: "ООО «Берс»"}, {preset: "twirl#lightblueDotIcon"}));};</script>
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?apikey=7c790bad-2716-42d6-92c7-3366b25c3e8c&coordorder=latlong&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_7c790bad271642d692c73366b25c3e8c"></script>
+</div>
+
+<div class="pb_hidden">
+ <span id="spIDmail1">im.ruskfo@teoh</span>
+</div>
